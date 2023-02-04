@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric13" TargetProperty="Value" Source="Tags.RobX_vir" />
+        <Item Target="Robots_Pan1_Scr1.txtRobotInfoTranslated" TargetProperty="Text" Source="Tags.Rob1_naytto" />
+        <Item Target="Robots_Pan1_Scr1.txtRobotInfoTranslated" TargetProperty="Value" Source="Tags.RobX_vir" />
+        <Item Target="Robots_Pan1_Scr1.txtRobotInfoTranslated" TargetProperty="Foreground" Source="Tags.RobX_vir" />
+        <Item Target="Robots_Pan1_Scr1.txtRobotInfoTranslated" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Language_Current" />
+        <Item Target="Robots_Pan1_Scr1.txtRobotInfoFromRobot" TargetProperty="Text" Source="Tags.Rob1_naytto" />
+        <Item Target="Robots_Pan1_Scr1.txtRobotInfoFromRobot" TargetProperty="Value" Source="Tags.RobX_naytto" />
+        <Item Target="Robots_Pan1_Scr1.txtRobotInfoFromRobot" TargetProperty="Foreground" Source="Tags.RobX_vir" />
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.HMI_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric" TargetProperty="Value" Source="Tags.Rob1_pos_x" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric1" TargetProperty="Value" Source="Tags.Rob1_pos_y" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric2" TargetProperty="Value" Source="Tags.Rob1_pos_z" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric3" TargetProperty="Value" Source="Tags.Rob1_pos_o" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric4" TargetProperty="Value" Source="Tags.Rob1_pos_a" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric5" TargetProperty="Value" Source="Tags.Rob1_pos_t" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric6" TargetProperty="Value" Source="Tags.Rob1_nopker" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric7" TargetProperty="Value" Source="Tags.Rob1_nopker1" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric8" TargetProperty="Value" Source="Tags.Rob1_kiiker" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric9" TargetProperty="Value" Source="Tags.Rob1_nopker0" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric10" TargetProperty="Value" Source="Tags.Rob1_kiiker1" />
+        <Item Target="Robots_Pan1_Scr1.AnalogNumeric11" TargetProperty="Value" Source="Tags.Rob1_kiiker0" />
+        <Item Target="Robots_Pan1_Scr1.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Popup_Robot_speed" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>113</ObjectsCount>
+          <ScreenName>Robots_Pan1_Scr1</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="10201">
+          <ScreenName>Robots_Pan1_Scr1</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Robots_Pan1_Scr1.Script.cs" Source="Tags.Rob1_ServicePosSent" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.HMI_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Robots_Pan1_Scr1.Picture_Robot" Source="robotti_läpin" Width="230" Height="246" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Robots_Pan1_Scr1.Group_Service_btn.Button_ServicePos" Source="orfer_settings" Width="37" Height="37" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

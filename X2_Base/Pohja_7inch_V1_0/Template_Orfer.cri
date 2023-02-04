@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items>
+        <Item xsi:type="AlarmViewerItem" Target="Template_Orfer.AlarmViewer" ServerID="" ServerPort="0" MaximumAlarmEvents="4" />
+      </Items>
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="Template_Orfer.Group_btnMain.Button_Main_0" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Template_Orfer.Group_btnManual.Button_Manual_4" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Template_Orfer.Group_btnSettings.Button_Settings_7" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Template_Orfer.Group_btnAlarms.Button_Alarms_6" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Template_Orfer.AlarmViewer" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Template_Orfer.Text_Top" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Template_Orfer.Group_btnMain.Line" TargetProperty="Stroke" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnMain.Button_Main_0" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnMain.Button_Main_0" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnMain.Button_Main_0" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnMain.Button_Main_0" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnManual.Line1" TargetProperty="Stroke" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnManual.Button_Manual_4" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnManual.Button_Manual_4" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnManual.Button_Manual_4" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnManual.Button_Manual_4" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnSettings.Line2" TargetProperty="Stroke" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnSettings.Button_Settings_7" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnSettings.Button_Settings_7" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnSettings.Button_Settings_7" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnSettings.Button_Settings_7" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnAlarms.Line3" TargetProperty="Stroke" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnAlarms.Button_Alarms_6" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnAlarms.Button_Alarms_6" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnAlarms.Button_Alarms_6" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Group_btnAlarms.Button_Alarms_6" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Picture_PLC_Alarm" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Line1_Comm_Fault_PLC1" />
+        <Item Target="Template_Orfer.Picture_PLC_Alarm" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Line1_Comm_Fault_PLC1" />
+        <Item Target="Template_Orfer.Line2_Conn_PLC" TargetProperty="Stroke" Source="Tags.Line1_Comm_Fault_PLC1" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>21</ObjectsCount>
+          <ScreenName>Template_Orfer</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Template_Orfer</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Template_Orfer.Script.cs" Source="Tags.Settings_PanelNumber" />
+        <Item Target="Template_Orfer.Script.cs" Source="Tags.SystemTagNewScreenId" />
+        <Item Target="Template_Orfer.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Script.cs" Source="Tags.Menu_SubMenu_Group_Visibility" />
+        <Item Target="Template_Orfer.Script.cs" Source="Tags.Menu_SubMenu_Btn_Anim" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnMain.Button_Main_0" Source="orfer_home" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnMain.Button_Main_0" Source="orfer_home" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnMain.Button_Main_0" Source="orfer_home_color" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnMain.Button_Main_0" Source="orfer_home" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnManual.Button_Manual_4" Source="orfer_hand" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnManual.Button_Manual_4" Source="orfer_hand" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnManual.Button_Manual_4" Source="orfer_hand_color" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnManual.Button_Manual_4" Source="orfer_hand" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Picture_Logo" Source="orferlogo" Width="128" Height="37" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnSettings.Button_Settings_7" Source="orfer_settings" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnSettings.Button_Settings_7" Source="orfer_settings" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnSettings.Button_Settings_7" Source="orfer_settings_color" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnSettings.Button_Settings_7" Source="orfer_settings" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnAlarms.Button_Alarms_6" Source="orfer_alarms" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnAlarms.Button_Alarms_6" Source="orfer_alarms" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnAlarms.Button_Alarms_6" Source="orfer_alarms_color" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Group_btnAlarms.Button_Alarms_6" Source="orfer_alarms" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Picture_HMI" Source="orfer_hmi" Width="40" Height="40" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Picture_PLC_Alarm" Source="orfer_alarm_icon" Width="30" Height="30" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Template_Orfer.Picture_PLC" Source="orfer_cpu" Width="40" Height="40" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

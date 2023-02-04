@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="Overview_Pan1_Scr1.Text_Top" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Overview_Pan1_Scr1.Button1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Overview_Pan1_Scr1.Button" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Button1" TargetProperty="Actions" Source="Tags.Line1_Comm_Fault_PLC1" Event="Click" Action="Reset Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items>
+        <Item Target="Overview_Pan1_Scr1.Button1" Source="-25396101_Normal.bmp" />
+        <Item Target="Overview_Pan1_Scr1.Button1" Source="-25396101_Pressed.bmp" />
+        <Item Target="Overview_Pan1_Scr1.Button1" Source="-25396101_Disabled.bmp" />
+        <Item Target="Overview_Pan1_Scr1.Button" Source="-25396101_Normal.bmp" />
+        <Item Target="Overview_Pan1_Scr1.Button" Source="-25396101_Pressed.bmp" />
+        <Item Target="Overview_Pan1_Scr1.Button" Source="-25396101_Disabled.bmp" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>54</ObjectsCount>
+          <ScreenName>Overview_Pan1_Scr1</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="10001">
+          <ScreenName>Overview_Pan1_Scr1</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Button1" TargetProperty="Actions" Source="Tags.Line1_Comm_Fault_PLC1" Event="Click" Action="Reset Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.49.0'?>
+<NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
+  <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.DataLogger, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" SchemaVersion="1028" LogTrigger="LogDataOnTimerEvent" LogInterval="1.00:00:00" LogChangesOnly="False" Guid="6f259046-23cf-407c-9c02-9c02925f96d6" MaxNumberOfLogItems="30" d1p1:Site.Name="Panel_info" ActionName="" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+    <LogItems>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="Available_RAM" Name="Available_RAM" d1p1:Site.Name="Available_RAM" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+        <DataBindings>
+          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
+              <Parameter Name="PropertyName">
+                <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="DataSourceValue" />
+              </Parameter>
+              <Parameter Name="DataSource" Value="Tags.SystemTagAvailableRAM" />
+              <Parameter Name="DataMember">
+                <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Value" />
+              </Parameter>
+              <Parameter Name="FormattingEnabled">
+                <Object d1p1:type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="True" />
+              </Parameter>
+              <Parameter Name="DataSourceUpdateMode">
+                <Object d1p1:type="System.Windows.Forms.DataSourceUpdateMode, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                  <InstanceDescriptor DeclaringType="System.Windows.Forms.DataSourceUpdateMode, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Never" MemberType="Field" />
+                </Object>
+              </Parameter>
+              <Parameter Name="Converter" Value="" />
+            </InstanceDescriptor>
+          </Object>
+        </DataBindings>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="CPU_Load" Name="CPU_Load" d1p1:Site.Name="CPU_Load" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+        <DataBindings>
+          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
+              <Parameter Name="PropertyName">
+                <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="DataSourceValue" />
+              </Parameter>
+              <Parameter Name="DataSource" Value="Tags.SystemTagCPULoad" />
+              <Parameter Name="DataMember">
+                <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Value" />
+              </Parameter>
+              <Parameter Name="FormattingEnabled">
+                <Object d1p1:type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="True" />
+              </Parameter>
+              <Parameter Name="DataSourceUpdateMode">
+                <Object d1p1:type="System.Windows.Forms.DataSourceUpdateMode, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                  <InstanceDescriptor DeclaringType="System.Windows.Forms.DataSourceUpdateMode, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Never" MemberType="Field" />
+                </Object>
+              </Parameter>
+              <Parameter Name="Converter" Value="" />
+            </InstanceDescriptor>
+          </Object>
+        </DataBindings>
+      </Object>
+    </LogItems>
+  </Object>
+</NeoItem>

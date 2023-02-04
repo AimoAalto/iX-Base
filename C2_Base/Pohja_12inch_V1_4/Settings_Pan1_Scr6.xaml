@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.49.0'?>
+<nacs:ScreenWindow Topmost="False" Title="Settings_Pan1_Scr6" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1280, 800" ScreenID="10706" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1280" Height="800" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:naca="clr-namespace:Neo.ApplicationFramework.Controls.AuditTrail;assembly=Controls" xmlns:nai1="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=InterfacesCF" xmlns:nacl="clr-namespace:Neo.ApplicationFramework.Controls.Logic;assembly=ControlsCF" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Settings_Pan1_Scr6">
+  <nacs:ScreenWindow.TemplateScreen>
+    <nacs1:TemplateScreen Name="Template_Settings" RenderMode="Background" />
+  </nacs:ScreenWindow.TemplateScreen>
+  <nai:ActionProperties.Actions>
+    <nai:ActionList>
+      <nata:Action Name="Set Analog">
+        <nata:Action.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Menu_SubMenu_Btn_Anim" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+            <nata:ActionMethodInfo.ActionParameterInfo>
+              <nai:ActionParameterInfoList>
+                <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                  <nata:ActionParameterInfo.Value>
+                    <s:Int16>6</s:Int16>
+                  </nata:ActionParameterInfo.Value>
+                </nata:ActionParameterInfo>
+              </nai:ActionParameterInfoList>
+            </nata:ActionMethodInfo.ActionParameterInfo>
+          </nata:ActionMethodInfo>
+        </nata:Action.ActionMethodInfo>
+      </nata:Action>
+    </nai:ActionList>
+  </nai:ActionProperties.Actions>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+    <naca:AuditTrailViewer ColumnHeaderBackgroundColor="{x:Null}" VistaStyle="True" BorderBrush="#FF267593" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" Name="m_AuditTrailViewer" Width="1074" Height="540" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="200" Canvas.Top="125">
+      <naca:AuditTrailViewer.VisibleColumns>
+        <x:Array Type="nai1:IColumnInfo">
+          <nacl:AlarmColumnInfo MappingName="Message" HeaderName="Message" ColumnWidth="448" />
+          <nacl:AlarmColumnInfo MappingName="Description" HeaderName="Description" ColumnWidth="110" />
+          <nacl:AlarmColumnInfo MappingName="ValueBefore" HeaderName="Value Before" ColumnWidth="130" />
+          <nacl:AlarmColumnInfo MappingName="ValueAfter" HeaderName="Value After" ColumnWidth="120" />
+          <nacl:AlarmColumnInfo MappingName="TimeStamp" HeaderName="Time Stamp" ColumnWidth="120" />
+          <nacl:AlarmColumnInfo MappingName="UserName" HeaderName="User Name" ColumnWidth="120" />
+        </x:Array>
+      </naca:AuditTrailViewer.VisibleColumns>
+    </naca:AuditTrailViewer>
+    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="AUDIT TRAIL" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="24" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="6,0,6,1" Name="m_Text6" Width="488.900356251081" Height="30.4133333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="230" Canvas.Top="84">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#00FFFFFF" StrokeThickness="1" Name="m_shadow" Width="1286.63541666667" Height="668" RenderTransformOrigin="0.5,0.5" Opacity="0.6" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="-6.14583333333363" Canvas.Top="69.0164930555555" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="True">
+      <nacc:Rectangle.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacc:Rectangle.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PC_Overview_shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="3" />
+      </nacc:Rectangle.BevelEffectInfo>
+    </nacc:Rectangle>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

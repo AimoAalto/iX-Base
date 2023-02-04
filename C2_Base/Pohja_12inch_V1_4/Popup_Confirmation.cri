@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Popup_Confirmation.Text" TargetProperty="Value" Source="Tags.HMI_Confirmation_Text" />
+        <Item Target="Popup_Confirmation.AnalogNumeric" TargetProperty="Value" Source="Tags.HMI_Confirmation_Value" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation.Group_OK_btn.OK_btn" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Opened" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>7</ObjectsCount>
+          <ScreenName>Popup_Confirmation</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Popup_Confirmation</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Popup_Confirmation.Script.cs" Source="Tags.HMI_Confirmation_Text" />
+        <Item Target="Popup_Confirmation.Script.cs" Source="Tags.HMI_Confirmation_Value" />
+        <Item Target="Popup_Confirmation.Script.cs" Source="Tags.HMI_Confirmation_OK" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation.Group_OK_btn.OK_btn" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Opened" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Popup_Confirmation.Picture" Source="orfer_help" Width="50" Height="50" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Confirmation.Group_Cancel_btn.Cancel_btn" Source="orfer_cancel" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Confirmation.Group_OK_btn.OK_btn" Source="orfer_ack" Width="30" Height="30" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

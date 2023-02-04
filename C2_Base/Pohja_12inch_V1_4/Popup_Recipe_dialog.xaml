@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.49.0'?>
+<nacs:ScreenWindow Top="105" Left="308" Topmost="False" Title="Popup_Recipe_dialog" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="Manual" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="800, 500" ScreenPosition="308, 105" TemplateScreen="{x:Null}" PopupScreen="True" StyleName="Default" IsCacheable="False" Background="#FF106280" FontSize="12" FontStyle="Normal" FontWeight="Normal" Width="800" Height="500" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nacw="clr-namespace:Neo.ApplicationFramework.Controls.WindowsControls;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Behaviors;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=CommonCF" xmlns:nac2="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Popup_Recipe_dialog">
+  <nai:ActionProperties.Actions>
+    <nai:ActionList>
+      <nata:Action Name="Set Tag">
+        <nata:Action.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+        </nata:Action.ActionMethodInfo>
+      </nata:Action>
+      <nata:Action Name="Reset Tag">
+        <nata:Action.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+        </nata:Action.ActionMethodInfo>
+      </nata:Action>
+    </nai:ActionList>
+  </nai:ActionProperties.Actions>
+  <nai:ScriptProperties.ScriptEvents>
+    <nai:ScriptEventList>
+      <nacxs:EventHandlerInfo EventName="Opened" MethodName="Recipe_dialog_Opened" />
+    </nai:ScriptEventList>
+  </nai:ScriptProperties.ScriptEvents>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="800" Height="500" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+    <nacw:ListBox BorderBrush="#FF267593" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" Name="m_ListBox1" Width="778.221146240797" Height="319.514870576525" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="9.91355863187014" Canvas.Top="43.2966666666667">
+      <nacw:ListBox.Value>
+        <s:Double>0</s:Double>
+      </nacw:ListBox.Value>
+      <nai:ScriptProperties.ScriptEvents>
+        <nai:ScriptEventList>
+          <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="ListBox1_SelectionChanged" />
+        </nai:ScriptEventList>
+      </nai:ScriptProperties.ScriptEvents>
+    </nacw:ListBox>
+    <nac:Label Text="Text" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="6,0,6,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="13" Canvas.Top="0" nacb:IntervalMapperBindingsBehavior.RebindInRuntime="True">
+      <nac:Label.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:Label.Resources>
+      <nac:Label.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ProdReg_Dialog_Mode].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True" />
+      </nac:Label.Value>
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.TextIntervalMapper>
+        <nacd1:StringIntervalMapper DefaultValue="Text">
+          <nacd1:StringIntervalMapper.Intervals>
+            <nacd1:StringIntervalList>
+              <nacd1:StringInterval Start="1" End="1" Value="Open recipe" />
+              <nacd1:StringInterval Start="2" End="2" Value="Save recipe" />
+              <nacd1:StringInterval Start="3" End="3" Value="Remove recipe" />
+            </nacd1:StringIntervalList>
+          </nacd1:StringIntervalMapper.Intervals>
+        </nacd1:StringIntervalMapper>
+      </nac:Label.TextIntervalMapper>
+    </nac:Label>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" BorderBrush="#FF267593" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="20" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_ReseptiKentta" Width="604.8" Height="47.3321920848075" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="9" KeyboardNavigation.TabNavigation="None" Canvas.Left="182.105529983134" Canvas.Top="368.454656505328" nacsd:EditorProperties.IsHidden="False">
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF267593" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="20" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_TuotenumeroKentta" Width="165.277883871622" Height="47.3321920848075" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="10" KeyboardNavigation.TabNavigation="None" Canvas.Left="8.82764611151231" Canvas.Top="368.454656505328" nacsd:EditorProperties.IsHidden="False">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.ProdReg_ProductNo].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+    </nac:AnalogNumericFX>
+    <nac:Group Name="m_Group_Select_btn" Width="150" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="11" Canvas.Left="126.603334947761" Canvas.Top="427.932378514265">
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle" Width="146" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="2.396665052239" Canvas.Top="2.067621485735" />
+      <nac:Button ButtonAppearance="Rounded" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="OK" TextMargin="20,2,2,2" RequiresTransparency="True" SymbolName="orfer_open" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="1,1,1,1" Name="m_OK_btn" Width="150" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="0" Canvas.Top="0" nacb:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac2:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="TextValueConverter" />
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ProdReg_Dialog_Mode].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.TextValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ProdReg_Dialog_Mode].Value" Converter="{StaticResource TextValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Int32>0</s:Int32>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.TextValue>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.TextIntervalMapper>
+          <nacd1:StringIntervalMapper DefaultValue="OK">
+            <nacd1:StringIntervalMapper.Intervals>
+              <nacd1:StringIntervalList>
+                <nacd1:StringInterval Start="1" End="1" Value="Open" />
+                <nacd1:StringInterval Start="2" End="2" Value="Save" />
+                <nacd1:StringInterval Start="3" End="3" Value="Delete" />
+              </nacd1:StringIntervalList>
+            </nacd1:StringIntervalMapper.Intervals>
+          </nacd1:StringIntervalMapper>
+        </nac:Button.TextIntervalMapper>
+        <nac:Button.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval Start="1" End="1">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_open" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="2" End="2">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_save" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="3" End="3">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_delete" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nac:Button.SymbolIntervalMapper>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="OK_btn_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_Cancel_btn" Width="150" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="12" Canvas.Left="524.603334947761" Canvas.Top="426.932378514265">
+      <nac:Button ButtonAppearance="RoundedBottomRight" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Cancel" TextMargin="40,2,2,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="1,1,1,1" Name="m_Cancel_btn" Width="150" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="0" Canvas.Top="0" Style="{nac2:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Close Screen">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="Close" ObjectName="" EventName="Click" ReferenceType="This" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="True" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle1" Width="146" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="2.39666505223897" Canvas.Top="2.067621485735" />
+    </nac:Group>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

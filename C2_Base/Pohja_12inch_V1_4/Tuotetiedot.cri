@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Tuotetiedot.Tuotenumero" TargetProperty="Value" Source="Tags.ProdReg_ProductNo" />
+        <Item Target="Tuotetiedot.Tuotenimi" TargetProperty="Value" Source="Tags.ProdReg_ProductName" />
+        <Item Target="Tuotetiedot.Kuvio" TargetProperty="Value" Source="Tags.ProdReg_PalletPattern" />
+        <Item Target="Tuotetiedot.Lavatyyppi" TargetProperty="Value" Source="Tags.ProdReg_PalletType" />
+        <Item Target="Tuotetiedot.LavaXKeskitys" TargetProperty="Value" Source="Tags.ProdReg_Robot1_X_Centering" />
+        <Item Target="Tuotetiedot.LavaYKeskitys" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Y_Centering" />
+        <Item Target="Tuotetiedot.RobottiNopeusTyhja" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Speed_Empty" />
+        <Item Target="Tuotetiedot.RobottiNopeusKuorma" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Speed_Full" />
+        <Item Target="Tuotetiedot.RobottiKiihtyvyysTyhja" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Acceleration_Empty" />
+        <Item Target="Tuotetiedot.RobottiKiihtyvyysKuorma" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Acceleration_Full" />
+        <Item Target="Tuotetiedot.Lavakerrokset" TargetProperty="Value" Source="Tags.ProdReg_LayerCount" />
+        <Item Target="Tuotetiedot.Pituus" TargetProperty="Value" Source="Tags.ProdReg_Product_Length" />
+        <Item Target="Tuotetiedot.Leveys" TargetProperty="Value" Source="Tags.ProdReg_Product_Width" />
+        <Item Target="Tuotetiedot.Korkeus" TargetProperty="Value" Source="Tags.ProdReg_Product_Height" />
+        <Item Target="Tuotetiedot.Valikkeet" TargetProperty="Value" Source="Tags.ProdReg_Spacers" />
+        <Item Target="Tuotetiedot.Reseptinimi" TargetProperty="Value" Source="Tags.ProdReg_RecipeName" />
+        <Item Target="Tuotetiedot.RiviNro" TargetProperty="Value" Source="Tags.ProdReg_RiviNro" />
+        <Item Target="Tuotetiedot.Tartuntaviive" TargetProperty="Value" Source="Tags.ProdReg_PickDelay" />
+        <Item Target="Tuotetiedot.Jättoviive" TargetProperty="Value" Source="Tags.ProdReg_PlaceDelay" />
+        <Item Target="Tuotetiedot.KaarintaOhjelma" TargetProperty="Value" Source="Tags.ProdReg_WrappingProgram" />
+      </Items>
+    </Category>
+  </Categories>
+</CrossReferences>

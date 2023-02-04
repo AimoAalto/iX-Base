@@ -1,0 +1,1103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.49.0'?>
+<nacs:ScreenWindow Topmost="False" Title="A_DesignScreen" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1280, 800" StyleName="Default" IsCacheable="True" Background="#FF106280" Width="1280" Height="800" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=CommonCF" xmlns:nac2="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.A_DesignScreen">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_Rob1_otto1" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="132.184491725784" Canvas.Top="281.014029809976" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_nostopaikka].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_nostopaikka].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nacs1:SymbolViewbox.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="-179.81364992162415" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nacs1:SymbolViewbox.RenderTransform>
+      <Canvas Width="44.0456" Height="61.0322">
+        <Path Data="F1M11.4367,32.2768L11.4367,4.01297C11.4367,2.06177,13.0185,0.480011,14.9697,0.480011L29.1016,0.480011C31.0528,0.480011,32.6346,2.0618,32.6346,4.01297L32.6346,32.2768C32.6346,34.228,34.2163,35.8098,36.1675,35.8098L39.7005,35.8098C40.6046,35.8098 41.5088,36.1547 42.1987,36.8445 43.5784,38.2242 43.5784,40.4612 42.1987,41.8409L24.4517,59.5869C23.8087,60.2304 22.928,60.5522 22.0356,60.5406 21.1432,60.529 20.239,60.1841 19.5491,59.4943L1.77005,41.757C0.492828,40.4612 0.492828,38.2242 1.87256,36.8445 2.56241,36.1547 3.46658,35.8098 4.37076,35.8098L7.90372,35.8098C9.85492,35.8098,11.4367,34.228,11.4367,32.2768z" Stretch="Fill" Width="42.4089" Height="60.0609" Canvas.Left="0.824576" Canvas.Top="0.480011">
+          <Path.Fill>
+            <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nacs1:SymbolViewbox}}" Path="SymbolColor" />
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M11.4239,32.2768L11.4239,4.01297C11.4239,2.06177,13.0056,0.480011,14.9568,0.480011L29.0887,0.480011C31.0399,0.480011,32.6217,2.0618,32.6217,4.01297L32.6217,32.2768C32.6217,34.228,34.2035,35.8098,36.1547,35.8098L39.6877,35.8098C40.5918,35.8098 41.496,36.1547 42.1859,36.8445 43.5656,38.2242 43.5656,40.4612 42.1859,41.8409L24.4389,59.5869C23.7959,60.2304 22.9152,60.5522 22.0228,60.5406 21.1304,60.529 20.2262,60.1841 19.5363,59.4943L1.75723,41.757C0.480011,40.4612 0.480011,38.2242 1.85974,36.8445 2.54956,36.1547 3.45377,35.8098 4.35791,35.8098L7.8909,35.8098C9.8421,35.8098,11.4239,34.228,11.4239,32.2768z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.960002" StrokeLineJoin="Round" Width="43.3689" Height="61.0209" Canvas.Left="0.331758" Canvas.Top="1.01626E-05">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.500597,0.00834479" EndPoint="0.500597,0.992608">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#7F000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </nacs1:SymbolViewbox>
+    <nacs1:SymbolViewbox Fill="#FF00FF00" SymbolColor="#FF00FF00" RequiresTransparency="False" ForceTransparency="False" Name="m_Rob1_jatto1" Width="25" Height="45" RenderTransformOrigin="2.01162844457067,1.45097286244298" Opacity="0.83597830309483" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="108.06427165407" Canvas.Top="102.295598296649" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_lavapaikka].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_lavapaikka].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Canvas Width="44.0456" Height="61.0322">
+        <Path Data="F1M11.4367,32.2768L11.4367,4.01297C11.4367,2.06177,13.0185,0.480011,14.9697,0.480011L29.1016,0.480011C31.0528,0.480011,32.6346,2.0618,32.6346,4.01297L32.6346,32.2768C32.6346,34.228,34.2163,35.8098,36.1675,35.8098L39.7005,35.8098C40.6046,35.8098 41.5088,36.1547 42.1987,36.8445 43.5784,38.2242 43.5784,40.4612 42.1987,41.8409L24.4517,59.5869C23.8087,60.2304 22.928,60.5522 22.0356,60.5406 21.1432,60.529 20.239,60.1841 19.5491,59.4943L1.77005,41.757C0.492828,40.4612 0.492828,38.2242 1.87256,36.8445 2.56241,36.1547 3.46658,35.8098 4.37076,35.8098L7.90372,35.8098C9.85492,35.8098,11.4367,34.228,11.4367,32.2768z" Stretch="Fill" Width="42.4089" Height="60.0609" Canvas.Left="0.824576" Canvas.Top="0.480011">
+          <Path.Fill>
+            <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nacs1:SymbolViewbox}}" Path="SymbolColor" />
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M11.4239,32.2768L11.4239,4.01297C11.4239,2.06177,13.0056,0.480011,14.9568,0.480011L29.0887,0.480011C31.0399,0.480011,32.6217,2.0618,32.6217,4.01297L32.6217,32.2768C32.6217,34.228,34.2035,35.8098,36.1547,35.8098L39.6877,35.8098C40.5918,35.8098 41.496,36.1547 42.1859,36.8445 43.5656,38.2242 43.5656,40.4612 42.1859,41.8409L24.4389,59.5869C23.7959,60.2304 22.9152,60.5522 22.0228,60.5406 21.1304,60.529 20.2262,60.1841 19.5363,59.4943L1.75723,41.757C0.480011,40.4612 0.480011,38.2242 1.85974,36.8445 2.54956,36.1547 3.45377,35.8098 4.35791,35.8098L7.8909,35.8098C9.8421,35.8098,11.4239,34.228,11.4239,32.2768z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.960002" StrokeLineJoin="Round" Width="43.3689" Height="61.0209" Canvas.Left="0.331758" Canvas.Top="1.01626E-05">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.500597,0.00834479" EndPoint="0.500597,0.992608">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#7F000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </nacs1:SymbolViewbox>
+    <nacs1:SymbolViewbox Fill="#FF00FF00" SymbolColor="#FF00FF00" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox31" Width="25" Height="45" RenderTransformOrigin="2.01162844457067,1.45097286244298" Opacity="0.83597830309483" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="156.064271654071" Canvas.Top="104.162220773355" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_lavapaikka].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_lavapaikka].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Canvas Width="44.0456" Height="61.0322">
+        <Path Data="F1M11.4367,32.2768L11.4367,4.01297C11.4367,2.06177,13.0185,0.480011,14.9697,0.480011L29.1016,0.480011C31.0528,0.480011,32.6346,2.0618,32.6346,4.01297L32.6346,32.2768C32.6346,34.228,34.2163,35.8098,36.1675,35.8098L39.7005,35.8098C40.6046,35.8098 41.5088,36.1547 42.1987,36.8445 43.5784,38.2242 43.5784,40.4612 42.1987,41.8409L24.4517,59.5869C23.8087,60.2304 22.928,60.5522 22.0356,60.5406 21.1432,60.529 20.239,60.1841 19.5491,59.4943L1.77005,41.757C0.492828,40.4612 0.492828,38.2242 1.87256,36.8445 2.56241,36.1547 3.46658,35.8098 4.37076,35.8098L7.90372,35.8098C9.85492,35.8098,11.4367,34.228,11.4367,32.2768z" Stretch="Fill" Width="42.4089" Height="60.0609" Canvas.Left="0.824576" Canvas.Top="0.480011">
+          <Path.Fill>
+            <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nacs1:SymbolViewbox}}" Path="SymbolColor" />
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M11.4239,32.2768L11.4239,4.01297C11.4239,2.06177,13.0056,0.480011,14.9568,0.480011L29.0887,0.480011C31.0399,0.480011,32.6217,2.0618,32.6217,4.01297L32.6217,32.2768C32.6217,34.228,34.2035,35.8098,36.1547,35.8098L39.6877,35.8098C40.5918,35.8098 41.496,36.1547 42.1859,36.8445 43.5656,38.2242 43.5656,40.4612 42.1859,41.8409L24.4389,59.5869C23.7959,60.2304 22.9152,60.5522 22.0228,60.5406 21.1304,60.529 20.2262,60.1841 19.5363,59.4943L1.75723,41.757C0.480011,40.4612 0.480011,38.2242 1.85974,36.8445 2.54956,36.1547 3.45377,35.8098 4.35791,35.8098L7.8909,35.8098C9.8421,35.8098,11.4239,34.228,11.4239,32.2768z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.960002" StrokeLineJoin="Round" Width="43.3689" Height="61.0209" Canvas.Left="0.331758" Canvas.Top="1.01626E-05">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.500597,0.00834479" EndPoint="0.500597,0.992608">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#7F000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </nacs1:SymbolViewbox>
+    <nacs1:SymbolViewbox Fill="#FF00FF00" SymbolColor="#FF00FF00" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox39" Width="25" Height="45" RenderTransformOrigin="2.01162844457067,1.45097286244298" Opacity="0.83597830309483" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="210.064271654071" Canvas.Top="104.162220773355" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob3_lavapaikka].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob3_lavapaikka].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Canvas Width="44.0456" Height="61.0322">
+        <Path Data="F1M11.4367,32.2768L11.4367,4.01297C11.4367,2.06177,13.0185,0.480011,14.9697,0.480011L29.1016,0.480011C31.0528,0.480011,32.6346,2.0618,32.6346,4.01297L32.6346,32.2768C32.6346,34.228,34.2163,35.8098,36.1675,35.8098L39.7005,35.8098C40.6046,35.8098 41.5088,36.1547 42.1987,36.8445 43.5784,38.2242 43.5784,40.4612 42.1987,41.8409L24.4517,59.5869C23.8087,60.2304 22.928,60.5522 22.0356,60.5406 21.1432,60.529 20.239,60.1841 19.5491,59.4943L1.77005,41.757C0.492828,40.4612 0.492828,38.2242 1.87256,36.8445 2.56241,36.1547 3.46658,35.8098 4.37076,35.8098L7.90372,35.8098C9.85492,35.8098,11.4367,34.228,11.4367,32.2768z" Stretch="Fill" Width="42.4089" Height="60.0609" Canvas.Left="0.824576" Canvas.Top="0.480011">
+          <Path.Fill>
+            <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nacs1:SymbolViewbox}}" Path="SymbolColor" />
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M11.4239,32.2768L11.4239,4.01297C11.4239,2.06177,13.0056,0.480011,14.9568,0.480011L29.0887,0.480011C31.0399,0.480011,32.6217,2.0618,32.6217,4.01297L32.6217,32.2768C32.6217,34.228,34.2035,35.8098,36.1547,35.8098L39.6877,35.8098C40.5918,35.8098 41.496,36.1547 42.1859,36.8445 43.5656,38.2242 43.5656,40.4612 42.1859,41.8409L24.4389,59.5869C23.7959,60.2304 22.9152,60.5522 22.0228,60.5406 21.1304,60.529 20.2262,60.1841 19.5363,59.4943L1.75723,41.757C0.480011,40.4612 0.480011,38.2242 1.85974,36.8445 2.54956,36.1547 3.45377,35.8098 4.35791,35.8098L7.8909,35.8098C9.8421,35.8098,11.4239,34.228,11.4239,32.2768z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.960002" StrokeLineJoin="Round" Width="43.3689" Height="61.0209" Canvas.Left="0.331758" Canvas.Top="1.01626E-05">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.500597,0.00834479" EndPoint="0.500597,0.992608">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#7F000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </nacs1:SymbolViewbox>
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox47" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="183.922251946416" Canvas.Top="281.014029809976" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_nostopaikka].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_nostopaikka].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nacs1:SymbolViewbox.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="-179.81364992162415" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nacs1:SymbolViewbox.RenderTransform>
+      <Canvas Width="44.0456" Height="61.0322">
+        <Path Data="F1M11.4367,32.2768L11.4367,4.01297C11.4367,2.06177,13.0185,0.480011,14.9697,0.480011L29.1016,0.480011C31.0528,0.480011,32.6346,2.0618,32.6346,4.01297L32.6346,32.2768C32.6346,34.228,34.2163,35.8098,36.1675,35.8098L39.7005,35.8098C40.6046,35.8098 41.5088,36.1547 42.1987,36.8445 43.5784,38.2242 43.5784,40.4612 42.1987,41.8409L24.4517,59.5869C23.8087,60.2304 22.928,60.5522 22.0356,60.5406 21.1432,60.529 20.239,60.1841 19.5491,59.4943L1.77005,41.757C0.492828,40.4612 0.492828,38.2242 1.87256,36.8445 2.56241,36.1547 3.46658,35.8098 4.37076,35.8098L7.90372,35.8098C9.85492,35.8098,11.4367,34.228,11.4367,32.2768z" Stretch="Fill" Width="42.4089" Height="60.0609" Canvas.Left="0.824576" Canvas.Top="0.480011">
+          <Path.Fill>
+            <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nacs1:SymbolViewbox}}" Path="SymbolColor" />
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M11.4239,32.2768L11.4239,4.01297C11.4239,2.06177,13.0056,0.480011,14.9568,0.480011L29.0887,0.480011C31.0399,0.480011,32.6217,2.0618,32.6217,4.01297L32.6217,32.2768C32.6217,34.228,34.2035,35.8098,36.1547,35.8098L39.6877,35.8098C40.5918,35.8098 41.496,36.1547 42.1859,36.8445 43.5656,38.2242 43.5656,40.4612 42.1859,41.8409L24.4389,59.5869C23.7959,60.2304 22.9152,60.5522 22.0228,60.5406 21.1304,60.529 20.2262,60.1841 19.5363,59.4943L1.75723,41.757C0.480011,40.4612 0.480011,38.2242 1.85974,36.8445 2.54956,36.1547 3.45377,35.8098 4.35791,35.8098L7.8909,35.8098C9.8421,35.8098,11.4239,34.228,11.4239,32.2768z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.960002" StrokeLineJoin="Round" Width="43.3689" Height="61.0209" Canvas.Left="0.331758" Canvas.Top="1.01626E-05">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.500597,0.00834479" EndPoint="0.500597,0.992608">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#7F000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </nacs1:SymbolViewbox>
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox55" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="235.570676490363" Canvas.Top="281.014029809976" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob3_nostopaikka].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob3_nostopaikka].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nacs1:SymbolViewbox.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="-179.81364992162415" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nacs1:SymbolViewbox.RenderTransform>
+      <Canvas Width="44.0456" Height="61.0322">
+        <Path Data="F1M11.4367,32.2768L11.4367,4.01297C11.4367,2.06177,13.0185,0.480011,14.9697,0.480011L29.1016,0.480011C31.0528,0.480011,32.6346,2.0618,32.6346,4.01297L32.6346,32.2768C32.6346,34.228,34.2163,35.8098,36.1675,35.8098L39.7005,35.8098C40.6046,35.8098 41.5088,36.1547 42.1987,36.8445 43.5784,38.2242 43.5784,40.4612 42.1987,41.8409L24.4517,59.5869C23.8087,60.2304 22.928,60.5522 22.0356,60.5406 21.1432,60.529 20.239,60.1841 19.5491,59.4943L1.77005,41.757C0.492828,40.4612 0.492828,38.2242 1.87256,36.8445 2.56241,36.1547 3.46658,35.8098 4.37076,35.8098L7.90372,35.8098C9.85492,35.8098,11.4367,34.228,11.4367,32.2768z" Stretch="Fill" Width="42.4089" Height="60.0609" Canvas.Left="0.824576" Canvas.Top="0.480011">
+          <Path.Fill>
+            <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nacs1:SymbolViewbox}}" Path="SymbolColor" />
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M11.4239,32.2768L11.4239,4.01297C11.4239,2.06177,13.0056,0.480011,14.9568,0.480011L29.0887,0.480011C31.0399,0.480011,32.6217,2.0618,32.6217,4.01297L32.6217,32.2768C32.6217,34.228,34.2035,35.8098,36.1547,35.8098L39.6877,35.8098C40.5918,35.8098 41.496,36.1547 42.1859,36.8445 43.5656,38.2242 43.5656,40.4612 42.1859,41.8409L24.4389,59.5869C23.7959,60.2304 22.9152,60.5522 22.0228,60.5406 21.1304,60.529 20.2262,60.1841 19.5363,59.4943L1.75723,41.757C0.480011,40.4612 0.480011,38.2242 1.85974,36.8445 2.54956,36.1547 3.45377,35.8098 4.35791,35.8098L7.8909,35.8098C9.8421,35.8098,11.4239,34.228,11.4239,32.2768z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.960002" StrokeLineJoin="Round" Width="43.3689" Height="61.0209" Canvas.Left="0.331758" Canvas.Top="1.01626E-05">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.500597,0.00834479" EndPoint="0.500597,0.992608">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#7F000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </nacs1:SymbolViewbox>
+    <nac:Label MultiLine="True" Text="Normal pallet change" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text30" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="306.520772879436" Canvas.Top="63.596952730362" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Text="Rob3" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text38" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="210.064271654071" Canvas.Top="74.2536193970284" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label Text="Rob1" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text39" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="108.06427165407" Canvas.Top="74.2536193970284" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Text="Rob2" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text40" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="154.289647252265" Canvas.Top="241.081061754042" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Text="Rob3" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text41" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="211.482980585597" Canvas.Top="241.081061754042" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label Text="Rob1" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text42" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="19" Canvas.Left="109.482980585597" Canvas.Top="241.081061754042" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Text="Rob2" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text43" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="152.870938320738" Canvas.Top="74.2536193970284" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label MultiLine="True" Text="cardb. pick perm." Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text44" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="22" Canvas.Left="758.775443407814" Canvas.Top="64.596952730362" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label MultiLine="True" Text="Place perm." Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text45" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="23" Canvas.Left="637.775051781613" Canvas.Top="64.596952730362" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label MultiLine="True" Text="Pick pallet change" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text46" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="24" Canvas.Left="953.610323416012" Canvas.Top="63.596952730362" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label MultiLine="True" Text="pick permission" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text47" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="25" Canvas.Left="493.413647468129" Canvas.Top="64.596952730362" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Group Name="m_Group_PlacePerm_1_btn" Width="40" Height="40" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="27" Canvas.Left="654.988058985279" Canvas.Top="107.008495038524">
+      <nac:Button CornerRadius="5,5,5,5" ImageStretch="True" ImageHeight="40" ImageMargin="0,0,0,0" Text="" LockAspectRatio="True" TextMargin="0,0,0,0" RequiresTransparency="True" SymbolName="orfer_permission_selectedoff" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderThickness="0,0,0,0" Background="#FFBBBBBB" Foreground="#FF000000" FontSize="24" Name="m_Button" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="0" Style="{nac2:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_Jattolupa1_Valinta].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval>
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_permission_selectedoff" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nac:Button.SymbolIntervalMapper>
+        <nac:Button.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Button.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Toggle Tag">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="ToggleTag" ObjectName="Tags.Line1_PLC_Jattolupa1_Valinta" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacs1:Symbol MultiPicture="True" Name="m_MultiPicture" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
+        <nacs1:Symbol.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nacs1:Symbol.Resources>
+        <nacs1:Symbol.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_Jattolupa1_Tila].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True" />
+        </nacs1:Symbol.Value>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_Jattolupa1_Valinta].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+        <nacs1:Symbol.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval>
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_permission_down_off" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="1" End="1">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_permission_down_on" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nacs1:Symbol.SymbolIntervalMapper>
+      </nacs1:Symbol>
+    </nac:Group>
+    <nac:Group Name="m_Group_PickPerm_1_btn" Width="40" Height="40" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="28" Canvas.Left="527.008492697543" Canvas.Top="107.008495038524">
+      <nac:Button CornerRadius="5,5,5,5" ImageStretch="True" ImageHeight="40" ImageMargin="0,0,0,0" Text="" LockAspectRatio="True" TextMargin="0,0,0,0" RequiresTransparency="True" SymbolName="orfer_permission_selectedoff" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderThickness="0,0,0,0" Background="#FFBBBBBB" Foreground="#FF000000" FontSize="24" Name="m_Button1" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="0" Style="{nac2:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_Ottolupa1_Valinta].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval>
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_permission_selectedoff" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nac:Button.SymbolIntervalMapper>
+        <nac:Button.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Button.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Toggle Tag">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="ToggleTag" ObjectName="Tags.Line1_PLC_Jattolupa1_Valinta" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacs1:Symbol MultiPicture="True" Name="m_MultiPicture1" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
+        <nacs1:Symbol.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nacs1:Symbol.Resources>
+        <nacs1:Symbol.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_Ottolupa1_Tila].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True" />
+        </nacs1:Symbol.Value>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_Ottolupa1_Valinta].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+        <nacs1:Symbol.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval>
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_permission_upward_off" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="1" End="1">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_permission_upward_on" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nacs1:Symbol.SymbolIntervalMapper>
+      </nacs1:Symbol>
+    </nac:Group>
+    <nac:Group Name="m_Group_CartonPickPerm_1_btn" Width="40" Height="40" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="29" Canvas.Left="794.725720371568" Canvas.Top="107.008495038524">
+      <nac:Button CornerRadius="5,5,5,5" ImageStretch="True" ImageHeight="40" ImageMargin="0,0,0,0" Text="" LockAspectRatio="True" TextMargin="0,0,0,0" RequiresTransparency="True" SymbolName="orfer_permission_selectedoff" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderThickness="0,0,0,0" Background="#FFBBBBBB" Foreground="#FF000000" FontSize="24" Name="m_Button2" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="0" Style="{nac2:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_Pahvi_Ottolupa1_Valinta].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval>
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_permission_selectedoff" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nac:Button.SymbolIntervalMapper>
+        <nac:Button.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Button.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Toggle Tag">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="ToggleTag" ObjectName="Tags.Line1_PLC_Jattolupa1_Valinta" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacs1:Symbol MultiPicture="True" Name="m_MultiPicture2" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
+        <nacs1:Symbol.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nacs1:Symbol.Resources>
+        <nacs1:Symbol.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_Pahvi_Ottolupa1_Tila].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True" />
+        </nacs1:Symbol.Value>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_Pahvi_Ottolupa1_Valinta].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+        <nacs1:Symbol.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval>
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_permission_upward_off" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="1" End="1">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_permission_upward_on" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nacs1:Symbol.SymbolIntervalMapper>
+      </nacs1:Symbol>
+    </nac:Group>
+    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Quick functions" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text4" Width="120.283187837967" Height="25.53" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="19" Canvas.Left="1018.89587533355" Canvas.Top="300.524566013435" nacsd:EditorProperties.IsHidden="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle16" Width="214.600718347403" Height="174.75744679332" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="1000.42615275272" Canvas.Top="293.819963186236" nacsd:EditorProperties.IsHidden="False">
+      <nacc1:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="Raised" Width="0" />
+      </nacc1:Rectangle.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nacc1:Rectangle>
+    <nac:Group Name="m_Group_ShowPall_btn" Width="140" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="30" Canvas.Left="1033.04678631729" Canvas.Top="332.908077858475">
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,10" Text="New pallet" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="45,2,2,2" RequiresTransparency="True" SymbolName="orfer_newpallet" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_NewPall_btn" Width="140" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="10" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsHidden="False" Style="{nac2:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Toggle Tag">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="ToggleTag" ObjectName="Tags.HMI_Overview_pallet_resets" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle" Width="136" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="1.95321368270652" Canvas.Top="2" />
+    </nac:Group>
+    <nac:Group Name="m_Group_ShowResets_btn" Width="140" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="31" Canvas.Left="1033.04678631729" Canvas.Top="396.880560303886">
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle1" Width="136" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="1.95321368270652" Canvas.Top="2" />
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="Resets" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="45,2,2,2" RequiresTransparency="True" SymbolName="orfer_reset" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Resets" Width="140" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="13" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsHidden="False" Style="{nac2:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Toggle Tag">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="ToggleTag" ObjectName="Tags.HMI_Overview_track_resets" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+    </nac:Group>
+    <nac:Label MultiLine="True" Text="Reset" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="39" Canvas.Left="1148.19587248761" Canvas.Top="62.5177050777772" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Group Name="m_Group_Reset_btn" Width="70" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="40" Canvas.Left="1137.33809282133" Canvas.Top="107.008495038524">
+      <nac:Button ImageMargin="10,10,10,10" Text="" RequiresTransparency="True" SymbolName="orfer_reset" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" Name="m_Button_Reset" Width="70" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="35" Canvas.Left="0" Canvas.Top="0" Style="{nac2:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_track_resets].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:MultiAction Name="Multi Action">
+              <nata:MultiAction.Actions>
+                <nai:ActionList>
+                  <nata:Action Name="Set Analog">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Line1_PLC_ResetCode" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                        <nata:ActionMethodInfo.ActionParameterInfo>
+                          <nai:ActionParameterInfoList>
+                            <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                              <nata:ActionParameterInfo.Value>
+                                <s:Int32>111</s:Int32>
+                              </nata:ActionParameterInfo.Value>
+                            </nata:ActionParameterInfo>
+                          </nai:ActionParameterInfoList>
+                        </nata:ActionMethodInfo.ActionParameterInfo>
+                      </nata:ActionMethodInfo>
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Reset Tag">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Overview_track_resets" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                </nai:ActionList>
+              </nata:MultiAction.Actions>
+              <nata:MultiAction.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:MultiAction.ActionMethodInfo>
+            </nata:MultiAction>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle6" Width="66" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="34" Canvas.Left="2.00849269754303" Canvas.Top="2">
+        <nacc1:Rectangle.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nacc1:Rectangle.Resources>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_track_resets].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:Group Name="m_Group_PallChange_btn" Width="70" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="41" Canvas.Left="364.602293146107" Canvas.Top="101.662220773356">
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,10" Text="1" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Right" TextMargin="2,2,7,2" RequiresTransparency="True" SymbolName="orfer_newpallet" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_Button_NewPall" Width="70" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="5" Canvas.Left="0" Canvas.Top="0" Style="{nac2:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_pallet_resets].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:MultiAction Name="Multi Action">
+              <nata:MultiAction.Actions>
+                <nai:ActionList>
+                  <nata:Action Name="Set Analog">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_PalletChange" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                        <nata:ActionMethodInfo.ActionParameterInfo>
+                          <nai:ActionParameterInfoList>
+                            <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                              <nata:ActionParameterInfo.Value>
+                                <s:Int16>1</s:Int16>
+                              </nata:ActionParameterInfo.Value>
+                            </nata:ActionParameterInfo>
+                          </nai:ActionParameterInfoList>
+                        </nata:ActionMethodInfo.ActionParameterInfo>
+                      </nata:ActionMethodInfo>
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Show Screen">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="Show" ObjectName="Popup_NewPallet" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.0.463.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                        <nata:ActionMethodInfo.ActionParameterInfo>
+                          <nai:ActionParameterInfoList>
+                            <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                          </nai:ActionParameterInfoList>
+                        </nata:ActionMethodInfo.ActionParameterInfo>
+                      </nata:ActionMethodInfo>
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Set Tag">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                </nai:ActionList>
+              </nata:MultiAction.Actions>
+              <nata:MultiAction.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:MultiAction.ActionMethodInfo>
+            </nata:MultiAction>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle5" Width="66" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="2.09980298947397" Canvas.Top="1.9999999999996">
+        <nacc1:Rectangle.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nacc1:Rectangle.Resources>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_pallet_resets].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:Group Name="m_Group_PickPallChange_btn" Width="69.9999999999999" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="42" Canvas.Left="981.04330736231" Canvas.Top="101.662220773356">
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,10" Text="1" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Right" TextMargin="2,2,7,2" RequiresTransparency="True" SymbolName="orfer_newpallet" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_Button_PickPallChange" Width="70" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="7" Canvas.Left="0" Canvas.Top="0" Style="{nac2:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_pallet_resets].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:MultiAction Name="Multi Action">
+              <nata:MultiAction.Actions>
+                <nai:ActionList>
+                  <nata:Action Name="Set Analog">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_PalletChange" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                        <nata:ActionMethodInfo.ActionParameterInfo>
+                          <nai:ActionParameterInfoList>
+                            <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                              <nata:ActionParameterInfo.Value>
+                                <s:Int16>1</s:Int16>
+                              </nata:ActionParameterInfo.Value>
+                            </nata:ActionParameterInfo>
+                          </nai:ActionParameterInfoList>
+                        </nata:ActionMethodInfo.ActionParameterInfo>
+                      </nata:ActionMethodInfo>
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Show Screen">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="Show" ObjectName="Popup_NewPickPallet" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.0.463.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                        <nata:ActionMethodInfo.ActionParameterInfo>
+                          <nai:ActionParameterInfoList>
+                            <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                          </nai:ActionParameterInfoList>
+                        </nata:ActionMethodInfo.ActionParameterInfo>
+                      </nata:ActionMethodInfo>
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Set Tag">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                </nai:ActionList>
+              </nata:MultiAction.Actions>
+              <nata:MultiAction.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:MultiAction.ActionMethodInfo>
+            </nata:MultiAction>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle3" Width="66" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="1.95669263768991" Canvas.Top="2.00000000000001">
+        <nacc1:Rectangle.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nacc1:Rectangle.Resources>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_pallet_resets].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="132.257604987404" Canvas.Top="436.854064563279" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="11" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_nostopaikka].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_nostopaikka].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nacs1:SymbolViewbox.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="-179.81364992162415" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nacs1:SymbolViewbox.RenderTransform>
+      <Canvas Width="44.0456" Height="61.0322">
+        <Path Data="F1M11.4367,32.2768L11.4367,4.01297C11.4367,2.06177,13.0185,0.480011,14.9697,0.480011L29.1016,0.480011C31.0528,0.480011,32.6346,2.0618,32.6346,4.01297L32.6346,32.2768C32.6346,34.228,34.2163,35.8098,36.1675,35.8098L39.7005,35.8098C40.6046,35.8098 41.5088,36.1547 42.1987,36.8445 43.5784,38.2242 43.5784,40.4612 42.1987,41.8409L24.4517,59.5869C23.8087,60.2304 22.928,60.5522 22.0356,60.5406 21.1432,60.529 20.239,60.1841 19.5491,59.4943L1.77005,41.757C0.492828,40.4612 0.492828,38.2242 1.87256,36.8445 2.56241,36.1547 3.46658,35.8098 4.37076,35.8098L7.90372,35.8098C9.85492,35.8098,11.4367,34.228,11.4367,32.2768z" Stretch="Fill" Width="42.4089" Height="60.0609" Canvas.Left="0.824576" Canvas.Top="0.480011">
+          <Path.Fill>
+            <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nacs1:SymbolViewbox}}" Path="SymbolColor" />
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M11.4239,32.2768L11.4239,4.01297C11.4239,2.06177,13.0056,0.480011,14.9568,0.480011L29.0887,0.480011C31.0399,0.480011,32.6217,2.0618,32.6217,4.01297L32.6217,32.2768C32.6217,34.228,34.2035,35.8098,36.1547,35.8098L39.6877,35.8098C40.5918,35.8098 41.496,36.1547 42.1859,36.8445 43.5656,38.2242 43.5656,40.4612 42.1859,41.8409L24.4389,59.5869C23.7959,60.2304 22.9152,60.5522 22.0228,60.5406 21.1304,60.529 20.2262,60.1841 19.5363,59.4943L1.75723,41.757C0.480011,40.4612 0.480011,38.2242 1.85974,36.8445 2.54956,36.1547 3.45377,35.8098 4.35791,35.8098L7.8909,35.8098C9.8421,35.8098,11.4239,34.228,11.4239,32.2768z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.960002" StrokeLineJoin="Round" Width="43.3689" Height="61.0209" Canvas.Left="0.331758" Canvas.Top="1.01626E-05">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.500597,0.00834479" EndPoint="0.500597,0.992608">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#7F000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </nacs1:SymbolViewbox>
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox1" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="44" Canvas.Left="183.995365208036" Canvas.Top="436.854064563279" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="11" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_nostopaikka].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_nostopaikka].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nacs1:SymbolViewbox.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="-179.81364992162415" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nacs1:SymbolViewbox.RenderTransform>
+      <Canvas Width="44.0456" Height="61.0322">
+        <Path Data="F1M11.4367,32.2768L11.4367,4.01297C11.4367,2.06177,13.0185,0.480011,14.9697,0.480011L29.1016,0.480011C31.0528,0.480011,32.6346,2.0618,32.6346,4.01297L32.6346,32.2768C32.6346,34.228,34.2163,35.8098,36.1675,35.8098L39.7005,35.8098C40.6046,35.8098 41.5088,36.1547 42.1987,36.8445 43.5784,38.2242 43.5784,40.4612 42.1987,41.8409L24.4517,59.5869C23.8087,60.2304 22.928,60.5522 22.0356,60.5406 21.1432,60.529 20.239,60.1841 19.5491,59.4943L1.77005,41.757C0.492828,40.4612 0.492828,38.2242 1.87256,36.8445 2.56241,36.1547 3.46658,35.8098 4.37076,35.8098L7.90372,35.8098C9.85492,35.8098,11.4367,34.228,11.4367,32.2768z" Stretch="Fill" Width="42.4089" Height="60.0609" Canvas.Left="0.824576" Canvas.Top="0.480011">
+          <Path.Fill>
+            <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nacs1:SymbolViewbox}}" Path="SymbolColor" />
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M11.4239,32.2768L11.4239,4.01297C11.4239,2.06177,13.0056,0.480011,14.9568,0.480011L29.0887,0.480011C31.0399,0.480011,32.6217,2.0618,32.6217,4.01297L32.6217,32.2768C32.6217,34.228,34.2035,35.8098,36.1547,35.8098L39.6877,35.8098C40.5918,35.8098 41.496,36.1547 42.1859,36.8445 43.5656,38.2242 43.5656,40.4612 42.1859,41.8409L24.4389,59.5869C23.7959,60.2304 22.9152,60.5522 22.0228,60.5406 21.1304,60.529 20.2262,60.1841 19.5363,59.4943L1.75723,41.757C0.480011,40.4612 0.480011,38.2242 1.85974,36.8445 2.54956,36.1547 3.45377,35.8098 4.35791,35.8098L7.8909,35.8098C9.8421,35.8098,11.4239,34.228,11.4239,32.2768z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.960002" StrokeLineJoin="Round" Width="43.3689" Height="61.0209" Canvas.Left="0.331758" Canvas.Top="1.01626E-05">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.500597,0.00834479" EndPoint="0.500597,0.992608">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#7F000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </nacs1:SymbolViewbox>
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox2" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="45" Canvas.Left="235.643789751982" Canvas.Top="436.854064563279" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="11" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob3_nostopaikka].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob3_nostopaikka].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nacs1:SymbolViewbox.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="-179.81364992162415" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nacs1:SymbolViewbox.RenderTransform>
+      <Canvas Width="44.0456" Height="61.0322">
+        <Path Data="F1M11.4367,32.2768L11.4367,4.01297C11.4367,2.06177,13.0185,0.480011,14.9697,0.480011L29.1016,0.480011C31.0528,0.480011,32.6346,2.0618,32.6346,4.01297L32.6346,32.2768C32.6346,34.228,34.2163,35.8098,36.1675,35.8098L39.7005,35.8098C40.6046,35.8098 41.5088,36.1547 42.1987,36.8445 43.5784,38.2242 43.5784,40.4612 42.1987,41.8409L24.4517,59.5869C23.8087,60.2304 22.928,60.5522 22.0356,60.5406 21.1432,60.529 20.239,60.1841 19.5491,59.4943L1.77005,41.757C0.492828,40.4612 0.492828,38.2242 1.87256,36.8445 2.56241,36.1547 3.46658,35.8098 4.37076,35.8098L7.90372,35.8098C9.85492,35.8098,11.4367,34.228,11.4367,32.2768z" Stretch="Fill" Width="42.4089" Height="60.0609" Canvas.Left="0.824576" Canvas.Top="0.480011">
+          <Path.Fill>
+            <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nacs1:SymbolViewbox}}" Path="SymbolColor" />
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M11.4239,32.2768L11.4239,4.01297C11.4239,2.06177,13.0056,0.480011,14.9568,0.480011L29.0887,0.480011C31.0399,0.480011,32.6217,2.0618,32.6217,4.01297L32.6217,32.2768C32.6217,34.228,34.2035,35.8098,36.1547,35.8098L39.6877,35.8098C40.5918,35.8098 41.496,36.1547 42.1859,36.8445 43.5656,38.2242 43.5656,40.4612 42.1859,41.8409L24.4389,59.5869C23.7959,60.2304 22.9152,60.5522 22.0228,60.5406 21.1304,60.529 20.2262,60.1841 19.5363,59.4943L1.75723,41.757C0.480011,40.4612 0.480011,38.2242 1.85974,36.8445 2.54956,36.1547 3.45377,35.8098 4.35791,35.8098L7.8909,35.8098C9.8421,35.8098,11.4239,34.228,11.4239,32.2768z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.960002" StrokeLineJoin="Round" Width="43.3689" Height="61.0209" Canvas.Left="0.331758" Canvas.Top="1.01626E-05">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.500597,0.00834479" EndPoint="0.500597,0.992608">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#7F000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </nacs1:SymbolViewbox>
+    <nac:Label Text="Rob2" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="46" Canvas.Left="154.289647252265" Canvas.Top="396.880560303886" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Text="Rob3" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text3" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="47" Canvas.Left="211.482980585597" Canvas.Top="396.880560303886" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label Text="Rob1" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text5" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="48" Canvas.Left="109.482980585597" Canvas.Top="396.880560303886" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label MultiLine="True" Text="Placing on pallet indicator" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text2" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="49" Canvas.Left="90.4499488425785" Canvas.Top="41.4401529883747" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label MultiLine="True" Text="Picking from grouping indicator" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text6" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="50" Canvas.Left="79.2952033861007" Canvas.Top="196.084110901012" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label MultiLine="True" Text="Picking carton indicator" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text7" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="51" Canvas.Left="79.3683166477204" Canvas.Top="358.568601978991" nacsd:EditorProperties.IsLocked="False">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

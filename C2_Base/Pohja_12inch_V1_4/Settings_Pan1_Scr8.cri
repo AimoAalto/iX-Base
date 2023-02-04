@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Settings_Pan1_Scr8.Group1Production.Production_ItemBatch" TargetProperty="Value" Source="Tags.OEE_ItemBatch" />
+        <Item Target="Settings_Pan1_Scr8.Group1Production.Production_ItemName" TargetProperty="Value" Source="Tags.OEE_ItemIName" />
+        <Item Target="Settings_Pan1_Scr8.Group1Production.Production_ItemId" TargetProperty="Value" Source="Tags.OEE_ItemID" />
+        <Item Target="Settings_Pan1_Scr8.GroupSpeed.AnalogNumeric14" TargetProperty="Value" Source="Tags.OEE_LastCapaciy" />
+        <Item Target="Settings_Pan1_Scr8.GroupSpeed.AnalogNumeric13" TargetProperty="Value" Source="Tags.OEE_LastMeasuredSpeed" />
+        <Item Target="Settings_Pan1_Scr8.GroupSpeed.AnalogNumeric12" TargetProperty="Value" Source="Tags.OEE_LastNominalSpeed" />
+        <Item Target="Settings_Pan1_Scr8.GroupSpeed.ProductionCapacity" TargetProperty="Value" Source="Tags.OEE_Capacity" />
+        <Item Target="Settings_Pan1_Scr8.GroupSpeed.ProductionMeasuredSpeed" TargetProperty="Value" Source="Tags.OEE_MeasuredSpeed" />
+        <Item Target="Settings_Pan1_Scr8.GroupSpeed.ProductionNominalSpeed" TargetProperty="Value" Source="Tags.OEE_NominalSpeed" />
+        <Item Target="Settings_Pan1_Scr8.GroupSendInfo.OEE_Connected" TargetProperty="IsChecked" Source="Tags.OEE_Connected" />
+        <Item Target="Settings_Pan1_Scr8.GroupSendInfo.AnalogNumeric24" TargetProperty="Value" Source="Tags.OEE_LastMsg" />
+        <Item Target="Settings_Pan1_Scr8.GroupSendInfo.AnalogNumeric15" TargetProperty="Value" Source="Tags.OEE_SendBufferCount" />
+        <Item Target="Settings_Pan1_Scr8.GroupSendInfo.OEENextSendCountDown" TargetProperty="Value" Source="Tags.OEE_NextSendCountDown" />
+        <Item Target="Settings_Pan1_Scr8.GroupSendInfo.OEELastSend" TargetProperty="Value" Source="Tags.OEE_LastSend" />
+        <Item Target="Settings_Pan1_Scr8.AnalogNumeric11" TargetProperty="Value" Source="Tags.OEE_LastChecksum" />
+        <Item Target="Settings_Pan1_Scr8.AnalogNumeric10" TargetProperty="Value" Source="Tags.OEE_LastEfficient" />
+        <Item Target="Settings_Pan1_Scr8.AnalogNumeric9" TargetProperty="Value" Source="Tags.OEE_LastDowntime" />
+        <Item Target="Settings_Pan1_Scr8.AnalogNumeric8" TargetProperty="Value" Source="Tags.OEE_LastUptime" />
+        <Item Target="Settings_Pan1_Scr8.TimesChecksum" TargetProperty="Value" Source="Tags.OEE_Checksum" />
+        <Item Target="Settings_Pan1_Scr8.ProductionErrortime" TargetProperty="Value" Source="Tags.OEE_Efficient" />
+        <Item Target="Settings_Pan1_Scr8.ProductionDowntime" TargetProperty="Value" Source="Tags.OEE_Downtime" />
+        <Item Target="Settings_Pan1_Scr8.ProductionUptime" TargetProperty="Value" Source="Tags.OEE_Uptime" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.AnalogNumeric7" TargetProperty="Value" Source="Tags.OEE_LastDefected4" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.AnalogNumeric6" TargetProperty="Value" Source="Tags.OEE_LastDefected3" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.AnalogNumeric5" TargetProperty="Value" Source="Tags.OEE_LastDefected2" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.AnalogNumeric4" TargetProperty="Value" Source="Tags.OEE_LastDefected1" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.AnalogNumeric3" TargetProperty="Value" Source="Tags.OEE_LastProduced4" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.AnalogNumeric2" TargetProperty="Value" Source="Tags.OEE_LastProduced3" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.AnalogNumeric1" TargetProperty="Value" Source="Tags.OEE_LastProduced2" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.AnalogNumeric" TargetProperty="Value" Source="Tags.OEE_LastProduced1" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.OEECounter4_Defected" TargetProperty="Value" Source="Tags.OEE_Defected4" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.OEECounter4_Produced" TargetProperty="Value" Source="Tags.OEE_Produced4" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.OEECounter3_Defected" TargetProperty="Value" Source="Tags.OEE_Defected3" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.OEECounter3_Produced" TargetProperty="Value" Source="Tags.OEE_Produced3" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.OEECounter2_Defected" TargetProperty="Value" Source="Tags.OEE_Defected2" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.OEECounter2_Produced" TargetProperty="Value" Source="Tags.OEE_Produced2" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.OEECounter1_Defected" TargetProperty="Value" Source="Tags.OEE_Defected1" />
+        <Item Target="Settings_Pan1_Scr8.GroupCounters.OEECounter1_Produced" TargetProperty="Value" Source="Tags.OEE_Produced1" />
+        <Item Target="Settings_Pan1_Scr8.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>124</ObjectsCount>
+          <ScreenName>Settings_Pan1_Scr8</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="10708">
+          <ScreenName>Settings_Pan1_Scr8</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.49.0'?>
+<nacs:ScreenWindow Topmost="False" Title="Manual_Pan1_Scr4" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1280, 800" ScreenID="10404" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1280" Height="800" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" x:Class="Neo.ApplicationFramework.Generated.Manual_Pan1_Scr4">
+  <nacs:ScreenWindow.TemplateScreen>
+    <nacs1:TemplateScreen Name="Template_Manual" RenderMode="Background" />
+  </nacs:ScreenWindow.TemplateScreen>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104" />
+</nacs:ScreenWindow>

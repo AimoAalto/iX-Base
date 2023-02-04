@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items>
+        <Item Target="Popup_ProdCtrl_Cardboards.Kerros16" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Lavakerros9" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros1" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer1" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros2" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer2" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros3" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer3" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros4" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer4" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros5" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer5" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros6" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer6" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros7" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer7" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros8" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer8" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros9" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros11" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros12" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros13" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros14" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros15" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros16" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer10" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item Target="Popup_ProdCtrl_Cardboards.Kerros16" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.ProdCtrl_Lavakerrokset" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros10" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item Target="Popup_ProdCtrl_Cardboards.Group_Send_btn.Button_Laheta" TargetProperty="TextValue" Source="Tags.HMI_ProdCtrl_Cardboards_Lavapaikka" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>37</ObjectsCount>
+          <ScreenName>Popup_ProdCtrl_Cardboards</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Popup_ProdCtrl_Cardboards</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Lavapaikka" />
+        <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Pahvit" />
+        <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_MaxKerros" />
+        <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Kerrosasetus" />
+        <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_ProdReg_ValikeKerrosNro" />
+        <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_ProdReg_ValikeKerrosValikkeet" />
+        <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros1" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer1" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros2" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer2" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros3" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer3" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros4" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer4" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros5" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer5" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros6" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer6" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros7" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer7" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros8" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer8" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros9" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros11" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros12" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros13" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros14" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros15" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros16" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer10" Event="MouseDown" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdCtrl_Cardboards.Kerros10" TargetProperty="Actions" Source="Tags.HMI_ProdCtrl_Temp_Spacer9" Event="MouseDown" Action="Toggle Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Popup_ProdCtrl_Cardboards.Group_Send_btn.Button_Laheta" Source="orfer_send" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_ProdCtrl_Cardboards.Group_Close_btn.Button_Close" Source="orfer_cancel" Width="36" Height="36" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

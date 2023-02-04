@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Popup_Settings_ValikeEdit.AnalogNumeric1" TargetProperty="Value" Source="Tags.HMI_ProdReg_ValikkeenNro" />
+        <Item xsi:type="ActionItem" Target="Popup_Settings_ValikeEdit.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="Tags.HMI_ProdReg_ValikkeenNro" Event="Click" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Popup_Settings_ValikeEdit.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="ProdReg_LayerEdit" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>14</ObjectsCount>
+          <ScreenName>Popup_Settings_ValikeEdit</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Popup_Settings_ValikeEdit</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Popup_Settings_ValikeEdit.Script.cs" Source="Tags.HMI_StartProd_ValikeSelected" />
+        <Item Target="Popup_Settings_ValikeEdit.Script.cs" Source="Tags.HMI_ProdReg_Valike_OnUse" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Popup_Settings_ValikeEdit.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="Tags.HMI_ProdReg_ValikkeenNro" Event="Click" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Popup_Settings_ValikeEdit.Group_Remove_btn.Remove_btn" Source="orfer_arrowright" Width="51" Height="51" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Settings_ValikeEdit.Group_Add_btn.Add_btn" Source="orfer_arrowleft" Width="51" Height="51" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Settings_ValikeEdit.Group_Close_btn.Button_Close" Source="orfer_ack" Width="35" Height="35" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

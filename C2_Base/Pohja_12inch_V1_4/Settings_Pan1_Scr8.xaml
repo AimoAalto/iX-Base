@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.49.0'?>
+<nacs:ScreenWindow Topmost="False" Title="Settings_Pan1_Scr8" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1280, 800" ScreenID="10708" PopupScreen="False" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1280" Height="800" nai:SecurityProperties.SecurityGroupsRequired="None" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacw="clr-namespace:Neo.ApplicationFramework.Controls.WindowsControls;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Settings_Pan1_Scr8">
+  <nacs:ScreenWindow.TemplateScreen>
+    <nacs1:TemplateScreen Name="Template_Settings" RenderMode="Background" />
+  </nacs:ScreenWindow.TemplateScreen>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+    <nac:Label Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="5,0,5,1" Name="m_PageTitle" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="597.95912866865" Canvas.Top="65.8306621617715">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Group Name="m_Group1Production" Width="604" Height="178" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="83" Canvas.Left="200" Canvas.Top="328">
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_Production_ItemBatch" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="25" KeyboardNavigation.TabNavigation="None" Canvas.Left="168" Canvas.Top="128">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_ItemBatch].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_Production_ItemName" Width="404" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="24" KeyboardNavigation.TabNavigation="None" Canvas.Left="168" Canvas.Top="96">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_ItemIName].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_Production_ItemId" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="23" KeyboardNavigation.TabNavigation="None" Canvas.Left="168" Canvas.Top="64">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_ItemID].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" Text="Batch" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title3_Batch" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="22" Canvas.Left="40" Canvas.Top="124">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:Label AutoSize="False" Text="Name" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title3_Name" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="40" Canvas.Top="92">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:Label AutoSize="False" Text="Item Id" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title3_Id" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="20" Canvas.Left="40" Canvas.Top="60">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:Label Text="Production" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title3" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="19" Canvas.Left="31" Canvas.Top="21">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacc1:Rectangle RadiusX="30" RadiusY="30" Fill="{x:Null}" Stroke="#FF267593" StrokeThickness="1" Name="m_ProductionItemBackground" Width="604" Height="178" RenderTransformOrigin="0.5,0.5" Opacity="1" Effect="{x:Null}" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False">
+        <nacc1:Rectangle.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Raised" Width="0" />
+        </nacc1:Rectangle.BevelEffectInfo>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:Group Name="m_GroupSpeed" Width="424" Height="178" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="85" Canvas.Left="825" Canvas.Top="328">
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric14" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="58" KeyboardNavigation.TabNavigation="None" Canvas.Left="271" Canvas.Top="128">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastCapaciy].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric13" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="57" KeyboardNavigation.TabNavigation="None" Canvas.Left="271" Canvas.Top="96">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastMeasuredSpeed].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric12" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="56" KeyboardNavigation.TabNavigation="None" Canvas.Left="271" Canvas.Top="64">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastNominalSpeed].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_ProductionCapacity" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="43" KeyboardNavigation.TabNavigation="None" Canvas.Left="167" Canvas.Top="124">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Capacity].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" Text="Capacity" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title_ProductionCapaacity" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="42" Canvas.Left="40" Canvas.Top="124">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_ProductionMeasuredSpeed" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="41" KeyboardNavigation.TabNavigation="None" Canvas.Left="167" Canvas.Top="92">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_MeasuredSpeed].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" Text="Measured" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title_ProductionMeasuredSpeed" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="40" Canvas.Left="40" Canvas.Top="92">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_ProductionNominalSpeed" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="39" KeyboardNavigation.TabNavigation="None" Canvas.Left="167" Canvas.Top="60">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_NominalSpeed].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" Text="Nominal" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_TitleProductionNominalSpeed" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="38" Canvas.Left="40" Canvas.Top="60">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:Label AutoStretchFont="True" Text="Production Speed" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title_Speeds" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="37" Canvas.Left="30.795848959349" Canvas.Top="20.901119354781">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacc1:Rectangle RadiusX="30" RadiusY="30" Fill="{x:Null}" Stroke="#FF267593" StrokeThickness="1" Name="m_SpeedBackground" Width="424" Height="178" RenderTransformOrigin="0.5,0.5" Opacity="1" Effect="{x:Null}" Visibility="Visible" Panel.ZIndex="36" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False">
+        <nacc1:Rectangle.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Raised" Width="0" />
+        </nacc1:Rectangle.BevelEffectInfo>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:Group Name="m_GroupSendInfo" Width="604" Height="178" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="88" Canvas.Left="200" Canvas.Top="508">
+      <nacw:CheckBox Text="Connected" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_OEE_Connected" Width="94.0349803543091" Height="20.53" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="87" Canvas.Left="460" Canvas.Top="28" Content="Connected">
+        <nacw:CheckBox.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="IsCheckedConverter" />
+          </ResourceDictionary>
+        </nacw:CheckBox.Resources>
+        <nacw:CheckBox.IsChecked>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Connected].Value" Converter="{StaticResource IsCheckedConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>False</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacw:CheckBox.IsChecked>
+      </nacw:CheckBox>
+      <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric24" Width="408" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="81" KeyboardNavigation.TabNavigation="None" Canvas.Left="168" Canvas.Top="128">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastMsg].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" Text="Last msg" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text9" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="80" Canvas.Left="40" Canvas.Top="124">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric15" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="66" KeyboardNavigation.TabNavigation="None" Canvas.Left="476" Canvas.Top="96">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_SendBufferCount].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_OEENextSendCountDown" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="65" KeyboardNavigation.TabNavigation="None" Canvas.Left="168" Canvas.Top="96">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_NextSendCountDown].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_OEELastSend" Width="212" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="64" KeyboardNavigation.TabNavigation="None" Canvas.Left="168" Canvas.Top="64">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastSend].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" Text="Send buffer" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text3" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="63" Canvas.Left="348" Canvas.Top="96">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:Label AutoSize="False" Text="Next send" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text2" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="62" Canvas.Left="40" Canvas.Top="92">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:Label AutoSize="False" Text="Last send" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text1" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="61" Canvas.Left="40" Canvas.Top="60">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:Label Text="OEE / IoT Send" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="31" Canvas.Top="24">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacc1:Rectangle RadiusX="30" RadiusY="30" Fill="{x:Null}" Stroke="#FF267593" StrokeThickness="1" Name="m_IoTBackground" Width="604" Height="178" RenderTransformOrigin="0.5,0.5" Opacity="1" Effect="{x:Null}" Visibility="Visible" Panel.ZIndex="59" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False">
+        <nacc1:Rectangle.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Raised" Width="0" />
+        </nacc1:Rectangle.BevelEffectInfo>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric11" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="55" KeyboardNavigation.TabNavigation="None" Canvas.Left="1096" Canvas.Top="272">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastChecksum].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:AnalogNumericFX.RenderTransform>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric10" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="54" KeyboardNavigation.TabNavigation="None" Canvas.Left="1096" Canvas.Top="240">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastEfficient].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric9" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="53" KeyboardNavigation.TabNavigation="None" Canvas.Left="1096" Canvas.Top="208">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastDowntime].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric8" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="52" KeyboardNavigation.TabNavigation="None" Canvas.Left="1096" Canvas.Top="176">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastUptime].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_TimesChecksum" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="35" KeyboardNavigation.TabNavigation="None" Canvas.Left="992" Canvas.Top="268">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Checksum].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+    </nac:AnalogNumericFX>
+    <nac:Label AutoSize="False" Text="Checksum" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Title_Checksum" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="34" Canvas.Left="865" Canvas.Top="264">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_ProductionErrortime" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="33" KeyboardNavigation.TabNavigation="None" Canvas.Left="992" Canvas.Top="236">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Efficient].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+    </nac:AnalogNumericFX>
+    <nac:Label AutoSize="False" Text="Efficient" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Title_Errortime" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="32" Canvas.Left="865" Canvas.Top="232">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_ProductionDowntime" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="31" KeyboardNavigation.TabNavigation="None" Canvas.Left="992" Canvas.Top="204">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Downtime].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+    </nac:AnalogNumericFX>
+    <nac:Label AutoSize="False" Text="Downtime" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Title_Downtime" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="30" Canvas.Left="865" Canvas.Top="200">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_ProductionUptime" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="29" KeyboardNavigation.TabNavigation="None" Canvas.Left="992" Canvas.Top="172">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Uptime].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:Label AutoSize="False" Text="Uptime" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Title_Uptime" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="28" Canvas.Left="864" Canvas.Top="171.93">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Text="Production State" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title_State" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="27" Canvas.Left="856" Canvas.Top="117">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nacc1:Rectangle RadiusX="30" RadiusY="30" Fill="{x:Null}" Stroke="#FF267593" StrokeThickness="1" Name="m_ProductionStateBackground" Width="424" Height="232" RenderTransformOrigin="0.5,0.5" Opacity="1" Effect="{x:Null}" Visibility="Visible" Panel.ZIndex="26" Canvas.Left="825" Canvas.Top="96" nacsd:EditorProperties.IsLocked="False">
+      <nacc1:Rectangle.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Raised" Width="0" />
+      </nacc1:Rectangle.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nacc1:Rectangle>
+    <nac:Group Name="m_GroupCounters" Width="604" Height="232" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="89" Canvas.Left="200" Canvas.Top="96">
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric7" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="51" KeyboardNavigation.TabNavigation="None" Canvas.Left="484" Canvas.Top="184">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastDefected4].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric6" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="50" KeyboardNavigation.TabNavigation="None" Canvas.Left="484" Canvas.Top="152">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastDefected3].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric5" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="49" KeyboardNavigation.TabNavigation="None" Canvas.Left="484" Canvas.Top="120">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastDefected2].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric4" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="48" KeyboardNavigation.TabNavigation="None" Canvas.Left="484" Canvas.Top="88">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastDefected1].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric3" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="47" KeyboardNavigation.TabNavigation="None" Canvas.Left="270" Canvas.Top="184">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastProduced4].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric2" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="46" KeyboardNavigation.TabNavigation="None" Canvas.Left="270" Canvas.Top="152">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastProduced3].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric1" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="45" KeyboardNavigation.TabNavigation="None" Canvas.Left="270" Canvas.Top="120">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastProduced2].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="44" KeyboardNavigation.TabNavigation="None" Canvas.Left="270" Canvas.Top="88">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_LastProduced1].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:Label Text="Defected" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title1_6" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="388" Canvas.Top="52.901119354782">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Produced" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title1_5" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="166.795848959348" Canvas.Top="52.901119354782">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_OEECounter4_Defected" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="15" KeyboardNavigation.TabNavigation="None" Canvas.Left="380" Canvas.Top="180.901119354782">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Defected4].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_OEECounter4_Produced" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="14" KeyboardNavigation.TabNavigation="None" Canvas.Left="166.795848959348" Canvas.Top="180.901119354782">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Produced4].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" Text="4" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title1_4" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="40" Canvas.Top="180.901119354782">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_OEECounter3_Defected" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="12" KeyboardNavigation.TabNavigation="None" Canvas.Left="380" Canvas.Top="148.901119354782">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Defected3].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_OEECounter3_Produced" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="11" KeyboardNavigation.TabNavigation="None" Canvas.Left="166.795848959348" Canvas.Top="148.901119354782">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Produced3].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" Text="3" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title1_3" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="40" Canvas.Top="148.901119354782">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_OEECounter2_Defected" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="9" KeyboardNavigation.TabNavigation="None" Canvas.Left="380" Canvas.Top="116.901119354782">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Defected2].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_OEECounter2_Produced" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="8" KeyboardNavigation.TabNavigation="None" Canvas.Left="166.795848959348" Canvas.Top="116.901119354782">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Produced2].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" Text="2" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title1_2" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="40" Canvas.Top="116.901119354782">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_OEECounter1_Defected" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="6" KeyboardNavigation.TabNavigation="None" Canvas.Left="380" Canvas.Top="84.901119354782">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Defected1].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_OEECounter1_Produced" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="5" KeyboardNavigation.TabNavigation="None" Canvas.Left="166.795848959348" Canvas.Top="84.901119354782">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OEE_Produced1].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" Text="1" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title1_1" Width="120" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="40" Canvas.Top="84.901119354782">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:Label AutoSize="False" Text="Production Counters" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Title_1" Width="216.384972601467" Height="30.14" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="30.795848959348" Canvas.Top="20.901119354782">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacc1:Rectangle RadiusX="30" RadiusY="30" Fill="{x:Null}" Stroke="#FF267593" StrokeThickness="1" Name="m_CountersBackground" Width="604" Height="232" RenderTransformOrigin="0.5,0.5" Opacity="1" Effect="{x:Null}" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="0" Canvas.Top="0" nacb1:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="False">
+        <nacc1:Rectangle.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Raised" Width="0" />
+        </nacc1:Rectangle.BevelEffectInfo>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#00FFFFFF" StrokeThickness="1" Name="m_shadow" Width="1286.63541666667" Height="668" RenderTransformOrigin="0.5,0.5" Opacity="0.6" Visibility="Visible" Panel.ZIndex="90" Canvas.Left="-6.14583333333363" Canvas.Top="69.0164930555555" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="True">
+      <nacc1:Rectangle.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacc1:Rectangle.Resources>
+      <nacb1:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PC_Overview_shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb1:BlinkProperties.VisibleDynamicsValue>
+      <nacc1:Rectangle.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="3" />
+      </nacc1:Rectangle.BevelEffectInfo>
+    </nacc1:Rectangle>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Security SchemaVersion="2.46.49.0">
+  <SecurityGroups>
+    <Group ID="Group_01" Name="Administrators" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" />
+    <Group ID="Group_02" Name="Operators" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" />
+    <Group ID="Group_03" Name="Supervisors" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" />
+  </SecurityGroups>
+  <SecurityUsers>
+    <User ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15">
+      <Username>Administrator</Username>
+      <PasswordHash>ERuufHNrL3P8GNp0GwFeQZCiaPo=</PasswordHash>
+      <Description></Description>
+      <Groups>
+        <Group>Group_01</Group>
+      </Groups>
+      <IsErasable>False</IsErasable>
+    </User>
+    <User ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15">
+      <Username>Supervisor</Username>
+      <PasswordHash>FRRH5+VkEIuqZ20AjJUIMJMgp9Q=</PasswordHash>
+      <Description></Description>
+      <Groups>
+        <Group>Group_03</Group>
+      </Groups>
+      <IsErasable>False</IsErasable>
+    </User>
+  </SecurityUsers>
+</Security>

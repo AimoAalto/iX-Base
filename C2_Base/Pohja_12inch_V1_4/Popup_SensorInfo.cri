@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items>
+        <Item Target="Popup_SensorInfo.Rectangle" TargetProperty="Fill" Source="Popup_SensorInfo.Tila" />
+      </Items>
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Popup_SensorInfo.Lavapaikka_Text" TargetProperty="Value" Source="Tags.HMI_SensorInfo_Tunnus" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Reset Tag" Param="" />
+        <Item Target="Popup_SensorInfo.Linja_Text" TargetProperty="Value" Source="Tags.HMI_SensorInfo_Ryhma" />
+        <Item Target="Popup_SensorInfo.Text" TargetProperty="Text" Source="Tags.HMI_SensorInfo_Kuvaus" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>7</ObjectsCount>
+          <ScreenName>Popup_SensorInfo</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Popup_SensorInfo</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Popup_SensorInfo.Script.cs" Source="Tags.HMI_SensorInfo_Tunnus" />
+        <Item Target="Popup_SensorInfo.Script.cs" Source="Tags.HMI_SensorInfo_Ryhma" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Popup_SensorInfo.Group_Close_btn.Button_Close" Source="orfer_cancel" Width="36" Height="36" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

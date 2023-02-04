@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.49.0'?>
+<NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
+  <Object d1p1:type="Neo.ApplicationFramework.Tools.Screen.ScreenDesign.Screen, ToolsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" d1p1:Site.Name="Popup_SensorInfo" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+    <AliasConfiguration>
+      <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasConfiguration, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="AliasConfiguration1" d1p1:Site.Name="AliasConfiguration1" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+        <Definitions>
+          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasDefinition, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DataType="System.Boolean" Name="Tila" d1p1:Site.Name="Tila" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
+        </Definitions>
+        <Instances>
+          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasInstance, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="LP1" d1p1:Site.Name="LP1" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+            <Values>
+              <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasValue, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="Tila" IsDefault="True" />
+            </Values>
+          </Object>
+          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasInstance, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="LP2" d1p1:Site.Name="LP2" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+            <Values>
+              <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasValue, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="Tila" IsDefault="True" />
+            </Values>
+          </Object>
+          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasInstance, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="LP3" d1p1:Site.Name="LP3" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+            <Values>
+              <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasValue, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="Tila" IsDefault="True" />
+            </Values>
+          </Object>
+          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasInstance, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="LP4" d1p1:Site.Name="LP4" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+            <Values>
+              <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasValue, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="Tila" IsDefault="True" />
+            </Values>
+          </Object>
+        </Instances>
+      </Object>
+    </AliasConfiguration>
+  </Object>
+</NeoItem>

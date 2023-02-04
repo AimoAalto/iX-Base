@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.49.0'?>
+<NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
+  <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.DataSourceContainer, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Driver="BES7IsoTcp_Pre2.S7IsoTcp_Pre2.1" Servername="Beijer.InprocessNeo.1" Node="" TargetInfoString="iXDeveloper;WinCe8;Beijer;Exter iX;X2 base 10 v2;en;" d1p1:Site.Name="S7_PLC_1" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15">
+    <OpcUaNamespaceInfos>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcUaClient.OpcUaNamespaceInfos, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
+    </OpcUaNamespaceInfos>
+    <DataItems>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.DataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" ItemID="DB1010.DBW100" DataType="DT_INTEGER2" d1p1:Site.Name="DataItem1" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" />
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.DataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" ItemID="DB1010.DBW0" DataType="DT_INTEGER2" d1p1:Site.Name="DataItem2" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" />
+    </DataItems>
+  </Object>
+</NeoItem>

@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="Template_Alarms.Button_Left" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Template_Alarms.Button_Right" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu4" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu3" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu5" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu6" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu7" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu8" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu10" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu9" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu11" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu12" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu13" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu14" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Template_Alarms.Button_Left" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Template_Alarms.Button_Right" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="Template_Alarms.Group_Buttons1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Menu_SubMenu_Group_Visibility" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu1" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu2" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu4" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu3" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu5" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu6" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons1.btnSubmenu7" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Menu_SubMenu_Group_Visibility" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu8" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu10" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu9" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu11" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu12" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu13" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Alarms.Group_Buttons2.btnSubmenu14" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>51</ObjectsCount>
+          <ScreenName>Template_Alarms</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Template_Alarms</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Template_Alarms.Script.cs" Source="Tags.Settings_PanelNumber" />
+        <Item Target="Template_Alarms.Script.cs" Source="Tags.Screens" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Template_Alarms.Button_Left" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Template_Alarms.Button_Right" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

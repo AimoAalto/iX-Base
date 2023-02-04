@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.49.0'?>
+<nacs:ScreenWindow Topmost="False" Title="Robots_Pan1_Scr1" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1280, 800" ScreenID="10201" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1280" Height="800" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacb2="clr-namespace:Neo.ApplicationFramework.Common.Behaviors;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:nacs2="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Robots_Pan1_Scr1">
+  <nacs:ScreenWindow.TemplateScreen>
+    <nacs1:TemplateScreen Name="Template_Robots" RenderMode="Background" />
+  </nacs:ScreenWindow.TemplateScreen>
+  <nai:ActionProperties.Actions>
+    <nai:ActionList>
+      <nata:Action Name="Set Analog">
+        <nata:Action.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Menu_SubMenu_Btn_Anim" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+            <nata:ActionMethodInfo.ActionParameterInfo>
+              <nai:ActionParameterInfoList>
+                <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                  <nata:ActionParameterInfo.Value>
+                    <s:Int16>1</s:Int16>
+                  </nata:ActionParameterInfo.Value>
+                </nata:ActionParameterInfo>
+              </nai:ActionParameterInfoList>
+            </nata:ActionMethodInfo.ActionParameterInfo>
+          </nata:ActionMethodInfo>
+        </nata:Action.ActionMethodInfo>
+      </nata:Action>
+    </nai:ActionList>
+  </nai:ActionProperties.Actions>
+  <nai:ScriptProperties.ScriptEvents>
+    <nai:ScriptEventList>
+      <nacxs:EventHandlerInfo EventName="Opened" MethodName="Robots_Pan1_Scr1_Opened" />
+    </nai:ScriptEventList>
+  </nai:ScriptProperties.ScriptEvents>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="ROBOT 1 DIAGNOSTICS" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="24" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="6,0,6,1" Name="m_Text_Header" Width="490.596611535514" Height="30.4133333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="230" Canvas.Top="84">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot data" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text_RobotData" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="930" Canvas.Top="145">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="X" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text_X" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="940.123122548975" Canvas.Top="249.666666666667">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Y" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text_Y" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="1044.45645588231" Canvas.Top="249.666666666667">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Z" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text_Z" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="1149.12312254898" Canvas.Top="249.666666666667">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="O" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text_O" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="941.123122548975" Canvas.Top="306.666666666667">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Position" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text_Position" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="22" Canvas.Left="936" Canvas.Top="198.474184575919">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle5" Width="355.252547895055" Height="549.936985580599" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="914.69491674367" Canvas.Top="132.733651819462" nacsd:EditorProperties.IsLocked="False">
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Raised" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nacc:Rectangle>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Speed" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text_Speed" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="69" Canvas.Left="1070.99712800965" Canvas.Top="433.470183926241">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Carton" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text_Carton" Width="74.6434490345862" Height="25.53" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="70" Canvas.Left="934.787881305389" Canvas.Top="549.29893392624">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Acceleration" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text_Acceleration" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="73" Canvas.Left="1157.59887471393" Canvas.Top="433">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Empty" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text_Empty" Width="78.2669237805633" Height="25.53" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="74" Canvas.Left="934.787881305389" Canvas.Top="468.29893392624">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="A" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text_A" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="98" Canvas.Left="1044.45645588231" Canvas.Top="306.666666666667">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="T" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text_T" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="100" Canvas.Left="1149.12312254898" Canvas.Top="306.666666666667">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:AnalogNumericFX AutoStretchFont="False" WarningColorLow="#FFFFA500" MinValue="0.1" MaxValue="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric13" Width="78.125" Height="29.6875" RenderTransformOrigin="0.591010101010102,0.525341520254259" Visibility="Visible" Focusable="False" Panel.ZIndex="77" KeyboardNavigation.TabNavigation="None" Canvas.Left="488" Canvas.Top="176.062101242586" nacb1:BlinkProperties.VisibleDynamicsValue="True">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.RobX_vir].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.BorderBrush>
+        <SolidColorBrush Color="#FFFFFFFF" Opacity="0" />
+      </nac:AnalogNumericFX.BorderBrush>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0" Opacity="0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Alarm" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text_Alarm" Width="278.8671875" Height="25.257498704141" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="488" Canvas.Top="145.471269205111">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle1" Width="436.183019266923" Height="549.936985580599" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="470.511897476747" Canvas.Top="132.733651819462" nacsd:EditorProperties.IsLocked="False">
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Raised" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nacc:Rectangle>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Operating speed" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text_OpSpeed" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="103" Canvas.Left="935" Canvas.Top="380.212484726853">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:AnalogNumericFX AutoStretchFont="False" MaxValue="100000" ValidateValueOnInput="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" BorderBrush="#FF267593" BorderThickness="1,1,1,1" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_Numero" Width="60.6383497475471" Height="48" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="105" KeyboardNavigation.TabNavigation="None" Canvas.Left="815.056566996123" Canvas.Top="610.359896843224">
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:Label Text="Number" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text_Number" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="106" Canvas.Left="735.719125309778" Canvas.Top="621.594896843224" />
+    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Pallet" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text_Pallet" Width="74.6434490345862" Height="25.53" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="109" Canvas.Left="934.787881305389" Canvas.Top="510.29893392624">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label AutoSize="False" MultiLine="False" WordWrap="False" AutoStretchFont="False" TextDecorations="{x:Null}" Background="#FF106280" FontFamily="Consolas" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_txtRobotInfoTranslated" Width="405" Height="238.378294520128" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="110" Canvas.Left="488" Canvas.Top="220" nacsd:EditorProperties.IsLocked="False" nacb2:IntervalMapperBindingsBehavior.RebindInRuntime="True">
+      <nac:Label.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval Start="-65000">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="65000">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="237, 28, 36" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="Red" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="5" />
+          <nacd1:RawConverter x:Key="TextConverter" DefaultValue="" />
+        </ResourceDictionary>
+      </nac:Label.Resources>
+      <nac:Label.Text>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_naytto].Value" Converter="{StaticResource TextConverter}" ValidatesOnExceptions="True" />
+      </nac:Label.Text>
+      <nac:Label.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.RobX_vir].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True" />
+      </nac:Label.Value>
+      <nac:Label.Foreground>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.RobX_vir].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FFFF0000</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Label.Foreground>
+      <nacb1:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Language_Current].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>False</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb1:BlinkProperties.VisibleDynamicsValue>
+      <nac:Label.TextIntervalMapper>
+        <nacd1:StringIntervalMapper DefaultValue="">
+          <nacd1:StringIntervalMapper.Intervals>
+            <nacd1:StringIntervalList>
+              <nacd1:StringInterval Start="0" End="0" Value="" />
+              <nacd1:StringInterval Start="2000" End="2000" Value="Unknown robot alarm number!     &#xD;&#xA;Please contact supplier.      &#xD;&#xA;No acknowledge." />
+              <nacd1:StringInterval Start="2001" End="2001" Value="Robot is not in home position.     &#xD;&#xA;Drive robot manually to home      &#xD;&#xA;position and start program      &#xD;&#xA;ABC123.      &#xD;&#xA;No acknowledge." />
+              <nacd1:StringInterval Start="2002" End="2002" Value="Compressed air supply pressure is     &#xD;&#xA;too low. Gripper may not work properly.      &#xD;&#xA;Check compressed air supply!      &#xD;&#xA;Robot will continue when pressure       &#xD;&#xA;is restored. No acknowledgement." />
+              <nacd1:StringInterval Start="2008" End="2008" Value="Production line isn't on automatic     &#xD;&#xA;Robot will carry on when production      &#xD;&#xA;is started again.      &#xD;&#xA;No acknowledge" />
+              <nacd1:StringInterval Start="2009" End="2009" Value="Background processing is not     &#xD;&#xA;working in robot.      &#xD;&#xA;1. Try again" />
+              <nacd1:StringInterval Start="2015" End="2015" Value="Robot program has been reseted.     &#xD;&#xA;Robot will start working in       &#xD;&#xA;few seconds." />
+              <nacd1:StringInterval Start="2020" End="2020" Value="Robot can't reach the point!     &#xD;&#xA;Please contact Orfer." />
+              <nacd1:StringInterval Start="2101" End="2101" Value="Gripper measuring cylinder     &#xD;&#xA;cannot reach the sensor      &#xD;&#xA;check the sensor ja pressured air      &#xD;&#xA;Robot continue automatically      &#xD;&#xA;after problem has solved" />
+              <nacd1:StringInterval Start="2102" End="2102" Value="Gripper measuring cylinder     &#xD;&#xA;is in stuck in lower sensor      &#xD;&#xA;check the sensor ja pressured air      &#xD;&#xA;Robot continue automatically      &#xD;&#xA;after problem has solved" />
+              <nacd1:StringInterval Start="2121" End="2121" Value="Robot opens the gripper     &#xD;&#xA;and products on the gripper       &#xD;&#xA;will fall. Empty the gripper before       &#xD;&#xA;aknowledge.      &#xD;&#xA;1. Robot can open the gripper. " />
+              <nacd1:StringInterval Start="2208" End="2208" Value="Robot did not get products from      &#xD;&#xA;grouping. Put missing products to      &#xD;&#xA;gripper and tell robot to continue or      &#xD;&#xA;remove all products from gripper and      &#xD;&#xA;tell robot to try again      &#xD;&#xA;1. Try again, gripper is empty      &#xD;&#xA;2. Continue, all products in gripper" />
+              <nacd1:StringInterval Start="2209" End="2209" Value="Sheet has dropped from the gripper or     &#xD;&#xA;sensor signal is faulty. Check      &#xD;&#xA;sheet, sensor and connections.      &#xD;&#xA;Remove dropped sheet and place it in       &#xD;&#xA;robot's suction cups or measure again.      &#xD;&#xA;Acknowledge:       &#xD;&#xA;1. Sheet has been placed in gripper      &#xD;&#xA;2. Robot will get a new sheet" />
+              <nacd1:StringInterval Start="2300" End="2300" Value="Robot is waiting for picking     &#xD;&#xA;permission to position 0.      &#xD;&#xA;Robot will carry on automatically      &#xD;&#xA;when permission is given.      &#xD;&#xA;No acknowledgement." />
+              <nacd1:StringInterval Start="2301" End="2301" Value="Robot is waiting for picking     &#xD;&#xA;permission to position 1.      &#xD;&#xA;Robot will carry on automatically      &#xD;&#xA;when permission is given.      &#xD;&#xA;No acknowledge." />
+              <nacd1:StringInterval Start="2302" End="2302" Value="Robot is waiting for picking     &#xD;&#xA;permission to position 2.      &#xD;&#xA;Robot will carry on automatically      &#xD;&#xA;when permission is given.      &#xD;&#xA;No acknowledge." />
+              <nacd1:StringInterval Start="2303" End="2303" Value="Robot is waiting for picking     &#xD;&#xA;permission to position 3.      &#xD;&#xA;Robot will carry on automatically      &#xD;&#xA;when permission is given.      &#xD;&#xA;No acknowledge." />
+              <nacd1:StringInterval Start="2304" End="2304" Value="Robot is waiting for picking     &#xD;&#xA;permission to position 4.      &#xD;&#xA;Robot will carry on automatically      &#xD;&#xA;when permission is given.      &#xD;&#xA;No acknowledge." />
+              <nacd1:StringInterval Start="2311" End="2311" Value="Robot doesn't have permission to     &#xD;&#xA;deliver products to pallet 1. Robot      &#xD;&#xA;will carry on automatically when      &#xD;&#xA;permission is given.      &#xD;&#xA;No acknowledge." />
+              <nacd1:StringInterval Start="2312" End="2312" Value="Robot doesn't have permission to     &#xD;&#xA;deliver products to pallet 2. Robot      &#xD;&#xA;will carry on automatically when      &#xD;&#xA;permission is given.      &#xD;&#xA;No acknowledge." />
+              <nacd1:StringInterval Start="2313" End="2313" Value="Robot doesn't have permission to     &#xD;&#xA;deliver products to pallet 3. Robot      &#xD;&#xA;will carry on automatically when      &#xD;&#xA;permission is given.      &#xD;&#xA;No acknowledge." />
+              <nacd1:StringInterval Start="2314" End="2314" Value="Robot doesn't have permission to     &#xD;&#xA;deliver products to pallet 4 (reject).      &#xD;&#xA;Robot will carry on automatically when      &#xD;&#xA;permission is given.      &#xD;&#xA;No acknowledge." />
+              <nacd1:StringInterval Start="2321" End="2321" Value="Delivery permission doesn't turn off.     &#xD;&#xA;Robot is waiting for plc to turn off      &#xD;&#xA;delivery permission (handshaking).      &#xD;&#xA;Robot carries on automatically when      &#xD;&#xA;delivery permission is turned off.      &#xD;&#xA;1. Bypass handshaking" />
+              <nacd1:StringInterval Start="2322" End="2322" Value="Delivery permission doesn't turn off.     &#xD;&#xA;Robot is waiting for plc to turn off      &#xD;&#xA;delivery permission (handshaking).      &#xD;&#xA;Robot carries on automatically when      &#xD;&#xA;delivery permission is turned off.      &#xD;&#xA;1. Bypass handshaking" />
+              <nacd1:StringInterval Start="2323" End="2323" Value="Delivery permission doesn't turn off.     &#xD;&#xA;Robot is waiting for plc to turn off      &#xD;&#xA;delivery permission (handshaking).      &#xD;&#xA;Robot carries on automatically when      &#xD;&#xA;delivery permission is turned off.      &#xD;&#xA;1. Bypass handshaking" />
+              <nacd1:StringInterval Start="2331" End="2331" Value="Pick up permission doesn't turn off.     &#xD;&#xA;Robot is waiting for plc to turn off      &#xD;&#xA;pick up permission (handshaking).      &#xD;&#xA;Robot carries on automatically when      &#xD;&#xA;pick up permission is turned off.      &#xD;&#xA;1. Bypass handshaking" />
+              <nacd1:StringInterval Start="2332" End="2332" Value="Pick up permission doesn't turn off.     &#xD;&#xA;Robot is waiting for plc to turn off      &#xD;&#xA;pick up permission (handshaking).      &#xD;&#xA;Robot carries on automatically when      &#xD;&#xA;pick up permission is turned off.      &#xD;&#xA;1. Bypass handshaking" />
+              <nacd1:StringInterval Start="2333" End="2333" Value="Robot is waiting for plc     &#xD;&#xA;to be on automatic before carrying      &#xD;&#xA;on with handshaking.      &#xD;&#xA;Robot carries on automatically when      &#xD;&#xA;plc is on automatic.      &#xD;&#xA;1. Bypass handshaking" />
+              <nacd1:StringInterval Start="2351" End="2351" Value="Plc says Acknowledge although     &#xD;&#xA;robot isn't waiting for it.      &#xD;&#xA;Robot carries on automatically when      &#xD;&#xA;plc turns off ack signal      &#xD;&#xA;1. Bypass handshaking" />
+              <nacd1:StringInterval Start="2352" End="2352" Value="Robot is waiting for plc to     &#xD;&#xA;acknowledge handshaking.      &#xD;&#xA;Robot carries on automatically when      &#xD;&#xA;plc turns on ack signal      &#xD;&#xA;1. Bypass handshaking" />
+              <nacd1:StringInterval Start="2353" End="2353" Value="Robot is waiting for plc to     &#xD;&#xA;turn off acknowledge-signal      &#xD;&#xA;Robot carries on automatically when      &#xD;&#xA;plc turns off ack signal      &#xD;&#xA;1. Bypass handshaking" />
+              <nacd1:StringInterval Start="2390" End="2390" Value="PLC is asking to finish production     &#xD;&#xA;although robot has no finish-commands      &#xD;&#xA;waiting for this inlet line.      &#xD;&#xA;1. Do not do anything (alarm will re-       &#xD;&#xA;appear unless situation is corrected in      &#xD;&#xA;PLC      &#xD;&#xA;2. Acknowledge finishing to PLC" />
+              <nacd1:StringInterval Start="2501" End="2501" Value="Pattern received and saved.     &#xD;&#xA;Alarm will disappear in      &#xD;&#xA;10 seconds. " />
+              <nacd1:StringInterval Start="2502" End="2502" Value="Pattern changes received      &#xD;&#xA;and saved. " />
+              <nacd1:StringInterval Start="2503" End="2503" Value="Pattern handeling      &#xD;&#xA;did fail.       &#xD;&#xA;Try again. " />
+              <nacd1:StringInterval Start="2600" End="2600" Value="Subroutine was started without     &#xD;&#xA;proper parameters. Drive robot      &#xD;&#xA;to homeposition and start      &#xD;&#xA;program ABC123." />
+              <nacd1:StringInterval Start="2601" End="2601" Value="Subroutine was started without     &#xD;&#xA;proper parameters. Drive robot      &#xD;&#xA;to homeposition and start      &#xD;&#xA;program ABC123." />
+              <nacd1:StringInterval Start="2602" End="2602" Value="Subroutine was started without     &#xD;&#xA;proper parameters. Drive robot      &#xD;&#xA;to homeposition and start      &#xD;&#xA;program ABC123." />
+              <nacd1:StringInterval Start="2801" End="2801" Value="Robot rejects the starting      &#xD;&#xA;with errorcode:       &#xD;&#xA;Check the pattern and make       &#xD;&#xA;a new start. " />
+              <nacd1:StringInterval Start="2802" End="2802" Value="Robot rejects the starting      &#xD;&#xA;but communication       &#xD;&#xA;to HMI is not ok.       &#xD;&#xA;Robot will try again       &#xD;&#xA;in 20 seconds. " />
+              <nacd1:StringInterval Start="2901" End="2901" Value="Robot has detected collision and     &#xD;&#xA;has been stopped. Release robot      &#xD;&#xA;from collision and carry on OR      &#xD;&#xA;drive robot to home position and      &#xD;&#xA;start program ABC123." />
+              <nacd1:StringInterval Start="2911" End="2911" Value="Robot has moved on automatic      &#xD;&#xA;to forbidden area.       &#xD;&#xA;Move robot back to home       &#xD;&#xA;position and      &#xD;&#xA;start over." />
+              <nacd1:StringInterval Start="2930" End="2930" Value="You have moved robot manually.     &#xD;&#xA;COLLISION POSSIBLE!      &#xD;&#xA;Move robot back to the position where      &#xD;&#xA;it was or move it to home position and      &#xD;&#xA;start over.      &#xD;&#xA;" />
+            </nacd1:StringIntervalList>
+          </nacd1:StringIntervalMapper.Intervals>
+        </nacd1:StringIntervalMapper>
+      </nac:Label.TextIntervalMapper>
+    </nac:Label>
+    <nac:Label AutoSize="False" MultiLine="False" WordWrap="False" AutoStretchFont="False" Background="#FF106280" FontFamily="Consolas" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_txtRobotInfoFromRobot" Width="405" Height="238" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="56" Canvas.Left="488" Canvas.Top="220" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
+      <nac:Label.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval Start="-65000">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="65000">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="237, 28, 36" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="Red" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+          <nacd1:RawConverter x:Key="TextConverter" DefaultValue="" />
+        </ResourceDictionary>
+      </nac:Label.Resources>
+      <nac:Label.Text>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_naytto].Value" Converter="{StaticResource TextConverter}" ValidatesOnExceptions="True" />
+      </nac:Label.Text>
+      <nac:Label.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.RobX_naytto].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True" />
+      </nac:Label.Value>
+      <nac:Label.Foreground>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.RobX_vir].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FFFF0000</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Label.Foreground>
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nacs2:Picture SymbolName="robotti_läpin" Stretch="True" Name="m_Picture_Robot" Width="230.306994683761" Height="246.539157538116" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="111" Canvas.Left="213.057498939913" Canvas.Top="229.908280659546" nacsd:EditorProperties.IsLocked="True" />
+    <Line X1="934.787881305389" Y1="230.91" X2="1248.78788130539" Y2="230.58" Stroke="#FF0D4E66" StrokeThickness="2" Name="m_Line" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" />
+    <Line X1="933.147881305389" Y1="414.33" X2="1247.14788130539" Y2="414" Stroke="#FF0D4E66" StrokeThickness="2" Name="m_Line1" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" />
+    <nac:Group Name="m_Group_Virtoip8_btn" Width="84" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="125" Canvas.Left="764.463410610704" Canvas.Top="543.535823614328">
+      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="8" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_8" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="61" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_8_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle11" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="2.53658938929607" Canvas.Top="2" />
+    </nac:Group>
+    <nac:Group Name="m_Group_Virtoip7_btn" Width="84" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="124" Canvas.Left="675.753268828297" Canvas.Top="543.535823614328">
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle10" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="2.246731171703" Canvas.Top="2" />
+      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="7" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_7" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="61" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_7_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_Virtoip6_btn" Width="84" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="123" Canvas.Left="587.043127045889" Canvas.Top="543.535823614328">
+      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="6" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_6" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="62" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_6_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle9" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="1.95687295411062" Canvas.Top="2" />
+    </nac:Group>
+    <nac:Group Name="m_Group_Virtoip5_btn" Width="84" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="122" Canvas.Left="498.332985263482" Canvas.Top="543.535823614328">
+      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="5" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_5" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="61" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_5_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle8" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="1.66701473651801" Canvas.Top="2" />
+    </nac:Group>
+    <nac:Group Name="m_Group_Virtoip4_btn" Width="84" Height="50.0000000000001" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="117" Canvas.Left="764.463410610704" Canvas.Top="491.495600592907">
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle7" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="59" Canvas.Left="2.53658938929607" Canvas.Top="2.00000000000006" />
+      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="4" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_4" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="60" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_4_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_Virtoip3_btn" Width="84" Height="50.0000000000001" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="116" Canvas.Left="675.753268828297" Canvas.Top="491.495600592907">
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle6" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="58" Canvas.Left="2.246731171703" Canvas.Top="2.00000000000006" />
+      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="3" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_3" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="59" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_3_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_Virtoip2_btn" Width="84" Height="50.0000000000001" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="115" Canvas.Left="587.043127045889" Canvas.Top="491.495600592907">
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle4" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="57" Canvas.Left="1.95687295411062" Canvas.Top="2.00000000000006" />
+      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="2" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_2" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="58" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_2_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_Virtoip1_btn" Width="83.9999999999999" Height="50.0000000000001" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="114" Canvas.Left="498.332985263482" Canvas.Top="491.495600592907">
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle2" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="56" Canvas.Left="1.66701473651796" Canvas.Top="2.00000000000006" />
+      <nac:Button ButtonAppearance="Rounded" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,0,0,0" Text="1" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_1" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="57" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_1_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_Service_btn" Width="160" Height="55" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="112" Canvas.Left="235.357320855507" Canvas.Top="578.193230176557">
+      <nac:Button ButtonAppearance="Default" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,7,4,7" Text="To service &#xD;&#xA;position" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="70,0,0,0" RequiresTransparency="True" SymbolName="orfer_settings" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_ServicePos" Width="160" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="60" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Supervisors" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_ServicePos_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle" Width="160" Height="51" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="59" Canvas.Left="0" Canvas.Top="2" />
+    </nac:Group>
+    <nac:Group Name="m_Group_Edit_btn" Width="144.666666666667" Height="52" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="126" Canvas.Left="941.123122548975" Canvas.Top="608.359896843224">
+      <nac:Button ButtonAppearance="RoundedBottomLeft" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="8,4,4,8" Text="Edit" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="0,0,0,0" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Edit" Width="144.666666666667" Height="52" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="80" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Button.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:MultiAction Name="Multi Action">
+              <nata:MultiAction.Actions>
+                <nai:ActionList>
+                  <nata:Action Name="Set Analog">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_RobotNo" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                        <nata:ActionMethodInfo.ActionParameterInfo>
+                          <nai:ActionParameterInfoList>
+                            <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                              <nata:ActionParameterInfo.Value>
+                                <s:Int16>1</s:Int16>
+                              </nata:ActionParameterInfo.Value>
+                            </nata:ActionParameterInfo>
+                          </nai:ActionParameterInfoList>
+                        </nata:ActionMethodInfo.ActionParameterInfo>
+                      </nata:ActionMethodInfo>
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Show Screen">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="Show" ObjectName="Popup_Robot_speed" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.0.463.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                        <nata:ActionMethodInfo.ActionParameterInfo>
+                          <nai:ActionParameterInfoList>
+                            <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                          </nai:ActionParameterInfoList>
+                        </nata:ActionMethodInfo.ActionParameterInfo>
+                      </nata:ActionMethodInfo>
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Set Tag">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                </nai:ActionList>
+              </nata:MultiAction.Actions>
+              <nata:MultiAction.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:MultiAction.ActionMethodInfo>
+            </nata:MultiAction>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle3" Width="140" Height="48" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="79" Canvas.Left="2.87687745102505" Canvas.Top="2" />
+    </nac:Group>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="127" KeyboardNavigation.TabNavigation="None" Canvas.Left="955.366403785623" Canvas.Top="248.711666666667">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_pos_x].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric1" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="128" KeyboardNavigation.TabNavigation="None" Canvas.Left="1059.36640378562" Canvas.Top="248.711666666667">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_pos_y].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric2" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="129" KeyboardNavigation.TabNavigation="None" Canvas.Left="1163.36640378562" Canvas.Top="248.711666666667">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_pos_z].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric3" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="130" KeyboardNavigation.TabNavigation="None" Canvas.Left="955.366403785623" Canvas.Top="305.711666666667">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_pos_o].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric4" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="131" KeyboardNavigation.TabNavigation="None" Canvas.Left="1059.36640378562" Canvas.Top="305.711666666667">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_pos_a].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric5" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="132" KeyboardNavigation.TabNavigation="None" Canvas.Left="1163.36640378562" Canvas.Top="305.711666666667">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_pos_t].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" Suffix=" %" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric6" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="133" KeyboardNavigation.TabNavigation="None" Canvas.Left="1059.36640378562" Canvas.Top="468.56393392624">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_nopker].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" Suffix=" %" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric7" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="134" KeyboardNavigation.TabNavigation="None" Canvas.Left="1059.36640378562" Canvas.Top="552.26315267624">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_nopker1].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" Suffix=" %" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric8" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="135" KeyboardNavigation.TabNavigation="None" Canvas.Left="1163.36640378562" Canvas.Top="468.56393392624">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_kiiker].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" Suffix=" %" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric9" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="136" KeyboardNavigation.TabNavigation="None" Canvas.Left="1059.36640378562" Canvas.Top="510.56393392624">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_nopker0].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" Suffix=" %" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric10" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="137" KeyboardNavigation.TabNavigation="None" Canvas.Left="1163.36640378562" Canvas.Top="552.26315267624">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_kiiker1].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" Suffix=" %" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric11" Width="70" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="138" KeyboardNavigation.TabNavigation="None" Canvas.Left="1163.36640378562" Canvas.Top="510.56393392624">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_kiiker0].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#00FFFFFF" StrokeThickness="1" Name="m_shadow" Width="1286.63541666667" Height="668" RenderTransformOrigin="0.5,0.5" Opacity="0.6" Visibility="Visible" Panel.ZIndex="112" Canvas.Left="-6.14583333333363" Canvas.Top="69.0164930555555" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="True">
+      <nacc:Rectangle.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacc:Rectangle.Resources>
+      <nacb1:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PC_Overview_shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb1:BlinkProperties.VisibleDynamicsValue>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="3" />
+      </nacc:Rectangle.BevelEffectInfo>
+    </nacc:Rectangle>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items>
+        <Item Target="Popup_Palletplace_info.AnalogNumeric5" TargetProperty="Value" Source="Popup_Palletplace_info.kokmaara" />
+        <Item Target="Popup_Palletplace_info.AnalogNumeric3" TargetProperty="Value" Source="Popup_Palletplace_info.kplmaara" />
+      </Items>
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items>
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP1" TargetProperty="lavakerrokset" Source="Tags.Rob1_lavap1_pkerasetus" />
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP1" TargetProperty="kplmaara" Source="Tags.Rob1_lavap1_plasl" />
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP1" TargetProperty="kokmaara" Source="Tags.Rob1_lavap1_pmaxvie" />
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP2" TargetProperty="lavakerrokset" Source="Tags.Rob1_lavap2_pkerasetus" />
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP2" TargetProperty="kplmaara" Source="Tags.Rob1_lavap2_plasl" />
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP2" TargetProperty="kokmaara" Source="Tags.Rob1_lavap2_pmaxvie" />
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP3" TargetProperty="lavakerrokset" Source="Tags.Rob1_lavap3_pkerasetus" />
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP3" TargetProperty="kplmaara" Source="Tags.Rob1_lavap3_plasl" />
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP3" TargetProperty="kokmaara" Source="Tags.Rob1_lavap3_pmaxvie" />
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP4" TargetProperty="lavakerrokset" Source="Tags.Rob1_lavap4_pkerasetus" />
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP4" TargetProperty="kplmaara" Source="Tags.Rob1_lavap4_plasl" />
+        <Item xsi:type="AliasReference" Target="Popup_Palletplace_info.LP4" TargetProperty="kokmaara" Source="Tags.Rob1_lavap4_pmaxvie" />
+      </Items>
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Popup_Palletplace_info.AnalogNumeric2" TargetProperty="Value" Source="Tags.HMI_PalletPlace" />
+        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>27</ObjectsCount>
+          <ScreenName>Popup_Palletplace_info</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Popup_Palletplace_info</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_PalletPlace" />
+        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Lavapaikka" />
+        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Pahvit" />
+        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_MaxKerros" />
+        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Kerrosasetus" />
+        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Popup_Palletplace_info.Group_Send_btn.Button_Laheta" Source="orfer_send" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Palletplace_info.Group_Close_btn.Button_Close" Source="orfer_cancel" Width="39" Height="39" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

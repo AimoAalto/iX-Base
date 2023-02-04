@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items>
+        <Item Target="Settings_Pan1_Scr4.AnalogNumeric" TargetProperty="Value" Source="Settings_Pan1_Scr4.RobottiNo" />
+        <Item Target="Settings_Pan1_Scr4.Group_Stop_btn.Stop_update_btn" TargetProperty="Value" Source="Settings_Pan1_Scr4.StopUpdate" />
+        <Item Target="Settings_Pan1_Scr4.Group_Stop_btn.Stop_update_btn" TargetProperty="TextValue" Source="Settings_Pan1_Scr4.StopUpdate" />
+      </Items>
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Settings_Pan1_Scr4.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr4" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>65</ObjectsCount>
+          <ScreenName>Settings_Pan1_Scr4</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="10704">
+          <ScreenName>Settings_Pan1_Scr4</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr4" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr4.Group_PrevRob_btn.Robot_prev_btn" Source="orfer_robot" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr4.Group_NextRob_btn.Robot_next_btn" Source="orfer_robot" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr4.Group_Stop_btn.Stop_update_btn" Source="orfer_stop" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr4.Group_Stop_btn.Stop_update_btn" Source="orfer_stop" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr4.Group_Stop_btn.Stop_update_btn" Source="orfer_ack" Width="25" Height="26" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

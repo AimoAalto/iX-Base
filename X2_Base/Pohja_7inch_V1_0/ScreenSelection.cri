@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="ScreenSelection.BtnPanel1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="ScreenSelection.BtnPanel2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item xsi:type="ActionItem" Target="ScreenSelection.BtnPanel1" TargetProperty="Actions" Source="Tags.Settings_PanelNumber" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.BtnPanel1" TargetProperty="Actions" Source="Tags.SystemTagNewScreenId" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.BtnPanel2" TargetProperty="Actions" Source="Tags.Settings_PanelNumber" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.BtnPanel2" TargetProperty="Actions" Source="Tags.SystemTagNewScreenId" Event="Click" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items>
+        <Item Target="ScreenSelection.BtnPanel1" Source="-435083901_Normal.bmp" />
+        <Item Target="ScreenSelection.BtnPanel1" Source="-435083901_Pressed.bmp" />
+        <Item Target="ScreenSelection.BtnPanel1" Source="-435083901_Disabled.bmp" />
+        <Item Target="ScreenSelection.BtnPanel2" Source="-435083901_Normal.bmp" />
+        <Item Target="ScreenSelection.BtnPanel2" Source="-435083901_Pressed.bmp" />
+        <Item Target="ScreenSelection.BtnPanel2" Source="-435083901_Disabled.bmp" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>2</ObjectsCount>
+          <ScreenName>ScreenSelection</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="1">
+          <ScreenName>ScreenSelection</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="ScreenSelection.BtnPanel1" TargetProperty="Actions" Source="Tags.Settings_PanelNumber" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.BtnPanel1" TargetProperty="Actions" Source="Tags.SystemTagNewScreenId" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.BtnPanel2" TargetProperty="Actions" Source="Tags.Settings_PanelNumber" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.BtnPanel2" TargetProperty="Actions" Source="Tags.SystemTagNewScreenId" Event="Click" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="ScreenSelection.BtnPanel1" Source="cell1" Width="50" Height="114" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="ScreenSelection.BtnPanel2" Source="cell1" Width="50" Height="114" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>
