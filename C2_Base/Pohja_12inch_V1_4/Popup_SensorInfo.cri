@@ -27,9 +27,9 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Popup_SensorInfo.Lavapaikka_Text" TargetProperty="Value" Source="Tags.HMI_SensorInfo_Tunnus" />
-        <Item xsi:type="ActionItem" Target="Popup_SensorInfo.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Reset Tag" Param="" />
         <Item Target="Popup_SensorInfo.Linja_Text" TargetProperty="Value" Source="Tags.HMI_SensorInfo_Ryhma" />
         <Item Target="Popup_SensorInfo.Text" TargetProperty="Text" Source="Tags.HMI_SensorInfo_Kuvaus" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
       </Items>
@@ -60,6 +60,8 @@
     <Category Name="Script">
       <Items>
         <Item Target="Popup_SensorInfo.Script.cs" Source="Tags.HMI_SensorInfo_Tunnus" />
+        <Item Target="Popup_SensorInfo.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="Popup_SensorInfo.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
         <Item Target="Popup_SensorInfo.Script.cs" Source="Tags.HMI_SensorInfo_Ryhma" />
       </Items>
     </Category>

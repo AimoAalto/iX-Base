@@ -8,12 +8,12 @@
       <Items>
         <Item Target="Popup_StartProduction.RobottiYhteys" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
         <Item Target="Popup_StartProduction.RobottiAuto" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal2_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
         <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal1_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal3_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal2_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
         <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal3_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
         <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal1_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal2_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal2_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal3_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
       </Items>
     </Category>
     <Category Name="AliasInstanceDataItem">
@@ -33,10 +33,6 @@
         <Item Target="Popup_StartProduction.PlaceBox2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Bit1IsSet" />
         <Item Target="Popup_StartProduction.PlaceBox3" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Bit2IsSet" />
         <Item Target="Popup_StartProduction.PlaceBox4" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Bit3IsSet" />
-        <Item Target="Popup_StartProduction.PlaceBox5" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Bit4IsSet" />
-        <Item Target="Popup_StartProduction.PlaceBox6" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Bit5IsSet" />
-        <Item Target="Popup_StartProduction.PlaceBox7" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Bit6IsSet" />
-        <Item Target="Popup_StartProduction.PlaceBox8" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Bit7IsSet" />
       </Items>
     </Category>
     <Category Name="GlobalDataItem">
@@ -53,26 +49,18 @@
         <Item Target="Popup_StartProduction.PlaceBox3" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_StartProd_pallet_privis" />
         <Item Target="Popup_StartProduction.PlaceBox4" TargetProperty="Value" Source="Tags.HMI_StartProd_pallet_pri4" />
         <Item Target="Popup_StartProduction.PlaceBox4" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_StartProd_pallet_privis" />
-        <Item Target="Popup_StartProduction.PlaceBox5" TargetProperty="Value" Source="Tags.HMI_StartProd_pallet_pri5" />
-        <Item Target="Popup_StartProduction.PlaceBox5" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_StartProd_pallet_privis" />
-        <Item Target="Popup_StartProduction.PlaceBox6" TargetProperty="Value" Source="Tags.HMI_StartProd_pallet_pri6" />
-        <Item Target="Popup_StartProduction.PlaceBox6" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_StartProd_pallet_privis" />
-        <Item Target="Popup_StartProduction.PlaceBox7" TargetProperty="Value" Source="Tags.HMI_StartProd_pallet_pri7" />
-        <Item Target="Popup_StartProduction.PlaceBox7" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_StartProd_pallet_privis" />
-        <Item Target="Popup_StartProduction.PlaceBox8" TargetProperty="Value" Source="Tags.HMI_StartProd_pallet_pri8" />
-        <Item Target="Popup_StartProduction.PlaceBox8" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_StartProd_pallet_privis" />
         <Item Target="Popup_StartProduction.Rectangle_PLC_Ack" TargetProperty="Fill" Source="Tags.HMI_StartProduction_PLC_Aloitettu" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal2_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap2_pkuv" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal1_Ack" TargetProperty="Fill" Source="Tags.Rob2_lavap1_pkuv" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal3_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap3_pkuv" />
         <Item Target="Popup_StartProduction.Group_StartProd_btn.Rectangle" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Aloitus_kesken" />
         <Item Target="Popup_StartProduction.Group_StartProd_btn.Start_Production_btn" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Aloitus_kesken" />
         <Item Target="Popup_StartProduction.Group_Cancel_btn.Button_Cancel" TargetProperty="TextValue" Source="Tags.HMI_StartProduction_PLC_Aloitettu" />
         <Item Target="Popup_StartProduction.Text4" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.HMI_Aloitus_kesken" />
         <Item Target="Popup_StartProduction.Text4" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Aloitus_kesken" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal1_Ack" TargetProperty="Fill" Source="Tags.Rob2_lavap1_pkuv" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal2_Ack" TargetProperty="Fill" Source="Tags.Rob2_lavap2_pkuv" />
         <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal3_Ack" TargetProperty="Fill" Source="Tags.Rob2_lavap3_pkuv" />
         <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal1_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap1_pkuv" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal2_Ack" TargetProperty="Fill" Source="Tags.Rob2_lavap2_pkuv" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal2_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap2_pkuv" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal3_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap3_pkuv" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_pallet_privis" Event="Closing" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Closing" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
@@ -99,7 +87,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>49</ObjectsCount>
+          <ObjectsCount>45</ObjectsCount>
           <ScreenName>Popup_StartProduction</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="">

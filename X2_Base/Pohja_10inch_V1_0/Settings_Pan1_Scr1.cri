@@ -27,15 +27,6 @@
     <Category Name="Font">
       <Items>
         <Item Target="Settings_Pan1_Scr1.Text_Top" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
-        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANRamTotal2" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
-        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANStorageTotal" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
-        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANStorageUsed" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
-        <Item Target="Settings_Pan1_Scr1.GroupMonitor.TextStorage" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
-        <Item Target="Settings_Pan1_Scr1.GroupMonitor.TextRAM" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
-        <Item Target="Settings_Pan1_Scr1.GroupMonitor.LinearMeterCPU" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
-        <Item Target="Settings_Pan1_Scr1.GroupMonitor.TextCPU" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
-        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANVersionNo" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
-        <Item Target="Settings_Pan1_Scr1.GroupMonitor.TextSystemVersion" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
         <Item Target="Settings_Pan1_Scr1.Group_Shutdown_btn.Button_Shutdown" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
         <Item Target="Settings_Pan1_Scr1.GroupFunctionButtonss.Group_PLC_btn.Button_PLC_Conn" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
         <Item Target="Settings_Pan1_Scr1.GroupFunctionButtonss.Group_ImpRecipe_btn.Button_ImpRecipe" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
@@ -48,19 +39,28 @@
         <Item Target="Settings_Pan1_Scr1.GroupFunctionButtonss.Group_BuDB_btn.Button_BuDB" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
         <Item Target="Settings_Pan1_Scr1.GroupFunctionButtonss.Group_DateTime_btn.Button_DateTime" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
         <Item Target="Settings_Pan1_Scr1.GroupFunctionButtonss.Text10" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANStorageTotal" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANStorageUsed" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Settings_Pan1_Scr1.GroupMonitor.TextStorage" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANRamTotal2" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
         <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANRamUsed2" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Settings_Pan1_Scr1.GroupMonitor.TextRAM" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Settings_Pan1_Scr1.GroupMonitor.LinearMeterCPU" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Settings_Pan1_Scr1.GroupMonitor.TextCPU" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANVersionNo" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Settings_Pan1_Scr1.GroupMonitor.TextSystemVersion" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
       </Items>
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANRamTotal2" TargetProperty="Value" Source="Tags.SystemTagPhysicalRAM" />
         <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANStorageTotal" TargetProperty="Value" Source="Tags.SystemTagStorageMemory" />
         <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANStorageUsed" TargetProperty="Value" Source="Tags.SystemTagUsedStorage" />
+        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANRamTotal2" TargetProperty="Value" Source="Tags.SystemTagPhysicalRAM" />
+        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANRamUsed2" TargetProperty="Value" Source="Tags.SystemTagUsedRAM" />
         <Item Target="Settings_Pan1_Scr1.GroupMonitor.LinearMeterCPU" TargetProperty="Value" Source="Tags.SystemTagCPULoad" />
         <Item Target="Settings_Pan1_Scr1.GroupMonitor.LinearMeterCPU" TargetProperty="IndicatorColor" Source="Tags.SystemTagCPULoad" />
         <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANVersionNo" TargetProperty="Value" Source="Tags.SystemTagRuntimeVersion" />
         <Item Target="Settings_Pan1_Scr1.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
-        <Item Target="Settings_Pan1_Scr1.GroupMonitor.ANRamUsed2" TargetProperty="Value" Source="Tags.SystemTagUsedRAM" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">

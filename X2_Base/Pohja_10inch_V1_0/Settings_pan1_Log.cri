@@ -25,8 +25,8 @@
     <Category Name="Font">
       <Items>
         <Item Target="Settings_pan1_Log.ListBoxErrors" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
-        <Item Target="Settings_pan1_Log.BtnUpdate" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
         <Item Target="Settings_pan1_Log.Text_Top" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Settings_pan1_Log.GroupUpdate.BtnUpdate" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
       </Items>
     </Category>
     <Category Name="GlobalDataItem">
@@ -45,11 +45,7 @@
       <Items />
     </Category>
     <Category Name="Renderable">
-      <Items>
-        <Item Target="Settings_pan1_Log.BtnUpdate" Source="-1776423973_Normal.bmp" />
-        <Item Target="Settings_pan1_Log.BtnUpdate" Source="-1776423973_Pressed.bmp" />
-        <Item Target="Settings_pan1_Log.BtnUpdate" Source="-1776423973_Disabled.bmp" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="Report">
       <Items />
@@ -57,10 +53,10 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>54</ObjectsCount>
+          <ObjectsCount>55</ObjectsCount>
           <ScreenName>Settings_pan1_Log</ScreenName>
         </Item>
-        <Item xsi:type="ScreenIDItem" ScreenID="10703">
+        <Item xsi:type="ScreenIDItem" ScreenID="10705">
           <ScreenName>Settings_pan1_Log</ScreenName>
         </Item>
       </Items>
@@ -75,7 +71,7 @@
     </Category>
     <Category Name="Symbol">
       <Items>
-        <Item xsi:type="SymbolItem" Target="Settings_pan1_Log.BtnUpdate" Source="orfer_reset" Width="28" Height="28" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_pan1_Log.GroupUpdate.BtnUpdate" Source="orfer_reset" Width="28" Height="28" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

@@ -25,14 +25,11 @@
     <Category Name="Font">
       <Items>
         <Item Target="Overview_Pan1_Scr1.Text_Top" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
-        <Item Target="Overview_Pan1_Scr1.Button1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
-        <Item Target="Overview_Pan1_Scr1.Button" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="Overview_Pan1_Scr1.GroupBtn.BtnHitME" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
       </Items>
     </Category>
     <Category Name="GlobalDataItem">
-      <Items>
-        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Button1" TargetProperty="Actions" Source="Tags.Line1_Comm_Fault_PLC1" Event="Click" Action="Reset Tag" Param="" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
       <Items />
@@ -47,14 +44,7 @@
       <Items />
     </Category>
     <Category Name="Renderable">
-      <Items>
-        <Item Target="Overview_Pan1_Scr1.Button1" Source="-25396101_Normal.bmp" />
-        <Item Target="Overview_Pan1_Scr1.Button1" Source="-25396101_Pressed.bmp" />
-        <Item Target="Overview_Pan1_Scr1.Button1" Source="-25396101_Disabled.bmp" />
-        <Item Target="Overview_Pan1_Scr1.Button" Source="-25396101_Normal.bmp" />
-        <Item Target="Overview_Pan1_Scr1.Button" Source="-25396101_Pressed.bmp" />
-        <Item Target="Overview_Pan1_Scr1.Button" Source="-25396101_Disabled.bmp" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="Report">
       <Items />
@@ -74,12 +64,12 @@
       <Items />
     </Category>
     <Category Name="StructuredTag">
-      <Items>
-        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Button1" TargetProperty="Actions" Source="Tags.Line1_Comm_Fault_PLC1" Event="Click" Action="Reset Tag" Param="" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="Symbol">
-      <Items />
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.GroupBtn.BtnHitME" Source="orfer_hand" Width="24" Height="24" IsAnimated="false" />
+      </Items>
     </Category>
     <Category Name="TextIDs">
       <Items />

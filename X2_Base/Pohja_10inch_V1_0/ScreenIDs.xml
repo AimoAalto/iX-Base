@@ -41,7 +41,7 @@
     <ScreenName>Overview_Pan2_Scr1</ScreenName>
   </ScreenIDInformation>
   <ScreenIDInformation>
-    <ScreenId>10703</ScreenId>
+    <ScreenId>10705</ScreenId>
     <ScreenName>Settings_pan1_Log</ScreenName>
   </ScreenIDInformation>
   <ScreenIDInformation>
@@ -63,9 +63,5 @@
   <ScreenIDInformation>
     <ScreenId>10706</ScreenId>
     <ScreenName>Settings_AuditTrail</ScreenName>
-  </ScreenIDInformation>
-  <ScreenIDInformation>
-    <ScreenId>10705</ScreenId>
-    <ScreenName>Settings_LogInternal</ScreenName>
   </ScreenIDInformation>
 </ArrayOfScreenIDInformation>

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Settings_SystemConf_Pan1.CBSetSelection" TargetProperty="Value" Source="Tags.HMI_ConfGroupSet" />
+        <Item Target="Settings_SystemConf_Pan1.GroupPatternsSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
+        <Item Target="Settings_SystemConf_Pan1.GroupCommonSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
+        <Item Target="Settings_SystemConf_Pan1.GroupCommonSet.ANPanelNo" TargetProperty="Value" Source="Tags.Settings_PanelNumber" />
+        <Item Target="Settings_SystemConf_Pan1.GroupRobotSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
+        <Item Target="Settings_SystemConf_Pan1.GroupNewRobotSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>142</ObjectsCount>
+          <ScreenName>Settings_SystemConf_Pan1</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="10714">
+          <ScreenName>Settings_SystemConf_Pan1</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Settings_SystemConf_Pan1.Script.cs" Source="Tags.HMI_ConfGroupSet" />
+        <Item Target="Settings_SystemConf_Pan1.Script.cs" Source="Tags.Settings_PanelNumber" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupSaveBtn.BtnSave" Source="orfer_save" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupReadBtn.BtnRead" Source="orfer_save" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupPatternsSet.GroupPatternDelete.BtnPatternDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupPatternsSet.GroupPatternAdd.BtnPatternAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupWTime.GroupWAdd.BtnWAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupWTime.GroupWDelete.BtnWDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupPalletTypes.GroupPTDelete.BtnPTDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupPalletTypes.GroupPTAdd.BtnPTAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupPalletPlaces.GroupPPDelete.BtnPPDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupPalletPlaces.GroupPPAdd.BtnPPAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupIP.GroupIPDelete.BtnIPDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupIP.GroupIPAdd.BtnIPAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupNewRobotSet.GroupRobotDelete.BtnRobotDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupNewRobotSet.GroupRobotAdd.BtnRobotAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

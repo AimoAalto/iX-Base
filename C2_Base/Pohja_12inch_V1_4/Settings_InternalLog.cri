@@ -49,15 +49,17 @@
       </Items>
     </Category>
     <Category Name="Script">
-      <Items />
+      <Items>
+        <Item Target="Settings_InternalLog.Script.cs" Source="Tags.__Log" />
+      </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items />
     </Category>
     <Category Name="Symbol">
       <Items>
-        <Item xsi:type="SymbolItem" Target="Settings_InternalLog.Group_Stop_btn.Stop_update_btn" Source="orfer_reset" Width="14" Height="14" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Settings_InternalLog.Group_Stop_btn.Stop_update_btn" Source="orfer_reset" Width="14" Height="14" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_InternalLog.Group_Stop_btn.Btn_Update" Source="orfer_reset" Width="14" Height="14" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_InternalLog.Group_Stop_btn.Btn_Update" Source="orfer_reset" Width="14" Height="14" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

@@ -27,14 +27,21 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">this</param>
 		void Settings_Robot_Opened(System.Object sender, System.EventArgs e)
 		{
-			// Avataan ensin pienin robottinumero
-			RobottiNo = Globals.Robotit.robotit.Keys.Min();
+			try
+			{
+				// Avataan ensin pienin robottinumero
+				RobottiNo = Globals.Robotit.robotit.Keys.Min();
 			
-			// Loki
-			LataaLoki();
+				// Loki
+				LataaLoki();
 			
-			// Sivun ladattua seurataan, jos lista muuttuu ja pitää päivittää
-			Globals.Robotit.robotit[RobottiNo].Loki.LokiMuuttunut += Loki_LokiMuuttunut;
+				// Sivun ladattua seurataan, jos lista muuttuu ja pitää päivittää
+				Globals.Robotit.robotit[RobottiNo].Loki.LokiMuuttunut += Loki_LokiMuuttunut;
+			}
+			catch (Exception x)
+			{
+				System.Windows.Forms.MessageBox.Show(x.Message);
+			}
 		}
 		
 		/// <summary>
@@ -172,8 +179,15 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">this</param>
 		void Settings_Robot_Closing(System.Object sender, System.ComponentModel.CancelEventArgs e)
 		{
-			// Sivu alkaa sulkeutua, irroittaudutaan kaikista tapahtumista ja ajastimista
-			Globals.Robotit.robotit[RobottiNo].Loki.LokiMuuttunut -= Loki_LokiMuuttunut;
+			try 
+			{
+				// Sivu alkaa sulkeutua, irroittaudutaan kaikista tapahtumista ja ajastimista
+				Globals.Robotit.robotit[RobottiNo].Loki.LokiMuuttunut -= Loki_LokiMuuttunut;
+			}
+			catch (Exception x)
+			{
+				System.Windows.Forms.MessageBox.Show(x.Message);
+			}
 		}
 				
 		/// <summary>

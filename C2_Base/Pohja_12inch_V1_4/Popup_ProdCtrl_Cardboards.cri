@@ -79,6 +79,7 @@
         <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_ProdReg_ValikeKerrosValikkeet" />
         <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_Error_TextValue" />
         <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
+        <Item Target="Popup_ProdCtrl_Cardboards.Script.cs" Source="Tags.HMI_PalletPlace" />
       </Items>
     </Category>
     <Category Name="StructuredTag">

@@ -95,7 +95,7 @@
         <Item xsi:type="ActionItem" Target="ProductRegister.Group_Open_btn.Product_Open_btn" TargetProperty="Actions" Source="Popup_Recipe_dialog" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ActionItem" Target="ProductRegister.Group_Delete_btn.Product_Delete_Btn" TargetProperty="Actions" Source="Popup_Recipe_dialog" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>152</ObjectsCount>
+          <ObjectsCount>153</ObjectsCount>
           <ScreenName>ProductRegister</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10101">

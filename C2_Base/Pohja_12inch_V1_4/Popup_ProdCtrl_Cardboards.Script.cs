@@ -176,23 +176,18 @@ namespace Neo.ApplicationFramework.Generated
 				// Katsotaan kummalle robotille tulorata on
 				int robottiNo = 0;
 				int roboLavapaikka = 0;
-				foreach (KeyValuePair<int, Dictionary<int, int>> robotti in _Konfiguraatio.RobotinLavapaikat)
-				{
-					if (robotti.Value.ContainsKey(lavapaikka))
-					{
-						robottiNo = robotti.Key;
-						roboLavapaikka = robotti.Value[lavapaikka];
-						break;
-					}
-				}
+				Globals._Konfiguraatio.CurrentConfig.GetRobotinLavapaikka(Globals.Tags.HMI_PalletPlace.Value, out robottiNo, out roboLavapaikka);
+				
 				if(robottiNo == 0)
 				{
 					// Robotin numeron parsinta epäonnistui
-					throw new ConfigurationFaultException("Robotin numeroa ei voitu löytää lavapaikan avulla:", "Lavapaikka " + lavapaikka);
+					MessageBox.Show("Robotin numeroa ei voitu löytää lavapaikan avulla:", "Lavapaikka " + lavapaikka);
 				}
-
-				// Lähetetään sanoma robotille
-				Globals.Robotit.robotit[robottiNo].AsetaPahvit(roboLavapaikka, pahvit);
+				else
+				{
+					// Lähetetään sanoma robotille
+					Globals.Robotit.AsetaPahvit(robottiNo, roboLavapaikka, pahvit);
+				}
 			}
 			else				
 			{

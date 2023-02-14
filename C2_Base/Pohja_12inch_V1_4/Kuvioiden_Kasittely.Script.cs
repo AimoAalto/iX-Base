@@ -104,7 +104,7 @@ namespace Neo.ApplicationFramework.Generated
 			esim.sallitutTuloradat.Add(2);
 			esim.sallitutTuloradat.Add(3);
 			esim.sallitutTuloradat.Add(4);
-			foreach(KeyValuePair<int, string> dict in _Konfiguraatio.Lavatyypit)
+			foreach(KeyValuePair<int, string> dict in Globals._Konfiguraatio.CurrentConfig.Lavatyypit)
 			{
 				esim.sallitutLavatyypit.Add(dict.Key);
 			}

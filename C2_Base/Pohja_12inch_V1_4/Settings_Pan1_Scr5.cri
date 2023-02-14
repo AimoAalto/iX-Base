@@ -44,7 +44,7 @@
       <Items>
         <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr5.Group_AddPattern_btn.New_btn" TargetProperty="Actions" Source="Popup_PatternList_Add_pattern" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>109</ObjectsCount>
+          <ObjectsCount>110</ObjectsCount>
           <ScreenName>Settings_Pan1_Scr5</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10705">

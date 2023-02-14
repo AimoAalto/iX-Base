@@ -22,13 +22,6 @@
     <Category Name="Expression">
       <Items />
     </Category>
-    <Category Name="Font">
-      <Items>
-        <Item Target="Settings_LogInternal.Text_Top" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
-        <Item Target="Settings_LogInternal.Virhelista" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
-        <Item Target="Settings_LogInternal.Group_Stop_btn.Stop_update_btn" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
-      </Items>
-    </Category>
     <Category Name="GlobalDataItem">
       <Items />
     </Category>
@@ -38,13 +31,7 @@
     <Category Name="InvalidAction">
       <Items />
     </Category>
-    <Category Name="Object">
-      <Items />
-    </Category>
     <Category Name="Recipe">
-      <Items />
-    </Category>
-    <Category Name="Renderable">
       <Items />
     </Category>
     <Category Name="Report">
@@ -54,26 +41,21 @@
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
           <ObjectsCount>55</ObjectsCount>
-          <ScreenName>Settings_LogInternal</ScreenName>
+          <ScreenName>Diagnostics_Pan1_Scr1</ScreenName>
         </Item>
-        <Item xsi:type="ScreenIDItem" ScreenID="10705">
-          <ScreenName>Settings_LogInternal</ScreenName>
+        <Item xsi:type="ScreenIDItem" ScreenID="10301">
+          <ScreenName>Diagnostics_Pan1_Scr1</ScreenName>
         </Item>
       </Items>
     </Category>
     <Category Name="Script">
-      <Items>
-        <Item Target="Settings_LogInternal.Script.cs" Source="Tags.__Log" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="StructuredTag">
       <Items />
     </Category>
     <Category Name="Symbol">
-      <Items>
-        <Item xsi:type="SymbolItem" Target="Settings_LogInternal.Group_Stop_btn.Stop_update_btn" Source="orfer_reset" Width="14" Height="14" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Settings_LogInternal.Group_Stop_btn.Stop_update_btn" Source="orfer_reset" Width="14" Height="14" IsAnimated="false" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="TextIDs">
       <Items />

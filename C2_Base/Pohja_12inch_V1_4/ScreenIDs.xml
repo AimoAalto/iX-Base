@@ -104,4 +104,12 @@
     <ScreenId>10709</ScreenId>
     <ScreenName>Settings_InternalLog</ScreenName>
   </ScreenIDInformation>
+  <ScreenIDInformation>
+    <ScreenId>10301</ScreenId>
+    <ScreenName>Diagnostics_Pan1_Scr1</ScreenName>
+  </ScreenIDInformation>
+  <ScreenIDInformation>
+    <ScreenId>10714</ScreenId>
+    <ScreenName>Settings_SystemConf_Pan1</ScreenName>
+  </ScreenIDInformation>
 </ArrayOfScreenIDInformation>

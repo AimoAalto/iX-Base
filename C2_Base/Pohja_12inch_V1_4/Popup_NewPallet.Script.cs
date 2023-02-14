@@ -28,21 +28,20 @@ namespace Neo.ApplicationFramework.Generated
 			int roboLavapaikka = -1;
 			
 			// Haetaan mikä robottilavapaikka on kyseessä
-			foreach (KeyValuePair<int, Dictionary<int, int>> robottiLavapaikat in _Konfiguraatio.RobotinLavapaikat)
+			int r;
+			int l;
+			if (Globals._Konfiguraatio.CurrentConfig.GetRobotinLavapaikka(lavapaikka, out r, out l))
 			{
-				if (robottiLavapaikat.Value.ContainsKey(lavapaikka))
-				{
-					robotti = robottiLavapaikat.Key;
-					roboLavapaikka = robottiLavapaikat.Value[lavapaikka];
-				}
+				robotti = r;
+				roboLavapaikka = l;
 			}
 
 			// Lokimerkintä
-			Globals.Robotit.robotit[robotti].Loki.LisaaLokiin(
+			Globals.Robotit.LisaaLokiin(robotti, 
 				"Lavanvaihto lavapaikalle " + roboLavapaikka +
 				". Tuotteita lavalla: " + Globals.Tags.GetTagValue("Rob" + robotti + "_lavap" + roboLavapaikka + "_plasl"));
 
-			Globals.Robotit.robotit[robotti].TeeLavanvaihto(roboLavapaikka);
+			Globals.Robotit.TeeLavanvaihto(robotti, roboLavapaikka);
 		}
     }
 }

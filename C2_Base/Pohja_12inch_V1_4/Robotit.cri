@@ -33,6 +33,7 @@
     </Category>
     <Category Name="Script">
       <Items>
+        <Item Target="Robotit.Script.cs" Source="Tags.TraceAll" />
         <Item Target="Robotit.Script.cs" Source="Tags.HMI_CommFault_Robots" />
         <Item Target="Robotit.Script.cs" Source="Tags.HMI_RobotNo" />
       </Items>

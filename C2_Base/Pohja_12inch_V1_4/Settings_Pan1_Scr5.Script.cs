@@ -69,22 +69,20 @@ namespace Neo.ApplicationFramework.Generated
 			Kuva_Kuvio.Image = null;
 			Kuva_Kuvio.Refresh();
 			
-			// Haetaan konfiguraatiosta tuloratojen määrä
 			tuloradat.Clear();
-			foreach (KeyValuePair<int, Dictionary<int, int>> robotti in _Konfiguraatio.RobotinTuloradat)
+			lavapaikat.Clear();
+			
+			// jokainen robotti			
+			foreach (Neo.ApplicationFramework.Generated.RobotConf robotti in Globals._Konfiguraatio.CurrentConfig.Robots.Values)
 			{
-				foreach (int tulorata in robotti.Value.Keys)
+				// Haetaan konfiguraatiosta tuloratojen määrä
+				foreach (int tulorata in robotti.Tuloradat)
 				{
 					// _Konfiguraatiossa on tarkistus, ettei ole duplikaatteja tuloratoja
 					tuloradat.Add(tulorata);
 				}
-			}
-			
-			// Haetaan konfiguraatiosta lavapaikkojen määrä
-			lavapaikat.Clear();
-			foreach (KeyValuePair<int, Dictionary<int, int>> robotti in _Konfiguraatio.RobotinLavapaikat)
-			{
-				foreach (int lavapaikka in robotti.Value.Keys)
+				// Haetaan konfiguraatiosta lavapaikkojen määrä
+				foreach (int lavapaikka in robotti.Lavapaikat)
 				{
 					// _Konfiguraatiossa on tarkistus, ettei ole duplikaatteja tuloratoja
 					lavapaikat.Add(lavapaikka);
@@ -273,10 +271,10 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			
 			// Muokataan näkyviin oikea määrä lavapaikkoja
-			for (int i = 0; i < _Konfiguraatio.Lavatyypit.Keys.Count; i++)
+			for (int i = 0; i < Globals._Konfiguraatio.CurrentConfig.Lavatyypit.Keys.Count; i++)
 			{
 				// Lisätään tekstiin lavatyypin nimi
-				((Controls.WindowsControls.CheckBox)lavatyyppiElementit.ElementAt(i)).Text += " " + _Konfiguraatio.Lavatyypit.ElementAt(i).Value;
+				((Controls.WindowsControls.CheckBox)lavatyyppiElementit.ElementAt(i)).Text += " " + Globals._Konfiguraatio.CurrentConfig.Lavatyypit.ElementAt(i).Value;
 				
 				// Asetetaan laatikko näkyviin
 				lavatyyppiElementit.ElementAt(i).Visibility = Visibility.Visible;
@@ -394,10 +392,10 @@ namespace Neo.ApplicationFramework.Generated
 				// Haetaan lavatyyppielementit			
 				List<FrameworkElement> lavatyyppiElementit = JarjestaLista(HaeElementit("PalletType"), 12);
 				
-				for (int i = 0; i < _Konfiguraatio.Lavatyypit.Count; i++)
+				for (int i = 0; i < Globals._Konfiguraatio.CurrentConfig.Lavatyypit.Count; i++)
 				{
 					((Controls.WindowsControls.CheckBox)lavatyyppiElementit.ElementAt(i)).IsChecked = 
-						valittuKuvio.sallitutLavatyypit.Contains(_Konfiguraatio.Lavatyypit.ElementAt(i).Key);
+						valittuKuvio.sallitutLavatyypit.Contains(Globals._Konfiguraatio.CurrentConfig.Lavatyypit.ElementAt(i).Key);
 				}
 			}
 			catch 
@@ -524,12 +522,12 @@ namespace Neo.ApplicationFramework.Generated
 								
 				// Kerätään uusi lavatyyppien lista
 				List<int> uudetLavatyypit = new List<int>();
-				for (int i = 0; i < _Konfiguraatio.Lavatyypit.Keys.Count; i++)
+				for (int i = 0; i < Globals._Konfiguraatio.CurrentConfig.Lavatyypit.Keys.Count; i++)
 				{
 					// Lisätään lavatyyppi sallittujen listaan, jos se on valittu
 					if (((Controls.WindowsControls.CheckBox)lavatyyppiElementit.ElementAt(i)).IsChecked.GetValueOrDefault())
 					{
-						uudetLavatyypit.Add(_Konfiguraatio.Lavatyypit.ElementAt(i).Key);
+						uudetLavatyypit.Add(Globals._Konfiguraatio.CurrentConfig.Lavatyypit.ElementAt(i).Key);
 					}
 				}
 				

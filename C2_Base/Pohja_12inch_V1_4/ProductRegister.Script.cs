@@ -27,7 +27,6 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">this</param>
 		void ProductRegister_Opened(System.Object sender, System.EventArgs e)
 		{
-
 			// Nollataan reseptivalinta
 			Globals.Tags.ProdReg_RecipeName.Value = "";
 			
@@ -158,17 +157,17 @@ namespace Neo.ApplicationFramework.Generated
 			// Katsotaan kummalle robotille kuvio on
 			Robotti_Text.Text = "";
 			loytyi = false;
-			foreach (KeyValuePair<int, Dictionary<int, int>> robotti in _Konfiguraatio.RobotinLavapaikat)
+			foreach (Neo.ApplicationFramework.Generated.RobotConf robotti in Globals._Konfiguraatio.CurrentConfig.Robots.Values)
 			{
 				foreach (int lavapaikka in lavapaikat)
 				{
-					if (robotti.Value.ContainsKey(lavapaikka))
+					if (robotti.Lavapaikat.Contains(lavapaikka))
 					{
 						if (loytyi)
 						{
 							Robotti_Text.Text = Robotti_Text.Text + ", ";
 						}
-						Robotti_Text.Text = Robotti_Text.Text + robotti.Key.ToString();
+						Robotti_Text.Text = Robotti_Text.Text + robotti.RobotNo.ToString();
 						loytyi = true;
 						break;
 					}
@@ -180,11 +179,12 @@ namespace Neo.ApplicationFramework.Generated
 			boxi.IntervalMapper.Intervals.Clear();
 			foreach (int tyyppi in kuvio.sallitutLavatyypit)
 			{
-				PalletTypeComboBox.AddString(tyyppi, _Konfiguraatio.Lavatyypit[tyyppi]);
+				PalletTypeComboBox.AddString(tyyppi, Globals._Konfiguraatio.CurrentConfig.Lavatyyppi(tyyppi));
 			}
+
 			if (Globals.Tags.ProdReg_PalletType.Value.Int != 0)
 			{
-				if (PalletTypeComboBox.Items.Contains(_Konfiguraatio.Lavatyypit[Globals.Tags.ProdReg_PalletType.Value.Int]))
+				if (PalletTypeComboBox.Items.Contains(Globals._Konfiguraatio.CurrentConfig.Lavatyyppi(Globals.Tags.ProdReg_PalletType.Value.Int)))
 				{
 					PalletTypeComboBox.SelectedIndex = Globals.Tags.ProdReg_PalletType.Value.Int;
 				}

@@ -16,8 +16,15 @@ namespace Neo.ApplicationFramework.Generated
     using Neo.ApplicationFramework.Interfaces;
     
     
-    public partial class Settings_LogInternal
+    public partial class Settings_InternalLog
     {
+		
+		void Settings_InternalLog_Opened(System.Object sender, System.EventArgs e)
+		{
+			// Loki
+			LataaLoki();
+		}
+		
 		/// <summary>
 		/// Päivittää robottin virhelokin näytölle. Siirtää näkymän ja valinnan
 		/// uusimpiin tapahtumiin.
@@ -34,35 +41,12 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			
 			// Scrollataan listaa mukana
-			/*Virhelista.SelectedIndex = Virhelista.Items.Count - 1;
-			Virhelista.AdaptedObject.CastTo<Neo.ApplicationFramework.Controls.WindowsControls.ListBox>()
-			.ScrollIntoView(Virhelista.SelectedItem);
-			*/
+			Virhelista.SelectedIndex = Virhelista.Items.Count - 1;
+			Virhelista.AdaptedObject.CastTo<Neo.ApplicationFramework.Controls.WindowsControls.ListBox>().ScrollIntoView(Virhelista.SelectedItem);
+			/**/
 		}
 		
-		/// <summary>
-		/// Lataa ensimmäisen robotin lokin ja liittyy seuraamaan sen muutoksia.
-		/// </summary>
-		/// <param name="sender">this</param>
-		void Settings_LogInternal_Opened(System.Object sender, System.EventArgs e)
-		{
-			// Loki
-			LataaLoki();
-		}
-		
-		/// <summary>
-		/// Irroittautuu lokin seurannasta sivun sulkeutuessa.
-		/// </summary>
-		/// <param name="sender">this</param>
-		void Settings_Robot_Closing(System.Object sender, System.ComponentModel.CancelEventArgs e)
-		{
-		}
-				
-		/// <summary>
-		/// Pysäyttää lokinäytön päivityksen.
-		/// </summary>
-		/// <param name="sender">this.Stop_update_btn</param>
-		void Stop_update_btn_Click(System.Object sender, System.EventArgs e)
+		void Btn_Update_Click(System.Object sender, System.EventArgs e)
 		{
 			LataaLoki();
 		}

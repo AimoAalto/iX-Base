@@ -32,7 +32,9 @@
       <Items />
     </Category>
     <Category Name="Script">
-      <Items />
+      <Items>
+        <Item Target="Logiikat.Script.cs" Source="Tags.TraceAll" />
+      </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items />

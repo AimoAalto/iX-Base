@@ -7,19 +7,11 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    using System.Windows.Forms;
-    using System;
-    using System.Drawing;
-    using Neo.ApplicationFramework.Tools;
-    using Neo.ApplicationFramework.Common.Graphics.Logic;
-    using Neo.ApplicationFramework.Controls;
-    using Neo.ApplicationFramework.Interfaces;
-    
     
     public partial class Overview_Pan1_Scr1
     {
 		
-		void Button_Click(System.Object sender, System.EventArgs e)
+		void BtnHitME_Click(System.Object sender, System.EventArgs e)
 		{
 			int val = Globals.Tags.GetTagValue("Höpönhöpö");
 		}

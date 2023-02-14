@@ -77,37 +77,12 @@
         <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa4_Tila" Source="S7_PLC_1.DataItem56" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Aloitettu2" Source="S7_PLC_1.DataItem57" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Aloitus2" Source="S7_PLC_1.DataItem58" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa5_Valinta" Source="S7_PLC_1.DataItem59" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa6_Valinta" Source="S7_PLC_1.DataItem60" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa7_Valinta" Source="S7_PLC_1.DataItem61" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa8_Valinta" Source="S7_PLC_1.DataItem62" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa5_Valinta" Source="S7_PLC_1.DataItem63" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa6_Valinta" Source="S7_PLC_1.DataItem64" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa7_Valinta" Source="S7_PLC_1.DataItem65" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa5_Tila" Source="S7_PLC_1.DataItem66" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa5_Tila" Source="S7_PLC_1.DataItem67" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa6_Tila" Source="S7_PLC_1.DataItem68" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa7_Tila" Source="S7_PLC_1.DataItem69" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Aloitettu5" Source="S7_PLC_1.DataItem70" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Aloitus5" Source="S7_PLC_1.DataItem71" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetettu5" Source="S7_PLC_1.DataItem72" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetus5" Source="S7_PLC_1.DataItem73" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetusvaiheet5" Source="S7_PLC_1.DataItem74" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetusvaiheet6" Source="S7_PLC_1.DataItem75" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetusvaiheet7" Source="S7_PLC_1.DataItem76" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Packets_Cum5" Source="S7_PLC_1.DataItem77" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Packets_Trip5" Source="S7_PLC_1.DataItem78" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Pallets_Cum5" Source="S7_PLC_1.DataItem79" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Pallets_Trip5" Source="S7_PLC_1.DataItem80" />
         <Item Target="Tags" TargetProperty="Line1_PLC_PalletType2" Source="S7_PLC_1.DataItem81" />
         <Item Target="Tags" TargetProperty="Line1_PLC_PalletType3" Source="S7_PLC_1.DataItem82" />
         <Item Target="Tags" TargetProperty="Line1_PLC_PalletType4" Source="S7_PLC_1.DataItem83" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_PalletType5" Source="S7_PLC_1.DataItem84" />
         <Item Target="Tags" TargetProperty="Line1_PLC_ResetProductionTripMeter2" Source="S7_PLC_1.DataItem85" />
         <Item Target="Tags" TargetProperty="Line1_PLC_ResetProductionTripMeter3" Source="S7_PLC_1.DataItem86" />
         <Item Target="Tags" TargetProperty="Line1_PLC_ResetProductionTripMeter4" Source="S7_PLC_1.DataItem87" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_ResetProductionTripMeter5" Source="S7_PLC_1.DataItem88" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetusvaiheet8" Source="S7_PLC_1.DataItem89" />
         <Item Target="Tags" TargetProperty="Line1_PLC_SystemsSecond" Source="S7_PLC_1.DataItem90" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Pahvi_Ottolupa2_Valinta" Source="S7_PLC_1.DataItem91" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Pahvi_Ottolupa2_Tila" Source="S7_PLC_1.DataItem92" />
@@ -116,13 +91,7 @@
         <Item Target="Tags" TargetProperty="Line1_PLC_Lavapaikka_TK1" Source="S7_PLC_1.DataItem95" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Lavapaikka_TK3" Source="S7_PLC_1.DataItem96" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Lavapaikka_TK4" Source="S7_PLC_1.DataItem97" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Lavapaikka_TK5" Source="S7_PLC_1.DataItem98" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Lavapaikka_TK2" Source="S7_PLC_1.DataItem99" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa8_Tila" Source="S7_PLC_1.DataItem100" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa8_Valinta" Source="S7_PLC_1.DataItem101" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa6_Tila" Source="S7_PLC_1.DataItem102" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa7_Tila" Source="S7_PLC_1.DataItem103" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa8_Tila" Source="S7_PLC_1.DataItem104" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa1_Tila" Source="S7_PLC_1.DataItem105" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa2_Tila" Source="S7_PLC_1.DataItem106" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa3_Tila" Source="S7_PLC_1.DataItem107" />

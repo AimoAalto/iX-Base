@@ -238,14 +238,6 @@
         </TransformGroup>
       </nac:Label.RenderTransform>
     </nac:Label>
-    <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle1" Width="436.183019266923" Height="549.936985580599" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="470.511897476747" Canvas.Top="132.733651819462" nacsd:EditorProperties.IsLocked="False">
-      <nacc:Rectangle.BevelEffectInfo>
-        <nacb:BevelEffectInfo Style="Raised" Width="0" />
-      </nacc:Rectangle.BevelEffectInfo>
-      <nai:ActionProperties.Actions>
-        <nai:ActionList />
-      </nai:ActionProperties.Actions>
-    </nacc:Rectangle>
     <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Operating speed" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text_OpSpeed" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="103" Canvas.Left="935" Canvas.Top="380.212484726853">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
@@ -262,6 +254,16 @@
       </nac:Label.RenderTransform>
     </nac:Label>
     <nac:AnalogNumericFX AutoStretchFont="False" MaxValue="100000" ValidateValueOnInput="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" BorderBrush="#FF267593" BorderThickness="1,1,1,1" Background="#FF106280" Foreground="#FFFFFFFF" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_Numero" Width="60.6383497475471" Height="48" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="105" KeyboardNavigation.TabNavigation="None" Canvas.Left="815.056566996123" Canvas.Top="610.359896843224">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_AdditionalRobotErrorNo].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
       <nac:AnalogNumericFX.BevelEffectInfo>
         <nacb:BevelEffectInfo Style="None" Width="0" />
       </nac:AnalogNumericFX.BevelEffectInfo>
@@ -428,150 +430,6 @@
     <nacs2:Picture SymbolName="robotti_läpin" Stretch="True" Name="m_Picture_Robot" Width="230.306994683761" Height="246.539157538116" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="111" Canvas.Left="213.057498939913" Canvas.Top="229.908280659546" nacsd:EditorProperties.IsLocked="True" />
     <Line X1="934.787881305389" Y1="230.91" X2="1248.78788130539" Y2="230.58" Stroke="#FF0D4E66" StrokeThickness="2" Name="m_Line" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" />
     <Line X1="933.147881305389" Y1="414.33" X2="1247.14788130539" Y2="414" Stroke="#FF0D4E66" StrokeThickness="2" Name="m_Line1" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" />
-    <nac:Group Name="m_Group_Virtoip8_btn" Width="84" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="125" Canvas.Left="764.463410610704" Canvas.Top="543.535823614328">
-      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="8" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_8" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="61" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.TextDecorations>
-          <TextDecorationCollection />
-        </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
-        <nai:ScriptProperties.ScriptEvents>
-          <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_8_Click" />
-          </nai:ScriptEventList>
-        </nai:ScriptProperties.ScriptEvents>
-      </nac:Button>
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle11" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="2.53658938929607" Canvas.Top="2" />
-    </nac:Group>
-    <nac:Group Name="m_Group_Virtoip7_btn" Width="84" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="124" Canvas.Left="675.753268828297" Canvas.Top="543.535823614328">
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle10" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="2.246731171703" Canvas.Top="2" />
-      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="7" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_7" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="61" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.TextDecorations>
-          <TextDecorationCollection />
-        </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
-        <nai:ScriptProperties.ScriptEvents>
-          <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_7_Click" />
-          </nai:ScriptEventList>
-        </nai:ScriptProperties.ScriptEvents>
-      </nac:Button>
-    </nac:Group>
-    <nac:Group Name="m_Group_Virtoip6_btn" Width="84" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="123" Canvas.Left="587.043127045889" Canvas.Top="543.535823614328">
-      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="6" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_6" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="62" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.TextDecorations>
-          <TextDecorationCollection />
-        </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
-        <nai:ScriptProperties.ScriptEvents>
-          <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_6_Click" />
-          </nai:ScriptEventList>
-        </nai:ScriptProperties.ScriptEvents>
-      </nac:Button>
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle9" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="1.95687295411062" Canvas.Top="2" />
-    </nac:Group>
-    <nac:Group Name="m_Group_Virtoip5_btn" Width="84" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="122" Canvas.Left="498.332985263482" Canvas.Top="543.535823614328">
-      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="5" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_5" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="61" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.TextDecorations>
-          <TextDecorationCollection />
-        </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
-        <nai:ScriptProperties.ScriptEvents>
-          <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_5_Click" />
-          </nai:ScriptEventList>
-        </nai:ScriptProperties.ScriptEvents>
-      </nac:Button>
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle8" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="1.66701473651801" Canvas.Top="2" />
-    </nac:Group>
-    <nac:Group Name="m_Group_Virtoip4_btn" Width="84" Height="50.0000000000001" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="117" Canvas.Left="764.463410610704" Canvas.Top="491.495600592907">
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle7" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="59" Canvas.Left="2.53658938929607" Canvas.Top="2.00000000000006" />
-      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="4" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_4" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="60" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.TextDecorations>
-          <TextDecorationCollection />
-        </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
-        <nai:ScriptProperties.ScriptEvents>
-          <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_4_Click" />
-          </nai:ScriptEventList>
-        </nai:ScriptProperties.ScriptEvents>
-      </nac:Button>
-    </nac:Group>
-    <nac:Group Name="m_Group_Virtoip3_btn" Width="84" Height="50.0000000000001" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="116" Canvas.Left="675.753268828297" Canvas.Top="491.495600592907">
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle6" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="58" Canvas.Left="2.246731171703" Canvas.Top="2.00000000000006" />
-      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="3" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_3" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="59" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.TextDecorations>
-          <TextDecorationCollection />
-        </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
-        <nai:ScriptProperties.ScriptEvents>
-          <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_3_Click" />
-          </nai:ScriptEventList>
-        </nai:ScriptProperties.ScriptEvents>
-      </nac:Button>
-    </nac:Group>
-    <nac:Group Name="m_Group_Virtoip2_btn" Width="84" Height="50.0000000000001" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="115" Canvas.Left="587.043127045889" Canvas.Top="491.495600592907">
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle4" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="57" Canvas.Left="1.95687295411062" Canvas.Top="2.00000000000006" />
-      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="4,4,4,4" Text="2" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_2" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="58" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.TextDecorations>
-          <TextDecorationCollection />
-        </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
-        <nai:ScriptProperties.ScriptEvents>
-          <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_2_Click" />
-          </nai:ScriptEventList>
-        </nai:ScriptProperties.ScriptEvents>
-      </nac:Button>
-    </nac:Group>
-    <nac:Group Name="m_Group_Virtoip1_btn" Width="83.9999999999999" Height="50.0000000000001" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="114" Canvas.Left="498.332985263482" Canvas.Top="491.495600592907">
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle2" Width="80" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="56" Canvas.Left="1.66701473651796" Canvas.Top="2.00000000000006" />
-      <nac:Button ButtonAppearance="Rounded" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,0,0,0" Text="1" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Virtoip_1" Width="84" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="57" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.TextDecorations>
-          <TextDecorationCollection />
-        </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
-        <nai:ScriptProperties.ScriptEvents>
-          <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Virtoip_1_Click" />
-          </nai:ScriptEventList>
-        </nai:ScriptProperties.ScriptEvents>
-      </nac:Button>
-    </nac:Group>
-    <nac:Group Name="m_Group_Service_btn" Width="160" Height="55" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="112" Canvas.Left="235.357320855507" Canvas.Top="578.193230176557">
-      <nac:Button ButtonAppearance="Default" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,7,4,7" Text="To service &#xD;&#xA;position" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="70,0,0,0" RequiresTransparency="True" SymbolName="orfer_settings" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_ServicePos" Width="160" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="60" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Supervisors" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.TextDecorations>
-          <TextDecorationCollection />
-        </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
-        <nai:ScriptProperties.ScriptEvents>
-          <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_ServicePos_Click" />
-          </nai:ScriptEventList>
-        </nai:ScriptProperties.ScriptEvents>
-      </nac:Button>
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle" Width="160" Height="51" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="59" Canvas.Left="0" Canvas.Top="2" />
-    </nac:Group>
     <nac:Group Name="m_Group_Edit_btn" Width="144.666666666667" Height="52" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="126" Canvas.Left="941.123122548975" Canvas.Top="608.359896843224">
       <nac:Button ButtonAppearance="RoundedBottomLeft" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="8,4,4,8" Text="Edit" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="0,0,0,0" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Edit" Width="144.666666666667" Height="52" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="80" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.TextDecorations>

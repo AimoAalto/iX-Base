@@ -33,6 +33,7 @@
     </Category>
     <Category Name="Script">
       <Items>
+        <Item Target="Lavaloki.Script.cs" Source="Tags.TraceAll" />
         <Item Target="Lavaloki.Script.cs" Source="Tags.SystemTagDateTime" />
         <Item Target="Lavaloki.Script.cs" Source="Tags.HMI_PalletLog_Started" />
         <Item Target="Lavaloki.Script.cs" Source="Tags.HMI_PalletLog_Ended" />

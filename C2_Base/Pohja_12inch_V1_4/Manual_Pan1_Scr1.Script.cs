@@ -46,6 +46,7 @@ namespace Neo.ApplicationFramework.Generated
 			
 			// Poista manuaalitilan valinta
 			Globals.Tags.Line1_Manual_Area_Enabled_1.Value = false;
+			//Globals.Tags.Line1_HMI1_Manual_Ctrl_Nr.Value = 0;
 		}
 		
 		void btnManTapa_Click(System.Object sender, System.EventArgs e)

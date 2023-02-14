@@ -30,19 +30,12 @@ namespace Neo.ApplicationFramework.Generated
 		void Popup_Palletplace_info_Opened(System.Object sender, System.EventArgs e)
 		{
 			// Haetaan robotin numero ja robotin käyttämä lavapaikan numero
-			foreach (KeyValuePair<int, Dictionary<int, int>> robotti in _Konfiguraatio.RobotinLavapaikat)
-			{
-				if (robotti.Value.ContainsKey(Globals.Tags.HMI_PalletPlace.Value))
-				{
-					robottiNo = robotti.Key;
-					roboLavapaikka = robotti.Value[Globals.Tags.HMI_PalletPlace.Value];
-					break;
-				}
-			}
+			Globals._Konfiguraatio.CurrentConfig.GetRobotinLavapaikka(Globals.Tags.HMI_PalletPlace.Value, out robottiNo, out roboLavapaikka);
+
 			if(robottiNo == 0)
 			{
 				// Robotin numeron parsinta epäonnistui
-				throw new ConfigurationFaultException("Robotin numeroa ei voitu löytää lavapaikan avulla:", "Lavapaikka " + Globals.Tags.HMI_PalletPlace.Value);
+				MessageBox.Show("Robotin numeroa ei voitu löytää lavapaikan avulla:", "Lavapaikka " + Globals.Tags.HMI_PalletPlace.Value);
 			}
 			
 			//Lavapaikan tuotenimi	
@@ -75,19 +68,27 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">this.Btn_Valikkeet</param>
 		void Btn_Valikkeet_Click(System.Object sender, System.EventArgs e)
 		{
-			// Kirjoitetaan parametrit ennen välike sivun avausta
-			// Lavapaikka Globals.Tags.HMI_PalletPlace.Value -1 => Tuoterekisteri
-			Globals.Tags.HMI_ProdCtrl_Cardboards_Lavapaikka.Value = Globals.Tags.HMI_PalletPlace.Value;
+			try
+			{
+				// Kirjoitetaan parametrit ennen välike sivun avausta
+				// Lavapaikka Globals.Tags.HMI_PalletPlace.Value -1 => Tuoterekisteri
+				Globals.Tags.HMI_ProdCtrl_Cardboards_Lavapaikka.Value = Globals.Tags.HMI_PalletPlace.Value;
 			
-			// Alkuperäiset pahvit ennen muokkausta
-			Globals.Tags.HMI_ProdCtrl_Cardboards_Pahvit.Value = Globals.Tags.GetTagValue("Rob" + robottiNo+ "_lavap" + _Konfiguraatio.RobotinLavapaikat[robottiNo][Globals.Tags.HMI_PalletPlace.Value] + "_ppahvit");
+				// Alkuperäiset pahvit ennen muokkausta
+				string tagname = "Rob" + robottiNo + "_lavap" + roboLavapaikka + "_ppahvit";
+				Globals.Tags.HMI_ProdCtrl_Cardboards_Pahvit.Value = Globals.Tags.GetTagValue(tagname);
 			
-			// Kuvion maksimikerrot ja kerroasetus
-			Globals.Tags.HMI_ProdCtrl_Cardboards_MaxKerros.Value = Globals.Tags.GetTagValue("Rob" + robottiNo + "_lavap" + _Konfiguraatio.RobotinLavapaikat[robottiNo][Globals.Tags.HMI_PalletPlace.Value] + "_pmaxkerros"); // Kuviosta luettu enimmäiskerrosmäärä
-			Globals.Tags.HMI_ProdCtrl_Cardboards_Kerrosasetus.Value = Globals.Tags.GetTagValue("Rob" + robottiNo + "_lavap" + _Konfiguraatio.RobotinLavapaikat[robottiNo][Globals.Tags.HMI_PalletPlace.Value] + "_pkerasetus");
+				// Kuvion maksimikerrot ja kerroasetus
+				Globals.Tags.HMI_ProdCtrl_Cardboards_MaxKerros.Value = Globals.Tags.GetTagValue("Rob" + robottiNo + "_lavap" + roboLavapaikka + "_pmaxkerros"); // Kuviosta luettu enimmäiskerrosmäärä
+				Globals.Tags.HMI_ProdCtrl_Cardboards_Kerrosasetus.Value = Globals.Tags.GetTagValue("Rob" + robottiNo + "_lavap" + roboLavapaikka + "_pkerasetus");
 
-			// Avataan välikkeideiden muokkaussivu
-			Globals.Popup_ProdCtrl_Cardboards.Show();
+				// Avataan välikkeideiden muokkaussivu
+				Globals.Popup_ProdCtrl_Cardboards.Show();
+			}
+			catch (Exception x)
+			{
+				MessageBox.Show(x.Message);
+			}
 		}
 		
 		/// <summary>
@@ -109,8 +110,8 @@ namespace Neo.ApplicationFramework.Generated
 				jattoviive = Convert.ToDouble(LukuJattoviive.Value);
 				
 				// Lähetetään Robotille
-				Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Uudet tuotenopeudet: " + tuote_nop.Value + ", " + tuote_kii.Value + ", " + LukuTartuntaviive.Value + ", " + LukuJattoviive.Value);
-				Globals.Robotit.robotit[robottiNo].PaikkaNopeus(roboLavapaikka, nopeus, kiihtyvyys, tartuntaviive, jattoviive);
+				Globals.Robotit.LisaaLokiin(robottiNo, "Uudet tuotenopeudet: " + tuote_nop.Value + ", " + tuote_kii.Value + ", " + LukuTartuntaviive.Value + ", " + LukuJattoviive.Value);
+				Globals.Robotit.PaikkaNopeus(robottiNo, roboLavapaikka, nopeus, kiihtyvyys, tartuntaviive, jattoviive);
 			}
 			catch(Exception ex)
 			{
@@ -123,8 +124,8 @@ namespace Neo.ApplicationFramework.Generated
 			try
 			{
 				// Lähetetään kerrosmäärä robotille
-				Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Uusi kerrosmäärä: " + Kerrokset.Value);
-				Globals.Robotit.robotit[robottiNo].AsetaKerrosmaara(roboLavapaikka, Convert.ToInt16(Kerrokset.Value));	
+				Globals.Robotit.LisaaLokiin(robottiNo, "Uusi kerrosmäärä: " + Kerrokset.Value);
+				Globals.Robotit.AsetaKerrosmaara(robottiNo, roboLavapaikka, Convert.ToInt16(Kerrokset.Value));
 			}
 			catch(Exception ex)
 			{
@@ -134,6 +135,5 @@ namespace Neo.ApplicationFramework.Generated
 				Globals.Popup_Error.Show();
 			}
 		}
-
     }
 }

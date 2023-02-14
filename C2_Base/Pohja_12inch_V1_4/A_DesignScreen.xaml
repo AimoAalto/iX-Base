@@ -2,11 +2,11 @@
 <?neo version='2.46.49.0'?>
 <nacs:ScreenWindow Topmost="False" Title="A_DesignScreen" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1280, 800" StyleName="Default" IsCacheable="True" Background="#FF106280" Width="1280" Height="800" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=CommonCF" xmlns:nac2="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.A_DesignScreen">
   <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
-    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_Rob1_otto1" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="132.184491725784" Canvas.Top="281.014029809976" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_Rob1_otto1" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="119.257604987404" Canvas.Top="281.014029809976" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs1:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
           <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
         </ResourceDictionary>
       </nacs1:SymbolViewbox.Resources>
       <nacb:BlinkProperties.IsBlinkEnabled>
@@ -53,11 +53,11 @@
         </Path>
       </Canvas>
     </nacs1:SymbolViewbox>
-    <nacs1:SymbolViewbox Fill="#FF00FF00" SymbolColor="#FF00FF00" RequiresTransparency="False" ForceTransparency="False" Name="m_Rob1_jatto1" Width="25" Height="45" RenderTransformOrigin="2.01162844457067,1.45097286244298" Opacity="0.83597830309483" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="108.06427165407" Canvas.Top="102.295598296649" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+    <nacs1:SymbolViewbox Fill="#FF00FF00" SymbolColor="#FF00FF00" RequiresTransparency="False" ForceTransparency="False" Name="m_Rob1_jatto1" Width="25" Height="45" RenderTransformOrigin="2.01162844457067,1.45097286244298" Opacity="0.83597830309483" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="119.257604987404" Canvas.Top="102.295598296649" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs1:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
           <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
         </ResourceDictionary>
       </nacs1:SymbolViewbox.Resources>
       <nacb:BlinkProperties.IsBlinkEnabled>
@@ -94,11 +94,11 @@
         </Path>
       </Canvas>
     </nacs1:SymbolViewbox>
-    <nacs1:SymbolViewbox Fill="#FF00FF00" SymbolColor="#FF00FF00" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox31" Width="25" Height="45" RenderTransformOrigin="2.01162844457067,1.45097286244298" Opacity="0.83597830309483" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="156.064271654071" Canvas.Top="104.162220773355" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+    <nacs1:SymbolViewbox Fill="#FF00FF00" SymbolColor="#FF00FF00" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox31" Width="25" Height="45" RenderTransformOrigin="2.01162844457067,1.45097286244298" Opacity="0.83597830309483" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="170.995365208036" Canvas.Top="104.162220773355" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs1:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
           <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
         </ResourceDictionary>
       </nacs1:SymbolViewbox.Resources>
       <nacb:BlinkProperties.IsBlinkEnabled>
@@ -135,11 +135,11 @@
         </Path>
       </Canvas>
     </nacs1:SymbolViewbox>
-    <nacs1:SymbolViewbox Fill="#FF00FF00" SymbolColor="#FF00FF00" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox39" Width="25" Height="45" RenderTransformOrigin="2.01162844457067,1.45097286244298" Opacity="0.83597830309483" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="210.064271654071" Canvas.Top="104.162220773355" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+    <nacs1:SymbolViewbox Fill="#FF00FF00" SymbolColor="#FF00FF00" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox39" Width="25" Height="45" RenderTransformOrigin="2.01162844457067,1.45097286244298" Opacity="0.83597830309483" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="219.643789751982" Canvas.Top="104.162220773355" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs1:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
           <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
         </ResourceDictionary>
       </nacs1:SymbolViewbox.Resources>
       <nacb:BlinkProperties.IsBlinkEnabled>
@@ -176,11 +176,11 @@
         </Path>
       </Canvas>
     </nacs1:SymbolViewbox>
-    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox47" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="183.922251946416" Canvas.Top="281.014029809976" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox47" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="170.995365208036" Canvas.Top="281.014029809976" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs1:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
           <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
         </ResourceDictionary>
       </nacs1:SymbolViewbox.Resources>
       <nacb:BlinkProperties.IsBlinkEnabled>
@@ -227,11 +227,11 @@
         </Path>
       </Canvas>
     </nacs1:SymbolViewbox>
-    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox55" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="235.570676490363" Canvas.Top="281.014029809976" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox55" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="219.643789751982" Canvas.Top="281.014029809976" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs1:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
           <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
         </ResourceDictionary>
       </nacs1:SymbolViewbox.Resources>
       <nacb:BlinkProperties.IsBlinkEnabled>
@@ -283,7 +283,7 @@
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
     </nac:Label>
-    <nac:Label Text="Rob3" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text38" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="210.064271654071" Canvas.Top="74.2536193970284" nacsd:EditorProperties.IsLocked="False">
+    <nac:Label Text="Rob3" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text38" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="207.547123085315" Canvas.Top="74.2536193970284" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
@@ -298,17 +298,17 @@
         </TransformGroup>
       </nac:Label.RenderTransform>
     </nac:Label>
-    <nac:Label Text="Rob1" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text39" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="108.06427165407" Canvas.Top="74.2536193970284" nacsd:EditorProperties.IsLocked="False">
+    <nac:Label Text="Rob1" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text39" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="107.160938320737" Canvas.Top="74.2536193970284" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
     </nac:Label>
-    <nac:Label Text="Rob2" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text40" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="154.289647252265" Canvas.Top="241.081061754042" nacsd:EditorProperties.IsLocked="False">
+    <nac:Label Text="Rob2" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text40" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="158.898698541369" Canvas.Top="241.081061754042" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
     </nac:Label>
-    <nac:Label Text="Rob3" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text41" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="211.482980585597" Canvas.Top="241.081061754042" nacsd:EditorProperties.IsLocked="False">
+    <nac:Label Text="Rob3" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text41" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="207.547123085315" Canvas.Top="241.081061754042" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
@@ -323,12 +323,12 @@
         </TransformGroup>
       </nac:Label.RenderTransform>
     </nac:Label>
-    <nac:Label Text="Rob1" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text42" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="19" Canvas.Left="109.482980585597" Canvas.Top="241.081061754042" nacsd:EditorProperties.IsLocked="False">
+    <nac:Label Text="Rob1" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text42" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="19" Canvas.Left="107.160938320737" Canvas.Top="241.081061754042" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
     </nac:Label>
-    <nac:Label Text="Rob2" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text43" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="152.870938320738" Canvas.Top="74.2536193970284" nacsd:EditorProperties.IsLocked="False">
+    <nac:Label Text="Rob2" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text43" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="158.898698541369" Canvas.Top="74.2536193970284" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
@@ -416,8 +416,8 @@
       <nacs1:Symbol MultiPicture="True" Name="m_MultiPicture" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
         <nacs1:Symbol.Resources>
           <ResourceDictionary>
-            <nacc:VariantValueConverter x:Key="ValueConverter" />
             <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
           </ResourceDictionary>
         </nacs1:Symbol.Resources>
         <nacs1:Symbol.Value>
@@ -503,8 +503,8 @@
       <nacs1:Symbol MultiPicture="True" Name="m_MultiPicture1" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
         <nacs1:Symbol.Resources>
           <ResourceDictionary>
-            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
             <nacc:VariantValueConverter x:Key="ValueConverter" />
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
           </ResourceDictionary>
         </nacs1:Symbol.Resources>
         <nacs1:Symbol.Value>
@@ -590,8 +590,8 @@
       <nacs1:Symbol MultiPicture="True" Name="m_MultiPicture2" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
         <nacs1:Symbol.Resources>
           <ResourceDictionary>
-            <nacc:VariantValueConverter x:Key="ValueConverter" />
             <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
           </ResourceDictionary>
         </nacs1:Symbol.Resources>
         <nacs1:Symbol.Value>
@@ -906,11 +906,11 @@
         </nacb:BlinkProperties.VisibleDynamicsValue>
       </nacc1:Rectangle>
     </nac:Group>
-    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="132.257604987404" Canvas.Top="436.854064563279" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="119.257604987404" Canvas.Top="436.854064563279" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs1:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="11" />
           <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="11" />
         </ResourceDictionary>
       </nacs1:SymbolViewbox.Resources>
       <nacb:BlinkProperties.IsBlinkEnabled>
@@ -957,11 +957,11 @@
         </Path>
       </Canvas>
     </nacs1:SymbolViewbox>
-    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox1" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="44" Canvas.Left="183.995365208036" Canvas.Top="436.854064563279" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox1" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="44" Canvas.Left="170.995365208036" Canvas.Top="436.854064563279" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs1:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
           <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="11" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
         </ResourceDictionary>
       </nacs1:SymbolViewbox.Resources>
       <nacb:BlinkProperties.IsBlinkEnabled>
@@ -1008,11 +1008,11 @@
         </Path>
       </Canvas>
     </nacs1:SymbolViewbox>
-    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox2" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="45" Canvas.Left="235.643789751982" Canvas.Top="436.854064563279" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+    <nacs1:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox2" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="45" Canvas.Left="219.643789751982" Canvas.Top="436.854064563279" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs1:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
           <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="11" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
         </ResourceDictionary>
       </nacs1:SymbolViewbox.Resources>
       <nacb:BlinkProperties.IsBlinkEnabled>
@@ -1059,12 +1059,12 @@
         </Path>
       </Canvas>
     </nacs1:SymbolViewbox>
-    <nac:Label Text="Rob2" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="46" Canvas.Left="154.289647252265" Canvas.Top="396.880560303886" nacsd:EditorProperties.IsLocked="False">
+    <nac:Label Text="Rob2" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="46" Canvas.Left="158.898698541369" Canvas.Top="396.880560303886" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
     </nac:Label>
-    <nac:Label Text="Rob3" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text3" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="47" Canvas.Left="211.482980585597" Canvas.Top="396.880560303886" nacsd:EditorProperties.IsLocked="False">
+    <nac:Label Text="Rob3" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text3" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="47" Canvas.Left="207.547123085315" Canvas.Top="396.880560303886" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
@@ -1079,7 +1079,7 @@
         </TransformGroup>
       </nac:Label.RenderTransform>
     </nac:Label>
-    <nac:Label Text="Rob1" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text5" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="48" Canvas.Left="109.482980585597" Canvas.Top="396.880560303886" nacsd:EditorProperties.IsLocked="False">
+    <nac:Label Text="Rob1" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text5" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="48" Canvas.Left="107.160938320737" Canvas.Top="396.880560303886" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
@@ -1089,12 +1089,12 @@
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
     </nac:Label>
-    <nac:Label MultiLine="True" Text="Picking from grouping indicator" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text6" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="50" Canvas.Left="79.2952033861007" Canvas.Top="196.084110901012" nacsd:EditorProperties.IsLocked="False">
+    <nac:Label MultiLine="True" Text="Picking from grouping indicator" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text6" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="50" Canvas.Left="90.4499488425785" Canvas.Top="196.084110901012" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
     </nac:Label>
-    <nac:Label MultiLine="True" Text="Picking carton indicator" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text7" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="51" Canvas.Left="79.3683166477204" Canvas.Top="358.568601978991" nacsd:EditorProperties.IsLocked="False">
+    <nac:Label MultiLine="True" Text="Picking carton indicator" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text7" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="51" Canvas.Left="90.4499488425785" Canvas.Top="358.568601978991" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>

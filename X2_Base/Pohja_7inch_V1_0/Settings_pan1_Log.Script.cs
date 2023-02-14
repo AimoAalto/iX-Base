@@ -32,7 +32,7 @@ namespace Neo.ApplicationFramework.Generated
 				ListBoxErrors.Items.Add(a);
 			}
 			
-			// Scrollataan listaa mukana
+			// Scrollataan listaa mukana (ei toimi WinCE:ssä)
 			/*Virhelista.SelectedIndex = Virhelista.Items.Count - 1;
 			Virhelista.AdaptedObject.CastTo<Neo.ApplicationFramework.Controls.WindowsControls.ListBox>()
 			.ScrollIntoView(Virhelista.SelectedItem);

@@ -59,7 +59,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>54</ObjectsCount>
+          <ObjectsCount>74</ObjectsCount>
           <ScreenName>Template_Robots</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="">
@@ -71,6 +71,9 @@
       <Items>
         <Item Target="Template_Robots.Script.cs" Source="Tags.Settings_PanelNumber" />
         <Item Target="Template_Robots.Script.cs" Source="Tags.Screens" />
+        <Item Target="Template_Robots.Script.cs" Source="Tags.HMI_RobotNo" />
+        <Item Target="Template_Robots.Script.cs" Source="Tags.HMI_AdditionalRobotErrorNo" />
+        <Item Target="Template_Robots.Script.cs" Source="Tags.Rob1_ServicePosSent" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
@@ -80,7 +83,9 @@
       </Items>
     </Category>
     <Category Name="Symbol">
-      <Items />
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Template_Robots.Group_Service_btn.Button_ServicePos" Source="orfer_settings" Width="37" Height="37" IsAnimated="false" />
+      </Items>
     </Category>
     <Category Name="TextIDs">
       <Items />

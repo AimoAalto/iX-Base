@@ -747,7 +747,7 @@
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" InitialValue="1" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" GlobalDataType="DT_INTEGER4" IsPublic="False" d1p1:Site.Name="Settings_PanelNumber" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" AlwaysActive="True" NonVolatile="True" GlobalDataType="DT_INTEGER4" IsPublic="False" d1p1:Site.Name="Settings_PanelNumber" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>

@@ -53,27 +53,21 @@ namespace Neo.ApplicationFramework.Generated
 		/// </summary>
 		/// <param name="sender">this</param>
 		void Start_Production1_Opened(System.Object sender, System.EventArgs e)
-		{		
-
+		{
 			// Tulorata
 			tulorata = Globals.Tags.HMI_Overview_track_selected.Value;
 			
 			// Robotti
 			// Katsotaan kummalle robotille tulorata on
-			robottiNo = 0;
-			foreach (KeyValuePair<int, Dictionary<int, int>> robotti in _Konfiguraatio.RobotinTuloradat)
-			{
-				if (robotti.Value.ContainsKey(tulorata))
-				{
-					robottiNo = robotti.Key;
-					break;
-				}
-			}
+			robottiNo = Globals._Konfiguraatio.CurrentConfig.GetRobottiNumeroByTulorata(tulorata);
+			
 			if(robottiNo == 0)
 			{
 				// Robotin numeron parsinta epäonnistui
-				throw new ConfigurationFaultException("Robotin numeroa ei voitu löytää tuloradan avulla:", "Tulorata " + tulorata);
+				System.Windows.MessageBox.Show("Robotin numeroa ei voitu löytää tuloradan avulla:", "Tulorata " + tulorata);
+				this.Close();
 			}
+			
 			// Siirretään aliakselle myös näytön käytettäväksi
 			robottiNumero = robottiNo;
 						
@@ -87,31 +81,18 @@ namespace Neo.ApplicationFramework.Generated
 			HaeTuotteet();
 
 			#region Suodatustietojen hakeminen
-            // Tyhjennetään suodatuslaatikot
-            Suodatus1.Items.Clear();
+			// Tyhjennetään suodatuslaatikot
+			Suodatus1.Items.Clear();
 			
 			// Lisätään tyhjä valinta
 			Suodatus1.Items.Add("");
 			Suodatus1.SelectedItem = "";
-			   
-			// Katso mille lavapaikoille on olemassa yhteinen kuvio tuloradan kanssa
-			foreach (int lavapaikka in _Konfiguraatio.RobotinLavapaikat[robottiNo].Keys)
-			{
-				// Yritetään hakea yhdistelmälle kuvio
-				try 
-				{	        
-					int[] kuviot = Globals.Robotit.HaeSallitutKuviotLavapaikalla(tulorata, lavapaikka);
-					if (kuviot.Length > 0)
-					{
-						Suodatus1.Items.Add(lavapaikka);
-					}
-				}
-				catch (Exception)
-				{
-					// Kuvioa ei ollut, jatketaan
-				}
-			}	
-            #endregion
+
+			List<int> lpt = Globals._Konfiguraatio.CurrentConfig.GetSallitutLavapaikat(robottiNo, tulorata);
+			foreach (int lp in lpt) Suodatus1.Items.Add(lp);
+			lpt.Clear();
+			
+			#endregion
 					
 			// Sivu ladattu
 			avattu = true;
@@ -139,20 +120,25 @@ namespace Neo.ApplicationFramework.Generated
 								
 			// Lavapaikkojen tarkistus 
 			int lavapaikkoja = 0;
-			foreach (int lavapaikka in _Konfiguraatio.RobotinLavapaikat[robottiNo].Keys)
+			if (Globals._Konfiguraatio.CurrentConfig.Robots.ContainsKey(robottiNo))
 			{
-				// Tarkistetaan käykö kuvio lavapaikalle
-				if (valittuKuvio.sallitutLavapaikat.Contains(lavapaikka))
-				{									
-					// Ei lisätä jo aloitettuja lavapaikkoja
-					if (Globals.Tags.GetTagValue("Rob" + robottiNo + "_lavap" + _Konfiguraatio.RobotinLavapaikat[robottiNo][lavapaikka] + "_pkuv") < 0.5)
-					{
-						lavapaikkoja++;
-						
-						// Lisätään lavapaikka valintalaatikoihin
-						foreach (FrameworkElement elementti in elementit)
+				foreach (int lavapaikka in Globals._Konfiguraatio.CurrentConfig.Robots[robottiNo].Lavapaikat)
+				{
+					// Tarkistetaan käykö kuvio lavapaikalle
+					if (valittuKuvio.sallitutLavapaikat.Contains(lavapaikka))
+					{									
+						// Ei lisätä jo aloitettuja lavapaikkoja
+						if (Globals.Tags.GetTagValue("Rob" + robottiNo + "_lavap" 
+							+ Globals._Konfiguraatio.CurrentConfig.Lavapaikat[lavapaikka] 
+							+ "_pkuv") < 0.5)
 						{
-							((Controls.WindowsControls.ComboBox)elementti).Items.Add(lavapaikka.ToString());
+							lavapaikkoja++;
+						
+							// Lisätään lavapaikka valintalaatikoihin
+							foreach (FrameworkElement elementti in elementit)
+							{
+								((Controls.WindowsControls.ComboBox)elementti).Items.Add(lavapaikka.ToString());
+							}
 						}
 					}
 				}
@@ -461,131 +447,129 @@ namespace Neo.ApplicationFramework.Generated
 				//	&& (Globals.Tags.Line1_Comm_Fault_PLC1.Value == 0) 
 				//	&& (Globals.Tags.GetTagValue("Line1_PLC_R" + robottiNo + "_ManAuto") == 1)) 
 				//{								
-					//Communications OK!
-					Globals.Tags.Line1_Comm_OK.Value = 1;
+				//Communications OK!
+				Globals.Tags.Line1_Comm_OK.Value = 1;
 								
-					#region Lavapaikat	
-					// Tarkistetaan, että lavapaikka on valittu
-					bool valittu = false;
-					foreach (FrameworkElement elementti in HaePlaceBoxit())
+				#region Lavapaikat	
+				// Tarkistetaan, että lavapaikka on valittu
+				bool valittu = false;
+				foreach (FrameworkElement elementti in HaePlaceBoxit())
+				{
+					if (((Controls.WindowsControls.ComboBox)elementti).SelectedItem != null
+						&& (string)((Controls.WindowsControls.ComboBox)elementti).SelectedItem != "")
 					{
-						if (((Controls.WindowsControls.ComboBox)elementti).SelectedItem != null
-							&& (string)((Controls.WindowsControls.ComboBox)elementti).SelectedItem != "")
-						{
-							valittu = true;
-						}
-					}	
-					if(!valittu)
-					{
-						// Herjataan puuttuvasta lavapaikan valinnasta
-						Globals.Tags.HMI_Error_TextValue.SetAnalog(2);
-						Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
-						Globals.Popup_Error.Show();
-						return;	
+						valittu = true;
 					}
+				}	
+				if(!valittu)
+				{
+					// Herjataan puuttuvasta lavapaikan valinnasta
+					Globals.Tags.HMI_Error_TextValue.SetAnalog(2);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
+					return;	
+				}
 					
-					// Valitaan aloitettavat lavapaikat 1 ... n
-					// Huom! Tässä projektissa voi valita kehityshetkellä vain yhden lavapaikan. Usean lavapaikan valinta on vain luonnos, jota ei ole testattu. -SoPi 6/2017
-					List<int> lavapaikat = new List<int>();	
+				// Valitaan aloitettavat lavapaikat 1 ... n
+				// Huom! Tässä projektissa voi valita kehityshetkellä vain yhden lavapaikan. Usean lavapaikan valinta on vain luonnos, jota ei ole testattu. -SoPi 6/2017
+				List<int> lavapaikat = new List<int>();	
 						
-					// Käydään valintalaatikot läpi
-					foreach (Controls.WindowsControls.ComboBox lavapaikkaValitsin in HaePlaceBoxit())
+				// Käydään valintalaatikot läpi
+				foreach (Controls.WindowsControls.ComboBox lavapaikkaValitsin in HaePlaceBoxit())
+				{
+					if (lavapaikkaValitsin.SelectedItem != null && (string)lavapaikkaValitsin.SelectedItem != "")
 					{
-						if (lavapaikkaValitsin.SelectedItem != null
-							&& (string)lavapaikkaValitsin.SelectedItem != "")
-						{
-							int lavapaikka = Convert.ToInt16(lavapaikkaValitsin.SelectedItem);
+						int lavapaikka = Convert.ToInt16(lavapaikkaValitsin.SelectedItem);
+						int rlp = Globals._Konfiguraatio.CurrentConfig.Robots[robottiNo].Lavapaikat[lavapaikka];
 						
-							// Suodatetaan duplikaatit lavapaikat pois
-							if (!lavapaikat.Contains(_Konfiguraatio.RobotinLavapaikat[robottiNo][lavapaikka]))
+						// Suodatetaan duplikaatit lavapaikat pois
+						if (!lavapaikat.Contains(rlp))
+						{
+							// Tarkistetaan, että lavapaikka ei ole jo aloitettu
+							if (Globals.Tags.GetTagValue("Rob" + robottiNo + "_lavap" + rlp + "_pkuv") < 0.5)
 							{
-								// Tarkistetaan, että lavapaikka ei ole jo aloitettu
-								if (Globals.Tags.GetTagValue("Rob" + robottiNo + "_lavap" + _Konfiguraatio.RobotinLavapaikat[robottiNo][lavapaikka] + "_pkuv") < 0.5)
-								{
-									// Lisätään lavapaikka listaan
-									lavapaikat.Add(_Konfiguraatio.RobotinLavapaikat[robottiNo][lavapaikka]);
-								}
-								else
-								{
-									// Lavapaikka on jo aloitettu tai robotilla on väärä tieto!
-									Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Aloituksessa valitulla robotin lavapaikalla " + _Konfiguraatio.RobotinLavapaikat[robottiNo][lavapaikka] + "on jo kuvio.");
-									Globals.Tags.HMI_Error_TextValue.SetAnalog(3);
-									Globals.Tags.HMI_Error_AdditionalInfo.Value =
-										"Pallet place " + _Konfiguraatio.RobotinLavapaikat[robottiNo][lavapaikka] 
-										+ " of robot " + robottiNo;
-									Globals.Popup_Error.Show();
-									return;
-								}
+								// Lisätään lavapaikka listaan
+								lavapaikat.Add(rlp);
+							}
+							else
+							{
+								// Lavapaikka on jo aloitettu tai robotilla on väärä tieto!
+								Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Aloituksessa valitulla robotin lavapaikalla " + rlp + "on jo kuvio.");
+								Globals.Tags.HMI_Error_TextValue.SetAnalog(3);
+								Globals.Tags.HMI_Error_AdditionalInfo.Value = "Pallet place " + rlp + " of robot " + robottiNo;
+								Globals.Popup_Error.Show();
+								return;
 							}
 						}
 					}
+				}
 														
-					// Kirjoitetaan aloitettavat lavapaikat muistiin
-					// Asetetaan lavapaikan numeron mukainen bitti
-					GlobalDataItem lavapaikatTagi = (GlobalDataItem)Globals.Tags.GetTag("Line1_PLC_PalletPlaces" + tulorata);
-					for (int i = 1; i < lavapaikatTagi.ArraySize; i++)
+				// Kirjoitetaan aloitettavat lavapaikat muistiin
+				// Asetetaan lavapaikan numeron mukainen bitti
+				GlobalDataItem lavapaikatTagi = (GlobalDataItem)Globals.Tags.GetTag("Line1_PLC_PalletPlaces" + tulorata);
+				for (int i = 1; i < lavapaikatTagi.ArraySize; i++)
+				{
+					if (lavapaikat.Contains(i))
 					{
-						if (lavapaikat.Contains(i))
-						{
-							lavapaikatTagi[i].Value = true;
-						}
-						else
-						{
-							lavapaikatTagi[i].Value = false;
-						}
-					}				
-					#endregion
+						lavapaikatTagi[i].Value = true;
+					}
+					else
+					{
+						lavapaikatTagi[i].Value = false;
+					}
+				}				
+				#endregion
 					
-					// Valitaan robotille aloitettavat tuloradat
-					List<int> tuloradat = new List<int>();
-					tuloradat.Add(_Konfiguraatio.RobotinTuloradat[robottiNo][tulorata]);
-				                    
-					if(lavapaikat.Count > 0)
+				// Valitaan robotille aloitettavat tuloradat
+				List<int> tuloradat = new List<int>();
+				tuloradat.Add(Globals._Konfiguraatio.CurrentConfig.Robots[robottiNo].Tuloradat[tulorata]);
+
+				if(lavapaikat.Count > 0)
+				{
+					#region Aloitus robotille
+					Globals.Robotit.LisaaLokiin(robottiNo, "Aloituksen lähetys alkaa.");
+
+					// Alustetaan command ID sanomia varten
+					string Command_Id = string.Empty;
+					// Luetaan kuvio
+					Lavaus.Kuvio Kuvio = new Lavaus.Kuvio();
+					Kuvio.Validoi = false;
+					Kuvio.JSON = @"C:\Lavaus\Kuviot\" + "Kuvio" + Globals.Tags.ProdReg_PalletPattern.Value + ".json";
+
+					// Yritetään ladata tiedosto
+					try
 					{
-						#region Aloitus robotille
-						Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Aloituksen lähetys alkaa.");
+						Kuvio.Lataa();
+					}
+					catch (Exception ex)
+					{
+						// Lataus epäonnistui
+						Globals.Robotit.LisaaLokiin(robottiNo, "Kuvion " + Globals.Tags.ProdReg_PalletPattern.Value + " lataus epäonnistui: " + ex.Message);
+						// Kuvion lataus epäonnistui
+						Globals.Tags.HMI_Error_TextValue.SetAnalog(4);
+						Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message;
+						Globals.Popup_Error.Show();
+						return;
+					}
 
-						// Alustetaan command ID sanomia varten
-						string Command_Id = string.Empty;
-						// Luetaan kuvio
-						Lavaus.Kuvio Kuvio = new Lavaus.Kuvio();
-						Kuvio.Validoi = false;
-						Kuvio.JSON = @"C:\Lavaus\Kuviot\" + "Kuvio" + Globals.Tags.ProdReg_PalletPattern.Value + ".json";
-
-						// Yritetään ladata tiedosto
+					// Jos kuvio on olemassa päivitetään näyttö
+					if (Kuvio.Nykyinen != null)
+					{
+						Text1.Text = "Luettu: " + Kuvio.JSON;
 						try
 						{
-							Kuvio.Lataa();
+							Globals.Robotit.LisaaLokiin(robottiNo, "Aloitus kuviolla " + Globals.Tags.ProdReg_PalletPattern.Value);
+							Command_Id = Globals.Robotit.TeeAloitus(robottiNo, tuloradat, lavapaikat, Globals.Tags.ProdReg_PalletPattern.Value.Int, Kuvio);
 						}
 						catch (Exception ex)
 						{
-							// Lataus epäonnistui
-							Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Kuvion " + Globals.Tags.ProdReg_PalletPattern.Value + " lataus epäonnistui: " + ex.Message);
-							// Kuvion lataus epäonnistui
-							Globals.Tags.HMI_Error_TextValue.SetAnalog(4);
+							Globals.Robotit.LisaaLokiin(robottiNo, "Aloituksen teko epäonnistui: " + ex.Message);
+							Globals.Tags.HMI_Error_TextValue.SetAnalog(7);
 							Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message;
 							Globals.Popup_Error.Show();
 							return;
 						}
-
-						// Jos kuvio on olemassa päivitetään näyttö
-						if (Kuvio.Nykyinen != null)
-						{
-							Text1.Text = "Luettu: " + Kuvio.JSON;
-							try
-							{
-								Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Aloitus kuviolla " + Globals.Tags.ProdReg_PalletPattern.Value);
-								Command_Id = Globals.Robotit.robotit[robottiNo].TeeAloitus(tuloradat, lavapaikat, Globals.Tags.ProdReg_PalletPattern.Value, Kuvio);
-							}
-							catch (Exception ex)
-							{
-								Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Aloituksen teko epäonnistui: " + ex.Message);
-								Globals.Tags.HMI_Error_TextValue.SetAnalog(7);
-								Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message;
-								Globals.Popup_Error.Show();
-								return;
-							}
-							Globals.Tags.HMI_Aloitus_kesken.Value = true;
+						Globals.Tags.HMI_Aloitus_kesken.Value = true;
 							/*
 							Watchdog = new Timer((args) => {
 								// Mitataan kauanko operaatioissa kestää
@@ -593,115 +577,115 @@ namespace Neo.ApplicationFramework.Generated
 								Watchdog.Change(1, Timeout.Infinite);
 							}, null, 0, Timeout.Infinite);
 							*/
-						}
-						else
-						{
-							// Tyhjennetään näyttö
-							Text1.Text = "Kuviota ei ole olemassa";
-						}
-
-						// VÄLIKKEET ROBOTILLE
-						string pahvit = Globals.Tags.ProdReg_Spacers.Value;
-						
-						// Varmistetaan, että string on olemassa
-						if (pahvit == "")
-						{
-							pahvit = "0";
-						}
-                        
-						// Tarkistetaan, että lähetetään tarpeeksi kerroksia
-						string[] valikkeet = pahvit.Split(';');
-
-						// Välikkeitä pitää olla lavan kerrokset + aluskerros
-						if(valikkeet.Length < Kuvio.Nykyinen.Layers + 1)
-						{
-							for (int i = valikkeet.Length; i < Kuvio.Nykyinen.Layers + 1; i++) 
-							{
-								// Lisätään loppuun välikkeettömiä kerroksia kuvion maksimiin asti
-								pahvit += ";0";
-							}
-						}	
-                        
-						// Lähetetään samat tiedot kaikille aloituksen kohteena oleville lavapaikoille
-						foreach (int lavapaikka in lavapaikat)
-						{
-							Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Aloitetaan lavapaikka " + lavapaikka + ".");
-							
-							// Asetetaan välikkeet
-							Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Välipahvit: '" + pahvit + "'");
-							Globals.Robotit.robotit[robottiNo].AsetaPahvit(Command_Id, lavapaikka, pahvit);
-
-							// Robotille kerrosmäärä
-							Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Kerrosmäärä: " + Globals.Tags.ProdReg_LayerCount.Value);
-							Globals.Robotit.robotit[robottiNo].AsetaKerrosmaara(Command_Id, lavapaikka, 
-								Globals.Tags.ProdReg_LayerCount.Value);
-
-							// Robotille paikan nopeus ja tartunta- ja jättöviive
-							Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Viiveet: " + Globals.Tags.ProdReg_Robot1_Speed_Full.Value + "; " + Globals.Tags.ProdReg_Robot1_Acceleration_Full.Value + "; " + Globals.Tags.ProdReg_PickDelay.Value + "; " + Globals.Tags.ProdReg_PlaceDelay.Value);
-							Globals.Robotit.robotit[robottiNo].PaikkaNopeus(Command_Id, lavapaikka, 
-								Globals.Tags.ProdReg_Robot1_Speed_Full.Value, 
-								Globals.Tags.ProdReg_Robot1_Acceleration_Full.Value, 
-								Globals.Tags.ProdReg_PickDelay.Value, 
-								Globals.Tags.ProdReg_PlaceDelay.Value);
-							
-							// Lavaus Offset
-							Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Offset: X " + Globals.Tags.ProdReg_Robot1_X_Centering.Value + ", Y " + Globals.Tags.ProdReg_Robot1_Y_Centering.Value);
-							Globals.Robotit.robotit[robottiNo].PaikkaOffset(Command_Id, lavapaikka, 
-								Globals.Tags.ProdReg_Robot1_X_Centering.Value, 
-								Globals.Tags.ProdReg_Robot1_Y_Centering.Value);
-							
-							Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Lavapaikan " + lavapaikka + " aloitus valmis.");
-						}
-
-						// Lopetetaan aloitus
-						Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Aloituksen lähetys valmis.");
-						Globals.Robotit.robotit[robottiNo].AloituksenLopetus(Command_Id);
-						#endregion
-						
-						#region Aloitus logiikalle	
-						// Lavatyyppi 
-						Globals.Tags.SetTagValue("Line1_PLC_PalletType" + tulorata, Globals.Tags.ProdReg_PalletType.Value);
-														
-						// Käärintä byte 0 = ei 1 = on
-						//Globals.Tags.SetTagValue("Line1_PLC_Kaarinta_TK" + tulorata, Globals.Tags.HMI_StartProd_Wrapping.Value.UShort);
-						Globals.Tags.SetTagValue("Line1_PLC_WrappingProg" + tulorata, Globals.Tags.ProdReg_WrappingProgram.Value);
-						
-						// Lavapaikka
-						// Logiikka käyttöö samoja numeroita kuin robotti, joten lavapaikat-listasta löytyy oikea
-						Globals.Tags.SetTagValue("Line1_PLC_Lavapaikka_TK" + tulorata, lavapaikat.FirstOrDefault());
-						
-						// Reseptin rivinro omaan talteen
-						Globals.Tags.SetTagValue("Line1_Rivinumero_TK" + tulorata, Globals.Tags.ProdReg_RiviNro.Value);
-						
-						//------------------------------------------------------------------------------------------------
-						// UUDET TUOTEREKISTERIN TAGIT LOGIIKKAAN 19.10.2020
-						Globals.Tags.SetTagValue("Line1_PLC_Length" + tulorata, Globals.Tags.ProdReg_Product_Length.Value);
-						Globals.Tags.SetTagValue("Line1_PLC_Width" + tulorata, Globals.Tags.ProdReg_Product_Width.Value);
-						Globals.Tags.SetTagValue("Line1_PLC_Height" + tulorata, Globals.Tags.ProdReg_Product_Height.Value);
-						//------------------------------------------------------------------------------------------------
-						
-						// Odotetaan hetki, että tagit menevät varmasti logiikalle
-						System.Threading.Timer aloituskasky = new System.Threading.Timer((args) => {
-							// Logiikan aloituskäsky
-							Globals.Tags.SetTagValue("Line1_PLC_Aloitus" + tulorata, true);
-							Globals.Tags.SetTagValue("HMI_StartProduction_PLC_Aloitettu", false);
-							
-							}, null, 1000, System.Threading.Timeout.Infinite);
-						#endregion
-						
 					}
-					
-						//Jos lavapaikkaa ei ole valittu	
 					else
 					{
-						// Herjataan puuttuvasta lavapaikan valinnasta
-						Globals.Tags.HMI_Error_TextValue.SetAnalog(2);
-						Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
-						Globals.Popup_Error.Show();
-						return;	
+						// Tyhjennetään näyttö
+						Text1.Text = "Kuviota ei ole olemassa";
 					}
+
+					// VÄLIKKEET ROBOTILLE
+					string pahvit = Globals.Tags.ProdReg_Spacers.Value;
+						
+					// Varmistetaan, että string on olemassa
+					if (pahvit == "")
+					{
+						pahvit = "0";
+					}
+                        
+					// Tarkistetaan, että lähetetään tarpeeksi kerroksia
+					string[] valikkeet = pahvit.Split(';');
+
+					// Välikkeitä pitää olla lavan kerrokset + aluskerros
+					if(valikkeet.Length < Kuvio.Nykyinen.Layers + 1)
+					{
+						for (int i = valikkeet.Length; i < Kuvio.Nykyinen.Layers + 1; i++) 
+						{
+							// Lisätään loppuun välikkeettömiä kerroksia kuvion maksimiin asti
+							pahvit += ";0";
+						}
+					}	
+                        
+					// Lähetetään samat tiedot kaikille aloituksen kohteena oleville lavapaikoille
+					foreach (int lavapaikka in lavapaikat)
+					{
+						Globals.Robotit.LisaaLokiin(robottiNo, "Aloitetaan lavapaikka " + lavapaikka + ".");
+							
+						// Asetetaan välikkeet
+						Globals.Robotit.LisaaLokiin(robottiNo, "Välipahvit: '" + pahvit + "'");
+						Globals.Robotit.AsetaPahvit(robottiNo, Command_Id, lavapaikka, pahvit);
+
+						// Robotille kerrosmäärä
+						Globals.Robotit.LisaaLokiin(robottiNo, "Kerrosmäärä: " + Globals.Tags.ProdReg_LayerCount.Value);
+						Int16 kerrokset = Convert.ToInt16(Globals.Tags.ProdReg_LayerCount.Value.Int);
+						Globals.Robotit.AsetaKerrosmaara(robottiNo, Command_Id, lavapaikka, kerrokset);
+
+						// Robotille paikan nopeus ja tartunta- ja jättöviive
+						Globals.Robotit.LisaaLokiin(robottiNo, "Viiveet: " + Globals.Tags.ProdReg_Robot1_Speed_Full.Value + "; " + Globals.Tags.ProdReg_Robot1_Acceleration_Full.Value + "; " + Globals.Tags.ProdReg_PickDelay.Value + "; " + Globals.Tags.ProdReg_PlaceDelay.Value);
+						Globals.Robotit.PaikkaNopeus(robottiNo, Command_Id, lavapaikka, 
+							Globals.Tags.ProdReg_Robot1_Speed_Full.Value, 
+							Globals.Tags.ProdReg_Robot1_Acceleration_Full.Value, 
+							Globals.Tags.ProdReg_PickDelay.Value, 
+							Globals.Tags.ProdReg_PlaceDelay.Value);
+							
+						// Lavaus Offset
+						Globals.Robotit.LisaaLokiin(robottiNo, "Offset: X " + Globals.Tags.ProdReg_Robot1_X_Centering.Value + ", Y " + Globals.Tags.ProdReg_Robot1_Y_Centering.Value);
+						Globals.Robotit.PaikkaOffset(robottiNo, Command_Id, lavapaikka, 
+							Globals.Tags.ProdReg_Robot1_X_Centering.Value.Double, 
+							Globals.Tags.ProdReg_Robot1_Y_Centering.Value.Double);
+							
+						Globals.Robotit.LisaaLokiin(robottiNo, "Lavapaikan " + lavapaikka + " aloitus valmis.");
+					}
+
+					// Lopetetaan aloitus
+					Globals.Robotit.LisaaLokiin(robottiNo, "Aloituksen lähetys valmis.");
+					Globals.Robotit.AloituksenLopetus(robottiNo, Command_Id);
+					#endregion
+						
+					#region Aloitus logiikalle	
+					// Lavatyyppi 
+					Globals.Tags.SetTagValue("Line1_PLC_PalletType" + tulorata, Globals.Tags.ProdReg_PalletType.Value);
+														
+					// Käärintä byte 0 = ei 1 = on
+					//Globals.Tags.SetTagValue("Line1_PLC_Kaarinta_TK" + tulorata, Globals.Tags.HMI_StartProd_Wrapping.Value.UShort);
+					Globals.Tags.SetTagValue("Line1_PLC_WrappingProg" + tulorata, Globals.Tags.ProdReg_WrappingProgram.Value);
+						
+					// Lavapaikka
+					// Logiikka käyttöö samoja numeroita kuin robotti, joten lavapaikat-listasta löytyy oikea
+					Globals.Tags.SetTagValue("Line1_PLC_Lavapaikka_TK" + tulorata, lavapaikat.FirstOrDefault());
+						
+					// Reseptin rivinro omaan talteen
+					Globals.Tags.SetTagValue("Line1_Rivinumero_TK" + tulorata, Globals.Tags.ProdReg_RiviNro.Value);
+						
+					//------------------------------------------------------------------------------------------------
+					// UUDET TUOTEREKISTERIN TAGIT LOGIIKKAAN 19.10.2020
+					Globals.Tags.SetTagValue("Line1_PLC_Length" + tulorata, Globals.Tags.ProdReg_Product_Length.Value);
+					Globals.Tags.SetTagValue("Line1_PLC_Width" + tulorata, Globals.Tags.ProdReg_Product_Width.Value);
+					Globals.Tags.SetTagValue("Line1_PLC_Height" + tulorata, Globals.Tags.ProdReg_Product_Height.Value);
+					//------------------------------------------------------------------------------------------------
+						
+					// Odotetaan hetki, että tagit menevät varmasti logiikalle
+					System.Threading.Timer aloituskasky = new System.Threading.Timer((args) => {
+						// Logiikan aloituskäsky
+						Globals.Tags.SetTagValue("Line1_PLC_Aloitus" + tulorata, true);
+						Globals.Tags.SetTagValue("HMI_StartProduction_PLC_Aloitettu", false);
+							
+						}, null, 1000, System.Threading.Timeout.Infinite);
+					#endregion
+						
+				}
+					
+					//Jos lavapaikkaa ei ole valittu	
+				else
+				{
+					// Herjataan puuttuvasta lavapaikan valinnasta
+					Globals.Tags.HMI_Error_TextValue.SetAnalog(2);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
+					return;	
+				}
 				//}
-					//Jos aloitusehdot (kommunikointi virhe) ei kelvolliset
+				//Jos aloitusehdot (kommunikointi virhe) ei kelvolliset
 				//else
 				//{
 				//	Globals.Tags.HMI_Error_TextValue.SetAnalog(8);

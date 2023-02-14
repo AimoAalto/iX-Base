@@ -7,32 +7,19 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    using System.Windows.Forms;
-    using System;
-    using System.Drawing;
-    using Neo.ApplicationFramework.Tools;
-    using Neo.ApplicationFramework.Common.Graphics.Logic;
-    using Neo.ApplicationFramework.Controls;
-    using Neo.ApplicationFramework.Interfaces;
 	using Neo.ApplicationFramework.Interfaces.Tag;
-	using Neo.ApplicationFramework.Generated;
-	using Neo.ApplicationFramework.Controls.Script;
-
+	using System;
 	using System.Collections.Generic;
 	using System.Windows;
-	using System.Windows.Data;
 	using System.Windows.Media;
 
-    
-    
-    public class Kasiajot
-    {
+
+	public class Kasiajot
+	{
 		private Neo.ApplicationFramework.Controls.Screen.ScreenWindow sivu;
 		private string ryhma_nimi;
 		private IBasicTag Manual_Ctrl_Nr;
 		private string Manual_Ctrl_Nr_str;
-		private bool eka = true;
-		
 
 		/// <summary>
 		/// Poistaa kaikki valinnat
@@ -43,49 +30,48 @@ namespace Neo.ApplicationFramework.Generated
 			ryhma_nimi = _ryhma_nimi;
 			Manual_Ctrl_Nr = _Manual_Ctrl_Nr;
 		}
-		
-		
+
 		/// <summary>
 		/// Poistaa kaikki valinnat
 		/// </summary>
 		public void ManualResetButtons()
 		{
 			List<FrameworkElement> anturit = HaeElementit(ryhma_nimi);
-			
+
 			//String kasiajot = "";
 			foreach (FrameworkElement nappi in anturit)
 			{
-				try
-				{
-					Neo.ApplicationFramework.Controls.Group elementCanvas = (Neo.ApplicationFramework.Controls.Group)nappi;
-    
-					// ElementCanvasin alla on näkyvät elementit
-					for(int i=0; i<elementCanvas.Items.Count; i++)
+				if (nappi is Neo.ApplicationFramework.Controls.Group)
+					try
 					{
-						
-						try
+						Neo.ApplicationFramework.Controls.Group elementCanvas = (Neo.ApplicationFramework.Controls.Group)nappi;
+
+						// ElementCanvasin alla on näkyvät elementit
+						for (int i = 0; i < elementCanvas.Items.Count; i++)
 						{
-							// Hide all arrow images in first round
-							Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas.Items[i];
-			
-							lapsi.Visibility = Visibility.Hidden;
-							
-						}
-						catch(Exception ex)
-						{
-							Globals.Tags.Log(ex.ToString());
+							if (elementCanvas.Items[i] is Neo.ApplicationFramework.Controls.Symbol.Picture)
+								try
+								{
+									// Hide all arrow images in first round
+									Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas.Items[i];
+
+									lapsi.Visibility = Visibility.Hidden;
+								}
+								catch (Exception ex)
+								{
+									Globals.Tags.Log(ex.ToString());
+								}
 						}
 					}
-				}
-				catch(Exception ex)
-				{
-					Globals.Tags.Log(ex.ToString());
-				}
+					catch (Exception ex)
+					{
+						Globals.Tags.Log(ex.ToString());
+					}
 			}
-				
+
 			Globals.Tags.Kasiajo.Value = 0;
 		}
-		
+
 		/// <summary>
 		/// Liittää Sensor_Click handlerin kaikkiin Rectangle-elementteihin
 		/// </summary>
@@ -93,92 +79,69 @@ namespace Neo.ApplicationFramework.Generated
 		public void LuoClickHandlerit()
 		{
 			List<FrameworkElement> anturit = HaeElementit(ryhma_nimi);
-			
+
 			String kasiajot = "";
 			foreach (FrameworkElement nappi in anturit)
 			{
-				try
-				{
-					Neo.ApplicationFramework.Controls.Group elementCanvas = (Neo.ApplicationFramework.Controls.Group)nappi;
-    
-					// ElementCanvasin alla on näkyvät elementit
-					for(int i=0; i<elementCanvas.Items.Count; i++)
+				if (nappi is Neo.ApplicationFramework.Controls.Group)
+					try
 					{
-						// Yritetään tyypittää pictures
-						if(eka)
-						{
-							try
-							{
-								string nama = elementCanvas.Items[i].GetType().Name;
-								Globals.Tags.Log(nama);
-						
-								Neo.ApplicationFramework.Controls.Label lapsi = (Neo.ApplicationFramework.Controls.Label)elementCanvas.Items[i];
-								//lapsi.Text = ParsiNimi(nappi.Name);
-								
-							
-							}
-							catch(Exception ex)
-							{
-								Globals.Tags.Log(ex.ToString());
-							}
-						}
-						
-						try
-						{
-							// Hide all arrow images in first round
-							Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas.Items[i];
-							
-							//if(eka)
-							lapsi.Visibility = Visibility.Hidden;
-							
-							// Read selected man buttons to string tag
-							if(Neo.ApplicationFramework.Generated._Konfiguraatio.ManualMode == Neo.ApplicationFramework.Generated._Konfiguraatio.man_mode.ManMultiString)
-							{
-								if(lapsi.Visibility == Visibility.Visible)
-								{
-									if(kasiajot.Length == 0)
-										kasiajot = ParsiNimi(nappi.Name);
-									else
-										kasiajot = kasiajot+";"+ParsiNimi(nappi.Name);
-									break;
-								}
-							}
+						Neo.ApplicationFramework.Controls.Group elementCanvas = (Neo.ApplicationFramework.Controls.Group)nappi;
 
-						}
-						catch(Exception ex)
+						// ElementCanvasin alla on näkyvät elementit
+						for (int i = 0; i < elementCanvas.Items.Count; i++)
 						{
-							Globals.Tags.Log(ex.ToString());
+							// Yritetään tyypittää pictures
+							if (elementCanvas.Items[i] is Neo.ApplicationFramework.Controls.Symbol.Picture)
+								try
+								{
+									// Hide all arrow images in first round
+									Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas.Items[i];
+
+									lapsi.Visibility = Visibility.Hidden;
+
+									// Read selected man buttons to string tag
+									if (Neo.ApplicationFramework.Generated._Konfiguraatio.ManualMode == Neo.ApplicationFramework.Generated._Konfiguraatio.man_mode.ManMultiString)
+									{
+										if (lapsi.Visibility == Visibility.Visible)
+										{
+											if (kasiajot.Length == 0)
+												kasiajot = ParsiNimi(nappi.Name);
+											else
+												kasiajot = kasiajot + ";" + ParsiNimi(nappi.Name);
+											break;
+										}
+									}
+								}
+								catch (Exception ex)
+								{
+									Globals.Tags.Log(ex.ToString());
+								}
 						}
 					}
-				}
-				catch(Exception ex)
-				{
-					Globals.Tags.Log(ex.ToString());
-				}
+					catch (Exception ex)
+					{
+						Globals.Tags.Log(ex.ToString());
+					}
 			}
-				
+
 			Globals.Tags.Kasiajo.Value = kasiajot;
-			
-			if(eka)
-				eka = false;
-		
 
 			foreach (FrameworkElement anturi in anturit)
 			{
 				anturi.MouseDown += Sensor_Click;
 			}
-			
+
 			Manual_Ctrl_Nr.ValueChange += Manual_Ctrl_Nr_ValueChange;
 			//Globals.Tags.Line1_HMI1_Manual_Ctrl_Nr.ValueChange += Line1_HMI1_Manual_Ctrl_Nr_ValueChange;
 		}
 
-		
 		public void Manual_Ctrl_Nr_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
-			if(System.Convert.ToInt32(e.Value) == 0)
+			if (System.Convert.ToInt32(e.Value) == 0)
 				ManualResetButtons();
 		}
-		
+
 		/// <summary>
 		/// Irroittaa Sensor_Click-handlerin kaikista Rectangle-elementeistä
 		/// </summary>
@@ -190,11 +153,11 @@ namespace Neo.ApplicationFramework.Generated
 			foreach (FrameworkElement anturi in anturit)
 			{
 				anturi.MouseDown -= Sensor_Click;
-			}	
-			
+			}
+
 			Manual_Ctrl_Nr.ValueChange -= Manual_Ctrl_Nr_ValueChange;
 		}
-		
+
 		/// <summary>
 		/// Hakee sopivat näytön elementit nimen perusteella.
 		/// </summary>
@@ -203,13 +166,13 @@ namespace Neo.ApplicationFramework.Generated
 		private List<FrameworkElement> HaeElementit(string nimenOsa)
 		{
 			List<FrameworkElement> elementit = new List<FrameworkElement>();
-			
+
 			// Ikkunan alla on vain yksi elementti (ContentPresenter)
 			FrameworkElement contentPresenter = (FrameworkElement)VisualTreeHelper.GetChild(sivu, 0);
 
 			// Ikkunan alla on vain yksi elementti (ElementCanvas)
 			FrameworkElement elementCanvas = (FrameworkElement)VisualTreeHelper.GetChild(contentPresenter, 0);
-			
+
 			// ElementCanvasin alla on näkyvät elementit
 			for (int i = 0; i < VisualTreeHelper.GetChildrenCount(elementCanvas); i++)
 			{
@@ -222,10 +185,10 @@ namespace Neo.ApplicationFramework.Generated
 					elementit.Add(lapsi);
 				}
 			}
-			
+
 			return elementit;
 		}
-		
+
 		/// <summary>
 		/// Etsii ryhmän nimestä position, tyypin ja numeron
 		/// anturi-infoikkunan.
@@ -233,14 +196,14 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">this.Rectangle</param>
 		private string ParsiNimi(string nimi)
 		{
-			string ret="";
-			int pos = nimi.IndexOf(ryhma_nimi)+3;
-			if(pos != -1)
+			string ret = "";
+			int pos = nimi.IndexOf(ryhma_nimi) + 3;
+			if (pos != -1)
 			{
-				ret = nimi.Substring(pos,nimi.Length-pos);
+				ret = nimi.Substring(pos, nimi.Length - pos);
 			}
 			return ret;
-	
+
 		}
 
 		/// <summary>
@@ -252,64 +215,60 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			try
 			{
-				if(_Konfiguraatio.ManualMode == _Konfiguraatio.man_mode.ManNumber)
+				if (_Konfiguraatio.ManualMode == _Konfiguraatio.man_mode.ManNumber)
 				{
 					// Hide all buttons before show the selected one
 					List<FrameworkElement> anturit = HaeElementit(ryhma_nimi);
-			
+
 					foreach (FrameworkElement nappi in anturit)
 					{
 						try
 						{
 							Neo.ApplicationFramework.Controls.Group elementCanvas = (Neo.ApplicationFramework.Controls.Group)nappi;
-    
+
 							// ElementCanvasin alla on näkyvät elementit
-							for(int i=0; i<elementCanvas.Items.Count; i++)
-							{												
+							for (int i = 0; i < elementCanvas.Items.Count; i++)
+							{
 								try
 								{
 									// Hide all arrow images in first round
 									Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas.Items[i];
-			
-									
 									lapsi.Visibility = Visibility.Hidden;
-
 								}
-								catch(Exception ex)
+								catch (Exception ex)
 								{
 									Globals.Tags.Log(ex.ToString());
 								}
 							}
 						}
-						catch(Exception ex)
+						catch (Exception ex)
 						{
 							Globals.Tags.Log(ex.ToString());
 						}
 					}
 				}
-				
-				
+
 				Neo.ApplicationFramework.Controls.Group elementCanvas1 = (Neo.ApplicationFramework.Controls.Group)sender;
-    
+
 				// ElementCanvasin alla on näkyvät elementit
-				for(int i=0; i<elementCanvas1.Items.Count; i++)
+				for (int i = 0; i < elementCanvas1.Items.Count; i++)
 				{
 					// Yritetään tyypittää pictures
 					try
 					{
 						Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas1.Items[i];
-		
-						if(lapsi.Visibility == Visibility.Visible)
+
+						if (lapsi.Visibility == Visibility.Visible)
 							lapsi.Visibility = Visibility.Hidden;
 						else
 							lapsi.Visibility = Visibility.Visible;
 
 					}
-					catch(Exception)
+					catch (Exception)
 					{
 					}
 				}
-				
+
 				// Luodaan lista käsiajoista
 				String kasiajot = "";
 				List<FrameworkElement> man_napit = HaeElementit(ryhma_nimi);
@@ -319,35 +278,35 @@ namespace Neo.ApplicationFramework.Generated
 					try
 					{
 						elementCanvas1 = (Neo.ApplicationFramework.Controls.Group)nappi;
-    
+
 						// ElementCanvasin alla on näkyvät elementit
-						for(int i=0; i<elementCanvas1.Items.Count; i++)
+						for (int i = 0; i < elementCanvas1.Items.Count; i++)
 						{
 							// Yritetään tyypittää pictures
 							try
 							{
 								Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas1.Items[i];
-		
-								if(lapsi.Visibility == Visibility.Visible)
+
+								if (lapsi.Visibility == Visibility.Visible)
 								{
-									if(kasiajot.Length == 0)
+									if (kasiajot.Length == 0)
 										kasiajot = ParsiNimi(nappi.Name);
 									else
-										kasiajot = kasiajot+";"+ParsiNimi(nappi.Name);
+										kasiajot = kasiajot + ";" + ParsiNimi(nappi.Name);
 									break;
 								}
 							}
-							catch(Exception)
+							catch (Exception)
 							{
 							}
 						}
 					}
-					catch(Exception)
+					catch (Exception)
 					{
 					}
 				}
-				
-				if(_Konfiguraatio.ManualMode == _Konfiguraatio.man_mode.ManNumber)
+
+				if (_Konfiguraatio.ManualMode == _Konfiguraatio.man_mode.ManNumber)
 				{
 					//this.anbManNum.Visible = true;
 					//this.txtManNum.Visible = false;
@@ -360,16 +319,15 @@ namespace Neo.ApplicationFramework.Generated
 					Manual_Ctrl_Nr_str = kasiajot;
 				}
 			}
-			catch(Exception ex)
+			catch (Exception ex)
 			{
-				Globals.Tags.Log("Exception "+ex.ToString());	
+				Globals.Tags.Log("Exception [Sensor_Click] " + ex.ToString());
 			}
-	
 		}
-		
+
 		public void VaihdaManTapa()
 		{
-			if(_Konfiguraatio.ManualMode == _Konfiguraatio.man_mode.ManMultiString)
+			if (_Konfiguraatio.ManualMode == _Konfiguraatio.man_mode.ManMultiString)
 			{
 				_Konfiguraatio.ManualMode = _Konfiguraatio.man_mode.ManNumber;
 				//this.btnManTapa.Text = "Num";
@@ -380,8 +338,5 @@ namespace Neo.ApplicationFramework.Generated
 				//this.btnManTapa.Text = "String";
 			}
 		}
-		
-	
-		
-    }
+	}
 }

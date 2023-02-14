@@ -33,6 +33,7 @@
     </Category>
     <Category Name="Script">
       <Items>
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.TraceAll" />
         <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_Overview_prod_details" />
         <Item Target="Ajotiedot.Script.cs" Source="Tags.AppStart_Timer" />
         <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_Aloitus_kesken" />

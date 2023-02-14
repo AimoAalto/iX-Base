@@ -530,7 +530,7 @@
           <Event Name="ValueChange" EventHandler="SystemTagSecond_ValueChange" />
         </Events>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.SystemDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Storage memory installed in computer (in MB)" PollGroupName="PollGroup500" DataType="DT_INTEGER4" AccessRight="Read" d1p1:Site.Name="SystemTagStorageMemory" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.SystemDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Storage memory installed in computer (in MB)" PollGroupName="PollGroup500" AlwaysActive="True" DataType="DT_INTEGER4" AccessRight="Read" d1p1:Site.Name="SystemTagStorageMemory" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" IsExposed="False">
         <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Tools.OpcClient.SystemDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
           <Parameter Name="SystemTagInfoName">
             <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Storage Memory" />
@@ -568,7 +568,7 @@
             <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="PollGroup500" />
           </Parameter>
           <Parameter Name="AlwaysActive">
-            <Object d1p1:type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="False" />
+            <Object d1p1:type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="True" />
           </Parameter>
           <Parameter Name="NonVolatile">
             <Object d1p1:type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="False" />
@@ -744,7 +744,7 @@
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" InitialValue="1" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" GlobalDataType="DT_INTEGER4" IsPublic="False" d1p1:Site.Name="Settings_PanelNumber" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" AlwaysActive="True" NonVolatile="True" GlobalDataType="DT_INTEGER4" IsPublic="False" d1p1:Site.Name="Settings_PanelNumber" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>

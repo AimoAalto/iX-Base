@@ -31,21 +31,20 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">this</param>
 		void Robotit_Created(System.Object sender, System.EventArgs e)
 		{
+			if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine("Robotit Created (start)");
+
 			Watchdog = new Timer((args) => {
 				// Mitataan kauanko operaatioissa kestää
 				Stopwatch takeTime = new Stopwatch();
 				takeTime.Start();
-				
+
 				// Robottien tilan tarkistus
-				foreach (int robotti in _Konfiguraatio.RobotinLavapaikat.Keys)
-				{
-					TarkistaTila(robotti);
-				}
-				
 				// Näytetään näytöllä, jos jollain robotilla yhteysvika
 				Globals.Tags.HMI_CommFault_Robots.ResetTag();
 				foreach (int robotti in robotit.Keys)
 				{
+					TarkistaTila(robotti);
+					
 					if (Globals.Tags.GetTagValue("HMI_CommFault_Rob" + robotti).Bool)
 					{
 						Globals.Tags.HMI_CommFault_Robots.SetTag();
@@ -53,9 +52,12 @@ namespace Neo.ApplicationFramework.Generated
 					}
 				}
 				
-				// Suoritetaan määritetyin välein (default 1s)
 				takeTime.Stop();
-				Watchdog.Change(Math.Max(0, _Konfiguraatio.Aikavalit["RobottiWatchdog"] - takeTime.ElapsedMilliseconds), Timeout.Infinite);
+
+				if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("Robotit time : {0} (ticks)", takeTime.ElapsedTicks));
+
+				// Suoritetaan määritetyin välein (default 1s)
+				Watchdog.Change(Math.Max(0, Globals._Konfiguraatio.CurrentConfig.Aikavali("RobottiWatchdog") - takeTime.ElapsedMilliseconds), Timeout.Infinite);
 			}, null, 0, Timeout.Infinite);
 		}	
 
@@ -212,8 +214,27 @@ namespace Neo.ApplicationFramework.Generated
 		/// watchdog hälyttää.
 		/// </summary>
 		/// <param name="numero">Robotin numero</param>
-		void TarkistaTila(int numero)
+		private void TarkistaTila(int numero)
 		{
+			if (Exists(numero))
+			{
+				// Kysytään yhteyden tilaa
+				Globals.Tags.SetTagValue("Rob" + numero + "_Tila", robotit[numero].Tila);
+
+				// Watchdog
+				Globals.Tags.SetTagValue("HMI_CommFault_Rob" + numero, robotit[numero].WatchdogHalytys);
+			}
+		}
+		
+		/// <summary>
+		/// Tarkistaa onko robotti objecti olemassa listalla
+		/// robotti luodaan sen puuttuessa
+		/// </summary>
+		/// <param name="robotti">Robotin numero</param>
+		/// <returns>exists = false, jos robottiobjekti luotiin</returns>
+		public bool Exists(int numero)
+		{
+			bool exists = true;
 			if (!robotit.ContainsKey(numero))
 			{
 				// Alustetaan robotti
@@ -223,15 +244,239 @@ namespace Neo.ApplicationFramework.Generated
 				robotit[numero].TagiMuuttunut += Robotti_TagiMuuttunut;
 				robotit[numero].Mokasit += Robotti_Mokasit;
 				robotit[numero].Parametrisanoma += Robotti_ParametritSaapunut;
+				exists = false;
 			}
-			else
-			{
-				// Kysytään yhteyden tilaa
-				Globals.Tags.SetTagValue("Rob" + numero + "_Tila", robotit[numero].Tila);
+			return exists;
+		}
 
-				// Watchdog
-				Globals.Tags.SetTagValue("HMI_CommFault_Rob" + numero, robotit[numero].WatchdogHalytys);
+		/// <summary>
+		/// Kuittaa robotti häiriö
+		/// </summary>
+		/// <param name="robotti"></param>
+		/// <param name="id"></param>
+		/// <param name="num"></param>
+		/// <returns></returns>
+		public void KuittaaHairio(int robotti, int id, Int16 num)
+		{
+			try 
+			{	        
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+				
+				robotit[robotti].Loki.LisaaLokiin(string.Format("Kuittaus {0} - {1}", id, num));
+				robotit[robotti].KuittaaHairio(id, num);
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception KuittaaHairio! " + ex.Message);
 			}
 		}
-    }
+
+		/// <summary>
+		/// Huoltoasemaan ajopyyntö bobotille
+		/// </summary>
+		/// <param name="robotti"></param>
+		/// <returns></returns>
+		public void AjaHuoltoon(int robotti)
+		{
+			try 
+			{	        
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+				
+				robotit[robotti].Loki.LisaaLokiin("Ajopyyntö huoltoasemaan.");
+				robotit[robotti].AjaHuoltoon();
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception AjaHuoltoon! " + ex.Message);
+			}
+		}
+
+		/// <summary>
+		/// Lisää viesti lokiin
+		/// </summary>
+		/// <param name="robotti"></param>
+		/// <param name="msg"></param>
+		/// <returns></returns>
+		public void LisaaLokiin(int robotti, string msg)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].Loki.LisaaLokiin(msg);
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception LisaaLokiin! " + ex.Message);
+			}
+		}
+
+		/// <summary>
+		/// Lavanvaihtopyyntö bobotille
+		/// </summary>
+		/// <param name="robotti"></param>
+		/// <param name="lavapaikka"></param>
+		/// <returns></returns>
+		public void TeeLavanvaihto(int robotti, int lavapaikka)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].TeeLavanvaihto(lavapaikka);
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception TeeLavanvaihto! " + ex.Message);
+			}
+		}
+
+		/// <summary>
+		/// Huoltoasemaan ajopyyntö bobotille
+		/// </summary>
+		/// <param name="robotti"></param>
+		/// <param name="lavapaikka"></param>
+		/// <returns></returns>
+		public void TeeRyhmittelynLavanvaihto(int robotti, int lavapaikka)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].TeeRyhmittelynLavanvaihto(lavapaikka);
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception TeeRyhmittelynLavanvaihto! " + ex.Message);
+			}
+		}
+
+		public void PaikkaNopeus(int robotti, int paikka, int nopeus, int kiihtyvyys, double tartuntaviive, double jattoviive)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].PaikkaNopeus(paikka, nopeus, kiihtyvyys, tartuntaviive, jattoviive);
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception PaikkaNopeus! " + ex.Message);
+			}
+		}
+
+		public void PaikkaNopeus(int robotti, string command_id, int paikka, int nopeus, int kiihtyvyys, double tartuntaviive, double jattoviive)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].PaikkaNopeus(command_id, paikka, nopeus, kiihtyvyys, tartuntaviive, jattoviive);
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception PaikkaNopeus! " + ex.Message);
+			}
+		}
+
+		public void PaikkaOffset(int robotti, string command_id, int paikka, double X, double Y)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].PaikkaOffset(command_id, paikka, X, Y);
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception PaikkaOffset! " + ex.Message);
+			}
+		}
+		
+		public void AsetaKerrosmaara(int robotti, int roboLavapaikka, Int16 kerrokset)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].AsetaKerrosmaara(roboLavapaikka, kerrokset);	
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception AsetaKerrosmaara! " + ex.Message);
+			}
+		}
+
+		public void AsetaKerrosmaara(int robotti, string command_id, int lavapaikka, Int16 kerrokset)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].AsetaKerrosmaara(command_id, lavapaikka, kerrokset);
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception AsetaKerrosmaara! " + ex.Message);
+			}
+		}
+		
+		public string TeeAloitus(int robotti, List<int> tuloradat, List<int> lavapaikat, int pattern, Lavaus.Kuvio kuvio)
+		{
+			string ret = "";
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				ret = robotit[robotti].TeeAloitus(tuloradat, lavapaikat, pattern, kuvio);	
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception TeeAloitus! " + ex.Message);
+			}
+			return ret;
+		}
+
+		public void AsetaPahvit(int robotti, int lavapaikka, string pahvit)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].AsetaPahvit(lavapaikka, pahvit);	
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception AsetaPahvit! " + ex.Message);
+			}
+		}
+
+		public void AsetaPahvit(int robotti, string command_id, int lavapaikka, string pahvit)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].AsetaPahvit(command_id, lavapaikka, pahvit);	
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception AsetaPahvit! " + ex.Message);
+			}
+		}
+
+		public void AloituksenLopetus(int robotti, string command_id)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].AloituksenLopetus(command_id);	
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception AloituksenLopetus! " + ex.Message);
+			}
+		}
+	}
 }

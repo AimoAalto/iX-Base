@@ -32,7 +32,12 @@
       <Items />
     </Category>
     <Category Name="Script">
-      <Items />
+      <Items>
+        <Item Target="_Konfiguraatio.Script.cs" Source="Tags.ConfCurrentConfig" />
+        <Item Target="_Konfiguraatio.Script.cs" Source="Tags.Settings_PanelNumber" />
+        <Item Target="_Konfiguraatio.Script.cs" Source="Tags.ConfLastConfig" />
+        <Item Target="_Konfiguraatio.Script.cs" Source="Tags.TraceAll" />
+      </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items />

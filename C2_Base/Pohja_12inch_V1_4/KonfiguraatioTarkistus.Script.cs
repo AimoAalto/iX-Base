@@ -30,93 +30,83 @@ namespace Neo.ApplicationFramework.Generated
 		/// <exception cref="ConfigurationFaultException">Tulorata/lavapaikka löytyy robottien määrittelystä useamman kerran tai kuviolta puuttuu tulorata/lavapaikka.</exception>
 		void Konfiguraation_Tarkistus()
 		{
-			#region - Tulorata voi kuulua vain yhdelle robotille
-			foreach (Dictionary<int, int> tuloradat in _Konfiguraatio.RobotinTuloradat.Values)
+			foreach (Neo.ApplicationFramework.Generated.RobotConf robot in Globals._Konfiguraatio.CurrentConfig.Robots.Values)
 			{
-				foreach (int tulorata in tuloradat.Keys)
+				#region - Tulorata voi kuulua vain yhdelle robotille
+				foreach (int tulorata in robot.Tuloradat)
 				{
 					// Tarkistetaan, että lavapaikka löytyy konfiguraatiosta vain kerran
 					int loytyi = 0;
-					foreach (Dictionary<int, int> muutTuloradat in _Konfiguraatio.RobotinTuloradat.Values)
+					foreach (Neo.ApplicationFramework.Generated.RobotConf robotcheck in Globals._Konfiguraatio.CurrentConfig.Robots.Values)
 					{
-						if (muutTuloradat.ContainsKey(tulorata))
+						if (robotcheck.Tuloradat.Contains(tulorata))
 						{
 							loytyi++;
 						}
-										
+						
 						if (loytyi > 1)
 						{
 							throw new ConfigurationFaultException("Tulorata " + tulorata + " löytyy _Konfiguraatiosta useamman kerran.", "_Konfiguraatio.robotinTuloradat");
 						}
 					}
 				}
-			}
-			#endregion
-							
-			#region - Lavapaikka voi kuulua vain yhdelle robotille
-			foreach (Dictionary<int, int> lavapaikat in _Konfiguraatio.RobotinLavapaikat.Values)
-			{
-				foreach (int lavapaikka in lavapaikat.Keys)
+				#endregion
+				
+				#region - Lavapaikka voi kuulua vain yhdelle robotille
+				foreach (int lavapaikka in robot.Lavapaikat)
 				{
 					// Tarkistetaan, että lavapaikka löytyy konfiguraatiosta vain kerran
 					int loytyi = 0;
-					foreach (Dictionary<int, int> muutLavapaikat in _Konfiguraatio.RobotinLavapaikat.Values)
+					foreach (Neo.ApplicationFramework.Generated.RobotConf robotcheck in Globals._Konfiguraatio.CurrentConfig.Robots.Values)
 					{
-						if (muutLavapaikat.ContainsKey(lavapaikka))
+						if (robotcheck.Lavapaikat.Contains(lavapaikka))
 						{
 							loytyi++;
 						}
-										
+						
 						if (loytyi > 1)
 						{
 							throw new ConfigurationFaultException("Lavapaikka " + lavapaikka + " löytyy _Konfiguraatiosta useamman kerran.", "_Konfiguraatio.robotinLavapaikat");
 						}
 					}
 				}
+				#endregion
 			}
-			#endregion
-	
 			#region - Robotin tulorata voi esiintyä vain kerran
-			foreach (Dictionary<int, int> tuloradat in _Konfiguraatio.RobotinTuloradat.Values)
+			foreach (int rtulorata in Globals._Konfiguraatio.CurrentConfig.Tuloradat.Values)
 			{
-				foreach (int tulorata in tuloradat.Values)
+				// Tarkistetaan, että lavapaikka löytyy tulorata vain kerran
+				int loytyi = 0;
+				foreach (int no in Globals._Konfiguraatio.CurrentConfig.Tuloradat.Values)
 				{
-					// Tarkistetaan, että tulorata löytyy robotilta vain kerran
-					int loytyi = 0;
-					foreach (int muuTulorata in tuloradat.Values)
+					if (rtulorata == no)
 					{
-						if (muuTulorata == tulorata)
-						{
-							loytyi++;
-						}
-												
-						if (loytyi > 1)
-						{
-							throw new ConfigurationFaultException("Robotin tulorata " + tulorata + " löytyy _Konfiguraatiosta useamman kerran.", "_Konfiguraatio.robotinTuloradat");
-						}
+						loytyi++;
+					}
+						
+					if (loytyi > 1)
+					{
+						throw new ConfigurationFaultException("Robotin tulorata " + rtulorata + " löytyy _Konfiguraatiosta useamman kerran.", "_Konfiguraatio.robotinTuloradat");
 					}
 				}
 			}
 			#endregion
-	
+				
 			#region - Robotin lavapaikka voi esiintyä vain kerran
-			foreach (Dictionary<int, int> lavapaikat in _Konfiguraatio.RobotinLavapaikat.Values)
+			foreach (int rlavapaikka in Globals._Konfiguraatio.CurrentConfig.Lavapaikat.Values)
 			{
-				foreach (int lavapaikka in lavapaikat.Values)
+				// Tarkistetaan, että lavapaikka löytyy robotilta vain kerran
+				int loytyi = 0;
+				foreach (int no in Globals._Konfiguraatio.CurrentConfig.Lavapaikat.Values)
 				{
-					// Tarkistetaan, että lavapaikka löytyy robotilta vain kerran
-					int loytyi = 0;
-					foreach (int muuLavapaikka in lavapaikat.Values)
+					if (rlavapaikka == no)
 					{
-						if (muuLavapaikka == lavapaikka)
-						{
-							loytyi++;
-						}
-														
-						if (loytyi > 1)
-						{
-							throw new ConfigurationFaultException("Robotin lavapaikka " + lavapaikka + " löytyy _Konfiguraatiosta useamman kerran.", "_Konfiguraatio.robotinLavapaikat");
-						}
+						loytyi++;
+					}
+						
+					if (loytyi > 1)
+					{
+						throw new ConfigurationFaultException("Robotin lavapaikka " + rlavapaikka + " löytyy _Konfiguraatiosta useamman kerran.", "_Konfiguraatio.robotinLavapaikat");
 					}
 				}
 			}

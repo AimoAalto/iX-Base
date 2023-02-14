@@ -369,7 +369,7 @@
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
     </nac:Group>
-    <nac:Group Name="m_Group_Buttons2" Width="948.159626173266" Height="55" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="4" Canvas.Left="191" Canvas.Top="688" nacsd:EditorProperties.IsHidden="True">
+    <nac:Group Name="m_Group_Buttons2" Width="948.159626173266" Height="55" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="4" Canvas.Left="191" Canvas.Top="688" nacsd:EditorProperties.IsHidden="False">
       <nac:Group.Resources>
         <ResourceDictionary>
           <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="2" />

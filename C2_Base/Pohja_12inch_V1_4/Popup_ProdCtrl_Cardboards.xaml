@@ -7,7 +7,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="ProdCtrl_Cardboards_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="300" Height="700" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="300" Height="700" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nacc:Rectangle Fill="#FFDAA757" Stroke="#FF000000" StrokeThickness="1" Name="m_Kerros0" Width="217.737847222222" Height="35" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="41.9506027062882" Canvas.Top="573.245321322871">
       <nacc:Rectangle.RenderTransform>
         <TransformGroup>

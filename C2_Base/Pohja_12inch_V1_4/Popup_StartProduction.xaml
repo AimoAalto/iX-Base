@@ -92,7 +92,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Start_Production1_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1000" Height="550" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1000" Height="550" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nacw:ListBox BorderBrush="#FF267593" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" Name="m_ListBox1" Width="658" Height="168.02559999177" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="25.4985246544238" Canvas.Top="58.973630707094" nacb:BlinkProperties.BlinkInterval="1200" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="False">
       <nacw:ListBox.Value>
         <nacxs:VariantValueMarkupExtension Type="s:Double" ValueAsString="0" />
@@ -636,162 +636,6 @@
         </TransformGroup>
       </nacw:ComboBox.RenderTransform>
     </nacw:ComboBox>
-    <nacw:ComboBox BorderBrush="#FF71BBC9" BorderThickness="1,1,1,1" Background="#FF18969F" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_PlaceBox5" Width="55" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="30" Canvas.Left="421.444908195008" Canvas.Top="299.781501713686" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True">
-      <nacw:ComboBox.Resources>
-        <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" ExpressionName="Bit4IsSet" />
-        </ResourceDictionary>
-      </nacw:ComboBox.Resources>
-      <nacw:ComboBox.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_pri5].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Int32>0</s:Int32>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacw:ComboBox.Value>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_privis].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacw:ComboBox.IntervalMapper>
-        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
-          <nacd1:StringIntervalMapper.Intervals>
-            <nacd1:StringIntervalList>
-              <nacd1:StringInterval Value="" />
-              <nacd1:StringInterval Start="1" End="1" Value="1" />
-              <nacd1:StringInterval Start="2" End="2" Value="2" />
-              <nacd1:StringInterval Start="3" End="3" Value="3" />
-              <nacd1:StringInterval Start="4" End="4" Value="4" />
-              <nacd1:StringInterval Start="5" End="5" Value="5" />
-              <nacd1:StringInterval Start="6" End="6" Value="6" />
-              <nacd1:StringInterval Start="7" End="7" Value="7" />
-              <nacd1:StringInterval Start="8" End="8" Value="8" />
-            </nacd1:StringIntervalList>
-          </nacd1:StringIntervalMapper.Intervals>
-        </nacd1:StringIntervalMapper>
-      </nacw:ComboBox.IntervalMapper>
-    </nacw:ComboBox>
-    <nacw:ComboBox BorderBrush="#FF71BBC9" BorderThickness="1,1,1,1" Background="#FF108996" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_PlaceBox6" Width="55" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="31" Canvas.Left="486.53771657445" Canvas.Top="299.781501713686" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True">
-      <nacw:ComboBox.Resources>
-        <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" ExpressionName="Bit5IsSet" />
-        </ResourceDictionary>
-      </nacw:ComboBox.Resources>
-      <nacw:ComboBox.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_pri6].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Int32>0</s:Int32>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacw:ComboBox.Value>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_privis].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacw:ComboBox.IntervalMapper>
-        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
-          <nacd1:StringIntervalMapper.Intervals>
-            <nacd1:StringIntervalList>
-              <nacd1:StringInterval Value="" />
-              <nacd1:StringInterval Start="1" End="1" Value="1" />
-              <nacd1:StringInterval Start="2" End="2" Value="2" />
-              <nacd1:StringInterval Start="3" End="3" Value="3" />
-              <nacd1:StringInterval Start="4" End="4" Value="4" />
-              <nacd1:StringInterval Start="5" End="5" Value="5" />
-              <nacd1:StringInterval Start="6" End="6" Value="6" />
-              <nacd1:StringInterval Start="7" End="7" Value="7" />
-              <nacd1:StringInterval Start="8" End="8" Value="8" />
-            </nacd1:StringIntervalList>
-          </nacd1:StringIntervalMapper.Intervals>
-        </nacd1:StringIntervalMapper>
-      </nacw:ComboBox.IntervalMapper>
-    </nacw:ComboBox>
-    <nacw:ComboBox BorderBrush="#FF71BBC9" BorderThickness="1,1,1,1" Background="#FF087C8D" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_PlaceBox7" Width="55" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="32" Canvas.Left="551.630524953892" Canvas.Top="299.781501713686" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True">
-      <nacw:ComboBox.Resources>
-        <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" ExpressionName="Bit6IsSet" />
-        </ResourceDictionary>
-      </nacw:ComboBox.Resources>
-      <nacw:ComboBox.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_pri7].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Int32>0</s:Int32>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacw:ComboBox.Value>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_privis].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacw:ComboBox.IntervalMapper>
-        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
-          <nacd1:StringIntervalMapper.Intervals>
-            <nacd1:StringIntervalList>
-              <nacd1:StringInterval Value="" />
-              <nacd1:StringInterval Start="1" End="1" Value="1" />
-              <nacd1:StringInterval Start="2" End="2" Value="2" />
-              <nacd1:StringInterval Start="3" End="3" Value="3" />
-              <nacd1:StringInterval Start="4" End="4" Value="4" />
-              <nacd1:StringInterval Start="5" End="5" Value="5" />
-              <nacd1:StringInterval Start="6" End="6" Value="6" />
-              <nacd1:StringInterval Start="7" End="7" Value="7" />
-              <nacd1:StringInterval Start="8" End="8" Value="8" />
-            </nacd1:StringIntervalList>
-          </nacd1:StringIntervalMapper.Intervals>
-        </nacd1:StringIntervalMapper>
-      </nacw:ComboBox.IntervalMapper>
-    </nacw:ComboBox>
-    <nacw:ComboBox BorderBrush="#FF71BBC9" BorderThickness="1,1,1,1" Background="#FF006F85" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_PlaceBox8" Width="55" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="33" Canvas.Left="616.723333333333" Canvas.Top="299.781501713686" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True">
-      <nacw:ComboBox.Resources>
-        <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" ExpressionName="Bit7IsSet" />
-        </ResourceDictionary>
-      </nacw:ComboBox.Resources>
-      <nacw:ComboBox.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_pri8].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Int32>0</s:Int32>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacw:ComboBox.Value>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_privis].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacw:ComboBox.IntervalMapper>
-        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
-          <nacd1:StringIntervalMapper.Intervals>
-            <nacd1:StringIntervalList>
-              <nacd1:StringInterval Value="" />
-              <nacd1:StringInterval Start="1" End="1" Value="1" />
-              <nacd1:StringInterval Start="2" End="2" Value="2" />
-              <nacd1:StringInterval Start="3" End="3" Value="3" />
-              <nacd1:StringInterval Start="4" End="4" Value="4" />
-              <nacd1:StringInterval Start="5" End="5" Value="5" />
-              <nacd1:StringInterval Start="6" End="6" Value="6" />
-              <nacd1:StringInterval Start="7" End="7" Value="7" />
-              <nacd1:StringInterval Start="8" End="8" Value="8" />
-            </nacd1:StringIntervalList>
-          </nacd1:StringIntervalMapper.Intervals>
-        </nacd1:StringIntervalMapper>
-      </nacw:ComboBox.IntervalMapper>
-    </nacw:ComboBox>
     <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot acked (Pallet 1)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text10" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="51" Canvas.Left="541.744749408626" Canvas.Top="431.828483539073" nacb:BlinkProperties.VisibleDynamicsValue="True">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
@@ -873,7 +717,7 @@
         <nai:ActionList />
       </nai:ActionProperties.Actions>
     </nacc1:Rectangle>
-    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle5" Width="685.389129489561" Height="146" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="10.4984807103403" Canvas.Top="245" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
+    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle5" Width="685.389129489561" Height="146" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="10.4984807103403" Canvas.Top="245" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="True" nacsd:EditorProperties.IsHidden="False">
       <nacc1:Rectangle.BevelEffectInfo>
         <nacb2:BevelEffectInfo Style="None" Width="0" />
       </nacc1:Rectangle.BevelEffectInfo>
@@ -973,7 +817,7 @@
         </nai:ActionProperties.Actions>
       </nac:Button>
     </nac:Group>
-    <nac:Label Text="Starting production..." Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text4" Width="160" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="300" Canvas.Top="424.637708040064" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+    <nac:Label Text="Starting production..." Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text4" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="300" Canvas.Top="424.637708040064" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nac:Label.Resources>
         <ResourceDictionary>
           <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />

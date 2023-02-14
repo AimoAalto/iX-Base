@@ -28,6 +28,7 @@
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoFromRobot" TargetProperty="Value" Source="Tags.RobX_naytto" />
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoFromRobot" TargetProperty="Foreground" Source="Tags.RobX_vir" />
         <Item Target="Robots_Pan1_Scr2.AnalogNumeric13" TargetProperty="Value" Source="Tags.RobX_vir" />
+        <Item Target="Robots_Pan1_Scr2.Numero" TargetProperty="Value" Source="Tags.HMI_AdditionalRobotErrorNo" />
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoTranslated" TargetProperty="Text" Source="Tags.Rob1_naytto" />
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoTranslated" TargetProperty="Value" Source="Tags.RobX_vir" />
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoTranslated" TargetProperty="Foreground" Source="Tags.RobX_vir" />
@@ -75,7 +76,7 @@
     </Category>
     <Category Name="Script">
       <Items>
-        <Item Target="Robots_Pan1_Scr2.Script.cs" Source="Tags.Rob1_ServicePosSent" />
+        <Item Target="Robots_Pan1_Scr2.Script.cs" Source="Tags.HMI_RobotNo" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
@@ -87,7 +88,6 @@
     <Category Name="Symbol">
       <Items>
         <Item xsi:type="SymbolItem" Target="Robots_Pan1_Scr2.Picture_Robot" Source="robotti_läpin" Width="230" Height="246" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Robots_Pan1_Scr2.Group_Service_btn.Button_ServicePos" Source="orfer_settings" Width="37" Height="37" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">
