@@ -8,4 +8,5 @@
   <Type AssemblyQualifiedName="Neo.ApplicationFramework.Controls.WindowsControls.ComboBox, Controls, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
   <Type AssemblyQualifiedName="Neo.ApplicationFramework.Controls.AnalogNumericFX, Controls, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
   <Type AssemblyQualifiedName="Neo.ApplicationFramework.Controls.WindowsControls.ListBox, Controls, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
+  <Type AssemblyQualifiedName="Neo.ApplicationFramework.Controls.WindowsControls.RadioButton, Controls, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
 </Types>

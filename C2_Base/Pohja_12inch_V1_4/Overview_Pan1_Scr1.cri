@@ -35,9 +35,11 @@
         <Item Target="Overview_Pan1_Scr1.PolyLine_RobError" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Alarm_Alarm0100" />
         <Item Target="Overview_Pan1_Scr1.PolyLine_RobAuto" TargetProperty="Fill" Source="Tags.Line1_PLC_R1_ManAuto" />
         <Item Target="Overview_Pan1_Scr1.PolyLine_RobAuto" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Alarm_Alarm0100" />
-        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Click" Action="Set Analog" Param="" />
-        <Item Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd" TargetProperty="Value" Source="Tags.Line1_PLC_Aloitettu1" />
-        <Item Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd" TargetProperty="TextValue" Source="Tags.Line1_PLC_Aloitettu1" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd1" TargetProperty="Value" Source="Tags.Line1_PLC_Aloitettu1" />
+        <Item Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd1" TargetProperty="TextValue" Source="Tags.Line1_PLC_Aloitettu1" />
+        <Item Target="Overview_Pan1_Scr1.Group_StartProd_btn.RectangleStartProd" TargetProperty="Fill" Source="Tags.Line1_PLC_Aloitettu1" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_PlacePerm_1_btn.Button10" TargetProperty="Actions" Source="Tags.Line1_PLC_Jattolupa1_Valinta" Event="Click" Action="Toggle Tag" Param="" />
         <Item Target="Overview_Pan1_Scr1.Group_PlacePerm_1_btn.Button10" TargetProperty="Value" Source="Tags.Line1_PLC_Jattolupa1_Valinta" />
         <Item Target="Overview_Pan1_Scr1.Group_PlacePerm_1_btn.MultiPicture" TargetProperty="Value" Source="Tags.Line1_PLC_Jattolupa1_Tila" />
@@ -87,7 +89,7 @@
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group.Button40" TargetProperty="Actions" Source="Popup_Palletplace_info" Event="Click" Action="Show Screen" Param="LP1" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Popup_NewPallet" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>105</ObjectsCount>
+          <ObjectsCount>106</ObjectsCount>
           <ScreenName>Overview_Pan1_Scr1</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10001">
@@ -97,14 +99,14 @@
     </Category>
     <Category Name="Script">
       <Items>
-        <Item Target="Overview_Pan1_Scr1.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
         <Item Target="Overview_Pan1_Scr1.Script.cs" Source="Tags.HMI_Overview_track_selected" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items>
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group.Button40" TargetProperty="Actions" Source="Tags.HMI_PalletPlace" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Click" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_PlacePerm_1_btn.Button10" TargetProperty="Actions" Source="Tags.Line1_PLC_Jattolupa1_Valinta" Event="Click" Action="Toggle Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_PickPerm_1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Jattolupa1_Valinta" Event="Click" Action="Toggle Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_CartonPickPerm_1_btn.Button1" TargetProperty="Actions" Source="Tags.Line1_PLC_Jattolupa1_Valinta" Event="Click" Action="Toggle Tag" Param="" />
@@ -120,9 +122,9 @@
       <Items>
         <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Picture" Source="layout_main" Width="511" Height="498" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Picture_RobAlarm" Source="orfer_alarm_icon" Width="55" Height="55" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd1" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd1" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group_StartProd_btn.Button_StartProd1" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group_PlacePerm_1_btn.Button10" Source="orfer_permission_selectedoff" Width="36" Height="36" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group_PlacePerm_1_btn.Button10" Source="orfer_permission_selectedoff" Width="36" Height="36" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group_PlacePerm_1_btn.MultiPicture" Source="orfer_permission_down_off" Width="36" Height="36" IsAnimated="false" />

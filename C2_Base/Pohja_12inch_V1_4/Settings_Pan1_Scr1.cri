@@ -63,7 +63,7 @@
       <Items>
         <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ChangeScreen_btn.Button_ChangeScreen" TargetProperty="Actions" Source="ScreenSelection" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>104</ObjectsCount>
+          <ObjectsCount>105</ObjectsCount>
           <ScreenName>Settings_Pan1_Scr1</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10701">
@@ -72,9 +72,7 @@
       </Items>
     </Category>
     <Category Name="Script">
-      <Items>
-        <Item Target="Settings_Pan1_Scr1.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="StructuredTag">
       <Items>

@@ -7,19 +7,19 @@ namespace Neo.ApplicationFramework.Generated
 	using System.Linq;
 	using System.Threading;
 	using Lavaus;
-    
-    
+
+
 	/// <summary>
 	/// Sisältää robottien yhteydet ja niiden monitoroinnin. Sisältää myös sallittujen 
 	/// kuvioiden hakufunktiot, sillä kuviorajoitteet johtuvat roboteista.
 	/// </summary>
 	/// <remarks>Viimeksi muokattu: SoPi 7.7.2017</remarks>
-    public partial class Robotit
-    {
+	public partial class Robotit
+	{
 		/// <summary>
 		/// Robottien yhteydet.
 		/// </summary>
-		public Dictionary<int, Robotti> robotit = new Dictionary<int, Robotti>(); // Robotit
+		Dictionary<int, Robotti> robotit = new Dictionary<int, Robotti>(); // Robotit
 		/// <summary>
 		/// Ikuisesti jatkuva robottiyhteyksien taustamonitoroinnin ajastin.
 		/// </summary>
@@ -33,7 +33,8 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine("Robotit Created (start)");
 
-			Watchdog = new Timer((args) => {
+			Watchdog = new Timer((args) =>
+			{
 				// Mitataan kauanko operaatioissa kestää
 				Stopwatch takeTime = new Stopwatch();
 				takeTime.Start();
@@ -44,14 +45,14 @@ namespace Neo.ApplicationFramework.Generated
 				foreach (int robotti in robotit.Keys)
 				{
 					TarkistaTila(robotti);
-					
+
 					if (Globals.Tags.GetTagValue("HMI_CommFault_Rob" + robotti).Bool)
 					{
 						Globals.Tags.HMI_CommFault_Robots.SetTag();
 						break;
 					}
 				}
-				
+
 				takeTime.Stop();
 
 				if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("Robotit time : {0} (ticks)", takeTime.ElapsedTicks));
@@ -59,45 +60,81 @@ namespace Neo.ApplicationFramework.Generated
 				// Suoritetaan määritetyin välein (default 1s)
 				Watchdog.Change(Math.Max(0, Globals._Konfiguraatio.CurrentConfig.Aikavali("RobottiWatchdog") - takeTime.ElapsedMilliseconds), Timeout.Infinite);
 			}, null, 0, Timeout.Infinite);
-		}	
+		}
 
 		/// <summary>
-		/// Hakee kaikki tuloradalle sallitut kuvionumerot.
+		/// Get loki object for selected robot
 		/// </summary>
-		/// <param name="tulorata">Tuloradan numero</param>
-		/// <returns>Sallittujen kuvioiden numerot</returns>
-		public int[] HaeSallitutKuviot(int tulorata)
+		/// <param name="robotti"></param>
+		/// <returns></returns>
+		public Lavaus.Virheloki GetLoki(int robotti)
 		{
-			// Luetaan kuviot JSON-tiedostosta
-			List<Kuviotiedot> kaikkiKuviot = Kuviotiedot.LataaKuviot();
-
-			// Valitaan kuvionumerot, joille kelpaa tulorata
-			List<int> tuloratakuviot = kaikkiKuviot
-				.Where(p => p.sallitutTuloradat.Contains(tulorata))
-				.Select(p => p.numero).ToList();
-				
-			return tuloratakuviot.ToArray();
+			Exists(robotti);
+			return robotit[robotti].Loki;
 		}
-		
+
 		/// <summary>
-		/// Hakee kaikki tuloradalle ja lavapaikalle sallitut kuvionumerot.
+		/// get first robott object
+		/// create if non exists
 		/// </summary>
-		/// <param name="tulorata">Tuloradan numero</param>
-		/// <param name="lavapaikka">Lavapaikan numero</param>
-		/// <returns>Sallittujen kuvioiden numerot</returns>
-		public int[] HaeSallitutKuviotLavapaikalla(int tulorata, int lavapaikka)
+		/// <returns></returns>
+		public int First()
 		{
-			// Luetaan kuviot JSON-tiedostosta
-			List<Kuviotiedot> kaikkiKuviot = Kuviotiedot.LataaKuviot();
-
-			// Valitaan kuvionumerot, joille kelpaa sekä tulorata että lavapaikka
-			List<int> kuviolist = kaikkiKuviot
-				.Where(p => p.sallitutTuloradat.Contains(tulorata) && p.sallitutLavapaikat.Contains(lavapaikka))
-				.Select(p => p.numero).ToList();
-
-			return kuviolist.ToArray();
+			if (robotit.Count == 0)
+				Exists(1); // atleast one robot
+			return robotit.Keys.First();
 		}
-				
+
+		/// <summary>
+		/// get next robot from robotit list
+		/// returns first if selected is last
+		/// </summary>
+		/// <param name="no"></param>
+		/// <returns></returns>
+		public int Next(int no)
+		{
+			int ret = -1;
+
+			if (robotit.Count == 0)
+				Exists(1); // atleast one robot
+
+			bool getnext = false;
+
+			foreach (int key in robotit.Keys)
+			{
+				if (getnext)
+				{
+					ret = key;
+					break;
+				}
+				if (key == no) getnext = true;
+			}
+
+			if (ret < 0) ret = First();
+
+			return ret;
+		}
+
+		/// <summary>
+		/// get previous robot object from robotit list
+		/// </summary>
+		/// <param name="no"></param>
+		/// <returns></returns>
+		public int Previous(int no)
+		{
+			int ret = -1;
+
+			foreach (int key in robotit.Keys)
+			{
+				if (key == no) break;
+				ret = key;
+			}
+
+			if (ret < 0) ret = First();
+
+			return ret;
+		}
+
 		/// <summary>
 		/// Siirtää robotin lähettämän tagin arvon iX:n tagiin.
 		/// </summary>
@@ -106,10 +143,10 @@ namespace Neo.ApplicationFramework.Generated
 		void Robotti_TagiMuuttunut(object sender, Lavaus.TagiEventArgs e)
 		{
 			// Onko luku vai stringi?
-			if(e.Tyyppi == Lavaus.ArvonTyyppi.luku)
+			if (e.Tyyppi == Lavaus.ArvonTyyppi.luku)
 			{
 				// Luku
-				VariantValue value = new VariantValue(Convert.ToDouble(e.Arvo,System.Globalization.CultureInfo.InvariantCulture));
+				VariantValue value = new VariantValue(Convert.ToDouble(e.Arvo, System.Globalization.CultureInfo.InvariantCulture));
 				Globals.Tags.SetTagValue(e.Tagi, value);
 			}
 			else
@@ -117,9 +154,9 @@ namespace Neo.ApplicationFramework.Generated
 				// Stringi
 				VariantValue value = new VariantValue(e.Arvo);
 				Globals.Tags.SetTagValue(e.Tagi, value);
-			}                
+			}
 		}
-		
+
 		/// <summary>
 		/// Näyttää ikkunan Popup_ProdStartError, kun robotin aloitus ei onnistunut.
 		/// </summary>
@@ -145,7 +182,7 @@ namespace Neo.ApplicationFramework.Generated
 				}
 			}
 		}
-		
+
 		/// <summary>
 		/// Tallentaa paramp sanoma tiedot muuttujiin
 		/// </summary>
@@ -155,43 +192,43 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			try
 			{
-				if(e.Tunnus == "KerrosAsetukset")
+				if (e.Tunnus == "KerrosAsetukset")
 				{
-					
+
 					// Puretaan merkkijonosta luvut
 					string[] viesti = e.Data.Split('$');
 					string[] tiedot = viesti.Where((j, k) => k > 1).ToArray();
-					
-					Globals.Tags.SetTagValue("KerroksetLavalla",viesti[1]);
+
+					Globals.Tags.SetTagValue("KerroksetLavalla", viesti[1]);
 					const int KERROS_MAX = 10;
 
-					if(tiedot.Length/2 > KERROS_MAX)
+					if (tiedot.Length / 2 > KERROS_MAX)
 					{
-						Globals.Tags.Log("Robotti_ParametritSaapunut: viestissä liian monta alkiota("+(tiedot.Length/2).ToString()+"). Sallittu max on "+KERROS_MAX.ToString()+". Ylimääräisiä ei kirjoitettu!");
+						Globals.Tags.Log("Robotti_ParametritSaapunut: viestissä liian monta alkiota(" + (tiedot.Length / 2).ToString() + "). Sallittu max on " + KERROS_MAX.ToString() + ". Ylimääräisiä ei kirjoitettu!");
 					}
-	
-					for(int i=0; i<KERROS_MAX*2; i++)
+
+					for (int i = 0; i < KERROS_MAX * 2; i++)
 					{
 						try
 						{
-							string kerros = (i/2+1).ToString();
-							if(i < tiedot.Length)
+							string kerros = (i / 2 + 1).ToString();
+							if (i < tiedot.Length)
 							{
 								// Jaotellaan Vienti arvot parillisiin ja Tyyppi arvot parittomiin
-								if(i%2 == 0)
+								if (i % 2 == 0)
 								{
-									Globals.Tags.SetTagValue("Kerros"+kerros+"_Viennit",tiedot[i]);
+									Globals.Tags.SetTagValue("Kerros" + kerros + "_Viennit", tiedot[i]);
 								}
 								else
 								{
-									Globals.Tags.SetTagValue("Kerros"+kerros+"_Tyyppi",tiedot[i]);	
+									Globals.Tags.SetTagValue("Kerros" + kerros + "_Tyyppi", tiedot[i]);
 								}
 							}
 							else
 							{
 								// Nollataan loput joita ei ollut viestissä
-								Globals.Tags.SetTagValue("Kerros"+kerros+"_Viennit",0);	
-								Globals.Tags.SetTagValue("Kerros"+kerros+"_Tyyppi",0);	
+								Globals.Tags.SetTagValue("Kerros" + kerros + "_Viennit", 0);
+								Globals.Tags.SetTagValue("Kerros" + kerros + "_Tyyppi", 0);
 							}
 						}
 						catch (Exception ex)
@@ -199,16 +236,16 @@ namespace Neo.ApplicationFramework.Generated
 							Globals.Tags.Log("Exception Robotti_ParametritSaapunut! - Virhe viestin purussa!" + ex.Message);
 						}
 					}
-					Globals.Tags.Log("Robotti_ParametritSaapunut: Viesti purettu( " +e.Data.ToString() +")");
-					
+					Globals.Tags.Log("Robotti_ParametritSaapunut: Viesti purettu( " + e.Data.ToString() + ")");
+
 				}
 			}
 			catch (Exception ex)
 			{
 				Globals.Tags.Log("Exception Robotti_ParametritSaapunut! " + ex.Message);
-			}	
+			}
 		}
-		
+
 		/// <summary>
 		/// Pyytää robottia päivittämään tilansa ja luo yhteyshälytyksen, jos robotin
 		/// watchdog hälyttää.
@@ -225,7 +262,7 @@ namespace Neo.ApplicationFramework.Generated
 				Globals.Tags.SetTagValue("HMI_CommFault_Rob" + numero, robotit[numero].WatchdogHalytys);
 			}
 		}
-		
+
 		/// <summary>
 		/// Tarkistaa onko robotti objecti olemassa listalla
 		/// robotti luodaan sen puuttuessa
@@ -239,7 +276,7 @@ namespace Neo.ApplicationFramework.Generated
 			{
 				// Alustetaan robotti
 				robotit.Add(numero, new Lavaus.Robotti(numero));
-				
+
 				// Liitytään tagien muutos eventtiin
 				robotit[numero].TagiMuuttunut += Robotti_TagiMuuttunut;
 				robotit[numero].Mokasit += Robotti_Mokasit;
@@ -258,10 +295,10 @@ namespace Neo.ApplicationFramework.Generated
 		/// <returns></returns>
 		public void KuittaaHairio(int robotti, int id, Int16 num)
 		{
-			try 
-			{	        
+			try
+			{
 				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
-				
+
 				robotit[robotti].Loki.LisaaLokiin(string.Format("Kuittaus {0} - {1}", id, num));
 				robotit[robotti].KuittaaHairio(id, num);
 			}
@@ -278,10 +315,10 @@ namespace Neo.ApplicationFramework.Generated
 		/// <returns></returns>
 		public void AjaHuoltoon(int robotti)
 		{
-			try 
-			{	        
+			try
+			{
 				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
-				
+
 				robotit[robotti].Loki.LisaaLokiin("Ajopyyntö huoltoasemaan.");
 				robotit[robotti].AjaHuoltoon();
 			}
@@ -379,6 +416,20 @@ namespace Neo.ApplicationFramework.Generated
 			}
 		}
 
+		public void Nopeus(int robotti, int nopeus_tyhja, int kiihtyvyys_tyhja, int nopeus_lava, int kiihtyvyys_lava, int nopeus_pahvi, int kiihtyvyys_pahvi)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].Nopeus(nopeus_tyhja, kiihtyvyys_tyhja, nopeus_lava, kiihtyvyys_lava, nopeus_pahvi, kiihtyvyys_pahvi);
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception Nopeus! " + ex.Message);
+			}
+		}
+
 		public void PaikkaOffset(int robotti, string command_id, int paikka, double X, double Y)
 		{
 			try
@@ -392,14 +443,14 @@ namespace Neo.ApplicationFramework.Generated
 				Globals.Tags.Log("Exception PaikkaOffset! " + ex.Message);
 			}
 		}
-		
+
 		public void AsetaKerrosmaara(int robotti, int roboLavapaikka, Int16 kerrokset)
 		{
 			try
 			{
 				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
 
-				robotit[robotti].AsetaKerrosmaara(roboLavapaikka, kerrokset);	
+				robotit[robotti].AsetaKerrosmaara(roboLavapaikka, kerrokset);
 			}
 			catch (Exception ex)
 			{
@@ -420,7 +471,7 @@ namespace Neo.ApplicationFramework.Generated
 				Globals.Tags.Log("Exception AsetaKerrosmaara! " + ex.Message);
 			}
 		}
-		
+
 		public string TeeAloitus(int robotti, List<int> tuloradat, List<int> lavapaikat, int pattern, Lavaus.Kuvio kuvio)
 		{
 			string ret = "";
@@ -428,7 +479,7 @@ namespace Neo.ApplicationFramework.Generated
 			{
 				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
 
-				ret = robotit[robotti].TeeAloitus(tuloradat, lavapaikat, pattern, kuvio);	
+				ret = robotit[robotti].TeeAloitus(tuloradat, lavapaikat, pattern, kuvio);
 			}
 			catch (Exception ex)
 			{
@@ -437,13 +488,27 @@ namespace Neo.ApplicationFramework.Generated
 			return ret;
 		}
 
+		public void TeeLopetus(int robotti, int tulorata)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].TeeLopetus(tulorata);
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception TeeLopetus! " + ex.Message);
+			}
+		}
+
 		public void AsetaPahvit(int robotti, int lavapaikka, string pahvit)
 		{
 			try
 			{
 				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
 
-				robotit[robotti].AsetaPahvit(lavapaikka, pahvit);	
+				robotit[robotti].AsetaPahvit(lavapaikka, pahvit);
 			}
 			catch (Exception ex)
 			{
@@ -457,7 +522,7 @@ namespace Neo.ApplicationFramework.Generated
 			{
 				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
 
-				robotit[robotti].AsetaPahvit(command_id, lavapaikka, pahvit);	
+				robotit[robotti].AsetaPahvit(command_id, lavapaikka, pahvit);
 			}
 			catch (Exception ex)
 			{
@@ -471,7 +536,7 @@ namespace Neo.ApplicationFramework.Generated
 			{
 				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
 
-				robotit[robotti].AloituksenLopetus(command_id);	
+				robotit[robotti].AloituksenLopetus(command_id);
 			}
 			catch (Exception ex)
 			{

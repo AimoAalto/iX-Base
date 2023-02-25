@@ -11,9 +11,6 @@ namespace Neo.ApplicationFramework.Generated
 		
 		void Settings_HMI_Opened(System.Object sender, System.EventArgs e)
 		{
-			// Main menu painikkeiden visualisointi
-			//Globals.Tags.Menu_MainMenu_Btn_Anim.Value = 7;
-		}		
-		
+		}
 	}
 }

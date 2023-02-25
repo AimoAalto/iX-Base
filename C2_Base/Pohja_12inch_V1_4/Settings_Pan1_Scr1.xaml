@@ -566,10 +566,10 @@
                     <nai:ActionParameterInfoList>
                       <nata:ActionParameterInfo Position="0" Value="Database" ParameterName="databaseName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
                       <nata:ActionParameterInfo Position="1" Value="Pallet_Log" ParameterName="tableName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
-                      <nata:ActionParameterInfo Position="2" Value="FilePath" ParameterName="csvFileDirectory" ParameterTypeString="Neo.ApplicationFramework.Interfaces.FileDirectory, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="" />
+                      <nata:ActionParameterInfo Position="2" Value="Browse" ParameterName="csvFileDirectory" ParameterTypeString="Neo.ApplicationFramework.Interfaces.FileDirectory, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="" />
                       <nata:ActionParameterInfo Position="3" Value="Data Loggers" ParameterName="groupName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
                       <nata:ActionParameterInfo Position="4" Value="Lavaloki_Linja4" ParameterName="fileName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
-                      <nata:ActionParameterInfo Position="5" Value="D:\Lavaus\Lavaloki" ParameterName="csvPath" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="5" Value="" ParameterName="csvPath" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
                       <nata:ActionParameterInfo Position="6" ParameterName="overwrite" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
                         <nata:ActionParameterInfo.Value>
                           <s:Boolean>True</s:Boolean>

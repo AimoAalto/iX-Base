@@ -126,15 +126,15 @@ namespace Neo.ApplicationFramework.Generated
 			get { if (aikavalit == null) aikavalit = new Dictionary<string, int>(); return aikavalit; } 
 			set { if (value != null) aikavalit = value; } 
 		}
-		public Dictionary<int, int> Lavapaikat
-		{ 
-			get { if (lavapaikat == null) lavapaikat = new Dictionary<int, int>(); return lavapaikat; } 
-			set { if (value != null) lavapaikat = value; } 
-		}
 		public Dictionary<int, int> Tuloradat
 		{ 
 			get { if (tuloradat == null) tuloradat = new Dictionary<int, int>(); return tuloradat; }
 			set { if (value != null) tuloradat = value; } 
+		}
+		public Dictionary<int, int> Lavapaikat
+		{ 
+			get { if (lavapaikat == null) lavapaikat = new Dictionary<int, int>(); return lavapaikat; } 
+			set { if (value != null) lavapaikat = value; } 
 		}
 		public Dictionary<int, PatternInfo> AllowedPatterns
 		{ 
@@ -145,13 +145,58 @@ namespace Neo.ApplicationFramework.Generated
 		public int NumberOfRobots { get { if (robots == null) return 0; else return robots.Count; } }
 		public int NumberOfPLC { get { return numberofplc; } set { if (value < 1) numberofplc = 1; else numberofplc = value; } }
 
+		public void RemovePalletType(int no)
+		{
+			/*foreach (KeyValuePair<int, RobotConf> r in robots)
+			{
+				RobotConf robot = r.Value;
+				if (robot.Lavatyypit.Contains(no)) robot.Lavatyypit.Remove(no);
+			}*/
+			foreach (KeyValuePair<int, PatternInfo> p in patterns)
+			{
+				PatternInfo pattern = p.Value;
+				if (pattern.Lavatyypit.Contains(no)) pattern.Lavatyypit.Remove(no);
+			}
+			Lavatyypit.Remove(no);
+		}
+
+		public void RemoveInfeedTrack(int no)
+		{
+			foreach (KeyValuePair<int, RobotConf> r in robots)
+			{
+				RobotConf robot = r.Value;
+				if (robot.Tuloradat.Contains(no)) robot.Tuloradat.Remove(no);
+			}
+			foreach (KeyValuePair<int, PatternInfo> p in patterns)
+			{
+				PatternInfo pattern = p.Value;
+				if (pattern.Tuloradat.Contains(no)) pattern.Tuloradat.Remove(no);
+			}
+			Tuloradat.Remove(no);
+		}
+
+		public void RemovePalletPlace(int no)
+		{
+			foreach (KeyValuePair<int, RobotConf> r in robots)
+			{
+				RobotConf robot = r.Value;
+				if (robot.Lavapaikat.Contains(no)) robot.Lavapaikat.Remove(no);
+			}
+			foreach (KeyValuePair<int, PatternInfo> p in patterns)
+			{
+				PatternInfo pattern = p.Value;
+				if (pattern.Lavapaikat.Contains(no)) pattern.Lavapaikat.Remove(no);
+			}
+			Lavapaikat.Remove(no);
+		}
+		
 		public int GetRobotNoByIndex(int index)
 		{
 			int ret = -1;
 			if (robots == null) robots = new Dictionary<int, RobotConf>();
 			if (robots.Count == 0)
 			{
-				robots.Add(1, new RobotConf(1, 4, 4));
+				robots.Add(1, new RobotConf(1, 0, 0));
 			}
 			if (index >= 0 && index < robots.Count)
 			{
@@ -164,43 +209,35 @@ namespace Neo.ApplicationFramework.Generated
 				}
 			}
 			return ret;
-			}
+		}
 
 		public void AddRobot(int no)
 		{
 			if (robots == null) robots = new Dictionary<int, RobotConf>();
 			if (!robots.ContainsKey(no))
-			{
-				robots.Add(no, new RobotConf(no, 4, 4));
-			}
+				robots.Add(no, new RobotConf(no, tuloradat.Count, lavapaikat.Count));
 		}
 
 		public void RemoveRobot(int no)
 		{
 			if (robots == null) robots = new Dictionary<int, RobotConf>();
 			if (robots.ContainsKey(no))
-			{
 				robots.Remove(no);
-			}
 		}
 
 		public void AddRobotInfeedTrack(int no, int tulorata)
 		{
 			if (robots == null) robots = new Dictionary<int, RobotConf>();
 			if (robots.ContainsKey(no))
-			{
 				robots[no].Tuloradat[tulorata] = tulorata;
-			}
 		}
 
 		public void RemoveRobotInfeedTrack(int no, int tulorata)
 		{
 			if (robots == null) robots = new Dictionary<int, RobotConf>();
 			if (robots.ContainsKey(no))
-			{
 				if (robots[no].Tuloradat.Contains(tulorata))
 					robots[no].Tuloradat.Remove(tulorata);
-			}
 		}
 
 		public void AddRobotPalletPlace(int no, int lavapaikka)
@@ -254,7 +291,7 @@ namespace Neo.ApplicationFramework.Generated
 			return (rno > 0);
 		}
 
-		public int GetRobottiNumeroByTulorata(int tulorata)
+		public int __GetRobottiNumeroByTulorata(int tulorata)
 		{
 			int ret = 0;
 			foreach (RobotConf robotti in Robots.Values)
@@ -267,8 +304,10 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			return ret;
 		}
-
-		public List<int> GetSallitutLavapaikat(int robotti, int tulorata)
+		
+		public List<int> AllowedInfeedTracks(int robotti) { return robots.ContainsKey(robotti) ? robots[robotti].Tuloradat : new List<int>(); }
+		public List<int> AllowedPalletPlaces(int robotti) { return robots.ContainsKey(robotti) ? robots[robotti].Lavapaikat : new List<int>(); }
+		public List<int> AllowedPalletPlaces(int robotti, int tulorata)
 		{
 			List<int> lpt = new List<int>();
 
@@ -279,9 +318,10 @@ namespace Neo.ApplicationFramework.Generated
 				{
 					// Yritetään hakea yhdistelmälle kuvio
 					try 
-					{	        
-						int[] kuviot = Globals.Robotit.HaeSallitutKuviotLavapaikalla(tulorata, lavapaikka);
-						if (kuviot.Length > 0) lpt.Add(lavapaikka);
+					{
+						if (PatternIsAllowedInfeedTrack(tulorata, lavapaikka))
+							if (!lpt.Contains(lavapaikka))
+								lpt.Add(lavapaikka);
 					}
 					catch (Exception x)
 					{
@@ -290,28 +330,12 @@ namespace Neo.ApplicationFramework.Generated
 					}
 				}
 			}
+			lpt.Sort();
 			return lpt;
 		}
 		
-		public bool IsAllowedPalletPlace(int robotti, int lavapaikka)
-		{
-			bool ret = false;
-			if (robots.ContainsKey(robotti))
-			{
-				ret = robots[robotti].Lavapaikat.Contains(lavapaikka);
-			}
-			return ret;
-		}
-		
-		public bool IsAllowedInfeedTrack(int robotti, int tulorata)
-		{
-			bool ret = false;
-			if (robots.ContainsKey(robotti))
-			{
-				ret = robots[robotti].Tuloradat.Contains(tulorata);
-			}
-			return ret;
-		}
+		public bool IsAllowedPalletPlace(int robotti, int lavapaikka) { return robots.ContainsKey(robotti) ? robots[robotti].Lavapaikat.Contains(lavapaikka) : false; }
+		public bool IsAllowedInfeedTrack(int robotti, int tulorata) { return robots.ContainsKey(robotti) ? robots[robotti].Tuloradat.Contains(tulorata) : false; }
 
 		public bool AddPattern(int no)
 		{
@@ -401,64 +425,77 @@ namespace Neo.ApplicationFramework.Generated
 			return ret;
 		}
 		
-		public bool IsAllowedPatternPalletPlace(int no, int lavapaikka)
-		{
-			bool ret = false;
-			if (patterns.ContainsKey(no))
-			{
-				ret = patterns[no].Lavapaikat.Contains(lavapaikka);
-			}
-			return ret;
-		}
+		private List<int> empty = new List<int>();
 		
-		public bool IsAllowedPatternInfeedTrack(int no, int tulorata)
+		public List<int> AllowedPatternInfeedTracks(int no) { return patterns.ContainsKey(no) ? patterns[no].Tuloradat : empty; }
+		public List<int> AllowedPatternPalletPlaces(int no) { return patterns.ContainsKey(no) ? patterns[no].Lavapaikat : empty; }
+		public List<int> AllowedPatternPalletTypes(int no) { return patterns.ContainsKey(no) ? patterns[no].Lavatyypit : empty; }
+		
+		public bool IsAllowedPatternInfeedTrack(int no, int tulorata) { return patterns.ContainsKey(no) ? patterns[no].Tuloradat.Contains(tulorata) : false; }
+		public bool IsAllowedPatternPalletPlace(int no, int lavapaikka) { return patterns.ContainsKey(no) ? patterns[no].Lavapaikat.Contains(lavapaikka) : false; }
+		public bool IsAllowedPatternPalletType(int no, int lavatyyppi) { return patterns.ContainsKey(no) ? patterns[no].Lavatyypit.Contains(lavatyyppi) : false; }
+		
+		public bool PatternIsAllowedInfeedTrack(int tulorata, int lavapaikka)
 		{
-			bool ret = false;
-			if (patterns.ContainsKey(no))
-			{
-				ret = patterns[no].Tuloradat.Contains(tulorata);
-			}
-			return ret;
+			foreach (KeyValuePair<int,PatternInfo> item in patterns)
+				if (((PatternInfo)item.Value).Tuloradat.Contains(tulorata) && ((PatternInfo)item.Value).Lavapaikat.Contains(lavapaikka))
+					return true;
+			return false;
 		}
 
-		public bool IsAllowedPatternPalletType(int no, int lavatyyppi)
+		public List<int> AllowedPatternNumbers()
 		{
-			bool ret = false;
-			if (patterns.ContainsKey(no))
-			{
-				ret = patterns[no].Lavatyypit.Contains(lavatyyppi);
-			}
-			return ret;
-		}
-
-		public int Aikavali(string key)
-		{
-			if (aikavalit.ContainsKey(key))
-				return aikavalit[key];
-			else
-				return 1000;
+			List<int> lst = new List<int>();
+			foreach (KeyValuePair<int,PatternInfo> item in patterns) lst.Add(item.Key);
+			lst.Sort();
+			return lst;
 		}
 		
-		public string Lavatyyppi(int key)
+		public List<int> __PatternsForInfeed(int tulorata)
 		{
-			if (lavatyypit.ContainsKey(key))
-				return Lavatyypit[key];
-			else
-				return "Unknown";
+			List<int> lst = new List<int>();
+			foreach (KeyValuePair<int,PatternInfo> item in patterns)
+				if (((PatternInfo)item.Value).Tuloradat.Contains(tulorata)) lst.Add(item.Key);
+			return lst;
 		}
+		
+		public List<int> PatternAllowedPalletPlaces(int robotti, int kuviono)
+		{
+			List<int> lst = new List<int>();
+			if (robots.ContainsKey(robotti))
+			{
+				foreach (int lavapaikka in robots[robotti].Lavapaikat)
+					if (IsAllowedPatternPalletPlace(kuviono, lavapaikka)) lst.Add(lavapaikka);
+			}
+			lst.Sort();
+			return lst;
+		}
+
+		public List<int> PatternsForInfeed(int tulorata, int lavapaikka)
+		{
+			List<int> lst = new List<int>();
+			foreach (KeyValuePair<int,PatternInfo> item in patterns)
+			{
+				if (((PatternInfo)item.Value).Tuloradat.Contains(tulorata) 
+					&& (((PatternInfo)item.Value).Lavapaikat.Contains(lavapaikka) || lavapaikka == 0))
+					lst.Add(item.Key);
+			}
+			return lst;
+		}
+
+		public int Aikavali(string key) { return (aikavalit.ContainsKey(key)) ? aikavalit[key] : 1000; }
+		public string Lavatyyppi(int key) { return (lavatyypit.ContainsKey(key)) ? Lavatyypit[key] : "Unknown"; }
 		
 		public Configuration__()
 		{
-			robots.Add(1, new RobotConf(1, 4, 4));
-			//robots.Add(2, new RobotConf(2, 4, 4));
+			robots.Add(1, new RobotConf(1, 0, 0));
+			//robots.Add(2, new RobotConf(2, 0, 0));
 			lavatyypit.Add(1, "EUR");
 			lavatyypit.Add(2, "FIN");
 			aikavalit.Add("Ajotiedot", 10000);
 			aikavalit.Add("RobottiWatchdog", 1000);
 			aikavalit.Add("LogiikkaWatchdog", 1000);
 			aikavalit.Add("SensorInfoUpdate", 1000);
-			for (int i = 1; i <= 4; i++) tuloradat.Add(i, i);
-			for (int i = 1; i <= 4; i++) lavapaikat.Add(i, i);
 		}
 	}
 
@@ -494,13 +531,16 @@ namespace Neo.ApplicationFramework.Generated
 
 		private object lockme = new object();
 		private Configuration__ config = new Configuration__();
-		private bool savetodisk = true;
 		private static string lavauspath = @"C:\Lavaus\";
-		private static string path = lavauspath + @"Asetukset\Conf.json";
+		
+		public static string ConfigFileName = lavauspath + @"Asetukset\Conf.json";
+		public static readonly string PatternDirectory = lavauspath + @"Kuviot\";
+		public static readonly string PictureDirectory = lavauspath + @"Kuvat\";
+
 		/// <summary>
-		/// Polku, johon kuvioiden rajoitteet on tallennettu.
+		/// tiedosto, johon kuvioiden rajoitteet on tallennettu.
 		/// </summary>
-		public static readonly string Kuviotietolista_Path = lavauspath + @"Kuviot\Kuviot.json";
+		//public static readonly string Kuviotietolista_Path = lavauspath + @"Kuviot\Kuviot.json";
 		
 		public bool ReadOk { get; set; }
 		
@@ -515,20 +555,26 @@ namespace Neo.ApplicationFramework.Generated
 			lock (lockme)
 				try 
 				{
-					if (savetodisk)
-					{
-						config = JsonSerialization.ReadFromJsonFile<Configuration__>(path);
-						string s = Newtonsoft.Json.JsonConvert.SerializeObject(CurrentConfig);
-						Globals.Tags.ConfCurrentConfig.SetString(s);
-					}
-					else
+					bool b = (bool)Globals.Tags.Conf_UseOnly_NVBD.Value;
+					if (b)
 					{
 						// non-volatiletag
 						string s = Globals.Tags.ConfCurrentConfig.Value;
 						if (!string.IsNullOrEmpty(s))
 							config = Newtonsoft.Json.JsonConvert.DeserializeObject<Configuration__>(s);
-						else
-							throw new Exception("blank confdata, use current value");
+					}
+					else
+					{
+						try 
+						{
+							config = JsonSerialization.ReadFromJsonFile<Configuration__>(ConfigFileName);
+						}
+						catch (Exception)
+						{
+							config = new Configuration__();
+						}
+						string s = Newtonsoft.Json.JsonConvert.SerializeObject(CurrentConfig);
+						Globals.Tags.ConfCurrentConfig.SetString(s);
 					}
 					
 					Globals.Tags.Settings_PanelNumber.SetAnalog(config.PanelNo);
@@ -547,20 +593,21 @@ namespace Neo.ApplicationFramework.Generated
 			lock (lockme)
 				try 
 				{
-					if (savetodisk)
+					string last = Globals.Tags.ConfLastConfig.Value;
+					string current = Globals.Tags.ConfLastConfig.Value;
+					string s = Newtonsoft.Json.JsonConvert.SerializeObject(CurrentConfig);
+					if (last.CompareTo(s) != 0)
 					{
+						// non-volatiletag
+						Globals.Tags.ConfLastConfig.SetString(current);
+						Globals.Tags.ConfCurrentConfig.SetString(s);
+						
+						// backup last value
 						// Luo peruskansio jos ei olemassa
 						if (!Directory.Exists(lavauspath)) Directory.CreateDirectory(lavauspath);
-						if (!Directory.Exists(System.IO.Path.GetDirectoryName(path))) Directory.CreateDirectory(System.IO.Path.GetDirectoryName(path));
-				
-						JsonSerialization.WriteToJsonFile<Configuration__>(path, config); 
+						if (!Directory.Exists(System.IO.Path.GetDirectoryName(ConfigFileName))) Directory.CreateDirectory(System.IO.Path.GetDirectoryName(ConfigFileName));
+						JsonSerialization.WriteToJsonFile<Configuration__>(ConfigFileName, config);					
 					}
-					// non-volatiletag
-					// backup last value
-					string s = Globals.Tags.ConfCurrentConfig.Value;
-					Globals.Tags.ConfLastConfig.SetString(s);
-					s = Newtonsoft.Json.JsonConvert.SerializeObject(CurrentConfig);
-					Globals.Tags.ConfCurrentConfig.SetString(s);
 				}
 				catch (Exception)
 				{
@@ -570,6 +617,20 @@ namespace Neo.ApplicationFramework.Generated
 				}
 		}
 
+		/// <summary>
+		/// Save PanelNo setting value
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		/// <returns></returns>
+		void ValueChangePN(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
+		{
+			if (Globals.Tags.Settings_PanelNumber.Value.Int > 0 && config.PanelNo > 0)
+			{
+				Save();
+			}
+		}
+		
 /*
 		void ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
@@ -612,8 +673,20 @@ namespace Neo.ApplicationFramework.Generated
 			SaveSettings();
 		}
 		
-		private void UpdateSettings
+		private void CreateChangeEvents
 		{
+			// Create event to update file if settings Tag value changed
+			foreach (var prop in settings.GetType().GetProperties())
+			{
+				try
+				{
+					Globals.Tags.GetTag("Settings_" + prop.Name).ValueChange += ValueChange;
+				}
+				catch (Exception x)
+				{
+					Globals.Tags.Log(String.Format("KonfiguraatioCreated: {0}, [{1}]", prop.Name, x.Message));
+				}
+			}
 		}
 */
 		
@@ -628,25 +701,15 @@ namespace Neo.ApplicationFramework.Generated
 			try 
 			{	        
 				Read();
+				
+				// PanelNo change event
+				Globals.Tags.GetTag("Settings_PanelNumber").ValueChange += ValueChangePN;
 			}
 			catch (Exception x)
 			{
 				System.Diagnostics.Trace.WriteLine(x.Message);
 				Globals.Tags.Log(x.Message);
 			}
-			
-			// Create event to update file if settings Tag value changed
-			/*foreach (var prop in settings.GetType().GetProperties())
-			{
-			try
-			{
-			Globals.Tags.GetTag("Settings_" + prop.Name).ValueChange += ValueChange;
-			}
-			catch (Exception x)
-			{
-			Globals.Tags.Log(String.Format("KonfiguraatioCreated: {0}, [{1}]", prop.Name, x.Message));
-			}
-			}*/
 		}
 	}
 }

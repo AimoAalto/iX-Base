@@ -119,37 +119,7 @@ namespace Neo.ApplicationFramework.Generated
 		/// [0}-taulussa riveinä.</returns>
 		public DataSet HaeReseptit(int[] kuviot)
 		{
-			DataSet data = new DataSet();
-			
-			try
-			{
-				using (SQLiteConnection yhteys = LuoYhteys())
-				{
-					// Avaa yhteys
-					yhteys.Open();
-				
-					// Luo datan valintakomento
-					SQLiteCommand komento = new SQLiteCommand("SELECT * FROM Tuotetiedot WHERE Kuvio IN (" + string.Join(",", kuviot) + ");", yhteys);
-							
-					// Luodaan data-adapteri
-					SQLiteDataAdapter adapteri = new SQLiteDataAdapter(komento);
-				
-					// Haetaan data
-					adapteri.Fill(data);
-				
-					// Katkaistaan yhteys
-					yhteys.Close();
-				}
-			}
-			catch (Exception ex)
-			{
-				// Lataus epäonnistui
-				Globals.Tags.HMI_Error_TextValue.SetAnalog(20);
-				Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message;
-				Globals.Popup_Error.Show();
-			}
-			
-			return data;
+			return HaeReseptit(kuviot, "");
 		}
 
 		/// <summary>
@@ -173,18 +143,23 @@ namespace Neo.ApplicationFramework.Generated
 					yhteys.Open();
 							
 					// Luo datan valintakomento
-					string komentoText = "SELECT * FROM Tuotetiedot WHERE Kuvio IN (" + string.Join(",", kuviot) + ") AND (";
+					string komentoText = "SELECT * FROM Tuotetiedot WHERE Kuvio IN (" + string.Join(",", kuviot) + ")";
 							
 					// Lisätään tekstikenttä hakuehdoksi
 					// Jos kentässä on numero tarkistetaan tuotenumero
-					int numero;
-					if (int.TryParse(hakuehto, out numero))
+					if (!string.IsNullOrEmpty(hakuehto))
 					{
-						komentoText = komentoText + "Tuotenumero LIKE " + hakuehto + " OR ";
-					}
+						komentoText = komentoText + " AND (";
+						int numero;
+						if (int.TryParse(hakuehto, out numero))
+						{
+							komentoText = komentoText + "Tuotenumero LIKE " + hakuehto + " OR ";
+						}
 				
-					// Tarkistetaan reseptinimet
-					komentoText = komentoText + "FieldName LIKE @0);";
+						// Tarkistetaan reseptinimet
+						komentoText = komentoText + "FieldName LIKE @0)";
+					}
+					komentoText = komentoText + ";";
 				
 					SQLiteCommand komento = new SQLiteCommand(komentoText, yhteys);
 				

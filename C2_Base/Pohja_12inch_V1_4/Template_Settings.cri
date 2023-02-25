@@ -48,6 +48,7 @@
         <Item Target="Template_Settings.Group_Buttons2.btnSubmenu12" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
         <Item Target="Template_Settings.Group_Buttons2.btnSubmenu13" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
         <Item Target="Template_Settings.Group_Buttons2.btnSubmenu14" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Settings.Group_Buttons2.btnSubmenu14" TargetProperty="EnabledProperties.EnabledDynamicsValue" Source="Tags.CurrentUserInt" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">

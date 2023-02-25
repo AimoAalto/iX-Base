@@ -33,6 +33,7 @@
     </Category>
     <Category Name="Script">
       <Items>
+        <Item Target="_Konfiguraatio.Script.cs" Source="Tags.Conf_UseOnly_NVBD" />
         <Item Target="_Konfiguraatio.Script.cs" Source="Tags.ConfCurrentConfig" />
         <Item Target="_Konfiguraatio.Script.cs" Source="Tags.Settings_PanelNumber" />
         <Item Target="_Konfiguraatio.Script.cs" Source="Tags.ConfLastConfig" />

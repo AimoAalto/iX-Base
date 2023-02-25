@@ -22,7 +22,6 @@ namespace Neo.ApplicationFramework.Generated
 		void Overview_Pan1_Scr1_Opened(System.Object sender, System.EventArgs e)
 		{
 			// Main menu painikkeiden visualisointi
-			//Globals.Tags.Menu_MainMenu_Btn_Anim.Value = 1;
 			
 			// Alustetaan tuloradan valinta -1:ksi
 			Globals.Tags.HMI_Overview_track_selected.Value = -1;

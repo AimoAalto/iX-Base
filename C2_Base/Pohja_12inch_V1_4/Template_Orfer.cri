@@ -60,6 +60,7 @@
         <Item Target="Template_Orfer.TouchComboBox_Language" TargetProperty="Value" Source="Tags.HMI_Language_Current" />
         <Item Target="Template_Orfer.Picture_PLC_Alarm" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Line1_Comm_Fault_PLC1" />
         <Item Target="Template_Orfer.Picture_Rob_Alarm" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.HMI_CommFault_Robots" />
+        <Item xsi:type="ActionItem" Target="Template_Orfer.Button_Sub_Alarms" TargetProperty="Actions" Source="Tags.Menu_MainMenu_Btn_Anim" Event="Click" Action="Set Analog" Param="" />
         <Item Target="Template_Orfer.Line2_Conn_PLC" TargetProperty="Stroke" Source="Tags.Line1_Comm_Fault_PLC1" />
         <Item Target="Template_Orfer.Line1_Conn_PLC" TargetProperty="Stroke" Source="Tags.Line1_Comm_Fault_PLC1" />
         <Item Target="Template_Orfer.Group_Login_btn.Button_Users" TargetProperty="Value" Source="Tags.SystemTagCurrentUser" />
@@ -86,7 +87,7 @@
     </Category>
     <Category Name="Screen">
       <Items>
-        <Item xsi:type="ActionItem" Target="Template_Orfer.Button_Sub_Alarms" TargetProperty="Actions" Source="Alarms_Pan1_Scr1" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ActionItem" Target="Template_Orfer.Button_Sub_Alarms" TargetProperty="Actions" Source="Alarms_Pan1_Scr1" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ActionItem" Target="Template_Orfer.Button_Legends" TargetProperty="Actions" Source="Popup_legends" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ActionItem" Target="Template_Orfer.Group_Login_btn.Button_Users" TargetProperty="Actions" Source="Popup_Login" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
@@ -108,7 +109,9 @@
       </Items>
     </Category>
     <Category Name="StructuredTag">
-      <Items />
+      <Items>
+        <Item xsi:type="ActionItem" Target="Template_Orfer.Button_Sub_Alarms" TargetProperty="Actions" Source="Tags.Menu_MainMenu_Btn_Anim" Event="Click" Action="Set Analog" Param="" />
+      </Items>
     </Category>
     <Category Name="Symbol">
       <Items>

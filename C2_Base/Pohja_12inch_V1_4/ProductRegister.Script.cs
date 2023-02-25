@@ -35,22 +35,7 @@ namespace Neo.ApplicationFramework.Generated
 			// Ladataan kuvion tiedot aina kun kuvionumero muuttuu
 			Globals.Tags.ProdReg_PalletPattern.ValueChange += LataaKuvio;
 			
-			// Luetaan mahdolliset kuvionumerot
-			List<int> kuvioLista;
-			
-			// Ladataan kaikki kuviot JSON-tiedostosta
-			try 
-			{	        
-				List<Kuviotiedot> kuviot = Kuviotiedot.LataaKuviot();
-				kuvioLista = kuviot.OrderBy(p => p.numero).Select(p => p.numero).ToList();
-			}
-			catch
-			{
-				// Tiedostoa ei ole vielä, jatketaan tyhjällä listalla
-				kuvioLista = new List<int>();
-			}
-
-			foreach (int kuvio in kuvioLista)
+			foreach (int kuvio in Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.Keys)
 			{
 				// Lisätään kuviolistaan
 				KuvioComboBox.AddString(kuvio, kuvio.ToString());
@@ -123,13 +108,21 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			
 			// Haetaan kuvion tiedot JSON-tiedostosta
-			Kuviotiedot kuvio = Kuviotiedot.LataaKuviot()
-				.Where(p => p.numero == Globals.Tags.ProdReg_PalletPattern.Value.Int).SingleOrDefault();
+			if (!Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.ContainsKey(Globals.Tags.ProdReg_PalletPattern.Value.Int))
+			{
+				// tuntematon kuvio
+				Globals.Tags.HMI_Error_TextValue.SetAnalog(24);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+				Globals.Popup_Error.Show();
+				return;
+			}
+			
+			PatternInfo pi = Globals._Konfiguraatio.CurrentConfig.AllowedPatterns[Globals.Tags.ProdReg_PalletPattern.Value.Int];
 			
 			// Luetaan, mille tuloradalle kuvio on
 			Tulorata_Text.Text = "";
 			bool loytyi = false;
-			foreach (int tulorata in kuvio.sallitutTuloradat)
+			foreach (int tulorata in pi.Tuloradat)
 			{
 				if (loytyi)
 				{
@@ -143,7 +136,7 @@ namespace Neo.ApplicationFramework.Generated
 			List<int> lavapaikat = new List<int>();
 			Lavapaikka_Text.Text = "";
 			loytyi = false;
-			foreach (int lavapaikka in kuvio.sallitutLavapaikat)
+			foreach (int lavapaikka in pi.Lavapaikat)
 			{
 				if (loytyi)
 				{
@@ -157,17 +150,18 @@ namespace Neo.ApplicationFramework.Generated
 			// Katsotaan kummalle robotille kuvio on
 			Robotti_Text.Text = "";
 			loytyi = false;
-			foreach (Neo.ApplicationFramework.Generated.RobotConf robotti in Globals._Konfiguraatio.CurrentConfig.Robots.Values)
+			foreach (KeyValuePair<int, RobotConf> r in Globals._Konfiguraatio.CurrentConfig.Robots)
 			{
+				RobotConf robot = r.Value;
 				foreach (int lavapaikka in lavapaikat)
 				{
-					if (robotti.Lavapaikat.Contains(lavapaikka))
+					if (robot.Lavapaikat.Contains(lavapaikka))
 					{
 						if (loytyi)
 						{
 							Robotti_Text.Text = Robotti_Text.Text + ", ";
 						}
-						Robotti_Text.Text = Robotti_Text.Text + robotti.RobotNo.ToString();
+						Robotti_Text.Text = Robotti_Text.Text + robot.RobotNo.ToString();
 						loytyi = true;
 						break;
 					}
@@ -177,14 +171,14 @@ namespace Neo.ApplicationFramework.Generated
 			// Päivitetään lavatyypit
 			Neo.ApplicationFramework.Controls.WindowsControls.ComboBox boxi = (Neo.ApplicationFramework.Controls.WindowsControls.ComboBox)PalletTypeComboBox.AdaptedObject;
 			boxi.IntervalMapper.Intervals.Clear();
-			foreach (int tyyppi in kuvio.sallitutLavatyypit)
+			foreach (int tyyppi in pi.Lavatyypit)
 			{
-				PalletTypeComboBox.AddString(tyyppi, Globals._Konfiguraatio.CurrentConfig.Lavatyyppi(tyyppi));
+				PalletTypeComboBox.AddString(tyyppi, Globals._Konfiguraatio.CurrentConfig.Lavatyypit[tyyppi]);
 			}
 
 			if (Globals.Tags.ProdReg_PalletType.Value.Int != 0)
 			{
-				if (PalletTypeComboBox.Items.Contains(Globals._Konfiguraatio.CurrentConfig.Lavatyyppi(Globals.Tags.ProdReg_PalletType.Value.Int)))
+				if (PalletTypeComboBox.Items.Contains(Globals._Konfiguraatio.CurrentConfig.Lavatyypit[Globals.Tags.ProdReg_PalletType.Value.Int]))
 				{
 					PalletTypeComboBox.SelectedIndex = Globals.Tags.ProdReg_PalletType.Value.Int;
 				}
@@ -192,7 +186,7 @@ namespace Neo.ApplicationFramework.Generated
 			// Ladataan kuvion tiedot
 			Lavaus.Kuvio Kuvio = new Lavaus.Kuvio();
 			Kuvio.Validoi = false;
-			Kuvio.JSON = @"C:\Lavaus\Kuviot\" + "Kuvio" + Globals.Tags.ProdReg_PalletPattern.Value + ".json";
+			Kuvio.JSON = _Konfiguraatio.PatternDirectory + "Kuvio" + Globals.Tags.ProdReg_PalletPattern.Value + ".json";
 
 			// Yritetään ladata tiedosto
 			try
@@ -234,7 +228,7 @@ namespace Neo.ApplicationFramework.Generated
 				// Ladataan kuvion kuva, jos on olemassa
 				if (Kuvio.Nykyinen.PalletizingImageFilename != null)
 				{	
-					string polku = @"C:\Lavaus\Kuvat\" + Kuvio.Nykyinen.PalletizingImageFilename;
+					string polku = _Konfiguraatio.PictureDirectory + Kuvio.Nykyinen.PalletizingImageFilename;
 					if(System.IO.File.Exists(polku))
 					{
 						Kuva_Kuvio.Image = System.Drawing.Image.FromFile(polku);

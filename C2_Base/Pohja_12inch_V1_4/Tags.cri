@@ -220,37 +220,29 @@
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_SystemsSecond" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C1" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C2" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_Manual_Area_Enabled_1" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_Manual_Area_Enabled_2" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C4" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C3" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C5" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_Manual_Area_Enabled_3" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_Manual_Area_Enabled_4" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_Manual_Area_Enabled_5" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.SystemTagSecond" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_Manual_Area_Enabled_6" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_Manual_Area_Enabled_7" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_Manual_Area_Enabled_8" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C6" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C7" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C8" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagCurrentUser" />
         <Item Target="Tags.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
         <Item Target="Tags.Script.cs" Source="Tags.HMI_Overview_moddate" />
         <Item Target="Tags.Script.cs" Source="Tags.Menu_SubMenu_Btn_Anim" />
         <Item Target="Tags.Script.cs" Source="Tags.Settings_PanelNumber" />
         <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_SystemsSecond" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_Auto_Area_Mode_C1" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_Auto_Area_Mode_C2" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_Auto_Area_Mode_C4" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_Auto_Area_Mode_C3" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_Auto_Area_Mode_C5" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_Internal_ManualEnabled_1" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagSecond" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_Internal_ManualEnabled_2" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_Internal_ManualEnabled_3" />
         <Item Target="Tags.Script.cs" Source="Tags.CurrentUserInt" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_Internal_ManualEnabled_4" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_Internal_ManualEnabled_5" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_Internal_ManualEnabled_6" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_Internal_ManualEnabled_7" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_Internal_ManualEnabled_8" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_Auto_Area_Mode_C6" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_Auto_Area_Mode_C7" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_Auto_Area_Mode_C8" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagNewScreenId" />
       </Items>
     </Category>

@@ -21,7 +21,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Popup_SensorInfo_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="288" Height="297" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="288" Height="297" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
     <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" TextDecorations="{x:Null}" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="24" FontStyle="Normal" FontWeight="Bold" Padding="2,2,2,2" Name="m_Lavapaikka_Text" Width="236.32811765825" Height="33" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="4" KeyboardNavigation.TabNavigation="None" Canvas.Left="28.129746925084" Canvas.Top="10.5441184616225">
       <nac:AnalogNumericFX.Resources>
         <ResourceDictionary>

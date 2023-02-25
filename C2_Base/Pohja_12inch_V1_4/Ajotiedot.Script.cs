@@ -58,10 +58,12 @@ namespace Neo.ApplicationFramework.Generated
 						System.Diagnostics.Trace.WriteLine(string.Format("Ajotiedot AloitettuX / LopetettuX, tulorata : {0}", tulorata));
 
 					name = "Line1_PLC_Aloitettu" + tulorata;
-					Globals.Tags.GetTag(name).ValueChange += Line1_PLC_AloitettuX_ValueChange;
+					IBasicTag tag = Globals.Tags.GetTag(name);
+					if (tag != null) tag.ValueChange += Line1_PLC_AloitettuX_ValueChange;
 
 					name = "Line1_PLC_Lopetettu" + tulorata;
-					Globals.Tags.GetTag(name).ValueChange += Line1_PLC_LopetettuX_ValueChange;
+					tag = Globals.Tags.GetTag(name);
+					if (tag != null) tag.ValueChange += Line1_PLC_LopetettuX_ValueChange;
 				}
 				catch (Exception x)
 				{

@@ -25,11 +25,15 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Settings_SystemConf_Pan1.CBSetSelection" TargetProperty="Value" Source="Tags.HMI_ConfGroupSet" />
-        <Item Target="Settings_SystemConf_Pan1.GroupPatternsSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
         <Item Target="Settings_SystemConf_Pan1.GroupCommonSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
         <Item Target="Settings_SystemConf_Pan1.GroupCommonSet.ANPanelNo" TargetProperty="Value" Source="Tags.Settings_PanelNumber" />
-        <Item Target="Settings_SystemConf_Pan1.GroupRobotSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
+        <Item Target="Settings_SystemConf_Pan1.GroupOptions" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
+        <Item xsi:type="ActionItem" Target="Settings_SystemConf_Pan1.GroupOptions.RBUseSettingsFile" TargetProperty="Actions" Source="Tags.Conf_UseOnly_NVBD" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_SystemConf_Pan1.GroupOptions.RBUseNonVolatileDB" TargetProperty="Actions" Source="Tags.Conf_UseOnly_NVBD" Event="Click" Action="Set Tag" Param="" />
+        <Item Target="Settings_SystemConf_Pan1.GroupOptions.RBUseNonVolatileDB" TargetProperty="IsChecked" Source="Tags.Conf_UseOnly_NVBD" />
         <Item Target="Settings_SystemConf_Pan1.GroupNewRobotSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
+        <Item Target="Settings_SystemConf_Pan1.GroupRobotSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
+        <Item Target="Settings_SystemConf_Pan1.GroupPatternsSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -47,7 +51,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>142</ObjectsCount>
+          <ObjectsCount>146</ObjectsCount>
           <ScreenName>Settings_SystemConf_Pan1</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10714">
@@ -58,28 +62,32 @@
     <Category Name="Script">
       <Items>
         <Item Target="Settings_SystemConf_Pan1.Script.cs" Source="Tags.HMI_ConfGroupSet" />
+        <Item Target="Settings_SystemConf_Pan1.Script.cs" Source="Tags.Conf_UseOnly_NVBD" />
         <Item Target="Settings_SystemConf_Pan1.Script.cs" Source="Tags.Settings_PanelNumber" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
-      <Items />
+      <Items>
+        <Item xsi:type="ActionItem" Target="Settings_SystemConf_Pan1.GroupOptions.RBUseSettingsFile" TargetProperty="Actions" Source="Tags.Conf_UseOnly_NVBD" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_SystemConf_Pan1.GroupOptions.RBUseNonVolatileDB" TargetProperty="Actions" Source="Tags.Conf_UseOnly_NVBD" Event="Click" Action="Set Tag" Param="" />
+      </Items>
     </Category>
     <Category Name="Symbol">
       <Items>
         <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupSaveBtn.BtnSave" Source="orfer_save" Width="26" Height="26" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupReadBtn.BtnRead" Source="orfer_save" Width="26" Height="26" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupPatternsSet.GroupPatternDelete.BtnPatternDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupPatternsSet.GroupPatternAdd.BtnPatternAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupWTime.GroupWAdd.BtnWAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupWTime.GroupWDelete.BtnWDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupPalletTypes.GroupPTDelete.BtnPTDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupPalletTypes.GroupPTAdd.BtnPTAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupPalletPlaces.GroupPPDelete.BtnPPDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupPalletPlaces.GroupPPAdd.BtnPPAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupIP.GroupIPDelete.BtnIPDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupIP.GroupIPAdd.BtnIPAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupInfeedTracks.GroupITDelete.BtnITDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupCommonSet.GroupInfeedTracks.GroupITAdd.BtnITAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupNewRobotSet.GroupRobotDelete.BtnRobotDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupNewRobotSet.GroupRobotAdd.BtnRobotAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupPatternsSet.GroupPatternDelete.BtnPatternDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_SystemConf_Pan1.GroupPatternsSet.GroupPatternAdd.BtnPatternAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

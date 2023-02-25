@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?neo version='2.46.49.0'?>
-<nacs:ScreenWindow Top="85" Left="219" Topmost="False" Title="Popup_StartProduction" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="Manual" WindowState="Normal" BorderStyle="ThreeDBorder" ModalScreen="True" ScreenSize="1000, 550" ScreenPosition="219, 85" ScreenTitle="Aloita tuotanto" ScreenID="{x:Null}" TemplateScreen="{x:Null}" PopupScreen="True" StyleName="Rounded" IsCacheable="False" Background="#FF106280" Width="1000" Height="550" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nacw="clr-namespace:Neo.ApplicationFramework.Controls.WindowsControls;assembly=Controls" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Behaviors;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb2="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacn="clr-namespace:Neo.ApplicationFramework.Controls.NeoWindowsFormsHost;assembly=Controls" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Popup_StartProduction">
+<nacs:ScreenWindow Top="85" Left="219" Topmost="False" Title="Popup_StartProduction" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="Manual" WindowState="Normal" BorderStyle="ThreeDBorder" ModalScreen="True" ScreenSize="1000, 650" ScreenPosition="219, 85" ScreenTitle="Aloita tuotanto" ScreenID="{x:Null}" TemplateScreen="{x:Null}" PopupScreen="True" StyleName="Rounded" IsCacheable="False" Background="#FF106280" Width="1000" Height="650" Panel.ZIndex="1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacn="clr-namespace:Neo.ApplicationFramework.Controls.NeoWindowsFormsHost;assembly=Controls" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:nacw="clr-namespace:Neo.ApplicationFramework.Controls.WindowsControls;assembly=Controls" xmlns:nacb2="clr-namespace:Neo.ApplicationFramework.Common.Behaviors;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" x:Class="Neo.ApplicationFramework.Generated.Popup_StartProduction">
   <nai:ActionProperties.Actions>
     <nai:ActionList>
       <nata:MultiAction Name="Multi Action">
@@ -92,214 +92,20 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Start_Production1_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1000" Height="550" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
-    <nacw:ListBox BorderBrush="#FF267593" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" Name="m_ListBox1" Width="658" Height="168.02559999177" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="25.4985246544238" Canvas.Top="58.973630707094" nacb:BlinkProperties.BlinkInterval="1200" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="False">
-      <nacw:ListBox.Value>
-        <nacxs:VariantValueMarkupExtension Type="s:Double" ValueAsString="0" />
-      </nacw:ListBox.Value>
-      <nai:ActionProperties.Actions>
-        <nai:ActionList />
-      </nai:ActionProperties.Actions>
-      <nai:ScriptProperties.ScriptEvents>
-        <nai:ScriptEventList>
-          <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="ListBox1_SelectionChanged" />
-        </nai:ScriptEventList>
-      </nai:ScriptProperties.ScriptEvents>
-    </nacw:ListBox>
-    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Production starting conditions" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="20.4800012092994" Canvas.Top="401.180679390519">
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-    </nac:Label>
-    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot connection" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text17" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="50" Canvas.Top="436.684576995804">
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-      <nac:Label.RenderTransform>
-        <TransformGroup>
-          <TransformGroup.Children>
-            <TransformCollection>
-              <ScaleTransform ScaleX="1" ScaleY="1" />
-              <RotateTransform Angle="0" />
-            </TransformCollection>
-          </TransformGroup.Children>
-        </TransformGroup>
-      </nac:Label.RenderTransform>
-    </nac:Label>
-    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="PLC connection" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text22" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="50" Canvas.Top="463.519114803144">
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-    </nac:Label>
-    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot AUTO" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text24" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="50" Canvas.Top="490.353652610484">
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-    </nac:Label>
-    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Production start info" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text3" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="513.249867750601" Canvas.Top="401.180679390519">
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-    </nac:Label>
-    <nac:AnalogNumericFX AutoStretchFont="False" WarningColorLow="#FFFFA500" DisplayFormat="String" MinValue="0.1" MaxValue="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric1" Width="487.393199874635" Height="30.4076910211866" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="17" KeyboardNavigation.TabNavigation="None" Canvas.Left="161" Canvas.Top="257">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1000" Height="650" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
+    <nac:AnalogNumericFX AutoStretchFont="False" Prefix="Robot  " VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="22" FontWeight="Bold" Padding="2,2,2,2" Name="m_ANRobotNo" Width="108" Height="45.1918704299404" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="2" KeyboardNavigation.TabNavigation="None" Canvas.Left="28" Canvas.Top="4" nacb:BlinkProperties.VisibleDynamicsValue="True">
       <nac:AnalogNumericFX.Resources>
         <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
+          <nacd:RawConverter x:Key="ValueConverter" DefaultValue="{x:Null}" />
         </ResourceDictionary>
       </nac:AnalogNumericFX.Resources>
       <nac:AnalogNumericFX.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_RecipeSelected].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>0</Binding.FallbackValue>
         </Binding>
       </nac:AnalogNumericFX.Value>
       <nac:AnalogNumericFX.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nac:AnalogNumericFX.BevelEffectInfo>
-      <nai:ActionProperties.Actions>
-        <nai:ActionList />
-      </nai:ActionProperties.Actions>
-    </nac:AnalogNumericFX>
-    <nacc1:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_RobottiYhteys" Width="20" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="39" Canvas.Left="25.5790495339922" Canvas.Top="438.672858245804">
-      <nacc1:Rectangle.Resources>
-        <ResourceDictionary>
-          <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-              <nacd2:BrushCFIntervalMapper>
-                <nacd2:BrushCFIntervalMapper.Intervals>
-                  <nacd2:BrushCFIntervalList>
-                    <nacd2:BrushCFInterval>
-                      <nacd2:BrushCFInterval.Value>
-                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
-                      </nacd2:BrushCFInterval.Value>
-                    </nacd2:BrushCFInterval>
-                    <nacd2:BrushCFInterval Start="1" End="1">
-                      <nacd2:BrushCFInterval.Value>
-                        <nacgl:BrushCF StartColor="237, 28, 36" EndColor="" FillDirection="None" />
-                      </nacd2:BrushCFInterval.Value>
-                    </nacd2:BrushCFInterval>
-                  </nacd2:BrushCFIntervalList>
-                </nacd2:BrushCFIntervalMapper.Intervals>
-                <nacd2:BrushCFIntervalMapper.DefaultValue>
-                  <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
-                </nacd2:BrushCFIntervalMapper.DefaultValue>
-              </nacd2:BrushCFIntervalMapper>
-            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-          </nacd1:BrushDynamicsConverter>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
-        </ResourceDictionary>
-      </nacc1:Rectangle.Resources>
-      <nacc1:Rectangle.Fill>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CommFault_Rob1].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-      </nacc1:Rectangle.Fill>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="Raised" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-    </nacc1:Rectangle>
-    <nacc1:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_PLC_Conn" Width="20" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="25.5790495339922" Canvas.Top="465.507396053144">
-      <nacc1:Rectangle.Resources>
-        <ResourceDictionary>
-          <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-              <nacd2:BrushCFIntervalMapper>
-                <nacd2:BrushCFIntervalMapper.Intervals>
-                  <nacd2:BrushCFIntervalList>
-                    <nacd2:BrushCFInterval>
-                      <nacd2:BrushCFInterval.Value>
-                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
-                      </nacd2:BrushCFInterval.Value>
-                    </nacd2:BrushCFInterval>
-                    <nacd2:BrushCFInterval Start="1" End="1">
-                      <nacd2:BrushCFInterval.Value>
-                        <nacgl:BrushCF StartColor="237, 28, 36" EndColor="" FillDirection="None" />
-                      </nacd2:BrushCFInterval.Value>
-                    </nacd2:BrushCFInterval>
-                  </nacd2:BrushCFIntervalList>
-                </nacd2:BrushCFIntervalMapper.Intervals>
-                <nacd2:BrushCFIntervalMapper.DefaultValue>
-                  <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
-                </nacd2:BrushCFIntervalMapper.DefaultValue>
-              </nacd2:BrushCFIntervalMapper>
-            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-          </nacd1:BrushDynamicsConverter>
-        </ResourceDictionary>
-      </nacc1:Rectangle.Resources>
-      <nacc1:Rectangle.Fill>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_Comm_Fault_PLC1].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <SolidColorBrush>#FF088298</SolidColorBrush>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacc1:Rectangle.Fill>
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="Raised" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-    </nacc1:Rectangle>
-    <nacc1:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_RobottiAuto" Width="20" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="41" Canvas.Left="25.5790495339922" Canvas.Top="492.341933860484">
-      <nacc1:Rectangle.Resources>
-        <ResourceDictionary>
-          <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-              <nacd2:BrushCFIntervalMapper>
-                <nacd2:BrushCFIntervalMapper.Intervals>
-                  <nacd2:BrushCFIntervalList>
-                    <nacd2:BrushCFInterval>
-                      <nacd2:BrushCFInterval.Value>
-                        <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
-                      </nacd2:BrushCFInterval.Value>
-                    </nacd2:BrushCFInterval>
-                    <nacd2:BrushCFInterval Start="1" End="1">
-                      <nacd2:BrushCFInterval.Value>
-                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
-                      </nacd2:BrushCFInterval.Value>
-                    </nacd2:BrushCFInterval>
-                  </nacd2:BrushCFIntervalList>
-                </nacd2:BrushCFIntervalMapper.Intervals>
-                <nacd2:BrushCFIntervalMapper.DefaultValue>
-                  <nacgl:BrushCF StartColor="" EndColor="" FillDirection="None" />
-                </nacd2:BrushCFIntervalMapper.DefaultValue>
-              </nacd2:BrushCFIntervalMapper>
-            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-          </nacd1:BrushDynamicsConverter>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
-        </ResourceDictionary>
-      </nacc1:Rectangle.Resources>
-      <nacc1:Rectangle.Fill>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_R1_ManAuto].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-      </nacc1:Rectangle.Fill>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="Raised" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-      <nai:ActionProperties.Actions>
-        <nai:ActionList />
-      </nai:ActionProperties.Actions>
-    </nacc1:Rectangle>
-    <nac:AnalogNumericFX AutoStretchFont="False" Prefix="Infeed " VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="16" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric2" Width="155.8152724595" Height="45.1918704299404" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="19" KeyboardNavigation.TabNavigation="None" Canvas.Left="25.4985246544238" Canvas.Top="9">
-      <nac:AnalogNumericFX.Resources>
-        <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
-        </ResourceDictionary>
-      </nac:AnalogNumericFX.Resources>
-      <nac:AnalogNumericFX.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_track_selected].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>0</Binding.FallbackValue>
-        </Binding>
-      </nac:AnalogNumericFX.Value>
-      <nac:AnalogNumericFX.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="Sunken" Width="2" />
+        <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
       </nac:AnalogNumericFX.BevelEffectInfo>
       <nac:AnalogNumericFX.TextDecorations>
         <TextDecorationCollection />
@@ -328,7 +134,142 @@
         </TransformGroup>
       </nac:AnalogNumericFX.RenderTransform>
     </nac:AnalogNumericFX>
-    <nac:Label AutoSize="False" MultiLine="True" WordWrap="True" AutoStretchFont="False" Text="Desc" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Desc_Text" Width="219.132809885774" Height="107.080975277163" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="22" Canvas.Left="723.462439329079" Canvas.Top="43.1369964924117">
+    <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_RectRobot" Width="112" Height="40" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="15.4984807103404" Canvas.Top="6" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nacc:Rectangle>
+    <nac:Group Name="m_GroupPatternInfo" Width="282.862272113741" Height="389.262654894319" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="13" Canvas.Left="709.560033685714" Canvas.Top="51">
+      <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_RectPatternInfo" Width="282.862272113741" Height="385" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="50" Canvas.Left="0" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
+        <nacc:Rectangle.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Style="None" Width="0" />
+        </nacc:Rectangle.BevelEffectInfo>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+      </nacc:Rectangle>
+      <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Pattern" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Pattern_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="52" Canvas.Left="13.902405643365" Canvas.Top="4" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+        <nac:Label.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Label.RenderTransform>
+      </nac:Label>
+      <nac:Label AutoSize="False" MultiLine="True" WordWrap="True" AutoStretchFont="False" Text="Desc" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Desc_Text" Width="219.132809885774" Height="107.080975277163" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="51" Canvas.Left="30.439966314286" Canvas.Top="36.1633657853177">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+        <nac:Label.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Label.RenderTransform>
+      </nac:Label>
+      <nacn:NeoWindowsFormsHost Background="#FF106280" Name="m_Pattern_Picture" Width="200" Height="200" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="53" Canvas.Left="42.8357389766981" Canvas.Top="151.244341062481" nacsd:EditorProperties.IsHidden="False">
+        <nacn:NeoWindowsFormsHost.Control>
+          <swf:PictureBox TabStop="False" TabIndex="0" Text="PictureBox" Enabled="True" Location="0, 0" Name="m_Pattern_Picture_PictureBox" Size="200, 200" />
+        </nacn:NeoWindowsFormsHost.Control>
+      </nacn:NeoWindowsFormsHost>
+    </nac:Group>
+    <nac:Group Name="m_GroupProducts" Width="685.389129489561" Height="229.325177606068" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="3" Canvas.Left="10.4984807103404" Canvas.Top="50.701191686838">
+      <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_RectProducts" Width="685.389129489561" Height="229.325177606068" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="29" Canvas.Left="0" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
+        <nacc:Rectangle.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Style="None" Width="0" />
+        </nacc:Rectangle.BevelEffectInfo>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+      </nacc:Rectangle>
+      <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="True" Text="Filters (Palletplace/Name)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_TextFilter" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="30" Canvas.Left="9.5015192896596" Canvas.Top="13.298808313162">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacw:ListBox BorderBrush="#FF267593" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" Name="m_ListBoxProducts" Width="658" Height="168.02559999177" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="31" Canvas.Left="15.0000439440834" Canvas.Top="53.298808313162" nacb:BlinkProperties.BlinkInterval="1200" nacb2:IntervalMapperBindingsBehavior.RebindInRuntime="False">
+        <nacw:ListBox.Value>
+          <nacxs:VariantValueMarkupExtension Type="s:Double" ValueAsString="0" />
+        </nacw:ListBox.Value>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="ListBox1_SelectionChanged" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nacw:ListBox>
+      <nacw:ComboBox Text="" BorderBrush="#FF267593" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_Suodatus1" Width="72" Height="30" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="32" Canvas.Left="221.110357608551" Canvas.Top="11.325177606068" nacb:BlinkProperties.BlinkInterval="1200" nacb:BlinkProperties.VisibleDynamicsValue="True" nacb2:IntervalMapperBindingsBehavior.RebindInRuntime="True">
+        <nacw:ComboBox.IntervalMapper>
+          <nacd:StringIntervalMapper DefaultValue="{x:Null}">
+            <nacd:StringIntervalMapper.Intervals>
+              <nacd:StringIntervalList>
+                <nacd:StringInterval Value="" />
+                <nacd:StringInterval Start="1" End="1" Value="1" />
+                <nacd:StringInterval Start="2" End="2" Value="2" />
+                <nacd:StringInterval Start="3" End="3" Value="3" />
+                <nacd:StringInterval Start="4" End="4" Value="4" />
+                <nacd:StringInterval Start="5" End="5" Value="5" />
+                <nacd:StringInterval Start="6" End="6" Value="6" />
+                <nacd:StringInterval Start="7" End="7" Value="7" />
+                <nacd:StringInterval Start="8" End="8" Value="8" />
+              </nacd:StringIntervalList>
+            </nacd:StringIntervalMapper.Intervals>
+          </nacd:StringIntervalMapper>
+        </nacw:ComboBox.IntervalMapper>
+        <nacw:ComboBox.Value>
+          <nacxs:VariantValueMarkupExtension Type="s:Double" ValueAsString="0" />
+        </nacw:ComboBox.Value>
+        <nacw:ComboBox.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacw:ComboBox.RenderTransform>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="Suodatus1_SelectionChanged" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nacw:ComboBox>
+      <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" BorderBrush="#FF267593" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_Hakukentta2" Width="370.217740536624" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="33" KeyboardNavigation.TabNavigation="None" Canvas.Left="302.782303407459" Canvas.Top="11.325177606068" nacsd:EditorProperties.IsHidden="False" nai:SecurityProperties.SecurityGroupsRequired="None">
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Style="None" Width="0" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="InputValueChanged" MethodName="Hakukentta2_ValueChanged" />
+            <nacxs:EventHandlerInfo EventName="ValueChanged" MethodName="Hakukentta2_ValueChanged" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:AnalogNumericFX>
+    </nac:Group>
+    <nac:Label Text="Selected product" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_TextSelectedProd" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="19.6677417459239" Canvas.Top="304.026369292906">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
@@ -343,28 +284,11 @@
         </TransformGroup>
       </nac:Label.RenderTransform>
     </nac:Label>
-    <nacw:ComboBox Text="" BorderBrush="#FF267593" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_Suodatus1" Width="98.948298178511" Height="30" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="23" Canvas.Left="204.66054014038" Canvas.Top="17" nacb:BlinkProperties.BlinkInterval="1200" nacb:BlinkProperties.VisibleDynamicsValue="True" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True">
-      <nacw:ComboBox.IntervalMapper>
-        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
-          <nacd1:StringIntervalMapper.Intervals>
-            <nacd1:StringIntervalList>
-              <nacd1:StringInterval Value="" />
-              <nacd1:StringInterval Start="1" End="1" Value="1" />
-              <nacd1:StringInterval Start="2" End="2" Value="2" />
-              <nacd1:StringInterval Start="3" End="3" Value="3" />
-              <nacd1:StringInterval Start="4" End="4" Value="4" />
-              <nacd1:StringInterval Start="5" End="5" Value="5" />
-              <nacd1:StringInterval Start="6" End="6" Value="6" />
-              <nacd1:StringInterval Start="7" End="7" Value="7" />
-              <nacd1:StringInterval Start="8" End="8" Value="8" />
-            </nacd1:StringIntervalList>
-          </nacd1:StringIntervalMapper.Intervals>
-        </nacd1:StringIntervalMapper>
-      </nacw:ComboBox.IntervalMapper>
-      <nacw:ComboBox.Value>
-        <nacxs:VariantValueMarkupExtension Type="s:Double" ValueAsString="0" />
-      </nacw:ComboBox.Value>
-      <nacw:ComboBox.RenderTransform>
+    <nac:Label Text="Wrapping" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text_Wrapping" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="26" Canvas.Left="20" Canvas.Top="389.093704339926" nacb:BlinkProperties.VisibleDynamicsValue="True">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
         <TransformGroup>
           <TransformGroup.Children>
             <TransformCollection>
@@ -373,53 +297,30 @@
             </TransformCollection>
           </TransformGroup.Children>
         </TransformGroup>
-      </nacw:ComboBox.RenderTransform>
-      <nai:ScriptProperties.ScriptEvents>
-        <nai:ScriptEventList>
-          <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="Suodatus1_SelectionChanged" />
-        </nai:ScriptEventList>
-      </nai:ScriptProperties.ScriptEvents>
-    </nacw:ComboBox>
-    <nac:Label Text="" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="22" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="5.5,0,5.5,1" Name="m_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="24" Canvas.Left="20.4800012092994" Canvas.Top="325.361305102908" />
-    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" BorderBrush="#FF267593" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_Hakukentta2" Width="370.217740536624" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="25" KeyboardNavigation.TabNavigation="None" Canvas.Left="313.280784117799" Canvas.Top="17" nacsd:EditorProperties.IsHidden="False" nai:SecurityProperties.SecurityGroupsRequired="None">
-      <nac:AnalogNumericFX.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nac:AnalogNumericFX.BevelEffectInfo>
-      <nac:AnalogNumericFX.TextDecorations>
-        <TextDecorationCollection />
-      </nac:AnalogNumericFX.TextDecorations>
-      <nai:ActionProperties.Actions>
-        <nai:ActionList />
-      </nai:ActionProperties.Actions>
-      <nai:ScriptProperties.ScriptEvents>
-        <nai:ScriptEventList>
-          <nacxs:EventHandlerInfo EventName="InputValueChanged" MethodName="Hakukentta2_ValueChanged" />
-          <nacxs:EventHandlerInfo EventName="ValueChanged" MethodName="Hakukentta2_ValueChanged" />
-        </nai:ScriptEventList>
-      </nai:ScriptProperties.ScriptEvents>
-    </nac:AnalogNumericFX>
-    <nacw:ComboBox Text="No wrapping" BorderBrush="#FF008B8B" BorderThickness="1,1,1,1" Background="#FF60D5CE" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_ComboBox_Wrapping" Width="120.092808379442" Height="30" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="34" Canvas.Left="161.07367467724" Canvas.Top="345" nacb:BlinkProperties.BlinkInterval="1200" nacb:BlinkProperties.VisibleDynamicsValue="True" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True">
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nacw:ComboBox Text="No wrapping" BorderBrush="#FF008B8B" BorderThickness="1,1,1,1" Background="#FF60D5CE" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_ComboBox_Wrapping" Width="120.092808379442" Height="30" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="27" Canvas.Left="161.07367467724" Canvas.Top="390.026369292906" nacb:BlinkProperties.BlinkInterval="1200" nacb:BlinkProperties.VisibleDynamicsValue="True" nacb2:IntervalMapperBindingsBehavior.RebindInRuntime="True">
       <nacw:ComboBox.Resources>
         <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
         </ResourceDictionary>
       </nacw:ComboBox.Resources>
       <nacw:ComboBox.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_Wrapping].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_Wrapping].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Double>0</s:Double>
           </Binding.FallbackValue>
         </Binding>
       </nacw:ComboBox.Value>
       <nacw:ComboBox.IntervalMapper>
-        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
-          <nacd1:StringIntervalMapper.Intervals>
-            <nacd1:StringIntervalList>
-              <nacd1:StringInterval Start="1" End="1" Value="Wrapping" />
-              <nacd1:StringInterval Start="0" End="0" Value="No wrapping" />
-            </nacd1:StringIntervalList>
-          </nacd1:StringIntervalMapper.Intervals>
-        </nacd1:StringIntervalMapper>
+        <nacd:StringIntervalMapper DefaultValue="{x:Null}">
+          <nacd:StringIntervalMapper.Intervals>
+            <nacd:StringIntervalList>
+              <nacd:StringInterval Start="1" End="1" Value="Wrapping" />
+              <nacd:StringInterval Start="0" End="0" Value="No wrapping" />
+            </nacd:StringIntervalList>
+          </nacd:StringIntervalMapper.Intervals>
+        </nacd:StringIntervalMapper>
       </nacw:ComboBox.IntervalMapper>
       <nacw:ComboBox.RenderTransform>
         <TransformGroup>
@@ -432,7 +333,25 @@
         </TransformGroup>
       </nacw:ComboBox.RenderTransform>
     </nacw:ComboBox>
-    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Pattern" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Pattern_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="35" Canvas.Left="723.462439329079" Canvas.Top="8.00180038518935" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden">
+    <nac:AnalogNumericFX AutoStretchFont="False" WarningColorLow="#FFFFA500" DisplayFormat="String" MinValue="0.1" MaxValue="100" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_ANSelectedProduct" Width="487.393199874635" Height="30.4076910211866" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="16" KeyboardNavigation.TabNavigation="None" Canvas.Left="161" Canvas.Top="302.026369292906">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_RecipeSelected].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:Label Text="Pallet place(s)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_TextPlaces" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="20" Canvas.Top="346.560036816416">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
@@ -447,11 +366,19 @@
         </TransformGroup>
       </nac:Label.RenderTransform>
     </nac:Label>
-    <nac:Label Text="Wrapping" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text_Wrapping" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="38" Canvas.Left="20" Canvas.Top="344.06733504702" nacb:BlinkProperties.VisibleDynamicsValue="True">
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-      <nac:Label.RenderTransform>
+    <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_RectSelPaletplace" Width="685.389129489561" Height="146" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="10.4984807103403" Canvas.Top="290.026369292906" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+    </nacc:Rectangle>
+    <nacw:CheckBox Text="1" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBPallet_1" Width="30.7049803543091" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="168" Canvas.Top="351.583370149749" Content="1" />
+    <nacw:CheckBox Text="2" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBPallet_2" Width="30.7049803543091" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="19" Canvas.Left="234.857142857143" Canvas.Top="351.583370149749" Content="2" />
+    <nacw:CheckBox Text="3" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBPallet_3" Width="30.7049803543091" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="20" Canvas.Left="301.714285714286" Canvas.Top="351.583370149749" Content="3" />
+    <nacw:CheckBox Text="4" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBPallet_4" Width="30.7049803543091" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="368.571428571429" Canvas.Top="351.583370149749" Content="4" />
+    <nacw:CheckBox Text="5" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBPallet_5" Width="30.7049803543091" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="22" Canvas.Left="435.428571428571" Canvas.Top="351.583370149749" Content="5" />
+    <nacw:CheckBox Text="6" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBPallet_6" Width="30.7049803543091" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="23" Canvas.Left="502.285714285714" Canvas.Top="351.583370149749" Content="6" />
+    <nacw:CheckBox Text="7" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBPallet_7" Width="30.7049803543091" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="24" Canvas.Left="569.142857142857" Canvas.Top="351.583370149749" Content="7">
+      <nacw:CheckBox.RenderTransform>
         <TransformGroup>
           <TransformGroup.Children>
             <TransformCollection>
@@ -460,202 +387,135 @@
             </TransformCollection>
           </TransformGroup.Children>
         </TransformGroup>
-      </nac:Label.RenderTransform>
-    </nac:Label>
-    <nac:Label Text="Pallet place(s)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text8" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="20" Canvas.Top="301.53366752351">
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-      <nac:Label.RenderTransform>
-        <TransformGroup>
-          <TransformGroup.Children>
-            <TransformCollection>
-              <ScaleTransform ScaleX="1" ScaleY="1" />
-              <RotateTransform Angle="0" />
-            </TransformCollection>
-          </TransformGroup.Children>
-        </TransformGroup>
-      </nac:Label.RenderTransform>
-    </nac:Label>
-    <nacw:ComboBox Text="" BorderBrush="#FF008B8B" BorderThickness="1,1,1,1" Background="#FF60D5CE" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_PlaceBox1" Width="55" Height="30" RenderTransformOrigin="-0.450946418486608,3.11329365507363" Opacity="1" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="161.07367467724" Canvas.Top="299.781501713686" nacb:BlinkProperties.VisibleDynamicsValue="True" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True">
-      <nacw:ComboBox.IntervalMapper>
-        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
-          <nacd1:StringIntervalMapper.Intervals>
-            <nacd1:StringIntervalList>
-              <nacd1:StringInterval Value="" />
-              <nacd1:StringInterval Start="1" End="1" Value="1" />
-              <nacd1:StringInterval Start="2" End="2" Value="2" />
-              <nacd1:StringInterval Start="3" End="3" Value="3" />
-              <nacd1:StringInterval Start="4" End="4" Value="4" />
-              <nacd1:StringInterval Start="5" End="5" Value="5" />
-              <nacd1:StringInterval Start="6" End="6" Value="6" />
-              <nacd1:StringInterval Start="7" End="7" Value="7" />
-              <nacd1:StringInterval Start="8" End="8" Value="8" />
-            </nacd1:StringIntervalList>
-          </nacd1:StringIntervalMapper.Intervals>
-        </nacd1:StringIntervalMapper>
-      </nacw:ComboBox.IntervalMapper>
-      <nacw:ComboBox.Value>
-        <nacxs:VariantValueMarkupExtension Type="s:Double" ValueAsString="0" />
-      </nacw:ComboBox.Value>
-      <nacw:ComboBox.RenderTransform>
-        <TransformGroup>
-          <TransformGroup.Children>
-            <TransformCollection>
-              <ScaleTransform ScaleX="1" ScaleY="1" />
-              <RotateTransform Angle="0" />
-            </TransformCollection>
-          </TransformGroup.Children>
-        </TransformGroup>
-      </nacw:ComboBox.RenderTransform>
-    </nacw:ComboBox>
-    <nacw:ComboBox Text="" BorderBrush="#FF71BBC9" BorderThickness="1,1,1,1" Background="#FF31BDBA" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_PlaceBox2" Width="55" Height="30" RenderTransformOrigin="0.418650135517396,0.444807892228164" Visibility="Visible" Panel.ZIndex="27" Canvas.Left="226.166483056682" Canvas.Top="299.781501713686" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True">
-      <nacw:ComboBox.Resources>
+      </nacw:CheckBox.RenderTransform>
+    </nacw:CheckBox>
+    <nacw:CheckBox Text="8" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBPallet_8" Width="30.7049803543091" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="25" Canvas.Left="636" Canvas.Top="351.583370149749" Content="8" />
+    <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_RectInfeeds" Width="856" Height="40" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="136" Canvas.Top="6" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nacc:Rectangle>
+    <nacw:CheckBox Text="Infeed #" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBInfeed_1" Width="68.7083136876424" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="144" Canvas.Top="20" nacb:BlinkProperties.VisibleDynamicsValue="True" Content="Infeed #" />
+    <nacw:CheckBox Text="Infeed #" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBInfeed_2" Width="68.7083136876424" Height="15.4833333333333" RenderTransformOrigin="0.332558909318427,-0.0195060628640101" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="252.571428571429" Canvas.Top="20" nacb:BlinkProperties.VisibleDynamicsValue="True" Content="Infeed #" />
+    <nacw:CheckBox Text="Infeed #" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBInfeed_3" Width="68.7083136876424" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="361.142857142857" Canvas.Top="20" nacb:BlinkProperties.VisibleDynamicsValue="True" Content="Infeed #" />
+    <nacw:CheckBox Text="Infeed #" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBInfeed_4" Width="68.7083136876424" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="469.714285714286" Canvas.Top="20" nacb:BlinkProperties.VisibleDynamicsValue="True" Content="Infeed #" />
+    <nacw:CheckBox Text="Infeed #" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBInfeed_5" Width="68.7083136876424" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="578.285714285714" Canvas.Top="20" nacb:BlinkProperties.VisibleDynamicsValue="True" Content="Infeed #" />
+    <nacw:CheckBox Text="Infeed #" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBInfeed_6" Width="68.7083136876424" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="686.857142857143" Canvas.Top="20" nacb:BlinkProperties.VisibleDynamicsValue="True" Content="Infeed #" />
+    <nacw:CheckBox Text="Infeed #" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBInfeed_7" Width="68.7083136876424" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="795.428571428571" Canvas.Top="20" nacb:BlinkProperties.VisibleDynamicsValue="True" Content="Infeed #" />
+    <nacw:CheckBox Text="Infeed #" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_CBInfeed_8" Width="68.7083136876424" Height="15.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="904" Canvas.Top="20" nacb:BlinkProperties.VisibleDynamicsValue="True" Content="Infeed #" />
+    <nac:Label Text="Starting production..." Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_TextStarting" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="48" Canvas.Left="300" Canvas.Top="469.66407733297" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
+      <nac:Label.Resources>
         <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" ExpressionName="Bit1IsSet" />
+          <nacd:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          <nacd:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
         </ResourceDictionary>
-      </nacw:ComboBox.Resources>
-      <nacw:ComboBox.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_pri2].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+      </nac:Label.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <s:Int32>0</s:Int32>
+            <s:Boolean>False</s:Boolean>
           </Binding.FallbackValue>
         </Binding>
-      </nacw:ComboBox.Value>
+      </nacb:BlinkProperties.IsBlinkEnabled>
       <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_privis].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>
         </Binding>
       </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacw:ComboBox.IntervalMapper>
-        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
-          <nacd1:StringIntervalMapper.Intervals>
-            <nacd1:StringIntervalList>
-              <nacd1:StringInterval Value="" />
-              <nacd1:StringInterval Start="1" End="1" Value="1" />
-              <nacd1:StringInterval Start="2" End="2" Value="2" />
-              <nacd1:StringInterval Start="3" End="3" Value="3" />
-              <nacd1:StringInterval Start="4" End="4" Value="4" />
-              <nacd1:StringInterval Start="5" End="5" Value="5" />
-              <nacd1:StringInterval Start="6" End="6" Value="6" />
-              <nacd1:StringInterval Start="7" End="7" Value="7" />
-              <nacd1:StringInterval Start="8" End="8" Value="8" />
-            </nacd1:StringIntervalList>
-          </nacd1:StringIntervalMapper.Intervals>
-        </nacd1:StringIntervalMapper>
-      </nacw:ComboBox.IntervalMapper>
-    </nacw:ComboBox>
-    <nacw:ComboBox BorderBrush="#FF71BBC9" BorderThickness="1,1,1,1" Background="#FF29B0B1" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_PlaceBox3" Width="55" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="28" Canvas.Left="291.259291436124" Canvas.Top="299.781501713686" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True">
-      <nacw:ComboBox.Resources>
-        <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" ExpressionName="Bit2IsSet" />
-        </ResourceDictionary>
-      </nacw:ComboBox.Resources>
-      <nacw:ComboBox.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_pri3].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Int32>0</s:Int32>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacw:ComboBox.Value>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_privis].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacw:ComboBox.IntervalMapper>
-        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
-          <nacd1:StringIntervalMapper.Intervals>
-            <nacd1:StringIntervalList>
-              <nacd1:StringInterval Value="" />
-              <nacd1:StringInterval Start="1" End="1" Value="1" />
-              <nacd1:StringInterval Start="2" End="2" Value="2" />
-              <nacd1:StringInterval Start="3" End="3" Value="3" />
-              <nacd1:StringInterval Start="4" End="4" Value="4" />
-              <nacd1:StringInterval Start="5" End="5" Value="5" />
-              <nacd1:StringInterval Start="6" End="6" Value="6" />
-              <nacd1:StringInterval Start="7" End="7" Value="7" />
-              <nacd1:StringInterval Start="8" End="8" Value="8" />
-            </nacd1:StringIntervalList>
-          </nacd1:StringIntervalMapper.Intervals>
-        </nacd1:StringIntervalMapper>
-      </nacw:ComboBox.IntervalMapper>
-    </nacw:ComboBox>
-    <nacw:ComboBox BorderBrush="#FF71BBC9" BorderThickness="1,1,1,1" Background="#FF21A3A8" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="m_PlaceBox4" Width="55" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="29" Canvas.Left="356.352099815566" Canvas.Top="299.781501713686" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True">
-      <nacw:ComboBox.Resources>
-        <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" ExpressionName="Bit3IsSet" />
-        </ResourceDictionary>
-      </nacw:ComboBox.Resources>
-      <nacw:ComboBox.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_pri4].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Int32>0</s:Int32>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacw:ComboBox.Value>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProd_pallet_privis].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacw:ComboBox.IntervalMapper>
-        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
-          <nacd1:StringIntervalMapper.Intervals>
-            <nacd1:StringIntervalList>
-              <nacd1:StringInterval Value="" />
-              <nacd1:StringInterval Start="1" End="1" Value="1" />
-              <nacd1:StringInterval Start="2" End="2" Value="2" />
-              <nacd1:StringInterval Start="3" End="3" Value="3" />
-              <nacd1:StringInterval Start="4" End="4" Value="4" />
-              <nacd1:StringInterval Start="5" End="5" Value="5" />
-              <nacd1:StringInterval Start="6" End="6" Value="6" />
-              <nacd1:StringInterval Start="7" End="7" Value="7" />
-              <nacd1:StringInterval Start="8" End="8" Value="8" />
-            </nacd1:StringIntervalList>
-          </nacd1:StringIntervalMapper.Intervals>
-        </nacd1:StringIntervalMapper>
-      </nacw:ComboBox.IntervalMapper>
-      <nacw:ComboBox.RenderTransform>
-        <TransformGroup>
-          <TransformGroup.Children>
-            <TransformCollection>
-              <ScaleTransform ScaleX="1" ScaleY="1" />
-              <RotateTransform Angle="0" />
-            </TransformCollection>
-          </TransformGroup.Children>
-        </TransformGroup>
-      </nacw:ComboBox.RenderTransform>
-    </nacw:ComboBox>
-    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot acked (Pallet 1)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text10" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="51" Canvas.Left="541.744749408626" Canvas.Top="431.828483539073" nacb:BlinkProperties.VisibleDynamicsValue="True">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
     </nac:Label>
-    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot acked (Pallet 2)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text2" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="541.744749408626" Canvas.Top="456.105723122406" nacb:BlinkProperties.VisibleDynamicsValue="True">
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-    </nac:Label>
-    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot acked (Pallet 3)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text12" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="56" Canvas.Left="541.744749408626" Canvas.Top="481.47296270574" nacb:BlinkProperties.VisibleDynamicsValue="True">
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-    </nac:Label>
-    <nacc1:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_PLC_Ack" Width="20" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="22" Canvas.Left="515.744749408626" Canvas.Top="509.828483539073">
-      <nacc1:Rectangle.Resources>
+    <nac:Group Name="m_Group_Cancel_btn" Width="140" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="49" Canvas.Left="298.969184268122" Canvas.Top="524.956571581979">
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle3" Width="136" Height="46" RenderTransformOrigin="0.5,0.5" Opacity="0.95" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="2.03081573187802" Canvas.Top="1.06979771092699" />
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Cancel" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="55,2,2,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" MultiPicture="False" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Cancel" Width="140" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="16" Canvas.Left="0" Canvas.Top="0" nacb2:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacc1:VariantValueConverter x:Key="TextValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.TextValue>
+          <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProduction_PLC_Aloitettu].Value" Converter="{StaticResource TextValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Int32>0</s:Int32>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.TextValue>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.TextIntervalMapper>
+          <nacd:StringIntervalMapper DefaultValue="Cancel">
+            <nacd:StringIntervalMapper.Intervals>
+              <nacd:StringIntervalList>
+                <nacd:StringInterval Value="Cancel" />
+                <nacd:StringInterval Start="1" End="1" Value="OK" />
+              </nacd:StringIntervalList>
+            </nacd:StringIntervalMapper.Intervals>
+          </nacd:StringIntervalMapper>
+        </nac:Button.TextIntervalMapper>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Close Screen">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="Close" ObjectName="" EventName="Click" ReferenceType="This" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="True" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_StartProd_btn" Width="140" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="47" Canvas.Left="298.969184268122" Canvas.Top="459.870743999637">
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle" Width="136" Height="46" RenderTransformOrigin="0.5,0.5" Opacity="0.95" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="2.03081573187802" Canvas.Top="1.45499999999998">
+        <nacc:Rectangle.Resources>
+          <ResourceDictionary>
+            <nacd:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+          </ResourceDictionary>
+        </nacc:Rectangle.Resources>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+      </nacc:Rectangle>
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Start production" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="55,2,2,2" RequiresTransparency="True" SymbolName="orfer_ack" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Start_Production_btn" Width="140" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="10" Canvas.Left="0" Canvas.Top="0" nac:EnabledProperties.EnabledDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Start_Production_btn_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+    </nac:Group>
+    <nacc:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_PLC_Ack" Width="20" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="46" Canvas.Left="515.744749408626" Canvas.Top="554.854852831979">
+      <nacc:Rectangle.Resources>
         <ResourceDictionary>
-          <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          <nacd:BrushDynamicsConverter x:Key="FillConverter">
+            <nacd:BrushDynamicsConverter.BrushIntervalMapper>
               <nacd2:BrushCFIntervalMapper>
                 <nacd2:BrushCFIntervalMapper.Intervals>
                   <nacd2:BrushCFIntervalList>
@@ -675,54 +535,284 @@
                   <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
                 </nacd2:BrushCFIntervalMapper.DefaultValue>
               </nacd2:BrushCFIntervalMapper>
-            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-          </nacd1:BrushDynamicsConverter>
+            </nacd:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd:BrushDynamicsConverter>
         </ResourceDictionary>
-      </nacc1:Rectangle.Resources>
-      <nacc1:Rectangle.Fill>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProduction_PLC_Aloitettu].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-      </nacc1:Rectangle.Fill>
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-    </nacc1:Rectangle>
-    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="PLC acked" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text6" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="541.744749408626" Canvas.Top="506.840202289073">
+      </nacc:Rectangle.Resources>
+      <nacc:Rectangle.Fill>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProduction_PLC_Aloitettu].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
+      </nacc:Rectangle.Fill>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+    </nacc:Rectangle>
+    <nacc:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob1_Pal3_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="44" Canvas.Left="515.744749408626" Canvas.Top="530" nacsd:EditorProperties.IsHidden="False">
+      <nacc:Rectangle.Resources>
+        <ResourceDictionary>
+          <nacd:BrushDynamicsConverter x:Key="FillConverter">
+            <nacd:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="999">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd:BrushDynamicsConverter>
+          <nacd:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacc:Rectangle.Resources>
+      <nacc:Rectangle.Fill>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_lavap3_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
+      </nacc:Rectangle.Fill>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+      <nacc:Rectangle.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nacc:Rectangle.RenderTransform>
+    </nacc:Rectangle>
+    <nacc:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob1_Pal2_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="42" Canvas.Left="515.744749408626" Canvas.Top="504" nacsd:EditorProperties.IsHidden="False">
+      <nacc:Rectangle.Resources>
+        <ResourceDictionary>
+          <nacd:BrushDynamicsConverter x:Key="FillConverter">
+            <nacd:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="999">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd:BrushDynamicsConverter>
+          <nacd:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacc:Rectangle.Resources>
+      <nacc:Rectangle.Fill>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_lavap2_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
+      </nacc:Rectangle.Fill>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+      <nacc:Rectangle.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nacc:Rectangle.RenderTransform>
+    </nacc:Rectangle>
+    <nacc:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob1_Pal1_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="40" Canvas.Left="516" Canvas.Top="479" nacsd:EditorProperties.IsHidden="False">
+      <nacc:Rectangle.Resources>
+        <ResourceDictionary>
+          <nacd:BrushDynamicsConverter x:Key="FillConverter">
+            <nacd:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="999">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd:BrushDynamicsConverter>
+          <nacd:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacc:Rectangle.Resources>
+      <nacc:Rectangle.Fill>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_lavap1_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
+      </nacc:Rectangle.Fill>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+      <nacc:Rectangle.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nacc:Rectangle.RenderTransform>
+    </nacc:Rectangle>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="PLC acked" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_TextPLCAck" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="39" Canvas.Left="541.744749408626" Canvas.Top="551.866571581979">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
     </nac:Label>
-    <nacn:NeoWindowsFormsHost Background="#FF106280" Name="m_Pattern_Picture" Width="200" Height="200" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="36" Canvas.Left="752.395772662412" Canvas.Top="158.217971769575" nacsd:EditorProperties.IsHidden="False">
-      <nacn:NeoWindowsFormsHost.Control>
-        <swf:PictureBox TabStop="False" TabIndex="0" Text="PictureBox" Enabled="True" Location="0, 0" Name="m_Pattern_Picture_PictureBox" Size="200, 200" />
-      </nacn:NeoWindowsFormsHost.Control>
-    </nacn:NeoWindowsFormsHost>
-    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle2" Width="745.778411258855" Height="156.949258894871" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" Panel.ZIndex="7" Canvas.Left="0.0725619534159705" Canvas.Top="392.130668380353" nacb:BlinkProperties.VisibleDynamicsValue="False" nacsd:EditorProperties.IsLocked="True" nacsd:EditorProperties.IsHidden="False">
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-    </nacc1:Rectangle>
-    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle1" Width="685.389129489561" Height="229.325177606068" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="10.4984807103404" Canvas.Top="5.674822393932" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-      <nai:ActionProperties.Actions>
-        <nai:ActionList />
-      </nai:ActionProperties.Actions>
-    </nacc1:Rectangle>
-    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle6" Width="282.862272113741" Height="389.262654894319" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="709.560033685714" Canvas.Top="1.7373451056807" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-      <nai:ActionProperties.Actions>
-        <nai:ActionList />
-      </nai:ActionProperties.Actions>
-    </nacc1:Rectangle>
-    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle5" Width="685.389129489561" Height="146" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="10.4984807103403" Canvas.Top="245" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="True" nacsd:EditorProperties.IsHidden="False">
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-    </nacc1:Rectangle>
-    <nac:Label Text="Selected product" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text5" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="57" Canvas.Left="19.6677417459239" Canvas.Top="259">
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot acked (Pallet 3)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_TextRAck3" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="38" Canvas.Left="541.744749408626" Canvas.Top="526.499331998646" nacb:BlinkProperties.VisibleDynamicsValue="True">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot acked (Pallet 2)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_TextRAck2" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="37" Canvas.Left="541.744749408626" Canvas.Top="501.132092415312" nacb:BlinkProperties.VisibleDynamicsValue="True">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot acked (Pallet 1)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_TextRAck1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="36" Canvas.Left="541.744749408626" Canvas.Top="476.854852831979" nacb:BlinkProperties.VisibleDynamicsValue="True">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Production start info" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_TextStartInfo" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="35" Canvas.Left="513.249867750601" Canvas.Top="446.207048683425">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nacc:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rect_PLC_Conn" Width="20" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="33" Canvas.Left="25.5790495339922" Canvas.Top="510.53376534605">
+      <nacc:Rectangle.Resources>
+        <ResourceDictionary>
+          <nacd:BrushDynamicsConverter x:Key="FillConverter">
+            <nacd:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="237, 28, 36" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc:Rectangle.Resources>
+      <nacc:Rectangle.Fill>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.Line1_Comm_Fault_PLC1].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF088298</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc:Rectangle.Fill>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="Raised" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+    </nacc:Rectangle>
+    <nacc:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rect_RobottiYhteys" Width="20" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="32" Canvas.Left="25.5790495339922" Canvas.Top="483.69922753871">
+      <nacc:Rectangle.Resources>
+        <ResourceDictionary>
+          <nacd:BrushDynamicsConverter x:Key="FillConverter">
+            <nacd:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="237, 28, 36" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd:BrushDynamicsConverter>
+          <nacd:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacc:Rectangle.Resources>
+      <nacc:Rectangle.Fill>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CommFault_Rob1].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
+      </nacc:Rectangle.Fill>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="Raised" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+    </nacc:Rectangle>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot AUTO" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_TextRobotAuto" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="31" Canvas.Left="50" Canvas.Top="535.38002190339">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
@@ -737,116 +827,36 @@
         </TransformGroup>
       </nac:Label.RenderTransform>
     </nac:Label>
-    <nac:Group Name="m_Group_StartProd_btn" Width="140" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="58" Canvas.Left="298.969184268122" Canvas.Top="414.844374706731">
-      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle" Width="136" Height="46" RenderTransformOrigin="0.5,0.5" Opacity="0.95" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="2.03081573187802" Canvas.Top="1.45499999999998">
-        <nacc1:Rectangle.Resources>
-          <ResourceDictionary>
-            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
-          </ResourceDictionary>
-        </nacc1:Rectangle.Resources>
-        <nacb:BlinkProperties.VisibleDynamicsValue>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-            <Binding.FallbackValue>
-              <s:Boolean>True</s:Boolean>
-            </Binding.FallbackValue>
-          </Binding>
-        </nacb:BlinkProperties.VisibleDynamicsValue>
-      </nacc1:Rectangle>
-      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Start production" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="55,2,2,2" RequiresTransparency="True" SymbolName="orfer_ack" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Start_Production_btn" Width="140" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="10" Canvas.Left="0" Canvas.Top="0" nac:EnabledProperties.EnabledDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.Resources>
-          <ResourceDictionary>
-            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
-          </ResourceDictionary>
-        </nac:Button.Resources>
-        <nacb:BlinkProperties.VisibleDynamicsValue>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-            <Binding.FallbackValue>
-              <s:Boolean>True</s:Boolean>
-            </Binding.FallbackValue>
-          </Binding>
-        </nacb:BlinkProperties.VisibleDynamicsValue>
-        <nac:Button.TextDecorations>
-          <TextDecorationCollection />
-        </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
-        <nai:ScriptProperties.ScriptEvents>
-          <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="Start_Production_btn_Click" />
-          </nai:ScriptEventList>
-        </nai:ScriptProperties.ScriptEvents>
-      </nac:Button>
-    </nac:Group>
-    <nac:Group Name="m_Group_Cancel_btn" Width="140" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="59" Canvas.Left="298.969184268122" Canvas.Top="479.930202289073">
-      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle3" Width="136" Height="46" RenderTransformOrigin="0.5,0.5" Opacity="0.95" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="2.03081573187802" Canvas.Top="1.06979771092699" />
-      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Cancel" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="55,2,2,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" MultiPicture="False" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Cancel" Width="140" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="16" Canvas.Left="0" Canvas.Top="0" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.Resources>
-          <ResourceDictionary>
-            <nacc:VariantValueConverter x:Key="TextValueConverter" />
-          </ResourceDictionary>
-        </nac:Button.Resources>
-        <nac:Button.TextValue>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProduction_PLC_Aloitettu].Value" Converter="{StaticResource TextValueConverter}" ValidatesOnExceptions="True">
-            <Binding.FallbackValue>
-              <s:Int32>0</s:Int32>
-            </Binding.FallbackValue>
-          </Binding>
-        </nac:Button.TextValue>
-        <nac:Button.TextDecorations>
-          <TextDecorationCollection />
-        </nac:Button.TextDecorations>
-        <nac:Button.TextIntervalMapper>
-          <nacd1:StringIntervalMapper DefaultValue="Cancel">
-            <nacd1:StringIntervalMapper.Intervals>
-              <nacd1:StringIntervalList>
-                <nacd1:StringInterval Value="Cancel" />
-                <nacd1:StringInterval Start="1" End="1" Value="OK" />
-              </nacd1:StringIntervalList>
-            </nacd1:StringIntervalMapper.Intervals>
-          </nacd1:StringIntervalMapper>
-        </nac:Button.TextIntervalMapper>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList>
-            <nata:Action Name="Close Screen">
-              <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="Close" ObjectName="" EventName="Click" ReferenceType="This" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="True" />
-              </nata:Action.ActionMethodInfo>
-            </nata:Action>
-          </nai:ActionList>
-        </nai:ActionProperties.Actions>
-      </nac:Button>
-    </nac:Group>
-    <nac:Label Text="Starting production..." Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text4" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="300" Canvas.Top="424.637708040064" nacb:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
-      <nac:Label.Resources>
-        <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
-          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
-        </ResourceDictionary>
-      </nac:Label.Resources>
-      <nacb:BlinkProperties.IsBlinkEnabled>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>False</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.IsBlinkEnabled>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="PLC connection" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_TextPLCConn" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="30" Canvas.Left="50" Canvas.Top="508.54548409605">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
       </nac:Label.TextDecorations>
     </nac:Label>
-    <nacc1:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob2_Pal1_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="50" Canvas.Left="515.744749408626" Canvas.Top="433.828483539073" nacsd:EditorProperties.IsHidden="False">
-      <nacc1:Rectangle.Resources>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Robot connection" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_TextRobotConn" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="29" Canvas.Left="50" Canvas.Top="481.71094628871">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Production starting conditions" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_TextStartConds" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="28" Canvas.Left="20.4800012092994" Canvas.Top="446.207048683425">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nacc:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob2_Pal1_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="41" Canvas.Left="515.744749408626" Canvas.Top="478.854852831979" nacsd:EditorProperties.IsHidden="False">
+      <nacc:Rectangle.Resources>
         <ResourceDictionary>
-          <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          <nacd:BrushDynamicsConverter x:Key="FillConverter">
+            <nacd:BrushDynamicsConverter.BrushIntervalMapper>
               <nacd2:BrushCFIntervalMapper>
                 <nacd2:BrushCFIntervalMapper.Intervals>
                   <nacd2:BrushCFIntervalList>
@@ -866,14 +876,14 @@
                   <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
                 </nacd2:BrushCFIntervalMapper.DefaultValue>
               </nacd2:BrushCFIntervalMapper>
-            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-          </nacd1:BrushDynamicsConverter>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="2" />
+            </nacd:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd:BrushDynamicsConverter>
+          <nacd:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="2" />
         </ResourceDictionary>
-      </nacc1:Rectangle.Resources>
-      <nacc1:Rectangle.Fill>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_lavap1_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-      </nacc1:Rectangle.Fill>
+      </nacc:Rectangle.Resources>
+      <nacc:Rectangle.Fill>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_lavap1_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
+      </nacc:Rectangle.Fill>
       <nacb:BlinkProperties.VisibleDynamicsValue>
         <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
@@ -881,10 +891,10 @@
           </Binding.FallbackValue>
         </Binding>
       </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-      <nacc1:Rectangle.RenderTransform>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+      <nacc:Rectangle.RenderTransform>
         <TransformGroup>
           <TransformGroup.Children>
             <TransformCollection>
@@ -893,13 +903,13 @@
             </TransformCollection>
           </TransformGroup.Children>
         </TransformGroup>
-      </nacc1:Rectangle.RenderTransform>
-    </nacc1:Rectangle>
-    <nacc1:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob2_Pal2_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="45" Canvas.Left="515.744749408626" Canvas.Top="459.161816872406" nacsd:EditorProperties.IsHidden="False">
-      <nacc1:Rectangle.Resources>
+      </nacc:Rectangle.RenderTransform>
+    </nacc:Rectangle>
+    <nacc:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob2_Pal2_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="515.744749408626" Canvas.Top="504.188186165312" nacsd:EditorProperties.IsHidden="False">
+      <nacc:Rectangle.Resources>
         <ResourceDictionary>
-          <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          <nacd:BrushDynamicsConverter x:Key="FillConverter">
+            <nacd:BrushDynamicsConverter.BrushIntervalMapper>
               <nacd2:BrushCFIntervalMapper>
                 <nacd2:BrushCFIntervalMapper.Intervals>
                   <nacd2:BrushCFIntervalList>
@@ -919,14 +929,14 @@
                   <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
                 </nacd2:BrushCFIntervalMapper.DefaultValue>
               </nacd2:BrushCFIntervalMapper>
-            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-          </nacd1:BrushDynamicsConverter>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="2" />
+            </nacd:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd:BrushDynamicsConverter>
+          <nacd:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="2" />
         </ResourceDictionary>
-      </nacc1:Rectangle.Resources>
-      <nacc1:Rectangle.Fill>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_lavap2_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-      </nacc1:Rectangle.Fill>
+      </nacc:Rectangle.Resources>
+      <nacc:Rectangle.Fill>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_lavap2_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
+      </nacc:Rectangle.Fill>
       <nacb:BlinkProperties.VisibleDynamicsValue>
         <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
@@ -934,10 +944,10 @@
           </Binding.FallbackValue>
         </Binding>
       </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-      <nacc1:Rectangle.RenderTransform>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+      <nacc:Rectangle.RenderTransform>
         <TransformGroup>
           <TransformGroup.Children>
             <TransformCollection>
@@ -946,13 +956,13 @@
             </TransformCollection>
           </TransformGroup.Children>
         </TransformGroup>
-      </nacc1:Rectangle.RenderTransform>
-    </nacc1:Rectangle>
-    <nacc1:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob2_Pal3_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="55" Canvas.Left="516" Canvas.Top="484.49515020574" nacsd:EditorProperties.IsHidden="False">
-      <nacc1:Rectangle.Resources>
+      </nacc:Rectangle.RenderTransform>
+    </nacc:Rectangle>
+    <nacc:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob2_Pal3_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="45" Canvas.Left="516" Canvas.Top="529.521519498646" nacsd:EditorProperties.IsHidden="False">
+      <nacc:Rectangle.Resources>
         <ResourceDictionary>
-          <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          <nacd:BrushDynamicsConverter x:Key="FillConverter">
+            <nacd:BrushDynamicsConverter.BrushIntervalMapper>
               <nacd2:BrushCFIntervalMapper>
                 <nacd2:BrushCFIntervalMapper.Intervals>
                   <nacd2:BrushCFIntervalList>
@@ -972,14 +982,14 @@
                   <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
                 </nacd2:BrushCFIntervalMapper.DefaultValue>
               </nacd2:BrushCFIntervalMapper>
-            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-          </nacd1:BrushDynamicsConverter>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="2" />
+            </nacd:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd:BrushDynamicsConverter>
+          <nacd:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="2" />
         </ResourceDictionary>
-      </nacc1:Rectangle.Resources>
-      <nacc1:Rectangle.Fill>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_lavap3_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-      </nacc1:Rectangle.Fill>
+      </nacc:Rectangle.Resources>
+      <nacc:Rectangle.Fill>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.Rob2_lavap3_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
+      </nacc:Rectangle.Fill>
       <nacb:BlinkProperties.VisibleDynamicsValue>
         <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
@@ -987,10 +997,10 @@
           </Binding.FallbackValue>
         </Binding>
       </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-      <nacc1:Rectangle.RenderTransform>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+      <nacc:Rectangle.RenderTransform>
         <TransformGroup>
           <TransformGroup.Children>
             <TransformCollection>
@@ -999,27 +1009,27 @@
             </TransformCollection>
           </TransformGroup.Children>
         </TransformGroup>
-      </nacc1:Rectangle.RenderTransform>
+      </nacc:Rectangle.RenderTransform>
       <nai:ActionProperties.Actions>
         <nai:ActionList />
       </nai:ActionProperties.Actions>
-    </nacc1:Rectangle>
-    <nacc1:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob1_Pal1_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="49" Canvas.Left="516" Canvas.Top="434" nacsd:EditorProperties.IsHidden="True">
-      <nacc1:Rectangle.Resources>
+    </nacc:Rectangle>
+    <nacc:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rect_RobottiAuto" Width="20" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="34" Canvas.Left="26" Canvas.Top="537">
+      <nacc:Rectangle.Resources>
         <ResourceDictionary>
-          <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          <nacd:BrushDynamicsConverter x:Key="FillConverter">
+            <nacd:BrushDynamicsConverter.BrushIntervalMapper>
               <nacd2:BrushCFIntervalMapper>
                 <nacd2:BrushCFIntervalMapper.Intervals>
                   <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
                     <nacd2:BrushCFInterval>
                       <nacd2:BrushCFInterval.Value>
                         <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
-                      </nacd2:BrushCFInterval.Value>
-                    </nacd2:BrushCFInterval>
-                    <nacd2:BrushCFInterval Start="1" End="999">
-                      <nacd2:BrushCFInterval.Value>
-                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
                       </nacd2:BrushCFInterval.Value>
                     </nacd2:BrushCFInterval>
                   </nacd2:BrushCFIntervalList>
@@ -1028,140 +1038,20 @@
                   <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
                 </nacd2:BrushCFIntervalMapper.DefaultValue>
               </nacd2:BrushCFIntervalMapper>
-            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-          </nacd1:BrushDynamicsConverter>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+            </nacd:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd:BrushDynamicsConverter>
         </ResourceDictionary>
-      </nacc1:Rectangle.Resources>
-      <nacc1:Rectangle.Fill>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_lavap1_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-      </nacc1:Rectangle.Fill>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+      </nacc:Rectangle.Resources>
+      <nacc:Rectangle.Fill>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_R1_ManAuto].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
+            <SolidColorBrush>#FF088298</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-      <nacc1:Rectangle.RenderTransform>
-        <TransformGroup>
-          <TransformGroup.Children>
-            <TransformCollection>
-              <ScaleTransform ScaleX="1" ScaleY="1" />
-              <RotateTransform Angle="0" />
-            </TransformCollection>
-          </TransformGroup.Children>
-        </TransformGroup>
-      </nacc1:Rectangle.RenderTransform>
-    </nacc1:Rectangle>
-    <nacc1:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob1_Pal2_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="44" Canvas.Left="515.744749408626" Canvas.Top="459.276161179691" nacsd:EditorProperties.IsHidden="True">
-      <nacc1:Rectangle.Resources>
-        <ResourceDictionary>
-          <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-              <nacd2:BrushCFIntervalMapper>
-                <nacd2:BrushCFIntervalMapper.Intervals>
-                  <nacd2:BrushCFIntervalList>
-                    <nacd2:BrushCFInterval>
-                      <nacd2:BrushCFInterval.Value>
-                        <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
-                      </nacd2:BrushCFInterval.Value>
-                    </nacd2:BrushCFInterval>
-                    <nacd2:BrushCFInterval Start="1" End="999">
-                      <nacd2:BrushCFInterval.Value>
-                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
-                      </nacd2:BrushCFInterval.Value>
-                    </nacd2:BrushCFInterval>
-                  </nacd2:BrushCFIntervalList>
-                </nacd2:BrushCFIntervalMapper.Intervals>
-                <nacd2:BrushCFIntervalMapper.DefaultValue>
-                  <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
-                </nacd2:BrushCFIntervalMapper.DefaultValue>
-              </nacd2:BrushCFIntervalMapper>
-            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-          </nacd1:BrushDynamicsConverter>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
-        </ResourceDictionary>
-      </nacc1:Rectangle.Resources>
-      <nacc1:Rectangle.Fill>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_lavap2_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-      </nacc1:Rectangle.Fill>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-      <nacc1:Rectangle.RenderTransform>
-        <TransformGroup>
-          <TransformGroup.Children>
-            <TransformCollection>
-              <ScaleTransform ScaleX="1" ScaleY="1" />
-              <RotateTransform Angle="0" />
-            </TransformCollection>
-          </TransformGroup.Children>
-        </TransformGroup>
-      </nacc1:Rectangle.RenderTransform>
-    </nacc1:Rectangle>
-    <nacc1:Rectangle RadiusX="5" RadiusY="5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle_Rob1_Pal3_Ack" Width="20" Height="20" RenderTransformOrigin="0.841665934294838,-0.968274864571021" Visibility="Visible" Panel.ZIndex="54" Canvas.Left="515.744749408626" Canvas.Top="484.552322359382" nacsd:EditorProperties.IsHidden="True">
-      <nacc1:Rectangle.Resources>
-        <ResourceDictionary>
-          <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-              <nacd2:BrushCFIntervalMapper>
-                <nacd2:BrushCFIntervalMapper.Intervals>
-                  <nacd2:BrushCFIntervalList>
-                    <nacd2:BrushCFInterval>
-                      <nacd2:BrushCFInterval.Value>
-                        <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
-                      </nacd2:BrushCFInterval.Value>
-                    </nacd2:BrushCFInterval>
-                    <nacd2:BrushCFInterval Start="1" End="999">
-                      <nacd2:BrushCFInterval.Value>
-                        <nacgl:BrushCF StartColor="Lime" EndColor="" FillDirection="None" />
-                      </nacd2:BrushCFInterval.Value>
-                    </nacd2:BrushCFInterval>
-                  </nacd2:BrushCFIntervalList>
-                </nacd2:BrushCFIntervalMapper.Intervals>
-                <nacd2:BrushCFIntervalMapper.DefaultValue>
-                  <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
-                </nacd2:BrushCFIntervalMapper.DefaultValue>
-              </nacd2:BrushCFIntervalMapper>
-            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-          </nacd1:BrushDynamicsConverter>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
-        </ResourceDictionary>
-      </nacc1:Rectangle.Resources>
-      <nacc1:Rectangle.Fill>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Rob1_lavap3_pkuv].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-      </nacc1:Rectangle.Fill>
-      <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="robottiNumero" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <s:Boolean>True</s:Boolean>
-          </Binding.FallbackValue>
-        </Binding>
-      </nacb:BlinkProperties.VisibleDynamicsValue>
-      <nacc1:Rectangle.BevelEffectInfo>
-        <nacb2:BevelEffectInfo Style="None" Width="0" />
-      </nacc1:Rectangle.BevelEffectInfo>
-      <nacc1:Rectangle.RenderTransform>
-        <TransformGroup>
-          <TransformGroup.Children>
-            <TransformCollection>
-              <ScaleTransform ScaleX="1" ScaleY="1" />
-              <RotateTransform Angle="0" />
-            </TransformCollection>
-          </TransformGroup.Children>
-        </TransformGroup>
-      </nacc1:Rectangle.RenderTransform>
-    </nacc1:Rectangle>
+      </nacc:Rectangle.Fill>
+      <nacc:Rectangle.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="Raised" Width="0" />
+      </nacc:Rectangle.BevelEffectInfo>
+    </nacc:Rectangle>
   </nacs:ElementCanvas>
 </nacs:ScreenWindow>

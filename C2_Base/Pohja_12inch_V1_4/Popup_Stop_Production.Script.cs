@@ -69,8 +69,8 @@ namespace Neo.ApplicationFramework.Generated
 			Globals.Tags.SetTagValue("Line1_PLC_Lopetus" + tulorata, true);
 
 			// Lähetetään lopetus robotille
-			Globals.Robotit.robotit[robottiNo].Loki.LisaaLokiin("Lopetetaan tulorata " + robottiTulorata + ".");
-			Globals.Robotit.robotit[robottiNo].TeeLopetus(robottiTulorata);	
+			Globals.Robotit.LisaaLokiin(robottiNo, "Lopetetaan tulorata " + robottiTulorata + ".");
+			Globals.Robotit.TeeLopetus(robottiNo, robottiTulorata);	
 
 			// this.Close();
 			// }

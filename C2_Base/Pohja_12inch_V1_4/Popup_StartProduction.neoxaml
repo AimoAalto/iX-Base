@@ -5,9 +5,25 @@
     <AliasConfiguration>
       <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasConfiguration, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="AliasConfiguration1" d1p1:Site.Name="AliasConfiguration1" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
         <Definitions>
-          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasDefinition, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DataType="System.Int32" Name="robottiNumero" d1p1:Site.Name="robottiNumero" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
-          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasDefinition, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DataType="System.Int16" Name="Kasetti" d1p1:Site.Name="Kasetti" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
+          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasDefinition, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DataType="System.Int16" DefaultValue="Tags.HMI_Selected_RobotNo" Name="robottiNumero" d1p1:Site.Name="robottiNumero" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
         </Definitions>
+        <Instances>
+          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasInstance, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="R1" d1p1:Site.Name="R1" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+            <Values>
+              <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasValue, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="robottiNumero" Value="Tags.HMI_Selected_RobotNo" DefaultValue="Tags.HMI_Selected_RobotNo" IsDefault="True" />
+            </Values>
+          </Object>
+          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasInstance, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="R2" d1p1:Site.Name="R2" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+            <Values>
+              <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasValue, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="robottiNumero" Value="Tags.HMI_Selected_RobotNo" DefaultValue="Tags.HMI_Selected_RobotNo" IsDefault="True" />
+            </Values>
+          </Object>
+          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasInstance, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="R3" d1p1:Site.Name="R3" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+            <Values>
+              <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasValue, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="robottiNumero" Value="Tags.HMI_Selected_RobotNo" DefaultValue="Tags.HMI_Selected_RobotNo" IsDefault="True" />
+            </Values>
+          </Object>
+        </Instances>
       </Object>
     </AliasConfiguration>
   </Object>

@@ -68,6 +68,16 @@
         <Item Target="A_DesignScreen.SymbolViewbox1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob2_nostopaikka" />
         <Item Target="A_DesignScreen.SymbolViewbox2" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob3_nostopaikka" />
         <Item Target="A_DesignScreen.SymbolViewbox2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob3_nostopaikka" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Value" Source="Tags.Line1_PLC_Aloitettu1" />
+        <Item Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="TextValue" Source="Tags.Line1_PLC_Aloitettu1" />
+        <Item Target="A_DesignScreen.Group_StartProd1_btn.RectangleStartProd1" TargetProperty="Fill" Source="Tags.Line1_PLC_Aloitettu1" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="Value" Source="Tags.Line1_PLC_Aloitettu2" />
+        <Item Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="TextValue" Source="Tags.Line1_PLC_Aloitettu2" />
+        <Item Target="A_DesignScreen.Group_StartProd2_btn.RectangleStartProd2" TargetProperty="Fill" Source="Tags.Line1_PLC_Aloitettu2" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -87,7 +97,7 @@
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Popup_NewPallet" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Popup_NewPickPallet" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>45</ObjectsCount>
+          <ObjectsCount>49</ObjectsCount>
           <ScreenName>A_DesignScreen</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="">
@@ -111,6 +121,10 @@
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Click" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">
@@ -135,6 +149,12 @@
         <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_Reset_btn.Button_Reset" Source="orfer_reset" Width="24" Height="24" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" Source="orfer_newpallet" Width="31" Height="31" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" Source="orfer_newpallet" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

@@ -214,7 +214,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -256,7 +256,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -298,7 +298,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -340,7 +340,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -382,7 +382,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -424,7 +424,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -466,7 +466,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -522,7 +522,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -564,7 +564,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -606,7 +606,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -648,7 +648,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -690,7 +690,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -732,7 +732,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
@@ -774,7 +774,7 @@
         </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
-            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu1_Click" />
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>

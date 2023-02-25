@@ -54,13 +54,13 @@
               <nacd1:StringInterval Start="0" End="0" Value="Unexpected error occured." />
               <nacd1:StringInterval Start="1" End="1" Value="Please choose the product to be started." />
               <nacd1:StringInterval Start="2" End="2" Value="Please choose the pallet place(s) to be started on." />
-              <nacd1:StringInterval Start="3" End="3" Value="Selected pallet place already has a pattern.;;;     &#xD;&#xA;Please reset the existing pattern or contact Orfer oCare Customer service." />
+              <nacd1:StringInterval Start="3" End="3" Value="Selected pallet place already has a pattern. &#xD;&#xA;Please reset the existing pattern or contact Orfer oCare Customer service.&#xD;&#xA;" />
               <nacd1:StringInterval Start="4" End="4" Value="Pattern load failed." />
               <nacd1:StringInterval Start="5" End="5" Value="Pattern picture load failed." />
               <nacd1:StringInterval Start="6" End="6" Value="Loading of recipes failed." />
               <nacd1:StringInterval Start="7" End="7" Value="Sending production start command to robot failed." />
               <nacd1:StringInterval Start="8" End="8" Value="Please check the starting conditions." />
-              <nacd1:StringInterval Start="9" End="9" Value="There is no pattern file for the selected pattern number in D:\Lavaus\Kuviot\" />
+              <nacd1:StringInterval Start="9" End="9" Value="There is no pattern file for the selected pattern number in C:\Lavaus\Kuviot\" />
               <nacd1:StringInterval Start="10" End="10" Value="The selected pattern number already exists." />
               <nacd1:StringInterval Start="11" End="11" Value="Mark at least one choice from each area." />
               <nacd1:StringInterval Start="12" End="12" Value="Could not open the layer." />

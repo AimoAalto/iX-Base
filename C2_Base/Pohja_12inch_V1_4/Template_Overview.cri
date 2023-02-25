@@ -63,7 +63,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>61</ObjectsCount>
+          <ObjectsCount>62</ObjectsCount>
           <ScreenName>Template_Overview</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="">
@@ -73,6 +73,7 @@
     </Category>
     <Category Name="Script">
       <Items>
+        <Item Target="Template_Overview.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
         <Item Target="Template_Overview.Script.cs" Source="Tags.Settings_PanelNumber" />
         <Item Target="Template_Overview.Script.cs" Source="Tags.Screens" />
       </Items>

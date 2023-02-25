@@ -14,9 +14,10 @@ namespace Neo.ApplicationFramework.Generated
     {
 		void Template_Overview_Opened(System.Object sender, System.EventArgs e)
 		{
+			Globals.Tags.Menu_MainMenu_Btn_Anim.SetAnalog(0);
 		}
 		
-		void btnSubmenu1_Click(System.Object sender, System.EventArgs e)
+		void btnSubmenu_Click(System.Object sender, System.EventArgs e)
 		{
 			Globals.Tags.BtnHandler(
 				Globals.Tags.Settings_PanelNumber.Value, 

@@ -141,7 +141,7 @@ o
 Spurt 0,75l G02 2x33
 
 Spurt 0,75l G02 1x44RiviNro
-u
+|
 
 WC-Geeli G 061
 
@@ -149,8 +149,8 @@ u
 
 Spurt 0,75l G02 2x31
 
-Spurt 0,75l G02 1x41Tartuntaviive
-s
+Spurt 0,75l G02 1x41RobottiTartuntaviive
+z
 
 WC-Geeli G 061
 
@@ -158,7 +158,7 @@ s
 
 Spurt 0,75l G02 2x31
 
-Spurt 0,75l G02 1x41Jättoviive
+Spurt 0,75l G02 1x41RobottiJättoviive
 w
 
 WC-Geeli G 061

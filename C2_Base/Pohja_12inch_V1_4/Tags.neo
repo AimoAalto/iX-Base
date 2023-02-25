@@ -5717,7 +5717,7 @@
           </Object>
         </GlobalDataSubItems>
         <Events>
-          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_C1_ValueChange" />
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
         </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" AlwaysActive="True" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_PLC_Auto_Area_Mode_C2" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
@@ -5736,7 +5736,7 @@
           </Object>
         </GlobalDataSubItems>
         <Events>
-          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_C2_ValueChange" />
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
         </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_BIT" d1p1:Site.Name="Line1_Manual_Area_Enabled_1" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
@@ -5754,6 +5754,9 @@
             </DataItemNames>
           </Object>
         </GlobalDataSubItems>
+        <Events>
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
+        </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_BIT" d1p1:Site.Name="Line1_Manual_Area_Enabled_2" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
@@ -5770,6 +5773,9 @@
             </DataItemNames>
           </Object>
         </GlobalDataSubItems>
+        <Events>
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
+        </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" d1p1:Site.Name="Alarm_None" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
@@ -5792,7 +5798,7 @@
           </Object>
         </GlobalDataSubItems>
         <Events>
-          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_C4_ValueChange" />
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
         </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_PLC_Auto_Area_Mode_C3" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
@@ -5811,7 +5817,7 @@
           </Object>
         </GlobalDataSubItems>
         <Events>
-          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_C3_ValueChange" />
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
         </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_PLC_Auto_Area_Mode_C5" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
@@ -5830,7 +5836,7 @@
           </Object>
         </GlobalDataSubItems>
         <Events>
-          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_C5_ValueChange" />
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
         </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_BIT" d1p1:Site.Name="Line1_Manual_Area_Enabled_3" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
@@ -5848,6 +5854,9 @@
             </DataItemNames>
           </Object>
         </GlobalDataSubItems>
+        <Events>
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
+        </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_BIT" d1p1:Site.Name="Line1_Manual_Area_Enabled_4" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
@@ -5864,6 +5873,9 @@
             </DataItemNames>
           </Object>
         </GlobalDataSubItems>
+        <Events>
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
+        </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_BIT" d1p1:Site.Name="Line1_Manual_Area_Enabled_5" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
@@ -5880,6 +5892,9 @@
             </DataItemNames>
           </Object>
         </GlobalDataSubItems>
+        <Events>
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
+        </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" AlwaysActive="True" DataType="DT_INTEGER4" GlobalDataType="DT_INTEGER4" d1p1:Site.Name="Line1_HMI2_Manual_Ctrl_Nr" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
@@ -7973,7 +7988,7 @@
           </Object>
         </GlobalDataSubItems>
         <Events>
-          <Event Name="ValueChange" EventHandler="Line1_Manual_Area_Enabled_6_ValueChange" />
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
         </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_BIT" d1p1:Site.Name="Line1_Manual_Area_Enabled_7" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
@@ -7992,7 +8007,7 @@
           </Object>
         </GlobalDataSubItems>
         <Events>
-          <Event Name="ValueChange" EventHandler="Line1_Manual_Area_Enabled_7_ValueChange" />
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
         </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_BIT" d1p1:Site.Name="Line1_Manual_Area_Enabled_8" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
@@ -8011,7 +8026,7 @@
           </Object>
         </GlobalDataSubItems>
         <Events>
-          <Event Name="ValueChange" EventHandler="Line1_Manual_Area_Enabled_8_ValueChange" />
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
         </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" d1p1:Site.Name="Line1_Internal_ManualEnabled_6" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
@@ -8044,6 +8059,9 @@
             </DataItemNames>
           </Object>
         </GlobalDataSubItems>
+        <Events>
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
+        </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_PLC_Auto_Area_Mode_C7" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
@@ -8060,6 +8078,9 @@
             </DataItemNames>
           </Object>
         </GlobalDataSubItems>
+        <Events>
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
+        </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_PLC_Auto_Area_Mode_C8" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
@@ -8076,6 +8097,9 @@
             </DataItemNames>
           </Object>
         </GlobalDataSubItems>
+        <Events>
+          <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
+        </Events>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.SystemDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="The ID of the new screen" PollGroupName="PollGroup500" AlwaysActive="True" DataType="DT_INTEGER2" d1p1:Site.Name="SystemTagNewScreenId" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Tools.OpcClient.SystemDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
@@ -8206,6 +8230,21 @@
         </GlobalDataSubItems>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" d1p1:Site.Name="HMI_ConfGroupSet" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+        <GlobalDataSubItems>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
+        </GlobalDataSubItems>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" GlobalDataType="DT_BOOLEAN" d1p1:Site.Name="HMI_Robot1_Started" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+        <GlobalDataSubItems>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
+        </GlobalDataSubItems>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" AlwaysActive="True" GlobalDataType="DT_INTEGER2" d1p1:Site.Name="HMI_Selected_RobotNo" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+        <GlobalDataSubItems>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
+        </GlobalDataSubItems>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Save settings only on non volatile database, if false use json-file" PollGroupName="PollGroup500" AlwaysActive="True" NonVolatile="True" GlobalDataType="DT_BOOLEAN" d1p1:Site.Name="Conf_UseOnly_NVBD" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>

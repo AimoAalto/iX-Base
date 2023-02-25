@@ -3,14 +3,14 @@ namespace Neo.ApplicationFramework.Generated
 	using System;
 	using System.Linq;
 	using System.Threading;
-	
-    
+
+
 	/// <summary>
 	/// Näyttää kaikkien robottienvirhelokin.
 	/// </summary>
 	/// <remarks>Viimeksi muokattu: SoPi 5.7.2017</remarks>
-    public partial class Settings_Pan1_Scr4
-    {
+	public partial class Settings_Pan1_Scr4
+	{
 		/// <summary>
 		/// Lukko, jolla pidetään uusi päivitys odottamassa ja ylimääräiset
 		/// pyynnöt ohjataan pois.
@@ -20,7 +20,7 @@ namespace Neo.ApplicationFramework.Generated
 		/// Odotusobjekti, johon odottava päivityspyyntö pysäytetään.
 		/// </summary>
 		ManualResetEvent SaaPaivittaa = new ManualResetEvent(true);
-		
+
 		/// <summary>
 		/// Lataa ensimmäisen robotin lokin ja liittyy seuraamaan sen muutoksia.
 		/// </summary>
@@ -30,20 +30,20 @@ namespace Neo.ApplicationFramework.Generated
 			try
 			{
 				// Avataan ensin pienin robottinumero
-				RobottiNo = Globals.Robotit.robotit.Keys.Min();
-			
+				RobottiNo = Globals.Robotit.First();
+
 				// Loki
 				LataaLoki();
-			
+
 				// Sivun ladattua seurataan, jos lista muuttuu ja pitää päivittää
-				Globals.Robotit.robotit[RobottiNo].Loki.LokiMuuttunut += Loki_LokiMuuttunut;
+				Globals.Robotit.GetLoki(RobottiNo).LokiMuuttunut += Loki_LokiMuuttunut;
 			}
 			catch (Exception x)
 			{
 				System.Windows.Forms.MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		/// <summary>
 		/// Päivittää robottin virhelokin näytölle. Siirtää näkymän ja valinnan
 		/// uusimpiin tapahtumiin.
@@ -54,11 +54,11 @@ namespace Neo.ApplicationFramework.Generated
 			Virhelista.Items.Clear();
 
 			// Lisätään kaikki rivit
-			foreach (string a in Globals.Robotit.robotit[RobottiNo].Loki.LueLoki())
+			foreach (string a in Globals.Robotit.GetLoki(RobottiNo).LueLoki())
 			{
 				Virhelista.Items.Add(a);
 			}
-			
+
 			// Scrollataan listaa mukana
 			Virhelista.SelectedIndex = Virhelista.Items.Count - 1;
 			Virhelista.AdaptedObject.CastTo<Neo.ApplicationFramework.Controls.WindowsControls.ListBox>()
@@ -84,7 +84,7 @@ namespace Neo.ApplicationFramework.Generated
 					{
 						// Odotetaan, että saa mennä päivittämään näytön
 						SaaPaivittaa.WaitOne();
-				
+
 						// Viritetään odotus uudestaan seuraavaa odottajaa varten
 						SaaPaivittaa.Reset();
 					}
@@ -98,79 +98,45 @@ namespace Neo.ApplicationFramework.Generated
 					// Jos lukossa on jo odottaja, lopetetaan
 					return;
 				}
-			
+
 				// GUI voi pyöriä eri säikeessä kuin eventti, joten
 				Dispatcher.Invoke(new Action(() =>
 					{
-					LataaLoki(); 
-					}));  
-					
+						LataaLoki();
+					}));
+
 				// Sallitaan päivitys enintään sekunnin välein
 				Thread.Sleep(1000);
-			
+
 				// Seuraava päivittäjä saa tulla sisään
 				SaaPaivittaa.Set();
 			}
 		}
-		
+
 		/// <summary>
 		/// Valitsee numerojärjestyksessä seuraavan robotin ja lataa sen lokin.
 		/// </summary>
 		/// <param name="sender">this.Robot_next_btn</param>
 		void Robot_next_btn_Click(System.Object sender, System.EventArgs e)
 		{
-			if (Globals.Robotit.robotit.Count > 1)
-			{
-				// Irroittaudutaan muutoksen seurannasta
-				Globals.Robotit.robotit[RobottiNo].Loki.LokiMuuttunut -= Loki_LokiMuuttunut;
-				
-				// Haetaan seuraavan robotin numero
-				try
-				{
-					RobottiNo = Globals.Robotit.robotit.Keys.Where(p => p > RobottiNo).Min();
-				}
-				catch
-				{
-					// Ei ollut isompaa numeroa, haetaan pienin
-					RobottiNo = Globals.Robotit.robotit.Keys.Min();
-				}
-				
-				// Päivitetään näyttö
-				LataaLoki();
-				
-				// Liitytään mutoksen seurantaan
-				Globals.Robotit.robotit[RobottiNo].Loki.LokiMuuttunut += Loki_LokiMuuttunut;
-			}
+			RobottiNo = Globals.Robotit.Next(RobottiNo);
+			// Liitytään mutoksen seurantaan
+			if (RobottiNo > 0) Globals.Robotit.GetLoki(RobottiNo).LokiMuuttunut += Loki_LokiMuuttunut;
+			// Päivitetään näyttö
+			LataaLoki();
 		}
-		
+
 		/// <summary>
 		/// Valitsee numerojärjestyksessä edellisen robotin ja lataa sen lokin.
 		/// </summary>
 		/// <param name="sender">this.Robot_prev_btn</param>
 		void Robot_prev_btn_Click(System.Object sender, System.EventArgs e)
 		{
-			if (Globals.Robotit.robotit.Count > 1)
-			{
-				// Irroittaudutaan muutoksen seurannasta
-				Globals.Robotit.robotit[RobottiNo].Loki.LokiMuuttunut -= Loki_LokiMuuttunut;
-				
-				// Haetaan edellisen robotin numero
-				try
-				{
-					RobottiNo = Globals.Robotit.robotit.Keys.Where(p => p < RobottiNo).Max();
-				}
-				catch 
-				{
-					// Ei ollut pienempää numeroa, haetaan suurin
-					RobottiNo = Globals.Robotit.robotit.Keys.Max();
-				}
-				
-				// Päivitetään näyttö
-				LataaLoki();
-				
-				// Liitytään mutoksen seurantaan
-				Globals.Robotit.robotit[RobottiNo].Loki.LokiMuuttunut += Loki_LokiMuuttunut;
-			}
+			RobottiNo = Globals.Robotit.Previous(RobottiNo);
+			// Liitytään mutoksen seurantaan
+			if (RobottiNo > 0) Globals.Robotit.GetLoki(RobottiNo).LokiMuuttunut += Loki_LokiMuuttunut;
+			// Päivitetään näyttö
+			LataaLoki();
 		}
 
 		/// <summary>
@@ -179,17 +145,17 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">this</param>
 		void Settings_Robot_Closing(System.Object sender, System.ComponentModel.CancelEventArgs e)
 		{
-			try 
+			try
 			{
 				// Sivu alkaa sulkeutua, irroittaudutaan kaikista tapahtumista ja ajastimista
-				Globals.Robotit.robotit[RobottiNo].Loki.LokiMuuttunut -= Loki_LokiMuuttunut;
+				if (RobottiNo > 0) Globals.Robotit.GetLoki(RobottiNo).LokiMuuttunut -= Loki_LokiMuuttunut;
 			}
 			catch (Exception x)
 			{
-				System.Windows.Forms.MessageBox.Show(x.Message);
+				Globals.Tags.Log("Settings_Robot_Closing: " + x.Message);
 			}
 		}
-				
+
 		/// <summary>
 		/// Pysäyttää lokinäytön päivityksen.
 		/// </summary>
@@ -198,12 +164,12 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			// Koska toggle alias ei toiminut jostain mystisestä syystä
 			StopUpdate = !StopUpdate;
-			
+
 			// Päivitetään heti, jos sallittiin
 			if (!StopUpdate)
 			{
 				LataaLoki();
 			}
 		}
-    }
+	}
 }

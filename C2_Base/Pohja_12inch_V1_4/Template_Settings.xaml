@@ -9,7 +9,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Template_Settings_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
     <nac:Button CornerRadius="3,3,3,3" Text="&lt;" TextVerticalAlignment="Center" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontWeight="Bold" Name="m_Button_Left" Width="72" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" IsEnabled="True" Panel.ZIndex="1" Canvas.Left="1136.26309856276" Canvas.Top="688" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
       <nac:Button.TextDecorations>
         <TextDecorationCollection />
@@ -104,14 +104,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="Line" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu2" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="135.026604362212" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -146,14 +146,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="Robot log" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu4" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="405.079813086634" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -188,14 +188,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="Alarms" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu3" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="270.053208724423" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -230,14 +230,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="Allowed patterns" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu5" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="540.106417448846" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -310,14 +310,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="Audit trail" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu6" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="675.133021811057" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -390,14 +390,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="Tag monitor" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu7" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="810.159626173266" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -470,17 +470,17 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
     </nac:Group>
-    <nac:Group Name="m_Group_Buttons2" Width="948.159626173266" Height="55" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="4" Canvas.Left="191" Canvas.Top="688" nacsd:EditorProperties.IsHidden="False">
+    <nac:Group Name="m_Group_Buttons2" Width="948.159626173266" Height="55" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="4" Canvas.Left="191" Canvas.Top="688" nacsd:EditorProperties.IsHidden="True">
       <nac:Group.Resources>
         <ResourceDictionary>
           <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="2" />
@@ -526,14 +526,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu10" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="270.053208724423" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -568,14 +568,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="Log" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu9" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="135.026604362212" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -610,14 +610,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu11" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="405.079813086634" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -652,14 +652,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu12" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="540.106417448846" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -694,14 +694,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu13" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="675.133021811057" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -736,16 +736,16 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
-      <nac:Button CornerRadius="3,3,3,3" Text="System configuration" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu14" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="810.159626173266" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+      <nac:Button CornerRadius="3,3,3,3" Text="System configuration" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu14" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="810.159626173266" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nai:SecurityProperties.SecurityGroupsRequired="Administrators" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
           <ResourceDictionary>
             <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
@@ -766,6 +766,7 @@
                 </nacd2:BrushCFIntervalMapper>
               </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
             </nacd1:BrushDynamicsConverter>
+            <nacd1:BoolDynamicsConverter x:Key="EnabledDynamicsValueConverter" DefaultValue="True" TrueValue="3" />
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
@@ -775,17 +776,24 @@
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
+        <nac:EnabledProperties.EnabledDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource EnabledDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:EnabledProperties.EnabledDynamicsValue>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
     </nac:Group>
   </nacs:ElementCanvas>

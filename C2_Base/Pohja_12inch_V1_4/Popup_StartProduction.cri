@@ -6,18 +6,20 @@
     </Category>
     <Category Name="Alias">
       <Items>
-        <Item Target="Popup_StartProduction.RobottiYhteys" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
-        <Item Target="Popup_StartProduction.RobottiAuto" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
+        <Item Target="Popup_StartProduction.ANRobotNo" TargetProperty="Value" Source="Popup_StartProduction.robottiNumero" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal3_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal2_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal1_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
+        <Item Target="Popup_StartProduction.Rect_RobottiYhteys" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
         <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal1_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
         <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal2_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
         <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal3_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal1_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal2_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal3_Ack" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Popup_StartProduction.robottiNumero" />
       </Items>
     </Category>
     <Category Name="AliasInstanceDataItem">
-      <Items />
+      <Items>
+        <Item xsi:type="AliasReference" Target="Popup_StartProduction.Default" TargetProperty="robottiNumero" Source="Tags.HMI_Selected_RobotNo" />
+      </Items>
     </Category>
     <Category Name="DatabaseService">
       <Items />
@@ -29,38 +31,27 @@
       <Items />
     </Category>
     <Category Name="Expression">
-      <Items>
-        <Item Target="Popup_StartProduction.PlaceBox2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Bit1IsSet" />
-        <Item Target="Popup_StartProduction.PlaceBox3" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Bit2IsSet" />
-        <Item Target="Popup_StartProduction.PlaceBox4" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Bit3IsSet" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="Popup_StartProduction.AnalogNumeric1" TargetProperty="Value" Source="Tags.HMI_StartProd_RecipeSelected" />
-        <Item Target="Popup_StartProduction.RobottiYhteys" TargetProperty="Fill" Source="Tags.HMI_CommFault_Rob1" />
-        <Item Target="Popup_StartProduction.Rectangle_PLC_Conn" TargetProperty="Fill" Source="Tags.Line1_Comm_Fault_PLC1" />
-        <Item Target="Popup_StartProduction.RobottiAuto" TargetProperty="Fill" Source="Tags.Line1_PLC_R1_ManAuto" />
-        <Item Target="Popup_StartProduction.AnalogNumeric2" TargetProperty="Value" Source="Tags.HMI_Overview_track_selected" />
         <Item Target="Popup_StartProduction.ComboBox_Wrapping" TargetProperty="Value" Source="Tags.HMI_StartProd_Wrapping" />
-        <Item Target="Popup_StartProduction.PlaceBox2" TargetProperty="Value" Source="Tags.HMI_StartProd_pallet_pri2" />
-        <Item Target="Popup_StartProduction.PlaceBox2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_StartProd_pallet_privis" />
-        <Item Target="Popup_StartProduction.PlaceBox3" TargetProperty="Value" Source="Tags.HMI_StartProd_pallet_pri3" />
-        <Item Target="Popup_StartProduction.PlaceBox3" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_StartProd_pallet_privis" />
-        <Item Target="Popup_StartProduction.PlaceBox4" TargetProperty="Value" Source="Tags.HMI_StartProd_pallet_pri4" />
-        <Item Target="Popup_StartProduction.PlaceBox4" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_StartProd_pallet_privis" />
-        <Item Target="Popup_StartProduction.Rectangle_PLC_Ack" TargetProperty="Fill" Source="Tags.HMI_StartProduction_PLC_Aloitettu" />
+        <Item Target="Popup_StartProduction.ANSelectedProduct" TargetProperty="Value" Source="Tags.HMI_StartProd_RecipeSelected" />
+        <Item Target="Popup_StartProduction.TextStarting" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.HMI_Aloitus_kesken" />
+        <Item Target="Popup_StartProduction.TextStarting" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Aloitus_kesken" />
+        <Item Target="Popup_StartProduction.Group_Cancel_btn.Button_Cancel" TargetProperty="TextValue" Source="Tags.HMI_StartProduction_PLC_Aloitettu" />
         <Item Target="Popup_StartProduction.Group_StartProd_btn.Rectangle" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Aloitus_kesken" />
         <Item Target="Popup_StartProduction.Group_StartProd_btn.Start_Production_btn" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Aloitus_kesken" />
-        <Item Target="Popup_StartProduction.Group_Cancel_btn.Button_Cancel" TargetProperty="TextValue" Source="Tags.HMI_StartProduction_PLC_Aloitettu" />
-        <Item Target="Popup_StartProduction.Text4" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.HMI_Aloitus_kesken" />
-        <Item Target="Popup_StartProduction.Text4" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Aloitus_kesken" />
+        <Item Target="Popup_StartProduction.Rectangle_PLC_Ack" TargetProperty="Fill" Source="Tags.HMI_StartProduction_PLC_Aloitettu" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal3_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap3_pkuv" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal2_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap2_pkuv" />
+        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal1_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap1_pkuv" />
+        <Item Target="Popup_StartProduction.Rect_PLC_Conn" TargetProperty="Fill" Source="Tags.Line1_Comm_Fault_PLC1" />
+        <Item Target="Popup_StartProduction.Rect_RobottiYhteys" TargetProperty="Fill" Source="Tags.HMI_CommFault_Rob1" />
         <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal1_Ack" TargetProperty="Fill" Source="Tags.Rob2_lavap1_pkuv" />
         <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal2_Ack" TargetProperty="Fill" Source="Tags.Rob2_lavap2_pkuv" />
         <Item Target="Popup_StartProduction.Rectangle_Rob2_Pal3_Ack" TargetProperty="Fill" Source="Tags.Rob2_lavap3_pkuv" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal1_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap1_pkuv" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal2_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap2_pkuv" />
-        <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal3_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap3_pkuv" />
+        <Item Target="Popup_StartProduction.Rect_RobottiAuto" TargetProperty="Fill" Source="Tags.Line1_PLC_R1_ManAuto" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_pallet_privis" Event="Closing" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Closing" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
@@ -87,7 +78,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>45</ObjectsCount>
+          <ObjectsCount>58</ObjectsCount>
           <ScreenName>Popup_StartProduction</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="">
@@ -97,12 +88,13 @@
     </Category>
     <Category Name="Script">
       <Items>
+        <Item Target="Popup_StartProduction.Script.cs" Source="Tags.HMI_Selected_RobotNo" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.HMI_Overview_track_selected" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.HMI_StartProd_RecipeSelected" />
+        <Item Target="Popup_StartProduction.Script.cs" Source="Tags.HMI_StartProd_pallet_privis" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.HMI_Error_TextValue" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.ProdReg_PalletPattern" />
-        <Item Target="Popup_StartProduction.Script.cs" Source="Tags.HMI_StartProd_pallet_privis" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.Line1_Comm_Fault_PLC1" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.Line1_Comm_OK" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.HMI_Aloitus_kesken" />
@@ -138,8 +130,8 @@
     </Category>
     <Category Name="Symbol">
       <Items>
-        <Item xsi:type="SymbolItem" Target="Popup_StartProduction.Group_StartProd_btn.Start_Production_btn" Source="orfer_ack" Width="35" Height="35" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Popup_StartProduction.Group_Cancel_btn.Button_Cancel" Source="orfer_cancel" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_StartProduction.Group_StartProd_btn.Start_Production_btn" Source="orfer_ack" Width="35" Height="35" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

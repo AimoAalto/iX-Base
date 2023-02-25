@@ -47,11 +47,18 @@ namespace Neo.ApplicationFramework.Generated
 
 					// Päivitetään tila
 					// UI omistaa Aliaksen, niin täytyy pyytää sitä päivittämään
-					this.Dispatcher.Invoke((Action)(() =>
-						{
+					try 
+					{	        
+						this.Dispatcher.Invoke((Action)(() =>
+							{
 							Tila = Globals.Tags.GetTagValue("PLC_Sensor_" + Globals.Tags.HMI_SensorInfo_Tunnus.Value.String);
-						}));
-
+							}));
+					}
+					catch (Exception x)
+					{
+						Globals.Tags.Log(string.Format("Popup_SensorInfo.GetTagValue: {0}", x.Message));
+					}
+	
 					// Suoritetaan uudestaan intervallin kuluttua
 					takeTime.Stop();
 					TaustaTarkistus.Change(Math.Max(0, Globals._Konfiguraatio.CurrentConfig.Aikavali("SensorInfoUpdate") - takeTime.ElapsedMilliseconds), Timeout.Infinite);

@@ -42,6 +42,7 @@
         <Item Target="Template_Robots.Group_Buttons2.btnSubmenu12" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
         <Item Target="Template_Robots.Group_Buttons2.btnSubmenu13" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
         <Item Target="Template_Robots.Group_Buttons2.btnSubmenu14" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Robots.Numero" TargetProperty="Value" Source="Tags.HMI_AdditionalRobotErrorNo" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -59,7 +60,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>74</ObjectsCount>
+          <ObjectsCount>94</ObjectsCount>
           <ScreenName>Template_Robots</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="">

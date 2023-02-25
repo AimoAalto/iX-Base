@@ -28,7 +28,6 @@
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoFromRobot" TargetProperty="Value" Source="Tags.RobX_naytto" />
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoFromRobot" TargetProperty="Foreground" Source="Tags.RobX_vir" />
         <Item Target="Robots_Pan1_Scr2.AnalogNumeric13" TargetProperty="Value" Source="Tags.RobX_vir" />
-        <Item Target="Robots_Pan1_Scr2.Numero" TargetProperty="Value" Source="Tags.HMI_AdditionalRobotErrorNo" />
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoTranslated" TargetProperty="Text" Source="Tags.Rob1_naytto" />
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoTranslated" TargetProperty="Value" Source="Tags.RobX_vir" />
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoTranslated" TargetProperty="Foreground" Source="Tags.RobX_vir" />
@@ -66,7 +65,7 @@
       <Items>
         <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr2.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Popup_Robot_speed" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>113</ObjectsCount>
+          <ObjectsCount>114</ObjectsCount>
           <ScreenName>Robots_Pan1_Scr2</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10202">

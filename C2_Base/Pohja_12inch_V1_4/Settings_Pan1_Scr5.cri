@@ -42,9 +42,8 @@
     </Category>
     <Category Name="Screen">
       <Items>
-        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr5.Group_AddPattern_btn.New_btn" TargetProperty="Actions" Source="Popup_PatternList_Add_pattern" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>110</ObjectsCount>
+          <ObjectsCount>83</ObjectsCount>
           <ScreenName>Settings_Pan1_Scr5</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10705">
@@ -54,8 +53,6 @@
     </Category>
     <Category Name="Script">
       <Items>
-        <Item Target="Settings_Pan1_Scr5.Script.cs" Source="Tags.HMI_PatternListEditor_AddPattern" />
-        <Item Target="Settings_Pan1_Scr5.Script.cs" Source="Tags.HMI_PatternListEditor_Number" />
         <Item Target="Settings_Pan1_Scr5.Script.cs" Source="Tags.HMI_Error_TextValue" />
         <Item Target="Settings_Pan1_Scr5.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
       </Items>
@@ -67,9 +64,10 @@
     </Category>
     <Category Name="Symbol">
       <Items>
-        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr5.Group_AddPattern_btn.New_btn" Source="orfer_open" Width="31" Height="31" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr5.Group_Delete_btn.Delete_btn" Source="orfer_delete" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr5.Group_Save_btn.Save_btn" Source="orfer_save" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr5.GroupPatternsSet.GroupPatternDelete.BtnPatternDelete" Source="action minus" Width="23" Height="7" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr5.GroupPatternsSet.GroupPatternAdd.BtnPatternAdd" Source="action add" Width="24" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr5.GroupReadBtn.BtnRead" Source="orfer_save" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr5.GroupSaveBtn.BtnSave" Source="orfer_save" Width="26" Height="26" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

@@ -31,10 +31,9 @@ namespace Neo.ApplicationFramework.Generated
 			int robotti = 1;
 			
 			// Lokimerkintä
-			Globals.Robotit.robotit[robotti].Loki.LisaaLokiin(
-				"Ryhmittelylavanvaihto tuloradalle " + lavapaikka);
+			Globals.Robotit.LisaaLokiin(robotti, "Ryhmittelylavanvaihto tuloradalle " + lavapaikka);
 
-			Globals.Robotit.robotit[robotti].TeeRyhmittelynLavanvaihto(lavapaikka);
+			Globals.Robotit.TeeRyhmittelynLavanvaihto(robotti, lavapaikka);
 		}
     }
 }

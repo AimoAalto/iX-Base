@@ -297,11 +297,11 @@
     </Polyline>
     <nacs2:Picture SymbolName="orfer_alarm_icon" Stretch="True" Name="m_Picture_RobAlarm" Width="55" Height="55" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="670" Canvas.Top="430" />
     <nac:Group Name="m_Group_StartProd_btn" Width="140.004545047989" Height="55" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="17" Canvas.Left="325.912778185357" Canvas.Top="525.200592572793">
-      <nac:Button ButtonAppearance="Rounded" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="START" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="65,2,2,2" RequiresTransparency="True" SymbolName="testi_3" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_StartProd" Width="140.004545047989" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="10" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsHidden="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" nacb2:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac1:StyleMarkupExtension Default}">
+      <nac:Button ButtonAppearance="Rounded" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="START" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="65,2,2,2" RequiresTransparency="True" SymbolName="testi_3" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_StartProd1" Width="140.004545047989" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="10" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsHidden="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" nacb2:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
           <ResourceDictionary>
-            <nacc1:VariantValueConverter x:Key="TextValueConverter" />
             <nacc1:VariantValueConverter x:Key="ValueConverter" />
+            <nacc1:VariantValueConverter x:Key="TextValueConverter" />
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.Value>
@@ -361,25 +361,84 @@
         </nac:Button.Background>
         <nai:ActionProperties.Actions>
           <nai:ActionList>
-            <nata:Action Name="Set Analog">
-              <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_Overview_track_selected" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
-                  <nata:ActionMethodInfo.ActionParameterInfo>
-                    <nai:ActionParameterInfoList>
-                      <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
-                        <nata:ActionParameterInfo.Value>
-                          <s:Int16>1</s:Int16>
-                        </nata:ActionParameterInfo.Value>
-                      </nata:ActionParameterInfo>
-                    </nai:ActionParameterInfoList>
-                  </nata:ActionMethodInfo.ActionParameterInfo>
-                </nata:ActionMethodInfo>
-              </nata:Action.ActionMethodInfo>
-            </nata:Action>
+            <nata:MultiAction Name="Multi Action">
+              <nata:MultiAction.Actions>
+                <nai:ActionList>
+                  <nata:Action Name="Set Analog">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_Selected_RobotNo" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                        <nata:ActionMethodInfo.ActionParameterInfo>
+                          <nai:ActionParameterInfoList>
+                            <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                              <nata:ActionParameterInfo.Value>
+                                <s:Int32>1</s:Int32>
+                              </nata:ActionParameterInfo.Value>
+                            </nata:ActionParameterInfo>
+                          </nai:ActionParameterInfoList>
+                        </nata:ActionMethodInfo.ActionParameterInfo>
+                      </nata:ActionMethodInfo>
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Set Analog">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_Overview_track_selected" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                        <nata:ActionMethodInfo.ActionParameterInfo>
+                          <nai:ActionParameterInfoList>
+                            <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                              <nata:ActionParameterInfo.Value>
+                                <s:Int16>1</s:Int16>
+                              </nata:ActionParameterInfo.Value>
+                            </nata:ActionParameterInfo>
+                          </nai:ActionParameterInfoList>
+                        </nata:ActionMethodInfo.ActionParameterInfo>
+                      </nata:ActionMethodInfo>
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                </nai:ActionList>
+              </nata:MultiAction.Actions>
+              <nata:MultiAction.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:MultiAction.ActionMethodInfo>
+            </nata:MultiAction>
           </nai:ActionList>
         </nai:ActionProperties.Actions>
       </nac:Button>
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FFDE304D" Stroke="{x:Null}" Name="m_Rectangle1" Width="140" Height="55" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="0" Canvas.Top="0" />
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Stroke="{x:Null}" Name="m_RectangleStartProd" Width="140" Height="55" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="0" Canvas.Top="0">
+        <nacc:Rectangle.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="FillConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval>
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="132, 162, 198" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval Start="1" End="1">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="157, 218, 78" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="222, 48, 77" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nacc:Rectangle.Resources>
+        <nacc:Rectangle.Fill>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_Aloitettu1].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFDE304D</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacc:Rectangle.Fill>
+      </nacc:Rectangle>
     </nac:Group>
     <nac:Group Name="m_Group_PlacePerm_1_btn" Width="40" Height="40" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="18" Canvas.Left="588.602293146107" Canvas.Top="442.422419044878">
       <nac:Button CornerRadius="5,5,5,5" ImageStretch="True" ImageHeight="40" ImageMargin="0,0,0,0" Text="" LockAspectRatio="True" TextMargin="0,0,0,0" RequiresTransparency="True" SymbolName="orfer_permission_selectedoff" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderThickness="0,0,0,0" Background="#FFBBBBBB" Foreground="#FF000000" FontSize="24" Name="m_Button10" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
@@ -434,8 +493,8 @@
       <nacs2:Symbol MultiPicture="True" Name="m_MultiPicture" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
         <nacs2:Symbol.Resources>
           <ResourceDictionary>
-            <nacc1:VariantValueConverter x:Key="ValueConverter" />
             <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+            <nacc1:VariantValueConverter x:Key="ValueConverter" />
           </ResourceDictionary>
         </nacs2:Symbol.Resources>
         <nacs2:Symbol.Value>
@@ -521,8 +580,8 @@
       <nacs2:Symbol MultiPicture="True" Name="m_MultiPicture1" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
         <nacs2:Symbol.Resources>
           <ResourceDictionary>
-            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
             <nacc1:VariantValueConverter x:Key="ValueConverter" />
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
           </ResourceDictionary>
         </nacs2:Symbol.Resources>
         <nacs2:Symbol.Value>
@@ -608,8 +667,8 @@
       <nacs2:Symbol MultiPicture="True" Name="m_MultiPicture2" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
         <nacs2:Symbol.Resources>
           <ResourceDictionary>
-            <nacc1:VariantValueConverter x:Key="ValueConverter" />
             <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+            <nacc1:VariantValueConverter x:Key="ValueConverter" />
           </ResourceDictionary>
         </nacs2:Symbol.Resources>
         <nacs2:Symbol.Value>
@@ -875,8 +934,8 @@
     <nacs2:SymbolViewbox Fill="#FF00FF00" SymbolColor="#FF00FF00" RequiresTransparency="True" ForceTransparency="False" Name="m_Rob1_jatto1" Width="25" Height="45" RenderTransformOrigin="0.438284643473321,0.482171695631453" Opacity="0.83597830309483" Visibility="Visible" Panel.ZIndex="25" Canvas.Left="594.209550579834" Canvas.Top="403.064265608378" nacb1:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs2:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
           <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
         </ResourceDictionary>
       </nacs2:SymbolViewbox.Resources>
       <nacb1:BlinkProperties.IsBlinkEnabled>
@@ -926,8 +985,8 @@
     <nacs2:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="True" ForceTransparency="False" Name="m_Rob1_otto1" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="25" Canvas.Left="595.07311326162" Canvas.Top="498.784741664118" nacb1:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs2:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
           <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
         </ResourceDictionary>
       </nacs2:SymbolViewbox.Resources>
       <nacb1:BlinkProperties.IsBlinkEnabled>
@@ -977,8 +1036,8 @@
     <nacs2:SymbolViewbox Fill="#FFDE304D" SymbolColor="#FFDE304D" RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox" Width="25" Height="45" RenderTransformOrigin="0.545055666074313,0.471528716701101" Opacity="1" Visibility="Visible" IsEnabled="True" Panel.ZIndex="30" Canvas.Left="687.817128097469" Canvas.Top="509.195183276807" nacb1:BlinkProperties.BlinkInterval="1200" nac:EnabledProperties.EnabledDynamicsValue="True" nacsd:EditorProperties.IsHidden="False">
       <nacs2:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
           <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="11" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
         </ResourceDictionary>
       </nacs2:SymbolViewbox.Resources>
       <nacb1:BlinkProperties.IsBlinkEnabled>
@@ -1029,7 +1088,7 @@
       </Canvas>
     </nacs2:SymbolViewbox>
     <nacs2:Picture SymbolName="orfer_dooropen_white" Stretch="True" Name="m_Picture4" Width="50" Height="50" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="34" Canvas.Left="977.962018448183" Canvas.Top="432.5" nacb1:BlinkProperties.VisibleDynamicsValue="True" />
-    <nacs2:Picture SymbolName="orfer_lightcurtain_white" Stretch="True" Name="m_Picture13" Width="55" Height="55" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="894.127903915095" Canvas.Top="204.60730761989" />
+    <nacs2:Picture SymbolName="orfer_lightcurtain_white" Stretch="True" Name="m_Picture13" Width="55" Height="55" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="912" Canvas.Top="208" />
     <nacs2:Picture SymbolName="orfer_estop_white" Stretch="True" Name="m_Picture15" Width="50" Height="50" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="45" Canvas.Left="817.102550189908" Canvas.Top="638.611231687466" />
     <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#00FFFFFF" StrokeThickness="1" Name="m_shadow" Width="1286.63541666667" Height="666.364583333336" RenderTransformOrigin="0.5,0.5" Opacity="0.6" Visibility="Visible" Panel.ZIndex="28" Canvas.Left="-6.14583333333363" Canvas.Top="69.0164930555555" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="True">
       <nacc:Rectangle.Resources>

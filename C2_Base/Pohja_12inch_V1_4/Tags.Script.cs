@@ -392,13 +392,22 @@ namespace Neo.ApplicationFramework.Generated
 			
 			Globals.Tags.Settings_PanelNumber.SetAnalog(Globals._Konfiguraatio.CurrentConfig.PanelNo);
 
-			if (Globals.Tags.Settings_PanelNumber.Value < 1)
+			int no = (int)Globals.Tags.Settings_PanelNumber.Value;
+			if (no < 1)
 			{
 				Globals.ScreenSelection.Show();
 			}
 			else
 			{
-				SystemTagNewScreenId.SetAnalog(10001);
+				try 
+				{
+					SystemTagNewScreenId.SetAnalog(10000 + no);
+				}
+				catch (Exception x)
+				{
+					Log(x.Message);
+					SystemTagNewScreenId.SetAnalog(10001);
+				}
 			}
 		}
 
@@ -422,99 +431,74 @@ namespace Neo.ApplicationFramework.Generated
 			}
 		}
 
-		void Line1_PLC_Auto_Area_Mode_C1_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
+		void Line1_PLC_Auto_Area_Mode_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
-			if (Line1_PLC_Auto_Area_Mode_C1.Value < 50)
-			{
-				Line1_Internal_ManualEnabled_1.Value = true;
-			}
-			else
-			{
-				Line1_Internal_ManualEnabled_1.Value = false;
-			}
-		}
+			int id = -1;
+			int value = -1;
+			bool reset = false;
+			string name = ((IBasicTag)sender).Name;
 
-		void Line1_PLC_Auto_Area_Mode_C2_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
-		{
-			if (Line1_PLC_Auto_Area_Mode_C2.Value < 50)
+			//System.Diagnostics.Trace.WriteLine(name);
+			
+			if (name.StartsWith("Line1_Manual_Area_Enabled_"))
 			{
-				Line1_Internal_ManualEnabled_2.Value = true;
+				bool sval = (bool)GetTagValue(name);
+				reset = sval == false;
+				string aux = name.Substring(26); // length of 'Line1_Manual_Area_Enabled_'
+				
+				if (int.TryParse(aux, out id))
+				{
+					string tagname = string.Format("Line1_PLC_Auto_Area_Mode_C{0}", id);
+					value = (int)GetTagValue(tagname);
+				}
+				else
+				{
+					string s = "Error in tagname" + name;
+					System.Diagnostics.Trace.WriteLine(s);
+					Log(s);
+				}
+				//System.Diagnostics.Trace.WriteLine(string.Format("ena...value = {0} - id = {1}", value, id));
+			}
+			else if (name.StartsWith("Line1_PLC_Auto_Area_Mode_C"))
+			{
+				string aux = name.Substring(26); // length of 'Line1_PLC_Auto_Area_Mode_C'
+				if (int.TryParse(aux, out id))
+				{
+					value = (int)GetTagValue(name);
+					
+					string tagname = string.Format("Line1_Manual_Area_Enabled_{0}", id);
+					bool sval = (bool)GetTagValue(name);
+					reset = sval == false;
+				}
+				else
+				{
+					string s = "Ei ole numero" + aux;
+					System.Diagnostics.Trace.WriteLine(s);
+					Log(s);
+				}
+				//System.Diagnostics.Trace.WriteLine(string.Format("mode...value = {0} - id = {1}", value, id));
 			}
 			else
 			{
-				Line1_Internal_ManualEnabled_2.Value = false;
+				System.Diagnostics.Trace.WriteLine("no luck...");
 			}
-		}
-
-		void Line1_PLC_Auto_Area_Mode_C3_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
-		{
-			if (Line1_PLC_Auto_Area_Mode_C3.Value < 50)
+			
+			if (id >= 0)
 			{
-				Line1_Internal_ManualEnabled_3.Value = true;
-			}
-			else
-			{
-				Line1_Internal_ManualEnabled_3.Value = false;
-			}
-		}
-
-		void Line1_PLC_Auto_Area_Mode_C4_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
-		{
-			if (Line1_PLC_Auto_Area_Mode_C4.Value < 50)
-			{
-				Line1_Internal_ManualEnabled_4.Value = true;
+				string tagname = string.Format("Line1_Internal_ManualEnabled_{0}", id);
+				IBasicTag tag = GetTag(tagname);
+				System.Diagnostics.Trace.WriteLine(string.Format("set : {0} = value = {1}. reset = [{2}]", tagname, value, reset));
+				if (tag != null)
+				{
+					if (value >= 50 || reset)
+						tag.ResetTag();
+					else
+						tag.SetTag();
+				}
 			}
 			else
 			{
-				Line1_Internal_ManualEnabled_4.Value = false;
-			}
-		}
-
-		void Line1_PLC_Auto_Area_Mode_C5_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
-		{
-			if (Line1_PLC_Auto_Area_Mode_C5.Value < 50)
-			{
-				Line1_Internal_ManualEnabled_5.Value = true;
-			}
-			else
-			{
-				Line1_Internal_ManualEnabled_5.Value = false;
-			}
-		}
-
-		void Line1_Manual_Area_Enabled_6_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
-		{
-			if (Line1_PLC_Auto_Area_Mode_C6.Value < 50)
-			{
-				Line1_Internal_ManualEnabled_6.Value = true;
-			}
-			else
-			{
-				Line1_Internal_ManualEnabled_6.Value = false;
-			}
-		}
-
-		void Line1_Manual_Area_Enabled_7_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
-		{
-			if (Line1_PLC_Auto_Area_Mode_C7.Value < 50)
-			{
-				Line1_Internal_ManualEnabled_7.Value = true;
-			}
-			else
-			{
-				Line1_Internal_ManualEnabled_7.Value = false;
-			}
-		}
-
-		void Line1_Manual_Area_Enabled_8_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
-		{
-			if (Line1_PLC_Auto_Area_Mode_C8.Value < 50)
-			{
-				Line1_Internal_ManualEnabled_8.Value = true;
-			}
-			else
-			{
-				Line1_Internal_ManualEnabled_8.Value = false;
+				System.Diagnostics.Trace.WriteLine("not yet...");
 			}
 		}
 	}

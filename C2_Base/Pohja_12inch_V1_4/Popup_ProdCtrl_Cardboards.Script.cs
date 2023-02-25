@@ -44,7 +44,6 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">this</param>
 		void ProdCtrl_Cardboards_Opened(System.Object sender, System.EventArgs e)
 		{
-			
 			// Haetaan kaikki kerros ja välipahvi elementit näytöltä            
 			Elementit.Clear();
 			HaeLapsi(this);
@@ -176,6 +175,7 @@ namespace Neo.ApplicationFramework.Generated
 				// Katsotaan kummalle robotille tulorata on
 				int robottiNo = 0;
 				int roboLavapaikka = 0;
+
 				Globals._Konfiguraatio.CurrentConfig.GetRobotinLavapaikka(Globals.Tags.HMI_PalletPlace.Value, out robottiNo, out roboLavapaikka);
 				
 				if(robottiNo == 0)

@@ -27,19 +27,21 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			CBSetSelection.SelectedIndex = 0;
 			Globals.Tags.HMI_ConfGroupSet.SetAnalog(0);
+			ANSettingsFilename.Text = _Konfiguraatio.ConfigFileName;
+			if (Globals.Tags.Conf_UseOnly_NVBD.Value.Bool == false) RBUseSettingsFile.Checked = true;
 			
 			Globals._Konfiguraatio.CurrentConfig.PanelNo = Globals.Tags.Settings_PanelNumber.Value.Int;
-			UpdateRobotCB();
-			UpdateSettingsFields();
+			InitRobotCB();
+			InitSettingsFields();
 		}
 		
 		#region update fields
 		
 		/// <summary>
-		/// update combobox with common values and robot selection
+		/// Init combobox with common values and robot selection
 		/// </summary>
 		/// <returns></returns>
-		void UpdateRobotCB()
+		void InitRobotCB()
 		{			
 			CBSelectedRobot.Items.Clear();
 			rno = 0;
@@ -55,148 +57,178 @@ namespace Neo.ApplicationFramework.Generated
 		}
 		
 		/// <summary>
-		/// Update settings listboxes and other fields
+		/// init given listbox with dictionary values (items)
 		/// </summary>
+		/// <param name="lb"></param>
+		/// <param name="lst"></param>
 		/// <returns></returns>
-		void UpdateSettingsFields()
+		void InitListBox(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter lb, Dictionary<int,int> lst)
 		{
-			ANPanelNo.Value = Globals._Konfiguraatio.CurrentConfig.PanelNo;
-			ANNumberOfPLC.Value = Globals._Konfiguraatio.CurrentConfig.NumberOfPLC;
-			
-			LBPalletTypes.Items.Clear();
-			foreach (KeyValuePair<int, string> item in Globals._Konfiguraatio.CurrentConfig.Lavatyypit)
+			lb.Items.Clear();			
+			foreach (KeyValuePair<int, int> item in lst)
 			{
-				string s = string.Format("[{0}] {1}", item.Key, item.Value);
-				int i = LBPalletTypes.Items.Add(item);
+				lb.Items.Add(item);
 			}
-			
-			LBWTimes.Items.Clear();
-			foreach (KeyValuePair<string, int> item in Globals._Konfiguraatio.CurrentConfig.Aikavalit)
-			{
-				string s = string.Format("[{0}] {1}", item.Key, item.Value);
-				int i = LBWTimes.Items.Add(item);
-			}
-			
-			LBInfeedPlaces.Items.Clear();			
-			foreach (KeyValuePair<int, int> item in Globals._Konfiguraatio.CurrentConfig.Tuloradat)
-			{
-				string s = string.Format("[{0}] {1}", item.Key, item.Value);
-				int i = LBInfeedPlaces.Items.Add(item);
-			}
-			
-			LBPalletPlaces.Items.Clear();			
-			foreach (KeyValuePair<int, int> item in Globals._Konfiguraatio.CurrentConfig.Lavapaikat)
-			{
-				string s = string.Format("[{0}] {1}", item.Key, item.Value);
-				int i = LBPalletPlaces.Items.Add(item);
-			}
+		}
 
-			UpdateRobotAllowedPlaces(rno);
-
-			UpdateAllowedPatterns();
-			
-			UpdatePatternAllowedPlaces(pno);
-
-			UpdateSettingsJson();
+		void InitListBox(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter lb, Dictionary<int,string> lst)
+		{
+			lb.Items.Clear();			
+			foreach (KeyValuePair<int, string> item in lst)
+			{
+				lb.Items.Add(item);
+			}
 		}
 		
-		void UpdateAllowedPatterns()
+		void InitLists(int mode)
+		{
+			if (mode == 1 || mode == 0)
+			{
+				InitListBox(LBInfeedTracks, Globals._Konfiguraatio.CurrentConfig.Tuloradat);
+			}
+			
+			if (mode == 2 || mode == 0)
+			{
+				InitListBox(LBPalletPlaces, Globals._Konfiguraatio.CurrentConfig.Lavapaikat);
+			}
+
+			if (mode == 3 || mode == 0)
+			{
+				InitListBox(LBPalletTypes, Globals._Konfiguraatio.CurrentConfig.Lavatyypit);
+			}
+		}
+		
+		System.Windows.Controls.CheckBox CreateCheckBox(string title, object tag, bool ischecked, System.Windows.RoutedEventHandler clicked)
+		{
+			System.Windows.Controls.CheckBox cb = new System.Windows.Controls.CheckBox();
+			cb.Foreground = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.White);
+			cb.Content = title;
+			cb.Tag = tag;
+			cb.IsChecked = ischecked;
+			cb.Click += clicked;
+			return cb;
+		}
+		
+		void ClearListAndEvent(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter lb, System.Windows.RoutedEventHandler clicked)
+		{
+			// clear items and click handlers
+			foreach (object item in lb.Items)
+				if (item is System.Windows.Controls.CheckBox)
+					((System.Windows.Controls.CheckBox)item).Click -= clicked;
+			lb.Items.Clear();
+		}
+		
+		void InitListBoxAndEvent(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter lb, System.Windows.RoutedEventHandler clicked, Dictionary<int, int> lst, List<int> allowed)
+		{
+			ClearListAndEvent(lb, clicked);
+			// create new items with click handler
+			foreach (KeyValuePair<int, int> item in lst)
+			{
+				string s = string.Format("[{0}] {1}", item.Key, item.Value);
+				System.Windows.Controls.CheckBox cb = CreateCheckBox(s, item.Key, allowed.Contains(item.Key), clicked);
+				lb.Items.Add(cb);
+			}
+		}
+
+		void InitListBoxAndEvent(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter lb, System.Windows.RoutedEventHandler clicked, Dictionary<int, string> lst, List<int> allowed)
+		{
+			ClearListAndEvent(lb, clicked);
+			// create new items with click handler
+			foreach (KeyValuePair<int, string> item in lst)
+			{
+				string s = string.Format("[{0}] {1}", item.Key, item.Value);
+				System.Windows.Controls.CheckBox cb = CreateCheckBox(s, item.Key, allowed.Contains(item.Key), clicked);
+				lb.Items.Add(cb);
+			}
+		}
+
+		/// <summary>
+		/// list allowed pattern numbers in listbox
+		/// </summary>
+		/// <returns></returns>
+		void InitAllowedPatterns()
 		{
 			LBPatternNo.Items.Clear();
 			pno = 0;
-			foreach (int no in Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.Keys)
+			List<int> lst = Globals._Konfiguraatio.CurrentConfig.AllowedPatternNumbers();
+			foreach (int no in lst)
 			{
 				if (pno == 0) pno = no;
 				LBPatternNo.Items.Add(no);
 			}
 		}
 
-		void ClearListBoxItems(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter l)
+		/// <summary>
+		/// Update listboxes for allowed infeed tracks and pallet places
+		/// </summary>
+		/// <param name="rno"></param>
+		/// <returns></returns>
+		void InitPatternAllowedLists(int pno, int mode)
 		{
-			foreach (object item in l.Items)
+			if (mode == 1 || mode == 0)
 			{
-				if (item is System.Windows.Controls.CheckBox)
-				{
-					((System.Windows.Controls.CheckBox)item).Click -= CBInfeedTracks_Click;
-				}
+				InitListBoxAndEvent(LBPatternAllowedIT, CBPatternInfeedTrack_Click, Globals._Konfiguraatio.CurrentConfig.Tuloradat, 
+					Globals._Konfiguraatio.CurrentConfig.AllowedPatternInfeedTracks(pno));
 			}
-			l.Items.Clear();
+			
+			if (mode == 2 || mode == 0)
+			{
+				InitListBoxAndEvent(LBPatternAllowedPP, CBPatternPalletPlace_Click, Globals._Konfiguraatio.CurrentConfig.Lavapaikat, 
+					Globals._Konfiguraatio.CurrentConfig.AllowedPatternPalletPlaces(pno));
+			}
+
+			if (mode == 3 || mode == 0)
+			{
+				InitListBoxAndEvent(LBPatternAllowedPT, CBPatternPalletType_Click, Globals._Konfiguraatio.CurrentConfig.Lavatyypit, 
+					Globals._Konfiguraatio.CurrentConfig.AllowedPatternPalletTypes(pno));
+			}
 		}
 		
 		/// <summary>
-		/// Update listboxes for allowed infeed tracks and pallet places
+		/// init listboxes for allowed infeed tracks
 		/// </summary>
 		/// <param name="rno"></param>
 		/// <returns></returns>
-		void UpdateRobotAllowedPlaces(int rno)
+		void InitRobotAllowedLists(int rno, int mode)
 		{
-			ClearListBoxItems(LBAllowedPalletPlaces);
-			foreach (KeyValuePair<int, int> item in Globals._Konfiguraatio.CurrentConfig.Lavapaikat)
+			if (mode == 1 || mode == 0)
 			{
-				string s = string.Format("[{0}] {1}", item.Key, item.Value);
-				System.Windows.Controls.CheckBox cb = new System.Windows.Controls.CheckBox();
-				cb.Content = s;
-				cb.Tag = item.Key;
-				cb.IsChecked = Globals._Konfiguraatio.CurrentConfig.IsAllowedPalletPlace(rno, item.Key);
-				cb.Click += CBInfeedTracks_Click;
-				LBAllowedPalletPlaces.Items.Add(cb);
+				InitListBoxAndEvent(LBAllowedInfeedTracks, CBInfeedTracks_Click, Globals._Konfiguraatio.CurrentConfig.Tuloradat, 
+					Globals._Konfiguraatio.CurrentConfig.AllowedInfeedTracks(rno));
 			}
 			
-			ClearListBoxItems(LBAllowedInfeedPlaces);
-			foreach (KeyValuePair<int, int> item in Globals._Konfiguraatio.CurrentConfig.Tuloradat)
+			if (mode == 2 || mode == 0)
 			{
-				string s = string.Format("[{0}] {1}", item.Key, item.Value);
-				System.Windows.Controls.CheckBox cb = new System.Windows.Controls.CheckBox();
-				cb.Content = s;
-				cb.Tag = item.Key;
-				cb.IsChecked = Globals._Konfiguraatio.CurrentConfig.IsAllowedInfeedTrack(rno, item.Key);
-				cb.Click += CBPalletPlaces_Click;
-				LBAllowedInfeedPlaces.Items.Add(cb);
+				InitListBoxAndEvent(LBAllowedPalletPlaces, CBPalletPlaces_Click, Globals._Konfiguraatio.CurrentConfig.Lavapaikat, 
+					Globals._Konfiguraatio.CurrentConfig.AllowedPalletPlaces(rno));
 			}
 		}
-
+		
 		/// <summary>
-		/// Update listboxes for allowed infeed tracks and pallet places
+		/// Init settings listboxes and other fields
 		/// </summary>
-		/// <param name="rno"></param>
 		/// <returns></returns>
-		void UpdatePatternAllowedPlaces(int pno)
+		void InitSettingsFields()
 		{
-			ClearListBoxItems(LBPatternAllowedIT);
-			foreach (KeyValuePair<int, int> item in Globals._Konfiguraatio.CurrentConfig.Tuloradat)
+			ANPanelNo.Value = Globals._Konfiguraatio.CurrentConfig.PanelNo;
+			ANNumberOfPLC.Value = Globals._Konfiguraatio.CurrentConfig.NumberOfPLC;
+
+			LBWTimes.Items.Clear();
+			foreach (KeyValuePair<string, int> item in Globals._Konfiguraatio.CurrentConfig.Aikavalit)
 			{
-				string s = string.Format("[{0}] {1}", item.Key, item.Value);
-				System.Windows.Controls.CheckBox cb = new System.Windows.Controls.CheckBox();
-				cb.Content = s;
-				cb.Tag = item.Key;
-				cb.IsChecked = Globals._Konfiguraatio.CurrentConfig.IsAllowedPatternInfeedTrack(pno, item.Key);
-				cb.Click += CBPatternInfeedTrack_Click;
-				LBPatternAllowedIT.Items.Add(cb);
+				//string s = string.Format("[{0}] {1}", item.Key, item.Value);
+				LBWTimes.Items.Add(item);
 			}
+
+			rno = 0;
+			pno = 0;
 			
-			ClearListBoxItems(LBPatternAllowedPP);
-			foreach (KeyValuePair<int, int> item in Globals._Konfiguraatio.CurrentConfig.Lavapaikat)
-			{
-				string s = string.Format("[{0}] {1}", item.Key, item.Value);
-				System.Windows.Controls.CheckBox cb = new System.Windows.Controls.CheckBox();
-				cb.Content = s;
-				cb.Tag = item.Key;
-				cb.IsChecked = Globals._Konfiguraatio.CurrentConfig.IsAllowedPatternPalletPlace(pno, item.Key);
-				cb.Click += CBPatternPalletPlace_Click;
-				LBPatternAllowedPP.Items.Add(cb);
-			}
-			
-			ClearListBoxItems(LBPatternAllowedPT);
-			foreach (KeyValuePair<int, string> item in Globals._Konfiguraatio.CurrentConfig.Lavatyypit)
-			{
-				string s = string.Format("[{0}] {1}", item.Key, item.Value);
-				System.Windows.Controls.CheckBox cb = new System.Windows.Controls.CheckBox();
-				cb.Content = s;
-				cb.Tag = item.Key;
-				cb.IsChecked = Globals._Konfiguraatio.CurrentConfig.IsAllowedPatternPalletType(pno, item.Key);
-				cb.Click += CBPatternPalletType_Click;
-				LBPatternAllowedPT.Items.Add(cb);
-			}
+			InitLists(0);
+			InitRobotAllowedLists(rno, 0);
+			InitAllowedPatterns();
+			InitPatternAllowedLists(pno, 0);
+
+			UpdateSettingsJson();
 		}
 		
 		/// <summary>
@@ -210,14 +242,14 @@ namespace Neo.ApplicationFramework.Generated
 				string s = Newtonsoft.Json.JsonConvert.SerializeObject(
 					Globals._Konfiguraatio.CurrentConfig, 
 					Newtonsoft.Json.Formatting.Indented);
-				TextBox.Text = s;
+				TextBoxSettings.Text = s;
 			}
 			catch (Exception x)
 			{
 				System.Windows.Forms.MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		#endregion
 		
 		void BtnSave_Click(System.Object sender, System.EventArgs e)
@@ -228,7 +260,7 @@ namespace Neo.ApplicationFramework.Generated
 		void BtnRead_Click(System.Object sender, System.EventArgs e)
 		{
 			Globals._Konfiguraatio.Read();
-			UpdateSettingsFields();
+			InitSettingsFields();
 		}
 	
 		void CBSetSelection_SelectionChanged(System.Object sender, System.EventArgs e)
@@ -238,7 +270,10 @@ namespace Neo.ApplicationFramework.Generated
 				{
 					Globals.Tags.HMI_ConfGroupSet.SetAnalog(CBSetSelection.SelectedIndex);
 				}
-				catch {}
+				catch (Exception x)
+				{
+					System.Windows.Forms.MessageBox.Show(x.Message);
+				}
 		}
 		
 		void CBSelectedRobot_SelectionChanged(System.Object sender, System.EventArgs e)
@@ -247,7 +282,7 @@ namespace Neo.ApplicationFramework.Generated
 			try 
 			{
 				rno = Globals._Konfiguraatio.CurrentConfig.GetRobotNoByIndex(CBSelectedRobot.SelectedIndex);
-				UpdateRobotAllowedPlaces(rno);
+				InitRobotAllowedLists(rno, 0);
 				ANDebug.Text = string.Format("[{0}] {1}", rno, CBSelectedRobot.SelectedIndex);
 			}
 			catch (Exception x)
@@ -315,6 +350,8 @@ namespace Neo.ApplicationFramework.Generated
 					}
 				
 					UpdateSettingsJson();
+					InitRobotAllowedLists(rno, 3);
+					InitPatternAllowedLists(pno, 3);
 				}
 				else
 				{
@@ -337,8 +374,10 @@ namespace Neo.ApplicationFramework.Generated
 					{
 						int key = ((KeyValuePair<int, string>)LBPalletTypes.Items[LBPalletTypes.SelectedIndex]).Key;
 						LBPalletTypes.Items.RemoveAt(LBPalletTypes.SelectedIndex);
-						Globals._Konfiguraatio.CurrentConfig.Lavatyypit.Remove(key);
+						Globals._Konfiguraatio.CurrentConfig.RemovePalletType(key);
 						UpdateSettingsJson();
+						InitRobotAllowedLists(rno, 3);
+						InitPatternAllowedLists(pno, 3);
 					}
 				}
 				else
@@ -458,24 +497,24 @@ namespace Neo.ApplicationFramework.Generated
 		
 		#endregion
 		
-		#region Available Infeed places
+		#region Available Infeed tracks
 		
-		void LBInfeedPlaces_SelectionChanged(System.Object sender, System.EventArgs e)
+		void LBInfeedTracks_SelectionChanged(System.Object sender, System.EventArgs e)
 		{
-			if (LBInfeedPlaces.SelectedIndex < 0 || LBInfeedPlaces.SelectedIndex > (LBInfeedPlaces.Items.Count - 1))
+			if (LBInfeedTracks.SelectedIndex < 0 || LBInfeedTracks.SelectedIndex > (LBInfeedTracks.Items.Count - 1))
 			{
-				ANIPId.Text = "";
-				ANIPRobotId.Text = "";
-				ANIPSelIndex.Text = LBInfeedPlaces.SelectedIndex.ToString();
+				ANITId.Text = "";
+				ANITRobotId.Text = "";
+				ANITSelIndex.Text = LBInfeedTracks.SelectedIndex.ToString();
 			}
 			else
 			{
 				try
 				{
-					KeyValuePair<int, int> item = (KeyValuePair<int, int>)LBInfeedPlaces.SelectedItem;
-					ANIPId.Text = item.Key.ToString();
-					ANIPRobotId.Text = item.Value.ToString();
-					ANIPSelIndex.Text = LBInfeedPlaces.SelectedIndex.ToString();
+					KeyValuePair<int, int> item = (KeyValuePair<int, int>)LBInfeedTracks.SelectedItem;
+					ANITId.Text = item.Key.ToString();
+					ANITRobotId.Text = item.Value.ToString();
+					ANITSelIndex.Text = LBInfeedTracks.SelectedIndex.ToString();
 				}
 				catch (Exception x)
 				{
@@ -484,29 +523,29 @@ namespace Neo.ApplicationFramework.Generated
 			}
 		}
 		
-		void BtnIPAdd_Click(System.Object sender, System.EventArgs e)
+		void BtnITAdd_Click(System.Object sender, System.EventArgs e)
 		{
 			try 
 			{
-				string s = ANIPId.Text.Trim();
+				string s = ANITId.Text.Trim();
 				int id;
 				if (int.TryParse(s, out id))
 				{
-					s = ANIPRobotId.Text.Trim();
+					s = ANITRobotId.Text.Trim();
 					int rid;
 					if (int.TryParse(s, out rid))
 					{
 						bool isnew = true;
-						if (LBInfeedPlaces.Items.Count > 0)
+						if (LBInfeedTracks.Items.Count > 0)
 						{
-							for (int i = LBInfeedPlaces.Items.Count - 1; i > 0; i--)
+							for (int i = LBInfeedTracks.Items.Count - 1; i > 0; i--)
 							{
-								int key = ((KeyValuePair<int, int>)LBInfeedPlaces.Items[i]).Key;
+								int key = ((KeyValuePair<int, int>)LBInfeedTracks.Items[i]).Key;
 								if (key == id)
 								{
 									isnew = false;
-									LBInfeedPlaces.Items.RemoveAt(i);
-									LBInfeedPlaces.Items.Insert(i, new KeyValuePair<int, int>(key, rid));
+									LBInfeedTracks.Items.RemoveAt(i);
+									LBInfeedTracks.Items.Insert(i, new KeyValuePair<int, int>(key, rid));
 									Globals._Konfiguraatio.CurrentConfig.Tuloradat[key] = rid;
 								}
 							}
@@ -514,11 +553,13 @@ namespace Neo.ApplicationFramework.Generated
 					
 						if (isnew)
 						{
-							LBInfeedPlaces.Items.Add(new KeyValuePair<int, int>(id, rid));
+							LBInfeedTracks.Items.Add(new KeyValuePair<int, int>(id, rid));
 							Globals._Konfiguraatio.CurrentConfig.Tuloradat[id] = rid;
 						}
 				
 						UpdateSettingsJson();
+						InitRobotAllowedLists(rno, 1);
+						InitPatternAllowedLists(pno, 1);
 					}
 					else
 					{
@@ -536,18 +577,20 @@ namespace Neo.ApplicationFramework.Generated
 			}	
 		}
 		
-		void BtnIPDelete_Click(System.Object sender, System.EventArgs e)
+		void BtnITDelete_Click(System.Object sender, System.EventArgs e)
 		{
 			try 
 			{
-				if (LBInfeedPlaces.Items.Count > 0)
+				if (LBInfeedTracks.Items.Count > 0)
 				{
-					if (LBInfeedPlaces.SelectedIndex >= 0 && LBInfeedPlaces.SelectedIndex < LBInfeedPlaces.Items.Count)
+					if (LBInfeedTracks.SelectedIndex >= 0 && LBInfeedTracks.SelectedIndex < LBInfeedTracks.Items.Count)
 					{
-						int key = ((KeyValuePair<int, int>)LBInfeedPlaces.Items[LBInfeedPlaces.SelectedIndex]).Key;
-						LBInfeedPlaces.Items.RemoveAt(LBInfeedPlaces.SelectedIndex);
-						Globals._Konfiguraatio.CurrentConfig.Tuloradat.Remove(key);
+						int key = ((KeyValuePair<int, int>)LBInfeedTracks.Items[LBInfeedTracks.SelectedIndex]).Key;
+						LBInfeedTracks.Items.RemoveAt(LBInfeedTracks.SelectedIndex);
+						Globals._Konfiguraatio.CurrentConfig.RemoveInfeedTrack(key);
 						UpdateSettingsJson();
+						InitRobotAllowedLists(rno, 1);
+						InitPatternAllowedLists(pno, 1);
 					}
 				}
 				else
@@ -624,6 +667,8 @@ namespace Neo.ApplicationFramework.Generated
 						}
 				
 						UpdateSettingsJson();
+						InitRobotAllowedLists(rno, 2);
+						InitPatternAllowedLists(pno, 2);
 					}
 					else
 					{
@@ -651,8 +696,10 @@ namespace Neo.ApplicationFramework.Generated
 					{
 						int key = ((KeyValuePair<int, int>)LBPalletPlaces.Items[LBPalletPlaces.SelectedIndex]).Key;
 						LBPalletPlaces.Items.RemoveAt(LBPalletPlaces.SelectedIndex);
-						Globals._Konfiguraatio.CurrentConfig.Lavapaikat.Remove(key);
+						Globals._Konfiguraatio.CurrentConfig.RemovePalletPlace(key);
 						UpdateSettingsJson();
+						InitRobotAllowedLists(rno, 2);
+						InitPatternAllowedLists(pno, 2);
 					}
 				}
 				else
@@ -683,7 +730,7 @@ namespace Neo.ApplicationFramework.Generated
 				{
 					Globals._Konfiguraatio.CurrentConfig.AddRobot(no);
 					UpdateSettingsJson();
-					UpdateRobotCB();
+					InitRobotCB();
 				}
 			}
 			catch (Exception x)
@@ -708,7 +755,9 @@ namespace Neo.ApplicationFramework.Generated
 					{
 						Globals._Konfiguraatio.CurrentConfig.RemoveRobot(no);
 						UpdateSettingsJson();
-						UpdateRobotCB();
+						InitRobotCB();
+						rno = 0;
+						InitRobotAllowedLists(rno, 0);
 					}
 				}
 				else
@@ -796,9 +845,9 @@ namespace Neo.ApplicationFramework.Generated
 				{
 					Globals._Konfiguraatio.CurrentConfig.AddPattern(no);
 					UpdateSettingsJson();
-					UpdateAllowedPatterns();
+					InitAllowedPatterns();
 					pno = no;
-					UpdatePatternAllowedPlaces(no);
+					InitPatternAllowedLists(pno, 0);
 				}
 			}
 			catch (Exception x)
@@ -823,8 +872,10 @@ namespace Neo.ApplicationFramework.Generated
 					{
 						Globals._Konfiguraatio.CurrentConfig.RemovePattern(no);
 						UpdateSettingsJson();
-						UpdateAllowedPatterns();
-						UpdatePatternAllowedPlaces(no);
+						InitAllowedPatterns();
+						ANNewPatternNo.Text = "";
+						pno = 0;
+						InitPatternAllowedLists(pno, 0);
 					}
 				}
 				else
@@ -851,7 +902,7 @@ namespace Neo.ApplicationFramework.Generated
 				{
 					ANPatternNo.Text = LBPatternNo.SelectedItem.ToString();
 					pno = (int)LBPatternNo.SelectedItem;
-					UpdatePatternAllowedPlaces(pno);
+					InitPatternAllowedLists(pno, 0);
 				}
 			}
 			catch (Exception x)
@@ -862,7 +913,7 @@ namespace Neo.ApplicationFramework.Generated
 		
 		void CBPatternPalletPlace_Click(System.Object sender, System.EventArgs e)
 		{
-			if (rno >= 0)
+			if (pno >= 0)
 				try
 				{
 					if (sender is System.Windows.Controls.CheckBox)
@@ -887,7 +938,7 @@ namespace Neo.ApplicationFramework.Generated
 
 		void CBPatternInfeedTrack_Click(System.Object sender, System.EventArgs e)
 		{
-			if (rno >= 0)
+			if (pno >= 0)
 				try
 				{
 					if (sender is System.Windows.Controls.CheckBox)
@@ -912,7 +963,7 @@ namespace Neo.ApplicationFramework.Generated
 
 		void CBPatternPalletType_Click(System.Object sender, System.EventArgs e)
 		{
-			if (rno >= 0)
+			if (pno >= 0)
 				try
 				{
 					if (sender is System.Windows.Controls.CheckBox)
