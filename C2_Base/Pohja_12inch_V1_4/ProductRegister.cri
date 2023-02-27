@@ -6,7 +6,7 @@
     </Category>
     <Category Name="Alias">
       <Items>
-        <Item Target="ProductRegister.AnalogNumeric12" TargetProperty="Value" Source="ProductRegister.maxkerros" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric12" TargetProperty="Value" Source="ProductRegister.maxkerros" />
       </Items>
     </Category>
     <Category Name="AliasInstanceDataItem">
@@ -26,55 +26,44 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="ProductRegister.AnalogNumeric3" TargetProperty="Value" Source="Tags.ProdReg_Robot1_X_Centering" />
-        <Item Target="ProductRegister.AnalogNumeric3" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.AnalogNumeric4" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Y_Centering" />
-        <Item Target="ProductRegister.AnalogNumeric4" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.AnalogNumeric10" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Speed_Empty" />
-        <Item Target="ProductRegister.AnalogNumeric10" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.AnalogNumeric2" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Acceleration_Empty" />
-        <Item Target="ProductRegister.AnalogNumeric2" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.AnalogNumeric_SpeedLoad" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Speed_Full" />
-        <Item Target="ProductRegister.AnalogNumeric_SpeedLoad" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.AnalogNumeric_AccLoad" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Acceleration_Full" />
-        <Item Target="ProductRegister.AnalogNumeric_AccLoad" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
         <Item Target="ProductRegister.RecipeName_txt" TargetProperty="Value" Source="Tags.ProdReg_RecipeName" />
-        <Item Target="ProductRegister.AnalogNumeric1" TargetProperty="Value" Source="Tags.ProdReg_LayerCount" />
-        <Item Target="ProductRegister.AnalogNumeric1" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
         <Item Target="ProductRegister.Text8" TargetProperty="Value" Source="Tags.SystemTagLatestLoadedRecipeName" />
-        <Item Target="ProductRegister.AnalogNumeric12" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.AnalogNumeric11" TargetProperty="Value" Source="Tags.ProdReg_PickDelay" />
-        <Item Target="ProductRegister.AnalogNumeric11" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.AnalogNumeric13" TargetProperty="Value" Source="Tags.ProdReg_PlaceDelay" />
-        <Item Target="ProductRegister.AnalogNumeric13" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.KuvioComboBox" TargetProperty="Value" Source="Tags.ProdReg_PalletPattern" />
         <Item Target="ProductRegister.AnalogNumeric14" TargetProperty="Value" Source="Tags.ProdReg_RiviNro" />
-        <Item Target="ProductRegister.PalletTypeComboBox" TargetProperty="Value" Source="Tags.ProdReg_PalletType" />
-        <Item Target="ProductRegister.AnalogNumeric9" TargetProperty="Value" Source="Tags.ProdReg_ProductNo" />
-        <Item Target="ProductRegister.AnalogNumeric9" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.AnalogNumeric8" TargetProperty="Value" Source="Tags.ProdReg_Product_Height" />
-        <Item Target="ProductRegister.AnalogNumeric8" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.AnalogNumeric7" TargetProperty="Value" Source="Tags.ProdReg_Product_Width" />
-        <Item Target="ProductRegister.AnalogNumeric7" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.AnalogNumeric" TargetProperty="Value" Source="Tags.ProdReg_Product_Length" />
-        <Item Target="ProductRegister.AnalogNumeric" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
         <Item Target="ProductRegister.AnalogNumeric15" TargetProperty="Value" Source="Tags.ProdReg_RiviNro" />
-        <Item Target="ProductRegister.AnalogNumeric16" TargetProperty="Value" Source="Tags.ProdReg_WrappingProgram" />
-        <Item Target="ProductRegister.AnalogNumeric16" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.Group5" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Menu_SubMenu_Group_Visibility" />
-        <Item Target="ProductRegister.Group5.Button" TargetProperty="Background" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="ProductRegister.Group5.Button1" TargetProperty="Background" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="ProductRegister.Group5.Button3" TargetProperty="Background" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="ProductRegister.Group5.Button4" TargetProperty="Background" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item xsi:type="ActionItem" Target="ProductRegister.Group5.Button5" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
-        <Item Target="ProductRegister.Group5.Button5" TargetProperty="Background" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="ProductRegister.Group5.Button8" TargetProperty="Background" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item xsi:type="ActionItem" Target="ProductRegister.Group5.Button9" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
-        <Item Target="ProductRegister.Group5.Button9" TargetProperty="EnabledProperties.EnabledDynamicsValue" Source="Tags.Menu_SubMenu_Group_Visibility" />
-        <Item Target="ProductRegister.Group5.Button10" TargetProperty="Background" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="ProductRegister.Group5.Button11" TargetProperty="Background" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="ProductRegister.Group6" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.ProdReg_PalletPattern" />
+        <Item Target="ProductRegister.GroupProductData.AnalogNumeric8" TargetProperty="Value" Source="Tags.ProdReg_Product_Height" />
+        <Item Target="ProductRegister.GroupProductData.AnalogNumeric8" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupProductData.AnalogNumeric7" TargetProperty="Value" Source="Tags.ProdReg_Product_Width" />
+        <Item Target="ProductRegister.GroupProductData.AnalogNumeric7" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupProductData.AnalogNumeric" TargetProperty="Value" Source="Tags.ProdReg_Product_Length" />
+        <Item Target="ProductRegister.GroupProductData.AnalogNumeric" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupProductData.ANProductNo" TargetProperty="Value" Source="Tags.ProdReg_ProductNo" />
+        <Item Target="ProductRegister.GroupProductData.ANProductNo" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric13" TargetProperty="Value" Source="Tags.ProdReg_PlaceDelay" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric13" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric11" TargetProperty="Value" Source="Tags.ProdReg_PickDelay" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric11" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric10" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Speed_Empty" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric10" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric2" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Acceleration_Empty" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric2" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_SpeedLoad" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Speed_Full" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_SpeedLoad" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_AccLoad" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Acceleration_Full" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_AccLoad" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupPatternData.TextPInfeedTrackatterns" TargetProperty="Value" Source="Tags.ProdReg_InfeedTrackPattern" />
+        <Item Target="ProductRegister.GroupPalletData.Text3" TargetProperty="Value" Source="Tags.ProdReg_PalletType" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric1" TargetProperty="Value" Source="Tags.ProdReg_LayerCount" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric1" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric4" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Y_Centering" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric4" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric3" TargetProperty="Value" Source="Tags.ProdReg_Robot1_X_Centering" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric3" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric12" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupPalletData.PalletTypeComboBox" TargetProperty="Value" Source="Tags.ProdReg_PalletType" />
+        <Item Target="ProductRegister.GroupWrappingData.AnalogNumeric16" TargetProperty="Value" Source="Tags.ProdReg_WrappingProgram" />
+        <Item Target="ProductRegister.GroupWrappingData.AnalogNumeric16" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
         <Item Target="ProductRegister.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
+        <Item Target="ProductRegister.Group6" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.ProdReg_PalletPattern" />
         <Item xsi:type="ActionItem" Target="ProductRegister" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
@@ -95,7 +84,7 @@
         <Item xsi:type="ActionItem" Target="ProductRegister.Group_Open_btn.Product_Open_btn" TargetProperty="Actions" Source="Popup_Recipe_dialog" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ActionItem" Target="ProductRegister.Group_Delete_btn.Product_Delete_Btn" TargetProperty="Actions" Source="Popup_Recipe_dialog" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>153</ObjectsCount>
+          <ObjectsCount>146</ObjectsCount>
           <ScreenName>ProductRegister</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10101">
@@ -108,6 +97,7 @@
         <Item Target="ProductRegister.Script.cs" Source="Tags.ProdReg_RecipeName" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.ProdReg_PalletPattern" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdReg_Dialog_Mode" />
+        <Item Target="ProductRegister.Script.cs" Source="Tags.ProdReg_InfeedTrackPattern" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_PalletPlace" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Lavapaikka" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Pahvit" />
@@ -116,25 +106,23 @@
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Kerrosasetus" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.ProdReg_LayerCount" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdReg_RecipeSelected" />
-        <Item Target="ProductRegister.Script.cs" Source="Tags.ProdReg_PalletType" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_Error_TextValue" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
+        <Item Target="ProductRegister.Script.cs" Source="Tags.ProdReg_PalletType" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="ProductRegister.Group5.Button5" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="ProductRegister.Group5.Button9" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="ProductRegister" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">
       <Items>
-        <Item xsi:type="SymbolItem" Target="ProductRegister.Picture" Source="orfer_pallet" Width="133" Height="89" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="ProductRegister.Group_Open_btn.Product_Open_btn" Source="orfer_open" Width="31" Height="31" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="ProductRegister.Group_Save_As_btn.Product_Save_As_btn" Source="orfer_save" Width="26" Height="26" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="ProductRegister.Group_Save_btn.Product_Save_btn" Source="orfer_save" Width="26" Height="26" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="ProductRegister.Group_Delete_btn.Product_Delete_Btn" Source="orfer_delete" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="ProductRegister.GroupPalletData.Picture" Source="orfer_pallet" Width="133" Height="89" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

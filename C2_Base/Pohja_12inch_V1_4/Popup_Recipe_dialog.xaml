@@ -83,8 +83,8 @@
       <nac:Button ButtonAppearance="Rounded" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="OK" TextMargin="20,2,2,2" RequiresTransparency="True" SymbolName="orfer_open" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Padding="1,1,1,1" Name="m_OK_btn" Width="150" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="0" Canvas.Top="0" nacb:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac2:StyleMarkupExtension Default}">
         <nac:Button.Resources>
           <ResourceDictionary>
-            <nacc:VariantValueConverter x:Key="TextValueConverter" />
             <nacc:VariantValueConverter x:Key="ValueConverter" />
+            <nacc:VariantValueConverter x:Key="TextValueConverter" />
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.Value>

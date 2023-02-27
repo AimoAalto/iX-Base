@@ -244,6 +244,7 @@
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagSecond" />
         <Item Target="Tags.Script.cs" Source="Tags.CurrentUserInt" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagNewScreenId" />
+        <Item Target="Tags.Script.cs" Source="Tags.ScreenChangePending" />
       </Items>
     </Category>
     <Category Name="StructuredTag">

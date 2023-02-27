@@ -26,6 +26,8 @@ namespace Neo.ApplicationFramework.Generated
 
 			try
 			{
+				List<int> lst = new List<int>();
+
 				foreach (Neo.ApplicationFramework.Generated.RobotConf robot in Globals._Konfiguraatio.CurrentConfig.Robots.Values)
 				{
 					foreach (int lavapaikka in robot.Lavapaikat)
@@ -36,14 +38,26 @@ namespace Neo.ApplicationFramework.Generated
 							if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("Lavaloki lavapaikka {0}, {1}", lavapaikka, robot.Lavapaikat[lavapaikka]));
 
 							name = "Line1_PLC_LavaValmis" + lavapaikka;
-							Globals.Tags.GetTag(name).ValueChange += Lava_Valmis;
+							IBasicTag tag = Globals.Tags.GetTag(name);
+							if (!lst.Contains(lavapaikka))
+							{
+								if (tag == null)
+									Globals.Tags.Log(String.Format("Lavaloki_Create: Unknown Tag: {0}", name));
+								else
+									tag.ValueChange += Lava_Valmis;
+								lst.Add(lavapaikka);
+							}
 
-							name = "Rob" + robot.RobotNo + "_lavap" + robot.Lavapaikat[lavapaikka] + "_plas";
-							Globals.Tags.GetTag(name).ValueChange += Lava_Aloitettu;
+							name = "Rob" + robot.RobotNo + "_lavap" + Globals._Konfiguraatio.CurrentConfig.Lavapaikat[lavapaikka] + "_plas";
+							tag = Globals.Tags.GetTag(name);
+							if (tag == null)
+								Globals.Tags.Log(String.Format("Lavaloki_Create: Unknown Tag: {0}", name));
+							else
+								tag.ValueChange += Lava_Aloitettu;
 						}
 						catch (Exception x)
 						{
-							Globals.Tags.Log(String.Format("Lavaloki_Create: Unknown Tag {0} [{1}]", name, x.Message));
+							Globals.Tags.Log(String.Format("Lavaloki_Create.loop: {0} [{1}]", name, x.Message));
 						}
 					}
 				}

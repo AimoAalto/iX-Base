@@ -3,9 +3,8 @@ namespace Neo.ApplicationFramework.Generated
 	using System;
 	using System.Collections.Generic;
 	using System.Diagnostics;
-	using System.Threading;
 	using System.Text.RegularExpressions;
-
+	using System.Threading;
 
 	/// <summary>
 	/// Näyttää anturin tarkemmat tiedot ja ajantasaisen tilan.
@@ -16,7 +15,7 @@ namespace Neo.ApplicationFramework.Generated
 		/// <summary>
 		/// Anturin tilan päivityksen taustatoiminto
 		/// </summary>
-		System.Threading.Timer TaustaTarkistus;
+		Timer TaustaTarkistus;
 
 		/// <summary>
 		/// Aloittaa anturin tilan tarkistuksen määritetyin aikavälein.
@@ -38,8 +37,18 @@ namespace Neo.ApplicationFramework.Generated
 				return;
 			}
 
+			int interval = 1000;
+			try
+			{
+				interval = Globals._Konfiguraatio.CurrentConfig.Aikavali("SensorInfoUpdate");
+			}
+			catch (Exception x)
+			{
+				Globals.Tags.Log(String.Format("SensorInfo: Interval error, use default\n{1}", x.Message));
+			}
+
 			// Päivitetään tilaa taustalla sekunnin välein kunnes ikkuna suljetaan
-			TaustaTarkistus = new System.Threading.Timer((args) =>
+			TaustaTarkistus = new Timer((args) =>
 				{
 					// Mitataan kauanko operaatioissa kestää
 					Stopwatch takeTime = new Stopwatch();
@@ -47,21 +56,21 @@ namespace Neo.ApplicationFramework.Generated
 
 					// Päivitetään tila
 					// UI omistaa Aliaksen, niin täytyy pyytää sitä päivittämään
-					try 
-					{	        
+					try
+					{
 						this.Dispatcher.Invoke((Action)(() =>
 							{
-							Tila = Globals.Tags.GetTagValue("PLC_Sensor_" + Globals.Tags.HMI_SensorInfo_Tunnus.Value.String);
+								Tila = Globals.Tags.GetTagValue("PLC_Sensor_" + Globals.Tags.HMI_SensorInfo_Tunnus.Value.String);
 							}));
 					}
 					catch (Exception x)
 					{
 						Globals.Tags.Log(string.Format("Popup_SensorInfo.GetTagValue: {0}", x.Message));
 					}
-	
+
 					// Suoritetaan uudestaan intervallin kuluttua
 					takeTime.Stop();
-					TaustaTarkistus.Change(Math.Max(0, Globals._Konfiguraatio.CurrentConfig.Aikavali("SensorInfoUpdate") - takeTime.ElapsedMilliseconds), Timeout.Infinite);
+					TaustaTarkistus.Change(Math.Max(0, interval - takeTime.ElapsedMilliseconds), Timeout.Infinite);
 				}, null, 0, Timeout.Infinite);
 
 			//string kuvaus = Globals.Tags.HMI_SensorInfo_Ryhma.Value;
@@ -80,7 +89,6 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			catch
 			{
-
 			}
 		}
 	}

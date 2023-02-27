@@ -69,7 +69,7 @@ namespace Neo.ApplicationFramework.Generated
 					HMI_Overview_moddate.SetString(di.GetFiles("project.zip")[0].LastWriteTime.ToString());
 				else
 				{
-					string name = Assembly.GetExecutingAssembly().FullName;
+					string name = Assembly.GetExecutingAssembly().Location;
 					try
 					{
 						FileInfo fi = new FileInfo(name);
@@ -80,6 +80,7 @@ namespace Neo.ApplicationFramework.Generated
 						HMI_Overview_moddate.SetString("N/A");
 					}
 				}
+				Log("Application Started");
 
 				AppStart_Timer = 0;
 
@@ -106,7 +107,7 @@ namespace Neo.ApplicationFramework.Generated
 		}
 
 		#region tags
-		
+
 		/// <summary>
 		/// Hakee tagin nimen perusteella.
 		/// </summary>
@@ -315,7 +316,7 @@ namespace Neo.ApplicationFramework.Generated
 		}
 
 		#endregion
-		
+
 		/// <summary>
 		/// IX inner log
 		/// </summary>
@@ -341,9 +342,18 @@ namespace Neo.ApplicationFramework.Generated
 		/// </summary>
 		public void BtnHandler(int panelno, Screens screen, string btn_name, int length)
 		{
+			if (ScreenChangePending.Value.Bool == true)
+			{
+				Log("Screen change pending");
+				return;
+			}
+			
 			string msg = string.Format("ShowScreen {0} button: {1}", screen, btn_name);
-			Log(msg);
-			System.Diagnostics.Trace.WriteLine(msg);
+			if (TraceAll)
+			{
+				Log(msg);
+				System.Diagnostics.Trace.WriteLine(msg);
+			}
 
 			// Jos napissa ei ole tekstiä eli 'ei ole käytössä' lopetetaan tähän
 			if (length == 0) return;
@@ -360,13 +370,16 @@ namespace Neo.ApplicationFramework.Generated
 				}
 
 				int num = Convert.ToInt16(aux);
+				if (Globals.Tags.Menu_SubMenu_Btn_Anim.Value.Int == num) return;
 
 				int screenid = panelno * 10000;
 				screenid += ((int)screen * 100);
 				screenid += num;
 
-				SystemTagNewScreenId.SetAnalog(screenid);
 				Menu_SubMenu_Btn_Anim.SetAnalog(num);
+				ScreenChangePending.SetTag();
+				
+				SystemTagNewScreenId.SetAnalog(screenid);
 			}
 			catch (Exception x)
 			{
@@ -381,15 +394,15 @@ namespace Neo.ApplicationFramework.Generated
 		/// <returns></returns>
 		void NakymanValinta()
 		{
-			try 
-			{	        
+			try
+			{
 				if (!Globals._Konfiguraatio.ReadOk) Globals._Konfiguraatio.Read();
 			}
 			catch (Exception x)
 			{
 				Log(x.Message);
 			}
-			
+
 			Globals.Tags.Settings_PanelNumber.SetAnalog(Globals._Konfiguraatio.CurrentConfig.PanelNo);
 
 			int no = (int)Globals.Tags.Settings_PanelNumber.Value;
@@ -399,7 +412,7 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			else
 			{
-				try 
+				try
 				{
 					SystemTagNewScreenId.SetAnalog(10000 + no);
 				}
@@ -439,13 +452,13 @@ namespace Neo.ApplicationFramework.Generated
 			string name = ((IBasicTag)sender).Name;
 
 			//System.Diagnostics.Trace.WriteLine(name);
-			
+
 			if (name.StartsWith("Line1_Manual_Area_Enabled_"))
 			{
 				bool sval = (bool)GetTagValue(name);
 				reset = sval == false;
 				string aux = name.Substring(26); // length of 'Line1_Manual_Area_Enabled_'
-				
+
 				if (int.TryParse(aux, out id))
 				{
 					string tagname = string.Format("Line1_PLC_Auto_Area_Mode_C{0}", id);
@@ -457,7 +470,6 @@ namespace Neo.ApplicationFramework.Generated
 					System.Diagnostics.Trace.WriteLine(s);
 					Log(s);
 				}
-				//System.Diagnostics.Trace.WriteLine(string.Format("ena...value = {0} - id = {1}", value, id));
 			}
 			else if (name.StartsWith("Line1_PLC_Auto_Area_Mode_C"))
 			{
@@ -465,7 +477,7 @@ namespace Neo.ApplicationFramework.Generated
 				if (int.TryParse(aux, out id))
 				{
 					value = (int)GetTagValue(name);
-					
+
 					string tagname = string.Format("Line1_Manual_Area_Enabled_{0}", id);
 					bool sval = (bool)GetTagValue(name);
 					reset = sval == false;
@@ -476,18 +488,13 @@ namespace Neo.ApplicationFramework.Generated
 					System.Diagnostics.Trace.WriteLine(s);
 					Log(s);
 				}
-				//System.Diagnostics.Trace.WriteLine(string.Format("mode...value = {0} - id = {1}", value, id));
 			}
-			else
-			{
-				System.Diagnostics.Trace.WriteLine("no luck...");
-			}
-			
+
 			if (id >= 0)
 			{
 				string tagname = string.Format("Line1_Internal_ManualEnabled_{0}", id);
 				IBasicTag tag = GetTag(tagname);
-				System.Diagnostics.Trace.WriteLine(string.Format("set : {0} = value = {1}. reset = [{2}]", tagname, value, reset));
+				if (TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("set : {0} = value = {1}. reset = [{2}]", tagname, value, reset));
 				if (tag != null)
 				{
 					if (value >= 50 || reset)
@@ -495,10 +502,6 @@ namespace Neo.ApplicationFramework.Generated
 					else
 						tag.SetTag();
 				}
-			}
-			else
-			{
-				System.Diagnostics.Trace.WriteLine("not yet...");
 			}
 		}
 	}

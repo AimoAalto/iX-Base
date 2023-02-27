@@ -9,84 +9,93 @@ namespace Neo.ApplicationFramework.Generated
 {
 	using System;
 	using System.Collections.Generic;
-	using System.Windows.Forms;
+	using System.Windows;
+	//using System.Windows.Forms;
+	using System.Drawing;
+	using System.Linq;
+	using System.Windows.Media;
+
 
 	public class AllowedPlace
 	{
 		public bool Selected { get; set; }
 		public int Id { get; set; }
-		public int RobotId {get; set; }
+		public int RobotId { get; set; }
 	}
-	
+
 	public partial class Settings_SystemConf_Pan1
 	{
 		int rno = 0;
 		int pno = 0;
-		
+		object lockobject = new object();
+
 		void Settings_SystemConf_Pan1_Opened(System.Object sender, System.EventArgs e)
 		{
 			CBSetSelection.SelectedIndex = 0;
 			Globals.Tags.HMI_ConfGroupSet.SetAnalog(0);
 			ANSettingsFilename.Text = _Konfiguraatio.ConfigFileName;
 			if (Globals.Tags.Conf_UseOnly_NVBD.Value.Bool == false) RBUseSettingsFile.Checked = true;
-			
+
 			Globals._Konfiguraatio.CurrentConfig.PanelNo = Globals.Tags.Settings_PanelNumber.Value.Int;
-			InitRobotCB();
+
 			InitSettingsFields();
 		}
-		
+
 		#region update fields
-		
+
 		/// <summary>
 		/// Init combobox with common values and robot selection
 		/// </summary>
 		/// <returns></returns>
 		void InitRobotCB()
-		{			
+		{
 			CBSelectedRobot.Items.Clear();
+			CBSelectedRobot.Items.Add("");
+			CBSelectedRobot.SelectedIndex = 0;
 			rno = 0;
+
 			foreach (Neo.ApplicationFramework.Generated.RobotConf r in Globals._Konfiguraatio.CurrentConfig.Robots.Values)
 			{
 				CBSelectedRobot.Items.Add(string.Format("Robot {0}", r.RobotNo));
 				if (rno == 0)
 				{
 					rno = r.RobotNo;
-					CBSelectedRobot.SelectedIndex = 0;
+					CBSelectedRobot.SelectedIndex = 1;
 				}
 			}
 		}
-		
+
 		/// <summary>
 		/// init given listbox with dictionary values (items)
 		/// </summary>
 		/// <param name="lb"></param>
 		/// <param name="lst"></param>
 		/// <returns></returns>
-		void InitListBox(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter lb, Dictionary<int,int> lst)
+		void InitListBox(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter lb, Dictionary<int, int> lst)
 		{
-			lb.Items.Clear();			
+			lb.Items.Clear();
 			foreach (KeyValuePair<int, int> item in lst)
 			{
 				lb.Items.Add(item);
 			}
 		}
 
-		void InitListBox(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter lb, Dictionary<int,string> lst)
+		void InitListBox(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter lb, Dictionary<int, string> lst)
 		{
-			lb.Items.Clear();			
+			lb.Items.Clear();
 			foreach (KeyValuePair<int, string> item in lst)
 			{
 				lb.Items.Add(item);
 			}
 		}
-		
+
 		void InitLists(int mode)
 		{
 			if (mode == 1 || mode == 0)
 			{
 				InitListBox(LBInfeedTracks, Globals._Konfiguraatio.CurrentConfig.Tuloradat);
 			}
-			
+
 			if (mode == 2 || mode == 0)
 			{
 				InitListBox(LBPalletPlaces, Globals._Konfiguraatio.CurrentConfig.Lavapaikat);
@@ -97,7 +106,7 @@ namespace Neo.ApplicationFramework.Generated
 				InitListBox(LBPalletTypes, Globals._Konfiguraatio.CurrentConfig.Lavatyypit);
 			}
 		}
-		
+
 		System.Windows.Controls.CheckBox CreateCheckBox(string title, object tag, bool ischecked, System.Windows.RoutedEventHandler clicked)
 		{
 			System.Windows.Controls.CheckBox cb = new System.Windows.Controls.CheckBox();
@@ -108,7 +117,7 @@ namespace Neo.ApplicationFramework.Generated
 			cb.Click += clicked;
 			return cb;
 		}
-		
+
 		void ClearListAndEvent(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter lb, System.Windows.RoutedEventHandler clicked)
 		{
 			// clear items and click handlers
@@ -117,7 +126,7 @@ namespace Neo.ApplicationFramework.Generated
 					((System.Windows.Controls.CheckBox)item).Click -= clicked;
 			lb.Items.Clear();
 		}
-		
+
 		void InitListBoxAndEvent(Neo.ApplicationFramework.Controls.Script.ListBoxAdapter lb, System.Windows.RoutedEventHandler clicked, Dictionary<int, int> lst, List<int> allowed)
 		{
 			ClearListAndEvent(lb, clicked);
@@ -153,8 +162,12 @@ namespace Neo.ApplicationFramework.Generated
 			List<int> lst = Globals._Konfiguraatio.CurrentConfig.AllowedPatternNumbers();
 			foreach (int no in lst)
 			{
-				if (pno == 0) pno = no;
-				LBPatternNo.Items.Add(no);
+				int index = LBPatternNo.Items.Add(no);
+				if (pno == 0)
+				{
+					pno = no;
+					LBPatternNo.SelectedIndex = index;
+				}
 			}
 		}
 
@@ -167,23 +180,23 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			if (mode == 1 || mode == 0)
 			{
-				InitListBoxAndEvent(LBPatternAllowedIT, CBPatternInfeedTrack_Click, Globals._Konfiguraatio.CurrentConfig.Tuloradat, 
+				InitListBoxAndEvent(LBPatternAllowedIT, CBPatternInfeedTrack_Click, Globals._Konfiguraatio.CurrentConfig.Tuloradat,
 					Globals._Konfiguraatio.CurrentConfig.AllowedPatternInfeedTracks(pno));
 			}
-			
+
 			if (mode == 2 || mode == 0)
 			{
-				InitListBoxAndEvent(LBPatternAllowedPP, CBPatternPalletPlace_Click, Globals._Konfiguraatio.CurrentConfig.Lavapaikat, 
+				InitListBoxAndEvent(LBPatternAllowedPP, CBPatternPalletPlace_Click, Globals._Konfiguraatio.CurrentConfig.Lavapaikat,
 					Globals._Konfiguraatio.CurrentConfig.AllowedPatternPalletPlaces(pno));
 			}
 
 			if (mode == 3 || mode == 0)
 			{
-				InitListBoxAndEvent(LBPatternAllowedPT, CBPatternPalletType_Click, Globals._Konfiguraatio.CurrentConfig.Lavatyypit, 
+				InitListBoxAndEvent(LBPatternAllowedPT, CBPatternPalletType_Click, Globals._Konfiguraatio.CurrentConfig.Lavatyypit,
 					Globals._Konfiguraatio.CurrentConfig.AllowedPatternPalletTypes(pno));
 			}
 		}
-		
+
 		/// <summary>
 		/// init listboxes for allowed infeed tracks
 		/// </summary>
@@ -193,44 +206,45 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			if (mode == 1 || mode == 0)
 			{
-				InitListBoxAndEvent(LBAllowedInfeedTracks, CBInfeedTracks_Click, Globals._Konfiguraatio.CurrentConfig.Tuloradat, 
+				InitListBoxAndEvent(LBAllowedInfeedTracks, CBInfeedTracks_Click, Globals._Konfiguraatio.CurrentConfig.Tuloradat,
 					Globals._Konfiguraatio.CurrentConfig.AllowedInfeedTracks(rno));
 			}
-			
+
 			if (mode == 2 || mode == 0)
 			{
-				InitListBoxAndEvent(LBAllowedPalletPlaces, CBPalletPlaces_Click, Globals._Konfiguraatio.CurrentConfig.Lavapaikat, 
+				InitListBoxAndEvent(LBAllowedPalletPlaces, CBPalletPlaces_Click, Globals._Konfiguraatio.CurrentConfig.Lavapaikat,
 					Globals._Konfiguraatio.CurrentConfig.AllowedPalletPlaces(rno));
 			}
 		}
-		
+
 		/// <summary>
 		/// Init settings listboxes and other fields
 		/// </summary>
 		/// <returns></returns>
 		void InitSettingsFields()
 		{
-			ANPanelNo.Value = Globals._Konfiguraatio.CurrentConfig.PanelNo;
-			ANNumberOfPLC.Value = Globals._Konfiguraatio.CurrentConfig.NumberOfPLC;
-
-			LBWTimes.Items.Clear();
-			foreach (KeyValuePair<string, int> item in Globals._Konfiguraatio.CurrentConfig.Aikavalit)
+			lock (lockobject)
 			{
-				//string s = string.Format("[{0}] {1}", item.Key, item.Value);
-				LBWTimes.Items.Add(item);
+				ANPanelNo.Value = Globals._Konfiguraatio.CurrentConfig.PanelNo;
+				ANNumberOfPLC.Value = Globals._Konfiguraatio.CurrentConfig.NumberOfPLC;
+
+				LBWTimes.Items.Clear();
+				foreach (KeyValuePair<string, int> item in Globals._Konfiguraatio.CurrentConfig.Aikavalit)
+				{
+					//string s = string.Format("[{0}] {1}", item.Key, item.Value);
+					LBWTimes.Items.Add(item);
+				}
+
+				InitRobotCB();
+				InitLists(0);
+				InitRobotAllowedLists(rno, 0);
+				InitAllowedPatterns();
+				InitPatternAllowedLists(pno, 0);
+
+				UpdateSettingsJson();
 			}
-
-			rno = 0;
-			pno = 0;
-			
-			InitLists(0);
-			InitRobotAllowedLists(rno, 0);
-			InitAllowedPatterns();
-			InitPatternAllowedLists(pno, 0);
-
-			UpdateSettingsJson();
 		}
-		
+
 		/// <summary>
 		/// Updatejson textbox on screen
 		/// </summary>
@@ -240,7 +254,7 @@ namespace Neo.ApplicationFramework.Generated
 			try
 			{
 				string s = Newtonsoft.Json.JsonConvert.SerializeObject(
-					Globals._Konfiguraatio.CurrentConfig, 
+					Globals._Konfiguraatio.CurrentConfig,
 					Newtonsoft.Json.Formatting.Indented);
 				TextBoxSettings.Text = s;
 			}
@@ -251,18 +265,18 @@ namespace Neo.ApplicationFramework.Generated
 		}
 
 		#endregion
-		
+
 		void BtnSave_Click(System.Object sender, System.EventArgs e)
 		{
 			Globals._Konfiguraatio.Save();
 		}
-		
+
 		void BtnRead_Click(System.Object sender, System.EventArgs e)
 		{
 			Globals._Konfiguraatio.Read();
 			InitSettingsFields();
 		}
-	
+
 		void CBSetSelection_SelectionChanged(System.Object sender, System.EventArgs e)
 		{
 			if (CBSetSelection.SelectedIndex >= 0)
@@ -275,22 +289,33 @@ namespace Neo.ApplicationFramework.Generated
 					System.Windows.Forms.MessageBox.Show(x.Message);
 				}
 		}
-		
+
 		void CBSelectedRobot_SelectionChanged(System.Object sender, System.EventArgs e)
 		{
-			if (rno >= 0)
-			try 
-			{
-				rno = Globals._Konfiguraatio.CurrentConfig.GetRobotNoByIndex(CBSelectedRobot.SelectedIndex);
-				InitRobotAllowedLists(rno, 0);
-				ANDebug.Text = string.Format("[{0}] {1}", rno, CBSelectedRobot.SelectedIndex);
-			}
-			catch (Exception x)
-			{
-				MessageBox.Show(x.Message);
-			}
+			if (CBSelectedRobot.SelectedIndex >= 0)
+				try
+				{
+					if (CBSelectedRobot.SelectedIndex == 0)
+						rno = 0;
+					else
+					{
+						string s = CBSelectedRobot.SelectedItem.ToString();
+						s = s.Substring(6);
+						if (!int.TryParse(s, out rno))
+						{
+							CBSelectedRobot.SelectedIndex = 0;
+							rno = 0;
+						}
+					}
+					InitRobotAllowedLists(rno, 0);
+					ANDebug.Text = string.Format("[{0}] {1}", rno, CBSelectedRobot.SelectedIndex);
+				}
+				catch (Exception x)
+				{
+					MessageBox.Show(x.Message);
+				}
 		}
-		
+
 		#region Pallettypes
 
 		void LBPalletTypes_SelectionChanged(System.Object sender, System.EventArgs e)
@@ -316,10 +341,10 @@ namespace Neo.ApplicationFramework.Generated
 				}
 			}
 		}
-		
+
 		void BtnPTAdd_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				string s = ANPalletType.Text.Trim();
 				string name = ANPalletName.Text.Trim();
@@ -342,13 +367,13 @@ namespace Neo.ApplicationFramework.Generated
 							}
 						}
 					}
-					
+
 					if (isnew)
 					{
 						LBPalletTypes.Items.Add(new KeyValuePair<int, string>(type, name));
 						Globals._Konfiguraatio.CurrentConfig.Lavatyypit[type] = name;
 					}
-				
+
 					UpdateSettingsJson();
 					InitRobotAllowedLists(rno, 3);
 					InitPatternAllowedLists(pno, 3);
@@ -363,10 +388,10 @@ namespace Neo.ApplicationFramework.Generated
 				MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		void BtnPTDelete_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				if (LBPalletTypes.Items.Count > 0)
 				{
@@ -390,11 +415,11 @@ namespace Neo.ApplicationFramework.Generated
 				MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		#endregion
-		
+
 		#region WatchDog times
-		
+
 		void LBWTimes_SelectionChanged(System.Object sender, System.EventArgs e)
 		{
 			if (LBWTimes.SelectedIndex < 0 || LBWTimes.SelectedIndex > (LBWTimes.Items.Count - 1))
@@ -418,10 +443,10 @@ namespace Neo.ApplicationFramework.Generated
 				}
 			}
 		}
-		
+
 		void BtnWAdd_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				string name = ANWName.Text.Trim();
 				if (string.IsNullOrEmpty(name))
@@ -449,13 +474,13 @@ namespace Neo.ApplicationFramework.Generated
 								}
 							}
 						}
-					
+
 						if (isnew)
 						{
 							LBWTimes.Items.Add(new KeyValuePair<string, int>(name, time));
 							Globals._Konfiguraatio.CurrentConfig.Aikavalit[name] = time;
 						}
-				
+
 						UpdateSettingsJson();
 					}
 					else
@@ -469,10 +494,10 @@ namespace Neo.ApplicationFramework.Generated
 				MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		void BtnWDelete_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				if (LBWTimes.Items.Count > 0)
 				{
@@ -494,11 +519,11 @@ namespace Neo.ApplicationFramework.Generated
 				MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		#endregion
-		
+
 		#region Available Infeed tracks
-		
+
 		void LBInfeedTracks_SelectionChanged(System.Object sender, System.EventArgs e)
 		{
 			if (LBInfeedTracks.SelectedIndex < 0 || LBInfeedTracks.SelectedIndex > (LBInfeedTracks.Items.Count - 1))
@@ -522,10 +547,10 @@ namespace Neo.ApplicationFramework.Generated
 				}
 			}
 		}
-		
+
 		void BtnITAdd_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				string s = ANITId.Text.Trim();
 				int id;
@@ -550,13 +575,13 @@ namespace Neo.ApplicationFramework.Generated
 								}
 							}
 						}
-					
+
 						if (isnew)
 						{
 							LBInfeedTracks.Items.Add(new KeyValuePair<int, int>(id, rid));
 							Globals._Konfiguraatio.CurrentConfig.Tuloradat[id] = rid;
 						}
-				
+
 						UpdateSettingsJson();
 						InitRobotAllowedLists(rno, 1);
 						InitPatternAllowedLists(pno, 1);
@@ -574,12 +599,12 @@ namespace Neo.ApplicationFramework.Generated
 			catch (Exception x)
 			{
 				MessageBox.Show(x.Message);
-			}	
+			}
 		}
-		
+
 		void BtnITDelete_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				if (LBInfeedTracks.Items.Count > 0)
 				{
@@ -603,11 +628,11 @@ namespace Neo.ApplicationFramework.Generated
 				MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		#endregion
-		
+
 		#region Available Pallet places
-		
+
 		void LBPalletPlaces_SelectionChanged(System.Object sender, System.EventArgs e)
 		{
 			if (LBPalletPlaces.SelectedIndex < 0 || LBPalletPlaces.SelectedIndex > (LBPalletPlaces.Items.Count - 1))
@@ -631,10 +656,10 @@ namespace Neo.ApplicationFramework.Generated
 				}
 			}
 		}
-		
+
 		void BtnPPAdd_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				string s = ANPPId.Text.Trim();
 				int id;
@@ -659,13 +684,13 @@ namespace Neo.ApplicationFramework.Generated
 								}
 							}
 						}
-					
+
 						if (isnew)
 						{
 							LBPalletPlaces.Items.Add(new KeyValuePair<int, int>(id, rid));
 							Globals._Konfiguraatio.CurrentConfig.Lavapaikat[id] = rid;
 						}
-				
+
 						UpdateSettingsJson();
 						InitRobotAllowedLists(rno, 2);
 						InitPatternAllowedLists(pno, 2);
@@ -685,10 +710,10 @@ namespace Neo.ApplicationFramework.Generated
 				MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		void BtnPPDelete_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				if (LBPalletPlaces.Items.Count > 0)
 				{
@@ -712,14 +737,14 @@ namespace Neo.ApplicationFramework.Generated
 				MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		#endregion
-		
+
 		#region Robot instance
-		
+
 		void BtnRobotAdd_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				int no = Convert.ToInt16(ANNewRobotNo.Value);
 				if (Globals._Konfiguraatio.CurrentConfig.Robots.ContainsKey(no))
@@ -738,43 +763,43 @@ namespace Neo.ApplicationFramework.Generated
 				MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		void BtnRobotDelete_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				int no = Convert.ToInt16(ANNewRobotNo.Value);
 				if (Globals._Konfiguraatio.CurrentConfig.Robots.ContainsKey(no))
 				{
-					if (MessageBox.Show(
-						string.Format("Haluatko poistaa robotin [{0}]", no), 
-						"Robotin poisto", 
-						System.Windows.Forms.MessageBoxButtons.YesNo, 
-						System.Windows.Forms.MessageBoxIcon.Question, 
-						System.Windows.Forms.MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+					if (System.Windows.Forms.MessageBox.Show(
+						string.Format("Haluatko poistaa robotin [{0}]", no),
+						"Robotin poisto",
+						System.Windows.Forms.MessageBoxButtons.YesNo,
+						System.Windows.Forms.MessageBoxIcon.Question,
+						System.Windows.Forms.MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
 					{
 						Globals._Konfiguraatio.CurrentConfig.RemoveRobot(no);
 						UpdateSettingsJson();
-						InitRobotCB();
 						rno = 0;
+						InitRobotCB();
 						InitRobotAllowedLists(rno, 0);
 					}
 				}
 				else
 				{
-					MessageBox.Show("Tuntematon robottinumero");
+					System.Windows.Forms.MessageBox.Show("Tuntematon robottinumero");
 				}
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				System.Windows.Forms.MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		#endregion
-		
+
 		#region Available robot infeed places
-		
+
 		void CBInfeedTracks_Click(System.Object sender, System.EventArgs e)
 		{
 			try
@@ -795,51 +820,51 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				System.Windows.Forms.MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		#endregion
-		
+
 		#region Available robot pallet places
-		
+
 		void CBPalletPlaces_Click(System.Object sender, System.EventArgs e)
 		{
 			if (rno >= 0)
-			try
-			{
-				if (sender is System.Windows.Controls.CheckBox)
+				try
 				{
-					int tag = (int)((System.Windows.Controls.CheckBox)sender).Tag;
-					if (((System.Windows.Controls.CheckBox)sender).IsChecked == true)
+					if (sender is System.Windows.Controls.CheckBox)
 					{
-						Globals._Konfiguraatio.CurrentConfig.AddRobotPalletPlace(rno, tag);
+						int tag = (int)((System.Windows.Controls.CheckBox)sender).Tag;
+						if (((System.Windows.Controls.CheckBox)sender).IsChecked == true)
+						{
+							Globals._Konfiguraatio.CurrentConfig.AddRobotPalletPlace(rno, tag);
+						}
+						else
+						{
+							Globals._Konfiguraatio.CurrentConfig.RemoveRobotPalletPlace(rno, tag);
+						}
+						UpdateSettingsJson();
 					}
-					else
-					{
-						Globals._Konfiguraatio.CurrentConfig.RemoveRobotPalletPlace(rno, tag);
-					}
-					UpdateSettingsJson();
 				}
-			}
-			catch (Exception x)
-			{
-				MessageBox.Show(x.Message);
-			}	
+				catch (Exception x)
+				{
+					System.Windows.Forms.MessageBox.Show(x.Message);
+				}
 		}
-		
+
 		#endregion
-		
+
 		#region Allowed Pattern settings
-		
+
 		void BtnPatternAdd_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				int no = Convert.ToInt16(ANNewPatternNo.Value);
 				if (Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.ContainsKey(no))
 				{
-					MessageBox.Show("Kuvionumero on jo olemassa");
+					System.Windows.Forms.MessageBox.Show("Kuvionumero on jo olemassa");
 				}
 				else
 				{
@@ -848,27 +873,28 @@ namespace Neo.ApplicationFramework.Generated
 					InitAllowedPatterns();
 					pno = no;
 					InitPatternAllowedLists(pno, 0);
+					LBPatternNo.SelectedItem = no;
 				}
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				System.Windows.Forms.MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		void BtnPatternDelete_Click(System.Object sender, System.EventArgs e)
 		{
-			try 
+			try
 			{
 				int no = Convert.ToInt16(ANNewPatternNo.Value);
 				if (Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.ContainsKey(no))
 				{
-					if (MessageBox.Show(
-						string.Format("Haluatko poistaa Kuvion [{0}]", no), 
-						"Kuvion poisto", 
-						System.Windows.Forms.MessageBoxButtons.YesNo, 
-						System.Windows.Forms.MessageBoxIcon.Question, 
-						System.Windows.Forms.MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+					if (System.Windows.Forms.MessageBox.Show(
+						string.Format("Haluatko poistaa Kuvion [{0}]", no),
+						"Kuvion poisto",
+						System.Windows.Forms.MessageBoxButtons.YesNo,
+						System.Windows.Forms.MessageBoxIcon.Question,
+						System.Windows.Forms.MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
 					{
 						Globals._Konfiguraatio.CurrentConfig.RemovePattern(no);
 						UpdateSettingsJson();
@@ -876,19 +902,20 @@ namespace Neo.ApplicationFramework.Generated
 						ANNewPatternNo.Text = "";
 						pno = 0;
 						InitPatternAllowedLists(pno, 0);
+						if (LBPatternNo.Items.Count > 0) LBPatternNo.SelectedIndex = 0;
 					}
 				}
 				else
 				{
-					MessageBox.Show("Tuntematon robottinumero");
+					System.Windows.Forms.MessageBox.Show("Tuntematon robottinumero");
 				}
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				System.Windows.Forms.MessageBox.Show(x.Message);
 			}
 		}
-		
+
 		void LBPatternNo_SelectionChanged(System.Object sender, System.EventArgs e)
 		{
 			try
@@ -907,10 +934,10 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
-			}	
+				System.Windows.Forms.MessageBox.Show(x.Message);
+			}
 		}
-		
+
 		void CBPatternPalletPlace_Click(System.Object sender, System.EventArgs e)
 		{
 			if (pno >= 0)
@@ -932,7 +959,7 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					MessageBox.Show(x.Message);
+					System.Windows.Forms.MessageBox.Show(x.Message);
 				}
 		}
 
@@ -957,8 +984,8 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					MessageBox.Show(x.Message);
-				}	
+					System.Windows.Forms.MessageBox.Show(x.Message);
+				}
 		}
 
 		void CBPatternPalletType_Click(System.Object sender, System.EventArgs e)
@@ -982,10 +1009,10 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					MessageBox.Show(x.Message);
-				}	
+					System.Windows.Forms.MessageBox.Show(x.Message);
+				}
 		}
-		
+
 		#endregion
 	}
 }

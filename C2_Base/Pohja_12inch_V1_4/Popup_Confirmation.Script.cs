@@ -1,8 +1,7 @@
 namespace Neo.ApplicationFramework.Generated
 {
 	using System.Threading;
-	
-    
+
 	/// <summary>
 	/// Kysyy OK/Peruuta -kysymyksen ja antaa mahdollisuuden jäädä odottamaan vastausta
 	/// konfirmaatioVahvistus-ManualResetEventin avulla.
@@ -43,15 +42,15 @@ namespace Neo.ApplicationFramework.Generated
 	/// </code>
 	///</example>
 	/// <remarks>Viimeksi muokattu: SoPi 27.6.2017</remarks>
-    public partial class Popup_Confirmation
-    {
+	public partial class Popup_Confirmation
+	{
 		/// <summary>
 		/// Tapahtuma, joka aktivoidaan, kun ikkuna suljetaan.
 		/// Käytetään kyselyä kutsuvissa funktioissa lukkona, jonka avulla 
 		/// vastausta jäädään odottamaan.
 		/// </summary>
 		public ManualResetEvent konfirmaatioVahvistus = new ManualResetEvent(false);
-		
+
 		/// <summary>
 		/// Kertoo odottavalle langalle, että vastaus on saatu ja toimintaa voi jatkaa.
 		/// </summary>
@@ -60,11 +59,9 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			konfirmaatioVahvistus.Set();
 		}
-		
+
 		void Popup_Confirmation_Opened(System.Object sender, System.EventArgs e)
 		{
-
 		}
-		
-    }
+	}
 }

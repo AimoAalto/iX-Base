@@ -14,8 +14,8 @@ namespace Neo.ApplicationFramework.Generated
 	using System.Windows.Forms;
     
     
-    public partial class Template_Orfer
-    {
+	public partial class Template_Orfer
+	{
 		[DllImport("user32.dll")]
 		static extern bool SetForegroundWindow(IntPtr hWnd);
 			
@@ -56,11 +56,23 @@ namespace Neo.ApplicationFramework.Generated
 				Process.Start("calc.exe");
 		}
 		
+		/// <summary>
+		/// Main menu button handler, get number part from button name and opens screen with calculated id
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		/// <returns></returns>
 		void Button_Menu_Click(System.Object sender, System.EventArgs e)
 		{
+			if (Globals.Tags.ScreenChangePending.Value.Bool == true)
+			{
+				Globals.Tags.Log("Screen change pending");
+				return;
+			}
+			
 			string btn_name = ((Neo.ApplicationFramework.Controls.Script.ButtonAdapter)sender).Name;
 			
-			Globals.Tags.Log(string.Format("ShowMainScreen button: {0}", btn_name));		
+			if (Globals.Tags.TraceAll) Globals.Tags.Log(string.Format("ShowMainScreen button: {0}", btn_name));		
 
 			try 
 			{
@@ -73,24 +85,32 @@ namespace Neo.ApplicationFramework.Generated
 				}
 
 				int num = Convert.ToInt16(aux);
-
+				if (Globals.Tags.Menu_MainMenu_Btn_Anim.Value.Int == num) return;
+				
 				// asetussivu on yhteinen
 				int screenid;
 				if (num == 7) screenid = (int)10000;
 				else screenid = Globals.Tags.Settings_PanelNumber.Value * 10000;
 				screenid += ((int)num * 100);
 				screenid += 1;
-			
-				Globals.Tags.SystemTagNewScreenId.SetAnalog(screenid);
 				
 				Globals.Tags.Menu_MainMenu_Btn_Anim.SetAnalog(num);
 				Globals.Tags.Menu_SubMenu_Group_Visibility.SetAnalog(1);
 				Globals.Tags.Menu_SubMenu_Btn_Anim.SetAnalog(1);
+				Globals.Tags.ScreenChangePending.SetTag();
+
+				Globals.Tags.SystemTagNewScreenId.SetAnalog(screenid);
 			}
 			catch (Exception x)
 			{
 				Globals.Tags.Log(string.Format("ShowScreen button: {0}. Exception: {1}", btn_name, x.Message));		
 			}
 		}
-    }
+		
+		void Template_Orfer_Opened(System.Object sender, System.EventArgs e)
+		{
+			if (Globals.Tags.TraceAll) Globals.Tags.Log(string.Format("Opened screen: {0}", Globals.Tags.SystemTagNewScreenId.Value));	
+			Globals.Tags.ScreenChangePending.ResetTag();
+		}
+	}
 }

@@ -27,6 +27,8 @@ namespace Neo.ApplicationFramework.Generated
 		
 		void IoT_Transfer_Created(System.Object sender, System.EventArgs e)
 		{
+			if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine("IoT_Transfer_Created (start)");
+			
 			Readsettings();
 
 			TimeSpan ts = new DateTime().AddSeconds(1) - new DateTime();

@@ -25,7 +25,6 @@ namespace Neo.ApplicationFramework.Generated
 		
 		void Popup_Yes_No_Opened(System.Object sender, System.EventArgs e)
 		{
-
 		}
 		
 		/// <summary>
@@ -36,7 +35,5 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			yesNoKysely.Set();
 		}
-		
-
     }
 }

@@ -1,14 +1,14 @@
 namespace Neo.ApplicationFramework.Generated
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Drawing;
-    using System.Linq;
-    using System.Windows.Controls;
-    using System.Windows.Forms;
+	using System;
+	using System.Collections.Generic;
+	using System.Drawing;
+	using System.Linq;
+	using System.Windows.Controls;
+	using System.Windows.Forms;
 
-	
-	
+
+
 	/// <summary>
 	/// Mahdollistaa reseptien tarkastelun ja muokkauksen.
 	/// Sivun sisältämät tiedot vaihtelevat projektin mukaan.
@@ -20,7 +20,7 @@ namespace Neo.ApplicationFramework.Generated
 		/// Välikkeiden muokkaussivu alustettuna
 		/// </summary>
 		Popup_ProdCtrl_Cardboards sivu;
-		
+
 		/// <summary>
 		/// Alustaa sivun tiedot ja lataa kuviolistan valittavaksi.
 		/// </summary>
@@ -29,18 +29,14 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			// Nollataan reseptivalinta
 			Globals.Tags.ProdReg_RecipeName.Value = "";
-			
+
 			maxkerros = 20; // Alustetaan kuvion maksimikerrokset, luetaan JSON-tiedostosta.
 
 			// Ladataan kuvion tiedot aina kun kuvionumero muuttuu
 			Globals.Tags.ProdReg_PalletPattern.ValueChange += LataaKuvio;
-			
-			foreach (int kuvio in Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.Keys)
-			{
-				// Lisätään kuviolistaan
-				KuvioComboBox.AddString(kuvio, kuvio.ToString());
-			}
-			
+
+			InitPatternListBox();
+
 			// Sivun latautuessa ladataan näytölle käytössä oleva resepti
 			if (Globals.Tags.ProdReg_RecipeName.Value == "")
 			{
@@ -58,6 +54,104 @@ namespace Neo.ApplicationFramework.Generated
 			}
 		}
 
+		bool PossibleCombination(List<int> lst)
+		{
+			foreach (int pno in lst)
+			{
+				foreach (int tr in Globals._Konfiguraatio.CurrentConfig.AllowedPatterns[pno].Tuloradat)
+				{
+					foreach (int item in lst)
+					{
+						if (item != pno)
+						{
+							if (Globals._Konfiguraatio.CurrentConfig.AllowedPatterns[item].Tuloradat.Contains(tr)) return false;
+						}
+					}
+				}
+			}
+			return true;
+		}
+
+		void CBPatternList_Click(System.Object sender, System.EventArgs e)
+		{
+			try
+			{
+				string bck = Globals.Tags.ProdReg_InfeedTrackPattern.Value;
+				bool checkcombination = ((System.Windows.Controls.CheckBox)sender).IsChecked == true;
+				List<int> lst = new List<int>();
+				bool next = false;
+				string s = "";
+
+				foreach (System.Windows.Controls.StackPanel o in LBPatterns.Items)
+				{
+					if (o.Children.Count > 0)
+					{
+						System.Windows.Controls.CheckBox cb = (System.Windows.Controls.CheckBox)o.Children[0];
+						if (cb.IsChecked == true)
+						{
+							int tag = (int)cb.Tag;
+							lst.Add(tag);
+							if (next)
+								s += ",";
+							else
+								next = true;
+							s += tag.ToString();
+						}
+					}
+				}
+
+				if (checkcombination)
+				{
+					if (!PossibleCombination(lst))
+					{
+						((System.Windows.Controls.CheckBox)sender).IsChecked = false;
+						s = bck;
+					}
+				}
+
+				Globals.Tags.ProdReg_InfeedTrackPattern.SetString(s);
+			}
+			catch (Exception x)
+			{
+				System.Windows.Forms.MessageBox.Show(x.Message);
+			}
+		}
+
+		void InitPatternListBox()
+		{
+			LBPatterns.Items.Clear();
+			foreach (int pno in Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.Keys)
+			{
+				System.Windows.Controls.StackPanel parent = new System.Windows.Controls.StackPanel();
+				parent.Orientation = System.Windows.Controls.Orientation.Horizontal;
+				parent.Tag = pno;
+				// Lisätään kuviolistaan
+				System.Windows.Controls.CheckBox cb = CreateCheckBox(string.Format("{0}  ", pno), pno, CBPatternList_Click);
+				parent.Children.Add(cb);
+				foreach (int tr in Globals._Konfiguraatio.CurrentConfig.Tuloradat.Keys)
+				{
+					System.Windows.Controls.CheckBox cbtr = CreateCheckBox(string.Format("{0}  ", tr), tr, null);
+					cbtr.IsChecked = Globals._Konfiguraatio.CurrentConfig.IsAllowedPatternInfeedTrack(pno, tr);
+					//cbtr.IsHitTestVisible = false;
+					cbtr.IsEnabled = false;
+					parent.Children.Add(cbtr);
+				}
+				LBPatterns.Items.Add(parent);
+			}
+		}
+
+		System.Windows.Controls.CheckBox CreateCheckBox(string title, object tag, System.Windows.RoutedEventHandler clicked
+			/*, bool ischecked*/)
+		{
+			System.Windows.Controls.CheckBox cb = new System.Windows.Controls.CheckBox();
+			cb.Foreground = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.White);
+			cb.Content = title;
+			cb.Tag = tag;
+			//cb.IsChecked = ischecked;
+			if (clicked != null) cb.Click += clicked;
+			return cb;
+		}
+
 		/// <summary>
 		/// Avaa välikkeiden muokkaussivun.
 		/// </summary>
@@ -67,10 +161,10 @@ namespace Neo.ApplicationFramework.Generated
 			// Kirjoitetaan parametrit ennen välike sivun avausta
 			// Lavapaikka Globals.Tags.HMI_PalletPlace.Value -1 => Tuoterekisteri
 			Globals.Tags.HMI_ProdCtrl_Cardboards_Lavapaikka.Value = -1;
-			
+
 			// Alkuperäiset pahvit ennen muokkausta
 			Globals.Tags.HMI_ProdCtrl_Cardboards_Pahvit.Value = Globals.Tags.ProdReg_Spacers.Value;
-			
+
 			// Kuvion maksimikerrot ja kerroasetus
 			Globals.Tags.HMI_ProdCtrl_Cardboards_MaxKerros.Value = maxkerros; // Kuviosta luettu enimmäiskerrosmäärä
 			Globals.Tags.HMI_ProdCtrl_Cardboards_Kerrosasetus.Value = Globals.Tags.ProdReg_LayerCount.Value;
@@ -81,177 +175,6 @@ namespace Neo.ApplicationFramework.Generated
 			sivu.Show();
 		}
 
-		/// <summary>
-		/// Lataa kuvion tiedot näytölle, kun tuoterekisteriin valittu 
-		/// kuvionumero muuttuu.
-		/// </summary>
-		/// <param name="sender">ProdReg_PalletPattern</param>
-		void LataaKuvio(System.Object sender, System.EventArgs e)
-		{
-			if (Globals.Tags.HMI_ProdReg_RecipeSelected.Value != "")
-			{
-				// Sallitaan tallennusnapit
-				Product_Save_As_btn.IsEnabled = true;
-				Product_Save_btn.IsEnabled = true;
-			}
-			else
-			{
-				// Estetään tallennusnapit
-				Product_Save_As_btn.IsEnabled = false;
-				Product_Save_btn.IsEnabled = false;
-			}
-			
-			// Päivitä kuvion valitsin jos resepti ladattiin
-			if (KuvioComboBox.Items.Contains(Globals.Tags.ProdReg_PalletPattern.Value.ToString()))
-			{
-				KuvioComboBox.SelectedIndex = Globals.Tags.ProdReg_PalletPattern.Value;
-			}
-			
-			// Haetaan kuvion tiedot JSON-tiedostosta
-			if (!Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.ContainsKey(Globals.Tags.ProdReg_PalletPattern.Value.Int))
-			{
-				// tuntematon kuvio
-				Globals.Tags.HMI_Error_TextValue.SetAnalog(24);
-				Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
-				Globals.Popup_Error.Show();
-				return;
-			}
-			
-			PatternInfo pi = Globals._Konfiguraatio.CurrentConfig.AllowedPatterns[Globals.Tags.ProdReg_PalletPattern.Value.Int];
-			
-			// Luetaan, mille tuloradalle kuvio on
-			Tulorata_Text.Text = "";
-			bool loytyi = false;
-			foreach (int tulorata in pi.Tuloradat)
-			{
-				if (loytyi)
-				{
-					Tulorata_Text.Text = Tulorata_Text.Text + ", ";
-				}
-				Tulorata_Text.Text = Tulorata_Text.Text + tulorata.ToString();
-				loytyi = true;
-			}
-			
-			// Luetaan, mille lavapaikalle kuvio on
-			List<int> lavapaikat = new List<int>();
-			Lavapaikka_Text.Text = "";
-			loytyi = false;
-			foreach (int lavapaikka in pi.Lavapaikat)
-			{
-				if (loytyi)
-				{
-					Lavapaikka_Text.Text = Lavapaikka_Text.Text + ", ";
-				}
-				lavapaikat.Add(lavapaikka);
-				Lavapaikka_Text.Text = Lavapaikka_Text.Text + lavapaikka.ToString();
-				loytyi = true;
-			}
-			
-			// Katsotaan kummalle robotille kuvio on
-			Robotti_Text.Text = "";
-			loytyi = false;
-			foreach (KeyValuePair<int, RobotConf> r in Globals._Konfiguraatio.CurrentConfig.Robots)
-			{
-				RobotConf robot = r.Value;
-				foreach (int lavapaikka in lavapaikat)
-				{
-					if (robot.Lavapaikat.Contains(lavapaikka))
-					{
-						if (loytyi)
-						{
-							Robotti_Text.Text = Robotti_Text.Text + ", ";
-						}
-						Robotti_Text.Text = Robotti_Text.Text + robot.RobotNo.ToString();
-						loytyi = true;
-						break;
-					}
-				}
-			}
-			
-			// Päivitetään lavatyypit
-			Neo.ApplicationFramework.Controls.WindowsControls.ComboBox boxi = (Neo.ApplicationFramework.Controls.WindowsControls.ComboBox)PalletTypeComboBox.AdaptedObject;
-			boxi.IntervalMapper.Intervals.Clear();
-			foreach (int tyyppi in pi.Lavatyypit)
-			{
-				PalletTypeComboBox.AddString(tyyppi, Globals._Konfiguraatio.CurrentConfig.Lavatyypit[tyyppi]);
-			}
-
-			if (Globals.Tags.ProdReg_PalletType.Value.Int != 0)
-			{
-				if (PalletTypeComboBox.Items.Contains(Globals._Konfiguraatio.CurrentConfig.Lavatyypit[Globals.Tags.ProdReg_PalletType.Value.Int]))
-				{
-					PalletTypeComboBox.SelectedIndex = Globals.Tags.ProdReg_PalletType.Value.Int;
-				}
-			}
-			// Ladataan kuvion tiedot
-			Lavaus.Kuvio Kuvio = new Lavaus.Kuvio();
-			Kuvio.Validoi = false;
-			Kuvio.JSON = _Konfiguraatio.PatternDirectory + "Kuvio" + Globals.Tags.ProdReg_PalletPattern.Value + ".json";
-
-			// Yritetään ladata tiedosto
-			try
-			{
-				Kuvio.Lataa();
-			}
-			catch (Exception ex)
-			{
-				// Lataus epäonnistui
-				Globals.Tags.HMI_Error_TextValue.SetAnalog(4);
-				Globals.Tags.HMI_Error_AdditionalInfo. Value = ex.Message;
-				Globals.Popup_Error.Show();
-			}
-
-			// Jos kuvio on olemassa päivitetään näyttö
-			if (Kuvio.Nykyinen != null)
-			{			
-				Desc_Text.Text = Kuvio.Nykyinen.Description;
-				//Text19.Text = Kuvio.Nykyinen.PatternName;
-				Tool_Text.Text = Kuvio.Nykyinen.Tools[0].Name;
-                
-				// Luetaan kuviosta kerrosmäärä
-				maxkerros = Kuvio.Nykyinen.Layers;
-			}
-			else
-			{
-				// Tyhjennetään näyttö
-				Desc_Text.Text = "";
-				Tool_Text.Text = "";
-			}
-			
-			// Ladataan kuvion kuva
-			try 
-			{	  
-				m_Kuva_Kuvio.Visibility = System.Windows.Visibility.Hidden;
-				Kuva_Kuvio.Image = null;
-				Kuva_Kuvio.Refresh();
-				
-				// Ladataan kuvion kuva, jos on olemassa
-				if (Kuvio.Nykyinen.PalletizingImageFilename != null)
-				{	
-					string polku = _Konfiguraatio.PictureDirectory + Kuvio.Nykyinen.PalletizingImageFilename;
-					if(System.IO.File.Exists(polku))
-					{
-						Kuva_Kuvio.Image = System.Drawing.Image.FromFile(polku);
-						Kuva_Kuvio.SizeMode = PictureBoxSizeMode.Zoom;
-						Kuva_Kuvio.Refresh();
-
-						m_Kuva_Kuvio.Visibility = System.Windows.Visibility.Visible;
-						Kuva_Kuvio.Dock = DockStyle.Fill;
-						//Kuva_Kuvio.BackColor = Color.Transparent;
-						
-					}
-				}
-			}
-			catch (Exception ex)
-			{
-				// Kuvion kuvan lataaminen epäonnistui
-				Globals.Tags.HMI_Error_TextValue.SetAnalog(5);
-				Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message;
-				Globals.Popup_Error.Show();
-				return;
-			}
-		}
-		
 		/// <summary>
 		/// Avaa poista resepti -dialogin.
 		/// </summary>
@@ -269,7 +192,7 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			Globals.Tags.HMI_ProdReg_Dialog_Mode.Value = 1;
 		}
-		
+
 		/// <summary>
 		/// Avaa tallenna nimellä -dialogin.
 		/// </summary>
@@ -293,9 +216,9 @@ namespace Neo.ApplicationFramework.Generated
 					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
 					Globals.Popup_Error.Show();
 				}
-			}            
+			}
 		}
-		
+
 		/// <summary>
 		/// Tallentaa reseptin.
 		/// </summary>
@@ -317,7 +240,7 @@ namespace Neo.ApplicationFramework.Generated
 				}
 			}
 		}
-		
+
 		/// <summary>
 		/// Irroittautuu kuvionumeron muutoksen seurannasta, kun sivu sulkeutuu.
 		/// </summary>
@@ -340,6 +263,229 @@ namespace Neo.ApplicationFramework.Generated
 			sivu.Closed -= ValikeSivu_Closed;
 			sivu = null;
 		}
+
+		#region pattern
+
+		string MakeString(List<int> lst)
+		{
+			string s = "";
+			lst.Sort();
+			bool next = false;
+			foreach (int item in lst)
+			{
+				if (next)
+					s = s + ", ";
+				else
+					next = true;
+				s = s + item.ToString();
+			}
+			return s;
+		}
+
+		void UpdatePatternInfeedTracks(PatternInfo pi)
+		{
+			List<int> lst = new List<int>();
+			// Luetaan, mille tuloradalle kuvio on
+			foreach (int tulorata in pi.Tuloradat) lst.Add(tulorata);
+			Tulorata_Text.Text = MakeString(lst);
+		}
+
+		void UpdatePatternPalletPlaces(PatternInfo pi)
+		{
+			List<int> lst = new List<int>();
+			// Luetaan, mille lavapaikalle kuvio on
+			Lavapaikka_Text.Text = "";
+			foreach (int lavapaikka in pi.Lavapaikat) lst.Add(lavapaikka);
+			Lavapaikka_Text.Text = MakeString(lst);
+		}
+
+		void UpdatePatternRobots(PatternInfo pi)
+		{
+			List<int> lst = new List<int>();
+			// Katsotaan kummalle robotille kuvio on
+			foreach (KeyValuePair<int, RobotConf> r in Globals._Konfiguraatio.CurrentConfig.Robots)
+			{
+				RobotConf robot = r.Value;
+				foreach (int lavapaikka in pi.Lavapaikat)
+				{
+					if (robot.Lavapaikat.Contains(lavapaikka))
+					{
+						lst.Add(robot.RobotNo);
+						break;
+					}
+				}
+			}
+			Robotti_Text.Text = MakeString(lst);
+		}
+
+		void UpdatePatternPallettypes(PatternInfo pi)
+		{
+			//Neo.ApplicationFramework.Controls.WindowsControls.ComboBox boxi = (Neo.ApplicationFramework.Controls.WindowsControls.ComboBox)PalletTypeComboBox.AdaptedObject;
+			//boxi.IntervalMapper.Intervals.Clear();
+
+			// Päivitetään lavatyypit
+			bool first = true;
+			int index = 0;
+			foreach (int tyyppi in pi.Lavatyypit)
+			{
+				PalletTypeComboBox.AddString(tyyppi, Globals._Konfiguraatio.CurrentConfig.Lavatyypit[tyyppi]);
+				if (first)
+				{
+					int pt = (int)Globals.Tags.ProdReg_PalletType.Value;
+					if (Globals._Konfiguraatio.CurrentConfig.Lavatyypit.ContainsKey(pt))
+					{
+						PalletTypeComboBox.SelectedIndex = index;
+						first = false;
+					}
+				}
+				index++;
+			}
+		}
+
+		void LoadPicture(string fname)
+		{
+			// Ladataan kuvion kuva
+			try
+			{
+				Kuva_Kuvio.Image = null;
+				Kuva_Kuvio.Refresh();
+
+				// Ladataan kuvion kuva, jos on olemassa
+				if (!string.IsNullOrEmpty(fname))
+				{
+					string name = string.Format("{0}{1}", _Konfiguraatio.PictureDirectory, fname);
+					if (System.IO.File.Exists(name))
+					{
+						Kuva_Kuvio.Image = System.Drawing.Image.FromFile(name);
+						Kuva_Kuvio.SizeMode = PictureBoxSizeMode.Zoom;
+						Kuva_Kuvio.Refresh();
+
+						Kuva_Kuvio.Visible = true; // System.Windows.Visibility.Visible;
+						Kuva_Kuvio.Dock = DockStyle.Fill;
+						//Kuva_Kuvio.BackColor = Color.Transparent;
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				// Kuvion kuvan lataaminen epäonnistui
+				Globals.Tags.HMI_Error_TextValue.SetAnalog(5);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message;
+				Globals.Popup_Error.Show();
+				return;
+			}
+		}
+
+		void UpdatePatternSelection()
+		{
+			List<int> lst = new List<int>();
+			string s = Globals.Tags.ProdReg_InfeedTrackPattern.Value;
+			string[] values = s.Split(',');
+			if (values.Length > 0)
+			{
+				int no = 0;
+				foreach (string item in values)
+					if (int.TryParse(item, out no)) lst.Add(no);
+			}
+
+			foreach (System.Windows.Controls.StackPanel o in LBPatterns.Items)
+			{
+				if (o.Children.Count > 0)
+				{
+					System.Windows.Controls.CheckBox cb = (System.Windows.Controls.CheckBox)o.Children[0];
+					int tag = (int)cb.Tag;
+					cb.IsChecked = lst.Contains(tag);
+				}
+			}
+		}
+
+		#endregion
+
+		/// <summary>
+		/// Lataa kuvion tiedot näytölle, kun tuoterekisteriin valittu 
+		/// kuvionumero muuttuu.
+		/// </summary>
+		void LataaKuvio(System.Object sender, System.EventArgs e)
+		{
+			bool selected = string.IsNullOrEmpty(Globals.Tags.HMI_ProdReg_RecipeSelected.Value) == false;
+			// Sallitaan/Estetään tallennusnapit
+			Product_Save_As_btn.IsEnabled = selected;
+			Product_Save_btn.IsEnabled = selected;
+
+			int patternno = Globals.Tags.ProdReg_PalletPattern.Value.Int;
+
+			System.Diagnostics.Trace.WriteLine(string.Format("Load pattern {0}", patternno));
+
+			// Haetaan kuvion tiedot JSON-tiedostosta
+			if (!Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.ContainsKey(patternno))
+			{
+				// tuntematon kuvio
+				Globals.Tags.HMI_Error_TextValue.SetAnalog(24);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = patternno.ToString();
+				Globals.Popup_Error.Show();
+				return;
+			}
+
+			PatternInfo pi = Globals._Konfiguraatio.CurrentConfig.AllowedPatterns[patternno];
+
+			UpdatePatternInfeedTracks(pi);
+			UpdatePatternPalletPlaces(pi);
+			UpdatePatternRobots(pi);
+			UpdatePatternPallettypes(pi);
+
+			// Ladataan kuvion tiedot
+			Lavaus.Kuvio Kuvio = new Lavaus.Kuvio();
+			Kuvio.Validoi = false;
+			Kuvio.JSON = string.Format("{0}Kuvio{1}.json", _Konfiguraatio.PatternDirectory, patternno);
+
+			// Tyhjennetään näyttö
+			Desc_Text.Text = "";
+			Tool_Text.Text = "";
+
+			// Yritetään ladata tiedosto
+			try
+			{
+				Kuva_Kuvio.Visible = false;
+
+				Kuvio.Lataa();
+
+				// Jos kuvio on olemassa päivitetään näyttö
+				if (Kuvio.Nykyinen != null)
+				{
+					Desc_Text.Text = Kuvio.Nykyinen.Description;
+					//Text19.Text = Kuvio.Nykyinen.PatternName;
+					if (Kuvio.Nykyinen.Tools.Count > 0)
+						Tool_Text.Text = Kuvio.Nykyinen.Tools[0].Name;
+
+					// Luetaan kuviosta kerrosmäärä
+					maxkerros = Kuvio.Nykyinen.Layers;
+
+					LoadPicture(Kuvio.Nykyinen.PalletizingImageFilename);
+				}
+			}
+			catch (Exception ex)
+			{
+				// Lataus epäonnistui
+				Globals.Tags.HMI_Error_TextValue.SetAnalog(4);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message;
+				Globals.Popup_Error.Show();
+				return;
+			}
+		}
+
+		void LBPatterns_SelectionChanged(System.Object sender, System.EventArgs e)
+		{
+			if (LBPatterns.SelectedIndex >= 0)
+			{
+				System.Windows.Controls.StackPanel lbitem = (System.Windows.Controls.StackPanel)LBPatterns.SelectedItem;
+				Globals.Tags.ProdReg_PalletPattern.SetAnalog((int)lbitem.Tag);
+			}
+		}
 		
-	}	
+		void ANProductNo_ValueChanged(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
+		{
+			System.Diagnostics.Trace.WriteLine(string.Format("Patterns str {0}", Globals.Tags.ProdReg_InfeedTrackPattern.Value));
+			UpdatePatternSelection();			
+		}
+	}
 }

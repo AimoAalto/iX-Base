@@ -2,7 +2,6 @@ namespace Neo.ApplicationFramework.Generated
 {
 	using System;
 	using System.Collections.Generic;
-	//using System.Windows.Forms;
 	using System.Windows;
 	using System.Drawing;
 	using System.Linq;
@@ -43,6 +42,9 @@ namespace Neo.ApplicationFramework.Generated
 			UpdateAllowedPatterns();
 			
 			UpdatePatternAllowedPlaces(pno);
+			
+			if (LBPatternNo.Items.Count > 0)
+				LBPatternNo.SelectedIndex = 0;
 		}
 		
 		/// <summary>
@@ -138,12 +140,16 @@ namespace Neo.ApplicationFramework.Generated
 				try
 				{
 					kuvio.Lataa();
-					Desc_Text.Text = kuvio.Nykyinen.Description;
-					Tool_Text.Text = kuvio.Nykyinen.Tools[0].Name;
+					if (kuvio.Nykyinen != null)
+					{
+						Desc_Text.Text = kuvio.Nykyinen.Description;
+						if (kuvio.Nykyinen.Tools.Count > 0)
+							Tool_Text.Text = kuvio.Nykyinen.Tools[0].Name;
 				
-					LoadPatternPicture(kuvio);
+						LoadPatternPicture(kuvio.Nykyinen.PalletizingImageFilename);
 				
-					ret = true;
+						ret = true;
+					}
 				}
 				catch (Exception ex)
 				{
@@ -164,45 +170,41 @@ namespace Neo.ApplicationFramework.Generated
 			return ret;
 		}
 		
-		bool LoadPatternPicture(Lavaus.Kuvio kuvio)
+		bool LoadPatternPicture(string fname)
 		{
 			bool ret = false;
 
 			// Ladataan kuvion kuva
-			m_Kuva_Kuvio.Visibility = System.Windows.Visibility.Hidden;
+			Kuva_Kuvio.Visible = false; //System.Windows.Visibility.Hidden;
 			Kuva_Kuvio.Image = null;
 			Kuva_Kuvio.Refresh();
 			
-			// Ladataan kuvion kuva, jos on olemassa
-			if (kuvio.Nykyinen != null)
-				if (kuvio.Nykyinen.PalletizingImageFilename != null)
-				{	
-					string fname = string.Format("{0}{1}", 
-						Neo.ApplicationFramework.Generated._Konfiguraatio.PictureDirectory, 
-						kuvio.Nykyinen.PalletizingImageFilename);
-					if(System.IO.File.Exists(fname))
-					{
-						Kuva_Kuvio.Image = Image.FromFile(fname);
-						Kuva_Kuvio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-						Kuva_Kuvio.Refresh();
+			if (!string.IsNullOrEmpty(fname))
+			{	
+				string name = string.Format("{0}{1}",  _Konfiguraatio.PictureDirectory, fname);
+				if(System.IO.File.Exists(name))
+				{
+					Kuva_Kuvio.Image = Image.FromFile(name);
+					Kuva_Kuvio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+					Kuva_Kuvio.Refresh();
 
-						m_Kuva_Kuvio.Visibility = System.Windows.Visibility.Visible;
-						Kuva_Kuvio.Dock = System.Windows.Forms.DockStyle.Fill;
+					Kuva_Kuvio.Visible = true;
+					Kuva_Kuvio.Dock = System.Windows.Forms.DockStyle.Fill;
 						
-						ret = true;
-					}
-					else
-					{
-						// Lataus epäonnistui
-						Globals.Tags.HMI_Error_TextValue.SetAnalog((int)ErrNo.NoPictureFile);
-						Globals.Tags.HMI_Error_AdditionalInfo.Value = fname;
-						Globals.Popup_Error.Show();
-					}
+					ret = true;
 				}
+				else
+				{
+					// Lataus epäonnistui
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)ErrNo.NoPictureFile);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = fname;
+					Globals.Popup_Error.Show();
+				}
+			}
 
 			return ret;
 		}
-		
+
 		#endregion
 
 		#region Allowed Pattern mouse/keyboard events
@@ -276,6 +278,8 @@ namespace Neo.ApplicationFramework.Generated
 					ANPatternNo.Text = LBPatternNo.SelectedItem.ToString();
 					pno = (int)LBPatternNo.SelectedItem;
 					UpdatePatternAllowedPlaces(pno);
+				
+					LoadPattern(pno);
 				}
 			}
 			catch (Exception x)

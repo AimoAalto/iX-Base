@@ -1,10 +1,8 @@
 namespace Neo.ApplicationFramework.Generated
 {
+	using System;
 	using Neo.ApplicationFramework.Interfaces;
 	using Neo.ApplicationFramework.Interfaces.Tag;
-	using System;
-	using System.Collections.Generic;
-	using System.Threading;
 
 
 	/// <summary>
@@ -70,42 +68,7 @@ namespace Neo.ApplicationFramework.Generated
 
 			// Lähetetään lopetus robotille
 			Globals.Robotit.LisaaLokiin(robottiNo, "Lopetetaan tulorata " + robottiTulorata + ".");
-			Globals.Robotit.TeeLopetus(robottiNo, robottiTulorata);	
-
-			// this.Close();
-			// }
-			// else // Lopetus on jo käynnissä
-			// {
-			// // Kysytään, haluaako pakottaa lopetuksen
-			// // Resetoidaan vahvistuksen kyselyn odotusvahti
-			// ((Popup_Confirmation)Globals.Popup_Confirmation.AdaptedObject).konfirmaatioVahvistus.Reset();
-			// 
-			// // Kysytään vahvistusta
-			// Globals.Tags.HMI_Confirmation_Text.SetAnalog(4);
-			// Globals.Tags.HMI_Confirmation_Value.Value = "";
-			// Globals.Popup_Confirmation.Show();
-			// 
-			// // Tulostetaan tai ei tulosteta, kun vastaus saadaan
-			// Thread toiminta = new Thread(() => 
-			// {
-			// // Odotetaan vastausta
-			// ((Popup_Confirmation)Globals.Popup_Confirmation.AdaptedObject).konfirmaatioVahvistus.WaitOne();
-			// 
-			// // Luetaan vastaus
-			// if (Globals.Tags.HMI_Confirmation_OK.Value.Bool)
-			// {
-			// // Lähetetään lopetuksen pakotuspyyntö logiikalle
-			// // TODO
-			// }
-			// }
-			// );
-			// 
-			// // Käynnistetään lanka odottamaan vastausta
-			// toiminta.Start();
-			// 
-			// // Suljetaan ikkuna
-			// this.Close();
-			// }
+			Globals.Robotit.TeeLopetus(robottiNo, robottiTulorata);
 		}
 
 		/// <summary>

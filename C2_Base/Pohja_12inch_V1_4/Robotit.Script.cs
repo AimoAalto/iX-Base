@@ -16,6 +16,7 @@ namespace Neo.ApplicationFramework.Generated
 	/// <remarks>Viimeksi muokattu: SoPi 7.7.2017</remarks>
 	public partial class Robotit
 	{
+		object lockme = new object();
 		/// <summary>
 		/// Robottien yhteydet.
 		/// </summary>
@@ -31,7 +32,17 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">this</param>
 		void Robotit_Created(System.Object sender, System.EventArgs e)
 		{
+			/**/
 			if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine("Robotit Created (start)");
+			int interval = 1000;
+			try
+			{
+				interval = Globals._Konfiguraatio.CurrentConfig.Aikavali("RobottiWatchdog");
+			}
+			catch (Exception x)
+			{
+				Globals.Tags.Log(String.Format("Robotit_Created: Interval error, use default\n{1}", x.Message));
+			}
 
 			Watchdog = new Timer((args) =>
 			{
@@ -45,12 +56,7 @@ namespace Neo.ApplicationFramework.Generated
 				foreach (int robotti in robotit.Keys)
 				{
 					TarkistaTila(robotti);
-
-					if (Globals.Tags.GetTagValue("HMI_CommFault_Rob" + robotti).Bool)
-					{
-						Globals.Tags.HMI_CommFault_Robots.SetTag();
-						break;
-					}
+					if (Globals.Tags.GetTagValue("HMI_CommFault_Rob" + robotti).Bool) Globals.Tags.HMI_CommFault_Robots.SetTag();
 				}
 
 				takeTime.Stop();
@@ -58,8 +64,9 @@ namespace Neo.ApplicationFramework.Generated
 				if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("Robotit time : {0} (ticks)", takeTime.ElapsedTicks));
 
 				// Suoritetaan määritetyin välein (default 1s)
-				Watchdog.Change(Math.Max(0, Globals._Konfiguraatio.CurrentConfig.Aikavali("RobottiWatchdog") - takeTime.ElapsedMilliseconds), Timeout.Infinite);
+				Watchdog.Change(Math.Max(0, interval - takeTime.ElapsedMilliseconds), Timeout.Infinite);
 			}, null, 0, Timeout.Infinite);
+			/**/
 		}
 
 		/// <summary>
@@ -253,14 +260,15 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="numero">Robotin numero</param>
 		private void TarkistaTila(int numero)
 		{
-			if (Exists(numero))
-			{
-				// Kysytään yhteyden tilaa
-				Globals.Tags.SetTagValue("Rob" + numero + "_Tila", robotit[numero].Tila);
+			lock(lockme)
+				if (Exists(numero))
+				{
+					// Kysytään yhteyden tilaa
+					Globals.Tags.SetTagValue("Rob" + numero + "_Tila", robotit[numero].Tila);
 
-				// Watchdog
-				Globals.Tags.SetTagValue("HMI_CommFault_Rob" + numero, robotit[numero].WatchdogHalytys);
-			}
+					// Watchdog
+					Globals.Tags.SetTagValue("HMI_CommFault_Rob" + numero, robotit[numero].WatchdogHalytys);
+				}
 		}
 
 		/// <summary>

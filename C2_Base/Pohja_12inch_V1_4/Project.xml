@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project SchemaVersion="2.46.49.0" ProjectRevision="2134">
+<Project SchemaVersion="2.46.49.0" ProjectRevision="2244">
   <Guid>8679f1dc-ca9a-48fe-80b2-b2b8a81264f6</Guid>
   <ProjectFiles>
     <ProjectFile Name="ReferencedAssembly\Kuvio.dll" ModifiedDate="2020-09-18T10:14:14+03:00" Length="135680" />
@@ -97,36 +97,36 @@
     <ProjectFile Name="Security.xml" ModifiedDate="2022-02-02T11:11:38.0751594+02:00" Length="1428" />
     <ProjectFile Name="LicenseRootComponent.neo" ModifiedDate="2022-02-01T11:52:08.7615084+02:00" Length="21027" />
     <ProjectFile Name="Expressions.neo" ModifiedDate="2021-11-12T12:19:49.6961551+02:00" Length="27204" />
-    <ProjectFile Name="Tags.neo" ModifiedDate="2023-02-25T00:38:45.273365+02:00" Length="789282" />
-    <ProjectFile Name="Tags.Script.cs" ModifiedDate="2023-02-25T00:38:45.2743703+02:00" Length="14215" />
-    <ProjectFile Name="MultipleLanguages.neo" ModifiedDate="2023-02-25T00:38:46.0193353+02:00" Length="893042" />
-    <ProjectFile Name="Finnish (Finland).lng" ModifiedDate="2023-02-25T00:38:46.0303433+02:00" Length="52" />
-    <ProjectFile Name="Finnish (Finland).Designer.lng" ModifiedDate="2023-02-25T00:38:46.0263363+02:00" Length="8290" />
-    <ProjectFile Name="English (United States).lng" ModifiedDate="2023-02-25T00:38:46.0313378+02:00" Length="64" />
-    <ProjectFile Name="English (United States).Designer.lng" ModifiedDate="2023-02-25T00:38:46.0273376+02:00" Length="8036" />
-    <ProjectFile Name="Swedish (Sweden).lng" ModifiedDate="2023-02-25T00:38:46.0313378+02:00" Length="50" />
-    <ProjectFile Name="Swedish (Sweden).Designer.lng" ModifiedDate="2023-02-25T00:38:46.0273376+02:00" Length="50" />
-    <ProjectFile Name="German (Germany).lng" ModifiedDate="2023-02-25T00:38:46.0323385+02:00" Length="50" />
-    <ProjectFile Name="German (Germany).Designer.lng" ModifiedDate="2023-02-25T00:38:46.0283375+02:00" Length="7016" />
-    <ProjectFile Name="Russian (Russia).lng" ModifiedDate="2023-02-25T00:38:46.0323385+02:00" Length="50" />
-    <ProjectFile Name="Russian (Russia).Designer.lng" ModifiedDate="2023-02-25T00:38:46.0293372+02:00" Length="50" />
-    <ProjectFile Name="Lithuanian (Lithuania).lng" ModifiedDate="2023-02-25T00:38:46.0333388+02:00" Length="62" />
-    <ProjectFile Name="Lithuanian (Lithuania).Designer.lng" ModifiedDate="2023-02-25T00:38:46.0293372+02:00" Length="62" />
+    <ProjectFile Name="Tags.neo" ModifiedDate="2023-02-27T12:47:25.4365856+02:00" Length="790428" />
+    <ProjectFile Name="Tags.Script.cs" ModifiedDate="2023-02-27T12:47:25.4375838+02:00" Length="14130" />
+    <ProjectFile Name="MultipleLanguages.neo" ModifiedDate="2023-02-27T01:25:22.030803+02:00" Length="889335" />
+    <ProjectFile Name="Finnish (Finland).lng" ModifiedDate="2023-02-27T01:25:22.0388025+02:00" Length="52" />
+    <ProjectFile Name="Finnish (Finland).Designer.lng" ModifiedDate="2023-02-27T01:25:22.0328036+02:00" Length="8290" />
+    <ProjectFile Name="English (United States).lng" ModifiedDate="2023-02-27T01:25:22.039804+02:00" Length="64" />
+    <ProjectFile Name="English (United States).Designer.lng" ModifiedDate="2023-02-27T01:25:22.0348033+02:00" Length="8036" />
+    <ProjectFile Name="Swedish (Sweden).lng" ModifiedDate="2023-02-27T01:25:22.0408094+02:00" Length="50" />
+    <ProjectFile Name="Swedish (Sweden).Designer.lng" ModifiedDate="2023-02-27T01:25:22.0358036+02:00" Length="50" />
+    <ProjectFile Name="German (Germany).lng" ModifiedDate="2023-02-27T01:25:22.0418042+02:00" Length="50" />
+    <ProjectFile Name="German (Germany).Designer.lng" ModifiedDate="2023-02-27T01:25:22.0368039+02:00" Length="7016" />
+    <ProjectFile Name="Russian (Russia).lng" ModifiedDate="2023-02-27T01:25:22.0428048+02:00" Length="50" />
+    <ProjectFile Name="Russian (Russia).Designer.lng" ModifiedDate="2023-02-27T01:25:22.0378034+02:00" Length="50" />
+    <ProjectFile Name="Lithuanian (Lithuania).lng" ModifiedDate="2023-02-27T01:25:22.0438041+02:00" Length="62" />
+    <ProjectFile Name="Lithuanian (Lithuania).Designer.lng" ModifiedDate="2023-02-27T01:25:22.0388025+02:00" Length="62" />
     <ProjectFile Name="AlarmServer.neo" ModifiedDate="2023-02-05T07:52:05.2241612+02:00" Length="1572019" />
     <ProjectFile Name="TextLibrary.neo" ModifiedDate="2023-02-22T13:40:24.0103916+02:00" Length="28410" />
     <ProjectFile Name="AuditTrail.neo" ModifiedDate="2022-02-07T17:03:01.1266589+02:00" Length="7789" />
-    <ProjectFile Name="Template_Orfer.neoxaml" ModifiedDate="2023-02-22T10:13:42.5643921+02:00" Length="803" />
-    <ProjectFile Name="Template_Orfer.Script.cs" ModifiedDate="2023-02-22T10:13:42.5643921+02:00" Length="2952" />
-    <ProjectFile Name="Template_Orfer.xaml" ModifiedDate="2023-02-22T10:13:42.7494213+02:00" Length="102766" />
-    <ProjectFile Name="Template_Alarms.neoxaml" ModifiedDate="2023-02-07T05:02:10.365409+02:00" Length="804" />
-    <ProjectFile Name="Template_Alarms.Script.cs" ModifiedDate="2023-02-07T05:02:10.3664106+02:00" Length="756" />
-    <ProjectFile Name="Template_Alarms.xaml" ModifiedDate="2023-02-07T05:02:10.4824141+02:00" Length="46655" />
-    <ProjectFile Name="Template_Robots.neoxaml" ModifiedDate="2023-02-14T10:31:31.0336939+02:00" Length="804" />
-    <ProjectFile Name="Template_Robots.Script.cs" ModifiedDate="2023-02-14T10:31:31.0346929+02:00" Length="2336" />
-    <ProjectFile Name="Template_Robots.xaml" ModifiedDate="2023-02-14T10:31:31.3306925+02:00" Length="79169" />
-    <ProjectFile Name="Overview_Pan1_Scr1.neoxaml" ModifiedDate="2023-02-24T18:23:29.1621767+02:00" Length="807" />
-    <ProjectFile Name="Overview_Pan1_Scr1.Script.cs" ModifiedDate="2023-02-25T02:17:06.8760559+02:00" Length="2448" />
-    <ProjectFile Name="Overview_Pan1_Scr1.xaml" ModifiedDate="2023-02-24T18:23:29.862141+02:00" Length="85672" />
+    <ProjectFile Name="Template_Orfer.neoxaml" ModifiedDate="2023-02-27T12:12:39.1627377+02:00" Length="803" />
+    <ProjectFile Name="Template_Orfer.Script.cs" ModifiedDate="2023-02-27T12:12:39.1637378+02:00" Length="3725" />
+    <ProjectFile Name="Template_Orfer.xaml" ModifiedDate="2023-02-27T12:12:39.4817459+02:00" Length="102992" />
+    <ProjectFile Name="Template_Alarms.neoxaml" ModifiedDate="2023-02-26T14:40:27.2661847+02:00" Length="804" />
+    <ProjectFile Name="Template_Alarms.Script.cs" ModifiedDate="2023-02-26T14:40:27.2671846+02:00" Length="756" />
+    <ProjectFile Name="Template_Alarms.xaml" ModifiedDate="2023-02-26T14:40:27.3521841+02:00" Length="46655" />
+    <ProjectFile Name="Template_Robots.neoxaml" ModifiedDate="2023-02-26T14:40:27.7482184+02:00" Length="804" />
+    <ProjectFile Name="Template_Robots.Script.cs" ModifiedDate="2023-02-26T14:40:27.7482184+02:00" Length="2336" />
+    <ProjectFile Name="Template_Robots.xaml" ModifiedDate="2023-02-26T14:40:27.9692172+02:00" Length="79169" />
+    <ProjectFile Name="Overview_Pan1_Scr1.neoxaml" ModifiedDate="2023-02-26T20:59:03.2046687+02:00" Length="807" />
+    <ProjectFile Name="Overview_Pan1_Scr1.Script.cs" ModifiedDate="2023-02-26T20:59:03.2046687+02:00" Length="2448" />
+    <ProjectFile Name="Overview_Pan1_Scr1.xaml" ModifiedDate="2023-02-26T20:59:03.3786674+02:00" Length="85668" />
     <ProjectFile Name="Overview_Pan1_Scr2.neoxaml" ModifiedDate="2023-02-04T09:49:53.7550828+02:00" Length="807" />
     <ProjectFile Name="Overview_Pan1_Scr2.xaml" ModifiedDate="2023-02-04T09:49:53.769079+02:00" Length="1166" />
     <ProjectFile Name="Overview_Pan1_Scr3.neoxaml" ModifiedDate="2023-02-04T09:49:53.8440822+02:00" Length="807" />
@@ -137,34 +137,34 @@
     <ProjectFile Name="Manual_Pan1_Scr1.Script.cs" ModifiedDate="2023-02-07T18:12:56.3006359+02:00" Length="1750" />
     <ProjectFile Name="Manual_Pan1_Scr1.xaml" ModifiedDate="2023-02-04T09:49:54.6380884+02:00" Length="53074" />
     <ProjectFile Name="Manual_Pan1_Scr2.neoxaml" ModifiedDate="2023-02-04T09:49:54.84649+02:00" Length="805" />
-    <ProjectFile Name="Manual_Pan1_Scr2.Script.cs" ModifiedDate="2023-02-04T09:49:54.84649+02:00" Length="791" />
+    <ProjectFile Name="Manual_Pan1_Scr2.Script.cs" ModifiedDate="2023-02-26T12:32:48.1324615+02:00" Length="510" />
     <ProjectFile Name="Manual_Pan1_Scr2.xaml" ModifiedDate="2023-02-04T09:49:54.861492+02:00" Length="1160" />
     <ProjectFile Name="Manual_Pan1_Scr3.neoxaml" ModifiedDate="2023-02-04T09:49:54.9325226+02:00" Length="805" />
-    <ProjectFile Name="Manual_Pan1_Scr3.Script.cs" ModifiedDate="2023-02-04T09:49:54.9335209+02:00" Length="791" />
+    <ProjectFile Name="Manual_Pan1_Scr3.Script.cs" ModifiedDate="2023-02-26T12:32:58.7579967+02:00" Length="510" />
     <ProjectFile Name="Manual_Pan1_Scr3.xaml" ModifiedDate="2023-02-04T09:49:54.9485232+02:00" Length="1160" />
     <ProjectFile Name="Popup_Success.neoxaml" ModifiedDate="2022-02-17T15:06:32.1385465+02:00" Length="802" />
     <ProjectFile Name="Popup_Success.Script.cs" ModifiedDate="2022-02-17T15:06:32.1385465+02:00" Length="430" />
     <ProjectFile Name="Popup_Success.xaml" ModifiedDate="2022-02-17T15:06:32.17648+02:00" Length="6769" />
-    <ProjectFile Name="Popup_StartProduction.neoxaml" ModifiedDate="2023-02-25T00:40:06.2733096+02:00" Length="3017" />
-    <ProjectFile Name="Popup_StartProduction.Script.cs" ModifiedDate="2023-02-25T00:40:06.2743115+02:00" Length="26441" />
-    <ProjectFile Name="Popup_StartProduction.xaml" ModifiedDate="2023-02-25T00:40:06.528311+02:00" Length="81633" />
+    <ProjectFile Name="Popup_StartProduction.neoxaml" ModifiedDate="2023-02-27T13:06:08.8105303+02:00" Length="3017" />
+    <ProjectFile Name="Popup_StartProduction.Script.cs" ModifiedDate="2023-02-27T13:06:08.8115267+02:00" Length="27827" />
+    <ProjectFile Name="Popup_StartProduction.xaml" ModifiedDate="2023-02-27T13:06:09.4557799+02:00" Length="81652" />
     <ProjectFile Name="Popup_Error.neoxaml" ModifiedDate="2023-02-24T20:36:14.3455249+02:00" Length="800" />
     <ProjectFile Name="Popup_Error.Script.cs" ModifiedDate="2023-02-24T20:36:14.3460843+02:00" Length="1332" />
     <ProjectFile Name="Popup_Error.xaml" ModifiedDate="2023-02-24T20:36:14.4111094+02:00" Length="11445" />
     <ProjectFile Name="Popup_SensorInfo.neoxaml" ModifiedDate="2023-02-14T12:23:17.6122201+02:00" Length="4284" />
-    <ProjectFile Name="Popup_SensorInfo.Script.cs" ModifiedDate="2023-02-14T12:23:17.6131738+02:00" Length="2641" />
+    <ProjectFile Name="Popup_SensorInfo.Script.cs" ModifiedDate="2023-02-26T13:08:40.3270631+02:00" Length="2799" />
     <ProjectFile Name="Popup_SensorInfo.xaml" ModifiedDate="2023-02-14T12:23:17.6722082+02:00" Length="13976" />
     <ProjectFile Name="Popup_NewPickPallet.neoxaml" ModifiedDate="2022-02-17T12:10:26.7534605+02:00" Length="808" />
-    <ProjectFile Name="Popup_NewPickPallet.Script.cs" ModifiedDate="2023-02-14T14:15:50.6095918+02:00" Length="1275" />
+    <ProjectFile Name="Popup_NewPickPallet.Script.cs" ModifiedDate="2023-02-26T12:35:06.3418562+02:00" Length="1011" />
     <ProjectFile Name="Popup_NewPickPallet.xaml" ModifiedDate="2022-02-17T12:10:26.7783938+02:00" Length="10231" />
     <ProjectFile Name="Popup_Yes_No.neoxaml" ModifiedDate="2022-02-17T15:07:02.2323324+02:00" Length="801" />
-    <ProjectFile Name="Popup_Yes_No.Script.cs" ModifiedDate="2022-02-17T15:07:02.2323324+02:00" Length="1287" />
+    <ProjectFile Name="Popup_Yes_No.Script.cs" ModifiedDate="2023-02-26T12:50:30.0174176+02:00" Length="1279" />
     <ProjectFile Name="Popup_Yes_No.xaml" ModifiedDate="2022-02-17T15:07:02.2572655+02:00" Length="18139" />
     <ProjectFile Name="Popup_Robot_speed.neoxaml" ModifiedDate="2022-02-17T12:51:35.4864845+02:00" Length="806" />
     <ProjectFile Name="Popup_Robot_speed.Script.cs" ModifiedDate="2023-02-14T14:28:16.2309758+02:00" Length="1851" />
     <ProjectFile Name="Popup_Robot_speed.xaml" ModifiedDate="2022-02-17T12:51:35.528372+02:00" Length="14877" />
     <ProjectFile Name="Popup_Confirmation.neoxaml" ModifiedDate="2022-02-17T12:02:12.5508585+02:00" Length="807" />
-    <ProjectFile Name="Popup_Confirmation.Script.cs" ModifiedDate="2022-02-17T12:02:12.5508585+02:00" Length="2616" />
+    <ProjectFile Name="Popup_Confirmation.Script.cs" ModifiedDate="2023-02-26T13:08:23.6522473+02:00" Length="2590" />
     <ProjectFile Name="Popup_Confirmation.xaml" ModifiedDate="2022-02-17T12:02:12.5867249+02:00" Length="13169" />
     <ProjectFile Name="Popup_PatternList_Add_pattern.neoxaml" ModifiedDate="2022-02-17T14:41:51.7017751+02:00" Length="818" />
     <ProjectFile Name="Popup_PatternList_Add_pattern.Script.cs" ModifiedDate="2022-02-17T14:41:51.7017751+02:00" Length="405" />
@@ -190,18 +190,18 @@
     <ProjectFile Name="Popup_Settings_ValikeEdit.neoxaml" ModifiedDate="2022-02-17T14:58:13.3739782+02:00" Length="814" />
     <ProjectFile Name="Popup_Settings_ValikeEdit.Script.cs" ModifiedDate="2022-02-17T14:58:13.3739782+02:00" Length="3649" />
     <ProjectFile Name="Popup_Settings_ValikeEdit.xaml" ModifiedDate="2022-02-17T14:58:13.4208536+02:00" Length="15477" />
-    <ProjectFile Name="Popup_Recipe_dialog.neoxaml" ModifiedDate="2022-02-18T10:13:26.3292751+02:00" Length="808" />
-    <ProjectFile Name="Popup_Recipe_dialog.Script.cs" ModifiedDate="2022-02-18T10:13:26.3302776+02:00" Length="6230" />
-    <ProjectFile Name="Popup_Recipe_dialog.xaml" ModifiedDate="2022-02-18T10:13:26.3651788+02:00" Length="14549" />
+    <ProjectFile Name="Popup_Recipe_dialog.neoxaml" ModifiedDate="2023-02-27T01:15:34.2817121+02:00" Length="808" />
+    <ProjectFile Name="Popup_Recipe_dialog.Script.cs" ModifiedDate="2023-02-27T01:15:34.2827127+02:00" Length="6230" />
+    <ProjectFile Name="Popup_Recipe_dialog.xaml" ModifiedDate="2023-02-27T01:15:34.3477145+02:00" Length="14549" />
     <ProjectFile Name="Settings_Pan1_Scr4.neoxaml" ModifiedDate="2023-02-24T12:13:08.1955205+02:00" Length="1445" />
     <ProjectFile Name="Settings_Pan1_Scr4.Script.cs" ModifiedDate="2023-02-24T12:13:08.1955205+02:00" Length="5067" />
     <ProjectFile Name="Settings_Pan1_Scr4.xaml" ModifiedDate="2023-02-24T12:13:08.2744832+02:00" Length="17191" />
     <ProjectFile Name="Robots_Pan1_Scr1.neoxaml" ModifiedDate="2023-02-14T10:31:31.7086913+02:00" Length="805" />
     <ProjectFile Name="Robots_Pan1_Scr1.Script.cs" ModifiedDate="2023-02-14T10:31:31.7096937+02:00" Length="547" />
     <ProjectFile Name="Robots_Pan1_Scr1.xaml" ModifiedDate="2023-02-14T10:31:31.8826902+02:00" Length="49339" />
-    <ProjectFile Name="ProductRegister.neoxaml" ModifiedDate="2023-02-22T19:25:28.5777771+02:00" Length="1152" />
-    <ProjectFile Name="ProductRegister.Script.cs" ModifiedDate="2023-02-24T20:48:18.2964746+02:00" Length="11169" />
-    <ProjectFile Name="ProductRegister.xaml" ModifiedDate="2023-02-22T19:25:28.9438061+02:00" Length="139257" />
+    <ProjectFile Name="ProductRegister.neoxaml" ModifiedDate="2023-02-27T08:40:05.6022758+02:00" Length="1152" />
+    <ProjectFile Name="ProductRegister.Script.cs" ModifiedDate="2023-02-27T08:40:05.6032769+02:00" Length="15049" />
+    <ProjectFile Name="ProductRegister.xaml" ModifiedDate="2023-02-27T08:40:05.9502729+02:00" Length="117620" />
     <ProjectFile Name="Production_Pan1_Scr1.neoxaml" ModifiedDate="2023-02-04T09:49:58.0706722+02:00" Length="809" />
     <ProjectFile Name="Production_Pan1_Scr1.Script.cs" ModifiedDate="2023-02-04T09:49:58.0716734+02:00" Length="142" />
     <ProjectFile Name="Production_Pan1_Scr1.xaml" ModifiedDate="2023-02-04T09:49:58.5106713+02:00" Length="52401" />
@@ -211,48 +211,48 @@
     <ProjectFile Name="Popup_Login.neoxaml" ModifiedDate="2023-02-04T09:49:59.7626731+02:00" Length="800" />
     <ProjectFile Name="Popup_Login.Script.cs" ModifiedDate="2023-02-04T09:49:59.7626731+02:00" Length="1185" />
     <ProjectFile Name="Popup_Login.xaml" ModifiedDate="2023-02-04T09:49:59.8116691+02:00" Length="9191" />
-    <ProjectFile Name="Template_Overview.neoxaml" ModifiedDate="2023-02-24T21:47:15.4897373+02:00" Length="806" />
-    <ProjectFile Name="Template_Overview.Script.cs" ModifiedDate="2023-02-24T21:47:15.4897373+02:00" Length="1056" />
-    <ProjectFile Name="Template_Overview.xaml" ModifiedDate="2023-02-24T21:47:15.5877016+02:00" Length="55079" />
+    <ProjectFile Name="Template_Overview.neoxaml" ModifiedDate="2023-02-27T01:58:21.0797742+02:00" Length="806" />
+    <ProjectFile Name="Template_Overview.Script.cs" ModifiedDate="2023-02-27T01:58:21.0807784+02:00" Length="1056" />
+    <ProjectFile Name="Template_Overview.xaml" ModifiedDate="2023-02-27T01:58:21.1927725+02:00" Length="55079" />
     <ProjectFile Name="Popup_Stop_Production.neoxaml" ModifiedDate="2023-02-07T13:08:24.0266861+02:00" Length="6257" />
-    <ProjectFile Name="Popup_Stop_Production.Script.cs" ModifiedDate="2023-02-14T14:28:09.7689263+02:00" Length="4997" />
+    <ProjectFile Name="Popup_Stop_Production.Script.cs" ModifiedDate="2023-02-26T12:52:20.0255867+02:00" Length="3843" />
     <ProjectFile Name="Popup_Stop_Production.xaml" ModifiedDate="2023-02-07T13:08:24.1317283+02:00" Length="25204" />
-    <ProjectFile Name="Template_Settings.neoxaml" ModifiedDate="2023-02-24T12:13:08.4794843+02:00" Length="806" />
-    <ProjectFile Name="Template_Settings.Script.cs" ModifiedDate="2023-02-24T12:13:08.4804824+02:00" Length="994" />
-    <ProjectFile Name="Template_Settings.xaml" ModifiedDate="2023-02-24T12:13:08.5675166+02:00" Length="54377" />
+    <ProjectFile Name="Template_Settings.neoxaml" ModifiedDate="2023-02-27T01:58:21.3637724+02:00" Length="806" />
+    <ProjectFile Name="Template_Settings.Script.cs" ModifiedDate="2023-02-27T01:58:21.3647737+02:00" Length="994" />
+    <ProjectFile Name="Template_Settings.xaml" ModifiedDate="2023-02-27T01:58:21.450806+02:00" Length="54377" />
     <ProjectFile Name="Settings_Pan1_Scr7.neoxaml" ModifiedDate="2023-02-04T10:27:13.5105857+02:00" Length="807" />
     <ProjectFile Name="Settings_Pan1_Scr7.Script.cs" ModifiedDate="2023-02-04T10:27:13.5105857+02:00" Length="280" />
     <ProjectFile Name="Settings_Pan1_Scr7.xaml" ModifiedDate="2023-02-04T10:27:13.7276127+02:00" Length="6306" />
-    <ProjectFile Name="Settings_Pan1_Scr5.neoxaml" ModifiedDate="2023-02-24T20:36:15.5416781+02:00" Length="807" />
-    <ProjectFile Name="Settings_Pan1_Scr5.Script.cs" ModifiedDate="2023-02-24T20:50:28.3023894+02:00" Length="10501" />
-    <ProjectFile Name="Settings_Pan1_Scr5.xaml" ModifiedDate="2023-02-24T20:36:15.8006765+02:00" Length="25909" />
-    <ProjectFile Name="Settings_Pan1_Scr6.neoxaml" ModifiedDate="2023-02-04T10:27:13.8335803+02:00" Length="807" />
-    <ProjectFile Name="Settings_Pan1_Scr6.Script.cs" ModifiedDate="2023-02-04T10:27:13.8335803+02:00" Length="269" />
-    <ProjectFile Name="Settings_Pan1_Scr6.xaml" ModifiedDate="2023-02-04T10:27:13.8865866+02:00" Length="6368" />
-    <ProjectFile Name="Settings_Pan1_Scr2.neoxaml" ModifiedDate="2023-02-04T09:50:01.2806693+02:00" Length="807" />
-    <ProjectFile Name="Settings_Pan1_Scr2.Script.cs" ModifiedDate="2023-02-04T09:50:01.2806693+02:00" Length="280" />
-    <ProjectFile Name="Settings_Pan1_Scr2.xaml" ModifiedDate="2023-02-04T09:50:01.33467+02:00" Length="6606" />
-    <ProjectFile Name="Settings_Pan1_Scr3.neoxaml" ModifiedDate="2023-02-04T10:20:37.3887882+02:00" Length="807" />
-    <ProjectFile Name="Settings_Pan1_Scr3.Script.cs" ModifiedDate="2023-02-04T10:20:37.3897881+02:00" Length="274" />
-    <ProjectFile Name="Settings_Pan1_Scr3.xaml" ModifiedDate="2023-02-04T10:20:37.4368208+02:00" Length="8239" />
-    <ProjectFile Name="Settings_Pan1_Scr8.neoxaml" ModifiedDate="2023-02-14T16:42:15.781786+02:00" Length="807" />
-    <ProjectFile Name="Settings_Pan1_Scr8.Script.cs" ModifiedDate="2023-02-14T16:42:15.7827842+02:00" Length="793" />
-    <ProjectFile Name="Settings_Pan1_Scr8.xaml" ModifiedDate="2023-02-14T16:42:16.0027858+02:00" Length="74950" />
+    <ProjectFile Name="Settings_Pan1_Scr5.neoxaml" ModifiedDate="2023-02-26T23:28:49.2688854+02:00" Length="807" />
+    <ProjectFile Name="Settings_Pan1_Scr5.Script.cs" ModifiedDate="2023-02-26T23:28:49.2698854+02:00" Length="10468" />
+    <ProjectFile Name="Settings_Pan1_Scr5.xaml" ModifiedDate="2023-02-26T23:28:49.3908876+02:00" Length="25909" />
+    <ProjectFile Name="Settings_Pan1_Scr6.neoxaml" ModifiedDate="2023-02-26T14:26:20.203749+02:00" Length="807" />
+    <ProjectFile Name="Settings_Pan1_Scr6.Script.cs" ModifiedDate="2023-02-26T14:26:20.203749+02:00" Length="269" />
+    <ProjectFile Name="Settings_Pan1_Scr6.xaml" ModifiedDate="2023-02-26T14:26:20.241782+02:00" Length="6368" />
+    <ProjectFile Name="Settings_Pan1_Scr2.neoxaml" ModifiedDate="2023-02-26T14:26:20.2847521+02:00" Length="807" />
+    <ProjectFile Name="Settings_Pan1_Scr2.Script.cs" ModifiedDate="2023-02-26T14:26:20.2847521+02:00" Length="280" />
+    <ProjectFile Name="Settings_Pan1_Scr2.xaml" ModifiedDate="2023-02-26T14:26:20.3047534+02:00" Length="6606" />
+    <ProjectFile Name="Settings_Pan1_Scr3.neoxaml" ModifiedDate="2023-02-26T14:29:24.3283575+02:00" Length="807" />
+    <ProjectFile Name="Settings_Pan1_Scr3.Script.cs" ModifiedDate="2023-02-26T14:29:24.3283575+02:00" Length="274" />
+    <ProjectFile Name="Settings_Pan1_Scr3.xaml" ModifiedDate="2023-02-26T14:29:24.3483541+02:00" Length="8239" />
+    <ProjectFile Name="Settings_Pan1_Scr8.neoxaml" ModifiedDate="2023-02-26T14:40:29.1712251+02:00" Length="807" />
+    <ProjectFile Name="Settings_Pan1_Scr8.Script.cs" ModifiedDate="2023-02-26T14:40:29.172196+02:00" Length="531" />
+    <ProjectFile Name="Settings_Pan1_Scr8.xaml" ModifiedDate="2023-02-26T14:40:29.4831884+02:00" Length="74950" />
     <ProjectFile Name="Alarms_Pan1_Scr1.neoxaml" ModifiedDate="2023-02-22T10:13:43.8892594+02:00" Length="805" />
     <ProjectFile Name="Alarms_Pan1_Scr1.Script.cs" ModifiedDate="2023-02-22T10:13:43.89026+02:00" Length="272" />
     <ProjectFile Name="Alarms_Pan1_Scr1.xaml" ModifiedDate="2023-02-22T10:13:44.1232591+02:00" Length="11616" />
     <ProjectFile Name="Alarms_Pan1_Scr2.neoxaml" ModifiedDate="2023-02-04T09:50:01.9596706+02:00" Length="805" />
     <ProjectFile Name="Alarms_Pan1_Scr2.Script.cs" ModifiedDate="2023-02-04T09:50:01.9606705+02:00" Length="262" />
     <ProjectFile Name="Alarms_Pan1_Scr2.xaml" ModifiedDate="2023-02-04T09:50:02.0166679+02:00" Length="9791" />
-    <ProjectFile Name="Template_Production.neoxaml" ModifiedDate="2023-02-07T05:00:07.5316845+02:00" Length="808" />
-    <ProjectFile Name="Template_Production.Script.cs" ModifiedDate="2023-02-07T05:00:07.5326833+02:00" Length="1012" />
-    <ProjectFile Name="Template_Production.xaml" ModifiedDate="2023-02-07T05:00:07.6157551+02:00" Length="46571" />
+    <ProjectFile Name="Template_Production.neoxaml" ModifiedDate="2023-02-26T14:40:29.9584554+02:00" Length="808" />
+    <ProjectFile Name="Template_Production.Script.cs" ModifiedDate="2023-02-26T14:40:29.9584554+02:00" Length="1012" />
+    <ProjectFile Name="Template_Production.xaml" ModifiedDate="2023-02-26T14:40:30.0464519+02:00" Length="46571" />
     <ProjectFile Name="Production_Pan1_Scr2.neoxaml" ModifiedDate="2023-02-04T09:50:02.3954394+02:00" Length="809" />
-    <ProjectFile Name="Production_Pan1_Scr2.Script.cs" ModifiedDate="2023-02-04T09:50:02.3964705+02:00" Length="797" />
+    <ProjectFile Name="Production_Pan1_Scr2.Script.cs" ModifiedDate="2023-02-26T12:35:33.0973673+02:00" Length="516" />
     <ProjectFile Name="Production_Pan1_Scr2.xaml" ModifiedDate="2023-02-04T09:50:02.406468+02:00" Length="1172" />
-    <ProjectFile Name="Template_Manual.neoxaml" ModifiedDate="2023-02-07T05:00:07.7317701+02:00" Length="804" />
-    <ProjectFile Name="Template_Manual.Script.cs" ModifiedDate="2023-02-07T05:00:07.7327669+02:00" Length="996" />
-    <ProjectFile Name="Template_Manual.xaml" ModifiedDate="2023-02-07T05:00:07.8127525+02:00" Length="46551" />
+    <ProjectFile Name="Template_Manual.neoxaml" ModifiedDate="2023-02-27T12:12:39.9837415+02:00" Length="804" />
+    <ProjectFile Name="Template_Manual.Script.cs" ModifiedDate="2023-02-27T12:12:39.9837415+02:00" Length="996" />
+    <ProjectFile Name="Template_Manual.xaml" ModifiedDate="2023-02-27T12:12:40.1297388+02:00" Length="46551" />
     <ProjectFile Name="ProdReg_LayerEdit.neoxaml" ModifiedDate="2022-02-17T15:15:28.5445917+02:00" Length="806" />
     <ProjectFile Name="ProdReg_LayerEdit.Script.cs" ModifiedDate="2022-02-17T15:15:28.5455885+02:00" Length="4750" />
     <ProjectFile Name="ProdReg_LayerEdit.xaml" ModifiedDate="2022-02-17T15:15:28.592483+02:00" Length="16505" />
@@ -260,49 +260,50 @@
     <ProjectFile Name="Robots_Pan1_Scr2.Script.cs" ModifiedDate="2023-02-14T10:31:32.0647266+02:00" Length="659" />
     <ProjectFile Name="Robots_Pan1_Scr2.xaml" ModifiedDate="2023-02-14T10:31:32.1757267+02:00" Length="48197" />
     <ProjectFile Name="A_DesignScreen.neoxaml" ModifiedDate="2023-02-23T13:03:10.9007374+02:00" Length="803" />
-    <ProjectFile Name="A_DesignScreen.Script.cs" ModifiedDate="2023-02-23T13:03:10.9007374+02:00" Length="789" />
+    <ProjectFile Name="A_DesignScreen.Script.cs" ModifiedDate="2023-02-26T12:32:06.7839939+02:00" Length="512" />
     <ProjectFile Name="A_DesignScreen.xaml" ModifiedDate="2023-02-23T13:03:11.1167329+02:00" Length="110189" />
     <ProjectFile Name="Manual_Pan1_Scr4.neoxaml" ModifiedDate="2023-02-04T10:45:32.0685543+02:00" Length="805" />
     <ProjectFile Name="Manual_Pan1_Scr4.xaml" ModifiedDate="2023-02-04T10:45:32.1895543+02:00" Length="1160" />
     <ProjectFile Name="Overview_Pan2_Scr1.neoxaml" ModifiedDate="2023-02-04T09:50:04.1024686+02:00" Length="807" />
     <ProjectFile Name="Overview_Pan2_Scr1.xaml" ModifiedDate="2023-02-04T09:50:04.2474651+02:00" Length="1166" />
-    <ProjectFile Name="Settings_InternalLog.neoxaml" ModifiedDate="2023-02-09T12:35:41.5372288+02:00" Length="809" />
-    <ProjectFile Name="Settings_InternalLog.Script.cs" ModifiedDate="2023-02-09T12:35:41.5383045+02:00" Length="1623" />
-    <ProjectFile Name="Settings_InternalLog.xaml" ModifiedDate="2023-02-09T12:35:41.5933033+02:00" Length="6163" />
-    <ProjectFile Name="Template_Diagnostics.neoxaml" ModifiedDate="2023-02-09T09:37:31.5099577+02:00" Length="809" />
-    <ProjectFile Name="Template_Diagnostics.xaml" ModifiedDate="2023-02-09T09:37:31.6084965+02:00" Length="42792" />
+    <ProjectFile Name="Settings_InternalLog.neoxaml" ModifiedDate="2023-02-26T14:40:30.5024205+02:00" Length="809" />
+    <ProjectFile Name="Settings_InternalLog.Script.cs" ModifiedDate="2023-02-26T14:40:30.503423+02:00" Length="1367" />
+    <ProjectFile Name="Settings_InternalLog.xaml" ModifiedDate="2023-02-26T14:40:30.5454201+02:00" Length="6163" />
+    <ProjectFile Name="Template_Diagnostics.neoxaml" ModifiedDate="2023-02-26T14:40:30.7154206+02:00" Length="809" />
+    <ProjectFile Name="Template_Diagnostics.Script.cs" ModifiedDate="2023-02-26T14:40:30.7164199+02:00" Length="616" />
+    <ProjectFile Name="Template_Diagnostics.xaml" ModifiedDate="2023-02-26T14:40:30.7924593+02:00" Length="43112" />
     <ProjectFile Name="Diagnostics_Pan1_Scr1.neoxaml" ModifiedDate="2023-02-07T05:02:33.0677239+02:00" Length="839" />
     <ProjectFile Name="Diagnostics_Pan1_Scr1.xaml" ModifiedDate="2023-02-07T05:02:33.0747237+02:00" Length="1159" />
-    <ProjectFile Name="Settings_SystemConf_Pan1.neoxaml" ModifiedDate="2023-02-25T01:30:57.3249386+02:00" Length="813" />
-    <ProjectFile Name="Settings_SystemConf_Pan1.Script.cs" ModifiedDate="2023-02-25T01:42:46.1229684+02:00" Length="26638" />
-    <ProjectFile Name="Settings_SystemConf_Pan1.xaml" ModifiedDate="2023-02-25T01:30:57.6499379+02:00" Length="85153" />
+    <ProjectFile Name="Settings_SystemConf_Pan1.neoxaml" ModifiedDate="2023-02-26T23:28:49.7748851+02:00" Length="813" />
+    <ProjectFile Name="Settings_SystemConf_Pan1.Script.cs" ModifiedDate="2023-02-26T23:28:49.7758829+02:00" Length="27452" />
+    <ProjectFile Name="Settings_SystemConf_Pan1.xaml" ModifiedDate="2023-02-26T23:28:50.1049162+02:00" Length="85204" />
     <ProjectFile Name="Printer1.xml" ModifiedDate="2022-01-20T15:44:46.409858+02:00" Length="850" />
     <ProjectFile Name="S7_PLC_1.neo" ModifiedDate="2023-02-05T11:07:32.8237606+02:00" Length="50182" />
-    <ProjectFile Name="Robotit.neo" ModifiedDate="2023-02-22T19:31:54.4370667+02:00" Length="569" />
-    <ProjectFile Name="Robotit.Script.cs" ModifiedDate="2023-02-22T19:31:54.4370667+02:00" Length="15046" />
-    <ProjectFile Name="_Konfiguraatio.neo" ModifiedDate="2023-02-25T02:00:51.1496864+02:00" Length="583" />
-    <ProjectFile Name="_Konfiguraatio.Script.cs" ModifiedDate="2023-02-25T02:00:51.1506871+02:00" Length="22460" />
-    <ProjectFile Name="Ajotiedot.neo" ModifiedDate="2023-02-25T01:47:01.2383262+02:00" Length="573" />
-    <ProjectFile Name="Ajotiedot.Script.cs" ModifiedDate="2023-02-25T01:47:01.2393269+02:00" Length="12401" />
+    <ProjectFile Name="Robotit.neo" ModifiedDate="2023-02-27T02:14:50.0845218+02:00" Length="569" />
+    <ProjectFile Name="Robotit.Script.cs" ModifiedDate="2023-02-27T02:14:50.0845218+02:00" Length="15291" />
+    <ProjectFile Name="_Konfiguraatio.neo" ModifiedDate="2023-02-26T18:21:01.5358834+02:00" Length="583" />
+    <ProjectFile Name="_Konfiguraatio.Script.cs" ModifiedDate="2023-02-26T22:02:13.8523294+02:00" Length="21961" />
+    <ProjectFile Name="Ajotiedot.neo" ModifiedDate="2023-02-27T02:13:55.3980082+02:00" Length="573" />
+    <ProjectFile Name="Ajotiedot.Script.cs" ModifiedDate="2023-02-27T09:37:43.6887233+02:00" Length="12910" />
     <ProjectFile Name="Aputoiminnot.neo" ModifiedDate="2023-02-05T08:05:55.7265222+02:00" Length="471" />
     <ProjectFile Name="Aputoiminnot.Script.cs" ModifiedDate="2023-02-07T17:09:07.4260386+02:00" Length="10244" />
-    <ProjectFile Name="IoT_Transfer.neo" ModifiedDate="2022-02-01T12:27:37.7137908+02:00" Length="579" />
-    <ProjectFile Name="IoT_Transfer.Script.cs" ModifiedDate="2022-02-01T12:27:37.7137908+02:00" Length="5216" />
+    <ProjectFile Name="IoT_Transfer.neo" ModifiedDate="2023-02-26T18:22:46.6710519+02:00" Length="579" />
+    <ProjectFile Name="IoT_Transfer.Script.cs" ModifiedDate="2023-02-26T18:22:46.6712111+02:00" Length="5320" />
     <ProjectFile Name="JSON_Kasittely.neo" ModifiedDate="2022-02-01T12:27:37.7177703+02:00" Length="473" />
     <ProjectFile Name="JSON_Kasittely.Script.cs" ModifiedDate="2022-02-01T12:27:37.718747+02:00" Length="2927" />
     <ProjectFile Name="KonfiguraatioTarkistus.neo" ModifiedDate="2023-02-09T12:05:51.3330912+02:00" Length="481" />
-    <ProjectFile Name="KonfiguraatioTarkistus.Script.cs" ModifiedDate="2023-02-09T12:05:51.3330912+02:00" Length="4472" />
-    <ProjectFile Name="Lavaloki.neo" ModifiedDate="2023-02-09T12:16:45.4409382+02:00" Length="571" />
-    <ProjectFile Name="Lavaloki.Script.cs" ModifiedDate="2023-02-09T12:16:45.4419392+02:00" Length="7482" />
-    <ProjectFile Name="Logiikat.neo" ModifiedDate="2023-02-07T07:26:21.5546488+02:00" Length="571" />
-    <ProjectFile Name="Logiikat.Script.cs" ModifiedDate="2023-02-07T07:26:21.5551666+02:00" Length="4250" />
+    <ProjectFile Name="KonfiguraatioTarkistus.Script.cs" ModifiedDate="2023-02-27T02:27:32.1414384+02:00" Length="4468" />
+    <ProjectFile Name="Lavaloki.neo" ModifiedDate="2023-02-26T14:40:32.3427082+02:00" Length="571" />
+    <ProjectFile Name="Lavaloki.Script.cs" ModifiedDate="2023-02-26T17:42:44.5049715+02:00" Length="7935" />
+    <ProjectFile Name="Logiikat.neo" ModifiedDate="2023-02-27T02:13:55.4130134+02:00" Length="571" />
+    <ProjectFile Name="Logiikat.Script.cs" ModifiedDate="2023-02-27T02:13:55.4139791+02:00" Length="4573" />
     <ProjectFile Name="Tietokannat.neo" ModifiedDate="2023-02-22T22:20:09.9835874+02:00" Length="470" />
     <ProjectFile Name="Tietokannat.Script.cs" ModifiedDate="2023-02-22T22:20:09.9845867+02:00" Length="12574" />
-    <ProjectFile Name="Tuotetiedot.neo" ModifiedDate="2023-02-15T07:59:05.9600337+02:00" Length="39045" />
+    <ProjectFile Name="Tuotetiedot.neo" ModifiedDate="2023-02-27T00:12:19.5297826+02:00" Length="40302" />
     <ProjectFile Name="Valikkeet_DB.neo" ModifiedDate="2022-02-01T13:05:25.4144611+02:00" Length="4590" />
     <ProjectFile Name="Pallet_Log.neo" ModifiedDate="2023-02-05T13:59:53.2708759+02:00" Length="12804" />
-    <ProjectFile Name="Pallet_Log.Script.cs" ModifiedDate="2023-02-05T13:59:53.2717433+02:00" Length="785" />
+    <ProjectFile Name="Pallet_Log.Script.cs" ModifiedDate="2023-02-26T12:34:00.0171915+02:00" Length="501" />
     <ProjectFile Name="Panel_info.neo" ModifiedDate="2023-02-05T13:59:53.2887434+02:00" Length="4859" />
-    <ProjectFile Name="Panel_info.Script.cs" ModifiedDate="2023-02-05T13:59:53.2887434+02:00" Length="785" />
+    <ProjectFile Name="Panel_info.Script.cs" ModifiedDate="2023-02-26T12:34:18.0382156+02:00" Length="504" />
   </ProjectFiles>
 </Project>

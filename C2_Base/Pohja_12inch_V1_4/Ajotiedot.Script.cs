@@ -18,7 +18,11 @@ namespace Neo.ApplicationFramework.Generated
 	/// <remarks>Viimeksi päivitetty: SoPi 20.3.2018</remarks>
 	public partial class Ajotiedot
 	{
+		object lockme = new object();
 		System.Threading.Timer HeaderPaivitys;
+		string msg0 = "";
+		string msg1 = "";
+		string msg2 = "";
 
 		/// <summary>
 		/// Ajastaa ajotietojen päivityksen päänäytölle taustalla asetustiedostossa
@@ -30,8 +34,23 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine("Ajotiedot Created (start)");
 
-			HeaderPaivitys = new System.Threading.Timer((args) =>
+			msg0 = new TextLibrary().Terms.Messages[0].Message;
+			msg1 = new TextLibrary().Terms.Messages[1].Message;
+			msg2 = new TextLibrary().Terms.Messages[2].Message;
+
+			int interval = 10000;
+			try
 			{
+				interval = Globals._Konfiguraatio.CurrentConfig.Aikavali("Ajotiedot");
+			}
+			catch (Exception x)
+			{
+				Globals.Tags.Log(String.Format("Ajotiedot_Create: Interval error, use default\n{1}", x.Message));
+			}
+
+			/**/
+			HeaderPaivitys = new System.Threading.Timer((args) =>
+				{
 				if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine("Ajotiedot HeaderPaivitys");
 
 				// Mitataan kauanko operaatioissa kestää
@@ -45,8 +64,9 @@ namespace Neo.ApplicationFramework.Generated
 				if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("Ajotiedot time : {0} (ticks)", takeTime.ElapsedTicks));
 
 				// Suoritetaan määritetyin välein (default 10s)
-				HeaderPaivitys.Change(Math.Max(0, Globals._Konfiguraatio.CurrentConfig.Aikavali("Ajotiedot") - takeTime.ElapsedMilliseconds), Timeout.Infinite);
-			}, null, 5000, Timeout.Infinite);
+				HeaderPaivitys.Change(Math.Max(0, interval - takeTime.ElapsedMilliseconds), Timeout.Infinite);
+				}, null, 5000, Timeout.Infinite);
+			/**/
 
 			// Seurataan ja ilmoitetaan onnistuneesta aloituksesta ja lopetuksesta
 			foreach (int tulorata in Globals._Konfiguraatio.CurrentConfig.Tuloradat.Keys)
@@ -81,108 +101,106 @@ namespace Neo.ApplicationFramework.Generated
 		/// </summary>
 		void AjossaOlevatTuotteet()
 		{
-			try
-			{
-				// Alustetaan ajossa olevat tuotteet
-				string ajossa = string.Empty;
-
-				// Kerätään lavapaikkojen statustagit talteen
-				List<int> statukset = new List<int>();
-
-				// Käydään kaikkien sovelluksen tuloratojen tilanne läpi
-				foreach (int tulorata in Globals._Konfiguraatio.CurrentConfig.Tuloradat.Keys)
+			lock(lockme)
+				try
 				{
-					string name = "Line1_PLC_Aloitettu" + tulorata;
-					try
+					// Alustetaan ajossa olevat tuotteet
+					string ajossa = string.Empty;
+
+					// Kerätään lavapaikkojen statustagit talteen
+					List<int> statukset = new List<int>();
+
+					// Käydään kaikkien sovelluksen tuloratojen tilanne läpi
+					foreach (int tulorata in Globals._Konfiguraatio.CurrentConfig.Tuloradat.Keys)
 					{
-						// Haetaan tuloradan tila
-						if (Globals.Tags.GetTagValue(name).Bool)
+						string name = "Line1_PLC_Aloitettu" + tulorata;
+						try
 						{
-							// Haetaan tuloradalla ajossa oleva tuote ja lisätään listaan
-							string nimi = HaeTuloradanTuote(tulorata);
-
-							// Haetaan termit TextLibrarysta valmiiksi käännettynä
-							ajossa += Globals.TextLibrary.Terms.Messages[0].Message // Ryhmittely
-								+ " " + tulorata + " - " + nimi;
-
-							ajossa += ", "
-								+ Globals.TextLibrary.Terms.Messages[1].Message // LP
-								+ " ";
-
-							// // Lavapaikan numeron haku
-							// foreach (Dictionary<int, int> lavapaikat in _Konfiguraatio.RobotinLavapaikat.Values)
-							// {
-							// 	foreach (KeyValuePair<int, int> lavapaikka in lavapaikat)
-							// 	{
-							// 		if (lavapaikka.Value == Globals.Tags.GetTagValue("Line1_PLC_Lavapaikka_TK" + tulorata))
-							// 		{
-							// 			ajossa += lavapaikka.Key.ToString();
-							// 												
-							// 			// Merkitään myös lavapaikka aloitetuksi
-							// 			statukset.Add(lavapaikka.Key);
-							// 		}
-							// 	}
-							// }
-
-							// Monen lavapaikan aloituksen tarkastelu
-							name = "Line1_PLC_PalletPlaces" + tulorata;
-							var lp = ((GlobalDataItem)Globals.Tags.GetTag(name)).Values;
-
-							bool loytyi = false;
-							for (int i = 0; i < lp.Length; i++)
+							// Haetaan tuloradan tila
+							if (Globals.Tags.GetTagValue(name).Bool)
 							{
-								if (lp[i])
-								{
-									if (loytyi)
-									{
-										ajossa += " & ";
-									}
-									ajossa += i.ToString();
-									loytyi = true;
+								// Haetaan tuloradalla ajossa oleva tuote ja lisätään listaan
+								string nimi = HaeTuloradanTuote(tulorata);
 
-									// Merkitään myös lavapaikka aloitetuksi
-									statukset.Add(i);
+								// Haetaan termit TextLibrarysta valmiiksi käännettynä
+								ajossa += msg0 + " " + tulorata + " - " + nimi; // Ryhmittely
+
+
+								ajossa += ", " + msg1 + " "; // LP
+
+								// // Lavapaikan numeron haku
+								// foreach (Dictionary<int, int> lavapaikat in _Konfiguraatio.RobotinLavapaikat.Values)
+								// {
+								// 	foreach (KeyValuePair<int, int> lavapaikka in lavapaikat)
+								// 	{
+								// 		if (lavapaikka.Value == Globals.Tags.GetTagValue("Line1_PLC_Lavapaikka_TK" + tulorata))
+								// 		{
+								// 			ajossa += lavapaikka.Key.ToString();
+								// 												
+								// 			// Merkitään myös lavapaikka aloitetuksi
+								// 			statukset.Add(lavapaikka.Key);
+								// 		}
+								// 	}
+								// }
+
+								// Monen lavapaikan aloituksen tarkastelu
+								name = "Line1_PLC_PalletPlaces" + tulorata;
+								var lp = ((GlobalDataItem)Globals.Tags.GetTag(name)).Values;
+
+								bool loytyi = false;
+								for (int i = 0; i < lp.Length; i++)
+								{
+									if (lp[i])
+									{
+										if (loytyi)
+										{
+											ajossa += " & ";
+										}
+										ajossa += i.ToString();
+										loytyi = true;
+
+										// Merkitään myös lavapaikka aloitetuksi
+										statukset.Add(i);
+									}
 								}
 							}
+							else
+							{
+								// Tulorata on lopetettu
+								// Haetaan termit TextLibrarysta valmiiksi käännettynä
+								ajossa += msg0 + " " + tulorata + " " // Ryhmittely
+									+ msg2; // lopetettu
+							}
+
+							// Lisätään lopuksi rivin vaihto
+							ajossa += "\n";
+						}
+						catch (Exception x)
+						{
+							Globals.Tags.Log(String.Format("AjossaolevatTuotteet: {0}", x.Message));
+						}
+					}
+
+					// Päivitetään lavapaikkojen status
+					foreach (int lavapaikka in Globals._Konfiguraatio.CurrentConfig.Lavapaikat.Keys)
+					{
+						if (statukset.Contains(lavapaikka))
+						{
+							Globals.Tags.SetTagValue("HMI_InProduction_Pallet" + lavapaikka, true);
 						}
 						else
 						{
-							// Tulorata on lopetettu
-							// Haetaan termit TextLibrarysta valmiiksi käännettynä
-							ajossa += Globals.TextLibrary.Terms.Messages[0].Message // Ryhmittely
-								+ " " + tulorata + " "
-								+ Globals.TextLibrary.Terms.Messages[2].Message; // lopetettu
+							Globals.Tags.SetTagValue("HMI_InProduction_Pallet" + lavapaikka, false);
 						}
+					}
 
-						// Lisätään lopuksi rivin vaihto
-						ajossa += "\n";
-					}
-					catch (Exception x)
-					{
-						Globals.Tags.Log(String.Format("AjossaolevatTuotteet: {0}", x.Message));
-					}
+					// Sijoitetaan saatu tulos näytölle
+					Globals.Tags.HMI_Overview_prod_details.Value = ajossa;
 				}
-
-				// Päivitetään lavapaikkojen status
-				foreach (int lavapaikka in Globals._Konfiguraatio.CurrentConfig.Lavapaikat.Keys)
+				catch (Exception ex)
 				{
-					if (statukset.Contains(lavapaikka))
-					{
-						Globals.Tags.SetTagValue("HMI_InProduction_Pallet" + lavapaikka, true);
-					}
-					else
-					{
-						Globals.Tags.SetTagValue("HMI_InProduction_Pallet" + lavapaikka, false);
-					}
+					System.Diagnostics.Trace.WriteLine(string.Format("Exception [AjossaOlevatTuotteet] {0}", ex.Message));
 				}
-
-				// Sijoitetaan saatu tulos näytölle
-				Globals.Tags.HMI_Overview_prod_details.Value = ajossa;
-			}
-			catch (Exception ex)
-			{
-				System.Diagnostics.Trace.WriteLine(string.Format("Exception [AjossaOlevatTuotteet] {0}", ex.Message));
-			}
 		}
 
 		/// <summary>
@@ -268,7 +286,7 @@ namespace Neo.ApplicationFramework.Generated
 
 			//if (Globals.Tags.AppStart_Timer >= 20 && (VariantValue)lahettaja_arvo.Value == 1)
 			int arvo = (VariantValue)lahettaja_arvo.Value;
-			System.Diagnostics.Trace.WriteLine("[iX] Event: Line1_PLC_AloitettuX_ValueChange " + arvo);
+			System.Diagnostics.Trace.WriteLine(string.Format("[iX] Event ({0}): {1} Line1_PLC_AloitettuX_ValueChange {2}", DateTime.Now.ToString(), lahettaja_nimi.Name, arvo));
 			if (Globals.Tags.AppStart_Timer >= 10 && arvo == 1)
 			{
 				// Nollataan trippimittari?
@@ -293,16 +311,16 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			DesignerItemBase lahettaja_nimi = (DesignerItemBase)sender;
 			IBasicTag lahettaja_arvo = (IBasicTag)sender;
-			//			Jos tarvitaan tuloradan numeroa aloitustoimintoihin
-			//			int tulorata = 0;
-			//			if(!int.TryParse(lahettaja_nimi.FullName.Substring(lahettaja_nimi.FullName.Length - 1, 1), out tulorata))
-			//			{
-			//				// lavapaikkanumeron parsinta epäonnistui
-			//				throw new ArgumentException("Tuloradan numeroa ei voitu parsia lähettäjästä: " + lahettaja_nimi.FullName.ToString());
-			//			}
+			//	Jos tarvitaan tuloradan numeroa aloitustoimintoihin
+			//	int tulorata = 0;
+			//	if(!int.TryParse(lahettaja_nimi.FullName.Substring(lahettaja_nimi.FullName.Length - 1, 1), out tulorata))
+			//	{
+			//		// lavapaikkanumeron parsinta epäonnistui
+			//		throw new ArgumentException("Tuloradan numeroa ei voitu parsia lähettäjästä: " + lahettaja_nimi.FullName.ToString());
+			//	}
 
 			int arvo = (VariantValue)lahettaja_arvo.Value;
-			System.Diagnostics.Trace.WriteLine("[iX] Event: " + lahettaja_nimi.Name + " Line1_PLC_LopetettuX_ValueChange " + arvo);
+			System.Diagnostics.Trace.WriteLine(string.Format("[iX] Event ({0}): {1} Line1_PLC_LopetettuX_ValueChange {2}", DateTime.Now.ToString(), lahettaja_nimi.Name, arvo));
 			if (Globals.Tags.AppStart_Timer >= 10 && arvo == 1)
 			{
 				// Toiminta, kun lopetettu

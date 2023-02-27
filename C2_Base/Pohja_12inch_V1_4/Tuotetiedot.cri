@@ -23,6 +23,7 @@
         <Item Target="Tuotetiedot.RobottiTartuntaviive" TargetProperty="Value" Source="Tags.ProdReg_PickDelay" />
         <Item Target="Tuotetiedot.RobottiJättoviive" TargetProperty="Value" Source="Tags.ProdReg_PlaceDelay" />
         <Item Target="Tuotetiedot.KaarintaOhjelma" TargetProperty="Value" Source="Tags.ProdReg_WrappingProgram" />
+        <Item Target="Tuotetiedot.TulorataKuvio" TargetProperty="Value" Source="Tags.ProdReg_InfeedTrackPattern" />
       </Items>
     </Category>
   </Categories>

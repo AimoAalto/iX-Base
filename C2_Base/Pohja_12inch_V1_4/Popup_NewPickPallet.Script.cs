@@ -7,21 +7,13 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    using System.Windows.Forms;
     using System;
-    using System.Drawing;
-    using Neo.ApplicationFramework.Tools;
-    using Neo.ApplicationFramework.Common.Graphics.Logic;
-    using Neo.ApplicationFramework.Controls;
-    using Neo.ApplicationFramework.Interfaces;
-    
     
     public partial class Popup_NewPickPallet
     {
 		
 		void Popup_NewPickPallet_Opened(System.Object sender, System.EventArgs e)
 		{
-
 		}
 		
 		void Button_OK_Click(System.Object sender, System.EventArgs e)

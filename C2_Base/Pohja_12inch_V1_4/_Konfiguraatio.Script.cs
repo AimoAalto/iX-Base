@@ -49,11 +49,6 @@ namespace Neo.ApplicationFramework.Generated
 		/// Huom. Solukohtaiset muutokset tehdään RobotinTuloradat_Asetukset.json tiedostoon joka löytyy paneelista!!!
 		/// 	{1, 1}, {2, 2}
 		/// </summary>
-		/*private Dictionary<int, int> tuloradat = new Dictionary<int, int>();
-		public Dictionary<int, int> Tuloradat {
-			get { if (tuloradat == null) tuloradat = new Dictionary<int, int>(); return tuloradat; }
-			set { if (value != null) tuloradat = value; }
-		}*/
 		private List<int> tuloradat = new List<int>();
 		public List<int> Tuloradat
 		{ 
@@ -66,11 +61,6 @@ namespace Neo.ApplicationFramework.Generated
 		/// [asiakas lavapNro, robotin sisäinen LavapNro]
 		/// Huom. Solukohtaiset muutokset tehdään RobotinLavapaikat_Asetukset.json tiedostoon joka löytyy paneelista!!!
 		/// </summary>
-		/*private Dictionary<int, int> lavapaikat = new Dictionary<int, int>();
-		public Dictionary<int, int> Lavapaikat {
-			get { if (lavapaikat == null) lavapaikat = new Dictionary<int, int>(); return lavapaikat; }
-			set { if (value != null) lavapaikat = value; }
-		}*/
 		private List<int> lavapaikat = new List<int>();
 		public List<int> Lavapaikat
 		{ 
@@ -91,17 +81,11 @@ namespace Neo.ApplicationFramework.Generated
 	/// </summary>
 	public class Configuration__
 	{
+		#region variables
+
 		private int numberofplc = 1;
-		private Dictionary<int, RobotConf> robots = new Dictionary<int, RobotConf>();
-		private Dictionary<int, string> lavatyypit = new Dictionary<int, string>();
 		private Dictionary<string, int> aikavalit = new Dictionary<string, int>();
-		private Dictionary<int, PatternInfo> patterns = new Dictionary<int, PatternInfo>();
-		/// <summary>
-		/// Robottien lavapaikat ja robotin niistä käyttämät numerot.
-		/// [asiakas lavapNro, robotin sisäinen LavapNro]
-		/// Huom. Solukohtaiset muutokset tehdään RobotinLavapaikat_Asetukset.json tiedostoon joka löytyy paneelista!!!
-		/// </summary>
-		private Dictionary<int, int> lavapaikat = new Dictionary<int, int>();
+		private Dictionary<int, string> lavatyypit = new Dictionary<int, string>();
 		/// <summary>
 		/// Robottien tuloradat ja robotin niistä käyttämät numerot.
 		/// [asiakas tulorataNro, robotin sisäinen TulorataNro]
@@ -109,22 +93,25 @@ namespace Neo.ApplicationFramework.Generated
 		/// 	{1, 1}, {2, 2}
 		/// </summary>
 		private Dictionary<int, int> tuloradat = new Dictionary<int, int>();
+		/// <summary>
+		/// Robottien lavapaikat ja robotin niistä käyttämät numerot.
+		/// [asiakas lavapNro, robotin sisäinen LavapNro]
+		/// Huom. Solukohtaiset muutokset tehdään RobotinLavapaikat_Asetukset.json tiedostoon joka löytyy paneelista!!!
+		/// </summary>
+		private Dictionary<int, int> lavapaikat = new Dictionary<int, int>();
+		private Dictionary<int, RobotConf> robots = new Dictionary<int, RobotConf>();
+		private Dictionary<int, PatternInfo> patterns = new Dictionary<int, PatternInfo>();
 		
 		public int PanelNo { get; set; }
-		public Dictionary<int, RobotConf> Robots
+		public Dictionary<string, int> Aikavalit
 		{ 
-			get { if (robots == null) robots = new Dictionary<int, RobotConf>(); return robots; } 
-			set { if (value != null) robots = value; } 
+			get { if (aikavalit == null) aikavalit = new Dictionary<string, int>(); return aikavalit; } 
+			set { if (value != null) aikavalit = value; } 
 		}
 		public Dictionary<int, string> Lavatyypit
 		{ 
 			get { if (lavatyypit == null) lavatyypit = new Dictionary<int, string>(); return lavatyypit; } 
 			set { if (value != null) lavatyypit = value; } 
-		}
-		public Dictionary<string, int> Aikavalit
-		{ 
-			get { if (aikavalit == null) aikavalit = new Dictionary<string, int>(); return aikavalit; } 
-			set { if (value != null) aikavalit = value; } 
 		}
 		public Dictionary<int, int> Tuloradat
 		{ 
@@ -136,6 +123,11 @@ namespace Neo.ApplicationFramework.Generated
 			get { if (lavapaikat == null) lavapaikat = new Dictionary<int, int>(); return lavapaikat; } 
 			set { if (value != null) lavapaikat = value; } 
 		}
+		public Dictionary<int, RobotConf> Robots
+		{ 
+			get { if (robots == null) robots = new Dictionary<int, RobotConf>(); return robots; } 
+			set { if (value != null) robots = value; } 
+		}
 		public Dictionary<int, PatternInfo> AllowedPatterns
 		{ 
 			get { if (patterns == null) patterns = new Dictionary<int, PatternInfo>(); return patterns; }
@@ -144,6 +136,8 @@ namespace Neo.ApplicationFramework.Generated
 		[Newtonsoft.Json.JsonIgnore]
 		public int NumberOfRobots { get { if (robots == null) return 0; else return robots.Count; } }
 		public int NumberOfPLC { get { return numberofplc; } set { if (value < 1) numberofplc = 1; else numberofplc = value; } }
+
+		#endregion
 
 		public void RemovePalletType(int no)
 		{
@@ -488,7 +482,7 @@ namespace Neo.ApplicationFramework.Generated
 		
 		public Configuration__()
 		{
-			robots.Add(1, new RobotConf(1, 0, 0));
+			//robots.Add(1, new RobotConf(1, 0, 0));
 			//robots.Add(2, new RobotConf(2, 0, 0));
 			lavatyypit.Add(1, "EUR");
 			lavatyypit.Add(2, "FIN");
@@ -580,9 +574,9 @@ namespace Neo.ApplicationFramework.Generated
 					Globals.Tags.Settings_PanelNumber.SetAnalog(config.PanelNo);
 					ReadOk = true;
 				}
-				catch (Exception)
+				catch (Exception x)
 				{
-					//System.Diagnostics.Trace.WriteLine(x.Message);
+					System.Diagnostics.Trace.WriteLine(x.Message);
 					// call function must have handler to exception or application will crash
 					throw;
 				}

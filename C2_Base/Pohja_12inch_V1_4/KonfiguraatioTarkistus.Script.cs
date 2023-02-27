@@ -10,8 +10,8 @@ namespace Neo.ApplicationFramework.Generated
 	/// ehdot muutosvirheiden estämiseksi.
 	/// </summary>
 	/// <remarks>Viimeksi muokattu: SoPi 5.4.2018</remarks>
-    public partial class KonfiguraatioTarkistus
-    {
+	public partial class KonfiguraatioTarkistus
+	{
 		/// <summary>
 		/// Tarkistaa konfiguraation sovelluksen käynnistyessä.
 		/// </summary>

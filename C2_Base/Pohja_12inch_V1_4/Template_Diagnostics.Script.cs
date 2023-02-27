@@ -7,8 +7,14 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
+	using System;
+	
     
-    public partial class Panel_info
-    {
-    }
+	public partial class Template_Diagnostics
+	{
+		
+		void Template_Diagnostics_Opened(System.Object sender, System.EventArgs e)
+		{
+		}
+	}
 }

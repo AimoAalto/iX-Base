@@ -43,7 +43,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>58</ObjectsCount>
+          <ObjectsCount>59</ObjectsCount>
           <ScreenName>Settings_Pan1_Scr2</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10702">

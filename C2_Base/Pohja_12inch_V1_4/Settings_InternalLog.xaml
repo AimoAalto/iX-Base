@@ -47,14 +47,14 @@
             </nacd:SymbolIntervalMapper.Intervals>
           </nacd:SymbolIntervalMapper>
         </nac:Button.SymbolIntervalMapper>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="Btn_Update_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
     </nac:Group>
   </nacs:ElementCanvas>

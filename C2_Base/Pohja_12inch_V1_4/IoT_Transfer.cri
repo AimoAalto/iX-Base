@@ -33,6 +33,7 @@
     </Category>
     <Category Name="Script">
       <Items>
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.TraceAll" />
         <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastMsg" />
         <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastUptime" />
         <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastDowntime" />

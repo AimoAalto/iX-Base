@@ -97,6 +97,7 @@
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.ProdReg_PalletPattern" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.Line1_Comm_Fault_PLC1" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.Line1_Comm_OK" />
+        <Item Target="Popup_StartProduction.Script.cs" Source="Tags.ProdReg_InfeedTrackPattern" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.HMI_Aloitus_kesken" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.ProdReg_Spacers" />
         <Item Target="Popup_StartProduction.Script.cs" Source="Tags.ProdReg_LayerCount" />

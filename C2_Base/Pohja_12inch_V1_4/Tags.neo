@@ -8249,6 +8249,16 @@
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
       </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" AlwaysActive="True" GlobalDataType="DT_BOOLEAN" d1p1:Site.Name="ScreenChangePending" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+        <GlobalDataSubItems>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
+        </GlobalDataSubItems>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" AlwaysActive="True" GlobalDataType="DT_STRING" d1p1:Site.Name="ProdReg_InfeedTrackPattern" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+        <GlobalDataSubItems>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
+        </GlobalDataSubItems>
+      </Object>
     </GlobalDataItems>
     <PollGroups>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.PollGroup, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="PollGroup500" Interval="533" d1p1:Site.Name="PollGroup500" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
