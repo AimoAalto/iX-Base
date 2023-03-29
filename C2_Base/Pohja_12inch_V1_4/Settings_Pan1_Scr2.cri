@@ -25,7 +25,6 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Settings_Pan1_Scr2.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
-        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr2" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -43,7 +42,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>59</ObjectsCount>
+          <ObjectsCount>60</ObjectsCount>
           <ScreenName>Settings_Pan1_Scr2</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10702">
@@ -55,9 +54,7 @@
       <Items />
     </Category>
     <Category Name="StructuredTag">
-      <Items>
-        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr2" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="Symbol">
       <Items />

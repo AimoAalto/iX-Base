@@ -23,7 +23,9 @@
       <Items />
     </Category>
     <Category Name="GlobalDataItem">
-      <Items />
+      <Items>
+        <Item xsi:type="ActionItem" Target="Production_Pan1_Scr2" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+      </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
       <Items />
@@ -40,7 +42,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>54</ObjectsCount>
+          <ObjectsCount>55</ObjectsCount>
           <ScreenName>Production_Pan1_Scr2</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10502">
@@ -52,7 +54,9 @@
       <Items />
     </Category>
     <Category Name="StructuredTag">
-      <Items />
+      <Items>
+        <Item xsi:type="ActionItem" Target="Production_Pan1_Scr2" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+      </Items>
     </Category>
     <Category Name="Symbol">
       <Items />

@@ -7,8 +7,8 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    
-    public partial class ScreenSelection
-    {
-    }
+
+	public partial class ScreenSelection
+	{
+	}
 }

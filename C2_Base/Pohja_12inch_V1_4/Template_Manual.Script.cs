@@ -7,22 +7,22 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    using System;
-    
-    
-    public partial class Template_Manual
-    {
+	using System;
+
+
+	public partial class Template_Manual
+	{
 		void Template_Manual_Opened(System.Object sender, System.EventArgs e)
 		{
 		}
-		
+
 		void btnSubmenu_Click(System.Object sender, System.EventArgs e)
 		{
 			Globals.Tags.BtnHandler(
-				Globals.Tags.Settings_PanelNumber.Value, 
+				Globals.Tags.Settings_PanelNumber.Value,
 				Neo.ApplicationFramework.Generated.Tags.Screens.Manual,
-				((Neo.ApplicationFramework.Controls.Script.ButtonAdapter)sender).Name, 
+				((Neo.ApplicationFramework.Controls.Script.ButtonAdapter)sender).Name,
 				((Neo.ApplicationFramework.Controls.Script.ButtonAdapter)sender).Text.Length);
 		}
-    }
+	}
 }

@@ -83,7 +83,6 @@
         <Item Target="Tags" TargetProperty="Line1_PLC_ResetProductionTripMeter2" Source="S7_PLC_1.DataItem85" />
         <Item Target="Tags" TargetProperty="Line1_PLC_ResetProductionTripMeter3" Source="S7_PLC_1.DataItem86" />
         <Item Target="Tags" TargetProperty="Line1_PLC_ResetProductionTripMeter4" Source="S7_PLC_1.DataItem87" />
-        <Item Target="Tags" TargetProperty="Line1_PLC_SystemsSecond" Source="S7_PLC_1.DataItem90" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Pahvi_Ottolupa2_Valinta" Source="S7_PLC_1.DataItem91" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Pahvi_Ottolupa2_Tila" Source="S7_PLC_1.DataItem92" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Pahvi_Ottolupa1_Tila" Source="S7_PLC_1.DataItem93" />
@@ -217,7 +216,6 @@
     <Category Name="Script">
       <Items>
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.SystemTagCurrentUser" />
-        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_SystemsSecond" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C1" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C2" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_Manual_Area_Enabled_1" />
@@ -235,12 +233,13 @@
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C6" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C7" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C8" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChangeOrError" Source="Tags.SystemTagNewScreenId" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagCurrentUser" />
         <Item Target="Tags.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
         <Item Target="Tags.Script.cs" Source="Tags.HMI_Overview_moddate" />
         <Item Target="Tags.Script.cs" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Tags.Script.cs" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
         <Item Target="Tags.Script.cs" Source="Tags.Settings_PanelNumber" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_SystemsSecond" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagSecond" />
         <Item Target="Tags.Script.cs" Source="Tags.CurrentUserInt" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagNewScreenId" />

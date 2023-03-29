@@ -62,8 +62,6 @@
     </Category>
     <Category Name="Symbol">
       <Items>
-        <Item xsi:type="SymbolItem" Target="Popup_legends.Picture7" Source="orfer_power_dark" Width="20" Height="20" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Popup_legends.Picture6" Source="orfer_power_red" Width="19" Height="19" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Popup_legends.Picture" Source="orfer_reset" Width="20" Height="20" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Popup_legends.Picture1" Source="orfer_permission_upward_on" Width="30" Height="30" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Popup_legends.Picture2" Source="orfer_permission_upward_off" Width="30" Height="30" IsAnimated="false" />
@@ -71,6 +69,8 @@
         <Item xsi:type="SymbolItem" Target="Popup_legends.Picture4" Source="orfer_permission_down_off" Width="30" Height="30" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Popup_legends.Picture5" Source="orfer_permission_selectedoff" Width="30" Height="30" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Popup_legends.Group_Close_btn.Button_Close" Source="orfer_cancel" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_legends.Picture6" Source="orfer_power_red" Width="19" Height="19" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_legends.Picture7" Source="orfer_power_dark" Width="20" Height="20" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

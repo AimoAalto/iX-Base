@@ -1,8 +1,8 @@
 namespace Neo.ApplicationFramework.Generated
 {
 	using System;
-    
-    
+
+
 	/// <summary>
 	/// Näyttää robotin näytön, tietoja sijainnista ja nopeusasetuksista ja 
 	/// mahdollistaa numeronappien käytön myös käyttöliittymästä.

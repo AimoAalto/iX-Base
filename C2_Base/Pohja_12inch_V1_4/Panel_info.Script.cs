@@ -7,8 +7,8 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    
-    public partial class Panel_info
-    {
-    }
+
+	public partial class Panel_info
+	{
+	}
 }

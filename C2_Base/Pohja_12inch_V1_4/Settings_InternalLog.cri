@@ -40,7 +40,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>59</ObjectsCount>
+          <ObjectsCount>60</ObjectsCount>
           <ScreenName>Settings_InternalLog</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10709">

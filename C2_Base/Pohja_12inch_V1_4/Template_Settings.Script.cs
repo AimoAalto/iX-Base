@@ -7,22 +7,22 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    using System;
-    
-    
-    public partial class Template_Settings
-    {
+	using System;
+
+
+	public partial class Template_Settings
+	{
 		void Template_Settings_Opened(System.Object sender, System.EventArgs e)
 		{
 		}
-		
+
 		void btnSubmenu_Click(System.Object sender, System.EventArgs e)
 		{
 			Globals.Tags.BtnHandler(
 				1, // allways 10* seriaes screens
 				Neo.ApplicationFramework.Generated.Tags.Screens.Settings,
-				((Neo.ApplicationFramework.Controls.Script.ButtonAdapter)sender).Name, 
+				((Neo.ApplicationFramework.Controls.Script.ButtonAdapter)sender).Name,
 				((Neo.ApplicationFramework.Controls.Script.ButtonAdapter)sender).Text.Length);
 		}
-    }
+	}
 }

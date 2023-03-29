@@ -7,18 +7,18 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    using System;
-    
-    
-    public partial class Settings_InternalLog
-    {
-		
+	using System;
+	using System.Collections.Generic;
+
+
+	public partial class Settings_InternalLog
+	{
 		void Settings_InternalLog_Opened(System.Object sender, System.EventArgs e)
 		{
 			// Loki
 			LataaLoki();
 		}
-		
+
 		/// <summary>
 		/// Päivittää robottin virhelokin näytölle. Siirtää näkymän ja valinnan
 		/// uusimpiin tapahtumiin.
@@ -33,16 +33,16 @@ namespace Neo.ApplicationFramework.Generated
 			{
 				Virhelista.Items.Add(a);
 			}
-			
+
 			// Scrollataan listaa mukana
 			Virhelista.SelectedIndex = Virhelista.Items.Count - 1;
 			Virhelista.AdaptedObject.CastTo<Neo.ApplicationFramework.Controls.WindowsControls.ListBox>().ScrollIntoView(Virhelista.SelectedItem);
 			/**/
 		}
-		
+
 		void Btn_Update_Click(System.Object sender, System.EventArgs e)
 		{
 			LataaLoki();
 		}
-    }
+	}
 }

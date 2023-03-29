@@ -260,7 +260,7 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="numero">Robotin numero</param>
 		private void TarkistaTila(int numero)
 		{
-			lock(lockme)
+			lock (lockme)
 				if (Exists(numero))
 				{
 					// Kysytään yhteyden tilaa

@@ -7,11 +7,11 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    using System;
-    
-    
-    public partial class Settings_pan1_Log
-    {
+	using System;
+
+
+	public partial class Settings_pan1_Log
+	{
 		void Settings_pan1_Log_Opened(System.Object sender, System.EventArgs e)
 		{
 			LataaLoki();
@@ -31,14 +31,14 @@ namespace Neo.ApplicationFramework.Generated
 			{
 				ListBoxErrors.Items.Add(a);
 			}
-			
-			// Scrollataan listaa mukana
-			/*NOT working in WinCE Virhelista.SelectedIndex = Virhelista.Items.Count - 1;
+
+			// Scrollataan listaa mukana (ei toimi WinCE:ssä)
+			/*Virhelista.SelectedIndex = Virhelista.Items.Count - 1;
 			Virhelista.AdaptedObject.CastTo<Neo.ApplicationFramework.Controls.WindowsControls.ListBox>()
 			.ScrollIntoView(Virhelista.SelectedItem);
 			*/
 		}
-		
+
 		void BtnUpdate_Click(System.Object sender, System.EventArgs e)
 		{
 			LataaLoki();

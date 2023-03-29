@@ -27,7 +27,6 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Settings_Pan1_Scr3.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
-        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr3" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -57,9 +56,7 @@
       <Items />
     </Category>
     <Category Name="StructuredTag">
-      <Items>
-        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr3" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="Symbol">
       <Items />

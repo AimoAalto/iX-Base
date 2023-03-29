@@ -8,9 +8,9 @@
 namespace Neo.ApplicationFramework.Generated
 {
 	using System;
-	
-    
-    public partial class Settings_Pan1_Scr8
-    {
-    }
+
+
+	public partial class Settings_Pan1_Scr8
+	{
+	}
 }

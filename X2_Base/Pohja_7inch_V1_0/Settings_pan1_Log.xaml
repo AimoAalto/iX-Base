@@ -15,6 +15,11 @@
         <s:Double>0</s:Double>
       </nacw:ListBox.Value>
     </nacw:ListBox>
+    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="LOG" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text_Top" Width="544" Height="24" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="216" Canvas.Top="40">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
     <nac:Button ButtonAppearance="Rounded" CornerRadius="10,10,10,10" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="Update" TextHorizontalAlignment="Right" TextMargin="2,2,10,2" RequiresTransparency="True" SymbolName="orfer_reset" SymbolTransparent="False" BorderThickness="3,3,3,3" Background="#FF35C4B5" FontSize="15" Name="m_BtnUpdate" Width="100" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="2" Canvas.Left="688" Canvas.Top="24" Style="{nac1:StyleMarkupExtension Vintage}">
       <nac:Button.TextDecorations>
         <TextDecorationCollection />
@@ -25,10 +30,5 @@
         </nai:ScriptEventList>
       </nai:ScriptProperties.ScriptEvents>
     </nac:Button>
-    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="LOG" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text_Top" Width="544" Height="24" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="216" Canvas.Top="40">
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-    </nac:Label>
   </nacs:ElementCanvas>
 </nacs:ScreenWindow>

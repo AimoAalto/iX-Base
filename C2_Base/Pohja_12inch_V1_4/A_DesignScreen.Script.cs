@@ -6,9 +6,9 @@
 //---------------------------------------------------------------
 
 namespace Neo.ApplicationFramework.Generated
-{    
-    
-    public partial class A_DesignScreen
-    {
-    }
+{
+
+	public partial class A_DesignScreen
+	{
+	}
 }

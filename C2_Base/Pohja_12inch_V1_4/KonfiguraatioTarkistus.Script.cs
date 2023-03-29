@@ -3,8 +3,8 @@ namespace Neo.ApplicationFramework.Generated
 	using System;
 	using System.Configuration;
 	using System.Collections.Generic;
-	
-    
+
+
 	/// <summary>
 	/// Sisältää tarkistuksen, että määritetty konfiguraatio täyttää tietyt 
 	/// ehdot muutosvirheiden estämiseksi.
@@ -43,7 +43,7 @@ namespace Neo.ApplicationFramework.Generated
 						{
 							loytyi++;
 						}
-						
+
 						if (loytyi > 1)
 						{
 							throw new ConfigurationFaultException("Tulorata " + tulorata + " löytyy _Konfiguraatiosta useamman kerran.", "_Konfiguraatio.robotinTuloradat");
@@ -51,7 +51,7 @@ namespace Neo.ApplicationFramework.Generated
 					}
 				}
 				#endregion
-				
+
 				#region - Lavapaikka voi kuulua vain yhdelle robotille
 				foreach (int lavapaikka in robot.Lavapaikat)
 				{
@@ -63,7 +63,7 @@ namespace Neo.ApplicationFramework.Generated
 						{
 							loytyi++;
 						}
-						
+
 						if (loytyi > 1)
 						{
 							throw new ConfigurationFaultException("Lavapaikka " + lavapaikka + " löytyy _Konfiguraatiosta useamman kerran.", "_Konfiguraatio.robotinLavapaikat");
@@ -83,7 +83,7 @@ namespace Neo.ApplicationFramework.Generated
 					{
 						loytyi++;
 					}
-						
+
 					if (loytyi > 1)
 					{
 						throw new ConfigurationFaultException("Robotin tulorata " + rtulorata + " löytyy _Konfiguraatiosta useamman kerran.", "_Konfiguraatio.robotinTuloradat");
@@ -91,7 +91,7 @@ namespace Neo.ApplicationFramework.Generated
 				}
 			}
 			#endregion
-				
+
 			#region - Robotin lavapaikka voi esiintyä vain kerran
 			foreach (int rlavapaikka in Globals._Konfiguraatio.CurrentConfig.Lavapaikat.Values)
 			{
@@ -103,7 +103,7 @@ namespace Neo.ApplicationFramework.Generated
 					{
 						loytyi++;
 					}
-						
+
 					if (loytyi > 1)
 					{
 						throw new ConfigurationFaultException("Robotin lavapaikka " + rlavapaikka + " löytyy _Konfiguraatiosta useamman kerran.", "_Konfiguraatio.robotinLavapaikat");
@@ -120,7 +120,7 @@ namespace Neo.ApplicationFramework.Generated
 	/// </summary>
 	public class ConfigurationFaultException : ArgumentException
 	{
-		public ConfigurationFaultException(string message, string field) : base(message, field) {}
-		public ConfigurationFaultException(string message, string parameter, Exception innerException) : base(message, parameter, innerException) {}
+		public ConfigurationFaultException(string message, string field) : base(message, field) { }
+		public ConfigurationFaultException(string message, string parameter, Exception innerException) : base(message, parameter, innerException) { }
 	}
 }

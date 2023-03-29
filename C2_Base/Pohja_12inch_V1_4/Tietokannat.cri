@@ -34,6 +34,7 @@
     <Category Name="Script">
       <Items>
         <Item Target="Tietokannat.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="Tietokannat.Script.cs" Source="Tags.ErrorTexts" />
         <Item Target="Tietokannat.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
         <Item Target="Tietokannat.Script.cs" Source="Tags.Alarm_ProdReg_RiviNro" />
         <Item Target="Tietokannat.Script.cs" Source="Tags.Alarm_ProdReg_Alarm1" />

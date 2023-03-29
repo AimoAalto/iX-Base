@@ -64,8 +64,8 @@
     </Category>
     <Category Name="Symbol">
       <Items>
-        <Item xsi:type="SymbolItem" Target="Popup_Robot_speed.Group_Send_btn.Button_Laheta" Source="orfer_send" Width="26" Height="26" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Popup_Robot_speed.Group_Close_btn.Button_Close" Source="orfer_cancel" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Robot_speed.Group_Send_btn.Button_Laheta" Source="orfer_send" Width="28" Height="28" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Robot_speed.Group_Close_btn.Button_Close" Source="orfer_cancel" Width="38" Height="38" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

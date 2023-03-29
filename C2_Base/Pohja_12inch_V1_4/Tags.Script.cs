@@ -19,6 +19,48 @@ namespace Neo.ApplicationFramework.Generated
 
 	public partial class Tags
 	{
+		public enum ErrorTexts
+		{
+			UnexpectedError = 0, // "Unexpected error occured.","On tapahtunut odottamaton virhe",,
+			ChooseProduct = 1, // "Please choose the product to be started.","Valitse aloitettava tuote",,
+			ChoosePalletPlaces = 2, // "Please choose the pallet place(s) to be started on.","Valitse aloitettavat lavapaikat",,
+			PalletPlaceAlreadyOnPattern = 3, // "Selected pallet place already has a pattern.Please reset the existing pattern or contact Orfer oCare Customer service.","Valittu lavapaikka on jo valittu kuvioon",,
+			PatternLoadFailed = 4, // "Pattern load failed.",,,
+			PatternImageLoadFailed = 5, // "Pattern picture load failed.",,,
+			RecipeLoadFailed = 6, // "Loading of recipes failed.",,,
+			SendStartFailed = 7, // "Sending production start command to robot failed.",,,
+			CheckStartConditions = 8, // "Please check the starting conditions.",,,
+			NoPatternFile = 9, // "There is no pattern file for the selected pattern number in C:\Lavaus\Kuviot\",,,
+			PatternAlreadyExist = 10, // "The selected pattern number already exists.",,,
+			SelectAtleastOne = 11, // "Mark at least one choice from each area.",,,
+			LayerOpenFailed = 12, // "Could not open the layer.",,,
+			UsePositiveNumbers = 13, // "Input fields must be positive numbers.",,,
+			SheetDataFormatError = 14, // "Please input the sheet data in format:<product number><quantity>",,,
+			FillAllFields = 15, // "Please fill in all the fields.",,,
+			PrintingFailed = 16, // "Printing failed.",,,
+			IPAddrError = 17, // "The IP-address is not valid. Please input the address in format X.X.X.X where X is a number in 0-255.",,,
+			LayerSendFailed = 18, // "Could not send new layer count to robot. Layer count was not a number.",,,
+			SpeedSendFailed = 19, // "Could not send new speed and delay values to robot. All values were not numbers.",,,
+			DbLoadFailed = 20, // "Loading from database failed.",,,
+			CheckBoxOutOfRange = 21, // "There were not enough CheckBox-elements for a section.",,,
+			PalletPlaceOutOfRange = 22, // "There are not enough PlaceBoxes to select each available pallet place.",,,
+			UnknownTag = 23, // "Tag was not found:",,,
+			ChoosePalletType = 24, // "Choose pallet type",,,
+			NoPermission = 25, // "No permission",,,"No permission"
+			NotAllowedPattern = 26,
+			InfeedTrackAlreadyStarted = 27,
+			PalletPlaceAlreadyStarted = 28,
+			MixedPalletChooseOther = 29,
+			NoImageFile = 30, //
+			MixedPalletSameBox = 31,
+			ProductionStartError = 32,
+			NothingToDelete = 33,
+			RobotIdAlreadyExist = 34,
+			UnknownRobotId = 35,
+			NoAllowedInfeedTracks = 36,
+			Info = 37
+		};
+
 		public enum Screens
 		{
 			Overview = 0,
@@ -31,9 +73,9 @@ namespace Neo.ApplicationFramework.Generated
 			Settings
 		};
 
-		private object lockme = new object();
+		private readonly object lockme = new object();
 
-		private bool traceall = false;
+		private readonly bool traceall = false;
 		public bool TraceAll { get { return traceall; } }
 
 		/// <summary>
@@ -60,6 +102,7 @@ namespace Neo.ApplicationFramework.Generated
 				// jos näkymänvalinta ei ole käytössä, pitää paneli asettaa 'käsin', jotta valikot toimivat
 				NakymanValinta();
 				//Globals.Tags.Settings_PanelNumber.SetAnalog(1);
+
 				//Neo.ApplicationFramework.Generated.S7_PLC_HMI2 = Globals.GetObjects<Neo.ApplicationFramework.Generated.S7_PLC_HMI2>();
 
 				//retrieve the last date project.zip was modified i.e. when it was last transferred to the panel
@@ -89,16 +132,6 @@ namespace Neo.ApplicationFramework.Generated
 
 				kerran = true;
 			}
-		}
-
-		/// <summary>
-		/// Kasvattaa apuajastinta, kun logiikkayhteys on muodostettu.
-		/// </summary>
-		/// <param name="sender">Line1_PLC_SystemsSecond</param>
-		void Line1_PLC_SystemsSecond_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
-		{
-			// Saattaa missata arvon muuttumisen, vaihdetaan watchdogiin
-			//AppStart_Timer++;
 		}
 
 		void HMI_Comm_Watchdog_From_PLC1_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
@@ -342,48 +375,51 @@ namespace Neo.ApplicationFramework.Generated
 		/// </summary>
 		public void BtnHandler(int panelno, Screens screen, string btn_name, int length)
 		{
-			if (ScreenChangePending.Value.Bool == true)
+			lock (lockme)
 			{
-				Log("Screen change pending");
-				return;
-			}
-			
-			string msg = string.Format("ShowScreen {0} button: {1}", screen, btn_name);
-			if (TraceAll)
-			{
-				Log(msg);
-				System.Diagnostics.Trace.WriteLine(msg);
-			}
-
-			// Jos napissa ei ole tekstiä eli 'ei ole käytössä' lopetetaan tähän
-			if (length == 0) return;
-
-			try
-			{
-				string aux = "";
-
-				// Erotetaan napin nimestä numero
-				for (int i = 0; i < btn_name.Length; i++)
+				if (ScreenChangePending.Value.Bool == true)
 				{
-					if (Char.IsDigit(btn_name[i]))
-						aux += btn_name[i];
+					Log("Screen change pending");
+					return;
 				}
 
-				int num = Convert.ToInt16(aux);
-				if (Globals.Tags.Menu_SubMenu_Btn_Anim.Value.Int == num) return;
+				string msg = string.Format("ShowScreen {0} button: {1}", screen, btn_name);
+				if (TraceAll)
+				{
+					Log(msg);
+					System.Diagnostics.Trace.WriteLine(msg);
+				}
 
-				int screenid = panelno * 10000;
-				screenid += ((int)screen * 100);
-				screenid += num;
+				// Jos napissa ei ole tekstiä eli 'ei ole käytössä' lopetetaan tähän
+				if (length == 0) return;
 
-				Menu_SubMenu_Btn_Anim.SetAnalog(num);
-				ScreenChangePending.SetTag();
-				
-				SystemTagNewScreenId.SetAnalog(screenid);
-			}
-			catch (Exception x)
-			{
-				Log(string.Format("ShowScreen {0} button: {1}. Exception: {2}", screen, btn_name, x.Message));
+				try
+				{
+					string aux = "";
+
+					// Erotetaan napin nimestä numero
+					for (int i = 0; i < btn_name.Length; i++)
+					{
+						if (Char.IsDigit(btn_name[i]))
+							aux += btn_name[i];
+					}
+
+					int num = Convert.ToInt16(aux);
+					if (Globals.Tags.Menu_SubMenu_Btn_Anim.Value.Int == num) return;
+
+					int screenid = panelno * 10000;
+					screenid += ((int)screen * 100);
+					screenid += num;
+
+					Menu_SubMenu_Btn_Anim.SetAnalog(num);
+					ScreenChangePending.SetTag();
+
+					SystemTagNewScreenId.SetAnalog(screenid);
+				}
+				catch (Exception x)
+				{
+					Log(string.Format("ShowScreen {0} button: {1}. Exception: {2}", screen, btn_name, x.Message));
+				}
 			}
 		}
 
@@ -414,7 +450,7 @@ namespace Neo.ApplicationFramework.Generated
 			{
 				try
 				{
-					SystemTagNewScreenId.SetAnalog(10000 + no);
+					SystemTagNewScreenId.SetAnalog((10000 * no) + 1);
 				}
 				catch (Exception x)
 				{
@@ -446,63 +482,73 @@ namespace Neo.ApplicationFramework.Generated
 
 		void Line1_PLC_Auto_Area_Mode_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
-			int id = -1;
-			int value = -1;
-			bool reset = false;
-			string name = ((IBasicTag)sender).Name;
-
-			//System.Diagnostics.Trace.WriteLine(name);
-
-			if (name.StartsWith("Line1_Manual_Area_Enabled_"))
+			lock (lockme)
 			{
-				bool sval = (bool)GetTagValue(name);
-				reset = sval == false;
-				string aux = name.Substring(26); // length of 'Line1_Manual_Area_Enabled_'
+				int id = -1;
+				int value = -1;
+				bool reset = false;
+				string name = ((IBasicTag)sender).Name;
 
-				if (int.TryParse(aux, out id))
-				{
-					string tagname = string.Format("Line1_PLC_Auto_Area_Mode_C{0}", id);
-					value = (int)GetTagValue(tagname);
-				}
-				else
-				{
-					string s = "Error in tagname" + name;
-					System.Diagnostics.Trace.WriteLine(s);
-					Log(s);
-				}
-			}
-			else if (name.StartsWith("Line1_PLC_Auto_Area_Mode_C"))
-			{
-				string aux = name.Substring(26); // length of 'Line1_PLC_Auto_Area_Mode_C'
-				if (int.TryParse(aux, out id))
-				{
-					value = (int)GetTagValue(name);
+				//System.Diagnostics.Trace.WriteLine(name);
 
-					string tagname = string.Format("Line1_Manual_Area_Enabled_{0}", id);
+				if (name.StartsWith("Line1_Manual_Area_Enabled_"))
+				{
 					bool sval = (bool)GetTagValue(name);
-					reset = sval == false;
-				}
-				else
-				{
-					string s = "Ei ole numero" + aux;
-					System.Diagnostics.Trace.WriteLine(s);
-					Log(s);
-				}
-			}
+					string aux = name.Substring(26); // length of 'Line1_Manual_Area_Enabled_'
 
-			if (id >= 0)
-			{
-				string tagname = string.Format("Line1_Internal_ManualEnabled_{0}", id);
-				IBasicTag tag = GetTag(tagname);
-				if (TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("set : {0} = value = {1}. reset = [{2}]", tagname, value, reset));
-				if (tag != null)
-				{
-					if (value >= 50 || reset)
-						tag.ResetTag();
+					if (int.TryParse(aux, out id))
+					{
+						string tagname = string.Format("Line1_PLC_Auto_Area_Mode_C{0}", id);
+						value = (int)GetTagValue(tagname);
+					}
 					else
-						tag.SetTag();
+					{
+						string s = "Error in tagname" + name;
+						System.Diagnostics.Trace.WriteLine(s);
+						Log(s);
+					}
+				}
+				else if (name.StartsWith("Line1_PLC_Auto_Area_Mode_C"))
+				{
+					string aux = name.Substring(26); // length of 'Line1_PLC_Auto_Area_Mode_C'
+					if (int.TryParse(aux, out id))
+					{
+						value = (int)GetTagValue(name);
+
+						string tagname = string.Format("Line1_Manual_Area_Enabled_{0}", id);
+						if (value == 0) SetTagValue(tagname, false);
+						reset = (bool)GetTagValue(name) == false;
+					}
+					else
+					{
+						string s = "Ei ole numero" + aux;
+						System.Diagnostics.Trace.WriteLine(s);
+						Log(s);
+					}
+				}
+
+				if (id >= 0)
+				{
+					string tagname = string.Format("Line1_Internal_ManualEnabled_{0}", id);
+					IBasicTag tag = GetTag(tagname);
+					if (TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("set : {0} = value = {1}. reset = [{2}]", tagname, value, reset));
+					if (tag != null)
+					{
+						if (value >= 50 || reset)
+						{
+							tag.ResetTag();
+							Line1_HMI1_Manual_Ctrl_Nr.ResetTag();
+						}
+						else
+							tag.SetTag();
+					}
 				}
 			}
+		}
+		
+		void SystemTagNewScreenId_ValueChangeOrError(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
+		{
+			Globals.Tags.ScreenChangePending.ResetTag();
 		}
 	}
 }

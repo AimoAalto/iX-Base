@@ -7,8 +7,8 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    
-    public partial class Settings_TagMonitor
-    {
-    }
+
+	public partial class Settings_TagMonitor
+	{
+	}
 }

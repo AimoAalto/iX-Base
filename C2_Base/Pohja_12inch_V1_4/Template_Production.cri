@@ -58,6 +58,7 @@
     </Category>
     <Category Name="Screen">
       <Items>
+        <Item xsi:type="ActionItem" Target="Template_Production.Group_Buttons2.btnSubmenu9" TargetProperty="Actions" Source="Production_Pan1_Scr1" Event="Click" Action="Show Screen" Param="" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
           <ObjectsCount>55</ObjectsCount>
           <ScreenName>Template_Production</ScreenName>

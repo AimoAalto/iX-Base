@@ -36,12 +36,15 @@
         <Item Target="Settings_Pan1_Scr1.AnalogNumeric7" TargetProperty="Value" Source="Tags.SystemTagRuntimeVersion" />
         <Item Target="Settings_Pan1_Scr1.LinearMeter1" TargetProperty="Value" Source="Tags.SystemTagCPULoad" />
         <Item Target="Settings_Pan1_Scr1.LinearMeter1" TargetProperty="IndicatorColor" Source="Tags.SystemTagCPULoad" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Aloitettu1" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Lopetettu1" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Aloitus1" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Lopetus1" Event="Click" Action="Reset Tag" Param="" />
         <Item Target="Settings_Pan1_Scr1.Group3.AnalogNumeric4" TargetProperty="Value" Source="Tags.SystemTagRuntimeVersion" />
         <Item Target="Settings_Pan1_Scr1.Group3.AnalogNumeric3" TargetProperty="Value" Source="Tags.SystemTagAvailableStorage" />
         <Item Target="Settings_Pan1_Scr1.Group3.AnalogNumeric2" TargetProperty="Value" Source="Tags.SystemTagAvailableRAM" />
         <Item Target="Settings_Pan1_Scr1.Group3.AnalogNumeric1" TargetProperty="Value" Source="Tags.SystemTagCPULoad" />
         <Item Target="Settings_Pan1_Scr1.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
-        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -63,7 +66,7 @@
       <Items>
         <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ChangeScreen_btn.Button_ChangeScreen" TargetProperty="Actions" Source="ScreenSelection" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>105</ObjectsCount>
+          <ObjectsCount>108</ObjectsCount>
           <ScreenName>Settings_Pan1_Scr1</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10701">
@@ -76,7 +79,10 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Aloitettu1" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Lopetettu1" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Aloitus1" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Lopetus1" Event="Click" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">
@@ -91,6 +97,7 @@
         <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_PalletLog_btn.Button_ExpPalletLog" Source="placeholder" Width="39" Height="35" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_ImpRecipe_btn.Button_ImpRecipe" Source="orfer_recipe_download" Width="36" Height="36" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_PLC_btn.Button_PLC_Conn" Source="orfer_cpu" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" Source="orfer_stop" Width="26" Height="26" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

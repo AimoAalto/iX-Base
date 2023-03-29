@@ -92,11 +92,13 @@
     </Category>
     <Category Name="Script">
       <Items>
+        <Item Target="Template_Orfer.Script.cs" Source="Tags.ScreenChangePending" />
         <Item Target="Template_Orfer.Script.cs" Source="Tags.Settings_PanelNumber" />
         <Item Target="Template_Orfer.Script.cs" Source="Tags.SystemTagNewScreenId" />
         <Item Target="Template_Orfer.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
         <Item Target="Template_Orfer.Script.cs" Source="Tags.Menu_SubMenu_Group_Visibility" />
         <Item Target="Template_Orfer.Script.cs" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Script.cs" Source="Tags.TraceAll" />
       </Items>
     </Category>
     <Category Name="StructuredTag">

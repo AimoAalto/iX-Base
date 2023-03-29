@@ -76,6 +76,7 @@
         <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_MaxKerros" />
         <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Kerrosasetus" />
         <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.ErrorTexts" />
         <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
       </Items>
     </Category>

@@ -85,6 +85,8 @@
           <Object d1p1:type="Neo.ApplicationFramework.Tools.MessageLibrary.MessageItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Message="" StartValue="15" EndValue="15" Name="Diagnostic_MessageItem15" DisplayName="MessageItem15" GroupName="Diagnostic" d1p1:Site.Name="Diagnostic_MessageItem15" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
         </Messages>
       </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MessageLibrary.MessageGroup, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="SensorInfo_Ryhma" d1p1:Site.Name="SensorInfo_Ryhma" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MessageLibrary.MessageGroup, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="SensorInfo_Kuvaus" d1p1:Site.Name="SensorInfo_Kuvaus" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
     </Groups>
   </Object>
 </NeoItem>

@@ -25,8 +25,8 @@
     <Category Name="Font">
       <Items>
         <Item Target="Settings_pan1_Log.ListBoxErrors" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
-        <Item Target="Settings_pan1_Log.BtnUpdate" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
         <Item Target="Settings_pan1_Log.Text_Top" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Settings_pan1_Log.BtnUpdate" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
       </Items>
     </Category>
     <Category Name="GlobalDataItem">

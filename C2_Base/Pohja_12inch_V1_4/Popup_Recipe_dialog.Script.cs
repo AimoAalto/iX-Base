@@ -1,30 +1,30 @@
 namespace Neo.ApplicationFramework.Generated
 {
 	using Neo.ApplicationFramework.Tools.Recipe;
-	using System;    
+	using System;
 	using System.Collections.Generic;
 	using System.ComponentModel;
 	using System.Data;
 	using System.Linq;
-    
-	
+
+
 	/// <summary>
 	/// Lataa, luo uuden tai poistaa reseptejä tietokannasta.
 	public partial class Popup_Recipe_dialog
-	{		
+	{
 		/// <summary>
 		/// Lataa reseptit näytölle sivun avautuessa.
 		/// </summary>
 		/// <param name="sender">this</param>
 		void Recipe_dialog_Opened(System.Object sender, System.EventArgs e)
 		{
-			
+
 			// Tyhjätään reseptilista ennen uutta latausta
 			ListBox1.Items.Clear();
-			
+
 			// Ei oletusvalintaa
 			ReseptiKentta.Text = "";
-			
+
 			// Jos tallenna nimellä, tallennettavan tuotenumero
 			if (Globals.Tags.HMI_ProdReg_Dialog_Mode.Value == 2)
 			{
@@ -34,13 +34,13 @@ namespace Neo.ApplicationFramework.Generated
 			{
 				TuotenumeroKentta.Text = "";
 			}
-			
+
 			// Haetaan reseptien nimet ja rivinumerot
 			try
 			{
 				// Tehdään kysely
 				DataSet data1 = Globals.Tuotetiedot.HaeKaikki();
-				
+
 				if (data1.Tables.Count > 0)
 				{
 					// Käydään kaikki reseptit läpi
@@ -53,21 +53,21 @@ namespace Neo.ApplicationFramework.Generated
 							Nimi = rivi["FieldName"].ToString(),
 							Numero = Convert.ToInt32(rivi["Tuotenumero"]),
 							RiviNro = Convert.ToInt32(rivi["RiviNro"])
-							});
-						}
+						});
+					}
 
 					// Luetaan kaikki reseptit näytölle halutussa järjestyksessä
-					foreach(Resepti r in Reseptit.OrderBy(i => i.Numero).ThenBy(j => j.Nimi))
+					foreach (Resepti r in Reseptit.OrderBy(i => i.Numero).ThenBy(j => j.Nimi))
 					{
 						// Lisätään resepti näytölle
 						ListBox1.Items.Add(r);
 					}
 				}
 			}
-			catch(Exception ex)
+			catch (Exception ex)
 			{
 				// Reseptien lataus epäonnistui
-				Globals.Tags.HMI_Error_TextValue.SetAnalog(6);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.RecipeLoadFailed);
 				Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message + "; " + ex.InnerException.Message;
 				Globals.Popup_Error.Show();
 			}
@@ -88,7 +88,7 @@ namespace Neo.ApplicationFramework.Generated
 				TuotenumeroKentta.Text = r.Numero.ToString();
 			}
 			// Valitaan resepti myös taustalle
-			Globals.Tags.HMI_ProdReg_RecipeSelected.Value = r.Nimi;			
+			Globals.Tags.HMI_ProdReg_RecipeSelected.Value = r.Nimi;
 		}
 
 		/// <summary>
@@ -104,7 +104,7 @@ namespace Neo.ApplicationFramework.Generated
 				if (Globals.Tags.HMI_ProdReg_Dialog_Mode.Value == 1)
 				{
 					// Käytetään viimeksi valittua resepti, ei käsin muokattavissa olevaa nimeä
-					if(ListBox1.SelectedItem != null)
+					if (ListBox1.SelectedItem != null)
 					{
 						// Luetaan valittu resepti
 						Resepti r = (Resepti)ListBox1.SelectedItem;
@@ -122,7 +122,7 @@ namespace Neo.ApplicationFramework.Generated
 					// Luetaan reseptin nimi laatikosta
 					string resepti = ReseptiKentta.Text;
 
-					if(resepti.Length < 1)
+					if (resepti.Length < 1)
 					{
 						// Tyhjää nimeä ei saa tallentaa
 						return;
@@ -130,13 +130,13 @@ namespace Neo.ApplicationFramework.Generated
 
 					// Tarkistetaan onko tälläinen resepti jo olemassa
 					KeyValuePair<bool, int> olemassa = Globals.Tuotetiedot.ReseptiOlemassa(resepti);
-					if(olemassa.Key)
-					{     
+					if (olemassa.Key)
+					{
 						// Käytetään vanhan reseptin IDtä, ettei tule duplikaatteja
 						Globals.Tags.ProdReg_RiviNro.Value = olemassa.Value;
-						
+
 						// Muokataan vanhaa reseptiä
-						Globals.Tags.ProdReg_RecipeName.Value = resepti;                        
+						Globals.Tags.ProdReg_RecipeName.Value = resepti;
 						Globals.Tuotetiedot.SaveRecipe(resepti, true);
 					}
 					else
@@ -174,15 +174,15 @@ namespace Neo.ApplicationFramework.Generated
 					}
 				}
 			}
-			catch(Exception ex)
+			catch (Exception ex)
 			{
-				Globals.Tags.HMI_Error_TextValue.SetAnalog(0);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
 				Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message;
 				Globals.Popup_Error.Show();
 			}
 		}
 	}
-	
+
 	/// <summary>
 	/// Luokka reseptin järkevään esittämiseen ListBox:ssa.
 	/// </summary>
@@ -202,13 +202,16 @@ namespace Neo.ApplicationFramework.Generated
 		/// </summary>
 		public int RiviNro { get; set; }
 
+		public int KuvioNro { get; set; }
+
 		/// <summary>
 		/// Näyttää reseptin tiedot järkevässä muodossa ListBox:ssa.
 		/// </summary>
 		/// <returns></returns>
 		public override string ToString()
 		{
-			return Numero.ToString() + " " + Nimi;
+			//return string.Format("{0} {1,-35} [{2}]", Numero, Nimi, KuvioNro);
+			return string.Format("{0} {1}", Numero, Nimi);
 		}
 
 	}

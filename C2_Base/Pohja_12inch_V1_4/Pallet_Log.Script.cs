@@ -7,8 +7,8 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-	
-    public partial class Pallet_Log
-    {
-    }
+
+	public partial class Pallet_Log
+	{
+	}
 }

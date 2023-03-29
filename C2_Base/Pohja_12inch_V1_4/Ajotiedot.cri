@@ -36,10 +36,12 @@
         <Item Target="Ajotiedot.Script.cs" Source="Tags.TraceAll" />
         <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_Overview_prod_details" />
         <Item Target="Ajotiedot.Script.cs" Source="Tags.AppStart_Timer" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_InfeedStartCount" />
         <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_Aloitus_kesken" />
         <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_Success_TextValue" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.Line1_PLC_Aloitus1" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.Line1_PLC_Aloitus2" />
         <Item Target="Ajotiedot.Script.cs" Source="Tags.Stop_Production_CloseMe" />
-        <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_Overview_track_selected" />
       </Items>
     </Category>
     <Category Name="StructuredTag">

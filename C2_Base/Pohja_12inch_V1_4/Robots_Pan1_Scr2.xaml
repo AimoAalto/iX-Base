@@ -207,7 +207,7 @@
         </nacd1:StringIntervalMapper>
       </nac:Label.TextIntervalMapper>
     </nac:Label>
-    <nac:Group Name="m_Group_Edit_btn" Width="144.666666666667" Height="52" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="19" Canvas.Left="941.123122548975" Canvas.Top="608.359896843224">
+    <nac:Group Name="m_Group_Edit_btn" Width="144.666666666667" Height="52" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="19" Canvas.Left="1024" Canvas.Top="608.359896843224">
       <nac:Button ButtonAppearance="RoundedBottomLeft" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="8,4,4,8" Text="Edit" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="0,0,0,0" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Edit" Width="144.666666666667" Height="52" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="80" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.TextDecorations>
           <TextDecorationCollection />

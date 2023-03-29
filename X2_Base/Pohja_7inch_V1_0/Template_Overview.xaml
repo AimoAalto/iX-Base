@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?neo version='2.46.49.0'?>
-<nacs:ScreenWindow Topmost="False" Title="Template_Overview" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="SingleBorder" ScreenSize="800, 480" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="800" Height="480" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" x:Class="Neo.ApplicationFramework.Generated.Template_Overview">
+<nacs:ScreenWindow Topmost="False" Title="Template_Overview" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="800, 480" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="800" Height="480" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" x:Class="Neo.ApplicationFramework.Generated.Template_Overview">
   <nacs:ScreenWindow.TemplateScreen>
     <nacs1:TemplateScreen Name="Template_Orfer" RenderMode="Background" />
   </nacs:ScreenWindow.TemplateScreen>
@@ -103,14 +103,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line2" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5">
           <Line.Resources>
@@ -150,14 +150,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <nacc:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle" Width="135" Height="49" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="0" Canvas.Top="3" />
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3">
@@ -197,14 +197,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line1" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1">
           <Line.Resources>
@@ -244,14 +244,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line3" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7">
           <Line.Resources>
@@ -305,14 +305,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line6" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5">
           <Line.Resources>
@@ -352,14 +352,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <nacc:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle7" Width="135" Height="49" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="0" Canvas.Top="3" />
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line7" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1">
@@ -399,14 +399,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line8" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3">
           <Line.Resources>
@@ -446,14 +446,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line9" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7">
           <Line.Resources>

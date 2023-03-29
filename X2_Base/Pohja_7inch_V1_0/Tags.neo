@@ -916,6 +916,14 @@
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" InitialValue="-1" />
         </GlobalDataSubItems>
+        <Events>
+          <Event Name="ValueChangeOrError" EventHandler="SystemTagCurrentScreenId_ValueChangeOrError" />
+        </Events>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" AlwaysActive="True" GlobalDataType="DT_BOOLEAN" d1p1:Site.Name="ScreenChangePending" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15" IsExposed="False">
+        <GlobalDataSubItems>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
+        </GlobalDataSubItems>
       </Object>
     </GlobalDataItems>
     <PollGroups>

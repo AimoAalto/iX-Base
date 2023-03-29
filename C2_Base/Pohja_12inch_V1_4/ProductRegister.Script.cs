@@ -8,7 +8,6 @@ namespace Neo.ApplicationFramework.Generated
 	using System.Windows.Forms;
 
 
-
 	/// <summary>
 	/// Mahdollistaa reseptien tarkastelun ja muokkauksen.
 	/// Sivun sisältämät tiedot vaihtelevat projektin mukaan.
@@ -128,6 +127,7 @@ namespace Neo.ApplicationFramework.Generated
 				// Lisätään kuviolistaan
 				System.Windows.Controls.CheckBox cb = CreateCheckBox(string.Format("{0}  ", pno), pno, CBPatternList_Click);
 				parent.Children.Add(cb);
+
 				foreach (int tr in Globals._Konfiguraatio.CurrentConfig.Tuloradat.Keys)
 				{
 					System.Windows.Controls.CheckBox cbtr = CreateCheckBox(string.Format("{0}  ", tr), tr, null);
@@ -212,7 +212,7 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				else
 				{
-					Globals.Tags.HMI_Error_TextValue.SetAnalog(24);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.ChoosePalletType);
 					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
 					Globals.Popup_Error.Show();
 				}
@@ -234,7 +234,7 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				else
 				{
-					Globals.Tags.HMI_Error_TextValue.SetAnalog(24);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.ChoosePalletType);
 					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
 					Globals.Popup_Error.Show();
 				}
@@ -294,7 +294,6 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			List<int> lst = new List<int>();
 			// Luetaan, mille lavapaikalle kuvio on
-			Lavapaikka_Text.Text = "";
 			foreach (int lavapaikka in pi.Lavapaikat) lst.Add(lavapaikka);
 			Lavapaikka_Text.Text = MakeString(lst);
 		}
@@ -369,7 +368,7 @@ namespace Neo.ApplicationFramework.Generated
 			catch (Exception ex)
 			{
 				// Kuvion kuvan lataaminen epäonnistui
-				Globals.Tags.HMI_Error_TextValue.SetAnalog(5);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.PatternImageLoadFailed);
 				Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message;
 				Globals.Popup_Error.Show();
 				return;
@@ -378,6 +377,7 @@ namespace Neo.ApplicationFramework.Generated
 
 		void UpdatePatternSelection()
 		{
+			int pno = Globals.Tags.ProdReg_PalletPattern.Value;
 			List<int> lst = new List<int>();
 			string s = Globals.Tags.ProdReg_InfeedTrackPattern.Value;
 			string[] values = s.Split(',');
@@ -388,14 +388,21 @@ namespace Neo.ApplicationFramework.Generated
 					if (int.TryParse(item, out no)) lst.Add(no);
 			}
 
+			int index = 0;
 			foreach (System.Windows.Controls.StackPanel o in LBPatterns.Items)
 			{
+				int ptag = (int)o.Tag;
+
+				if (pno == ptag)
+					LBPatterns.SelectedIndex = index;
+
 				if (o.Children.Count > 0)
 				{
 					System.Windows.Controls.CheckBox cb = (System.Windows.Controls.CheckBox)o.Children[0];
 					int tag = (int)cb.Tag;
 					cb.IsChecked = lst.Contains(tag);
 				}
+				index++;
 			}
 		}
 
@@ -420,7 +427,7 @@ namespace Neo.ApplicationFramework.Generated
 			if (!Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.ContainsKey(patternno))
 			{
 				// tuntematon kuvio
-				Globals.Tags.HMI_Error_TextValue.SetAnalog(24);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.NotAllowedPattern);
 				Globals.Tags.HMI_Error_AdditionalInfo.Value = patternno.ToString();
 				Globals.Popup_Error.Show();
 				return;
@@ -441,6 +448,8 @@ namespace Neo.ApplicationFramework.Generated
 			// Tyhjennetään näyttö
 			Desc_Text.Text = "";
 			Tool_Text.Text = "";
+			ANPalletLength.Text = "";
+			ANPalletWidth.Text = "";
 
 			// Yritetään ladata tiedosto
 			try
@@ -460,13 +469,19 @@ namespace Neo.ApplicationFramework.Generated
 					// Luetaan kuviosta kerrosmäärä
 					maxkerros = Kuvio.Nykyinen.Layers;
 
+					if (Kuvio.Nykyinen.PalletTypes.Count > 0)
+					{
+						ANPalletLength.Text = string.Format("{0} mm", Kuvio.Nykyinen.PalletTypes[0].Length);
+						ANPalletWidth.Text = string.Format("{0} mm", Kuvio.Nykyinen.PalletTypes[0].Width);
+					}
+
 					LoadPicture(Kuvio.Nykyinen.PalletizingImageFilename);
 				}
 			}
 			catch (Exception ex)
 			{
 				// Lataus epäonnistui
-				Globals.Tags.HMI_Error_TextValue.SetAnalog(4);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.PatternLoadFailed);
 				Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message;
 				Globals.Popup_Error.Show();
 				return;
@@ -481,11 +496,11 @@ namespace Neo.ApplicationFramework.Generated
 				Globals.Tags.ProdReg_PalletPattern.SetAnalog((int)lbitem.Tag);
 			}
 		}
-		
+
 		void ANProductNo_ValueChanged(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
 			System.Diagnostics.Trace.WriteLine(string.Format("Patterns str {0}", Globals.Tags.ProdReg_InfeedTrackPattern.Value));
-			UpdatePatternSelection();			
+			UpdatePatternSelection();
 		}
 	}
 }

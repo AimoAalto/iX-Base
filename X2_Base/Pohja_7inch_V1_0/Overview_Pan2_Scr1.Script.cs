@@ -6,9 +6,9 @@
 //---------------------------------------------------------------
 
 namespace Neo.ApplicationFramework.Generated
-{    
-    
-    public partial class Overview_Pan2_Scr1
-    {
-    }
+{
+
+	public partial class Overview_Pan2_Scr1
+	{
+	}
 }

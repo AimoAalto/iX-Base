@@ -4,8 +4,8 @@ namespace Neo.ApplicationFramework.Generated
 	using System.Collections.Generic;
 	using System.Windows;
 	using System.Windows.Media;
-    
-	
+
+
 	/// <summary>
 	/// Näyttää ja antaa muokata ajossa olevan lavapaikan tai reseptin
 	/// välikkeitä.
@@ -37,7 +37,7 @@ namespace Neo.ApplicationFramework.Generated
 		/// Kerroksen muokkaussivu alustettuna.
 		/// </summary>
 		ProdReg_LayerEdit sivu;
-		
+
 		/// <summary>
 		/// Alustaa ja päivittää sivun sen avautuessa.
 		/// </summary>
@@ -47,9 +47,9 @@ namespace Neo.ApplicationFramework.Generated
 			// Haetaan kaikki kerros ja välipahvi elementit näytöltä            
 			Elementit.Clear();
 			HaeLapsi(this);
-			
+
 			// Päivitetään tilanne
-			PaivitaValikkeet(true);	
+			PaivitaValikkeet(true);
 		}
 
 		/// <summary>
@@ -75,7 +75,7 @@ namespace Neo.ApplicationFramework.Generated
 			var Lapsia = VisualTreeHelper.GetChildrenCount(nyk);
 
 			// Käydään kaikki lapset läpi rekursiivisesti
-			for(int i = 0; i < Lapsia; i++)
+			for (int i = 0; i < Lapsia; i++)
 			{
 				try
 				{
@@ -87,7 +87,7 @@ namespace Neo.ApplicationFramework.Generated
 						HaeLapsi(elementti);
 					}
 				}
-				catch(Exception)
+				catch (Exception)
 				{
 
 				}
@@ -95,13 +95,13 @@ namespace Neo.ApplicationFramework.Generated
 			// Kaikki lapset käyty, palautetaan null
 			return null;
 		}
-		
+
 		/// <summary>
 		/// Avaa kerroksen muokkausikkunan, kun kerrosta painetaan.
 		/// </summary>
 		/// <param name="sender">this.KerrosX</param>
 		void KerrosElementti_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-		{            
+		{
 			try
 			{
 				// Luetaan kerroksen numero lähettäjästä
@@ -112,18 +112,18 @@ namespace Neo.ApplicationFramework.Generated
 
 				// Tallennetaan kerroksen numero
 				Globals.Tags.HMI_ProdReg_ValikeKerrosNro.Value = kerros;
-                 
+
 				// Tallennetaan kerroksen nykytila muokkauksen alkuarvoksi
 				Globals.Tags.HMI_ProdReg_ValikeKerrosValikkeet.Value = LueKerroksenValikkeet(kerros, pahvit);
-                
+
 				// Avataan tietojen muokkaussivu
 				sivu = new ProdReg_LayerEdit();
 				sivu.Closed += sivu_Closed;
 				sivu.Show();
 			}
-			catch(Exception ex)
+			catch (Exception ex)
 			{
-				Globals.Tags.HMI_Error_TextValue.SetAnalog(12);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.LayerOpenFailed);
 				Globals.Tags.HMI_Error_AdditionalInfo.Value = ex.Message;
 				Globals.Popup_Error.Show();
 			}
@@ -138,7 +138,7 @@ namespace Neo.ApplicationFramework.Generated
 		void Button_Laheta_Click(System.Object sender, System.EventArgs e)
 		{
 			// Tarkistetaan, ettei sanoma ala tai lopu erottimeen
-			if(pahvit.EndsWith(";") || pahvit.EndsWith(","))
+			if (pahvit.EndsWith(";") || pahvit.EndsWith(","))
 			{
 				pahvit = pahvit.Substring(0, pahvit.Length - 1);
 			}
@@ -163,25 +163,29 @@ namespace Neo.ApplicationFramework.Generated
 					pahvit += ";0";
 				}
 			}
-			
+
 			if (Globals.Security.CurrentUser == "Administrator")
 			{
-				System.Windows.Forms.MessageBox.Show("Pahvistring: " + pahvit);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.Info);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = "Pahvistring: " + pahvit;
+				Globals.Popup_Error.Show();
 			}
-			
+
 			//Lähetä robotille, jos sivua ei avattu tuoterekisteristä
-			if(lavapaikka > -1)
+			if (lavapaikka > -1)
 			{
 				// Katsotaan kummalle robotille tulorata on
 				int robottiNo = 0;
 				int roboLavapaikka = 0;
 
 				Globals._Konfiguraatio.CurrentConfig.GetRobotinLavapaikka(Globals.Tags.HMI_PalletPlace.Value, out robottiNo, out roboLavapaikka);
-				
-				if(robottiNo == 0)
+
+				if (robottiNo == 0)
 				{
 					// Robotin numeron parsinta epäonnistui
-					MessageBox.Show("Robotin numeroa ei voitu löytää lavapaikan avulla:", "Lavapaikka " + lavapaikka);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnknownRobotId);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "Pallet place: " + lavapaikka;
+					Globals.Popup_Error.Show();
 				}
 				else
 				{
@@ -189,16 +193,16 @@ namespace Neo.ApplicationFramework.Generated
 					Globals.Robotit.AsetaPahvit(robottiNo, roboLavapaikka, pahvit);
 				}
 			}
-			else				
+			else
 			{
 				// Tarjotaan pahveja tuoterekisterille
 				Globals.Tags.HMI_ProdCtrl_Cardboards_Pahvit.Value = pahvit;
 			}
-			
+
 			// Suljetaan sivu
 			this.Close();
 		}
-		
+
 		/// <summary>
 		/// Palauttaa yhden kerroksen välikkeet välikestringistä
 		/// </summary>
@@ -238,18 +242,18 @@ namespace Neo.ApplicationFramework.Generated
 				// Luetaan kerroksen sisältö välikkeiksi
 				string[] valikkeet = kerrokset[kerros].Split(',');
 
-				foreach(string valike in valikkeet)
+				foreach (string valike in valikkeet)
 				{
 					try
 					{
-						if(Convert.ToInt16(valike) > 0)
+						if (Convert.ToInt16(valike) > 0)
 						{
 							// On joku välike kerroksessa,
 							return true;
 						}
 					}
-					catch(Exception)
-					{ 
+					catch (Exception)
+					{
 
 					}
 				}
@@ -297,9 +301,9 @@ namespace Neo.ApplicationFramework.Generated
 						if (kerros > 0 && kerros <= maxkerros)
 						{
 							elementti.Visibility = System.Windows.Visibility.Visible;
-							
+
 							// Yli nykyisen kerrosasetuksen ovat kerrokset esitetään himmeänä
-							if(kerros > kerrosasetus)
+							if (kerros > kerrosasetus)
 							{
 								elementti.Opacity = 0.2;
 							}
@@ -330,9 +334,9 @@ namespace Neo.ApplicationFramework.Generated
 							if (OnkoKerroksessaValikkeita(kerros, this.pahvit) == true)
 							{
 								elementti.Visibility = System.Windows.Visibility.Visible;
-								
+
 								// Yli nykyisen kerrosasetuksen ovat kerrokset esitetään himmeänä
-								if(kerros > kerrosasetus)
+								if (kerros > kerrosasetus)
 								{
 									elementti.Opacity = 0.5;
 								}
@@ -395,8 +399,8 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			// Kerros 0 vastaa alusvälikkeitä, kerros 1 ... n tuotteiden väliin vietäviä
 			List<string> kerrokset = new List<string>();
-			kerrokset.InsertRange(0,  this.pahvit.Split(';'));
-           
+			kerrokset.InsertRange(0, this.pahvit.Split(';'));
+
 			// Tarkistetaan, että kerroksia on tarpeeksi
 			if (kerros < kerrokset.Count)
 			{
@@ -406,7 +410,7 @@ namespace Neo.ApplicationFramework.Generated
 			else
 			{
 				// Pitää luoda kerroksia...
-				for(int i = kerrokset.Count;i < kerros; i++)
+				for (int i = kerrokset.Count; i < kerros; i++)
 				{
 					kerrokset.Add("0");
 				}
@@ -416,7 +420,7 @@ namespace Neo.ApplicationFramework.Generated
 
 			// Kasataan uusi pahvit stringi
 			string _pahvit = string.Empty;
-			foreach(string rivi in kerrokset)
+			foreach (string rivi in kerrokset)
 			{
 				// Siltä varalta, että jostain syystä tulisi tyhjiä kerroksia purusta..
 				if (rivi.Length > 0)
@@ -424,7 +428,7 @@ namespace Neo.ApplicationFramework.Generated
 					_pahvit += rivi + ";";
 				}
 			}
-            
+
 			// Poistetaan viimeinen erotin ja tallennetaan
 			this.pahvit = _pahvit.Substring(0, _pahvit.Length - 1);
 		}

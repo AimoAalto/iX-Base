@@ -27,11 +27,11 @@ namespace Neo.ApplicationFramework.Generated
 			try
 			{
 				string anturikoodi = Regex.Replace(Globals.Tags.HMI_SensorInfo_Tunnus.Value, "[^0-9]", "");
-				Tunnus = Int16.Parse(anturikoodi);
+				Tunnus = int.Parse(anturikoodi);
 			}
 			catch (Exception ex)
 			{
-				Globals.Tags.HMI_Error_TextValue.SetAnalog(0);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
 				Globals.Tags.HMI_Error_AdditionalInfo.Value = string.Format("Unable to parse sensorcode, check parameters! [{0}]", ex.Message);
 				Globals.Popup_Error.Show();
 				return;

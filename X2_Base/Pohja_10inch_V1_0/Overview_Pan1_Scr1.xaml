@@ -11,7 +11,7 @@
       </nac:Label.TextDecorations>
     </nac:Label>
     <nac:Group Name="m_GroupBtn" Width="132" Height="44" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="2" Canvas.Left="256" Canvas.Top="108">
-      <nacc:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle" Width="128" Height="44" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="0" Canvas.Top="0" />
+      <nacc:Rectangle Fill="#FFC0504D" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle" Width="128" Height="44" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="0" Canvas.Top="0" />
       <nac:Button CornerRadius="0,0,0,0" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="5,5,5,5" Text="Hit ME" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="41,2,0,2" RequiresTransparency="True" SymbolName="orfer_hand" SymbolTransparent="False" Transparent="Hidden" MultiPicture="False" BorderBrush="#FFFFFFFF" BorderThickness="2,2,2,4" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="20" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_BtnHitME" Width="132" Height="44" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="5" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac1:StyleMarkupExtension DefaultCF}">
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
@@ -26,14 +26,14 @@
             </TransformGroup.Children>
           </TransformGroup>
         </nac:Button.RenderTransform>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnHitME_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
     </nac:Group>
   </nacs:ElementCanvas>

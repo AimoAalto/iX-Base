@@ -38,7 +38,6 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			List<FrameworkElement> anturit = HaeElementit(ryhma_nimi);
 
-			//String kasiajot = "";
 			foreach (FrameworkElement nappi in anturit)
 			{
 				if (nappi is Neo.ApplicationFramework.Controls.Group)
@@ -69,7 +68,7 @@ namespace Neo.ApplicationFramework.Generated
 					}
 			}
 
-			Globals.Tags.Kasiajo.Value = 0;
+			Globals.Tags.Kasiajo.ResetTag();
 		}
 
 		/// <summary>
@@ -93,6 +92,7 @@ namespace Neo.ApplicationFramework.Generated
 						{
 							// Yritetään tyypittää pictures
 							if (elementCanvas.Items[i] is Neo.ApplicationFramework.Controls.Symbol.Picture)
+							{
 								try
 								{
 									// Hide all arrow images in first round
@@ -117,6 +117,7 @@ namespace Neo.ApplicationFramework.Generated
 								{
 									Globals.Tags.Log(ex.ToString());
 								}
+							}
 						}
 					}
 					catch (Exception ex)
@@ -222,29 +223,31 @@ namespace Neo.ApplicationFramework.Generated
 
 					foreach (FrameworkElement nappi in anturit)
 					{
-						try
-						{
-							Neo.ApplicationFramework.Controls.Group elementCanvas = (Neo.ApplicationFramework.Controls.Group)nappi;
-
-							// ElementCanvasin alla on näkyvät elementit
-							for (int i = 0; i < elementCanvas.Items.Count; i++)
+						if (nappi is Neo.ApplicationFramework.Controls.Group)
+							try
 							{
-								try
+								Neo.ApplicationFramework.Controls.Group elementCanvas = (Neo.ApplicationFramework.Controls.Group)nappi;
+
+								// ElementCanvasin alla on näkyvät elementit
+								for (int i = 0; i < elementCanvas.Items.Count; i++)
 								{
-									// Hide all arrow images in first round
-									Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas.Items[i];
-									lapsi.Visibility = Visibility.Hidden;
-								}
-								catch (Exception ex)
-								{
-									Globals.Tags.Log(ex.ToString());
+									if (elementCanvas.Items[i] is Neo.ApplicationFramework.Controls.Symbol.Picture)
+										try
+										{
+											// Hide all arrow images in first round
+											Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas.Items[i];
+											lapsi.Visibility = Visibility.Hidden;
+										}
+										catch (Exception ex)
+										{
+											Globals.Tags.Log(ex.ToString());
+										}
 								}
 							}
-						}
-						catch (Exception ex)
-						{
-							Globals.Tags.Log(ex.ToString());
-						}
+							catch (Exception ex)
+							{
+								Globals.Tags.Log(ex.ToString());
+							}
 					}
 				}
 
@@ -254,19 +257,21 @@ namespace Neo.ApplicationFramework.Generated
 				for (int i = 0; i < elementCanvas1.Items.Count; i++)
 				{
 					// Yritetään tyypittää pictures
-					try
-					{
-						Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas1.Items[i];
+					if (elementCanvas1.Items[i] is Neo.ApplicationFramework.Controls.Symbol.Picture)
+						try
+						{
+							Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas1.Items[i];
 
-						if (lapsi.Visibility == Visibility.Visible)
-							lapsi.Visibility = Visibility.Hidden;
-						else
-							lapsi.Visibility = Visibility.Visible;
+							if (lapsi.Visibility == Visibility.Visible)
+								lapsi.Visibility = Visibility.Hidden;
+							else
+								lapsi.Visibility = Visibility.Visible;
 
-					}
-					catch (Exception)
-					{
-					}
+						}
+						catch (Exception ex)
+						{
+							Globals.Tags.Log(ex.ToString());
+						}
 				}
 
 				// Luodaan lista käsiajoista
@@ -283,26 +288,29 @@ namespace Neo.ApplicationFramework.Generated
 						for (int i = 0; i < elementCanvas1.Items.Count; i++)
 						{
 							// Yritetään tyypittää pictures
-							try
-							{
-								Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas1.Items[i];
-
-								if (lapsi.Visibility == Visibility.Visible)
+							if (elementCanvas1.Items[i] is Neo.ApplicationFramework.Controls.Symbol.Picture)
+								try
 								{
-									if (kasiajot.Length == 0)
-										kasiajot = ParsiNimi(nappi.Name);
-									else
-										kasiajot = kasiajot + ";" + ParsiNimi(nappi.Name);
-									break;
+									Neo.ApplicationFramework.Controls.Symbol.Picture lapsi = (Neo.ApplicationFramework.Controls.Symbol.Picture)elementCanvas1.Items[i];
+
+									if (lapsi.Visibility == Visibility.Visible)
+									{
+										if (kasiajot.Length == 0)
+											kasiajot = ParsiNimi(nappi.Name);
+										else
+											kasiajot = kasiajot + ";" + ParsiNimi(nappi.Name);
+										break;
+									}
 								}
-							}
-							catch (Exception)
-							{
-							}
+								catch (Exception ex)
+								{
+									Globals.Tags.Log(ex.ToString());
+								}
 						}
 					}
-					catch (Exception)
+					catch (Exception ex)
 					{
+						Globals.Tags.Log(ex.ToString());
 					}
 				}
 

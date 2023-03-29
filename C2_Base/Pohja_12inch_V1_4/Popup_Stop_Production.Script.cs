@@ -56,7 +56,7 @@ namespace Neo.ApplicationFramework.Generated
 				robottiTulorata = rtrno;
 			}
 
-			if(robottiNo == 0)
+			if (robottiNo == 0)
 			{
 				// Robotin numeron parsinta epäonnistui
 				System.Windows.MessageBox.Show("Robotin numeroa ei voitu löytää tuloradan avulla:", "Tulorata " + tulorata);

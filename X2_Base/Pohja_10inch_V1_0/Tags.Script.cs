@@ -15,22 +15,27 @@ namespace Neo.ApplicationFramework.Generated
 	using System.Linq;
 	using System.Reflection;
 	using System.Collections.Generic;
-    
-    
+
+
 	public partial class Tags
 	{
-		
-		public enum Screens	
+
+		public enum Screens
 		{
-			Overview = 0, 
-			Recipe, 
-			DriveMode, 
+			Overview = 0,
+			Recipe,
+			DriveMode,
 			Diagnostics,
-			Manual, 
+			Manual,
 			Production,
 			Alarms,
 			Settings
 		};
+
+		private readonly object lockme = new object();
+
+		private readonly bool traceall = false;
+		public bool TraceAll { get { return traceall; } }
 		
 		/// <summary>
 		/// Sekunteja mittaava apuajastin, joka käynnistyy, 
@@ -41,13 +46,13 @@ namespace Neo.ApplicationFramework.Generated
 		/// Ohjelman käynnistyttyä kerran tehtäville asioille
 		/// </summary>
 		private bool kerran = false;
-		
+
 		public List<string> __Log = new List<string>();
 
 		void SystemTagSecond_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
-			if(kerran == false)
-			{	
+			if (kerran == false)
+			{
 				NakymanValinta();
 				/*
 				//Neo.ApplicationFramework.Generated.S7_PLC_HMI2 = Globals.GetObjects<Neo.ApplicationFramework.Generated.S7_PLC_HMI2>();
@@ -79,10 +84,10 @@ namespace Neo.ApplicationFramework.Generated
 
 				kerran = true;
 			}
-			
+
 			AppStart_Timer++;
 		}
-		
+
 		/// <summary>
 		/// IX inner log
 		/// </summary>
@@ -101,7 +106,9 @@ namespace Neo.ApplicationFramework.Generated
 			// Write to DebugView or any trace listener
 			System.Diagnostics.Trace.WriteLine("[iX] " + msg);
 		}
-		
+
+		#region tags
+
 		/// <summary>
 		/// Hakee tagin nimen perusteella.
 		/// </summary>
@@ -110,23 +117,26 @@ namespace Neo.ApplicationFramework.Generated
 		/// <exception cref="ConfigurationFaultException">Tagia ei löydy.</exception>
 		public IBasicTag GetTag(string TagName)
 		{
-			GlobalDataItem g = (GlobalDataItem)GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
-			if (g != null)
+			lock (lockme)
 			{
-				//Log("GetTag: "+TagName);
-				return g;
-			}
+				GlobalDataItem g = (GlobalDataItem)Globals.Tags.GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
+				if (g != null)
+				{
+					//Log("GetTag: "+TagName);
+					return g;
+				}
 
-			LightweightTag l = (LightweightTag)LightweightTags.FirstOrDefault(i => i.Name == TagName);
-			if (l != null)
-			{
-				//Log("GetLightWeightTag: "+TagName);
-				return l;
-			}
+				LightweightTag l = (LightweightTag)Globals.Tags.LightweightTags.FirstOrDefault(i => i.Name == TagName);
+				if (l != null)
+				{
+					//Log("GetLightWeightTag: "+TagName);
+					return l;
+				}
 
-			Log(string.Format("Unknown tag: [{0}]", TagName));
-			
-			return null;
+				Log(string.Format("Unknown tag: [{0}]", TagName));
+
+				return null;
+			}
 		}
 
 		/// <summary>
@@ -137,23 +147,26 @@ namespace Neo.ApplicationFramework.Generated
 		/// <exception cref="ConfigurationFaultException">Tagia ei löydy.</exception>
 		public int GetTagValueInt(string TagName)
 		{
-			GlobalDataItem g = (GlobalDataItem)GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
-			if (g != null)
+			lock (lockme)
 			{
-				//Log("GetTag: "+TagName);
-				return g.Value.Int;
-			}
+				GlobalDataItem g = (GlobalDataItem)Globals.Tags.GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
+				if (g != null)
+				{
+					//Log("GetTag: "+TagName);
+					return g.Value.Int;
+				}
 
-			LightweightTag l = (LightweightTag)LightweightTags.FirstOrDefault(i => i.Name == TagName);
-			if (l != null)
-			{
-				//Log("GetLightWeightTag: "+TagName);
-				return l.Value.Int;
-			}
+				LightweightTag l = (LightweightTag)Globals.Tags.LightweightTags.FirstOrDefault(i => i.Name == TagName);
+				if (l != null)
+				{
+					//Log("GetLightWeightTag: "+TagName);
+					return l.Value.Int;
+				}
 
-			Log(string.Format("Unknown tag: [{0}]", TagName));
-			
-			return 0;
+				Log(string.Format("Unknown tag: [{0}]", TagName));
+
+				return 0;
+			}
 		}
 
 		/// <summary>
@@ -164,25 +177,28 @@ namespace Neo.ApplicationFramework.Generated
 		/// <exception cref="ConfigurationFaultException">Tagia ei löydy.</exception>
 		public string GetTagValueString(string TagName)
 		{
-			GlobalDataItem g = (GlobalDataItem)GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
-			if (g != null)
+			lock (lockme)
 			{
-				//Log("GetTag: "+TagName);
-				return g.Value.String;
-			}
+				GlobalDataItem g = (GlobalDataItem)Globals.Tags.GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
+				if (g != null)
+				{
+					//Log("GetTag: "+TagName);
+					return g.Value.String;
+				}
 
-			LightweightTag l = (LightweightTag)LightweightTags.FirstOrDefault(i => i.Name == TagName);
-			if (l != null)
-			{
-				//Log("GetLightWeightTag: "+TagName);
-				return l.Value.String;
-			}
+				LightweightTag l = (LightweightTag)Globals.Tags.LightweightTags.FirstOrDefault(i => i.Name == TagName);
+				if (l != null)
+				{
+					//Log("GetLightWeightTag: "+TagName);
+					return l.Value.String;
+				}
 
-			Log(string.Format("Unknown tag: [{0}]", TagName));
-			
-			return "";
+				Log(string.Format("Unknown tag: [{0}]", TagName));
+
+				return "";
+			}
 		}
-		
+
 		/// <summary>
 		/// Hakee tagin arvon sen nimen perusteella.
 		/// </summary>
@@ -191,23 +207,26 @@ namespace Neo.ApplicationFramework.Generated
 		/// <exception cref="ConfigurationFaultException">Tagia ei löydy.</exception>
 		public VariantValue GetTagValue(string TagName)
 		{
-			GlobalDataItem g = (GlobalDataItem)GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
-			if (g != null)
+			lock (lockme)
 			{
-				return g.Value;
-			}
+				GlobalDataItem g = (GlobalDataItem)Globals.Tags.GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
+				if (g != null)
+				{
+					return g.Value;
+				}
 
-			LightweightTag l = (LightweightTag)LightweightTags.FirstOrDefault(i => i.Name == TagName);
-			if (l != null)
-			{
-				return l.Value;
-			}
+				LightweightTag l = (LightweightTag)Globals.Tags.LightweightTags.FirstOrDefault(i => i.Name == TagName);
+				if (l != null)
+				{
+					return l.Value;
+				}
 
-			Log(string.Format("Unknown tag: [{0}]", TagName));
-			
-			return null;
+				Log(string.Format("Unknown tag: [{0}]", TagName));
+
+				return null;
+			}
 		}
-		
+
 		/// <summary>
 		/// Hakee tagin arvot nimen perusteella.
 		/// </summary>
@@ -217,24 +236,29 @@ namespace Neo.ApplicationFramework.Generated
 		/// <exception cref="ConfigurationFaultException">Tagia ei löydy.</exception>
 		public VariantValue[] GetTagValues(string TagName)
 		{
-			GlobalDataItem g = (GlobalDataItem)GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
-			if (g != null)
+			lock (lockme)
 			{
-				return g.Values;
-			}
+				GlobalDataItem g = (GlobalDataItem)Globals.Tags.GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
+				if (g != null)
+				{
+					return g.Values;
+				}
 
-			LightweightTag l = (LightweightTag)LightweightTags.FirstOrDefault(i => i.Name == TagName);
-			if (l != null)
-			{
-				// Voiko lightweight tagilla olla monta arvoa?
-				//Log("GetTagValues - LightweightTag - TagName: " + TagName);            
-			}
+				LightweightTag l = (LightweightTag)Globals.Tags.LightweightTags.FirstOrDefault(i => i.Name == TagName);
+				if (l != null)
+				{
+					// Voiko lightweight tagilla olla monta arvoa?
+					Log(string.Format("GetTagValues - LightweightTag -  tag: [{0}]", TagName));
+					//throw new ArgumentOutOfRangeException("GetTagValues - LightweightTag - TagName");
+					return null;
+				}
 
-			Log(string.Format("Unknown tag: [{0}]", TagName));
-			
-			return null;
-		}	
-		
+				Log(string.Format("Unknown tag: [{0}]", TagName));
+
+				return null;
+			}
+		}
+
 		/// <summary>
 		/// Etsii tagin nimen perusteella ja astettaa sille arvon.
 		/// </summary>
@@ -243,108 +267,121 @@ namespace Neo.ApplicationFramework.Generated
 		/// <exception cref="ArgumentException">Tagia ei löydy.</exception>
 		public void SetTagValue(string TagName, VariantValue v)
 		{
-			// Tarkista onko perinteinen tagi
-			GlobalDataItem g = (GlobalDataItem)GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
-			if (g != null)
-			{                
-				if(g.DataType == Interop.DataSource.BEDATATYPE.DT_STRING)
+			lock (lockme)
+			{
+				// Tarkista onko perinteinen tagi
+				GlobalDataItem g = (GlobalDataItem)Globals.Tags.GlobalDataItems.FirstOrDefault(i => i.Name == TagName);
+				if (g != null)
 				{
-					g.SetString(v);
-				}
-				else if (g.DataType == Interop.DataSource.BEDATATYPE.DT_BOOLEAN)
-				{
-					if (v.Bool)
+					if (g.DataType == Interop.DataSource.BEDATATYPE.DT_STRING)
 					{
-						g.SetTag();
+						g.SetString(v);
+					}
+					else if (g.DataType == Interop.DataSource.BEDATATYPE.DT_BOOLEAN)
+					{
+						if (v.Bool)
+						{
+							g.SetTag();
+						}
+						else
+						{
+							g.ResetTag();
+						}
+					}
+					else if (g.DataType == Interop.DataSource.BEDATATYPE.DT_DATETIME)
+					{
+						g.Value = v.DateTime;
 					}
 					else
 					{
-						g.ResetTag();
+						g.SetAnalog(v);
 					}
-				}
-				else if (g.DataType == Interop.DataSource.BEDATATYPE.DT_DATETIME)
-				{
-					g.Value = v.DateTime;
-				}
-				else
-				{
-					g.SetAnalog(v);
-				}
-				
-				return;
-			}
 
-			// Tarkista onko iX 2.2 tagi
-			LightweightTag l = (LightweightTag)LightweightTags.FirstOrDefault(i => i.Name == TagName);
-			if (l != null)
-			{
-				// VoikoLightweightTag olla string tyyppiä?
-				l.SetAnalog(v);
+					return;
+				}
+
+				// Tarkista onko iX 2.2 tagi
+				LightweightTag l = (LightweightTag)Globals.Tags.LightweightTags.FirstOrDefault(i => i.Name == TagName);
+				if (l != null)
+				{
+					// VoikoLightweightTag olla string tyyppiä?
+					l.SetAnalog(v);
+					return;
+				}
+
+				// Jos tultiin tänne niin tagia ei löytynyt
+				Log(string.Format("Unknown tag: [{0}]", TagName));
+
 				return;
 			}
-			
-			// Jos tultiin tänne niin tagia ei löytynyt
-			Log(string.Format("Unknown tag: [{0}]", TagName));
-			
-			return;
-		}	
-		
+		}
+
+		#endregion
+
 		/// <summary>
 		/// BtnHandler / ShowScreen
 		/// Method generate a screen id of showed screen by method argument
 		/// </summary>
 		public void BtnHandler(int panelno, Screens screen, string btn_name, int length)
 		{
-			string msg = string.Format("ShowScreen {0} button: {1}", screen, btn_name);
-			Log(msg);
-			System.Diagnostics.Trace.WriteLine(msg);
-
-			// Jos napissa ei ole tekstiä eli 'ei ole käytössä' lopetetaan tähän
-			if (length == 0) return;
-			
-			try 
+			lock (lockme)
 			{
-				string aux = "";
-			
-				// Erotetaan napin nimestä numero
-				for (int i = 0; i < btn_name.Length; i++){
-					if (Char.IsDigit(btn_name[i]))
-						aux += btn_name[i];
+				if (Globals.Tags.ScreenChangePending.Value.Bool == true)
+				{
+					Globals.Tags.Log("Screen change pending");
+					return;
 				}
+				
+				Log(string.Format("ShowScreen {0} button: {1}", screen, btn_name));
 
-				int num = Convert.ToInt16(aux);
+				// Jos napissa ei ole tekstiä eli 'ei ole käytössä' lopetetaan tähän
+				if (length == 0) return;
 
-				int screenid = panelno * 10000;
-				screenid += ((int)screen * 100);
-				screenid += num;
-			
-				SystemTagNewScreenId.SetAnalog(screenid);
-				Menu_SubMenu_Btn_Anim.SetAnalog(num);
+				try
+				{
+					string aux = "";
+
+					// Erotetaan napin nimestä numero
+					for (int i = 0; i < btn_name.Length; i++)
+					{
+						if (Char.IsDigit(btn_name[i]))
+							aux += btn_name[i];
+					}
+
+					int num = Convert.ToInt16(aux);
+
+					int screenid = panelno * 10000;
+					screenid += ((int)screen * 100);
+					screenid += num;
+
+					SystemTagNewScreenId.SetAnalog(screenid);
+					Menu_SubMenu_Btn_Anim.SetAnalog(num);
+				}
+				catch (Exception x)
+				{
+					Log(string.Format("ShowScreen {0} button: {1}. Exception: {2}", screen, btn_name, x.Message));
+				}
 			}
-			catch (Exception x)
-			{
-				Log(string.Format("ShowScreen {0} button: {1}. Exception: {2}", screen, btn_name, x.Message));		
-			}			
 		}
 
 		void NakymanValinta()
 		{
 			//Globals._Konfiguraatio.ReadSettings();
-				
-			if(Settings_PanelNumber.Value < 1)
+
+			if (Settings_PanelNumber.Value < 1)
 			{
 				Globals.ScreenSelection.Show();
 			}
 			else
 			{
 				SystemTagNewScreenId.SetAnalog(10001);
-			}	
+			}
 		}
 
 		void SystemTagCurrentUser_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
 			// Kirjoitetaan kulloisen käyttäjätason integer -arvo
-			switch (SystemTagCurrentUser.Value.ToString()) 
+			switch (SystemTagCurrentUser.Value.ToString())
 			{
 				case "Administrator":
 					CurrentUserInt.Value = 3;
@@ -360,5 +397,10 @@ namespace Neo.ApplicationFramework.Generated
 					break;
 			}
 		}
-    }
+		
+		void SystemTagNewScreenId_ValueChangeOrError(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
+		{
+			Globals.Tags.ScreenChangePending.ResetTag();
+		}
+	}
 }

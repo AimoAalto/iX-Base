@@ -1,27 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?neo version='2.46.49.0'?>
-<nacs:ScreenWindow Top="297" Left="546" Topmost="False" Title="Popup_NewPallet" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="Manual" WindowState="Normal" BorderStyle="ThreeDBorder" ModalScreen="True" ScreenSize="488, 160" ScreenPosition="546, 297" ScreenTitle="" TemplateScreen="{x:Null}" PopupScreen="True" StyleName="Rounded" IsCacheable="False" Background="#FF106280" Width="488" Height="160" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" x:Class="Neo.ApplicationFramework.Generated.Popup_NewPallet">
+<nacs:ScreenWindow Top="297" Left="546" Topmost="False" Title="Popup_NewPallet" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="Manual" WindowState="Normal" BorderStyle="None" ModalScreen="True" ScreenSize="488, 160" ScreenPosition="546, 297" ScreenTitle="" TemplateScreen="{x:Null}" PopupScreen="True" StyleName="Rounded" IsCacheable="False" Background="#FF106280" Width="488" Height="160" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" x:Class="Neo.ApplicationFramework.Generated.Popup_NewPallet">
   <nai:ActionProperties.Actions>
     <nai:ActionList>
-      <nata:MultiAction Name="Multi Action">
-        <nata:MultiAction.Actions>
-          <nai:ActionList>
-            <nata:Action Name="Reset Tag">
-              <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
-              </nata:Action.ActionMethodInfo>
-            </nata:Action>
-            <nata:Action Name="Reset Tag">
-              <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Overview_pallet_resets" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
-              </nata:Action.ActionMethodInfo>
-            </nata:Action>
-          </nai:ActionList>
-        </nata:MultiAction.Actions>
-        <nata:MultiAction.ActionMethodInfo>
-          <nata:ActionMethodInfo Name="" ObjectName="" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
-        </nata:MultiAction.ActionMethodInfo>
-      </nata:MultiAction>
+      <nata:Action Name="Reset Tag">
+        <nata:Action.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+        </nata:Action.ActionMethodInfo>
+      </nata:Action>
     </nai:ActionList>
   </nai:ActionProperties.Actions>
   <nai:ScriptProperties.ScriptEvents>

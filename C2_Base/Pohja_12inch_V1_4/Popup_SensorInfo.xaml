@@ -22,7 +22,7 @@
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
   <nacs:ElementCanvas Name="m_EditorCanvas" Width="288" Height="297" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
-    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" TextDecorations="{x:Null}" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="24" FontStyle="Normal" FontWeight="Bold" Padding="2,2,2,2" Name="m_Lavapaikka_Text" Width="236.32811765825" Height="33" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="4" KeyboardNavigation.TabNavigation="None" Canvas.Left="28.129746925084" Canvas.Top="10.5441184616225">
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" TextDecorations="{x:Null}" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="24" FontStyle="Normal" FontWeight="Bold" Padding="2,2,2,2" Name="m_Sensor_Text" Width="236.32811765825" Height="33" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="4" KeyboardNavigation.TabNavigation="None" Canvas.Left="28.129746925084" Canvas.Top="10.5441184616225">
       <nac:AnalogNumericFX.Resources>
         <ResourceDictionary>
           <nacc:VariantValueConverter x:Key="ValueConverter" />
@@ -50,35 +50,7 @@
         </LinearGradientBrush>
       </nac:AnalogNumericFX.Background>
     </nac:AnalogNumericFX>
-    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" TextDecorations="{x:Null}" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="20" FontStyle="Normal" FontWeight="Bold" Padding="2,2,2,2" Name="m_Linja_Text" Width="236.32811765825" Height="29" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="7" KeyboardNavigation.TabNavigation="None" Canvas.Left="28.1297469250837" Canvas.Top="49.1992614977153">
-      <nac:AnalogNumericFX.Resources>
-        <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
-        </ResourceDictionary>
-      </nac:AnalogNumericFX.Resources>
-      <nac:AnalogNumericFX.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SensorInfo_Ryhma].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>0</Binding.FallbackValue>
-        </Binding>
-      </nac:AnalogNumericFX.Value>
-      <nac:AnalogNumericFX.BevelEffectInfo>
-        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
-      </nac:AnalogNumericFX.BevelEffectInfo>
-      <nac:AnalogNumericFX.BorderBrush>
-        <SolidColorBrush Color="#FF7F9DB9" Opacity="0" />
-      </nac:AnalogNumericFX.BorderBrush>
-      <nac:AnalogNumericFX.Background>
-        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0" Opacity="0">
-          <LinearGradientBrush.GradientStops>
-            <GradientStopCollection>
-              <GradientStop Color="#FFFFFFFF" />
-              <GradientStop Color="#FFD4D0C8" Offset="1" />
-            </GradientStopCollection>
-          </LinearGradientBrush.GradientStops>
-        </LinearGradientBrush>
-      </nac:AnalogNumericFX.Background>
-    </nac:AnalogNumericFX>
-    <nac:Label AutoSize="False" Text="Description:" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="5,0,5,1" Name="m_Text1" Width="234.968040973441" Height="32.4133333333333" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="29.489823609893" Canvas.Top="91.6148170532709">
+    <nac:Label AutoSize="False" Text="Description:" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="5,0,5,1" Name="m_HeaderDesc_Text" Width="234.968040973441" Height="32.4133333333333" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="29.489823609893" Canvas.Top="80">
       <nac:Label.BevelEffectInfo>
         <nacb:BevelEffectInfo Style="None" Width="2" />
       </nac:Label.BevelEffectInfo>
@@ -125,19 +97,6 @@
         <nacb:BevelEffectInfo Style="Sunken" Width="2" />
       </nacc1:Rectangle.BevelEffectInfo>
     </nacc1:Rectangle>
-    <nac:Label BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="30" Canvas.Top="136.098489612191">
-      <nac:Label.Resources>
-        <ResourceDictionary>
-          <nacd1:RawConverter x:Key="TextConverter" DefaultValue="" />
-        </ResourceDictionary>
-      </nac:Label.Resources>
-      <nac:Label.Text>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SensorInfo_Kuvaus].Value" Converter="{StaticResource TextConverter}" ValidatesOnExceptions="True" />
-      </nac:Label.Text>
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-    </nac:Label>
     <nac:Group Name="m_Group_Close_btn" Width="140" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="10" Canvas.Left="119.457864583334" Canvas.Top="225">
       <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle1" Width="136" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="1.542135416666" Canvas.Top="2" />
       <nac:Button ButtonAppearance="RoundedBottomRight" ImageStretch="True" ImageHorizontalAlignment="Right" ImageMargin="10,5,5,5" Text="Close" MultiLine="True" TextHorizontalAlignment="Center" TextMargin="2,2,47,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Close" Width="140" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="5" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
@@ -169,5 +128,43 @@
         </nai:ActionProperties.Actions>
       </nac:Button>
     </nac:Group>
+    <nac:Label Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Group_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="30" Canvas.Top="125">
+      <nac:Label.Resources>
+        <ResourceDictionary>
+          <nacd1:MessageLibraryDynamicsConverter x:Key="TextConverter" MessageLibraryGroupName="SensorInfo_Ryhma">
+            <nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+              <nacd2:MessageLibraryGroupResolver />
+            </nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+          </nacd1:MessageLibraryDynamicsConverter>
+        </ResourceDictionary>
+      </nac:Label.Resources>
+      <nac:Label.Text>
+        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="Tunnus" Converter="{StaticResource TextConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>Text</Binding.FallbackValue>
+        </Binding>
+      </nac:Label.Text>
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_SensorDesc_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="30" Canvas.Top="164">
+      <nac:Label.Resources>
+        <ResourceDictionary>
+          <nacd1:MessageLibraryDynamicsConverter x:Key="TextConverter" MessageLibraryGroupName="SensorInfo_Kuvaus">
+            <nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+              <nacd2:MessageLibraryGroupResolver />
+            </nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+          </nacd1:MessageLibraryDynamicsConverter>
+        </ResourceDictionary>
+      </nac:Label.Resources>
+      <nac:Label.Text>
+        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="Tunnus" Converter="{StaticResource TextConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>Text</Binding.FallbackValue>
+        </Binding>
+      </nac:Label.Text>
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
   </nacs:ElementCanvas>
 </nacs:ScreenWindow>

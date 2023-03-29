@@ -8,7 +8,7 @@
 namespace Neo.ApplicationFramework.Generated
 {
 	using System;
-	   
+
 	public partial class ScreenSelection
 	{
 	}

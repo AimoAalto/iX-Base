@@ -7,16 +7,8 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    using System.Windows.Forms;
-    using System;
-    using System.Drawing;
-    using Neo.ApplicationFramework.Tools;
-    using Neo.ApplicationFramework.Common.Graphics.Logic;
-    using Neo.ApplicationFramework.Controls;
-    using Neo.ApplicationFramework.Interfaces;
-    
-    
-    public partial class ScreenSelection
-    {
-    }
+
+	public partial class ScreenSelection
+	{
+	}
 }

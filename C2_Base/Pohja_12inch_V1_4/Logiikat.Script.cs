@@ -30,7 +30,7 @@ namespace Neo.ApplicationFramework.Generated
 		void Logiikat_Created(System.Object sender, System.EventArgs e)
 		{
 			if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine("Lokiikat Created (start)");
-			int interval = 1000;
+			int interval = 10000;
 			try
 			{
 				interval = Globals._Konfiguraatio.CurrentConfig.Aikavali("LogiikkaWatchdog");
@@ -40,28 +40,28 @@ namespace Neo.ApplicationFramework.Generated
 				Globals.Tags.Log(String.Format("Logiikat_Created: Interval error, use default\n{1}", x.Message));
 			}
 
+			/**/
 			Watchdog = new Timer((args) =>
 				{
-				// Mitataan kauanko operaatioissa kestää
-				Stopwatch takeTime = new Stopwatch();
-				takeTime.Start();
+					// Mitataan kauanko operaatioissa kestää
+					Stopwatch takeTime = new Stopwatch();
+					takeTime.Start();
 
-				/**/
-				// Tarkista kaikkien logiikkojen tila
-				for (int i = 1; i <= Globals._Konfiguraatio.CurrentConfig.NumberOfPLC; i++)
-				{
-					if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("Lokiikat TilaTarkitus [{0}]", i));
-					TarkistaTila(i);
-				}
-				/**/
+					// Tarkista kaikkien logiikkojen tila
+					for (int i = 1; i <= Globals._Konfiguraatio.CurrentConfig.NumberOfPLC; i++)
+					{
+						if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("Lokiikat TilaTarkitus [{0}]", i));
+						TarkistaTila(i);
+					}
 
-				takeTime.Stop();
+					takeTime.Stop();
 
-				if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("Lokiikat time : {0} (ticks) {1} (ms)", takeTime.ElapsedTicks, takeTime.ElapsedMilliseconds));
+					if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("Lokiikat time : {0} (ticks) {1} (ms)", takeTime.ElapsedTicks, takeTime.ElapsedMilliseconds));
 
-				// Suoritetaan määritetyin välein (default 1s)
-				Watchdog.Change(Math.Max(0, interval - takeTime.ElapsedMilliseconds), Timeout.Infinite);
+					// Suoritetaan määritetyin välein (default 1s)
+					Watchdog.Change(Math.Max(0, interval - takeTime.ElapsedMilliseconds), Timeout.Infinite);
 				}, null, 0, Timeout.Infinite);
+			/**/
 		}
 
 		/// <summary>
@@ -72,7 +72,7 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="numero">Logiikan numero tageissa</param>
 		void TarkistaTila(int numero)
 		{
-			lock(lockme)
+			lock (lockme)
 				try
 				{
 					// Ensimmäinen tarkistuskerta, lisätään lokiikka numero (objekti) listaan 
@@ -84,6 +84,7 @@ namespace Neo.ApplicationFramework.Generated
 					// Pakotetaan tagi luku, esitetään että yhteys on kunnossa vaikka tulisi 
 					// Bad Station hälytystä. Silloin on vain tagien määrittelyssä vikaa
 					Neo.ApplicationFramework.Interfaces.Tag.IBasicTag tag = Globals.Tags.GetTag("HMI_Comm_Watchdog_From_PLC" + numero);
+
 					if (tag != null)
 						tag.Read();
 					else

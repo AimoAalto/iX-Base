@@ -24,15 +24,12 @@
     </Category>
     <Category Name="Font">
       <Items>
-        <Item Target="Overview_Pan1_Scr1.Button" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
-        <Item Target="Overview_Pan1_Scr1.Button1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
         <Item Target="Overview_Pan1_Scr1.Text_Top" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
+        <Item Target="Overview_Pan1_Scr1.GroupBtn.BtnHitME" TargetProperty="FontFamily" Source="CALIBRI.TTF" />
       </Items>
     </Category>
     <Category Name="GlobalDataItem">
-      <Items>
-        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Button1" TargetProperty="Actions" Source="Tags.Line1_Comm_Fault_PLC1" Event="Click" Action="Reset Tag" Param="" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
       <Items />
@@ -47,14 +44,7 @@
       <Items />
     </Category>
     <Category Name="Renderable">
-      <Items>
-        <Item Target="Overview_Pan1_Scr1.Button" Source="-255604944_Normal.bmp" />
-        <Item Target="Overview_Pan1_Scr1.Button" Source="-255604944_Pressed.bmp" />
-        <Item Target="Overview_Pan1_Scr1.Button" Source="-255604944_Disabled.bmp" />
-        <Item Target="Overview_Pan1_Scr1.Button1" Source="-255604944_Normal.bmp" />
-        <Item Target="Overview_Pan1_Scr1.Button1" Source="-255604944_Pressed.bmp" />
-        <Item Target="Overview_Pan1_Scr1.Button1" Source="-255604944_Disabled.bmp" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="Report">
       <Items />
@@ -71,15 +61,17 @@
       </Items>
     </Category>
     <Category Name="Script">
-      <Items />
-    </Category>
-    <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Button1" TargetProperty="Actions" Source="Tags.Line1_Comm_Fault_PLC1" Event="Click" Action="Reset Tag" Param="" />
+        <Item Target="Overview_Pan1_Scr1.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
       </Items>
     </Category>
-    <Category Name="Symbol">
+    <Category Name="StructuredTag">
       <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.GroupBtn.BtnHitME" Source="orfer_hand" Width="24" Height="24" IsAnimated="false" />
+      </Items>
     </Category>
     <Category Name="TextIDs">
       <Items />

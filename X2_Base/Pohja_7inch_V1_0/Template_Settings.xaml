@@ -103,14 +103,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line2" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5">
           <Line.Resources>
@@ -150,14 +150,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <nacc:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle" Width="135" Height="49" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="0" Canvas.Top="3" />
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3">
@@ -220,13 +220,13 @@
                         </nacd2:BrushCFInterval>
                         <nacd2:BrushCFInterval Start="3" End="3">
                           <nacd2:BrushCFInterval.Value>
-                            <nacgl:BrushCF StartColor="255, 255, 255" EndColor="" FillDirection="None" />
+                            <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
                           </nacd2:BrushCFInterval.Value>
                         </nacd2:BrushCFInterval>
                       </nacd2:BrushCFIntervalList>
                     </nacd2:BrushCFIntervalMapper.Intervals>
                     <nacd2:BrushCFIntervalMapper.DefaultValue>
-                      <nacgl:BrushCF StartColor="255, 255, 255" EndColor="" FillDirection="None" />
+                      <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
                     </nacd2:BrushCFIntervalMapper.DefaultValue>
                   </nacd2:BrushCFIntervalMapper>
                 </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
@@ -243,14 +243,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line1" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1">
           <Line.Resources>
@@ -290,14 +290,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line3" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7">
           <Line.Resources>
@@ -351,14 +351,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line6" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5">
           <Line.Resources>
@@ -398,14 +398,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <nacc:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle7" Width="135" Height="49" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="0" Canvas.Top="3" />
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line7" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1">
@@ -445,14 +445,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line8" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3">
           <Line.Resources>
@@ -492,14 +492,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <Line X1="0" Y1="53.5" X2="135" Y2="53.5" StrokeThickness="2" Name="m_Line9" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7">
           <Line.Resources>

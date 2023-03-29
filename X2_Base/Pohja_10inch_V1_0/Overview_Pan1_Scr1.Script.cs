@@ -7,13 +7,19 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    
-    public partial class Overview_Pan1_Scr1
-    {
-		
+
+	public partial class Overview_Pan1_Scr1
+	{
+
+		void Overview_Pan1_Scr1_Opened(System.Object sender, System.EventArgs e)
+		{
+			// Main menu painikkeiden visualisointi
+			Globals.Tags.Menu_MainMenu_Btn_Anim.SetAnalog(0);
+		}
+
 		void BtnHitME_Click(System.Object sender, System.EventArgs e)
 		{
 			int val = Globals.Tags.GetTagValue("Höpönhöpö");
 		}
-    }
+	}
 }

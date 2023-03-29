@@ -1,8 +1,8 @@
 namespace Neo.ApplicationFramework.Generated
 {
 	using System;
-    
-    
+
+
 	/// <summary>
 	/// Näyttää käyttäjälle virheen. Virheen teksti valitaan ErrorText-kentän
 	/// listasta tagilla HMI_Error_TextValue ja lisätietoja voi antaa
@@ -22,8 +22,8 @@ namespace Neo.ApplicationFramework.Generated
 	/// </code>
 	/// </example>
 	/// <remarks>Viimeksi muokattu: SoPi 29.6.2017</remarks>
-    public partial class Popup_Error
-    {
+	public partial class Popup_Error
+	{
 		/// <summary>
 		/// Siirtää tagin HMI_Error_AdditionalInfo arvon lisätiedoksi.
 		/// Lisätietona voi olla esim Exceptionin viesti tai virheen aiheuttanut
@@ -32,7 +32,7 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">this</param>
 		void Popup_Error_Opened(System.Object sender, System.EventArgs e)
 		{
-			AdditionalInfo.Text = Globals.Tags.HMI_Error_AdditionalInfo.Value.String;			
+			AdditionalInfo.Text = Globals.Tags.HMI_Error_AdditionalInfo.Value.String;
 		}
-    }
+	}
 }

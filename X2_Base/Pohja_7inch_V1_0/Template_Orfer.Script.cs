@@ -8,44 +8,64 @@
 namespace Neo.ApplicationFramework.Generated
 {
 	using System;
-	
-    public partial class Template_Orfer
-    {	
+
+	public partial class Template_Orfer
+	{
+		private object lockme = new object();
+		
 		void Button_Menu_Click(System.Object sender, System.EventArgs e)
 		{
-			string btn_name = ((Neo.ApplicationFramework.Controls.Script.ButtonCFAdapter)sender).Name;
-			
-			Globals.Tags.Log(string.Format("ShowMainScreen button: {0}", btn_name));		
-
-			try 
+			lock (lockme)
 			{
-				string aux = "";
-			
-				// Erotetaan napin nimestä numero
-				for (int i = 0; i < btn_name.Length; i++){
-					if (Char.IsDigit(btn_name[i]))
-						aux += btn_name[i];
+				if (Globals.Tags.ScreenChangePending.Value.Bool == true)
+				{
+					Globals.Tags.Log("Screen change pending");
+					return;
 				}
-
-				int num = Convert.ToInt16(aux);
-
-				// asetussivu on yhteinen
-				int screenid;
-				if (num == 7) screenid = (int)10000;
-				else screenid = Globals.Tags.Settings_PanelNumber.Value * 10000;
-				screenid += ((int)num * 100);
-				screenid += 1;
-			
-				Globals.Tags.SystemTagNewScreenId.SetAnalog(screenid);
 				
-				Globals.Tags.Menu_MainMenu_Btn_Anim.SetAnalog(num);
-				Globals.Tags.Menu_SubMenu_Group_Visibility.SetAnalog(1);
-				Globals.Tags.Menu_SubMenu_Btn_Anim.SetAnalog(1);
-			}
-			catch (Exception x)
-			{
-				Globals.Tags.Log(string.Format("ShowScreen button: {0}. Exception: {1}", btn_name, x.Message));		
+				string btn_name = ((Neo.ApplicationFramework.Controls.Script.ButtonCFAdapter)sender).Name;
+
+				Globals.Tags.Log(string.Format("ShowMainScreen button: {0}", btn_name));
+
+				try
+				{
+					string aux = "";
+
+					// Erotetaan napin nimestä numero
+					for (int i = 0; i < btn_name.Length; i++)
+					{
+						if (Char.IsDigit(btn_name[i]))
+							aux += btn_name[i];
+					}
+
+					int num = Convert.ToInt16(aux);
+
+					// asetussivu on yhteinen
+					int screenid;
+					if (num == 7) screenid = (int)10000;
+					else screenid = Globals.Tags.Settings_PanelNumber.Value * 10000;
+					screenid += ((int)num * 100);
+					screenid += 1;
+
+					Globals.Tags.SystemTagNewScreenId.SetAnalog(screenid);
+
+					Globals.Tags.Menu_MainMenu_Btn_Anim.SetAnalog(num);
+					Globals.Tags.Menu_SubMenu_Group_Visibility.SetAnalog(1);
+					Globals.Tags.Menu_SubMenu_Btn_Anim.SetAnalog(1);
+					Globals.Tags.ScreenChangePending.SetTag();
+				}
+				catch (Exception x)
+				{
+					Globals.Tags.ScreenChangePending.ResetTag();
+					Globals.Tags.Log(string.Format("ShowScreen button: {0}. Exception: {1}", btn_name, x.Message));
+				}
 			}
 		}
-    }
+		
+		void Template_Orfer_Opened(System.Object sender, System.EventArgs e)
+		{
+			if (Globals.Tags.TraceAll) Globals.Tags.Log(string.Format("Opened screen: {0}", Globals.Tags.SystemTagNewScreenId.Value));
+			Globals.Tags.ScreenChangePending.ResetTag();
+		}
+	}
 }

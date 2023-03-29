@@ -6,7 +6,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Template_Orfer_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
     <nacc:Rectangle RadiusX="50" RadiusY="50" Fill="#FF186785" Stroke="#FF000000" StrokeThickness="0" Name="m_Rectangle_Main" Width="1139.38817324794" Height="744.549831772669" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="191" Canvas.Top="76" nacsd:EditorProperties.IsLocked="True" />
     <nac:Button CornerRadius="0,0,0,0" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,2,0,2" Text="Main" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="41,2,0,2" RequiresTransparency="True" SymbolName="orfer_home" SymbolTransparent="False" MultiPicture="True" BorderThickness="0,0,0,2" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_Button_Main_0" Width="160" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="8" Canvas.Left="16" Canvas.Top="88.895338708646" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac2:StyleMarkupExtension Default}">
       <nac:Button.Resources>
@@ -1317,8 +1317,8 @@
       <nac:Button ButtonAppearance="Rounded" CornerRadius="10,10,10,10" ImageStretch="True" Text="" LockAspectRatio="True" RequiresTransparency="True" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FFE9C5CB" Foreground="#FF106280" FontFamily="Calibri" FontSize="16" FontWeight="Bold" Name="m_Button_Users" Width="137.669889059323" Height="47.8542441774702" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="78" Canvas.Left="0.330110940677059" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac2:StyleMarkupExtension Default}">
         <nac:Button.Resources>
           <ResourceDictionary>
-            <nacc1:VariantValueConverter x:Key="ValueConverter" />
             <nacc1:VariantValueConverter x:Key="TextValueConverter" />
+            <nacc1:VariantValueConverter x:Key="ValueConverter" />
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.Value>
@@ -1370,8 +1370,8 @@
     <nac:Label Text="" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextBuildDateValue" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="56" Canvas.Top="655" nacsd:EditorProperties.IsLocked="False">
       <nac:Label.Resources>
         <ResourceDictionary>
-          <nacc1:VariantValueConverter x:Key="ValueConverter" />
           <nacd2:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="3" />
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
         </ResourceDictionary>
       </nac:Label.Resources>
       <nac:Label.Value>

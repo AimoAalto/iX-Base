@@ -7,8 +7,8 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    
-    public partial class ProdCounters_Pan1_Scr1
-    {
-    }
+
+	public partial class ProdCounters_Pan1_Scr1
+	{
+	}
 }

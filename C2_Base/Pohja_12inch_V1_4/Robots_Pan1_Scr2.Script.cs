@@ -7,11 +7,11 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    using System;
-    
-    
-    public partial class Robots_Pan1_Scr2
-    {
+	using System;
+
+
+	public partial class Robots_Pan1_Scr2
+	{
 		void Robots_Pan1_Scr2_Opened(System.Object sender, System.EventArgs e)
 		{
 			Globals.Tags.HMI_RobotNo.SetAnalog(2);

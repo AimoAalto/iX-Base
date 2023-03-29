@@ -1,14 +1,14 @@
 namespace Neo.ApplicationFramework.Generated
 {
-	using Neo.ApplicationFramework.Controls.Script; 
+	using Neo.ApplicationFramework.Controls.Script;
 	using Neo.ApplicationFramework.Tools.OpcClient;
 	using Neo.ApplicationFramework.Tools.Recipe;
 	using System;
 	using System.Collections.Generic;
 	using System.Data;
 	using System.Windows.Controls;
-	   
-	
+
+
 	/// <summary>
 	/// Mahdollistaa projektissa käytettävien välikkeiden muokkaamisen.
 	/// </summary>
@@ -19,7 +19,7 @@ namespace Neo.ApplicationFramework.Generated
 		/// Väliketietokannan sisältö.
 		/// </summary>
 		DataSet data;
-		
+
 		/// <summary>
 		/// Päivittää välikkeet näytölle sivun avautuessa.
 		/// </summary>
@@ -29,24 +29,24 @@ namespace Neo.ApplicationFramework.Generated
 			// Päivitetään tietokannasta välikkeet näytölle
 			Paivita();
 		}
-		
+
 		/// <summary>
 		/// Lisää valitun välikkeen projektin käytettäväksi ja päivittää näytön.
 		/// </summary>
 		/// <param name="sender">Add_btn</param>
 		void Add_btn_Click(System.Object sender, System.EventArgs e)
 		{
-			Globals.Tags.HMI_StartProd_ValikeSelected.Value = (string) ListBox2.SelectedItem;
-			
+			Globals.Tags.HMI_StartProd_ValikeSelected.Value = (string)ListBox2.SelectedItem;
+
 			Globals.Valikkeet_DB.LoadRecipe(Globals.Tags.HMI_StartProd_ValikeSelected.Value);
-			
+
 			Globals.Tags.HMI_ProdReg_Valike_OnUse.Value = true;
-		
+
 			Globals.Valikkeet_DB.SaveRecipe(Globals.Tags.HMI_StartProd_ValikeSelected.Value.ToString());
-			
+
 			Paivita();
 		}
-		
+
 		/// <summary>
 		/// Sallii poistonapin käytön, kun hiiri on viimeksi käynyt sallittujen
 		/// välikkeiden puolella.
@@ -57,7 +57,7 @@ namespace Neo.ApplicationFramework.Generated
 			Add_btn.IsEnabled = false;
 			Remove_btn.IsEnabled = true;
 		}
-		
+
 		/// <summary>
 		/// Sallii lisäysnapin käytön, kun hiiri on viimeksi käynyt kaikkien 
 		/// välikkeiden puolella.
@@ -70,7 +70,7 @@ namespace Neo.ApplicationFramework.Generated
 			Add_btn.IsEnabled = true;
 			Remove_btn.IsEnabled = false;
 		}
-	
+
 		/// <summary>
 		/// Päivittää molemmat listat.
 		/// </summary>
@@ -104,24 +104,24 @@ namespace Neo.ApplicationFramework.Generated
 					}
 				}
 			}
-		}		
-		
+		}
+
 		/// <summary>
 		/// Poistaa valitun välikkeen projektin käytöstä.
 		/// </summary>
 		/// <param name="sender">this.Remove_btn</param>
 		void Remove_btn_Click(System.Object sender, System.EventArgs e)
 		{
-			Globals.Tags.HMI_StartProd_ValikeSelected.Value = (string) ListBox1.SelectedItem;
-		    
+			Globals.Tags.HMI_StartProd_ValikeSelected.Value = (string)ListBox1.SelectedItem;
+
 			Globals.Valikkeet_DB.LoadRecipe(Globals.Tags.HMI_StartProd_ValikeSelected.Value);
-			
+
 			Globals.Tags.HMI_ProdReg_Valike_OnUse.Value = false;
-			
+
 			Globals.Valikkeet_DB.SaveRecipe(Globals.Tags.HMI_StartProd_ValikeSelected.Value.ToString());
 
 			Paivita();
 		}
-		
+
 	}
 }

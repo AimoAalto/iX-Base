@@ -82,8 +82,8 @@
         <nacb:BevelEffectInfo Style="None" Width="0" />
       </nac:AnalogNumericFX.BevelEffectInfo>
     </nac:AnalogNumericFX>
-    <nac:Group Name="m_Group_Send_btn" Width="120" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="18" Canvas.Left="26" Canvas.Top="269.300519308895">
-      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="Send &#xD;&#xA;changes" MultiLine="True" TextMargin="47,2,2,2" RequiresTransparency="True" SymbolName="orfer_send" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Laheta" Width="120" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="2" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+    <nac:Group Name="m_Group_Send_btn" Width="120" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="18" Canvas.Left="17.06" Canvas.Top="264.013709898374">
+      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="Send &#xD;&#xA;changes" MultiLine="True" TextMargin="47,2,2,2" RequiresTransparency="True" SymbolName="orfer_send" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Laheta" Width="145" Height="52" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="2" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
@@ -102,10 +102,10 @@
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
       </nac:Button>
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle" Width="116" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="2" Canvas.Top="1.69948069110501" />
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle" Width="140" Height="48" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="2" Canvas.Top="1.69948069110501" />
     </nac:Group>
-    <nac:Group Name="m_Group_Close_btn" Width="120" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="19" Canvas.Left="188.038770343818" Canvas.Top="269.300519308895">
-      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Right" ImageMargin="10,5,5,5" Text="Close" MultiLine="True" TextHorizontalAlignment="Center" TextMargin="2,2,47,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Close" Width="120" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="3" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+    <nac:Group Name="m_Group_Close_btn" Width="120" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="19" Canvas.Left="179.098770343818" Canvas.Top="264.013709898374">
+      <nac:Button ButtonAppearance="Rounded" ImageStretch="True" ImageHorizontalAlignment="Right" ImageMargin="10,5,5,5" Text="Close" MultiLine="True" TextHorizontalAlignment="Center" TextMargin="2,2,47,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Close" Width="145" Height="52" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="3" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
@@ -119,7 +119,7 @@
           </nai:ActionList>
         </nai:ActionProperties.Actions>
       </nac:Button>
-      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle1" Width="116" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="1.96122965618201" Canvas.Top="2" />
+      <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle1" Width="140" Height="48" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="1.96122965618201" Canvas.Top="2" />
     </nac:Group>
   </nacs:ElementCanvas>
 </nacs:ScreenWindow>

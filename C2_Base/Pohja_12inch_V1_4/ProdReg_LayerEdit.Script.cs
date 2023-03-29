@@ -2,12 +2,12 @@ namespace Neo.ApplicationFramework.Generated
 {
 	using Neo.ApplicationFramework.Tools.OpcClient;
 	using Neo.ApplicationFramework.Tools.Recipe;
-	using System;   
+	using System;
 	using System.Collections.Generic;
 	using System.Data;
 	using System.Windows.Controls;
-	   
-	
+
+
 	/// <summary>
 	/// Näyttää ja antaa muokata kerroksen välikkeitä. 
 	/// Välikkeet valitaan sallituista välikkeistä väliketietokannasta.
@@ -33,7 +33,7 @@ namespace Neo.ApplicationFramework.Generated
 
 			// Tyhjennetään molemmat listat
 			List_Kerros.Items.Clear();
-			List_Valikkeet.Items.Clear();           
+			List_Valikkeet.Items.Clear();
 
 			// Luetaan kaikki sallitut välikkeet valittavien listaan
 			data = Globals.Valikkeet_DB.HaeKaikki();
@@ -61,7 +61,7 @@ namespace Neo.ApplicationFramework.Generated
 				foreach (string valike in sisalto.Split(','))
 				{
 					// Haetaan välikkeelle nimi tietokannasta
-					foreach(DataRow rivi in data.Tables[0].Rows)
+					foreach (DataRow rivi in data.Tables[0].Rows)
 					{
 						try
 						{
@@ -72,7 +72,7 @@ namespace Neo.ApplicationFramework.Generated
 								break;
 							}
 						}
-						catch(Exception)
+						catch (Exception)
 						{
 
 						}
@@ -80,7 +80,7 @@ namespace Neo.ApplicationFramework.Generated
 				}
 			}
 		}
-		
+
 		/// <summary>
 		/// Lisää valitun välikkeen kerrokseen.
 		/// </summary>
@@ -88,7 +88,7 @@ namespace Neo.ApplicationFramework.Generated
 		void Btn_Lisaa_Click(System.Object sender, System.EventArgs e)
 		{
 			// Tarkistetaan, että jotain on valittuna
-			if(List_Valikkeet.SelectedItem == null)
+			if (List_Valikkeet.SelectedItem == null)
 			{
 				return;
 			}
@@ -121,7 +121,7 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			string valikkeet = string.Empty;
 
-			foreach(var valike in List_Kerros.Items)
+			foreach (var valike in List_Kerros.Items)
 			{
 				// Haetaan tietokannasta välikkeen nimelle numero
 				foreach (DataRow rivi in data.Tables[0].Rows)
@@ -132,7 +132,7 @@ namespace Neo.ApplicationFramework.Generated
 						{
 							// Luetaan välikkeen numero
 							int nro = Convert.ToInt16(rivi["Number"]);
-							if(nro > 0)
+							if (nro > 0)
 							{
 								// Lisätään kerroksen välikkeisiin
 								valikkeet += nro.ToString() + ",";
@@ -146,16 +146,16 @@ namespace Neo.ApplicationFramework.Generated
 
 					}
 				}
-			}            
+			}
 
 			// Jos viimeinen merkki on , niin poistetaan se
-			if(valikkeet.EndsWith(","))
+			if (valikkeet.EndsWith(","))
 			{
 				valikkeet = valikkeet.Substring(0, valikkeet.Length - 1);
 			}
 
 			// Jos kerros on tyhjä
-			if(valikkeet == string.Empty)
+			if (valikkeet == string.Empty)
 			{
 				// Merkitään tyhjäksi
 				valikkeet += "0";
@@ -166,7 +166,7 @@ namespace Neo.ApplicationFramework.Generated
 			// Suljetaan sivu
 			this.Close();
 		}
-		
+
 		/// <summary>
 		/// Tyhjentää koko kerroksen välikkeet.
 		/// </summary>

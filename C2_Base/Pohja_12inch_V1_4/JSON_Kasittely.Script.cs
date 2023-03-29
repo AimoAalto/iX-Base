@@ -2,8 +2,8 @@ namespace Neo.ApplicationFramework.Generated
 {
 	using System.Collections.Generic;
 	using System.IO;
-    
-    
+
+
 	/// <summary>
 	/// Functions for performing common Json Serialization operations.
 	/// <para>Requires the Newtonsoft.Json assembly (Json.Net package in NuGet Gallery) to be referenced in your project.</para>
@@ -41,7 +41,7 @@ namespace Neo.ApplicationFramework.Generated
 					writer.Close();
 			}
 		}
- 
+
 		/// <summary>
 		/// Reads an object instance from an Json file.
 		/// <para>Object type must have a parameterless constructor.</para>

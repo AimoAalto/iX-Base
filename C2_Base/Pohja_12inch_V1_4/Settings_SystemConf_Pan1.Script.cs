@@ -10,7 +10,6 @@ namespace Neo.ApplicationFramework.Generated
 	using System;
 	using System.Collections.Generic;
 	using System.Windows;
-	//using System.Windows.Forms;
 	using System.Drawing;
 	using System.Linq;
 	using System.Windows.Media;
@@ -260,7 +259,9 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			catch (Exception x)
 			{
-				System.Windows.Forms.MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -286,7 +287,9 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					System.Windows.Forms.MessageBox.Show(x.Message);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+					Globals.Popup_Error.Show();
 				}
 		}
 
@@ -312,7 +315,9 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					MessageBox.Show(x.Message);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+					Globals.Popup_Error.Show();
 				}
 		}
 
@@ -337,7 +342,9 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					MessageBox.Show(x.Message);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+					Globals.Popup_Error.Show();
 				}
 			}
 		}
@@ -380,12 +387,16 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				else
 				{
-					MessageBox.Show("Pallet type is not number");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UsePositiveNumbers);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -407,12 +418,16 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				else
 				{
-					MessageBox.Show("Nothing to delete");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.NothingToDelete);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -439,7 +454,9 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					MessageBox.Show(x.Message);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+					Globals.Popup_Error.Show();
 				}
 			}
 		}
@@ -451,7 +468,9 @@ namespace Neo.ApplicationFramework.Generated
 				string name = ANWName.Text.Trim();
 				if (string.IsNullOrEmpty(name))
 				{
-					MessageBox.Show("Watchdog name is empty");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.FillAllFields);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 				else
 				{
@@ -485,13 +504,17 @@ namespace Neo.ApplicationFramework.Generated
 					}
 					else
 					{
-						MessageBox.Show("Watchdog time is not number");
+						Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UsePositiveNumbers);
+						Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+						Globals.Popup_Error.Show();
 					}
 				}
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -511,12 +534,16 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				else
 				{
-					MessageBox.Show("Nothing to delete");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.NothingToDelete);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -543,7 +570,9 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					MessageBox.Show(x.Message);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+					Globals.Popup_Error.Show();
 				}
 			}
 		}
@@ -588,17 +617,23 @@ namespace Neo.ApplicationFramework.Generated
 					}
 					else
 					{
-						MessageBox.Show("Infeed Robot Id is not number");
+						Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UsePositiveNumbers);
+						Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+						Globals.Popup_Error.Show();
 					}
 				}
 				else
 				{
-					MessageBox.Show("Inffeed Id is not number");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UsePositiveNumbers);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -620,12 +655,16 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				else
 				{
-					MessageBox.Show("Nothing to delete");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.NothingToDelete);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -652,7 +691,9 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					MessageBox.Show(x.Message);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+					Globals.Popup_Error.Show();
 				}
 			}
 		}
@@ -697,17 +738,23 @@ namespace Neo.ApplicationFramework.Generated
 					}
 					else
 					{
-						MessageBox.Show("Infeed Robot Id is not number");
+						Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UsePositiveNumbers);
+						Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+						Globals.Popup_Error.Show();
 					}
 				}
 				else
 				{
-					MessageBox.Show("Inffeed Id is not number");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UsePositiveNumbers);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -729,12 +776,16 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				else
 				{
-					MessageBox.Show("Nothing to delete");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.NothingToDelete);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -749,7 +800,9 @@ namespace Neo.ApplicationFramework.Generated
 				int no = Convert.ToInt16(ANNewRobotNo.Value);
 				if (Globals._Konfiguraatio.CurrentConfig.Robots.ContainsKey(no))
 				{
-					MessageBox.Show("Robotti on jo olemassa");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.RobotIdAlreadyExist);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 				else
 				{
@@ -760,7 +813,9 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			catch (Exception x)
 			{
-				MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -787,12 +842,16 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				else
 				{
-					System.Windows.Forms.MessageBox.Show("Tuntematon robottinumero");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnknownRobotId);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 			}
 			catch (Exception x)
 			{
-				System.Windows.Forms.MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -820,7 +879,9 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			catch (Exception x)
 			{
-				System.Windows.Forms.MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -849,7 +910,9 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					System.Windows.Forms.MessageBox.Show(x.Message);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+					Globals.Popup_Error.Show();
 				}
 		}
 
@@ -864,7 +927,9 @@ namespace Neo.ApplicationFramework.Generated
 				int no = Convert.ToInt16(ANNewPatternNo.Value);
 				if (Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.ContainsKey(no))
 				{
-					System.Windows.Forms.MessageBox.Show("Kuvionumero on jo olemassa");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.PatternAlreadyExist);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 				else
 				{
@@ -878,7 +943,9 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			catch (Exception x)
 			{
-				System.Windows.Forms.MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -907,12 +974,16 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				else
 				{
-					System.Windows.Forms.MessageBox.Show("Tuntematon robottinumero");
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnknownRobotId);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = "";
+					Globals.Popup_Error.Show();
 				}
 			}
 			catch (Exception x)
 			{
-				System.Windows.Forms.MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -934,7 +1005,9 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			catch (Exception x)
 			{
-				System.Windows.Forms.MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 
@@ -959,7 +1032,9 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					System.Windows.Forms.MessageBox.Show(x.Message);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+					Globals.Popup_Error.Show();
 				}
 		}
 
@@ -984,7 +1059,9 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					System.Windows.Forms.MessageBox.Show(x.Message);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+					Globals.Popup_Error.Show();
 				}
 		}
 
@@ -1009,7 +1086,9 @@ namespace Neo.ApplicationFramework.Generated
 				}
 				catch (Exception x)
 				{
-					System.Windows.Forms.MessageBox.Show(x.Message);
+					Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+					Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+					Globals.Popup_Error.Show();
 				}
 		}
 

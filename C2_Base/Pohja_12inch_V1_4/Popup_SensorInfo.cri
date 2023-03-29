@@ -7,6 +7,8 @@
     <Category Name="Alias">
       <Items>
         <Item Target="Popup_SensorInfo.Rectangle" TargetProperty="Fill" Source="Popup_SensorInfo.Tila" />
+        <Item Target="Popup_SensorInfo.Group_Text" TargetProperty="Text" Source="Popup_SensorInfo.Tunnus" />
+        <Item Target="Popup_SensorInfo.SensorDesc_Text" TargetProperty="Text" Source="Popup_SensorInfo.Tunnus" />
       </Items>
     </Category>
     <Category Name="AliasInstanceDataItem">
@@ -26,9 +28,7 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="Popup_SensorInfo.Lavapaikka_Text" TargetProperty="Value" Source="Tags.HMI_SensorInfo_Tunnus" />
-        <Item Target="Popup_SensorInfo.Linja_Text" TargetProperty="Value" Source="Tags.HMI_SensorInfo_Ryhma" />
-        <Item Target="Popup_SensorInfo.Text" TargetProperty="Text" Source="Tags.HMI_SensorInfo_Kuvaus" />
+        <Item Target="Popup_SensorInfo.Sensor_Text" TargetProperty="Value" Source="Tags.HMI_SensorInfo_Tunnus" />
         <Item xsi:type="ActionItem" Target="Popup_SensorInfo.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
@@ -61,6 +61,7 @@
       <Items>
         <Item Target="Popup_SensorInfo.Script.cs" Source="Tags.HMI_SensorInfo_Tunnus" />
         <Item Target="Popup_SensorInfo.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="Popup_SensorInfo.Script.cs" Source="Tags.ErrorTexts" />
         <Item Target="Popup_SensorInfo.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
         <Item Target="Popup_SensorInfo.Script.cs" Source="Tags.HMI_SensorInfo_Ryhma" />
       </Items>
@@ -81,7 +82,10 @@
       <Items />
     </Category>
     <Category Name="TextLibrary">
-      <Items />
+      <Items>
+        <Item xsi:type="TextLibraryItem" Target="Popup_SensorInfo.Group_Text" TargetProperty="Text" Source="SensorInfo_Ryhma" />
+        <Item xsi:type="TextLibraryItem" Target="Popup_SensorInfo.SensorDesc_Text" TargetProperty="Text" Source="SensorInfo_Kuvaus" />
+      </Items>
     </Category>
     <Category Name="TrendViewer">
       <Items />

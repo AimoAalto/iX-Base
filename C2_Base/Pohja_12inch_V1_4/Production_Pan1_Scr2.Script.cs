@@ -7,9 +7,8 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-    
-    public partial class Production_Pan1_Scr2
-    {
 
-    }
+	public partial class Production_Pan1_Scr2
+	{
+	}
 }

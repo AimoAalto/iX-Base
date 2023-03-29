@@ -6,7 +6,7 @@
       <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasConfiguration, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="AliasConfiguration1" d1p1:Site.Name="AliasConfiguration1" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
         <Definitions>
           <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasDefinition, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DataType="System.Boolean" Name="Tila" d1p1:Site.Name="Tila" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
-          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasDefinition, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DataType="System.Int16" Name="Tunnus" d1p1:Site.Name="Tunnus" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
+          <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasDefinition, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DataType="System.Int32" Name="Tunnus" d1p1:Site.Name="Tunnus" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
         </Definitions>
         <Instances>
           <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasInstance, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="LP1" d1p1:Site.Name="LP1" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">

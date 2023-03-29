@@ -90,7 +90,7 @@ namespace Neo.ApplicationFramework.Generated
 				foreach (int lp in places) Suodatus1.Items.Add(lp);
 				places.Clear();
 			}
-			
+
 			#endregion
 
 			// Sivu ladattu
@@ -243,11 +243,11 @@ namespace Neo.ApplicationFramework.Generated
 							// Lisätään resepti listaan
 							Reseptit.Add(new Resepti()
 							{
-							Nimi = rivi["FieldName"].ToString(),
-							Numero = Convert.ToInt32(rivi["Tuotenumero"]),
-							RiviNro = Convert.ToInt32(rivi["RiviNro"])
+								Nimi = rivi["FieldName"].ToString(),
+								Numero = Convert.ToInt32(rivi["Tuotenumero"]),
+								RiviNro = Convert.ToInt32(rivi["RiviNro"])
 							});
-							}
+						}
 
 						// Luetaan kaikki reseptit näytölle halutussa järjestyksessä
 						foreach (Resepti r in Reseptit.OrderBy(i => i.Numero).ThenBy(j => j.Nimi))
@@ -533,14 +533,14 @@ namespace Neo.ApplicationFramework.Generated
 					}
 
 					#endregion
-					
+
 					#region infeeds per patterns check
-					
+
 					//
 					string s_patterns = Globals.Tags.ProdReg_InfeedTrackPattern.Value;
 					if (string.IsNullOrEmpty(s_patterns) || s_patterns.Trim().CompareTo("0") == 0)
 						s_patterns = Globals.Tags.ProdReg_PalletPattern.Value;
-					
+
 					List<int> lst = new List<int>();
 					string[] values = s_patterns.Split(',');
 					if (values.Length > 0)
@@ -549,8 +549,8 @@ namespace Neo.ApplicationFramework.Generated
 						foreach (string item in values)
 							if (int.TryParse(item, out no)) lst.Add(no);
 					}
-					
-					Dictionary<int, int> rtulorata_kuvio = new Dictionary<int,int>();
+
+					Dictionary<int, int> rtulorata_kuvio = new Dictionary<int, int>();
 
 					// Valitaan robotille aloitettavat tuloradat
 					foreach (int pno in lst)
@@ -578,13 +578,13 @@ namespace Neo.ApplicationFramework.Generated
 							}
 						}
 					}
-					
+
 					#endregion
 
 					if (rlavapaikat.Count > 0 && rtulorata_kuvio.Count > 0)
 					{
 						Globals.Robotit.LisaaLokiin(robottiNo, "Aloituksen lähetys alkaa.");
-						
+
 						foreach (int _tr in rtulorata_kuvio.Keys)
 						{
 							#region Aloitus robotille
@@ -624,7 +624,7 @@ namespace Neo.ApplicationFramework.Generated
 									List<int> rtuloradat = new List<int>();
 									rtuloradat.Add(rtr);
 									Globals.Robotit.LisaaLokiin(robottiNo, string.Format("Aloitus tulorata {0} kuviolla {1}", rtr, kuviono));
-									Command_Id = Globals.Robotit.TeeAloitus(robottiNo, rtuloradat, rlavapaikat, rtr, Kuvio);
+									Command_Id = Globals.Robotit.TeeAloitus(robottiNo, rtuloradat, rlavapaikat, kuviono, Kuvio);
 								}
 								catch (Exception ex)
 								{
@@ -731,13 +731,13 @@ namespace Neo.ApplicationFramework.Generated
 							// Odotetaan hetki, että tagit menevät varmasti logiikalle
 							System.Threading.Timer aloituskasky = new System.Threading.Timer((args) =>
 								{
-								this.Dispatcher.Invoke((Action)(() =>
-									{
-									// Logiikan aloituskäsky
-									Globals.Tags.SetTagValue("Line1_PLC_Aloitus" + _tr, true);
-									}));
+									this.Dispatcher.Invoke((Action)(() =>
+										{
+										// Logiikan aloituskäsky
+										Globals.Tags.SetTagValue("Line1_PLC_Aloitus" + _tr, true);
+										}));
 								}, null, 1000, System.Threading.Timeout.Infinite);
-					
+
 							#endregion
 						}
 					}

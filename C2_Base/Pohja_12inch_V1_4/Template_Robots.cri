@@ -75,6 +75,7 @@
         <Item Target="Template_Robots.Script.cs" Source="Tags.HMI_RobotNo" />
         <Item Target="Template_Robots.Script.cs" Source="Tags.HMI_AdditionalRobotErrorNo" />
         <Item Target="Template_Robots.Script.cs" Source="Tags.Rob1_ServicePosSent" />
+        <Item Target="Template_Robots.Script.cs" Source="Tags.ScreenChangePending" />
       </Items>
     </Category>
     <Category Name="StructuredTag">

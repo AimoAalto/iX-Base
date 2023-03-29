@@ -40,7 +40,9 @@ namespace Neo.ApplicationFramework.Generated
 			}
 			catch (Exception x)
 			{
-				System.Windows.Forms.MessageBox.Show(x.Message);
+				Globals.Tags.HMI_Error_TextValue.SetAnalog((int)Neo.ApplicationFramework.Generated.Tags.ErrorTexts.UnexpectedError);
+				Globals.Tags.HMI_Error_AdditionalInfo.Value = x.Message + "; " + x.InnerException.Message;
+				Globals.Popup_Error.Show();
 			}
 		}
 

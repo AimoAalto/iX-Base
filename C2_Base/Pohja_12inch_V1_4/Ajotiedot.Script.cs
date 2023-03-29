@@ -51,20 +51,20 @@ namespace Neo.ApplicationFramework.Generated
 			/**/
 			HeaderPaivitys = new System.Threading.Timer((args) =>
 				{
-				if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine("Ajotiedot HeaderPaivitys");
+					if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine("Ajotiedot HeaderPaivitys");
 
-				// Mitataan kauanko operaatioissa kestää
-				Stopwatch takeTime = new Stopwatch();
-				takeTime.Start();
+					// Mitataan kauanko operaatioissa kestää
+					Stopwatch takeTime = new Stopwatch();
+					takeTime.Start();
 
-				AjossaOlevatTuotteet();
+					AjossaOlevatTuotteet();
 
-				takeTime.Stop();
+					takeTime.Stop();
 
-				if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("Ajotiedot time : {0} (ticks)", takeTime.ElapsedTicks));
+					if (Globals.Tags.TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("Ajotiedot time : {0} (ticks)", takeTime.ElapsedTicks));
 
-				// Suoritetaan määritetyin välein (default 10s)
-				HeaderPaivitys.Change(Math.Max(0, interval - takeTime.ElapsedMilliseconds), Timeout.Infinite);
+					// Suoritetaan määritetyin välein (default 10s)
+					HeaderPaivitys.Change(Math.Max(0, interval - takeTime.ElapsedMilliseconds), Timeout.Infinite);
 				}, null, 5000, Timeout.Infinite);
 			/**/
 
@@ -79,15 +79,21 @@ namespace Neo.ApplicationFramework.Generated
 
 					name = "Line1_PLC_Aloitettu" + tulorata;
 					IBasicTag tag = Globals.Tags.GetTag(name);
-					if (tag != null) tag.ValueChange += Line1_PLC_AloitettuX_ValueChange;
+					if (tag == null)
+						Globals.Tags.Log(String.Format("Ajotiedot_Create: Unknown Tag {0}", name));
+					else
+						tag.ValueChange += Line1_PLC_AloitettuX_ValueChange;
 
 					name = "Line1_PLC_Lopetettu" + tulorata;
 					tag = Globals.Tags.GetTag(name);
-					if (tag != null) tag.ValueChange += Line1_PLC_LopetettuX_ValueChange;
+					if (tag == null)
+						Globals.Tags.Log(String.Format("Ajotiedot_Create: Unknown Tag {0}", name));
+					else
+						tag.ValueChange += Line1_PLC_LopetettuX_ValueChange;
 				}
 				catch (Exception x)
 				{
-					Globals.Tags.Log(String.Format("Ajotiedot_Create: Unknown Tag {0} [{1}]", name, x.Message));
+					Globals.Tags.Log(String.Format("Ajotiedot_Create: Unknown error {0} [{1}]", name, x.Message));
 				}
 			}
 		}
@@ -101,7 +107,7 @@ namespace Neo.ApplicationFramework.Generated
 		/// </summary>
 		void AjossaOlevatTuotteet()
 		{
-			lock(lockme)
+			lock (lockme)
 				try
 				{
 					// Alustetaan ajossa olevat tuotteet
@@ -117,59 +123,66 @@ namespace Neo.ApplicationFramework.Generated
 						try
 						{
 							// Haetaan tuloradan tila
-							if (Globals.Tags.GetTagValue(name).Bool)
-							{
-								// Haetaan tuloradalla ajossa oleva tuote ja lisätään listaan
-								string nimi = HaeTuloradanTuote(tulorata);
-
-								// Haetaan termit TextLibrarysta valmiiksi käännettynä
-								ajossa += msg0 + " " + tulorata + " - " + nimi; // Ryhmittely
-
-
-								ajossa += ", " + msg1 + " "; // LP
-
-								// // Lavapaikan numeron haku
-								// foreach (Dictionary<int, int> lavapaikat in _Konfiguraatio.RobotinLavapaikat.Values)
-								// {
-								// 	foreach (KeyValuePair<int, int> lavapaikka in lavapaikat)
-								// 	{
-								// 		if (lavapaikka.Value == Globals.Tags.GetTagValue("Line1_PLC_Lavapaikka_TK" + tulorata))
-								// 		{
-								// 			ajossa += lavapaikka.Key.ToString();
-								// 												
-								// 			// Merkitään myös lavapaikka aloitetuksi
-								// 			statukset.Add(lavapaikka.Key);
-								// 		}
-								// 	}
-								// }
-
-								// Monen lavapaikan aloituksen tarkastelu
-								name = "Line1_PLC_PalletPlaces" + tulorata;
-								var lp = ((GlobalDataItem)Globals.Tags.GetTag(name)).Values;
-
-								bool loytyi = false;
-								for (int i = 0; i < lp.Length; i++)
-								{
-									if (lp[i])
-									{
-										if (loytyi)
-										{
-											ajossa += " & ";
-										}
-										ajossa += i.ToString();
-										loytyi = true;
-
-										// Merkitään myös lavapaikka aloitetuksi
-										statukset.Add(i);
-									}
-								}
-							}
+							IBasicTag tag = Globals.Tags.GetTag(name);
+							if (tag == null)
+								Globals.Tags.Log(String.Format("AjossaolevatTuotteet: Unknown Tag {0}", name));
 							else
 							{
-								// Tulorata on lopetettu
-								// Haetaan termit TextLibrarysta valmiiksi käännettynä
-								ajossa += msg0 + " " + tulorata + " " // Ryhmittely
-									+ msg2; // lopetettu
+								// Haetaan tuloradan tila
+								if (Globals.Tags.GetTagValue(name).Bool)
+								{
+									// Haetaan tuloradalla ajossa oleva tuote ja lisätään listaan
+									string nimi = HaeTuloradanTuote(tulorata);
+
+									// Haetaan termit TextLibrarysta valmiiksi käännettynä
+									ajossa += msg0 // Ryhmittely
+									+ " " + tulorata + " - " + nimi;
+									ajossa += ", " + msg1 // LP
+										+ " ";
+
+									// // Lavapaikan numeron haku
+									// foreach (Dictionary<int, int> lavapaikat in _Konfiguraatio.RobotinLavapaikat.Values)
+									// {
+									// 	foreach (KeyValuePair<int, int> lavapaikka in lavapaikat)
+									// 	{
+									// 		if (lavapaikka.Value == Globals.Tags.GetTagValue("Line1_PLC_Lavapaikka_TK" + tulorata))
+									// 		{
+									// 			ajossa += lavapaikka.Key.ToString();
+									// 												
+									// 			// Merkitään myös lavapaikka aloitetuksi
+									// 			statukset.Add(lavapaikka.Key);
+									// 		}
+									// 	}
+									// }
+
+									// Monen lavapaikan aloituksen tarkastelu
+									name = "Line1_PLC_PalletPlaces" + tulorata;
+									var lp = ((GlobalDataItem)Globals.Tags.GetTag(name)).Values;
+
+									bool loytyi = false;
+									for (int i = 0; i < lp.Length; i++)
+									{
+										if (lp[i])
+										{
+											if (loytyi)
+											{
+												ajossa += " & ";
+											}
+											ajossa += i.ToString();
+											loytyi = true;
+
+											// Merkitään myös lavapaikka aloitetuksi
+											statukset.Add(i);
+										}
+									}
+								}
+								else
+								{
+									// Tulorata on lopetettu
+									// Haetaan termit TextLibrarysta valmiiksi käännettynä
+									ajossa += msg0 + " " + tulorata + " " // Ryhmittely
+										+ msg2; // lopetettu
+								}
 							}
 
 							// Lisätään lopuksi rivin vaihto
@@ -286,20 +299,23 @@ namespace Neo.ApplicationFramework.Generated
 
 			//if (Globals.Tags.AppStart_Timer >= 20 && (VariantValue)lahettaja_arvo.Value == 1)
 			int arvo = (VariantValue)lahettaja_arvo.Value;
-			System.Diagnostics.Trace.WriteLine(string.Format("[iX] Event ({0}): {1} Line1_PLC_AloitettuX_ValueChange {2}", DateTime.Now.ToString(), lahettaja_nimi.Name, arvo));
+			Globals.Tags.Log(string.Format("[iX] Event ({0}): {1} Line1_PLC_AloitettuX_ValueChange {2}", DateTime.Now.ToString(), lahettaja_nimi.Name, arvo));
 			if (Globals.Tags.AppStart_Timer >= 10 && arvo == 1)
 			{
 				// Nollataan trippimittari?
 
-				// Resetoidaan aloitus kesken
-				Globals.Tags.HMI_Aloitus_kesken.Value = false;
+				// TODO: rethink.... if (Globals.Tags.HMI_InfeedStartCount.Value.Int <= 0)
+				{
+					// Resetoidaan aloitus kesken
+					Globals.Tags.HMI_Aloitus_kesken.Value = false;
 
-				// Näytetään popup
-				Globals.Tags.HMI_Success_TextValue.SetAnalog(2);
-				Globals.Popup_Success.Show();
+					// Näytetään popup
+					Globals.Tags.HMI_Success_TextValue.SetAnalog(2);
+					Globals.Popup_Success.Show();
 
-				// Suljetaan aloitusikkuna, kun popup-suljetaan
-				Globals.Popup_Success.Closed += Popup_Success_Closed;
+					// Suljetaan aloitusikkuna, kun popup-suljetaan
+					Globals.Popup_Success.Closed += Popup_Success_Closed;
+				}
 			}
 		}
 
@@ -311,35 +327,35 @@ namespace Neo.ApplicationFramework.Generated
 		{
 			DesignerItemBase lahettaja_nimi = (DesignerItemBase)sender;
 			IBasicTag lahettaja_arvo = (IBasicTag)sender;
-			//	Jos tarvitaan tuloradan numeroa aloitustoimintoihin
-			//	int tulorata = 0;
-			//	if(!int.TryParse(lahettaja_nimi.FullName.Substring(lahettaja_nimi.FullName.Length - 1, 1), out tulorata))
-			//	{
-			//		// lavapaikkanumeron parsinta epäonnistui
-			//		throw new ArgumentException("Tuloradan numeroa ei voitu parsia lähettäjästä: " + lahettaja_nimi.FullName.ToString());
-			//	}
 
 			int arvo = (VariantValue)lahettaja_arvo.Value;
 			System.Diagnostics.Trace.WriteLine(string.Format("[iX] Event ({0}): {1} Line1_PLC_LopetettuX_ValueChange {2}", DateTime.Now.ToString(), lahettaja_nimi.Name, arvo));
 			if (Globals.Tags.AppStart_Timer >= 10 && arvo == 1)
 			{
-				// Toiminta, kun lopetettu
-				Globals.Tags.Stop_Production_CloseMe.SetAnalog(Globals.Tags.HMI_Overview_track_selected.Value);
-
 				int i = lahettaja_nimi.Name.Length - 1;
 				if (i > 0)
 				{
 					string ratano = lahettaja_nimi.Name.Substring(i, 1);
-					System.Diagnostics.Trace.WriteLine("[iX] Clear Line1_PLC_Aloitus " + ratano);
+					Globals.Tags.Log("[iX] Clear Line1_PLC_Aloitus " + ratano);
 					try
 					{
-						((GlobalDataItem)Globals.Tags.GetTag("Line1_PLC_Aloitus" + ratano)).ResetTag();
+						Globals.Tags.HMI_InfeedStartCount.DecrementAnalog(1);
+
+						string name = "Line1_PLC_Aloitus" + ratano;
+						IBasicTag tag = Globals.Tags.GetTag(name);
+						if (tag != null) tag.ResetTag();
+
+						name = "Line1_PLC_TulorataTuote" + ratano;
+						tag = Globals.Tags.GetTag(name);
+						if (tag != null) tag.ResetTag();
 					}
 					catch (Exception x)
 					{
 						Globals.Tags.Log(String.Format("Line1_PLC_LopetettuX_ValueChange: ratanumero {0} [{1}]", ratano, x.Message));
 					}
 				}
+				// Toiminta, kun lopetettu
+				Globals.Tags.Stop_Production_CloseMe.SetAnalog(Globals.Tags.HMI_Overview_track_selected.Value);
 			}
 		}
 

@@ -60,8 +60,8 @@
       <Items>
         <Item xsi:type="SymbolItem" Target="Popup_Login.Group_Login_btn.Button_Login" Source="previous user" Width="26" Height="26" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Popup_Login.Group_Logout_btn.Button_Logout" Source="next user" Width="26" Height="26" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Popup_Login.Group_Edit_btn.Button_EditUser" Source="edit user" Width="26" Height="26" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Popup_Login.Group_Close_btn.Button_Close" Source="orfer_cancel" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Login.Group_Edit_btn.Button_EditUser" Source="edit user" Width="26" Height="26" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">
