@@ -29,7 +29,7 @@
         <Item Target="Production_Pan1_Scr1.Group.Pallet_Cum_1" TargetProperty="Value" Source="Tags.Line1_PLC_BagRob1_Cum" />
         <Item Target="Production_Pan1_Scr1.Group.Pallet_Reset_1" TargetProperty="Value" Source="Tags.Line1_PLC_BagRob1_Reset" />
         <Item xsi:type="ActionItem" Target="Production_Pan1_Scr1.Group5.Button3" TargetProperty="Actions" Source="Tags.Line1_PLC_Rob1_CounterReset" Event="Click" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Production_Pan1_Scr1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Production_Pan1_Scr1" TargetProperty="Actions" Source="Tags.HMI_SubMenu_BtnAnim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -61,7 +61,7 @@
     <Category Name="StructuredTag">
       <Items>
         <Item xsi:type="ActionItem" Target="Production_Pan1_Scr1.Group5.Button3" TargetProperty="Actions" Source="Tags.Line1_PLC_Rob1_CounterReset" Event="Click" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Production_Pan1_Scr1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Production_Pan1_Scr1" TargetProperty="Actions" Source="Tags.HMI_SubMenu_BtnAnim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

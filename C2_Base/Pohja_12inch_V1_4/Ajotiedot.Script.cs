@@ -355,7 +355,7 @@ namespace Neo.ApplicationFramework.Generated
 					}
 				}
 				// Toiminta, kun lopetettu
-				Globals.Tags.Stop_Production_CloseMe.SetAnalog(Globals.Tags.HMI_Overview_track_selected.Value);
+				Globals.Tags.HMI_StopProduction_CloseMe.SetAnalog(Globals.Tags.HMI_Overview_track_selected.Value);
 			}
 		}
 

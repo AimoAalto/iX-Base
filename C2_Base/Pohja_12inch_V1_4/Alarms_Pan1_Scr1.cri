@@ -26,9 +26,9 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.PLC_AlarmReset" Event="PreviewMouseDown" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.PLC_AlarmReset" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.ToPLC_AlarmReset" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.ToPLC_AlarmReset" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1" TargetProperty="Actions" Source="Tags.HMI_SubMenu_BtnAnim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -59,9 +59,9 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.PLC_AlarmReset" Event="PreviewMouseDown" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.PLC_AlarmReset" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.ToPLC_AlarmReset" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.ToPLC_AlarmReset" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Alarms_Pan1_Scr1" TargetProperty="Actions" Source="Tags.HMI_SubMenu_BtnAnim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

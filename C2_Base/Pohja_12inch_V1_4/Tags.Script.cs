@@ -128,7 +128,7 @@ namespace Neo.ApplicationFramework.Generated
 				AppStart_Timer = 0;
 
 				// Main menu painikkeiden visualisointi alustus
-				Menu_MainMenu_Btn_Anim.SetAnalog(0);
+				HMI_MainMenu_BtnAnim.SetAnalog(0);
 
 				kerran = true;
 			}
@@ -405,13 +405,13 @@ namespace Neo.ApplicationFramework.Generated
 					}
 
 					int num = Convert.ToInt16(aux);
-					if (Globals.Tags.Menu_SubMenu_Btn_Anim.Value.Int == num) return;
+					if (Globals.Tags.HMI_SubMenu_BtnAnim.Value.Int == num) return;
 
 					int screenid = panelno * 10000;
 					screenid += ((int)screen * 100);
 					screenid += num;
 
-					Menu_SubMenu_Btn_Anim.SetAnalog(num);
+					HMI_SubMenu_BtnAnim.SetAnalog(num);
 					ScreenChangePending.SetTag();
 
 					SystemTagNewScreenId.SetAnalog(screenid);
@@ -537,7 +537,7 @@ namespace Neo.ApplicationFramework.Generated
 						if (value >= 50 || reset)
 						{
 							tag.ResetTag();
-							Line1_HMI1_Manual_Ctrl_Nr.ResetTag();
+							Line1_HMI1_ManualCtrlNr.ResetTag();
 						}
 						else
 							tag.SetTag();

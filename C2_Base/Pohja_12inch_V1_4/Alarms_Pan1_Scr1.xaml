@@ -8,7 +8,7 @@
     <nai:ActionList>
       <nata:Action Name="Set Analog">
         <nata:Action.ActionMethodInfo>
-          <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Menu_SubMenu_Btn_Anim" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+          <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_SubMenu_BtnAnim" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
             <nata:ActionMethodInfo.ActionParameterInfo>
               <nai:ActionParameterInfoList>
                 <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
@@ -23,7 +23,7 @@
       </nata:Action>
     </nai:ActionList>
   </nai:ActionProperties.Actions>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nac:AlarmViewerFX GridBackground="{x:Null}" ColumnHeaderBackground="#FF267593" ButtonPosition="Bottom" ButtonBackground="#FF35C4B5" AcknowledgeSelectedButtonIsVisible="False" AcknowledgeAllButtonIsVisible="False" ClearButtonIsVisible="False" FilterButtonIsVisible="False" InfoButtonIsVisible="False" PauseButtonIsVisible="False" ColumnHeadersVisible="False" SummaryRowVisible="False" SortColumn="Active Time" SortDirection="Descending" ContextMenusEnabled="False" MaximumAlarmViewerRows="200" SelectedBorderColor="#FF267593" RowHeight="16" ServerAddress="" ServerPort="0" ScreenOwnerName="Alarms_Pan1_Scr1" BorderBrush="#FF267593" Background="#FF186785" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_AlarmViewer1" Width="1074" Height="450" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="9" Canvas.Left="200" Canvas.Top="155" nac:EnabledProperties.EnabledDynamicsValue="True" nacsd:EditorProperties.IsLocked="False" Style="{nac1:StyleMarkupExtension Standard}">
       <nac:AlarmViewerFX.VisibleColumns>
         <x:Array Type="nai1:IColumnInfo">
@@ -90,12 +90,12 @@
           <nai:ActionList>
             <nata:Action Name="Set Tag">
               <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.PLC_AlarmReset" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.ToPLC_AlarmReset" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
               </nata:Action.ActionMethodInfo>
             </nata:Action>
             <nata:Action Name="Reset Tag">
               <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.PLC_AlarmReset" EventName="PreviewMouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.ToPLC_AlarmReset" EventName="PreviewMouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
               </nata:Action.ActionMethodInfo>
             </nata:Action>
           </nai:ActionList>

@@ -50,7 +50,6 @@
         <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_SpeedLoad" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
         <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_AccLoad" TargetProperty="Value" Source="Tags.ProdReg_Robot1_Acceleration_Full" />
         <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_AccLoad" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.GroupPatternData.TextPInfeedTrackatterns" TargetProperty="Value" Source="Tags.ProdReg_InfeedTrackPattern" />
         <Item Target="ProductRegister.GroupPalletData.Text3" TargetProperty="Value" Source="Tags.ProdReg_PalletType" />
         <Item Target="ProductRegister.GroupPalletData.AnalogNumeric1" TargetProperty="Value" Source="Tags.ProdReg_LayerCount" />
         <Item Target="ProductRegister.GroupPalletData.AnalogNumeric1" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
@@ -66,9 +65,11 @@
         <Item Target="ProductRegister.ANPalletWidth" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
         <Item Target="ProductRegister.ANPalletLength" TargetProperty="Value" Source="Tags.ProdReg_Robot1_X_Centering" />
         <Item Target="ProductRegister.ANPalletLength" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
+        <Item Target="ProductRegister.GroupPatternInfo.TextPatternNo" TargetProperty="Value" Source="Tags.ProdReg_PalletPattern" />
+        <Item Target="ProductRegister.GroupPatternInfo.KuvioComboBox" TargetProperty="Value" Source="Tags.ProdReg_PalletPattern" />
+        <Item Target="ProductRegister.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
         <Item Target="ProductRegister.GroupGripper" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.ProdReg_PalletPattern" />
-        <Item xsi:type="ActionItem" Target="ProductRegister" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ProductRegister" TargetProperty="Actions" Source="Tags.HMI_SubMenu_BtnAnim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -88,7 +89,7 @@
         <Item xsi:type="ActionItem" Target="ProductRegister.Group_Open_btn.Product_Open_btn" TargetProperty="Actions" Source="Popup_Recipe_dialog" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ActionItem" Target="ProductRegister.Group_Delete_btn.Product_Delete_Btn" TargetProperty="Actions" Source="Popup_Recipe_dialog" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>149</ObjectsCount>
+          <ObjectsCount>150</ObjectsCount>
           <ScreenName>ProductRegister</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10101">
@@ -101,7 +102,6 @@
         <Item Target="ProductRegister.Script.cs" Source="Tags.ProdReg_RecipeName" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.ProdReg_PalletPattern" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdReg_Dialog_Mode" />
-        <Item Target="ProductRegister.Script.cs" Source="Tags.ProdReg_InfeedTrackPattern" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_PalletPlace" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Lavapaikka" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Pahvit" />
@@ -111,13 +111,14 @@
         <Item Target="ProductRegister.Script.cs" Source="Tags.ProdReg_LayerCount" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdReg_RecipeSelected" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="ProductRegister.Script.cs" Source="Tags.ErrorTexts" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.ProdReg_PalletType" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="ProductRegister" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ProductRegister" TargetProperty="Actions" Source="Tags.HMI_SubMenu_BtnAnim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

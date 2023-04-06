@@ -53,105 +53,15 @@ namespace Neo.ApplicationFramework.Generated
 			}
 		}
 
-		bool PossibleCombination(List<int> lst)
-		{
-			foreach (int pno in lst)
-			{
-				foreach (int tr in Globals._Konfiguraatio.CurrentConfig.AllowedPatterns[pno].Tuloradat)
-				{
-					foreach (int item in lst)
-					{
-						if (item != pno)
-						{
-							if (Globals._Konfiguraatio.CurrentConfig.AllowedPatterns[item].Tuloradat.Contains(tr)) return false;
-						}
-					}
-				}
-			}
-			return true;
-		}
-
-		void CBPatternList_Click(System.Object sender, System.EventArgs e)
-		{
-			try
-			{
-				string bck = Globals.Tags.ProdReg_InfeedTrackPattern.Value;
-				bool checkcombination = ((System.Windows.Controls.CheckBox)sender).IsChecked == true;
-				List<int> lst = new List<int>();
-				bool next = false;
-				string s = "";
-
-				foreach (System.Windows.Controls.StackPanel o in LBPatterns.Items)
-				{
-					if (o.Children.Count > 0)
-					{
-						System.Windows.Controls.CheckBox cb = (System.Windows.Controls.CheckBox)o.Children[0];
-						if (cb.IsChecked == true)
-						{
-							int tag = (int)cb.Tag;
-							lst.Add(tag);
-							if (next)
-								s += ",";
-							else
-								next = true;
-							s += tag.ToString();
-						}
-					}
-				}
-
-				if (checkcombination)
-				{
-					if (!PossibleCombination(lst))
-					{
-						((System.Windows.Controls.CheckBox)sender).IsChecked = false;
-						s = bck;
-					}
-				}
-
-				Globals.Tags.ProdReg_InfeedTrackPattern.SetString(s);
-			}
-			catch (Exception x)
-			{
-				System.Windows.Forms.MessageBox.Show(x.Message);
-			}
-		}
-
 		void InitPatternListBox()
 		{
-			LBPatterns.Items.Clear();
-			foreach (int pno in Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.Keys)
-			{
-				System.Windows.Controls.StackPanel parent = new System.Windows.Controls.StackPanel();
-				parent.Orientation = System.Windows.Controls.Orientation.Horizontal;
-				parent.Tag = pno;
-				// Lisätään kuviolistaan
-				System.Windows.Controls.CheckBox cb = CreateCheckBox(string.Format("{0}  ", pno), pno, CBPatternList_Click);
-				parent.Children.Add(cb);
-
-				foreach (int tr in Globals._Konfiguraatio.CurrentConfig.Tuloradat.Keys)
-				{
-					System.Windows.Controls.CheckBox cbtr = CreateCheckBox(string.Format("{0}  ", tr), tr, null);
-					cbtr.IsChecked = Globals._Konfiguraatio.CurrentConfig.IsAllowedPatternInfeedTrack(pno, tr);
-					//cbtr.IsHitTestVisible = false;
-					cbtr.IsEnabled = false;
-					parent.Children.Add(cbtr);
-				}
-				LBPatterns.Items.Add(parent);
-			}
+			List<int> lst = new List<int>();
+			foreach (int pno in Globals._Konfiguraatio.CurrentConfig.AllowedPatterns.Keys) lst.Add(pno);
+			lst.Sort();
+			foreach (int pno in lst) KuvioComboBox.AddString(pno, pno.ToString());
+			lst.Clear();
 		}
-
-		System.Windows.Controls.CheckBox CreateCheckBox(string title, object tag, System.Windows.RoutedEventHandler clicked
-			/*, bool ischecked*/)
-		{
-			System.Windows.Controls.CheckBox cb = new System.Windows.Controls.CheckBox();
-			cb.Foreground = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.White);
-			cb.Content = title;
-			cb.Tag = tag;
-			//cb.IsChecked = ischecked;
-			if (clicked != null) cb.Click += clicked;
-			return cb;
-		}
-
+		
 		/// <summary>
 		/// Avaa välikkeiden muokkaussivun.
 		/// </summary>
@@ -375,37 +285,6 @@ namespace Neo.ApplicationFramework.Generated
 			}
 		}
 
-		void UpdatePatternSelection()
-		{
-			int pno = Globals.Tags.ProdReg_PalletPattern.Value;
-			List<int> lst = new List<int>();
-			string s = Globals.Tags.ProdReg_InfeedTrackPattern.Value;
-			string[] values = s.Split(',');
-			if (values.Length > 0)
-			{
-				int no = 0;
-				foreach (string item in values)
-					if (int.TryParse(item, out no)) lst.Add(no);
-			}
-
-			int index = 0;
-			foreach (System.Windows.Controls.StackPanel o in LBPatterns.Items)
-			{
-				int ptag = (int)o.Tag;
-
-				if (pno == ptag)
-					LBPatterns.SelectedIndex = index;
-
-				if (o.Children.Count > 0)
-				{
-					System.Windows.Controls.CheckBox cb = (System.Windows.Controls.CheckBox)o.Children[0];
-					int tag = (int)cb.Tag;
-					cb.IsChecked = lst.Contains(tag);
-				}
-				index++;
-			}
-		}
-
 		#endregion
 
 		/// <summary>
@@ -441,13 +320,14 @@ namespace Neo.ApplicationFramework.Generated
 			UpdatePatternPallettypes(pi);
 
 			// Ladataan kuvion tiedot
-			Lavaus.Kuvio Kuvio = new Lavaus.Kuvio();
-			Kuvio.Validoi = false;
-			Kuvio.JSON = string.Format("{0}Kuvio{1}.json", _Konfiguraatio.PatternDirectory, patternno);
+			Lavaus.Kuvio kuvio = new Lavaus.Kuvio();
+			kuvio.Validoi = false;
+			kuvio.JSON = string.Format("{0}Kuvio{1}.json", _Konfiguraatio.PatternDirectory, patternno);
 
 			// Tyhjennetään näyttö
 			Desc_Text.Text = "";
 			Tool_Text.Text = "";
+			Boxes_Text.Text = "";
 			ANPalletLength.Text = "";
 			ANPalletWidth.Text = "";
 
@@ -456,26 +336,34 @@ namespace Neo.ApplicationFramework.Generated
 			{
 				Kuva_Kuvio.Visible = false;
 
-				Kuvio.Lataa();
+				kuvio.Lataa();
 
 				// Jos kuvio on olemassa päivitetään näyttö
-				if (Kuvio.Nykyinen != null)
+				if (kuvio.Nykyinen != null)
 				{
-					Desc_Text.Text = Kuvio.Nykyinen.Description;
-					//Text19.Text = Kuvio.Nykyinen.PatternName;
-					if (Kuvio.Nykyinen.Tools.Count > 0)
-						Tool_Text.Text = Kuvio.Nykyinen.Tools[0].Name;
+					Desc_Text.Text = kuvio.Nykyinen.Description;
+					//Text19.Text = kuvio.Nykyinen.PatternName;
+					if (kuvio.Nykyinen.Tools.Count > 0)
+						Tool_Text.Text = kuvio.Nykyinen.Tools[0].Name;
 
 					// Luetaan kuviosta kerrosmäärä
-					maxkerros = Kuvio.Nykyinen.Layers;
+					maxkerros = kuvio.Nykyinen.Layers;
 
-					if (Kuvio.Nykyinen.PalletTypes.Count > 0)
+					if (kuvio.Nykyinen.PalletTypes.Count > 0)
 					{
-						ANPalletLength.Text = string.Format("{0} mm", Kuvio.Nykyinen.PalletTypes[0].Length);
-						ANPalletWidth.Text = string.Format("{0} mm", Kuvio.Nykyinen.PalletTypes[0].Width);
+						ANPalletLength.Text = string.Format("{0} mm", kuvio.Nykyinen.PalletTypes[0].Length);
+						ANPalletWidth.Text = string.Format("{0} mm", kuvio.Nykyinen.PalletTypes[0].Width);
 					}
+					
+					string s = "";
+					for (int index = 0; index < kuvio.Nykyinen.ProductTypes.Count; index++)
+					{
+						if (index > 0) s += "\n";
+						s += string.Format("[{0}] {1}", kuvio.Nykyinen.ProductTypes[index].RobotID, kuvio.Nykyinen.ProductTypes[index].Name);
+					}
+					Boxes_Text.Text = s;
 
-					LoadPicture(Kuvio.Nykyinen.PalletizingImageFilename);
+					LoadPicture(kuvio.Nykyinen.PalletizingImageFilename);
 				}
 			}
 			catch (Exception ex)
@@ -486,21 +374,6 @@ namespace Neo.ApplicationFramework.Generated
 				Globals.Popup_Error.Show();
 				return;
 			}
-		}
-
-		void LBPatterns_SelectionChanged(System.Object sender, System.EventArgs e)
-		{
-			if (LBPatterns.SelectedIndex >= 0)
-			{
-				System.Windows.Controls.StackPanel lbitem = (System.Windows.Controls.StackPanel)LBPatterns.SelectedItem;
-				Globals.Tags.ProdReg_PalletPattern.SetAnalog((int)lbitem.Tag);
-			}
-		}
-
-		void ANProductNo_ValueChanged(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
-		{
-			System.Diagnostics.Trace.WriteLine(string.Format("Patterns str {0}", Globals.Tags.ProdReg_InfeedTrackPattern.Value));
-			UpdatePatternSelection();
 		}
 	}
 }

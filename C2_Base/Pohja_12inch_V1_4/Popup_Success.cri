@@ -25,8 +25,8 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Popup_Success.SuccessText" TargetProperty="Value" Source="Tags.HMI_Success_TextValue" />
-        <Item xsi:type="ActionItem" Target="Popup_Success" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Success" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Success" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Success" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -57,8 +57,8 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Popup_Success" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Success" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Success" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Success" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

@@ -7,7 +7,7 @@
   <nai:ActionProperties.Actions>
     <nai:ActionList />
   </nai:ActionProperties.Actions>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nac:AlarmViewerFX GridBackground="#FF186785" ColumnHeaderBackground="#FF267593" ButtonPosition="Bottom" ButtonBackground="#FF4BBFDF" AcknowledgeSelectedButtonIsVisible="False" AcknowledgeAllButtonIsVisible="False" ClearButtonIsVisible="False" FilterButtonIsVisible="False" InfoButtonIsVisible="False" PauseButtonIsVisible="False" ColumnHeadersVisible="False" SummaryRowVisible="True" SortColumn="Active Time" SortDirection="Descending" ContextMenusEnabled="False" MaximumAlarmViewerRows="2000" SelectedBorderColor="#FF267593" RowHeight="16" ServerAddress="" ServerPort="0" ScreenOwnerName="Settings_Pan1_Scr3" BorderBrush="#FF267593" Background="{x:Null}" Foreground="#FFFAFAFA" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Name="m_AlarmViewer1" Width="1074" Height="555" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="200" Canvas.Top="125" nacsd:EditorProperties.IsLocked="False" Style="{nac1:StyleMarkupExtension Standard}">
       <nac:AlarmViewerFX.VisibleColumns>
         <x:Array Type="nai1:IColumnInfo">
@@ -43,7 +43,7 @@
         </ResourceDictionary>
       </nacc:Rectangle.Resources>
       <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PC_Overview_shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_Shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>

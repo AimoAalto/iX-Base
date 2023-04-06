@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?neo version='2.46.49.0'?>
-<nacs:ScreenWindow Top="97" Left="964" Topmost="False" Title="Popup_SensorInfo" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="Manual" WindowState="Normal" BorderStyle="ThreeDBorder" ModalScreen="False" ScreenSize="288, 297" ScreenPosition="964, 97" ScreenTitle="" TemplateScreen="{x:Null}" PopupScreen="True" StyleName="Rounded" IsCacheable="False" Background="#FF106280" Width="288" Height="297" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Popup_SensorInfo">
-  <nai:ActionProperties.Actions>
-    <nai:ActionList>
-      <nata:Action Name="Reset Tag">
-        <nata:Action.ActionMethodInfo>
-          <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
-        </nata:Action.ActionMethodInfo>
-      </nata:Action>
-      <nata:Action Name="Set Tag">
-        <nata:Action.ActionMethodInfo>
-          <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
-        </nata:Action.ActionMethodInfo>
-      </nata:Action>
-    </nai:ActionList>
-  </nai:ActionProperties.Actions>
+<nacs:ScreenWindow Top="97" Left="964" Topmost="False" Title="Popup_SensorInfo" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="Manual" WindowState="Normal" BorderStyle="ThreeDBorder" ModalScreen="False" ScreenSize="288, 297" ScreenPosition="964, 97" ScreenTitle="" TemplateScreen="{x:Null}" PopupScreen="True" StyleName="Rounded" IsCacheable="False" Background="#FF106280" Width="288" Height="297" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Popup_SensorInfo">
   <nai:ScriptProperties.ScriptEvents>
     <nai:ScriptEventList>
       <nacxs:EventHandlerInfo EventName="Closing" MethodName="Popup_SensorInfo_Closing" />
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Popup_SensorInfo_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
+  <nai:ActionProperties.Actions>
+    <nai:ActionList>
+      <nata:Action Name="Reset Tag">
+        <nata:Action.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Overview_Shadow" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+        </nata:Action.ActionMethodInfo>
+      </nata:Action>
+      <nata:Action Name="Set Tag">
+        <nata:Action.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Overview_Shadow" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+        </nata:Action.ActionMethodInfo>
+      </nata:Action>
+    </nai:ActionList>
+  </nai:ActionProperties.Actions>
   <nacs:ElementCanvas Name="m_EditorCanvas" Width="288" Height="297" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
     <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" TextDecorations="{x:Null}" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="24" FontStyle="Normal" FontWeight="Bold" Padding="2,2,2,2" Name="m_Sensor_Text" Width="236.32811765825" Height="33" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="4" KeyboardNavigation.TabNavigation="None" Canvas.Left="28.129746925084" Canvas.Top="10.5441184616225">
       <nac:AnalogNumericFX.Resources>
@@ -115,7 +115,7 @@
                   </nata:Action>
                   <nata:Action Name="Reset Tag">
                     <nata:Action.ActionMethodInfo>
-                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Overview_Shadow" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
                     </nata:Action.ActionMethodInfo>
                   </nata:Action>
                 </nai:ActionList>

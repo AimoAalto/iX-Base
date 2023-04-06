@@ -25,22 +25,22 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Manual_Pan1_Scr1.Man07014" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Line1_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07014.Rectangle4" TargetProperty="Fill" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
+        <Item Target="Manual_Pan1_Scr1.Man07014.Rectangle4" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
         <Item Target="Manual_Pan1_Scr1.Man07012" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Line1_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07012.Rectangle1" TargetProperty="Fill" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
+        <Item Target="Manual_Pan1_Scr1.Man07012.Rectangle1" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
         <Item Target="Manual_Pan1_Scr1.Man07011" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Line1_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07011.Rectangle2" TargetProperty="Fill" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
+        <Item Target="Manual_Pan1_Scr1.Man07011.Rectangle2" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
         <Item Target="Manual_Pan1_Scr1.Man07001" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Line1_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07001.Rectangle6" TargetProperty="Fill" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
+        <Item Target="Manual_Pan1_Scr1.Man07001.Rectangle6" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
         <Item Target="Manual_Pan1_Scr1.Man06001" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Line1_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man06001.Rectangle7" TargetProperty="Fill" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
+        <Item Target="Manual_Pan1_Scr1.Man06001.Rectangle7" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
         <Item Target="Manual_Pan1_Scr1.Man07000" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Line1_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07000.Rectangle8" TargetProperty="Fill" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
+        <Item Target="Manual_Pan1_Scr1.Man07000.Rectangle8" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
         <Item Target="Manual_Pan1_Scr1.Man07015" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Line1_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07015.Rectangle5" TargetProperty="Fill" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
+        <Item Target="Manual_Pan1_Scr1.Man07015.Rectangle5" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
         <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr1.Button1" TargetProperty="Actions" Source="Tags.Line1_Internal_ManualEnabled_1" Event="Click" Action="Toggle Tag" Param="" />
-        <Item Target="Manual_Pan1_Scr1.AnalogNumeric" TargetProperty="Value" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
-        <Item Target="Manual_Pan1_Scr1.AnalogNumeric1" TargetProperty="Value" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
+        <Item Target="Manual_Pan1_Scr1.AnalogNumeric" TargetProperty="Value" Source="Tags.Line1_HMI1_ManualCtrlNr" />
+        <Item Target="Manual_Pan1_Scr1.AnalogNumeric1" TargetProperty="Value" Source="Tags.Line1_HMI1_ManualCtrlNr" />
         <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr1.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.Line1_Manual_Area_Enabled_1" Event="Click" Action="Toggle Tag" Param="" />
       </Items>
     </Category>
@@ -59,7 +59,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>88</ObjectsCount>
+          <ObjectsCount>89</ObjectsCount>
           <ScreenName>Manual_Pan1_Scr1</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10401">
@@ -69,8 +69,9 @@
     </Category>
     <Category Name="Script">
       <Items>
-        <Item Target="Manual_Pan1_Scr1.Script.cs" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
+        <Item Target="Manual_Pan1_Scr1.Script.cs" Source="Tags.Line1_HMI1_ManualCtrlNr" />
         <Item Target="Manual_Pan1_Scr1.Script.cs" Source="Tags.Line1_Manual_Area_Enabled_1" />
+        <Item Target="Manual_Pan1_Scr1.Script.cs" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
       </Items>
     </Category>
     <Category Name="StructuredTag">

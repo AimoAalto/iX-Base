@@ -4,15 +4,15 @@
   <nacs:ScreenWindow.TemplateScreen>
     <nacs1:TemplateScreen Name="Template_Orfer" RenderMode="Background" />
   </nacs:ScreenWindow.TemplateScreen>
-  <nai:ActionProperties.Actions>
-    <nai:ActionList />
-  </nai:ActionProperties.Actions>
   <nai:ScriptProperties.ScriptEvents>
     <nai:ScriptEventList>
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Alarms_Template_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nai:ActionProperties.Actions>
+    <nai:ActionList />
+  </nai:ActionProperties.Actions>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nac:Button CornerRadius="3,3,3,3" Text="&lt;" TextVerticalAlignment="Center" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontWeight="Bold" Name="m_Button_Left" Width="72" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" IsEnabled="True" Panel.ZIndex="1" Canvas.Left="1136.26309856276" Canvas.Top="688" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
       <nac:Button.TextDecorations>
         <TextDecorationCollection />
@@ -21,7 +21,7 @@
         <nai:ActionList>
           <nata:Action Name="Set Analog">
             <nata:Action.ActionMethodInfo>
-              <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Menu_SubMenu_Group_Visibility" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+              <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_SubMenu_GroupVisibility" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
                 <nata:ActionMethodInfo.ActionParameterInfo>
                   <nai:ActionParameterInfoList>
                     <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
@@ -45,7 +45,7 @@
         <nai:ActionList>
           <nata:Action Name="Set Analog">
             <nata:Action.ActionMethodInfo>
-              <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Menu_SubMenu_Group_Visibility" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+              <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_SubMenu_GroupVisibility" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
                 <nata:ActionMethodInfo.ActionParameterInfo>
                   <nai:ActionParameterInfoList>
                     <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
@@ -68,7 +68,7 @@
         </ResourceDictionary>
       </nac:Group.Resources>
       <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Group_Visibility].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_GroupVisibility].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>
@@ -98,23 +98,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="Alarm history" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu2" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="135.026604362212" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -140,23 +140,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu4" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="405.079813086634" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -182,23 +182,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu3" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="270.053208724423" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -224,23 +224,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu5" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="540.106417448846" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -266,23 +266,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="MouseEnter" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu6" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="675.133021811057" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -308,23 +308,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu7" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="810.159626173266" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -350,23 +350,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
     </nac:Group>
     <nac:Group Name="m_Group_Buttons2" Width="948.159626173266" Height="55" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="4" Canvas.Left="191" Canvas.Top="688" nacsd:EditorProperties.IsHidden="True">
@@ -376,7 +376,7 @@
         </ResourceDictionary>
       </nac:Group.Resources>
       <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Group_Visibility].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_GroupVisibility].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>
@@ -406,23 +406,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu10" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="270.053208724423" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -448,23 +448,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu9" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="135.026604362212" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -490,23 +490,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu11" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="405.079813086634" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -532,23 +532,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu12" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="540.106417448846" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -574,23 +574,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu13" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="675.133021811057" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -616,23 +616,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
       <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu14" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="810.159626173266" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
@@ -658,23 +658,23 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
     </nac:Group>
   </nacs:ElementCanvas>

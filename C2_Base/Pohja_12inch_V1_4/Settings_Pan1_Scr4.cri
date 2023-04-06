@@ -28,7 +28,7 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="Settings_Pan1_Scr4.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
+        <Item Target="Settings_Pan1_Scr4.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -46,7 +46,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>67</ObjectsCount>
+          <ObjectsCount>66</ObjectsCount>
           <ScreenName>Settings_Pan1_Scr4</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10704">
@@ -55,7 +55,11 @@
       </Items>
     </Category>
     <Category Name="Script">
-      <Items />
+      <Items>
+        <Item Target="Settings_Pan1_Scr4.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="Settings_Pan1_Scr4.Script.cs" Source="Tags.ErrorTexts" />
+        <Item Target="Settings_Pan1_Scr4.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
+      </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items />

@@ -28,24 +28,24 @@
         <Item Target="Template_Overview.Group_InProduction.Group" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.HMI_Overview_anim_paused" />
         <Item Target="Template_Overview.Group_InProduction.AnimatedLabel" TargetProperty="Text" Source="Tags.HMI_Overview_prod_details" />
         <Item Target="Template_Overview.Group_InProduction.AnimatedLabel" TargetProperty="IsAnimated" Source="Tags.HMI_Overview_anim_paused" />
-        <Item xsi:type="ActionItem" Target="Template_Overview.Button_Left" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="Template_Overview.Button_Right" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
-        <Item Target="Template_Overview.Group_Buttons1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Menu_SubMenu_Group_Visibility" />
-        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu1" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu2" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu4" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu3" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu5" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu6" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu7" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Menu_SubMenu_Group_Visibility" />
-        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu8" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu10" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu9" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu11" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu12" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu13" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu14" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item xsi:type="ActionItem" Target="Template_Overview.Button_Left" TargetProperty="Actions" Source="Tags.HMI_SubMenu_GroupVisibility" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Template_Overview.Button_Right" TargetProperty="Actions" Source="Tags.HMI_SubMenu_GroupVisibility" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="Template_Overview.Group_Buttons1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SubMenu_GroupVisibility" />
+        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu1" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu2" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu4" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu3" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu5" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu6" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons1.btnSubmenu7" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SubMenu_GroupVisibility" />
+        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu8" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu10" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu9" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu11" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu12" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu13" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Template_Overview.Group_Buttons2.btnSubmenu14" TargetProperty="BorderBrush" Source="Tags.HMI_SubMenu_BtnAnim" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -73,15 +73,15 @@
     </Category>
     <Category Name="Script">
       <Items>
-        <Item Target="Template_Overview.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Overview.Script.cs" Source="Tags.HMI_MainMenu_BtnAnim" />
         <Item Target="Template_Overview.Script.cs" Source="Tags.Settings_PanelNumber" />
         <Item Target="Template_Overview.Script.cs" Source="Tags.Screens" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Template_Overview.Button_Left" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="Template_Overview.Button_Right" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Template_Overview.Button_Left" TargetProperty="Actions" Source="Tags.HMI_SubMenu_GroupVisibility" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Template_Overview.Button_Right" TargetProperty="Actions" Source="Tags.HMI_SubMenu_GroupVisibility" Event="Click" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

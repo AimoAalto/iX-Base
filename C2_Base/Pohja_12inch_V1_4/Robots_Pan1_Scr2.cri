@@ -33,7 +33,7 @@
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoTranslated" TargetProperty="Foreground" Source="Tags.RobX_vir" />
         <Item Target="Robots_Pan1_Scr2.txtRobotInfoTranslated" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Language_Current" />
         <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr2.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.HMI_RobotNo" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr2.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr2.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
         <Item Target="Robots_Pan1_Scr2.AnalogNumeric" TargetProperty="Value" Source="Tags.Rob2_pos_x" />
         <Item Target="Robots_Pan1_Scr2.AnalogNumeric1" TargetProperty="Value" Source="Tags.Rob2_pos_y" />
         <Item Target="Robots_Pan1_Scr2.AnalogNumeric2" TargetProperty="Value" Source="Tags.Rob2_pos_z" />
@@ -46,7 +46,7 @@
         <Item Target="Robots_Pan1_Scr2.AnalogNumeric9" TargetProperty="Value" Source="Tags.Rob2_nopker0" />
         <Item Target="Robots_Pan1_Scr2.AnalogNumeric10" TargetProperty="Value" Source="Tags.Rob2_kiiker1" />
         <Item Target="Robots_Pan1_Scr2.AnalogNumeric11" TargetProperty="Value" Source="Tags.Rob2_kiiker0" />
-        <Item Target="Robots_Pan1_Scr2.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
+        <Item Target="Robots_Pan1_Scr2.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -81,7 +81,7 @@
     <Category Name="StructuredTag">
       <Items>
         <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr2.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.HMI_RobotNo" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr2.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr2.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

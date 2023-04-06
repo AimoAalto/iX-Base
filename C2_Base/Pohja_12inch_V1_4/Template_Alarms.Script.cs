@@ -11,7 +11,7 @@ namespace Neo.ApplicationFramework.Generated
 	{
 		void Alarms_Template_Opened(System.Object sender, System.EventArgs e)
 		{
-			Globals.Tags.Menu_MainMenu_Btn_Anim.SetAnalog(6);
+			Globals.Tags.HMI_MainMenu_BtnAnim.SetAnalog(6);
 		}
 
 		void btnSubmenu_Click(System.Object sender, System.EventArgs e)

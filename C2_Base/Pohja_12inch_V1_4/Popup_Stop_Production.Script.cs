@@ -97,7 +97,7 @@ namespace Neo.ApplicationFramework.Generated
 		void CloseMe_ValueChanged(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
 			int tulorata = Globals.Tags.HMI_Overview_track_selected.Value;
-			if (tulorata == Globals.Tags.Stop_Production_CloseMe.Value)
+			if (tulorata == Globals.Tags.HMI_StopProduction_CloseMe.Value)
 				Close();
 		}
 	}

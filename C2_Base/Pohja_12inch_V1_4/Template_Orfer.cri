@@ -26,51 +26,51 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="Template_Orfer.Button_Main_0" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Main_0" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Main_0" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Main_0" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_ProdReg_1" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_ProdReg_1" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_ProdReg_1" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_ProdReg_1" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Robots_2" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Robots_2" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Robots_2" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Robots_2" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Manual_4" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Manual_4" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Manual_4" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Manual_4" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Prodcution_5" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Prodcution_5" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Prodcution_5" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Prodcution_5" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Alarms_6" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Alarms_6" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Alarms_6" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Alarms_6" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Settings_7" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Settings_7" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Settings_7" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Settings_7" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Button_Main_0" TargetProperty="Value" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Main_0" TargetProperty="BorderBrush" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Main_0" TargetProperty="Background" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Main_0" TargetProperty="Foreground" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_ProdReg_1" TargetProperty="Value" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_ProdReg_1" TargetProperty="BorderBrush" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_ProdReg_1" TargetProperty="Background" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_ProdReg_1" TargetProperty="Foreground" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Robots_2" TargetProperty="Value" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Robots_2" TargetProperty="BorderBrush" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Robots_2" TargetProperty="Background" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Robots_2" TargetProperty="Foreground" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Manual_4" TargetProperty="Value" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Manual_4" TargetProperty="BorderBrush" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Manual_4" TargetProperty="Background" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Manual_4" TargetProperty="Foreground" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Prodcution_5" TargetProperty="Value" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Prodcution_5" TargetProperty="BorderBrush" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Prodcution_5" TargetProperty="Background" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Prodcution_5" TargetProperty="Foreground" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Alarms_6" TargetProperty="Value" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Alarms_6" TargetProperty="BorderBrush" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Alarms_6" TargetProperty="Background" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Alarms_6" TargetProperty="Foreground" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Settings_7" TargetProperty="Value" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Settings_7" TargetProperty="BorderBrush" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Settings_7" TargetProperty="Background" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Settings_7" TargetProperty="Foreground" Source="Tags.HMI_MainMenu_BtnAnim" />
         <Item Target="Template_Orfer.Text_Build" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.CurrentUserInt" />
         <Item Target="Template_Orfer.Line2_Conn_Rob" TargetProperty="Stroke" Source="Tags.HMI_CommFault_Robots" />
         <Item Target="Template_Orfer.Line1_Conn_Rob" TargetProperty="Stroke" Source="Tags.HMI_CommFault_Robots" />
         <Item Target="Template_Orfer.TouchComboBox_Language" TargetProperty="Value" Source="Tags.HMI_Language_Current" />
         <Item Target="Template_Orfer.Picture_PLC_Alarm" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Line1_Comm_Fault_PLC1" />
         <Item Target="Template_Orfer.Picture_Rob_Alarm" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.HMI_CommFault_Robots" />
-        <Item xsi:type="ActionItem" Target="Template_Orfer.Button_Sub_Alarms" TargetProperty="Actions" Source="Tags.Menu_MainMenu_Btn_Anim" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Template_Orfer.Button_Sub_Alarms" TargetProperty="Actions" Source="Tags.HMI_MainMenu_BtnAnim" Event="Click" Action="Set Analog" Param="" />
         <Item Target="Template_Orfer.Line2_Conn_PLC" TargetProperty="Stroke" Source="Tags.Line1_Comm_Fault_PLC1" />
         <Item Target="Template_Orfer.Line1_Conn_PLC" TargetProperty="Stroke" Source="Tags.Line1_Comm_Fault_PLC1" />
         <Item Target="Template_Orfer.Group_Login_btn.Button_Users" TargetProperty="Value" Source="Tags.SystemTagCurrentUser" />
         <Item Target="Template_Orfer.Group_Login_btn.Button_Users" TargetProperty="TextValue" Source="Tags.CurrentUserInt" />
         <Item Target="Template_Orfer.TextBuildDateValue" TargetProperty="Value" Source="Tags.HMI_Overview_moddate" />
         <Item Target="Template_Orfer.TextBuildDateValue" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.CurrentUserInt" />
-        <Item Target="Template_Orfer.Button_Diagnostics_3" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Diagnostics_3" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Diagnostics_3" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Button_Diagnostics_3" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Button_Diagnostics_3" TargetProperty="Value" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Diagnostics_3" TargetProperty="BorderBrush" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Diagnostics_3" TargetProperty="Background" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Button_Diagnostics_3" TargetProperty="Foreground" Source="Tags.HMI_MainMenu_BtnAnim" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -106,13 +106,14 @@
         <Item Target="Template_Orfer.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
         <Item Target="Template_Orfer.Script.cs" Source="Tags.Settings_PanelNumber" />
         <Item Target="Template_Orfer.Script.cs" Source="Tags.SystemTagNewScreenId" />
-        <Item Target="Template_Orfer.Script.cs" Source="Tags.Menu_SubMenu_Group_Visibility" />
-        <Item Target="Template_Orfer.Script.cs" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Orfer.Script.cs" Source="Tags.HMI_MainMenu_BtnAnim" />
+        <Item Target="Template_Orfer.Script.cs" Source="Tags.HMI_SubMenu_GroupVisibility" />
+        <Item Target="Template_Orfer.Script.cs" Source="Tags.HMI_SubMenu_BtnAnim" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Template_Orfer.Button_Sub_Alarms" TargetProperty="Actions" Source="Tags.Menu_MainMenu_Btn_Anim" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Template_Orfer.Button_Sub_Alarms" TargetProperty="Actions" Source="Tags.HMI_MainMenu_BtnAnim" Event="Click" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

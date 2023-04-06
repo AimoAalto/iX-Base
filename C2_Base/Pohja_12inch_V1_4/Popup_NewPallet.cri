@@ -25,7 +25,7 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Popup_NewPallet.AnalogNumeric1" TargetProperty="Value" Source="Tags.HMI_PalletChange" />
-        <Item xsi:type="ActionItem" Target="Popup_NewPallet" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_NewPallet" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -59,7 +59,7 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Popup_NewPallet" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_NewPallet" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

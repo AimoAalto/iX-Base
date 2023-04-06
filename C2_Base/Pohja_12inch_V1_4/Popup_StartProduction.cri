@@ -54,9 +54,9 @@
         <Item Target="Popup_StartProduction.Rect_RobottiAuto" TargetProperty="Fill" Source="Tags.Line1_PLC_R1_ManAuto" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_pallet_privis" Event="Closing" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Closing" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_Acks" Event="Opened" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Closed" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_ProdChangeOK" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_Started" Event="Closed" Action="Reset Tag" Param="" />
@@ -120,9 +120,9 @@
       <Items>
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_pallet_privis" Event="Closing" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Closing" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_Acks" Event="Opened" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Closed" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_ProdChangeOK" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_Started" Event="Closed" Action="Reset Tag" Param="" />

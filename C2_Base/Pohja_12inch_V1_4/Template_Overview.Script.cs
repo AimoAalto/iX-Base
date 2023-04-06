@@ -14,7 +14,7 @@ namespace Neo.ApplicationFramework.Generated
 	{
 		void Template_Overview_Opened(System.Object sender, System.EventArgs e)
 		{
-			Globals.Tags.Menu_MainMenu_Btn_Anim.SetAnalog(0);
+			Globals.Tags.HMI_MainMenu_BtnAnim.SetAnalog(0);
 		}
 
 		void btnSubmenu_Click(System.Object sender, System.EventArgs e)

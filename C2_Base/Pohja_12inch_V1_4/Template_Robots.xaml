@@ -21,7 +21,7 @@
         <nai:ActionList>
           <nata:Action Name="Set Analog">
             <nata:Action.ActionMethodInfo>
-              <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Menu_SubMenu_Group_Visibility" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+              <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_SubMenu_GroupVisibility" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
                 <nata:ActionMethodInfo.ActionParameterInfo>
                   <nai:ActionParameterInfoList>
                     <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
@@ -45,7 +45,7 @@
         <nai:ActionList>
           <nata:Action Name="Set Analog">
             <nata:Action.ActionMethodInfo>
-              <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Menu_SubMenu_Group_Visibility" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+              <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_SubMenu_GroupVisibility" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
                 <nata:ActionMethodInfo.ActionParameterInfo>
                   <nai:ActionParameterInfoList>
                     <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
@@ -68,7 +68,7 @@
         </ResourceDictionary>
       </nac:Group.Resources>
       <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Group_Visibility].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_GroupVisibility].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>
@@ -98,9 +98,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -140,9 +140,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -182,9 +182,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -224,9 +224,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -266,9 +266,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -308,9 +308,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -350,9 +350,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -732,7 +732,7 @@
         </ResourceDictionary>
       </nac:Group.Resources>
       <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Group_Visibility].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_GroupVisibility].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>
@@ -762,9 +762,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -804,9 +804,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -846,9 +846,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -888,9 +888,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -930,9 +930,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -972,9 +972,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>
@@ -1014,9 +1014,9 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SubMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.BorderBrush>

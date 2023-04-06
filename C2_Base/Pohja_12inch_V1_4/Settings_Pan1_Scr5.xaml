@@ -4,15 +4,15 @@
   <nacs:ScreenWindow.TemplateScreen>
     <nacs1:TemplateScreen Name="Template_Settings" RenderMode="Background" />
   </nacs:ScreenWindow.TemplateScreen>
-  <nai:ActionProperties.Actions>
-    <nai:ActionList />
-  </nai:ActionProperties.Actions>
   <nai:ScriptProperties.ScriptEvents>
     <nai:ScriptEventList>
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Settings_PatternList_Editor_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nai:ActionProperties.Actions>
+    <nai:ActionList />
+  </nai:ActionProperties.Actions>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="PATTERN LIST EDITOR" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="24" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="6,0,6,1" Name="m_Text3" Width="486.940819056095" Height="30.4133333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="230" Canvas.Top="84" nacsd:EditorProperties.IsLocked="True" nacsd:EditorProperties.IsHidden="False">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
@@ -24,14 +24,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnPatternDelete_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
         <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle11" Width="46.8" Height="44.16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="0.656827706337026" Canvas.Top="1.92000000000002" />
       </nac:Group>
@@ -41,14 +41,14 @@
           <nac:Button.TextDecorations>
             <TextDecorationCollection />
           </nac:Button.TextDecorations>
-          <nai:ActionProperties.Actions>
-            <nai:ActionList />
-          </nai:ActionProperties.Actions>
           <nai:ScriptProperties.ScriptEvents>
             <nai:ScriptEventList>
               <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnPatternAdd_Click" />
             </nai:ScriptEventList>
           </nai:ScriptProperties.ScriptEvents>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
         </nac:Button>
       </nac:Group>
       <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="False" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_ANNewPatternNo" Width="100" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="15" KeyboardNavigation.TabNavigation="None" Canvas.Left="16" Canvas.Top="310">
@@ -144,14 +144,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnRead_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
     </nac:Group>
     <nac:Group Name="m_GroupSaveBtn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="4" Canvas.Left="1072" Canvas.Top="592">
@@ -160,14 +160,14 @@
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nai:ActionProperties.Actions>
-          <nai:ActionList />
-        </nai:ActionProperties.Actions>
         <nai:ScriptProperties.ScriptEvents>
           <nai:ScriptEventList>
             <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnSave_Click" />
           </nai:ScriptEventList>
         </nai:ScriptProperties.ScriptEvents>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
       </nac:Button>
     </nac:Group>
     <nac:Group Name="m_GroupPatternInfo" Width="428" Height="348" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="5" Canvas.Left="832" Canvas.Top="176">
@@ -263,7 +263,7 @@
         </ResourceDictionary>
       </nacc:Rectangle.Resources>
       <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PC_Overview_shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_Shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>

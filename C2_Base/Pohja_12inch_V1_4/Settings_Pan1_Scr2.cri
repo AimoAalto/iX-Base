@@ -24,7 +24,7 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="Settings_Pan1_Scr2.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
+        <Item Target="Settings_Pan1_Scr2.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -42,7 +42,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>60</ObjectsCount>
+          <ObjectsCount>59</ObjectsCount>
           <ScreenName>Settings_Pan1_Scr2</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10702">

@@ -57,7 +57,7 @@
         <Item Target="Overview_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_track_resets" />
         <Item Target="Overview_Pan1_Scr1.Group_Reset_btn.Rectangle6" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_track_resets" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
         <Item Target="Overview_Pan1_Scr1.Group_PallChange_btn.Button_NewPall" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_pallet_resets" />
         <Item Target="Overview_Pan1_Scr1.Group_PallChange_btn.Rectangle5" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_pallet_resets" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_QuickFunc.Group_Resets_btn.Button_Resets" TargetProperty="Actions" Source="Tags.HMI_Overview_track_resets" Event="Click" Action="Toggle Tag" Param="" />
@@ -69,7 +69,7 @@
         <Item Target="Overview_Pan1_Scr1.Rob1_otto1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_nostopaikka" />
         <Item Target="Overview_Pan1_Scr1.SymbolViewbox" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_nostopaikka" />
         <Item Target="Overview_Pan1_Scr1.SymbolViewbox" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_nostopaikka" />
-        <Item Target="Overview_Pan1_Scr1.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
+        <Item Target="Overview_Pan1_Scr1.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -99,6 +99,7 @@
     </Category>
     <Category Name="Script">
       <Items>
+        <Item Target="Overview_Pan1_Scr1.Script.cs" Source="Tags.HMI_MainMenu_BtnAnim" />
         <Item Target="Overview_Pan1_Scr1.Script.cs" Source="Tags.HMI_Overview_track_selected" />
       </Items>
     </Category>
@@ -113,7 +114,7 @@
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.Line1_PLC_ResetCode" Event="Click" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.HMI_Overview_track_resets" Event="Click" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_QuickFunc.Group_Resets_btn.Button_Resets" TargetProperty="Actions" Source="Tags.HMI_Overview_track_resets" Event="Click" Action="Toggle Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_QuickFunc.Group_NewPall_btn.Button_NewPall_btn" TargetProperty="Actions" Source="Tags.HMI_Overview_pallet_resets" Event="Click" Action="Toggle Tag" Param="" />
       </Items>

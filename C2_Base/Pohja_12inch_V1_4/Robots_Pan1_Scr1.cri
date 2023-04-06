@@ -33,7 +33,7 @@
         <Item Target="Robots_Pan1_Scr1.txtRobotInfoFromRobot" TargetProperty="Value" Source="Tags.Rob1_naytto" />
         <Item Target="Robots_Pan1_Scr1.txtRobotInfoFromRobot" TargetProperty="Foreground" Source="Tags.Rob1_vir" />
         <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.HMI_RobotNo" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
         <Item Target="Robots_Pan1_Scr1.AnalogNumeric" TargetProperty="Value" Source="Tags.Rob1_pos_x" />
         <Item Target="Robots_Pan1_Scr1.AnalogNumeric1" TargetProperty="Value" Source="Tags.Rob1_pos_y" />
         <Item Target="Robots_Pan1_Scr1.AnalogNumeric2" TargetProperty="Value" Source="Tags.Rob1_pos_z" />
@@ -46,8 +46,8 @@
         <Item Target="Robots_Pan1_Scr1.AnalogNumeric9" TargetProperty="Value" Source="Tags.Rob1_nopker0" />
         <Item Target="Robots_Pan1_Scr1.AnalogNumeric10" TargetProperty="Value" Source="Tags.Rob1_kiiker1" />
         <Item Target="Robots_Pan1_Scr1.AnalogNumeric11" TargetProperty="Value" Source="Tags.Rob1_kiiker0" />
-        <Item Target="Robots_Pan1_Scr1.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
-        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+        <Item Target="Robots_Pan1_Scr1.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1" TargetProperty="Actions" Source="Tags.HMI_SubMenu_BtnAnim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -82,8 +82,8 @@
     <Category Name="StructuredTag">
       <Items>
         <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.HMI_RobotNo" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1.Group_Edit_btn.Button_Edit" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Robots_Pan1_Scr1" TargetProperty="Actions" Source="Tags.HMI_SubMenu_BtnAnim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

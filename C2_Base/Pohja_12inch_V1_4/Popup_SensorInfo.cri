@@ -29,9 +29,9 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Popup_SensorInfo.Sensor_Text" TargetProperty="Value" Source="Tags.HMI_SensorInfo_Tunnus" />
-        <Item xsi:type="ActionItem" Target="Popup_SensorInfo.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -68,9 +68,9 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Popup_SensorInfo.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo.Group_Close_btn.Button_Close" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_SensorInfo" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

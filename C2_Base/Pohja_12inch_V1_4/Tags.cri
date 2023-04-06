@@ -16,10 +16,10 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Tags" TargetProperty="HMI_Comm_Watchdog_From_PLC1" Source="S7_PLC_1.DataItem206" />
-        <Item Target="Tags" TargetProperty="Line1_HMI1_Manual_Ctrl_Nr" Source="S7_PLC_1.DataItem207" />
+        <Item Target="Tags" TargetProperty="Line1_HMI1_ManualCtrlNr" Source="S7_PLC_1.DataItem207" />
         <Item Target="Tags" TargetProperty="Line1_PLC_R1_ManAuto" Source="S7_PLC_1.DataItem208" />
         <Item Target="Tags" TargetProperty="Line1_PLC_R2_ManAuto" Source="S7_PLC_1.DataItem209" />
-        <Item Target="Tags" TargetProperty="PLC_AlarmReset" Source="S7_PLC_1.DataItem1" />
+        <Item Target="Tags" TargetProperty="ToPLC_AlarmReset" Source="S7_PLC_1.DataItem1" />
         <Item Target="Tags" TargetProperty="HMI_Comm_Watchdog_To_PLC1" Source="S7_PLC_1.DataItem2" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Aloitettu1" Source="S7_PLC_1.DataItem3" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Aloitettu3" Source="S7_PLC_1.DataItem4" />
@@ -100,26 +100,26 @@
         <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa3_Valinta" Source="S7_PLC_1.DataItem111" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa4_Valinta" Source="S7_PLC_1.DataItem112" />
         <Item Target="Tags" TargetProperty="KerroksetLavalla" Source="S7_PLC_1.DataItem113" />
-        <Item Target="Tags" TargetProperty="Kerros1_Viennit" Source="S7_PLC_1.DataItem114" />
-        <Item Target="Tags" TargetProperty="Kerros1_Tyyppi" Source="S7_PLC_1.DataItem115" />
-        <Item Target="Tags" TargetProperty="Kerros2_Viennit" Source="S7_PLC_1.DataItem116" />
-        <Item Target="Tags" TargetProperty="Kerros2_Tyyppi" Source="S7_PLC_1.DataItem117" />
-        <Item Target="Tags" TargetProperty="Kerros3_Viennit" Source="S7_PLC_1.DataItem118" />
-        <Item Target="Tags" TargetProperty="Kerros3_Tyyppi" Source="S7_PLC_1.DataItem119" />
-        <Item Target="Tags" TargetProperty="Kerros4_Viennit" Source="S7_PLC_1.DataItem120" />
-        <Item Target="Tags" TargetProperty="Kerros4_Tyyppi" Source="S7_PLC_1.DataItem121" />
-        <Item Target="Tags" TargetProperty="Kerros5_Viennit" Source="S7_PLC_1.DataItem122" />
-        <Item Target="Tags" TargetProperty="Kerros5_Tyyppi" Source="S7_PLC_1.DataItem123" />
-        <Item Target="Tags" TargetProperty="Kerros6_Viennit" Source="S7_PLC_1.DataItem124" />
-        <Item Target="Tags" TargetProperty="Kerros6_Tyyppi" Source="S7_PLC_1.DataItem125" />
-        <Item Target="Tags" TargetProperty="Kerros7_Viennit" Source="S7_PLC_1.DataItem126" />
-        <Item Target="Tags" TargetProperty="Kerros7_Tyyppi" Source="S7_PLC_1.DataItem127" />
-        <Item Target="Tags" TargetProperty="Kerros8_Viennit" Source="S7_PLC_1.DataItem128" />
-        <Item Target="Tags" TargetProperty="Kerros8_Tyyppi" Source="S7_PLC_1.DataItem129" />
-        <Item Target="Tags" TargetProperty="Kerros9_Viennit" Source="S7_PLC_1.DataItem130" />
-        <Item Target="Tags" TargetProperty="Kerros9_Tyyppi" Source="S7_PLC_1.DataItem131" />
-        <Item Target="Tags" TargetProperty="Kerros10_Viennit" Source="S7_PLC_1.DataItem132" />
-        <Item Target="Tags" TargetProperty="Kerros10_Tyyppi" Source="S7_PLC_1.DataItem133" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros1_Viennit" Source="S7_PLC_1.DataItem114" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros1_Tyyppi" Source="S7_PLC_1.DataItem115" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros2_Viennit" Source="S7_PLC_1.DataItem116" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros2_Tyyppi" Source="S7_PLC_1.DataItem117" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros3_Viennit" Source="S7_PLC_1.DataItem118" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros3_Tyyppi" Source="S7_PLC_1.DataItem119" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros4_Viennit" Source="S7_PLC_1.DataItem120" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros4_Tyyppi" Source="S7_PLC_1.DataItem121" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros5_Viennit" Source="S7_PLC_1.DataItem122" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros5_Tyyppi" Source="S7_PLC_1.DataItem123" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros6_Viennit" Source="S7_PLC_1.DataItem124" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros6_Tyyppi" Source="S7_PLC_1.DataItem125" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros7_Viennit" Source="S7_PLC_1.DataItem126" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros7_Tyyppi" Source="S7_PLC_1.DataItem127" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros8_Viennit" Source="S7_PLC_1.DataItem128" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros8_Tyyppi" Source="S7_PLC_1.DataItem129" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros9_Viennit" Source="S7_PLC_1.DataItem130" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Line1_ToHMI_" Source="S7_PLC_1.DataItem131" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros10_Viennit" Source="S7_PLC_1.DataItem132" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros10_Tyyppi" Source="S7_PLC_1.DataItem133" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Tulolupa1" Source="S7_PLC_1.DataItem134" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Tulolupa1_Valo" Source="S7_PLC_1.DataItem135" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Tulolupa2_Valo" Source="S7_PLC_1.DataItem136" />
@@ -157,8 +157,6 @@
         <Item Target="Tags" TargetProperty="Alarm_Alarm0260" Source="S7_PLC_1.DataItem170" />
         <Item Target="Tags" TargetProperty="Alarm_Alarm_Robot2" Source="S7_PLC_1.DataItem171" />
         <Item Target="Tags" TargetProperty="Line1_PLC_Kaarinta_Valinta" Source="S7_PLC_1.DataItem172" />
-        <Item Target="Tags" TargetProperty="PLC_Sensor_060_B01" Source="S7_PLC_1.DataItem173" />
-        <Item Target="Tags" TargetProperty="PLC_Sensor_060_B02" Source="S7_PLC_1.DataItem174" />
         <Item Target="Tags" TargetProperty="Alarm_Alarm0280" Source="S7_PLC_1.DataItem175" />
         <Item Target="Tags" TargetProperty="Alarm_Alarm0300" Source="S7_PLC_1.DataItem176" />
         <Item Target="Tags" TargetProperty="Alarm_Alarm0320" Source="S7_PLC_1.DataItem177" />
@@ -235,10 +233,10 @@
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C8" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChangeOrError" Source="Tags.SystemTagNewScreenId" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagCurrentUser" />
-        <Item Target="Tags.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_MainMenu_BtnAnim" />
         <Item Target="Tags.Script.cs" Source="Tags.HMI_Overview_moddate" />
-        <Item Target="Tags.Script.cs" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Tags.Script.cs" Source="Tags.Line1_HMI1_Manual_Ctrl_Nr" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_SubMenu_BtnAnim" />
+        <Item Target="Tags.Script.cs" Source="Tags.Line1_HMI1_ManualCtrlNr" />
         <Item Target="Tags.Script.cs" Source="Tags.Settings_PanelNumber" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagSecond" />
         <Item Target="Tags.Script.cs" Source="Tags.CurrentUserInt" />

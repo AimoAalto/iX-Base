@@ -69,7 +69,7 @@
           <Event Name="ValueChange" EventHandler="SystemTagCurrentUser_ValueChange" />
         </Events>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Button outline color control" PollGroupName="PollGroup500" IsPublic="False" d1p1:Site.Name="Menu_MainMenu_Btn_Anim" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Button outline color control" PollGroupName="PollGroup500" IsPublic="False" d1p1:Site.Name="HMI_MainMenu_BtnAnim" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
@@ -110,7 +110,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Button outline color control" PollGroupName="PollGroup500" IsPublic="False" d1p1:Site.Name="Menu_SubMenu_Btn_Anim" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Button outline color control" PollGroupName="PollGroup500" IsPublic="False" d1p1:Site.Name="HMI_SubMenu_BtnAnim" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
@@ -125,12 +125,12 @@
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="1= 1.ryhmä nappeja" PollGroupName="PollGroup500" IsPublic="False" d1p1:Site.Name="Menu_SubMenu_Group_Visibility" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="1= 1.ryhmä nappeja" PollGroupName="PollGroup500" IsPublic="False" d1p1:Site.Name="HMI_SubMenu_GroupVisibility" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" InitialValue="1" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Manual ctrl for conveyors etc" PollGroupName="PollGroup500" AlwaysActive="True" DataType="DT_INTEGER4" GlobalDataType="DT_INTEGER4" LogToAuditTrail="True" IsPublic="False" d1p1:Site.Name="Line1_HMI1_Manual_Ctrl_Nr" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Manual ctrl for conveyors etc" PollGroupName="PollGroup500" AlwaysActive="True" DataType="DT_INTEGER4" GlobalDataType="DT_INTEGER4" LogToAuditTrail="True" IsPublic="False" d1p1:Site.Name="Line1_HMI1_ManualCtrlNr" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -583,7 +583,7 @@
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Overview ikkunan taustavarjon animointitagi" PollGroupName="PollGroup500" IsPublic="False" d1p1:Site.Name="PC_Overview_shadow" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Overview ikkunan taustavarjon animointitagi" PollGroupName="PollGroup500" IsPublic="False" d1p1:Site.Name="HMI_Overview_Shadow" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
@@ -628,7 +628,7 @@
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" InitialValue="0" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Hälytysten resetointi" PollGroupName="PollGroup500" DataType="DT_BIT" LogToAuditTrail="True" AccessRight="Read" d1p1:Site.Name="PLC_AlarmReset" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Hälytysten resetointi" PollGroupName="PollGroup500" DataType="DT_BIT" LogToAuditTrail="True" AccessRight="Read" d1p1:Site.Name="ToPLC_AlarmReset" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -785,7 +785,7 @@
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Lavapaikkojen lukumäärä" PollGroupName="PollGroup500" GlobalDataType="DT_INTEGER2" d1p1:Site.Name="HMI_Tracks_pallet_count" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Lavapaikkojen lukumäärä" PollGroupName="PollGroup500" GlobalDataType="DT_INTEGER2" d1p1:Site.Name="HMI_Tracks_PalletCount" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" InitialValue="0" />
         </GlobalDataSubItems>
@@ -3020,16 +3020,6 @@
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" d1p1:Site.Name="Test_Alarm" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
-        <GlobalDataSubItems>
-          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
-        </GlobalDataSubItems>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" d1p1:Site.Name="Test_Alarm_Reset" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
-        <GlobalDataSubItems>
-          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
-        </GlobalDataSubItems>
-      </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Rata 2 aloitettu (PLC)" PollGroupName="PollGroup500" AlwaysActive="True" DataType="DT_BIT" GlobalDataType="DT_BIT" d1p1:Site.Name="Line1_PLC_Aloitettu2" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
@@ -3616,7 +3606,7 @@
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="väliaikainen, kunnes manuaalisivut tehty" PollGroupName="PollGroup500" AlwaysActive="True" d1p1:Site.Name="Line1_Manual_Ctrl_Nr" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="väliaikainen, kunnes manuaalisivut tehty" PollGroupName="PollGroup500" AlwaysActive="True" d1p1:Site.Name="Line1_ManualCtrlNr" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
@@ -3642,11 +3632,6 @@
         </GlobalDataSubItems>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Tarkastelavan anturin lyhyt kuvaus" PollGroupName="PollGroup500" GlobalDataType="DT_STRING" d1p1:Site.Name="HMI_SensorInfo_Kuvaus" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
-        <GlobalDataSubItems>
-          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
-        </GlobalDataSubItems>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" AlwaysActive="True" DataType="DT_BOOLEAN" GlobalDataType="DT_BOOLEAN" d1p1:Site.Name="PLC_Sensor_Testsensor" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
@@ -5093,12 +5078,12 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" GlobalDataType="DT_BOOLEAN" d1p1:Site.Name="HMI_Yes_No_YES" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" GlobalDataType="DT_BOOLEAN" d1p1:Site.Name="HMI_YesNo_YES" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" GlobalDataType="DT_BOOLEAN" d1p1:Site.Name="HMI_Yes_No_NO" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" GlobalDataType="DT_BOOLEAN" d1p1:Site.Name="HMI_YesNo_NO" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
@@ -5252,7 +5237,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros1_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros1_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5268,7 +5253,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros1_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros1_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5284,7 +5269,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros2_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros2_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5300,7 +5285,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros2_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros2_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5316,7 +5301,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros3_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros3_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5332,7 +5317,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros3_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros3_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5348,7 +5333,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros4_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros4_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5364,7 +5349,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros4_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros4_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5380,7 +5365,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros5_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros5_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5396,7 +5381,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros5_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros5_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5412,7 +5397,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros6_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros6_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5428,7 +5413,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros6_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros6_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5444,7 +5429,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros7_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros7_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5460,7 +5445,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros7_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros7_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5476,7 +5461,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros8_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros8_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5492,7 +5477,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros8_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros8_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5508,7 +5493,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros9_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros9_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5524,7 +5509,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros9_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Line1_ToHMI_" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5540,7 +5525,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros10_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros10_Viennit" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5556,7 +5541,7 @@
           </Object>
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Kerros10_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_ToHMI_Kerros10_Tyyppi" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
             <DataItemNames>
@@ -5758,11 +5743,6 @@
           <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
         </Events>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" d1p1:Site.Name="Alarm_None" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
-        <GlobalDataSubItems>
-          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
-        </GlobalDataSubItems>
-      </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_INTEGER2" d1p1:Site.Name="Line1_PLC_Auto_Area_Mode_C4" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
@@ -5877,7 +5857,7 @@
           <Event Name="ValueChange" EventHandler="Line1_PLC_Auto_Area_Mode_ValueChange" />
         </Events>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" AlwaysActive="True" DataType="DT_INTEGER4" GlobalDataType="DT_INTEGER4" d1p1:Site.Name="Line1_HMI2_Manual_Ctrl_Nr" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" AlwaysActive="True" DataType="DT_INTEGER4" GlobalDataType="DT_INTEGER4" d1p1:Site.Name="Line1_HMI2_ManualCtrlNr" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
@@ -5887,7 +5867,7 @@
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Stop production close if open" PollGroupName="PollGroup500" GlobalDataType="DT_INTEGER2" d1p1:Site.Name="Stop_Production_CloseMe" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Description="Stop production close if open" PollGroupName="PollGroup500" GlobalDataType="DT_INTEGER2" d1p1:Site.Name="HMI_StopProduction_CloseMe" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
         <GlobalDataSubItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" />
         </GlobalDataSubItems>
@@ -6303,38 +6283,6 @@
                 </Key>
                 <Value>
                   <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="DataItem172" />
-                </Value>
-              </KeyValuePair>
-            </DataItemNames>
-          </Object>
-        </GlobalDataSubItems>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_BIT" LogToAuditTrail="True" AccessRight="Read" d1p1:Site.Name="PLC_Sensor_060_B01" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
-        <GlobalDataSubItems>
-          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
-            <DataItemNames>
-              <KeyValuePair>
-                <Key>
-                  <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="S7_PLC_1" />
-                </Key>
-                <Value>
-                  <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="DataItem173" />
-                </Value>
-              </KeyValuePair>
-            </DataItemNames>
-          </Object>
-        </GlobalDataSubItems>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" PollGroupName="PollGroup500" DataType="DT_BIT" LogToAuditTrail="True" AccessRight="Read" d1p1:Site.Name="PLC_Sensor_060_B02" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsExposed="False">
-        <GlobalDataSubItems>
-          <Object d1p1:type="Neo.ApplicationFramework.Tools.OpcClient.GlobalDataSubItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
-            <DataItemNames>
-              <KeyValuePair>
-                <Key>
-                  <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="S7_PLC_1" />
-                </Key>
-                <Value>
-                  <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="DataItem174" />
                 </Value>
               </KeyValuePair>
             </DataItemNames>

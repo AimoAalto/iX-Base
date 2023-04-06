@@ -8,7 +8,7 @@
     <nai:ActionList>
       <nata:Action Name="Set Analog">
         <nata:Action.ActionMethodInfo>
-          <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Menu_SubMenu_Btn_Anim" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+          <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_SubMenu_BtnAnim" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
             <nata:ActionMethodInfo.ActionParameterInfo>
               <nai:ActionParameterInfoList>
                 <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">

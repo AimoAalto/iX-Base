@@ -84,11 +84,7 @@
           </ResourceDictionary>
         </nacc:Rectangle.Resources>
         <nacc:Rectangle.Fill>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_Manual_Ctrl_Nr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
-            <Binding.FallbackValue>
-              <SolidColorBrush>#FF35C4B5</SolidColorBrush>
-            </Binding.FallbackValue>
-          </Binding>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_ManualCtrlNr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
         </nacc:Rectangle.Fill>
         <nacc:Rectangle.BevelEffectInfo>
           <nacb1:BevelEffectInfo Style="None" Width="3" />
@@ -181,11 +177,7 @@
           </ResourceDictionary>
         </nacc:Rectangle.Resources>
         <nacc:Rectangle.Fill>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_Manual_Ctrl_Nr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
-            <Binding.FallbackValue>
-              <SolidColorBrush>#FF35C4B5</SolidColorBrush>
-            </Binding.FallbackValue>
-          </Binding>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_ManualCtrlNr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
         </nacc:Rectangle.Fill>
         <nacc:Rectangle.BevelEffectInfo>
           <nacb1:BevelEffectInfo Style="None" Width="3" />
@@ -278,11 +270,7 @@
           </ResourceDictionary>
         </nacc:Rectangle.Resources>
         <nacc:Rectangle.Fill>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_Manual_Ctrl_Nr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
-            <Binding.FallbackValue>
-              <SolidColorBrush>#FF35C4B5</SolidColorBrush>
-            </Binding.FallbackValue>
-          </Binding>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_ManualCtrlNr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
         </nacc:Rectangle.Fill>
         <nacc:Rectangle.BevelEffectInfo>
           <nacb1:BevelEffectInfo Style="None" Width="3" />
@@ -363,11 +351,7 @@
           </ResourceDictionary>
         </nacc:Rectangle.Resources>
         <nacc:Rectangle.Fill>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_Manual_Ctrl_Nr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
-            <Binding.FallbackValue>
-              <SolidColorBrush>#FF35C4B5</SolidColorBrush>
-            </Binding.FallbackValue>
-          </Binding>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_ManualCtrlNr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
         </nacc:Rectangle.Fill>
         <nacc:Rectangle.BevelEffectInfo>
           <nacb1:BevelEffectInfo Style="None" Width="3" />
@@ -448,11 +432,7 @@
           </ResourceDictionary>
         </nacc:Rectangle.Resources>
         <nacc:Rectangle.Fill>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_Manual_Ctrl_Nr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
-            <Binding.FallbackValue>
-              <SolidColorBrush>#FF35C4B5</SolidColorBrush>
-            </Binding.FallbackValue>
-          </Binding>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_ManualCtrlNr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
         </nacc:Rectangle.Fill>
         <nacc:Rectangle.BevelEffectInfo>
           <nacb1:BevelEffectInfo Style="None" Width="3" />
@@ -533,11 +513,7 @@
           </ResourceDictionary>
         </nacc:Rectangle.Resources>
         <nacc:Rectangle.Fill>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_Manual_Ctrl_Nr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
-            <Binding.FallbackValue>
-              <SolidColorBrush>#FF35C4B5</SolidColorBrush>
-            </Binding.FallbackValue>
-          </Binding>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_ManualCtrlNr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
         </nacc:Rectangle.Fill>
         <nacc:Rectangle.BevelEffectInfo>
           <nacb1:BevelEffectInfo Style="None" Width="3" />
@@ -630,11 +606,7 @@
           </ResourceDictionary>
         </nacc:Rectangle.Resources>
         <nacc:Rectangle.Fill>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_Manual_Ctrl_Nr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
-            <Binding.FallbackValue>
-              <SolidColorBrush>#FF35C4B5</SolidColorBrush>
-            </Binding.FallbackValue>
-          </Binding>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_ManualCtrlNr].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
         </nacc:Rectangle.Fill>
         <nacc:Rectangle.BevelEffectInfo>
           <nacb1:BevelEffectInfo Style="None" Width="3" />
@@ -686,7 +658,7 @@
         </ResourceDictionary>
       </nac:AnalogNumericFX.Resources>
       <nac:AnalogNumericFX.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_Manual_Ctrl_Nr].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_ManualCtrlNr].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>0</Binding.FallbackValue>
         </Binding>
       </nac:AnalogNumericFX.Value>
@@ -707,7 +679,7 @@
         </ResourceDictionary>
       </nac:AnalogNumericFX.Resources>
       <nac:AnalogNumericFX.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_Manual_Ctrl_Nr].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Line1_HMI1_ManualCtrlNr].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>0</Binding.FallbackValue>
         </Binding>
       </nac:AnalogNumericFX.Value>

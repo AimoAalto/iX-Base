@@ -31,7 +31,7 @@ namespace Neo.ApplicationFramework.Generated
 		void Manual_Pan1_Scr1_Opened(System.Object sender, System.EventArgs e)
 		{
 			// Initissä viedään parametrit aputoiminnoille
-			kasiajot.Init(this, "Man", Globals.Tags.Line1_HMI1_Manual_Ctrl_Nr);
+			kasiajot.Init(this, "Man", Globals.Tags.Line1_HMI1_ManualCtrlNr);
 
 			// Luo elementeille napit
 			kasiajot.LuoClickHandlerit();

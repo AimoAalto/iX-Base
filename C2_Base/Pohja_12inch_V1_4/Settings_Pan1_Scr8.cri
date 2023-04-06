@@ -62,7 +62,7 @@
         <Item Target="Settings_Pan1_Scr8.GroupCounters.OEECounter2_Produced" TargetProperty="Value" Source="Tags.OEE_Produced2" />
         <Item Target="Settings_Pan1_Scr8.GroupCounters.OEECounter1_Defected" TargetProperty="Value" Source="Tags.OEE_Defected1" />
         <Item Target="Settings_Pan1_Scr8.GroupCounters.OEECounter1_Produced" TargetProperty="Value" Source="Tags.OEE_Produced1" />
-        <Item Target="Settings_Pan1_Scr8.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
+        <Item Target="Settings_Pan1_Scr8.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -80,7 +80,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>126</ObjectsCount>
+          <ObjectsCount>125</ObjectsCount>
           <ScreenName>Settings_Pan1_Scr8</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10708">

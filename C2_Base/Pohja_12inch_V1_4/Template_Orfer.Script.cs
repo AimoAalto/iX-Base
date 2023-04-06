@@ -101,9 +101,9 @@ namespace Neo.ApplicationFramework.Generated
 
 					Globals.Tags.SystemTagNewScreenId.SetAnalog(screenid);
 
-					Globals.Tags.Menu_MainMenu_Btn_Anim.SetAnalog(num);
-					Globals.Tags.Menu_SubMenu_Group_Visibility.SetAnalog(1);
-					Globals.Tags.Menu_SubMenu_Btn_Anim.SetAnalog(1);
+					Globals.Tags.HMI_MainMenu_BtnAnim.SetAnalog(num);
+					Globals.Tags.HMI_SubMenu_GroupVisibility.SetAnalog(1);
+					Globals.Tags.HMI_SubMenu_BtnAnim.SetAnalog(1);
 					Globals.Tags.ScreenChangePending.SetTag();
 				}
 				catch (Exception x)

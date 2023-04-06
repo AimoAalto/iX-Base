@@ -29,8 +29,8 @@
         <Item xsi:type="ActionItem" Target="Popup_Confirmation.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Click" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Confirmation.Group_OK_btn.OK_btn" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Click" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Opened" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -68,8 +68,8 @@
         <Item xsi:type="ActionItem" Target="Popup_Confirmation.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Click" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Confirmation.Group_OK_btn.OK_btn" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Click" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.HMI_Confirmation_OK" Event="Opened" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Confirmation" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

@@ -24,7 +24,7 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item xsi:type="ActionItem" Target="Production_Pan1_Scr2" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Production_Pan1_Scr2" TargetProperty="Actions" Source="Tags.HMI_SubMenu_BtnAnim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -55,7 +55,7 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Production_Pan1_Scr2" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Opened" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Production_Pan1_Scr2" TargetProperty="Actions" Source="Tags.HMI_SubMenu_BtnAnim" Event="Opened" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?neo version='2.46.49.0'?>
-<nacs:ScreenWindow Topmost="False" Title="Settings_Pan1_Scr2" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="None" ScreenSize="1280, 800" ScreenID="10702" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1280" Height="800" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Settings_Pan1_Scr2">
+<nacs:ScreenWindow Topmost="False" Title="Settings_Pan1_Scr2" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1280, 800" ScreenID="10702" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1280" Height="800" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Settings_Pan1_Scr2">
   <nacs:ScreenWindow.TemplateScreen>
     <nacs1:TemplateScreen Name="Template_Settings" RenderMode="Background" />
   </nacs:ScreenWindow.TemplateScreen>
   <nai:ActionProperties.Actions>
     <nai:ActionList />
   </nai:ActionProperties.Actions>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle9" Width="1072.93745827326" Height="351.882833126436" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="200.58738740273" Canvas.Top="103.610557785903" nacsd:EditorProperties.IsLocked="True" nacsd:EditorProperties.IsHidden="False">
       <nacc:Rectangle.BevelEffectInfo>
         <nacb:BevelEffectInfo Style="Raised" Width="0" />
@@ -43,7 +43,7 @@
         </ResourceDictionary>
       </nacc:Rectangle.Resources>
       <nacb1:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PC_Overview_shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_Shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>

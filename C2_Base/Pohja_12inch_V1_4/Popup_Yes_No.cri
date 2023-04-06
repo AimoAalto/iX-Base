@@ -26,17 +26,17 @@
       <Items>
         <Item Target="Popup_Yes_No.Text" TargetProperty="Value" Source="Tags.HMI_Confirmation_Text" />
         <Item Target="Popup_Yes_No.AnalogNumeric" TargetProperty="Value" Source="Tags.HMI_Confirmation_Value" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Yes_btn.YES_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_YES" Event="Click" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Yes_btn.YES_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_NO" Event="Click" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_No_btn.NO_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_YES" Event="Click" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_No_btn.NO_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_NO" Event="Click" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_YES" Event="Click" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_NO" Event="Click" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_Yes_No_YES" Event="Opened" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_Yes_No_NO" Event="Opened" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Yes_btn.YES_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_YES" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Yes_btn.YES_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_NO" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_No_btn.NO_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_YES" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_No_btn.NO_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_NO" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_YES" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_NO" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_YesNo_YES" Event="Opened" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_YesNo_NO" Event="Opened" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -67,17 +67,17 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Yes_btn.YES_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_YES" Event="Click" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Yes_btn.YES_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_NO" Event="Click" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_No_btn.NO_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_YES" Event="Click" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_No_btn.NO_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_NO" Event="Click" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_YES" Event="Click" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_Yes_No_NO" Event="Click" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_Yes_No_YES" Event="Opened" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_Yes_No_NO" Event="Opened" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Yes_btn.YES_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_YES" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Yes_btn.YES_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_NO" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_No_btn.NO_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_YES" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_No_btn.NO_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_NO" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_YES" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No.Group_Cancel_btn.Cancel_btn" TargetProperty="Actions" Source="Tags.HMI_YesNo_NO" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_YesNo_YES" Event="Opened" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_YesNo_NO" Event="Opened" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Yes_No" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

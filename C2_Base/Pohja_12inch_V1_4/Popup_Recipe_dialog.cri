@@ -28,8 +28,8 @@
         <Item Target="Popup_Recipe_dialog.TuotenumeroKentta" TargetProperty="Value" Source="Tags.ProdReg_ProductNo" />
         <Item Target="Popup_Recipe_dialog.Group_Select_btn.OK_btn" TargetProperty="Value" Source="Tags.HMI_ProdReg_Dialog_Mode" />
         <Item Target="Popup_Recipe_dialog.Group_Select_btn.OK_btn" TargetProperty="TextValue" Source="Tags.HMI_ProdReg_Dialog_Mode" />
-        <Item xsi:type="ActionItem" Target="Popup_Recipe_dialog" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Recipe_dialog" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Recipe_dialog" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Recipe_dialog" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -69,8 +69,8 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Popup_Recipe_dialog" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Recipe_dialog" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Recipe_dialog" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Recipe_dialog" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

@@ -300,8 +300,8 @@
       <nac:Button ButtonAppearance="Rounded" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="START" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="65,2,2,2" RequiresTransparency="True" SymbolName="testi_3" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderBrush="#FF000000" BorderThickness="0,0,0,0" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_StartProd1" Width="140.004545047989" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="10" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsHidden="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" nacb2:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
           <ResourceDictionary>
-            <nacc1:VariantValueConverter x:Key="TextValueConverter" />
             <nacc1:VariantValueConverter x:Key="ValueConverter" />
+            <nacc1:VariantValueConverter x:Key="TextValueConverter" />
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.Value>
@@ -493,8 +493,8 @@
       <nacs2:Symbol MultiPicture="True" Name="m_MultiPicture" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
         <nacs2:Symbol.Resources>
           <ResourceDictionary>
-            <nacc1:VariantValueConverter x:Key="ValueConverter" />
             <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+            <nacc1:VariantValueConverter x:Key="ValueConverter" />
           </ResourceDictionary>
         </nacs2:Symbol.Resources>
         <nacs2:Symbol.Value>
@@ -580,8 +580,8 @@
       <nacs2:Symbol MultiPicture="True" Name="m_MultiPicture1" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
         <nacs2:Symbol.Resources>
           <ResourceDictionary>
-            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
             <nacc1:VariantValueConverter x:Key="ValueConverter" />
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
           </ResourceDictionary>
         </nacs2:Symbol.Resources>
         <nacs2:Symbol.Value>
@@ -667,8 +667,8 @@
       <nacs2:Symbol MultiPicture="True" Name="m_MultiPicture2" Width="36" Height="36" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="2.792323233346" Canvas.Top="2">
         <nacs2:Symbol.Resources>
           <ResourceDictionary>
-            <nacc1:VariantValueConverter x:Key="ValueConverter" />
             <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+            <nacc1:VariantValueConverter x:Key="ValueConverter" />
           </ResourceDictionary>
         </nacs2:Symbol.Resources>
         <nacs2:Symbol.Value>
@@ -817,7 +817,7 @@
                   </nata:Action>
                   <nata:Action Name="Set Tag">
                     <nata:Action.ActionMethodInfo>
-                      <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                      <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Overview_Shadow" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
                     </nata:Action.ActionMethodInfo>
                   </nata:Action>
                 </nai:ActionList>
@@ -934,8 +934,8 @@
     <nacs2:SymbolViewbox Fill="#FF00FF00" SymbolColor="#FF00FF00" RequiresTransparency="True" ForceTransparency="False" Name="m_Rob1_jatto1" Width="25" Height="45" RenderTransformOrigin="0.438284643473321,0.482171695631453" Opacity="0.83597830309483" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="594.209550579834" Canvas.Top="403.064265608378" nacb1:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs2:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
           <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
         </ResourceDictionary>
       </nacs2:SymbolViewbox.Resources>
       <nacb1:BlinkProperties.IsBlinkEnabled>
@@ -985,8 +985,8 @@
     <nacs2:SymbolViewbox Fill="#FFFF9B0D" SymbolColor="#FFFF9B0D" RequiresTransparency="True" ForceTransparency="False" Name="m_Rob1_otto1" Width="25" Height="45" RenderTransformOrigin="0.5,0.5" Opacity="0.9" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="595.07311326162" Canvas.Top="498.784741664118" nacb1:BlinkProperties.BlinkInterval="1200" nacsd:EditorProperties.IsHidden="False">
       <nacs2:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
           <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
         </ResourceDictionary>
       </nacs2:SymbolViewbox.Resources>
       <nacb1:BlinkProperties.IsBlinkEnabled>
@@ -1036,8 +1036,8 @@
     <nacs2:SymbolViewbox Fill="#FFDE304D" SymbolColor="#FFDE304D" RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox" Width="25" Height="45" RenderTransformOrigin="0.545055666074313,0.471528716701101" Opacity="1" Visibility="Visible" IsEnabled="True" Panel.ZIndex="18" Canvas.Left="687.817128097469" Canvas.Top="509.195183276807" nacb1:BlinkProperties.BlinkInterval="1200" nac:EnabledProperties.EnabledDynamicsValue="True" nacsd:EditorProperties.IsHidden="False">
       <nacs2:SymbolViewbox.Resources>
         <ResourceDictionary>
-          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
           <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="11" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="11" />
         </ResourceDictionary>
       </nacs2:SymbolViewbox.Resources>
       <nacb1:BlinkProperties.IsBlinkEnabled>
@@ -1097,7 +1097,7 @@
         </ResourceDictionary>
       </nacc:Rectangle.Resources>
       <nacb1:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PC_Overview_shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_Shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>

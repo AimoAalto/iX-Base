@@ -55,11 +55,11 @@
         <Item Target="A_DesignScreen.Group_Reset_btn.Button_Reset" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_track_resets" />
         <Item Target="A_DesignScreen.Group_Reset_btn.Rectangle6" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_track_resets" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
         <Item Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_pallet_resets" />
         <Item Target="A_DesignScreen.Group_PallChange_btn.Rectangle5" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_pallet_resets" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
         <Item Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_pallet_resets" />
         <Item Target="A_DesignScreen.Group_PickPallChange_btn.Rectangle3" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_pallet_resets" />
         <Item Target="A_DesignScreen.SymbolViewbox" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_nostopaikka" />
@@ -118,9 +118,9 @@
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.Line1_PLC_ResetCode" Event="Click" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.HMI_Overview_track_resets" Event="Click" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Click" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />

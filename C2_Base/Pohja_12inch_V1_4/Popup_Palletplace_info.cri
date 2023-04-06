@@ -41,8 +41,8 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Popup_Palletplace_info.AnalogNumeric2" TargetProperty="Value" Source="Tags.HMI_PalletPlace" />
-        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -71,19 +71,19 @@
     <Category Name="Script">
       <Items>
         <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_PalletPlace" />
+        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.ErrorTexts" />
+        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
         <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Lavapaikka" />
         <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Pahvit" />
         <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_MaxKerros" />
         <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_ProdCtrl_Cardboards_Kerrosasetus" />
-        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_Error_TextValue" />
-        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.ErrorTexts" />
-        <Item Target="Popup_Palletplace_info.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Palletplace_info" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

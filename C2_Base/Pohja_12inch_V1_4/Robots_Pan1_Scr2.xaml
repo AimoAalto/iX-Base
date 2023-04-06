@@ -9,7 +9,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Robots_Pan1_Scr2_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="ROBOT 2 DIAGNOSTICS" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="24" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="6,0,6,1" Name="m_Text_Header" Width="490.596611535514" Height="30.4133333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="230" Canvas.Top="84">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
@@ -255,7 +255,7 @@
                   </nata:Action>
                   <nata:Action Name="Set Tag">
                     <nata:Action.ActionMethodInfo>
-                      <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.PC_Overview_shadow" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                      <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Overview_Shadow" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
                     </nata:Action.ActionMethodInfo>
                   </nata:Action>
                 </nai:ActionList>
@@ -492,7 +492,7 @@
         </ResourceDictionary>
       </nacc1:Rectangle.Resources>
       <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PC_Overview_shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_Shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>

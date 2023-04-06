@@ -38,16 +38,16 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Popup_Stop_Production.AnalogNumeric1" TargetProperty="Value" Source="Tags.HMI_Overview_track_selected" />
-        <Item Target="Popup_Stop_Production.CloseMe" TargetProperty="Value" Source="Tags.Stop_Production_CloseMe" />
+        <Item Target="Popup_Stop_Production.CloseMe" TargetProperty="Value" Source="Tags.HMI_StopProduction_CloseMe" />
         <Item Target="Popup_Stop_Production.AnalogNumeric" TargetProperty="Value" Source="Tags.Line1_PLC_Lopetusvaiheet1" />
         <Item Target="Popup_Stop_Production.AnalogNumeric3" TargetProperty="Value" Source="Tags.Line1_PLC_Lopetusvaiheet3" />
         <Item Target="Popup_Stop_Production.Group_Stop_btn.StopProd_btn" TargetProperty="Value" Source="Tags.HMI_StopProduction_Lopetusvaihe" />
         <Item Target="Popup_Stop_Production.Group_Stop_btn.StopProd_btn" TargetProperty="TextValue" Source="Tags.HMI_StopProduction_Lopetusvaihe" />
-        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_phases" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_stopped" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_Lopetus" Event="Closed" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Closed" Action="Set Analog" Param="" />
       </Items>
     </Category>
@@ -77,19 +77,16 @@
     <Category Name="Script">
       <Items>
         <Item Target="Popup_Stop_Production.Script.cs" Source="Tags.HMI_Overview_track_selected" />
-        <Item Target="Popup_Stop_Production.Script.cs" Source="Tags.HMI_Confirmation_Text" />
-        <Item Target="Popup_Stop_Production.Script.cs" Source="Tags.HMI_Confirmation_Value" />
-        <Item Target="Popup_Stop_Production.Script.cs" Source="Tags.HMI_Confirmation_OK" />
-        <Item Target="Popup_Stop_Production.Script.cs" Source="Tags.Stop_Production_CloseMe" />
+        <Item Target="Popup_Stop_Production.Script.cs" Source="Tags.HMI_StopProduction_CloseMe" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_phases" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_stopped" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_Lopetus" Event="Closed" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.PC_Overview_shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_track_selected" Event="Closed" Action="Set Analog" Param="" />
       </Items>
     </Category>

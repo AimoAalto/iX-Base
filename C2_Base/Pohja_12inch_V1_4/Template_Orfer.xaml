@@ -6,7 +6,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Template_Orfer_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nacc:Rectangle RadiusX="50" RadiusY="50" Fill="#FF186785" Stroke="#FF000000" StrokeThickness="0" Name="m_Rectangle_Main" Width="1139.38817324794" Height="744.549831772669" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="191" Canvas.Top="76" nacsd:EditorProperties.IsLocked="True" />
     <nac:Button CornerRadius="0,0,0,0" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,2,0,2" Text="Main" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="41,2,0,2" RequiresTransparency="True" SymbolName="orfer_home" SymbolTransparent="False" MultiPicture="True" BorderThickness="0,0,0,2" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_Button_Main_0" Width="160" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="8" Canvas.Left="16" Canvas.Top="88.895338708646" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac2:StyleMarkupExtension Default}">
       <nac:Button.Resources>
@@ -69,30 +69,37 @@
         </ResourceDictionary>
       </nac:Button.Resources>
       <nac:Button.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Double>0</s:Double>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Value>
       <nac:Button.BorderBrush>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            <SolidColorBrush>#FF707070</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.BorderBrush>
       <nac:Button.Background>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF106280</SolidColorBrush>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" Offset="0" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Background>
       <nac:Button.Foreground>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            <SolidColorBrush>#FF000000</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Foreground>
@@ -202,30 +209,37 @@
         </ResourceDictionary>
       </nac:Button.Resources>
       <nac:Button.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Double>0</s:Double>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Value>
       <nac:Button.BorderBrush>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            <SolidColorBrush>#FF707070</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.BorderBrush>
       <nac:Button.Background>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF106280</SolidColorBrush>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" Offset="0" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Background>
       <nac:Button.Foreground>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            <SolidColorBrush>#FF000000</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Foreground>
@@ -335,30 +349,37 @@
         </ResourceDictionary>
       </nac:Button.Resources>
       <nac:Button.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Double>0</s:Double>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Value>
       <nac:Button.BorderBrush>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            <SolidColorBrush>#FF707070</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.BorderBrush>
       <nac:Button.Background>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF106280</SolidColorBrush>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" Offset="0" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Background>
       <nac:Button.Foreground>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            <SolidColorBrush>#FF000000</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Foreground>
@@ -468,30 +489,37 @@
         </ResourceDictionary>
       </nac:Button.Resources>
       <nac:Button.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Double>0</s:Double>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Value>
       <nac:Button.BorderBrush>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            <SolidColorBrush>#FF707070</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.BorderBrush>
       <nac:Button.Background>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF106280</SolidColorBrush>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" Offset="0" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Background>
       <nac:Button.Foreground>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            <SolidColorBrush>#FF000000</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Foreground>
@@ -601,30 +629,37 @@
         </ResourceDictionary>
       </nac:Button.Resources>
       <nac:Button.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Double>0</s:Double>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Value>
       <nac:Button.BorderBrush>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            <SolidColorBrush>#FF707070</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.BorderBrush>
       <nac:Button.Background>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF106280</SolidColorBrush>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" Offset="0" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Background>
       <nac:Button.Foreground>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            <SolidColorBrush>#FF000000</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Foreground>
@@ -734,30 +769,37 @@
         </ResourceDictionary>
       </nac:Button.Resources>
       <nac:Button.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Double>0</s:Double>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Value>
       <nac:Button.BorderBrush>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            <SolidColorBrush>#FF707070</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.BorderBrush>
       <nac:Button.Background>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF106280</SolidColorBrush>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" Offset="0" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Background>
       <nac:Button.Foreground>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            <SolidColorBrush>#FF000000</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Foreground>
@@ -867,30 +909,37 @@
         </ResourceDictionary>
       </nac:Button.Resources>
       <nac:Button.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Double>0</s:Double>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Value>
       <nac:Button.BorderBrush>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            <SolidColorBrush>#FF707070</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.BorderBrush>
       <nac:Button.Background>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF106280</SolidColorBrush>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" Offset="0" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Background>
       <nac:Button.Foreground>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            <SolidColorBrush>#FF000000</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Foreground>
@@ -1198,7 +1247,7 @@
                 </nata:Action>
                 <nata:Action Name="Set Analog">
                   <nata:Action.ActionMethodInfo>
-                    <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Menu_MainMenu_Btn_Anim" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.HMI_MainMenu_BtnAnim" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
                       <nata:ActionMethodInfo.ActionParameterInfo>
                         <nai:ActionParameterInfoList>
                           <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" TagName="">
@@ -1449,30 +1498,37 @@
         </ResourceDictionary>
       </nac:Button.Resources>
       <nac:Button.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Double>0</s:Double>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Value>
       <nac:Button.BorderBrush>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            <SolidColorBrush>#FF707070</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.BorderBrush>
       <nac:Button.Background>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FF106280</SolidColorBrush>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" Offset="0" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Background>
       <nac:Button.Foreground>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MainMenu_BtnAnim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
-            <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            <SolidColorBrush>#FF000000</SolidColorBrush>
           </Binding.FallbackValue>
         </Binding>
       </nac:Button.Foreground>

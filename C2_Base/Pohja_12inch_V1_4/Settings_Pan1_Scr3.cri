@@ -26,7 +26,7 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="Settings_Pan1_Scr3.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.PC_Overview_shadow" />
+        <Item Target="Settings_Pan1_Scr3.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
