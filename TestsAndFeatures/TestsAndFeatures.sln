@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_OrferBase.1", "..\Base\UnitTest OrferBase.1\UnitTest_OrferBase.1.csproj", "{E9E6555B-805A-47EE-9980-08E0CD42B219}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest Z11_OP1", "..\Projects\AP22032_Paulig\UnitTest Z11_OP1\UnitTest Z11_OP1.csproj", "{E9E6555B-805A-47EE-9980-08E0CD42B220}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest Wipak3DB", "..\Projects\AP22044_Wipak\Wipak DB\UnitTest Wipak3DB\UnitTest Wipak3DB.csproj", "{28547F18-EEC2-4523-89BF-CD76724D1CBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wipak3 DB", "..\Projects\AP22044_Wipak\Wipak DB\Wipak DB\Wipak3 DB.csproj", "{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_OrferBase.2", "..\Base\UnitTest OrferBase.2\UnitTest_OrferBase.2.csproj", "{2401FB27-9BE5-4248-AA82-8A4B05E79EF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9E6555B-805A-47EE-9980-08E0CD42B219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E6555B-805A-47EE-9980-08E0CD42B219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E6555B-805A-47EE-9980-08E0CD42B219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E6555B-805A-47EE-9980-08E0CD42B219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9E6555B-805A-47EE-9980-08E0CD42B220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E6555B-805A-47EE-9980-08E0CD42B220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E6555B-805A-47EE-9980-08E0CD42B220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E6555B-805A-47EE-9980-08E0CD42B220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28547F18-EEC2-4523-89BF-CD76724D1CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28547F18-EEC2-4523-89BF-CD76724D1CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28547F18-EEC2-4523-89BF-CD76724D1CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28547F18-EEC2-4523-89BF-CD76724D1CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2401FB27-9BE5-4248-AA82-8A4B05E79EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2401FB27-9BE5-4248-AA82-8A4B05E79EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2401FB27-9BE5-4248-AA82-8A4B05E79EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2401FB27-9BE5-4248-AA82-8A4B05E79EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B53C2359-E5D7-4ED3-8919-4EFCAC17261A}
+	EndGlobalSection
+EndGlobal

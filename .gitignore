@@ -7,6 +7,9 @@ Project Files/
 Temp/
 packages/
 
+#UnitTest Results
+TestResults/
+
 # Compiled bin and obj 
 [Dd]ebug/
 [Dd]ebugPublic/

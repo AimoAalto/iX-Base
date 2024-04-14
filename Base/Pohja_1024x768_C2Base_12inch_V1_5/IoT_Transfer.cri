@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items />
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items />
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.TraceAll" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastMsg" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastUptime" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastDowntime" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastErrortime" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastEfficient" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastProduced1" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastDefected1" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastProduced2" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastDefected2" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastProduced3" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastDefected3" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastProduced4" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastDefected4" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_SendBufferCount" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_NextSendCountDown" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Connected" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_LastSend" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Uptime" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Downtime" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Errortime" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Efficient" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Checksum" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_ItemID" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_ItemBatch" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_NominalSpeed" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_MeasuredSpeed" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Capacity" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Produced1" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Produced2" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Produced3" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Produced4" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Defected1" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Defected2" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Defected3" />
+        <Item Target="IoT_Transfer.Script.cs" Source="Tags.OEE_Defected4" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

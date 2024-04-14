@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_WatchDog_1" Source="S7_PLC_1.DataItem206" />
+        <Item Target="Tags" TargetProperty="Line1_HMI1_ManualCtrlNr" Source="S7_PLC_1.DataItem207" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_R1_ManAuto" Source="S7_PLC_1.DataItem208" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_R2_ManAuto" Source="S7_PLC_1.DataItem209" />
+        <Item Target="Tags" TargetProperty="ToPLC_AlarmReset" Source="S7_PLC_1.DataItem1" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_WatchDog_1" Source="S7_PLC_1.DataItem2" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Aloitettu1" Source="S7_PLC_1.DataItem3" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Aloitettu3" Source="S7_PLC_1.DataItem4" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Aloitettu4" Source="S7_PLC_1.DataItem5" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Aloitus1" Source="S7_PLC_1.DataItem6" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Aloitus3" Source="S7_PLC_1.DataItem7" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Aloitus4" Source="S7_PLC_1.DataItem8" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_AutoMan_mode" Source="S7_PLC_1.DataItem9" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa1_Tila" Source="S7_PLC_1.DataItem10" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa1_Valinta" Source="S7_PLC_1.DataItem11" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa2_Tila" Source="S7_PLC_1.DataItem12" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa2_Valinta" Source="S7_PLC_1.DataItem13" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa3_Valinta" Source="S7_PLC_1.DataItem14" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa4_Valinta" Source="S7_PLC_1.DataItem15" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_PalletType1" Source="S7_PLC_1.DataItem16" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetettu1" Source="S7_PLC_1.DataItem17" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetettu2" Source="S7_PLC_1.DataItem18" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetettu3" Source="S7_PLC_1.DataItem19" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetettu4" Source="S7_PLC_1.DataItem20" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetus1" Source="S7_PLC_1.DataItem21" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetus2" Source="S7_PLC_1.DataItem22" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetus3" Source="S7_PLC_1.DataItem23" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetus4" Source="S7_PLC_1.DataItem24" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetusvaiheet1" Source="S7_PLC_1.DataItem25" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetusvaiheet2" Source="S7_PLC_1.DataItem26" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetusvaiheet3" Source="S7_PLC_1.DataItem27" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lopetusvaiheet4" Source="S7_PLC_1.DataItem28" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa1_Tila" Source="S7_PLC_1.DataItem29" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa1_Valinta" Source="S7_PLC_1.DataItem30" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa2_Tila" Source="S7_PLC_1.DataItem31" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa2_Valinta" Source="S7_PLC_1.DataItem32" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Packets_Cum1" Source="S7_PLC_1.DataItem33" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Packets_Cum2" Source="S7_PLC_1.DataItem34" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Packets_Trip1" Source="S7_PLC_1.DataItem35" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Packets_Trip2" Source="S7_PLC_1.DataItem36" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pallets_Cum1" Source="S7_PLC_1.DataItem37" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pallets_Cum2" Source="S7_PLC_1.DataItem38" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pallets_Trip1" Source="S7_PLC_1.DataItem39" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pallets_Trip2" Source="S7_PLC_1.DataItem40" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_ResetCode" Source="S7_PLC_1.DataItem41" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_ResetProductionTripMeter1" Source="S7_PLC_1.DataItem42" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Packets_Trip3" Source="S7_PLC_1.DataItem43" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Packets_Trip4" Source="S7_PLC_1.DataItem44" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pallets_Trip3" Source="S7_PLC_1.DataItem45" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pallets_Trip4" Source="S7_PLC_1.DataItem46" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Packets_Cum3" Source="S7_PLC_1.DataItem47" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Packets_Cum4" Source="S7_PLC_1.DataItem48" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pallets_Cum3" Source="S7_PLC_1.DataItem49" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pallets_Cum4" Source="S7_PLC_1.DataItem50" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa3_Tila" Source="S7_PLC_1.DataItem51" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Jattolupa4_Tila" Source="S7_PLC_1.DataItem52" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa3_Valinta" Source="S7_PLC_1.DataItem53" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa4_Valinta" Source="S7_PLC_1.DataItem54" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa3_Tila" Source="S7_PLC_1.DataItem55" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Ottolupa4_Tila" Source="S7_PLC_1.DataItem56" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Aloitettu2" Source="S7_PLC_1.DataItem57" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Aloitus2" Source="S7_PLC_1.DataItem58" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_PalletType2" Source="S7_PLC_1.DataItem81" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_PalletType3" Source="S7_PLC_1.DataItem82" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_PalletType4" Source="S7_PLC_1.DataItem83" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_ResetProductionTripMeter2" Source="S7_PLC_1.DataItem85" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_ResetProductionTripMeter3" Source="S7_PLC_1.DataItem86" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_ResetProductionTripMeter4" Source="S7_PLC_1.DataItem87" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pahvi_Ottolupa2_Valinta" Source="S7_PLC_1.DataItem91" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pahvi_Ottolupa2_Tila" Source="S7_PLC_1.DataItem92" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pahvi_Ottolupa1_Tila" Source="S7_PLC_1.DataItem93" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Pahvi_Ottolupa1_Valinta" Source="S7_PLC_1.DataItem94" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lavapaikka_TK1" Source="S7_PLC_1.DataItem95" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lavapaikka_TK3" Source="S7_PLC_1.DataItem96" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lavapaikka_TK4" Source="S7_PLC_1.DataItem97" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lavapaikka_TK2" Source="S7_PLC_1.DataItem99" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa1_Tila" Source="S7_PLC_1.DataItem105" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa2_Tila" Source="S7_PLC_1.DataItem106" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa3_Tila" Source="S7_PLC_1.DataItem107" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa4_Tila" Source="S7_PLC_1.DataItem108" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa1_Valinta" Source="S7_PLC_1.DataItem109" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa2_Valinta" Source="S7_PLC_1.DataItem110" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa3_Valinta" Source="S7_PLC_1.DataItem111" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Lahtolupa4_Valinta" Source="S7_PLC_1.DataItem112" />
+        <Item Target="Tags" TargetProperty="KerroksetLavalla" Source="S7_PLC_1.DataItem113" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros1_Viennit" Source="S7_PLC_1.DataItem114" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros1_Tyyppi" Source="S7_PLC_1.DataItem115" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros2_Viennit" Source="S7_PLC_1.DataItem116" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros2_Tyyppi" Source="S7_PLC_1.DataItem117" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros3_Viennit" Source="S7_PLC_1.DataItem118" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros3_Tyyppi" Source="S7_PLC_1.DataItem119" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros4_Viennit" Source="S7_PLC_1.DataItem120" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros4_Tyyppi" Source="S7_PLC_1.DataItem121" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros5_Viennit" Source="S7_PLC_1.DataItem122" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros5_Tyyppi" Source="S7_PLC_1.DataItem123" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros6_Viennit" Source="S7_PLC_1.DataItem124" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros6_Tyyppi" Source="S7_PLC_1.DataItem125" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros7_Viennit" Source="S7_PLC_1.DataItem126" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros7_Tyyppi" Source="S7_PLC_1.DataItem127" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros8_Viennit" Source="S7_PLC_1.DataItem128" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros8_Tyyppi" Source="S7_PLC_1.DataItem129" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros9_Viennit" Source="S7_PLC_1.DataItem130" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Line1_ToHMI_" Source="S7_PLC_1.DataItem131" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros10_Viennit" Source="S7_PLC_1.DataItem132" />
+        <Item Target="Tags" TargetProperty="Line1_ToHMI_Kerros10_Tyyppi" Source="S7_PLC_1.DataItem133" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Tulolupa1" Source="S7_PLC_1.DataItem134" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Tulolupa1_Valo" Source="S7_PLC_1.DataItem135" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Tulolupa2_Valo" Source="S7_PLC_1.DataItem136" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Laskuri_Matkalla" Source="S7_PLC_1.DataItem137" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Laskuri_Lavalla" Source="S7_PLC_1.DataItem138" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Auto_Area_Mode_C1" Source="S7_PLC_1.DataItem139" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Auto_Area_Mode_C2" Source="S7_PLC_1.DataItem140" />
+        <Item Target="Tags" TargetProperty="HMI_Manual_Area_Enabled_1" Source="S7_PLC_1.DataItem141" />
+        <Item Target="Tags" TargetProperty="HMI_Manual_Area_Enabled_2" Source="S7_PLC_1.DataItem142" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Auto_Area_Mode_C4" Source="S7_PLC_1.DataItem143" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Auto_Area_Mode_C3" Source="S7_PLC_1.DataItem144" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Auto_Area_Mode_C5" Source="S7_PLC_1.DataItem145" />
+        <Item Target="Tags" TargetProperty="HMI_Manual_Area_Enabled_3" Source="S7_PLC_1.DataItem146" />
+        <Item Target="Tags" TargetProperty="HMI_Manual_Area_Enabled_4" Source="S7_PLC_1.DataItem147" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Convspeed1" Source="S7_PLC_1.DataItem149" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Convspeed2" Source="S7_PLC_1.DataItem150" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm_Robot1" Source="S7_PLC_1.DataItem151" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0000" Source="S7_PLC_1.DataItem152" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0020" Source="S7_PLC_1.DataItem153" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0040" Source="S7_PLC_1.DataItem154" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0060" Source="S7_PLC_1.DataItem155" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0080" Source="S7_PLC_1.DataItem156" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0100" Source="S7_PLC_1.DataItem157" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0120" Source="S7_PLC_1.DataItem158" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0140" Source="S7_PLC_1.DataItem159" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Length1" Source="S7_PLC_1.DataItem160" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Height1" Source="S7_PLC_1.DataItem161" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Width1" Source="S7_PLC_1.DataItem162" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0160" Source="S7_PLC_1.DataItem165" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0180" Source="S7_PLC_1.DataItem166" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0200" Source="S7_PLC_1.DataItem167" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0220" Source="S7_PLC_1.DataItem168" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0240" Source="S7_PLC_1.DataItem169" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0260" Source="S7_PLC_1.DataItem170" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm_Robot2" Source="S7_PLC_1.DataItem171" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Kaarinta_Valinta" Source="S7_PLC_1.DataItem172" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0280" Source="S7_PLC_1.DataItem175" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0300" Source="S7_PLC_1.DataItem176" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0320" Source="S7_PLC_1.DataItem177" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0340" Source="S7_PLC_1.DataItem178" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0360" Source="S7_PLC_1.DataItem179" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0380" Source="S7_PLC_1.DataItem180" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0400" Source="S7_PLC_1.DataItem181" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0420" Source="S7_PLC_1.DataItem182" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0440" Source="S7_PLC_1.DataItem183" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0460" Source="S7_PLC_1.DataItem184" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0480" Source="S7_PLC_1.DataItem185" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0500" Source="S7_PLC_1.DataItem186" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0520" Source="S7_PLC_1.DataItem187" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0540" Source="S7_PLC_1.DataItem188" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0560" Source="S7_PLC_1.DataItem189" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0580" Source="S7_PLC_1.DataItem190" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0600" Source="S7_PLC_1.DataItem191" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0620" Source="S7_PLC_1.DataItem192" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0640" Source="S7_PLC_1.DataItem193" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0660" Source="S7_PLC_1.DataItem194" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0680" Source="S7_PLC_1.DataItem195" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0700" Source="S7_PLC_1.DataItem196" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0720" Source="S7_PLC_1.DataItem197" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0740" Source="S7_PLC_1.DataItem198" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0760" Source="S7_PLC_1.DataItem199" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0780" Source="S7_PLC_1.DataItem200" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0800" Source="S7_PLC_1.DataItem201" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_060M1_Step" Source="S7_PLC_1.DataItem202" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_070M1_Step" Source="S7_PLC_1.DataItem203" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_AirPressure_Value" Source="S7_PLC_1.DataItem204" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_AirPressure_Bit" Source="S7_PLC_1.DataItem205" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Auto_Area_Mode_C6" Source="S7_PLC_1.DataItem211" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Auto_Area_Mode_C7" Source="S7_PLC_1.DataItem212" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_Auto_Area_Mode_C8" Source="S7_PLC_1.DataItem213" />
+        <Item Target="Tags" TargetProperty="INT16B0" Source="S7_PLC_1.DataItem59" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items />
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.SystemTagCurrentUser" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C1" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C2" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_1" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_2" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C4" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C3" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C5" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_3" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_4" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.SystemTagSecond" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C6" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C7" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.Line1_PLC_Auto_Area_Mode_C8" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChangeOrError" Source="Tags.SystemTagNewScreenId" />
+        <Item Target="Tags.Script.cs" Source="Tags.SystemTagCurrentUser" />
+        <Item Target="Tags.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Overview_moddate" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Language_Current" />
+        <Item Target="Tags.Script.cs" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Settings_PanelNumber" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Manual_Area_Enabled_1" />
+        <Item Target="Tags.Script.cs" Source="Tags.SystemTagSecond" />
+        <Item Target="Tags.Script.cs" Source="Tags.CurrentUserInt" />
+        <Item Target="Tags.Script.cs" Source="Tags.SystemTagNewScreenId" />
+        <Item Target="Tags.Script.cs" Source="Tags.ScreenChangePending" />
+        <Item Target="Tags.Script.cs" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_AdminUser" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_TraceAll" />
+        <Item Target="Tags.Script.cs" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

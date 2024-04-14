@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.87.0'?>
+<nacs:ScreenWindow Top="237" Left="400" Topmost="False" Title="Popup_Confirmation" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="Manual" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="390, 150" ScreenPosition="400, 237" ScreenTitle="" TemplateScreen="{x:Null}" PopupScreen="True" StyleName="Default" IsCacheable="False" Background="#FF106280" Width="390" Height="150" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Behaviors;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" x:Class="Neo.ApplicationFramework.Generated.Popup_Confirmation">
+  <nai:ActionProperties.Actions>
+    <nai:ActionList>
+      <nata:MultiAction Name="Multi Action">
+        <nata:MultiAction.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Reset Tag">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Confirmation_OK" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+            <nata:Action Name="Set Tag">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Overview_Shadow" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nata:MultiAction.Actions>
+        <nata:MultiAction.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="" ObjectName="" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+        </nata:MultiAction.ActionMethodInfo>
+      </nata:MultiAction>
+      <nata:Action Name="Reset Tag">
+        <nata:Action.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Overview_Shadow" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+        </nata:Action.ActionMethodInfo>
+      </nata:Action>
+    </nai:ActionList>
+  </nai:ActionProperties.Actions>
+  <nai:ScriptProperties.ScriptEvents>
+    <nai:ScriptEventList>
+      <nacxs:EventHandlerInfo EventName="Closed" MethodName="Popup_Confirmation_Closed" />
+      <nacxs:EventHandlerInfo EventName="Opened" MethodName="Popup_Confirmation_Opened" />
+    </nai:ScriptEventList>
+  </nai:ScriptProperties.ScriptEvents>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="390" Height="150" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+    <nacs1:Picture SymbolName="orfer_help" FontSize="9" Name="m_Picture" Width="40" Height="40" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="40" Canvas.Top="21" />
+    <nac:Label AutoSize="False" MultiLine="True" WordWrap="True" AutoStretchFont="False" Text="Are you sure?" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="12" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3,0,3,1" Name="m_Text_ConfirmationText" Width="277" Height="20.2584192439862" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="88" Canvas.Top="12" nacb:IntervalMapperBindingsBehavior.RebindInRuntime="True">
+      <nac:Label.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:Label.Resources>
+      <nac:Label.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Confirmation_Text].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True" />
+      </nac:Label.Value>
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.TextIntervalMapper>
+        <nacd1:StringIntervalMapper DefaultValue="Oletko varma?">
+          <nacd1:StringIntervalMapper.Intervals>
+            <nacd1:StringIntervalList>
+              <nacd1:StringInterval Value="Reprint the previously printed pallet sheet?" />
+              <nacd1:StringInterval Start="1" End="1" Value="Print pallet sheet?" />
+              <nacd1:StringInterval Start="2" End="2" Value="Print manually entered pallet sheet?" />
+              <nacd1:StringInterval Start="3" End="3" Value="Delete pallet sheet from queue?" />
+              <nacd1:StringInterval Start="4" End="4" Value="Force end of production?" />
+              <nacd1:StringInterval Start="5" End="5" Value="Are you sure ?" />
+            </nacd1:StringIntervalList>
+          </nacd1:StringIntervalMapper.Intervals>
+        </nacd1:StringIntervalMapper>
+      </nac:Label.TextIntervalMapper>
+    </nac:Label>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#00FFFFFF" BorderThickness="0,0,0,0" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontSize="11" Padding="2,2,2,2" Name="m_AN_ConfirmationText" Width="276" Height="36.7058419243986" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Focusable="False" Panel.ZIndex="9" KeyboardNavigation.TabNavigation="None" Canvas.Left="90" Canvas.Top="37.7773195876289">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Confirmation_Value].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="5" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+    </nac:AnalogNumericFX>
+    <nac:Group Name="m_Group_Cancel_btn" Width="96" Height="36" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="10" Canvas.Left="211" Canvas.Top="89">
+      <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="5,5,5,5" Text="Cancel" TextMargin="47,2,2,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Cancel_btn" Width="96" Height="36" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="6" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:MultiAction Name="Multi Action">
+              <nata:MultiAction.Actions>
+                <nai:ActionList>
+                  <nata:Action Name="Close Screen">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="Close" ObjectName="" EventName="Click" ReferenceType="This" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="True" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Reset Tag">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Confirmation_OK" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                </nai:ActionList>
+              </nata:MultiAction.Actions>
+              <nata:MultiAction.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:MultiAction.ActionMethodInfo>
+            </nata:MultiAction>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle" Width="96" Height="32.8" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="0" Canvas.Top="1.6" />
+    </nac:Group>
+    <nac:Group Name="m_Group_OK_btn" Width="96" Height="36" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="11" Canvas.Left="90" Canvas.Top="89">
+      <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="5,5,5,5" Text="OK" TextDecorations="{x:Null}" TextMargin="47,2,2,2" RequiresTransparency="True" SymbolName="orfer_ack" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_OK_btn" Width="96" Height="36" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="4" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:MultiAction Name="Multi Action">
+              <nata:MultiAction.Actions>
+                <nai:ActionList>
+                  <nata:Action Name="Close Screen">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="Close" ObjectName="" EventName="Click" ReferenceType="This" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="True" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Set Tag">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Confirmation_OK" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                </nai:ActionList>
+              </nata:MultiAction.Actions>
+              <nata:MultiAction.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:MultiAction.ActionMethodInfo>
+            </nata:MultiAction>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle1" Width="96" Height="32.8" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="0" Canvas.Top="1.6" />
+    </nac:Group>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

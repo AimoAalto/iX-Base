@@ -1,0 +1,1376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.87.0'?>
+<nacs:ScreenWindow Topmost="False" Title="Template_Orfer" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1024, 600" PopupScreen="False" StyleName="Default" IsCacheable="True" Background="#FF106280" Width="1024" Height="600" nai:SecurityProperties.SecurityGroupsRequired="None" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=CommonCF" xmlns:nac2="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nai1="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=InterfacesCF" xmlns:nacl="clr-namespace:Neo.ApplicationFramework.Controls.Logic;assembly=ControlsCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:nact="clr-namespace:Neo.ApplicationFramework.Controls.TouchComboBox;assembly=Controls" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Behaviors;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Template_Orfer">
+  <nai:ScriptProperties.ScriptEvents>
+    <nai:ScriptEventList>
+      <nacxs:EventHandlerInfo EventName="Opened" MethodName="Template_Orfer_Opened" />
+    </nai:ScriptEventList>
+  </nai:ScriptProperties.ScriptEvents>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1024" Height="600" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Panel.ZIndex="104">
+    <nac:Group Name="m_Group_btnMain" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="8" Canvas.Left="12" Canvas.Top="80">
+      <Line X1="0" Y1="44" X2="166" Y2="44" StrokeThickness="2" Name="m_Line" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4">
+        <Line.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="StrokeConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval>
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </Line.Resources>
+        <Line.Stroke>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource StrokeConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </Line.Stroke>
+      </Line>
+      <nac:Button CornerRadius="0,0,0,0" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,2,0,2" Text="Main" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="41,2,0,2" RequiresTransparency="True" SymbolName="orfer_home" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderThickness="0,0,0,2" FontFamily="Calibri" FontSize="20" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_Button_Main_0" Width="166" Height="44" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="3" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac2:StyleMarkupExtension DefaultCF}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval>
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval>
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval>
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.Background>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF106280</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Background>
+        <nac:Button.Foreground>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Foreground>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval Start="-1" End="-1">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_home" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval>
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_home_color" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="1" End="99">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_home" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nac:Button.SymbolIntervalMapper>
+        <nac:Button.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Button.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Menu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nacc1:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="0" Canvas.Top="0" />
+    </nac:Group>
+    <nac:Group Name="m_Group_btnManual" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="11" Canvas.Left="12" Canvas.Top="242">
+      <Line X1="0" Y1="44" X2="166" Y2="44" StrokeThickness="2" Name="m_Line1" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8">
+        <Line.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="StrokeConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="4" End="4">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </Line.Resources>
+        <Line.Stroke>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource StrokeConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </Line.Stroke>
+      </Line>
+      <nac:Button CornerRadius="0,0,0,0" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,2,0,2" Text="Manual" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="41,2,0,2" RequiresTransparency="True" SymbolName="orfer_hand" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderThickness="0,0,0,2" FontFamily="Calibri" FontSize="20" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_Button_Manual_4" Width="166" Height="44" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="6" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac2:StyleMarkupExtension DefaultCF}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="4" End="4">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="4" End="4">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="4" End="4">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.Background>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF106280</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Background>
+        <nac:Button.Foreground>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Foreground>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval End="3">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_hand" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="4" End="4">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_hand_color" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="5" End="99">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_hand" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nac:Button.SymbolIntervalMapper>
+        <nac:Button.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Button.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Menu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nacc1:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle1" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="0" Canvas.Top="0" />
+    </nac:Group>
+    <nacs1:Picture SymbolName="orferlogo" Stretch="True" FontSize="15" Name="m_Picture_Logo" Width="160" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="28" Canvas.Top="14" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Reset Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.ScreenChangePending" EventName="MouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nacs1:Picture>
+    <nac:Group Name="m_Group_btnSettings" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="14" Canvas.Left="12" Canvas.Top="404">
+      <Line X1="0" Y1="44" X2="166" Y2="44" StrokeThickness="2" Name="m_Line2" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15">
+        <Line.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="StrokeConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="7" End="7">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </Line.Resources>
+        <Line.Stroke>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource StrokeConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </Line.Stroke>
+      </Line>
+      <nac:Button CornerRadius="0,0,0,0" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,2,0,2" Text="Settings" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="41,2,0,2" RequiresTransparency="True" SymbolName="orfer_settings" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderThickness="0,0,0,2" FontFamily="Calibri" FontSize="20" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_Button_Settings_7" Width="166" Height="44" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="13" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac2:StyleMarkupExtension DefaultCF}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="7" End="7">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="7" End="7">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="7" End="7">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.Background>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF106280</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Background>
+        <nac:Button.Foreground>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Foreground>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval End="6">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_settings" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="7" End="7">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_settings_color" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="8" End="99">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_settings" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nac:Button.SymbolIntervalMapper>
+        <nac:Button.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Button.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Menu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nacc1:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle2" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="0" />
+    </nac:Group>
+    <nac:Group Name="m_Group_btnAlarms" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="13" Canvas.Left="12" Canvas.Top="350">
+      <Line X1="0" Y1="44" X2="166" Y2="44" StrokeThickness="2" Name="m_Line3" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18">
+        <Line.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="StrokeConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="6" End="6">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </Line.Resources>
+        <Line.Stroke>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource StrokeConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </Line.Stroke>
+      </Line>
+      <nac:Button CornerRadius="0,0,0,0" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,2,0,2" Text="Alarms" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="41,2,0,2" RequiresTransparency="True" SymbolName="orfer_alarms" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderThickness="0,0,0,2" FontFamily="Calibri" FontSize="20" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_Button_Alarms_6" Width="166" Height="44" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac2:StyleMarkupExtension DefaultCF}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="6" End="6">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="6" End="6">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="6" End="6">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.Background>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF106280</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Background>
+        <nac:Button.Foreground>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Foreground>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval End="5">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_alarms" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="6" End="6">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_alarms_color" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="7" End="99">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_alarms" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nac:Button.SymbolIntervalMapper>
+        <nac:Button.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Button.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Menu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nacc1:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle3" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="0" Canvas.Top="0" />
+    </nac:Group>
+    <nac:AlarmViewerFX GridBackground="#FF106280" ButtonPosition="Bottom" ButtonBackground="#FF388194" AcknowledgeSelectedButtonIsVisible="False" AcknowledgeAllButtonIsVisible="False" ClearButtonIsVisible="False" FilterButtonIsVisible="False" InfoButtonIsVisible="False" PauseButtonIsVisible="False" ColumnHeadersVisible="False" SummaryRowVisible="False" SortColumn="Active Time" SortDirection="Descending" ContextMenusEnabled="False" MaximumAlarmViewerRows="4" SelectedBorderColor="#FF186785" RowHeight="16" ServerAddress="" ServerPort="0" ScreenOwnerName="Template_Orfer" BorderBrush="#FF186785" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontWeight="Normal" Name="m_AlarmViewer" Width="830" Height="60" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="20" Canvas.Left="190" Canvas.Top="540" nacsd:EditorProperties.IsLocked="False" Style="{nac2:StyleMarkupExtension Standard}">
+      <nac:AlarmViewerFX.VisibleColumns>
+        <x:Array Type="nai1:IColumnInfo">
+          <nacl:AlarmColumnInfo MappingName="ActiveTime" HeaderName="Active Time" ColumnWidth="140" />
+          <nacl:AlarmColumnInfo MappingName="AlarmGroupText" HeaderName="Group Text" ColumnWidth="85" />
+          <nacl:AlarmColumnInfo MappingName="DisplayText" HeaderName="Text" ColumnWidth="450" />
+        </x:Array>
+      </nac:AlarmViewerFX.VisibleColumns>
+      <nac:AlarmViewerFX.AlarmEventFilter>
+        <nacl:AlarmEventFilter MaximumAlarmRows="4">
+          <nacl:AlarmEventFilter.Groups>
+            <nacl:AlarmEventFilterGroup Name="Default" Enabled="True" ShowActiveAlarms="True" ShowNormalAlarms="False" ShowAcknowlegedAlarms="False" ShowInactiveAlarms="False" />
+            <nacl:AlarmEventFilterGroup Name="Jarjestelma" Enabled="True" ShowActiveAlarms="True" ShowNormalAlarms="False" ShowAcknowlegedAlarms="False" ShowInactiveAlarms="False" />
+            <nacl:AlarmEventFilterGroup Name="Turvalaite" Enabled="True" ShowActiveAlarms="True" ShowNormalAlarms="False" ShowAcknowlegedAlarms="False" ShowInactiveAlarms="False" />
+            <nacl:AlarmEventFilterGroup Name="Yleinen" Enabled="True" ShowActiveAlarms="True" ShowNormalAlarms="False" ShowAcknowlegedAlarms="False" ShowInactiveAlarms="False" />
+          </nacl:AlarmEventFilter.Groups>
+        </nacl:AlarmEventFilter>
+      </nac:AlarmViewerFX.AlarmEventFilter>
+    </nac:AlarmViewerFX>
+    <nacs1:Picture SymbolName="orfer_hmi" Stretch="True" FontSize="15" Name="m_Picture_HMI" Width="50" Height="50" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="16" Canvas.Top="536" nacsd:EditorProperties.IsLocked="False" />
+    <nacs1:Picture SymbolName="orfer_alarm_icon" Stretch="True" FontSize="15" Name="m_PicturePLC_Alarm" Width="38" Height="38" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="19" Canvas.Left="108" Canvas.Top="536" nacb:BlinkProperties.BlinkInterval="700" nacsd:EditorProperties.IsLocked="False">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CommFault_PLC1].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>False</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CommFault_PLC1].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <Line X1="64" Y1="560" X2="132" Y2="560" StrokeThickness="2" Name="m_Line2_Conn_PLC" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" nacsd:EditorProperties.IsLocked="False">
+      <Line.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="StrokeConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </Line.Resources>
+      <Line.Stroke>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CommFault_PLC1].Value" Converter="{StaticResource StrokeConverter}" ValidatesOnExceptions="True" />
+      </Line.Stroke>
+    </Line>
+    <nacs1:Picture SymbolName="orfer_cpu" Stretch="True" FontSize="15" Name="m_Picture_PLC" Width="50" Height="50" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="130" Canvas.Top="534" nacsd:EditorProperties.IsLocked="False" />
+    <Polyline Points="0,85.0802740619907 0.222535960706752,49.033241000717 2.92253525140868,37.086273309073 5.84507050281731,30.5416368427659 7.65492595069232,26.1785458652279 13.9450683749232,19.2044713007119 18.8999950349135,14.1972231758602 28.3647764334809,8.72618195507595 36.4352065433655,5.04160312257508 45.4253482582983,2.43061953559704 57.5605611853464,0.678512145037184 72.7661481749085,0 826.583477897376,0.203989937863636 830.00001140006,541.023281214712 0.247574596277294,544.000005179025 0,85.0802740619907" Fill="#FF186785" Stroke="{x:Null}" Name="m_PolyLine_Main" RenderTransform="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="191" Canvas.Top="55" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsLocked="True" />
+    <nac:Label AutoSize="False" Text="X2 Base 10 v2" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="5,0,5,1" Name="m_Text_Top" Width="446" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="250" Canvas.Top="10">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Group Name="m_Group_btnCounters" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="12" Canvas.Left="12" Canvas.Top="296">
+      <Line X1="0" Y1="44" X2="166" Y2="44" StrokeThickness="2" Name="m_Line4" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8">
+        <Line.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="StrokeConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="5" End="5">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </Line.Resources>
+        <Line.Stroke>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource StrokeConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </Line.Stroke>
+      </Line>
+      <nac:Button CornerRadius="0,0,0,0" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,2,0,2" Text="Counters" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="41,2,0,2" RequiresTransparency="True" SymbolName="orfer_production" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderThickness="0,0,0,2" FontFamily="Calibri" FontSize="20" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_Button_Counters_5" Width="166" Height="44" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="6" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac2:StyleMarkupExtension DefaultCF}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="5" End="5">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="5" End="5">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="5" End="5">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.Background>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF106280</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Background>
+        <nac:Button.Foreground>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Foreground>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval End="4">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_production" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="5" End="5">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_production_color" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="6" End="99">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_production" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nac:Button.SymbolIntervalMapper>
+        <nac:Button.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Button.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Menu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nacc1:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle4" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="0" Canvas.Top="0" />
+    </nac:Group>
+    <nac:Button ImageMargin="0,0,0,0" Text="" RequiresTransparency="True" SymbolName="orfer_help" SymbolTransparent="False" Transparent="Hidden" FontSize="11" Name="m_Button_Legends" Width="38" Height="38" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="76" Canvas.Top="472" nacsd:EditorProperties.IsLocked="False" Style="{nac2:StyleMarkupExtension DefaultCF}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Show Screen">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="Show" ObjectName="Popup_legends" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                <nata:ActionMethodInfo.ActionParameterInfo>
+                  <nai:ActionParameterInfoList>
+                    <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                  </nai:ActionParameterInfoList>
+                </nata:ActionMethodInfo.ActionParameterInfo>
+              </nata:ActionMethodInfo>
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Group Name="m_Group_Drivemode" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="10" Canvas.Left="12" Canvas.Top="188">
+      <Line X1="0" Y1="44" X2="166" Y2="44" StrokeThickness="2" Name="m_Line5" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8">
+        <Line.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="StrokeConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="2" End="2">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </Line.Resources>
+        <Line.Stroke>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource StrokeConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </Line.Stroke>
+      </Line>
+      <nac:Button CornerRadius="0,0,0,0" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,2,0,2" Text="Drive mode" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="41,2,0,2" RequiresTransparency="True" SymbolName="orfer_product_register" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderThickness="0,0,0,2" FontFamily="Calibri" FontSize="20" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_ButtonDriveMode_2" Width="166" Height="44" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="7" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac2:StyleMarkupExtension DefaultCF}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="2" End="2">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="2" End="2">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="2" End="2">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.Background>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF106280</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Background>
+        <nac:Button.Foreground>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Foreground>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval End="1">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_product_register" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="2" End="2">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_product_register_color" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="3" End="99">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_product_register" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nac:Button.SymbolIntervalMapper>
+        <nac:Button.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Button.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Menu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nacc1:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle5" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="0" Canvas.Top="0" />
+    </nac:Group>
+    <nac:Group Name="m_Group_btnRecope" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="9" Canvas.Left="12" Canvas.Top="134">
+      <Line X1="0" Y1="44" X2="166" Y2="44" StrokeThickness="2" Name="m_Line6" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8">
+        <Line.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="StrokeConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="1" End="1">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </Line.Resources>
+        <Line.Stroke>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource StrokeConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </Line.Stroke>
+      </Line>
+      <nac:Button CornerRadius="0,0,0,0" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,2,0,2" Text="Recipes" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="41,2,0,2" RequiresTransparency="True" SymbolName="orfer_product_register" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderThickness="0,0,0,2" FontFamily="Calibri" FontSize="20" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_ButtonReipe_1" Width="166" Height="44" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="6" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac2:StyleMarkupExtension DefaultCF}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="1" End="1">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="1" End="1">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="16, 98, 128" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="1" End="1">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF0D4E66</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.Background>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF106280</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Background>
+        <nac:Button.Foreground>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_MainMenu_Btn_Anim].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Foreground>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.SymbolIntervalMapper>
+          <nacd2:SymbolIntervalMapper>
+            <nacd2:SymbolIntervalMapper.Intervals>
+              <nacd2:SymbolIntervalList>
+                <nacd2:SymbolInterval>
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_product_register" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="1" End="1">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_product_register_color" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+                <nacd2:SymbolInterval Start="2" End="99">
+                  <nacd2:SymbolInterval.Value>
+                    <nac1:MultiSymbolItem SymbolName="orfer_product_register" Transparent="False" />
+                  </nacd2:SymbolInterval.Value>
+                </nacd2:SymbolInterval>
+              </nacd2:SymbolIntervalList>
+            </nacd2:SymbolIntervalMapper.Intervals>
+          </nacd2:SymbolIntervalMapper>
+        </nac:Button.SymbolIntervalMapper>
+        <nac:Button.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Button.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="Button_Menu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nacc1:Rectangle Fill="#FF106280" Stroke="#FF0D4E66" StrokeThickness="0" Name="m_Rectangle6" Width="166" Height="44" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="0" Canvas.Top="0" />
+    </nac:Group>
+    <nac:DigitalClock DisplayFormat="Date" ShowSeconds="False" ShowDayOfWeek="False" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Bold" Name="m_DigitalClock1" Width="100" MinWidth="71.1566666666667" Height="19" MinHeight="17.09" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="712" Canvas.Top="8" nacsd:EditorProperties.IsLocked="False" />
+    <nac:DigitalClock DisplayFormat="Time" ShowSeconds="True" ShowDayOfWeek="False" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontWeight="Bold" Name="m_DigitalClock2" Width="100" MinWidth="64.06" Height="17.09" MinHeight="17.09" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="712" Canvas.Top="26" nacsd:EditorProperties.IsLocked="False" />
+    <nact:TouchComboBoxHost AlternateBackground="#FF106280" AlternateForeground="#FFFFFFFF" SelectedBackground="#FF106280" SelectedForeground="{x:Null}" SeparatorColor="#FF267593" IsSeparatorVisible="True" ScrollBarWidth="20" ItemHeight="30" AutoSizeItemHeight="False" ArrowBoxWidth="30" TouchScrollSensitivity="8" Foreground="#FFFFFFFF" Background="#FF106280" BorderBrush="{x:Null}" FontSize="11" Width="54" Height="38" IndicatorMargin="0,0,0,0" RequiresTransparency="False" ForceTransparency="False" FontFamily="Calibri" Name="m_TouchComboBox_Language" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="840" Canvas.Top="12" nacsd:EditorProperties.IsLocked="False" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac2:StyleMarkupExtension ThirdPartyControlContentHostStyle}">
+      <nact:TouchComboBoxHost.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nact:TouchComboBoxHost.Resources>
+      <nact:TouchComboBoxHost.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Language_Current].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Int32>0</s:Int32>
+          </Binding.FallbackValue>
+        </Binding>
+      </nact:TouchComboBoxHost.Value>
+      <nact:TouchComboBoxHost.IntervalMapper>
+        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
+          <nacd1:StringIntervalMapper.Intervals>
+            <nacd1:StringIntervalList>
+              <nacd1:StringInterval Start="1" End="1" Value="FI" />
+              <nacd1:StringInterval Start="2" End="2" Value="EN" />
+              <nacd1:StringInterval Start="3" End="3" Value="SE" />
+              <nacd1:StringInterval Start="4" End="4" Value="DE" />
+              <nacd1:StringInterval Start="5" End="5" Value="RU" />
+            </nacd1:StringIntervalList>
+          </nacd1:StringIntervalMapper.Intervals>
+        </nacd1:StringIntervalMapper>
+      </nact:TouchComboBoxHost.IntervalMapper>
+    </nact:TouchComboBoxHost>
+    <nac:Group Name="m_Group_Login_btn" Width="110" Height="44" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="7" Canvas.Left="906" Canvas.Top="8" nacsd:EditorProperties.IsLocked="False">
+      <nacc1:Rectangle RadiusX="0" RadiusY="0" Fill="#FFE9C5CB" Stroke="{x:Null}" Name="m_Rectangle7" Width="110" Height="39" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="77" Canvas.Left="0" Canvas.Top="1" />
+      <nac:Button ButtonAppearance="Rounded" CornerRadius="10,10,10,10" ImageStretch="True" Text="" LockAspectRatio="True" RequiresTransparency="True" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FFE9C5CB" Foreground="#FF106280" FontFamily="Calibri" FontSize="11" FontWeight="Bold" Name="m_Button_Users" Width="107" Height="44" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="78" Canvas.Left="0" Canvas.Top="0" nacsd:EditorProperties.IsLocked="False" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac2:StyleMarkupExtension DefaultCF}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="TextValueConverter" />
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagCurrentUser].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Double>0</s:Double>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.Value>
+        <nac:Button.TextValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource TextValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Int32>0</s:Int32>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.TextValue>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nac:Button.TextIntervalMapper>
+          <nacd1:StringIntervalMapper DefaultValue="">
+            <nacd1:StringIntervalMapper.Intervals>
+              <nacd1:StringIntervalList>
+                <nacd1:StringInterval Value="Log in" />
+                <nacd1:StringInterval Start="1" End="1" Value="Operator" />
+                <nacd1:StringInterval Start="2" End="2" Value="Supervisor" />
+                <nacd1:StringInterval Start="3" End="3" Value="Administrator" />
+              </nacd1:StringIntervalList>
+            </nacd1:StringIntervalMapper.Intervals>
+          </nacd1:StringIntervalMapper>
+        </nac:Button.TextIntervalMapper>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Show Screen">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="Show" ObjectName="Popup_Login" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                  <nata:ActionMethodInfo.ActionParameterInfo>
+                    <nai:ActionParameterInfoList>
+                      <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                    </nai:ActionParameterInfoList>
+                  </nata:ActionMethodInfo.ActionParameterInfo>
+                </nata:ActionMethodInfo>
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+    </nac:Group>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

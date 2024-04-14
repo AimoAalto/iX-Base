@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Diagnostics_Pan1_Scr1.Man210001" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_2" />
+        <Item Target="Diagnostics_Pan1_Scr1.Man210001.Rectangle5" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_2" />
+        <Item Target="Diagnostics_Pan1_Scr1.Man220001" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_2" />
+        <Item Target="Diagnostics_Pan1_Scr1.Man220001.Rectangle2" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_2" />
+        <Item Target="Diagnostics_Pan1_Scr1.Man470001" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_2" />
+        <Item Target="Diagnostics_Pan1_Scr1.Man470001.Rectangle21" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_2" />
+        <Item Target="Diagnostics_Pan1_Scr1.Man120101" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_6" />
+        <Item Target="Diagnostics_Pan1_Scr1.Man120101.Rectangle9" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_4" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>74</ObjectsCount>
+          <ScreenName>Diagnostics_Pan1_Scr1</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="10301">
+          <ScreenName>Diagnostics_Pan1_Scr1</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Diagnostics_Pan1_Scr1.Man210001.Picture5" Source="orfer_arrowrotatet" Width="32" Height="32" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Diagnostics_Pan1_Scr1.Man220001.Picture3" Source="orfer_arrowright" Width="31" Height="32" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Diagnostics_Pan1_Scr1.Man470001.Picture20" Source="orfer_arrowright" Width="31" Height="32" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Diagnostics_Pan1_Scr1.Man120101.Picture14" Source="stopper.1" Width="40" Height="40" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

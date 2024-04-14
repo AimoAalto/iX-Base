@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Overview_Pan1_Scr1.Picture_Rob1Alarm" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Alarm_Alarm_Robot1" />
+        <Item Target="Overview_Pan1_Scr1.Picture_Rob1Alarm" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Alarm_Alarm_Robot1" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.Line1_PLC_ResetCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackResets" Event="Click" Action="Reset Tag" Param="" />
+        <Item Target="Overview_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_TrackResets" />
+        <Item Target="Overview_Pan1_Scr1.Group_Reset_btn.Rectangle6" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_TrackResets" />
+        <Item Target="Overview_Pan1_Scr1.PolyLine_area1" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.ButtonArea1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="Overview_Pan1_Scr1.GroupPick.Rob1_otto2" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_nostopaikka" />
+        <Item Target="Overview_Pan1_Scr1.GroupPick.Rob1_otto2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_nostopaikka" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupPick.Group_PickPerm_2_btn.Button1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PickPerm_2" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="Overview_Pan1_Scr1.GroupPick.Group_PickPerm_2_btn.Button1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_Permissions_PickPerm_2" />
+        <Item Target="Overview_Pan1_Scr1.GroupPick.Group_PickPerm_2_btn.MultiPicture2" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_PickPerm_2" />
+        <Item Target="Overview_Pan1_Scr1.GroupPick.Group_PickPerm_2_btn.MultiPicture2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_DB_ToPLC_Permissions_PickPerm_2" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StartProd1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_ToHMI_Line_1_CommBits_ProdStartOK" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StopProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StopProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StopProd1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_ToHMI_Line_1_CommBits_ProdStartOK" />
+        <Item Target="Overview_Pan1_Scr1.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
+        <Item Target="Overview_Pan1_Scr1.Group10.SymbolViewbox3" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_lavapaikka" />
+        <Item Target="Overview_Pan1_Scr1.Group10.SymbolViewbox3" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_lavapaikka" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group10.Group11.Button4" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_1" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="Overview_Pan1_Scr1.Group10.Group11.Button4" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_1" />
+        <Item Target="Overview_Pan1_Scr1.Group10.Group11.MultiPicture5" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_PlacePerm_1" />
+        <Item Target="Overview_Pan1_Scr1.Group10.Group11.MultiPicture5" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_1" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.ButtonArea1" TargetProperty="Actions" Source="Overview_Pan1_Scr2" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StartProd1" TargetProperty="Actions" Source="Popup_StartProduction" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StopProd1" TargetProperty="Actions" Source="Popup_Stop_Production" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>88</ObjectsCount>
+          <ScreenName>Overview_Pan1_Scr1</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="10001">
+          <ScreenName>Overview_Pan1_Scr1</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Overview_Pan1_Scr1.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Overview_Pan1_Scr1.Script.cs" Source="Tags.HMI_Overview_TrackSelected" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.Line1_PLC_ResetCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackResets" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.ButtonArea1" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Btn_Anim" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupPick.Group_PickPerm_2_btn.Button1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PickPerm_2" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StopProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StopProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group10.Group11.Button4" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_1" Event="Click" Action="Toggle Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Picture_Rob1Alarm" Source="orfer_alarm_icon" Width="44" Height="44" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group_Reset_btn.Button_Reset" Source="orfer_reset" Width="14" Height="14" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Pic_EStop10" Source="orfer_estop_white" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group_LC6.Pic_LC6" Source="orfer_lightcurtain_white" Width="20" Height="20" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.PictureMainArea" Source="layout_main" Width="330" Height="322" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.GroupPick.Group_PickPerm_2_btn.Button1" Source="orfer_permission_selectedoff" Width="28" Height="28" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.GroupPick.Group_PickPerm_2_btn.Button1" Source="orfer_permission_selectedoff" Width="28" Height="28" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.GroupPick.Group_PickPerm_2_btn.MultiPicture2" Source="orfer_permission_upward_off" Width="28" Height="28" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.GroupPick.Group_PickPerm_2_btn.MultiPicture2" Source="orfer_permission_upward_off" Width="28" Height="28" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.GroupPick.Group_PickPerm_2_btn.MultiPicture2" Source="orfer_permission_upward_on" Width="28" Height="28" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StartProd1" Source="testi_3" Width="24" Height="24" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StopProd1" Source="testi_3" Width="24" Height="24" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Picture4" Source="orfer_dooropen_white" Width="30" Height="30" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group10.Group11.Button4" Source="orfer_permission_selectedoff" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group10.Group11.Button4" Source="orfer_permission_selectedoff" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group10.Group11.MultiPicture5" Source="orfer_permission_down_off" Width="27" Height="27" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group10.Group11.MultiPicture5" Source="orfer_permission_down_off" Width="27" Height="27" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Overview_Pan1_Scr1.Group10.Group11.MultiPicture5" Source="orfer_permission_down_on" Width="27" Height="27" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

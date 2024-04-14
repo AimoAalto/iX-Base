@@ -1,0 +1,928 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.87.0'?>
+<nacs:ScreenWindow Topmost="False" Title="Settings_Pan1_Scr1" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1280, 800" ScreenID="10701" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1280" Height="800" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" x:Class="Neo.ApplicationFramework.Generated.Settings_Pan1_Scr1">
+  <nacs:ScreenWindow.TemplateScreen>
+    <nacs1:TemplateScreen Name="Template_Settings" RenderMode="Background" />
+  </nacs:ScreenWindow.TemplateScreen>
+  <nai:ActionProperties.Actions>
+    <nai:ActionList />
+  </nai:ActionProperties.Actions>
+  <nai:ScriptProperties.ScriptEvents>
+    <nai:ScriptEventList>
+      <nacxs:EventHandlerInfo EventName="Opened" MethodName="Settings_HMI_Opened" />
+    </nai:ScriptEventList>
+  </nai:ScriptProperties.ScriptEvents>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+    <nac:Label AutoSize="False" Text="Configuration" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text10" Width="216.191944378125" Height="35.2966666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="27" Canvas.Left="823.333333333333" Canvas.Top="157.04730070751">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:AnalogNumericFX AutoStretchFont="False" Suffix=" MB" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric11" Width="140.583144061051" Height="37.3333333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="24" KeyboardNavigation.TabNavigation="None" Canvas.Left="487.767975704607" Canvas.Top="295.373942863867">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagStorageMemory].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.BorderBrush>
+        <SolidColorBrush Color="#FF7F9DB9" Opacity="0" />
+      </nac:AnalogNumericFX.BorderBrush>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0" Opacity="0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" Suffix=" MB /" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric10" Width="132.782041279527" Height="37.3333333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="25" KeyboardNavigation.TabNavigation="None" Canvas.Left="358.178332451097" Canvas.Top="295.373942863867">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagUsedStorage].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.BorderBrush>
+        <SolidColorBrush Color="#FF7F9DB9" Opacity="0" />
+      </nac:AnalogNumericFX.BorderBrush>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0" Opacity="0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" Suffix=" MB" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric9" Width="140.583144061051" Height="37.3333333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="22" KeyboardNavigation.TabNavigation="None" Canvas.Left="487.986725704607" Canvas.Top="259.030668974174">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" ExpressionName="kbmb_conv" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagPhysicalRAM].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.BorderBrush>
+        <SolidColorBrush Color="#FF7F9DB9" Opacity="0" />
+      </nac:AnalogNumericFX.BorderBrush>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0" Opacity="0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" Suffix=" MB /" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric8" Width="132.782041279527" Height="37.3333333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="23" KeyboardNavigation.TabNavigation="None" Canvas.Left="358.178332451097" Canvas.Top="259.030668974174">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" ExpressionName="kbmb_conv" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagUsedRAM].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.BorderBrush>
+        <SolidColorBrush Color="#FF7F9DB9" Opacity="0" />
+      </nac:AnalogNumericFX.BorderBrush>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0" Opacity="0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" Prefix="V" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric7" Width="170.21716049355" Height="25" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="21" KeyboardNavigation.TabNavigation="None" Canvas.Left="510.160057504076" Canvas.Top="167.195634040843">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagRuntimeVersion].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.BorderBrush>
+        <SolidColorBrush Color="#FF7F9DB9" Opacity="0" />
+      </nac:AnalogNumericFX.BorderBrush>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0" Opacity="0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:Label Text="STORAGE" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text9" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="20" Canvas.Left="267.218669335625" Canvas.Top="301.275609530534">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Text="RAM" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text8" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="19" Canvas.Left="267.218669335625" Canvas.Top="264.932335640842">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+      <nac:Label.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nac:Label.RenderTransform>
+    </nac:Label>
+    <nac:Label Text="CPU" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text5" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="268.05006275099" Canvas.Top="226.571553876135">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nacc1:LinearMeter MajorTickCount="11" MinorTickCount="1" Background="#FF267593" BorderBrush="{x:Null}" Foreground="#FFFFFFFF" FontSize="14" Width="350.597466541471" Height="30.289865242742" Transparent="Hidden" ScaleColor="#FF07536B" IndicatorMargin="14.645,32.09,14.645,-1.800134757258" RequiresTransparency="False" ForceTransparency="False" FontFamily="Calibri" Name="m_LinearMeter1" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="329.779751456155" Canvas.Top="221.333333333333" Style="{nac1:StyleMarkupExtension Classic_Compact}">
+      <nacc1:LinearMeter.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="IndicatorColorConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval End="74">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="75" End="100">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="237, 28, 36" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nacc1:LinearMeter.Resources>
+      <nacc1:LinearMeter.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagCPULoad].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>30</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:LinearMeter.Value>
+      <nacc1:LinearMeter.IndicatorColor>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagCPULoad].Value" Converter="{StaticResource IndicatorColorConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:LinearMeter.IndicatorColor>
+      <nacc1:LinearMeter.RenderTransform>
+        <TransformGroup>
+          <TransformGroup.Children>
+            <TransformCollection>
+              <ScaleTransform ScaleX="1" ScaleY="1" />
+              <RotateTransform Angle="0" />
+            </TransformCollection>
+          </TransformGroup.Children>
+        </TransformGroup>
+      </nacc1:LinearMeter.RenderTransform>
+    </nacc1:LinearMeter>
+    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle4" Width="490.1444994997" Height="219.595313536784" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="214.116514139388" Canvas.Top="152.038991708155" nacsd:EditorProperties.IsLocked="False">
+      <nacc1:Rectangle.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="0" />
+      </nacc1:Rectangle.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nacc1:Rectangle>
+    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle5" Width="433.355756973229" Height="354.720395216533" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="790.612184726632" Canvas.Top="152.038991708155">
+      <nacc1:Rectangle.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Raised" Width="0" />
+      </nacc1:Rectangle.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nacc1:Rectangle>
+    <nac:Label AutoSize="False" Text="HMI SETTINGS" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="6,0,6,1" Name="m_Text1" Width="274.654363974565" Height="35.2966666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="35" Canvas.Left="230" Canvas.Top="100">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label AutoSize="False" Text="System" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text" Width="216.191944378125" Height="35.2966666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="36" Canvas.Left="240" Canvas.Top="162.04730070751">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle" Width="433.355756973229" Height="124.720395216533" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="37" Canvas.Left="790.612184726632" Canvas.Top="520.038991708155">
+      <nacc1:Rectangle.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Raised" Width="0" />
+      </nacc1:Rectangle.BevelEffectInfo>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nacc1:Rectangle>
+    <nac:Label AutoSize="False" Text="Start &amp; stop production" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text11" Width="361.191944378125" Height="35.2966666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="38" Canvas.Left="823" Canvas.Top="525">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Group Name="m_Group_DateTime_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="41" Canvas.Left="826.252612900336" Canvas.Top="201.623198576075">
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle6" Width="156" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="2.08072043299705" Canvas.Top="1.99999999999997" />
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Date &amp; Time" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_time_date" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_DateTime" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="6" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Supervisors" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Set Date and Time">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="ShowChangeDateTimeDialog" ObjectName="GetService&lt;Neo.ApplicationFramework.Interfaces.IDateTimeEditService&gt;()" EventName="Click" ReferenceType="Service" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_BuDB_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="42" Canvas.Left="826.252612900336" Canvas.Top="259.957521617217">
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle7" Width="156" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="2.08072043299705" Canvas.Top="2">
+        <nacc1:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc1:Rectangle.RenderTransform>
+      </nacc1:Rectangle>
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Backup DB.." MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_backup" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_BuDB" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="3" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Supervisors" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Back Up Databases">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="BackupDatabases" ObjectName="GetService&lt;Neo.ApplicationFramework.Interfaces.Storage.IDatabaseBackupService&gt;()" EventName="Click" ReferenceType="Service" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                  <nata:ActionMethodInfo.ActionParameterInfo>
+                    <nai:ActionParameterInfoList>
+                      <nata:ActionParameterInfo Position="0" ParameterName="mainDatabase" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Boolean>True</s:Boolean>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                      <nata:ActionParameterInfo Position="1" ParameterName="auditTrail" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Boolean>False</s:Boolean>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                      <nata:ActionParameterInfo Position="2" ParameterName="nonVolatileDatabase" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Boolean>False</s:Boolean>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                      <nata:ActionParameterInfo Position="3" Value="UsbOrBrowse" ParameterName="target" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                    </nai:ActionParameterInfoList>
+                  </nata:ActionMethodInfo.ActionParameterInfo>
+                </nata:ActionMethodInfo>
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_PanelLight_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="43" Canvas.Left="826.252612900336" Canvas.Top="318.291844658359">
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Panel backlight" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_brightness" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_PanelLight" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="15" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Show Backlight Settings">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="ShowBacklightSettings" ObjectName="GetService&lt;Neo.ApplicationFramework.Interfaces.IBacklightService&gt;()" EventName="Click" ReferenceType="Service" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle8" Width="156" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="2.08072043299705" Canvas.Top="2">
+        <nacc1:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc1:Rectangle.RenderTransform>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:Group Name="m_Group_ExpRecipe_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="44" Canvas.Left="826.252612900336" Canvas.Top="376.626167699501">
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle9" Width="156" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="30" Canvas.Left="2.08072043299705" Canvas.Top="2">
+        <nacc1:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc1:Rectangle.RenderTransform>
+      </nacc1:Rectangle>
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Export &#xD;&#xA;Recipe" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_recipe_upload" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_ExpRecipe" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="31" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Supervisors" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Export Recipe">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="ExportRecipe" ObjectName="Tuotetiedot" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                  <nata:ActionMethodInfo.ActionParameterInfo>
+                    <nai:ActionParameterInfoList>
+                      <nata:ActionParameterInfo Position="0" Value="Database" ParameterName="databaseName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="1" Value="Browse" ParameterName="csvFileDirectory" ParameterTypeString="Neo.ApplicationFramework.Interfaces.FileDirectory, InterfacesCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" TagName="" />
+                      <nata:ActionParameterInfo Position="2" Value="Tuotetiedot" ParameterName="fileName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="3" Value="" ParameterName="csvPath" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="4" ParameterName="delimitedWithComma" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Boolean>True</s:Boolean>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                    </nai:ActionParameterInfoList>
+                  </nata:ActionMethodInfo.ActionParameterInfo>
+                </nata:ActionMethodInfo>
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_ChangeScreen_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="45" Canvas.Left="826.252612900336" Canvas.Top="434.960490740642">
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Change screen" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_changeview" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_ChangeScreen" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="30" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Show Screen">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="Show" ObjectName="ScreenSelection" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.20.2296.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                  <nata:ActionMethodInfo.ActionParameterInfo>
+                    <nai:ActionParameterInfoList>
+                      <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                    </nai:ActionParameterInfoList>
+                  </nata:ActionMethodInfo.ActionParameterInfo>
+                </nata:ActionMethodInfo>
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle10" Width="156" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="29" Canvas.Left="2.08072043299705" Canvas.Top="2">
+        <nacc1:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc1:Rectangle.RenderTransform>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:Group Name="m_Group_Printer_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="46" Canvas.Left="1038.15814995479" Canvas.Top="201.623198576075">
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Printer settings" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_printter" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Printer" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="4" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Supervisors" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Printer Configuration">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="ShowPrinterConfiguration" ObjectName="Printer1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle11" Width="156" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="1.84185004521009" Canvas.Top="2">
+        <nacc1:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc1:Rectangle.RenderTransform>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:Group Name="m_Group_Network_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="47" Canvas.Left="1038.15814995479" Canvas.Top="259.957521617217">
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle12" Width="156" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="1.84185004521009" Canvas.Top="2">
+        <nacc1:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc1:Rectangle.RenderTransform>
+      </nacc1:Rectangle>
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Network settings" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_settings" SymbolTransparent="True" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Network" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="5" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Run">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="Run" ObjectName="GetService&lt;Neo.ApplicationFramework.Interfaces.IRunService&gt;()" EventName="Click" ReferenceType="Service" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                  <nata:ActionMethodInfo.ActionParameterInfo>
+                    <nai:ActionParameterInfoList>
+                      <nata:ActionParameterInfo Position="0" Value="cmd" ParameterName="filePath" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="1" Value="/k &quot;ncpa.cpl &amp; ipconfig&quot;" ParameterName="arguments" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                    </nai:ActionParameterInfoList>
+                  </nata:ActionMethodInfo.ActionParameterInfo>
+                </nata:ActionMethodInfo>
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_PalletLog_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" Panel.ZIndex="48" Canvas.Left="1038.15814995479" Canvas.Top="318.291844658359" nacb1:BlinkProperties.VisibleDynamicsValue="False">
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle13" Width="156" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="28" Canvas.Left="1.84185004521009" Canvas.Top="2">
+        <nacc1:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc1:Rectangle.RenderTransform>
+      </nacc1:Rectangle>
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Export &#xD;&#xA;Pallet Log" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="placeholder" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_ExpPalletLog" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="29" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Supervisors" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Database Export">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="Export" ObjectName="GetService&lt;Neo.ApplicationFramework.Interfaces.Storage.IDatabaseImportExportService&gt;()" EventName="Click" ReferenceType="Service" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                  <nata:ActionMethodInfo.ActionParameterInfo>
+                    <nai:ActionParameterInfoList>
+                      <nata:ActionParameterInfo Position="0" Value="Database" ParameterName="databaseName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="1" Value="Pallet_Log" ParameterName="tableName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="2" Value="FilePath" ParameterName="csvFileDirectory" ParameterTypeString="Neo.ApplicationFramework.Interfaces.FileDirectory, InterfacesCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" TagName="" />
+                      <nata:ActionParameterInfo Position="3" Value="Data Loggers" ParameterName="groupName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="4" Value="Lavaloki_Linja4" ParameterName="fileName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="5" Value="D:\Lavaus\Lavaloki" ParameterName="csvPath" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="6" ParameterName="overwrite" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Boolean>True</s:Boolean>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                      <nata:ActionParameterInfo Position="7" ParameterName="delimitedWithComma" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Boolean>True</s:Boolean>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                      <nata:ActionParameterInfo Position="8" ParameterName="showMilliseconds" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Boolean>False</s:Boolean>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                      <nata:ActionParameterInfo Position="9" ParameterName="overwriteOlderFiles" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Boolean>True</s:Boolean>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                      <nata:ActionParameterInfo Position="10" ParameterName="groupByDate" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Boolean>False</s:Boolean>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                      <nata:ActionParameterInfo Position="11" ParameterName="encodingCodePage" ParameterTypeString="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Int32>65001</s:Int32>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                    </nai:ActionParameterInfoList>
+                  </nata:ActionMethodInfo.ActionParameterInfo>
+                </nata:ActionMethodInfo>
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_ImpRecipe_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="49" Canvas.Left="1038.15814995479" Canvas.Top="376.626167699501">
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Import &#xD;&#xA;Recipe" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_recipe_download" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_ImpRecipe" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="32" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Import Recipe">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="ImportRecipe" ObjectName="Tuotetiedot" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                  <nata:ActionMethodInfo.ActionParameterInfo>
+                    <nai:ActionParameterInfoList>
+                      <nata:ActionParameterInfo Position="0" Value="Database" ParameterName="databaseName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="1" Value="Browse" ParameterName="csvFileDirectory" ParameterTypeString="Neo.ApplicationFramework.Interfaces.FileDirectory, InterfacesCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" TagName="" />
+                      <nata:ActionParameterInfo Position="2" Value="Tuotetiedot" ParameterName="fileName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="3" Value="" ParameterName="csvPath" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                      <nata:ActionParameterInfo Position="4" ParameterName="overwrite" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Boolean>False</s:Boolean>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                      <nata:ActionParameterInfo Position="5" ParameterName="delimitedWithComma" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                        <nata:ActionParameterInfo.Value>
+                          <s:Boolean>True</s:Boolean>
+                        </nata:ActionParameterInfo.Value>
+                      </nata:ActionParameterInfo>
+                    </nai:ActionParameterInfoList>
+                  </nata:ActionMethodInfo.ActionParameterInfo>
+                </nata:ActionMethodInfo>
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle14" Width="156" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="31" Canvas.Left="1.84185004521009" Canvas.Top="2">
+        <nacc1:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc1:Rectangle.RenderTransform>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:Group Name="m_Group_PLC_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="50" Canvas.Left="1038.15814995479" Canvas.Top="434.960490740642">
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="PLC connections" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_cpu" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_PLC_Conn" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="33" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Change Active Controllers">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="SetActiveControllers" ObjectName="Tags" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle15" Width="156" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="32" Canvas.Left="1.84185004521009" Canvas.Top="2">
+        <nacc1:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc1:Rectangle.RenderTransform>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:Group Name="m_Group_Shutdown_btn" Width="140" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="51" Canvas.Left="230" Canvas.Top="405.672189024415">
+      <nac:Button Text="Shutdown HMI" MultiLine="True" RequiresTransparency="True" SymbolTransparent="False" Transparent="Hidden" BorderThickness="0,0,0,0" Background="#FFDE304D" Foreground="#FFFFFFFF" FontSize="14" Name="m_Button_Shutdown" Width="140" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="28" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Close Application">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="Close" ObjectName="GetService&lt;Neo.ApplicationFramework.Interfaces.IProjectService&gt;()" EventName="Click" ReferenceType="Service" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FFDE304D" Stroke="{x:Null}" Name="m_Rectangle3" Width="136" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="27" Canvas.Left="2" Canvas.Top="2">
+        <nacc1:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc1:Rectangle.RenderTransform>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:Group Name="m_Group_ResetStarted1_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="45" Canvas.Left="826.252612900336" Canvas.Top="570.732522649755">
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="Reset&#xD;&#xA;_Started1" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_stop" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="15" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Supervisors" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:MultiAction Name="Multi Action">
+              <nata:MultiAction.Actions>
+                <nai:ActionList>
+                  <nata:Action Name="Reset Tag">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.Line1_PLC_Aloitettu1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Set Tag">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.Line1_PLC_Lopetettu1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Reset Tag">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.Line1_PLC_Aloitus1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Reset Tag">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.Line1_PLC_Lopetus1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                </nai:ActionList>
+              </nata:MultiAction.Actions>
+              <nata:MultiAction.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:MultiAction.ActionMethodInfo>
+            </nata:MultiAction>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle16" Width="156" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="2.08072043299705" Canvas.Top="2">
+        <nacc1:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc1:Rectangle.RenderTransform>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nac:Group Name="m_Group3" Width="231.545547482593" Height="197.201167656329" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" Panel.ZIndex="26" Canvas.Left="805.372098733308" Canvas.Top="172.763418479343" nacb1:BlinkProperties.VisibleDynamicsValue="False" nacsd:EditorProperties.IsHidden="True">
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Panel data" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4.5,0,4.5,1" Name="m_Text7" Width="194.78125" Height="23.7604166666666" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="12.269408472225" Canvas.Top="0">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+        <nac:Label.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Label.RenderTransform>
+      </nac:Label>
+      <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="RT version" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text6" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="13.819613288202" Canvas.Top="157.794137894899">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+        <nac:Label.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Label.RenderTransform>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Background="#FF3E9CAC" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric4" Width="78.125" Height="27.34375" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="14" KeyboardNavigation.TabNavigation="None" Canvas.Left="138.362003529042" Canvas.Top="153.141794144899">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagRuntimeVersion].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Available storage" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text4" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="13.819613288202" Canvas.Top="108.662159405246">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+        <nac:Label.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Label.RenderTransform>
+      </nac:Label>
+      <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Available RAM" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text3" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="13.819613288202" Canvas.Top="71.879715682949">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+        <nac:Label.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Label.RenderTransform>
+      </nac:Label>
+      <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="CPU load" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text2" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="13.819613288202" Canvas.Top="38.71875">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+        <nac:Label.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nac:Label.RenderTransform>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Background="#FF3E9CAC" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric3" Width="78.125" Height="27.34375" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="10" KeyboardNavigation.TabNavigation="None" Canvas.Left="139.399571801032" Canvas.Top="104.009815655246">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagAvailableStorage].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Background="#FF3E9CAC" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric2" Width="78.125" Height="27.34375" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="9" KeyboardNavigation.TabNavigation="None" Canvas.Left="139.399571801032" Canvas.Top="67.227371932949">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagAvailableRAM].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Background="#FF3E9CAC" Foreground="#FFFFFFFF" FontSize="16" Padding="2,2,2,2" Name="m_AnalogNumeric1" Width="78.125" Height="27.34375" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="8" KeyboardNavigation.TabNavigation="None" Canvas.Left="139.399571801032" Canvas.Top="34.06640625">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagCPULoad].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+      </nac:AnalogNumericFX>
+      <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF3E9CAC" Stroke="#00FFFFFF" StrokeThickness="1" Name="m_Rectangle1" Width="225.135982154354" Height="171.971402824624" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="3.56086962679899" Canvas.Top="23.849488251298">
+        <nacc1:Rectangle.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="None" Width="3" />
+        </nacc1:Rectangle.BevelEffectInfo>
+      </nacc1:Rectangle>
+      <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF088298" Stroke="#FF000000" StrokeThickness="1" Name="m_Rectangle2" Width="231.545547482593" Height="195.985969905554" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="0" Canvas.Top="1.21519775077502">
+        <nacc1:Rectangle.BevelEffectInfo>
+          <nacb:BevelEffectInfo Style="Raised" Width="3" />
+        </nacc1:Rectangle.BevelEffectInfo>
+      </nacc1:Rectangle>
+    </nac:Group>
+    <nacc1:Rectangle RadiusX="15" RadiusY="15" Fill="#FF106280" Stroke="#00FFFFFF" StrokeThickness="1" Name="m_shadow" Width="1286.63541666667" Height="668" RenderTransformOrigin="0.5,0.5" Opacity="0.6" Visibility="Visible" Panel.ZIndex="52" Canvas.Left="-6.14583333333363" Canvas.Top="69.0164930555555" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="True">
+      <nacc1:Rectangle.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacc1:Rectangle.Resources>
+      <nacb1:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_Shadow].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb1:BlinkProperties.VisibleDynamicsValue>
+      <nacc1:Rectangle.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="3" />
+      </nacc1:Rectangle.BevelEffectInfo>
+    </nacc1:Rectangle>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

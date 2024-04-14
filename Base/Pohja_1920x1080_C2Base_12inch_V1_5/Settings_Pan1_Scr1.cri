@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_PalletLog_btn.Button_ExpPalletLog" TargetProperty="Actions" Source="Pallet_Log" Event="Click" Action="Database Export" Param="" />
+      </Items>
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items>
+        <Item Target="Settings_Pan1_Scr1.AnalogNumeric9" TargetProperty="Value" Source="kbmb_conv" />
+        <Item Target="Settings_Pan1_Scr1.AnalogNumeric8" TargetProperty="Value" Source="kbmb_conv" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Settings_Pan1_Scr1.AnalogNumeric11" TargetProperty="Value" Source="Tags.SystemTagStorageMemory" />
+        <Item Target="Settings_Pan1_Scr1.AnalogNumeric10" TargetProperty="Value" Source="Tags.SystemTagUsedStorage" />
+        <Item Target="Settings_Pan1_Scr1.AnalogNumeric9" TargetProperty="Value" Source="Tags.SystemTagPhysicalRAM" />
+        <Item Target="Settings_Pan1_Scr1.AnalogNumeric8" TargetProperty="Value" Source="Tags.SystemTagUsedRAM" />
+        <Item Target="Settings_Pan1_Scr1.AnalogNumeric7" TargetProperty="Value" Source="Tags.SystemTagRuntimeVersion" />
+        <Item Target="Settings_Pan1_Scr1.LinearMeter1" TargetProperty="Value" Source="Tags.SystemTagCPULoad" />
+        <Item Target="Settings_Pan1_Scr1.LinearMeter1" TargetProperty="IndicatorColor" Source="Tags.SystemTagCPULoad" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Aloitettu1" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Lopetettu1" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Aloitus1" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Lopetus1" Event="Click" Action="Reset Tag" Param="" />
+        <Item Target="Settings_Pan1_Scr1.Group3.AnalogNumeric4" TargetProperty="Value" Source="Tags.SystemTagRuntimeVersion" />
+        <Item Target="Settings_Pan1_Scr1.Group3.AnalogNumeric3" TargetProperty="Value" Source="Tags.SystemTagAvailableStorage" />
+        <Item Target="Settings_Pan1_Scr1.Group3.AnalogNumeric2" TargetProperty="Value" Source="Tags.SystemTagAvailableRAM" />
+        <Item Target="Settings_Pan1_Scr1.Group3.AnalogNumeric1" TargetProperty="Value" Source="Tags.SystemTagCPULoad" />
+        <Item Target="Settings_Pan1_Scr1.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ExpRecipe_btn.Button_ExpRecipe" TargetProperty="Actions" Source="Tuotetiedot" Event="Click" Action="Export Recipe" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ImpRecipe_btn.Button_ImpRecipe" TargetProperty="Actions" Source="Tuotetiedot" Event="Click" Action="Import Recipe" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ChangeScreen_btn.Button_ChangeScreen" TargetProperty="Actions" Source="ScreenSelection" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>107</ObjectsCount>
+          <ScreenName>Settings_Pan1_Scr1</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="10701">
+          <ScreenName>Settings_Pan1_Scr1</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Aloitettu1" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Lopetettu1" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Aloitus1" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Lopetus1" Event="Click" Action="Reset Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_DateTime_btn.Button_DateTime" Source="orfer_time_date" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_BuDB_btn.Button_BuDB" Source="orfer_backup" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_PanelLight_btn.Button_PanelLight" Source="orfer_brightness" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_ExpRecipe_btn.Button_ExpRecipe" Source="orfer_recipe_upload" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_ChangeScreen_btn.Button_ChangeScreen" Source="orfer_changeview" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_Printer_btn.Button_Printer" Source="orfer_printter" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_Network_btn.Button_Network" Source="orfer_settings" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_PalletLog_btn.Button_ExpPalletLog" Source="placeholder" Width="39" Height="35" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_ImpRecipe_btn.Button_ImpRecipe" Source="orfer_recipe_download" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_PLC_btn.Button_PLC_Conn" Source="orfer_cpu" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Settings_Pan1_Scr1.Group_ResetStarted1_btn.Button" Source="orfer_stop" Width="26" Height="26" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

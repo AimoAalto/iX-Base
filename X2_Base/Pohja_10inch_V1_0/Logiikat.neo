@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?neo version='2.46.49.0'?>
-<NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
-  <Object d1p1:type="Neo.ApplicationFramework.Tools.ScriptModule.ScriptModule, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" IsPublic="False" d1p1:Site.Name="Logiikat" ProjectGuid="1e8da41b-fa5e-4dd7-a403-14a734166c15">
-    <Events>
-      <Event Name="Created" EventHandler="Logiikat_Created" />
-    </Events>
-  </Object>
-</NeoItem>

@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.87.0'?>
+<nacs:ScreenWindow Topmost="False" Title="Template_Production" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1280, 800" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1280" Height="800" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" x:Class="Neo.ApplicationFramework.Generated.Template_Production">
+  <nacs:ScreenWindow.TemplateScreen>
+    <nacs1:TemplateScreen Name="Template_Orfer" RenderMode="Background" />
+  </nacs:ScreenWindow.TemplateScreen>
+  <nai:ScriptProperties.ScriptEvents>
+    <nai:ScriptEventList>
+      <nacxs:EventHandlerInfo EventName="Opened" MethodName="Template_Production_Opened" />
+    </nai:ScriptEventList>
+  </nai:ScriptProperties.ScriptEvents>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
+    <nac:Button CornerRadius="3,3,3,3" Text="&lt;" TextVerticalAlignment="Center" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontWeight="Bold" Name="m_Button_Left" Width="72" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" IsEnabled="True" Panel.ZIndex="1" Canvas.Left="1136.26309856276" Canvas.Top="688" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Set Analog">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Menu_SubMenu_Group_Visibility" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                <nata:ActionMethodInfo.ActionParameterInfo>
+                  <nai:ActionParameterInfoList>
+                    <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                      <nata:ActionParameterInfo.Value>
+                        <s:Int16>1</s:Int16>
+                      </nata:ActionParameterInfo.Value>
+                    </nata:ActionParameterInfo>
+                  </nai:ActionParameterInfoList>
+                </nata:ActionMethodInfo.ActionParameterInfo>
+              </nata:ActionMethodInfo>
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Button CornerRadius="3,30,3,3" Text="&gt;" TextVerticalAlignment="Center" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontWeight="Bold" Name="m_Button_Right" Width="72" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="1205.73203838812" Canvas.Top="688" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Set Analog">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.Menu_SubMenu_Group_Visibility" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                <nata:ActionMethodInfo.ActionParameterInfo>
+                  <nai:ActionParameterInfoList>
+                    <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                      <nata:ActionParameterInfo.Value>
+                        <s:Int16>2</s:Int16>
+                      </nata:ActionParameterInfo.Value>
+                    </nata:ActionParameterInfo>
+                  </nai:ActionParameterInfoList>
+                </nata:ActionMethodInfo.ActionParameterInfo>
+              </nata:ActionMethodInfo>
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Group Name="m_Group_Buttons1" Width="948.159626173266" Height="55" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="3" Canvas.Left="190.884457346924" Canvas.Top="688" nacsd:EditorProperties.IsHidden="False">
+      <nac:Group.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nac:Group.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Group_Visibility].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nac:Button CornerRadius="3,3,3,3" Text="Production 1" TextMargin="0,0,0,0" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu1" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="0" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="1" End="1">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="Production 2" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu2" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="135.026604362212" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="2" End="2">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu4" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="405.079813086634" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="4" End="4">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu3" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="270.053208724423" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="3" End="3">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu5" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="540.106417448846" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="5" End="5">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu6" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="675.133021811057" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="6" End="6">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu7" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="810.159626173266" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="7" End="7">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_Group_Buttons2" Width="948.159626173266" Height="55" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="4" Canvas.Left="191" Canvas.Top="688" nacsd:EditorProperties.IsHidden="True">
+      <nac:Group.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="2" />
+        </ResourceDictionary>
+      </nac:Group.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Group_Visibility].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <nac:Button CornerRadius="3,3,3,3" Text="" TextMargin="0,0,0,0" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu8" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="8" End="8">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu10" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="270.053208724423" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="10" End="10">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu9" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="135.026604362212" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="1" End="1">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:Action Name="Show Screen">
+              <nata:Action.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="Show" ObjectName="Production_Pan1_Scr1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" ObjectPath="" ExplicitAuditTrail="False">
+                  <nata:ActionMethodInfo.ActionParameterInfo>
+                    <nai:ActionParameterInfoList>
+                      <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                    </nai:ActionParameterInfoList>
+                  </nata:ActionMethodInfo.ActionParameterInfo>
+                </nata:ActionMethodInfo>
+              </nata:Action.ActionMethodInfo>
+            </nata:Action>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu11" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="405.079813086634" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="11" End="11">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu12" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="540.106417448846" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="12" End="12">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu13" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="675.133021811057" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="13" End="13">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+      <nac:Button CornerRadius="3,3,3,3" Text="" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu14" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="810.159626173266" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.Resources>
+          <ResourceDictionary>
+            <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
+              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                <nacd2:BrushCFIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalList>
+                      <nacd2:BrushCFInterval Start="14" End="14">
+                        <nacd2:BrushCFInterval.Value>
+                          <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                        </nacd2:BrushCFInterval.Value>
+                      </nacd2:BrushCFInterval>
+                    </nacd2:BrushCFIntervalList>
+                  </nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalMapper.DefaultValue>
+                    <nacgl:BrushCF StartColor="13, 78, 102" EndColor="" FillDirection="None" />
+                  </nacd2:BrushCFIntervalMapper.DefaultValue>
+                </nacd2:BrushCFIntervalMapper>
+              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            </nacd1:BrushDynamicsConverter>
+          </ResourceDictionary>
+        </nac:Button.Resources>
+        <nac:Button.BorderBrush>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Menu_SubMenu_Btn_Anim].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FF707070</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
+        </nac:Button.BorderBrush>
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="btnSubmenu_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+    </nac:Group>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

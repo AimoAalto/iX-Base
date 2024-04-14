@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items>
+        <Item Target="Popup_BitOperation.Ellipse16_0" TargetProperty="Fill" Source="Bit0IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_1" TargetProperty="Fill" Source="Bit1IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_2" TargetProperty="Fill" Source="Bit2IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_3" TargetProperty="Fill" Source="Bit3IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_4" TargetProperty="Fill" Source="Bit4IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_5" TargetProperty="Fill" Source="Bit5IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_6" TargetProperty="Fill" Source="Bit6IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_7" TargetProperty="Fill" Source="Bit7IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_8" TargetProperty="Fill" Source="Bit8IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_9" TargetProperty="Fill" Source="Bit9IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_10" TargetProperty="Fill" Source="Bit10IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_11" TargetProperty="Fill" Source="Bit11IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_12" TargetProperty="Fill" Source="Bit12IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_13" TargetProperty="Fill" Source="Bit13IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_14" TargetProperty="Fill" Source="Bit14IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse16_15" TargetProperty="Fill" Source="Bit15IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_0" TargetProperty="Fill" Source="Int32Bit0IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_1" TargetProperty="Fill" Source="Int32Bit1IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_2" TargetProperty="Fill" Source="Int32Bit2IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_3" TargetProperty="Fill" Source="Int32Bit3IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_4" TargetProperty="Fill" Source="Int32Bit4IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_5" TargetProperty="Fill" Source="Int32Bit5IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_6" TargetProperty="Fill" Source="Int32Bit6IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_7" TargetProperty="Fill" Source="Int32Bit7IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_8" TargetProperty="Fill" Source="Int32Bit8IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_9" TargetProperty="Fill" Source="Int32Bit9IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_10" TargetProperty="Fill" Source="Int32Bit10IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_11" TargetProperty="Fill" Source="Int32Bit11IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_12" TargetProperty="Fill" Source="Int32Bit12IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_13" TargetProperty="Fill" Source="Int32Bit13IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_14" TargetProperty="Fill" Source="Int32Bit14IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_15" TargetProperty="Fill" Source="Int32Bit15IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_16" TargetProperty="Fill" Source="Bit16IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_17" TargetProperty="Fill" Source="Bit17IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_18" TargetProperty="Fill" Source="Bit18IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_19" TargetProperty="Fill" Source="Bit19IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_20" TargetProperty="Fill" Source="Bit20IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_21" TargetProperty="Fill" Source="Bit21IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_22" TargetProperty="Fill" Source="Bit22IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_23" TargetProperty="Fill" Source="Bit23IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_24" TargetProperty="Fill" Source="Bit24IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_25" TargetProperty="Fill" Source="Bit25IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_26" TargetProperty="Fill" Source="Bit26IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_27" TargetProperty="Fill" Source="Bit27IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_28" TargetProperty="Fill" Source="Bit28IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_29" TargetProperty="Fill" Source="Bit29IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_30" TargetProperty="Fill" Source="Bit30IsSet" />
+        <Item Target="Popup_BitOperation.Ellipse32_31" TargetProperty="Fill" Source="Bit31IsSet" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Popup_BitOperation.ANInt116" TargetProperty="Value" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.ANInt16AsBit" TargetProperty="Value" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.ANInt132" TargetProperty="Value" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.ANInt32AsBit" TargetProperty="Value" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse16_0" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_1" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_2" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_3" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_4" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_5" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_6" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_7" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_8" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_9" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_10" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_11" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_12" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_13" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_14" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse16_15" TargetProperty="Fill" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Ellipse32_0" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_1" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_2" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_3" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_4" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_5" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_6" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_7" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_8" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_9" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_10" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_11" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_12" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_13" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_14" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_15" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_16" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_17" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_18" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_19" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_20" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_21" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_22" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_23" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_24" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_25" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_26" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_27" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_28" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_29" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_30" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.Ellipse32_31" TargetProperty="Fill" Source="Tags.INT32" />
+        <Item Target="Popup_BitOperation.ANInt116_Byte0" TargetProperty="Value" Source="Tags.INT16B0" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>60</ObjectsCount>
+          <ScreenName>Popup_BitOperation</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Popup_BitOperation</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Popup_BitOperation.Script.cs" Source="Tags.INT16" />
+        <Item Target="Popup_BitOperation.Script.cs" Source="Tags.INT32" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

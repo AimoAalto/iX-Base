@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.87.0'?>
+<nacs:ScreenWindow Top="77" Left="771" Topmost="False" Title="Popup_SensorInfo" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="Manual" WindowState="Normal" BorderStyle="ThreeDBorder" ModalScreen="False" ScreenSize="230, 237" ScreenPosition="771, 77" ScreenTitle="" TemplateScreen="{x:Null}" PopupScreen="True" StyleName="Rounded" IsCacheable="False" Background="#FF106280" Width="230" Height="237" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Popup_SensorInfo">
+  <nai:ActionProperties.Actions>
+    <nai:ActionList>
+      <nata:Action Name="Reset Tag">
+        <nata:Action.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Overview_Shadow" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+        </nata:Action.ActionMethodInfo>
+      </nata:Action>
+      <nata:Action Name="Set Tag">
+        <nata:Action.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Overview_Shadow" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+        </nata:Action.ActionMethodInfo>
+      </nata:Action>
+    </nai:ActionList>
+  </nai:ActionProperties.Actions>
+  <nai:ScriptProperties.ScriptEvents>
+    <nai:ScriptEventList>
+      <nacxs:EventHandlerInfo EventName="Closing" MethodName="Popup_SensorInfo_Closing" />
+      <nacxs:EventHandlerInfo EventName="Opened" MethodName="Popup_SensorInfo_Opened" />
+    </nai:ScriptEventList>
+  </nai:ScriptProperties.ScriptEvents>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="230" Height="237" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" TextDecorations="{x:Null}" IsReadOnly="True" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="19" FontStyle="Normal" FontWeight="Bold" Padding="2,2,2,2" Name="m_Sensor_Text" Width="189" Height="26" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="4" KeyboardNavigation.TabNavigation="None" Canvas.Left="23" Canvas.Top="8">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_SensorInfo_Tunnus].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.BorderBrush>
+        <SolidColorBrush Color="#FF7F9DB9" Opacity="0" />
+      </nac:AnalogNumericFX.BorderBrush>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0" Opacity="0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Description:" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_HeaderDesc_Text" Width="188" Height="26" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="24" Canvas.Top="64">
+      <nac:Label.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="None" Width="2" />
+      </nac:Label.BevelEffectInfo>
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nacc1:Rectangle RadiusX="10" RadiusY="10" Stroke="#FF000000" StrokeThickness="2" Name="m_Rectangle" Width="189" Height="30" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="23" Canvas.Top="6">
+      <nacc1:Rectangle.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="127, 127, 127" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="Green" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="Green" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Rectangle.Resources>
+      <nacc1:Rectangle.Fill>
+        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="Tila" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF008000</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Rectangle.Fill>
+      <nacc1:Rectangle.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nacc1:Rectangle.BevelEffectInfo>
+    </nacc1:Rectangle>
+    <nac:Group Name="m_Group_Close_btn" Width="112" Height="40" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="10" Canvas.Left="96" Canvas.Top="180">
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle1" Width="108.8" Height="36.8" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="1.2337083333328" Canvas.Top="1.6" />
+      <nac:Button ButtonAppearance="RoundedBottomRight" ImageStretch="True" ImageHorizontalAlignment="Right" ImageMargin="10,5,5,5" Text="Close" MultiLine="True" TextHorizontalAlignment="Center" TextMargin="2,2,47,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="12" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Close" Width="112" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="5" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList>
+            <nata:MultiAction Name="Multi Action">
+              <nata:MultiAction.Actions>
+                <nai:ActionList>
+                  <nata:Action Name="Close Screen">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="Close" ObjectName="" EventName="Click" ReferenceType="This" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="True" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                  <nata:Action Name="Reset Tag">
+                    <nata:Action.ActionMethodInfo>
+                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Overview_Shadow" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                    </nata:Action.ActionMethodInfo>
+                  </nata:Action>
+                </nai:ActionList>
+              </nata:MultiAction.Actions>
+              <nata:MultiAction.ActionMethodInfo>
+                <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+              </nata:MultiAction.ActionMethodInfo>
+            </nata:MultiAction>
+          </nai:ActionList>
+        </nai:ActionProperties.Actions>
+      </nac:Button>
+    </nac:Group>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="12" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3,0,3,1" Name="m_Group_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="24" Canvas.Top="100">
+      <nac:Label.Resources>
+        <ResourceDictionary>
+          <nacd1:MessageLibraryDynamicsConverter x:Key="TextConverter" MessageLibraryGroupName="SensorInfo_Ryhma">
+            <nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+              <nacd2:MessageLibraryGroupResolver />
+            </nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+          </nacd1:MessageLibraryDynamicsConverter>
+        </ResourceDictionary>
+      </nac:Label.Resources>
+      <nac:Label.Text>
+        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="Tunnus" Converter="{StaticResource TextConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>Text</Binding.FallbackValue>
+        </Binding>
+      </nac:Label.Text>
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="12" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3,0,3,1" Name="m_SensorDesc_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="24" Canvas.Top="131">
+      <nac:Label.Resources>
+        <ResourceDictionary>
+          <nacd1:MessageLibraryDynamicsConverter x:Key="TextConverter" MessageLibraryGroupName="SensorInfo_Kuvaus">
+            <nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+              <nacd2:MessageLibraryGroupResolver />
+            </nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+          </nacd1:MessageLibraryDynamicsConverter>
+        </ResourceDictionary>
+      </nac:Label.Resources>
+      <nac:Label.Text>
+        <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nai:IScreenWindow}}" Path="Tunnus" Converter="{StaticResource TextConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>Text</Binding.FallbackValue>
+        </Binding>
+      </nac:Label.Text>
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

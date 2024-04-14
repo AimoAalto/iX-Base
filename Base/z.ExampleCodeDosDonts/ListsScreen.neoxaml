@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.49.0'?>
+<NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
+  <Object d1p1:type="Neo.ApplicationFramework.Tools.Screen.ScreenDesign.Screen, ToolsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="ListsScreen" d1p1:Site.Name="ListsScreen" ProjectGuid="cc54c87e-e98f-425c-9341-13cb12e55a26">
+    <AliasConfiguration>
+      <Object d1p1:type="Neo.ApplicationFramework.Controls.Screen.Alias.AliasConfiguration, ControlsIde, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name="AliasConfiguration1" d1p1:Site.Name="AliasConfiguration1" ProjectGuid="cc54c87e-e98f-425c-9341-13cb12e55a26" />
+    </AliasConfiguration>
+  </Object>
+</NeoItem>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project SchemaVersion="2.46.49.0" ProjectRevision="25">
+  <Guid>cc54c87e-e98f-425c-9341-13cb12e55a26</Guid>
+  <ProjectFiles>
+    <ProjectFile Name="ProjectImages.neo" ModifiedDate="2023-01-25T08:40:41.9438122+02:00" Length="454" />
+    <ProjectFile Name="SntpClientRootComponent.neo" ModifiedDate="2023-01-25T08:40:38.9669299+02:00" Length="515" />
+    <ProjectFile Name="ProjectConfiguration.neo" ModifiedDate="2023-01-25T08:40:39.0269634+02:00" Length="6377" />
+    <ProjectFile Name="Security.neo" ModifiedDate="2023-01-25T08:40:39.0403673+02:00" Length="449" />
+    <ProjectFile Name="Security.xml" ModifiedDate="2023-01-25T08:40:39.0493638+02:00" Length="693" />
+    <ProjectFile Name="Expressions.neo" ModifiedDate="2023-01-25T08:40:39.0693928+02:00" Length="457" />
+    <ProjectFile Name="Tags.neo" ModifiedDate="2023-01-25T09:58:07.8246352+02:00" Length="4921" />
+    <ProjectFile Name="MultipleLanguages.neo" ModifiedDate="2023-01-25T10:00:11.9149019+02:00" Length="18258" />
+    <ProjectFile Name="LicenseRootComponent.neo" ModifiedDate="2023-01-25T09:10:03.5477603+02:00" Length="21027" />
+    <ProjectFile Name="AlarmServer.neo" ModifiedDate="2023-01-25T08:40:39.3713608+02:00" Length="1053" />
+    <ProjectFile Name="MainScreen.neoxaml" ModifiedDate="2023-01-25T10:00:11.9652695+02:00" Length="799" />
+    <ProjectFile Name="MainScreen.Script.cs" ModifiedDate="2023-01-25T10:00:11.9662704+02:00" Length="14075" />
+    <ProjectFile Name="MainScreen.xaml" ModifiedDate="2023-01-25T10:00:12.0402669+02:00" Length="24876" />
+    <ProjectFile Name="ListsScreen.neoxaml" ModifiedDate="2023-01-25T10:07:11.3398126+02:00" Length="819" />
+    <ProjectFile Name="ListsScreen.Script.cs" ModifiedDate="2023-01-25T10:07:11.3408121+02:00" Length="1970" />
+    <ProjectFile Name="ListsScreen.xaml" ModifiedDate="2023-01-25T10:07:11.3718115+02:00" Length="8620" />
+    <ProjectFile Name="Printer1.xml" ModifiedDate="2023-01-25T08:40:39.9105326+02:00" Length="850" />
+    <ProjectFile Name="Controller1.neo" ModifiedDate="2023-01-25T09:09:31.7535189+02:00" Length="834" />
+    <ProjectFile Name="WorkThread.neo" ModifiedDate="2023-01-25T09:10:04.0587609+02:00" Length="487" />
+    <ProjectFile Name="WorkThread.Script.cs" ModifiedDate="2023-01-25T09:10:04.0597653+02:00" Length="2670" />
+  </ProjectFiles>
+</Project>

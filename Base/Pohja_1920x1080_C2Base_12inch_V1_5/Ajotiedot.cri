@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items />
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items />
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.TraceAll" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.S7HMI_ToHMI_Line_21_CommBits_ProdStartOK" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.S7HMI_ToHMI_Line_21_CommBits_ProdEndOK" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_Overview_ProdDetails" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.Line1_PLC_PalletPlaces1" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.Line1_Rivinumero_TK1" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.AppStart_Timer" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_ProductionStarting" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_StartProd_RecipeSelected" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_Success_TextValue" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.S7HMI_ToPLC_Line_21_CommBits_ProdStart" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.S7HMI_ToHMI_Line_21_CommBits_ProdEnd" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.Line1_PLC_Lavapaikka_TK1" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.Line1_PLC_KuvioNro_TK1" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_StopProduction_CloseMe" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.HMI_Overview_TrackSelected" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.S7HMI_Line1_ToHMI_Production_CommBits_ProdStartOK" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.S7HMI_Line2_ToHMI_Production_CommBits_ProdStartOK" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.S7HMI_Line3_ToHMI_Production_CommBits_ProdStartOK" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.S7HMI_Line4_ToHMI_Production_CommBits_ProdStartOK" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.SystemTagCurrentScreenId" />
+        <Item Target="Ajotiedot.Script.cs" Source="Tags.SystemTagNewScreenId" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

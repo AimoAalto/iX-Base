@@ -1,0 +1,1984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.87.0'?>
+<nacs:ScreenWindow Top="128" Left="208" Topmost="False" Title="Popup_BitOperation" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="Manual" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="844, 494" ScreenPosition="208, 128" PopupScreen="True" StyleName="Default" IsCacheable="False" Width="844" Height="494" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" x:Class="Neo.ApplicationFramework.Generated.Popup_BitOperation">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="844" Height="494" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_ANInt116" Width="120" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="3" KeyboardNavigation.TabNavigation="None" Canvas.Left="250" Canvas.Top="70">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Binary" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_ANInt16AsBit" Width="250" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="4" KeyboardNavigation.TabNavigation="None" Canvas.Left="120" Canvas.Top="110">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:Button Text="x2" RequiresTransparency="True" SymbolTransparent="False" FontSize="15" Name="m_Btn_I16x2" Width="100" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="430" Canvas.Top="30" Style="{nac1:StyleMarkupExtension Default}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ScriptProperties.ScriptEvents>
+        <nai:ScriptEventList>
+          <nacxs:EventHandlerInfo EventName="Click" MethodName="Btn_I16x2_Click" />
+        </nai:ScriptEventList>
+      </nai:ScriptProperties.ScriptEvents>
+    </nac:Button>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_ANInt132" Width="190" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="10" KeyboardNavigation.TabNavigation="None" Canvas.Left="180" Canvas.Top="260">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Binary" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_ANInt32AsBit" Width="480" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="11" KeyboardNavigation.TabNavigation="None" Canvas.Left="50" Canvas.Top="300">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:Button Text="x2" RequiresTransparency="True" SymbolTransparent="False" FontSize="15" Name="m_Btn_I32x2" Width="100" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="430" Canvas.Top="220" Style="{nac1:StyleMarkupExtension Default}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ScriptProperties.ScriptEvents>
+        <nai:ScriptEventList>
+          <nacxs:EventHandlerInfo EventName="Click" MethodName="Btn_I32x2_Click" />
+        </nai:ScriptEventList>
+      </nai:ScriptProperties.ScriptEvents>
+    </nac:Button>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_0" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="730" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit0IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_1" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="710" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit1IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_2" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="690" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit2IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_3" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="670" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit3IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_4" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="650" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit4IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_5" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="630" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit5IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_6" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="19" Canvas.Left="610" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit6IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_7" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="20" Canvas.Left="590" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit7IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_8" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="560" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit8IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_9" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="22" Canvas.Left="540" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit9IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_10" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="23" Canvas.Left="520" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit10IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_11" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="24" Canvas.Left="500" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit11IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_12" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="25" Canvas.Left="480" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit12IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_13" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="26" Canvas.Left="460" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit13IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_14" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="27" Canvas.Left="440" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit14IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse16_15" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="28" Canvas.Left="420" Canvas.Top="120">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit15IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_0" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="29" Canvas.Left="730" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit0IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_1" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="30" Canvas.Left="710" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit1IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_2" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="31" Canvas.Left="690" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit2IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_3" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="32" Canvas.Left="670" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit3IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_4" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="33" Canvas.Left="650" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit4IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_5" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="34" Canvas.Left="630" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit5IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_6" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="35" Canvas.Left="610" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit6IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_7" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="36" Canvas.Left="590" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit7IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_8" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="37" Canvas.Left="560" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit8IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_9" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="38" Canvas.Left="540" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit9IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_10" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="39" Canvas.Left="520" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit10IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_11" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="40" Canvas.Left="500" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit11IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_12" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="41" Canvas.Left="480" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit12IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_13" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="42" Canvas.Left="460" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit13IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_14" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="440" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit14IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_15" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="44" Canvas.Left="420" Canvas.Top="360">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Int32Bit15IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_16" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="45" Canvas.Left="720" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit16IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_17" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="46" Canvas.Left="700" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit17IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_18" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="47" Canvas.Left="680" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit18IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_19" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="48" Canvas.Left="660" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit19IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_20" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="49" Canvas.Left="640" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit20IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_21" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="50" Canvas.Left="620" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit21IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_22" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="51" Canvas.Left="600" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit22IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_23" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="52" Canvas.Left="580" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit23IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_24" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="53" Canvas.Left="550" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit24IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_25" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="54" Canvas.Left="530" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit25IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_26" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="55" Canvas.Left="510" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit26IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_27" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="56" Canvas.Left="490" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit27IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_28" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="57" Canvas.Left="470" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit28IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_29" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="58" Canvas.Left="450" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit29IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_30" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="59" Canvas.Left="430" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit30IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nacc1:Ellipse Stroke="#FF000000" Name="m_Ellipse32_31" Width="16" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="410" Canvas.Top="390">
+      <nacc1:Ellipse.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="FillConverter" ExpressionName="Bit31IsSet">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="255, 242, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="SteelBlue" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nacc1:Ellipse.Resources>
+      <nacc1:Ellipse.Fill>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT32].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF4682B4</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Ellipse.Fill>
+    </nacc1:Ellipse>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_ANInt116_Byte1" Width="40" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="2" KeyboardNavigation.TabNavigation="None" Canvas.Left="270" Canvas.Top="30">
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_ANInt116_Byte0" Width="40" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="1" KeyboardNavigation.TabNavigation="None" Canvas.Left="330" Canvas.Top="30">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.INT16B0].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_ANInt132_Byte0" Width="40" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="6" KeyboardNavigation.TabNavigation="None" Canvas.Left="330" Canvas.Top="220">
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_ANInt132_Byte1" Width="40" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="7" KeyboardNavigation.TabNavigation="None" Canvas.Left="280" Canvas.Top="220">
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_ANInt132_Byte2" Width="40" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="8" KeyboardNavigation.TabNavigation="None" Canvas.Left="230" Canvas.Top="220">
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" Padding="2,2,2,2" Name="m_ANInt132_Byte3" Width="40" Height="30" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="9" KeyboardNavigation.TabNavigation="None" Canvas.Left="180" Canvas.Top="220">
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.87.0'?>
+<NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
+  <Object d1p1:type="Neo.ApplicationFramework.Tools.ScriptModule.ScriptModule, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" IsPublic="False" d1p1:Site.Name="IoT_Transfer" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
+</NeoItem>

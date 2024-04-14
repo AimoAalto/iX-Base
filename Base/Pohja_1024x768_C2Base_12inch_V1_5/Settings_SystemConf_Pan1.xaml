@@ -1,0 +1,1045 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.87.0'?>
+<nacs:ScreenWindow Topmost="False" Title="Settings_SystemConf_Pan1" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1024, 768" ScreenID="10714" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1024" Height="768" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacw="clr-namespace:Neo.ApplicationFramework.Controls.WindowsControls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Behaviors;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacb2="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" x:Class="Neo.ApplicationFramework.Generated.Settings_SystemConf_Pan1">
+  <nacs:ScreenWindow.TemplateScreen>
+    <nacs1:TemplateScreen Name="Template_Settings" RenderMode="Background" />
+  </nacs:ScreenWindow.TemplateScreen>
+  <nai:ScriptProperties.ScriptEvents>
+    <nai:ScriptEventList>
+      <nacxs:EventHandlerInfo EventName="Opened" MethodName="Settings_SystemConf_Pan1_Opened" />
+    </nai:ScriptEventList>
+  </nai:ScriptProperties.ScriptEvents>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1024" Height="768" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="System Configuration" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextTop" Width="699" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="184" Canvas.Top="70">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:TextBox MultiLine="True" WordWrap="False" Text="" UndoLimit="1" Transparent="Visible" MaxLines="2147483647" IsReadOnly="False" AcceptsReturn="True" BorderBrush="#FF8FA4BE" FontSize="8" Name="m_TextBoxSettings" Width="163" Height="470" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="10" Canvas.Left="854" Canvas.Top="134" />
+    <nacw:ComboBox Text="Common Settings" FontSize="14" Name="m_CBSetSelection" Width="186" Height="32" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="166" Canvas.Top="163" nacb:IntervalMapperBindingsBehavior.RebindInRuntime="True">
+      <nacw:ComboBox.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nacw:ComboBox.Resources>
+      <nacw:ComboBox.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ConfGroupSet].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacw:ComboBox.Value>
+      <nacw:ComboBox.IntervalMapper>
+        <nacd1:StringIntervalMapper DefaultValue="{x:Null}">
+          <nacd1:StringIntervalMapper.Intervals>
+            <nacd1:StringIntervalList>
+              <nacd1:StringInterval Start="0" End="0" Value="Common Settings" />
+              <nacd1:StringInterval Start="1" End="1" Value="Robots" />
+              <nacd1:StringInterval Start="2" End="2" Value="New Robot" />
+              <nacd1:StringInterval Start="3" End="3" Value="Pallet patterns" />
+              <nacd1:StringInterval Start="4" End="4" Value="Options" />
+            </nacd1:StringIntervalList>
+          </nacd1:StringIntervalMapper.Intervals>
+        </nacd1:StringIntervalMapper>
+      </nacw:ComboBox.IntervalMapper>
+      <nai:ScriptProperties.ScriptEvents>
+        <nai:ScriptEventList>
+          <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="CBSetSelection_SelectionChanged" />
+        </nai:ScriptEventList>
+      </nai:ScriptProperties.ScriptEvents>
+    </nacw:ComboBox>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Tahoma" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderThickness="0,0,0,0" Foreground="#FF939393" FontSize="9" Padding="2,2,2,2" Name="m_ANDebug" Width="40" Height="16" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Focusable="False" Panel.ZIndex="11" KeyboardNavigation.TabNavigation="None" Canvas.Left="160" Canvas.Top="598" nac:EnabledProperties.EnabledDynamicsValue="True">
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="Sunken" Width="0" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.BorderBrush>
+        <SolidColorBrush Color="#FF7F9DB9" Opacity="0" />
+      </nac:AnalogNumericFX.BorderBrush>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0" Opacity="0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" Offset="0" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:Group Name="m_GroupSaveBtn" Width="128" Height="40" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="9" Canvas.Left="720" Canvas.Top="566" nacsd:EditorProperties.IsHidden="False">
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle6" Width="124.8" Height="36.8" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="1.75154055023195" Canvas.Top="1.6" />
+      <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="Save" TextMargin="45,2,2,2" RequiresTransparency="True" SymbolName="orfer_save" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnSave" Width="128" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="44" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnSave_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_GroupReadBtn" Width="128" Height="40" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="8" Canvas.Left="720" Canvas.Top="522" nacsd:EditorProperties.IsHidden="False">
+      <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle" Width="124.8" Height="36.8" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="1.75154055023195" Canvas.Top="1.6" />
+      <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="Read" TextMargin="45,2,2,2" RequiresTransparency="True" SymbolName="orfer_save" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnRead" Width="128" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="44" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+        <nac:Button.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Button.TextDecorations>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnRead_Click" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nac:Button>
+    </nac:Group>
+    <nac:Group Name="m_GroupOptions" Width="573.76" Height="142.9" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="7" Canvas.Left="176" Canvas.Top="224">
+      <nac:Group.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="4" />
+        </ResourceDictionary>
+      </nac:Group.Resources>
+      <nacb2:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ConfGroupSet].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb2:BlinkProperties.VisibleDynamicsValue>
+      <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANSqlServerDB" Width="160" Height="21.8434902800133" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="17" KeyboardNavigation.TabNavigation="None" Canvas.Left="136" Canvas.Top="120">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nacb2:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Me_Debug].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb2:BlinkProperties.VisibleDynamicsValue>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nac:AnalogNumericFX.Background>
+          <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+            <LinearGradientBrush.GradientStops>
+              <GradientStopCollection>
+                <GradientStop Color="#FFFFFFFF" />
+                <GradientStop Color="#FFD4D0C8" Offset="1" />
+              </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </nac:AnalogNumericFX.Background>
+      </nac:AnalogNumericFX>
+      <nac:Label Text="SqlServer DB Name:" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="0" Canvas.Top="120">
+        <nac:Label.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nac:Label.Resources>
+        <nacb2:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Me_Debug].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb2:BlinkProperties.VisibleDynamicsValue>
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANSqlServerInstance" Width="160" Height="21.8434902800133" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="15" KeyboardNavigation.TabNavigation="None" Canvas.Left="136" Canvas.Top="96">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nacb2:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Me_Debug].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb2:BlinkProperties.VisibleDynamicsValue>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nac:AnalogNumericFX.Background>
+          <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+            <LinearGradientBrush.GradientStops>
+              <GradientStopCollection>
+                <GradientStop Color="#FFFFFFFF" />
+                <GradientStop Color="#FFD4D0C8" Offset="1" />
+              </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </nac:AnalogNumericFX.Background>
+      </nac:AnalogNumericFX>
+      <nac:Label Text="SqlServer Instance:" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="0" Canvas.Top="96">
+        <nac:Label.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+          </ResourceDictionary>
+        </nac:Label.Resources>
+        <nacb2:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Me_Debug].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb2:BlinkProperties.VisibleDynamicsValue>
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANSettingsFilename" Width="437.76" Height="21.8434902800133" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="13" KeyboardNavigation.TabNavigation="None" Canvas.Left="136" Canvas.Top="32">
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nac:AnalogNumericFX.Background>
+          <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+            <LinearGradientBrush.GradientStops>
+              <GradientStopCollection>
+                <GradientStop Color="#FFFFFFFF" />
+                <GradientStop Color="#FFD4D0C8" Offset="1" />
+              </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </nac:AnalogNumericFX.Background>
+      </nac:AnalogNumericFX>
+      <nac:Label Text="Settings filename:" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_TextFSettingsileName" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="32">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacw:CheckBox Text="Use ONLY nonvolatile.db (if not set Use settings.json file also)" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_CB_UseNonVolatileDB" Width="405.908313687642" Height="17.9" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="0" Canvas.Top="0" Content="Use ONLY nonvolatile.db (if not set Use settings.json file also)">
+        <nacw:CheckBox.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="IsCheckedConverter" />
+          </ResourceDictionary>
+        </nacw:CheckBox.Resources>
+        <nacw:CheckBox.IsChecked>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Conf_UseOnlyNVBD].Value" Converter="{StaticResource IsCheckedConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>False</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacw:CheckBox.IsChecked>
+      </nacw:CheckBox>
+    </nac:Group>
+    <nac:Group Name="m_GroupNewRobotSet" Width="368" Height="38" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="5" Canvas.Left="157" Canvas.Top="208" nacsd:EditorProperties.IsHidden="True">
+      <nac:Group.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="2" />
+        </ResourceDictionary>
+      </nac:Group.Resources>
+      <nacb2:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ConfGroupSet].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb2:BlinkProperties.VisibleDynamicsValue>
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Add or Remove robot" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextAddNewRobot" Width="144" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="0" Canvas.Top="6.33333333333333">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="16" Padding="2,2,2,2" Name="m_ANNewRobotNo" Width="80" Height="23.75" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="9" KeyboardNavigation.TabNavigation="None" Canvas.Left="147.2" Canvas.Top="6.33333333333333">
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nac:AnalogNumericFX.Background>
+          <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+            <LinearGradientBrush.GradientStops>
+              <GradientStopCollection>
+                <GradientStop Color="#FFFFFFFF" />
+                <GradientStop Color="#FFD4D0C8" Offset="1" />
+              </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </nac:AnalogNumericFX.Background>
+      </nac:AnalogNumericFX>
+      <nac:Group Name="m_GroupRobotDelete" Width="38.4" Height="38" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="11" Canvas.Left="329.6" Canvas.Top="0">
+        <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action minus" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnRobotDelete" Width="38.4" Height="38" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="22" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+          <nac:Button.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Button.TextDecorations>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
+          <nai:ScriptProperties.ScriptEvents>
+            <nai:ScriptEventList>
+              <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnRobotDelete_Click" />
+            </nai:ScriptEventList>
+          </nai:ScriptProperties.ScriptEvents>
+        </nac:Button>
+        <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle15" Width="37.44" Height="34.96" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="0.525462165069621" Canvas.Top="1.52000000000002" />
+      </nac:Group>
+      <nac:Group Name="m_GroupRobotAdd" Width="38.4" Height="38" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="10" Canvas.Left="275.2" Canvas.Top="0">
+        <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle14" Width="37.44" Height="34.96" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="0.525462165069586" Canvas.Top="1.52" />
+        <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action add" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnRobotAdd" Width="38.4" Height="38" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="44" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+          <nac:Button.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Button.TextDecorations>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
+          <nai:ScriptProperties.ScriptEvents>
+            <nai:ScriptEventList>
+              <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnRobotAdd_Click" />
+            </nai:ScriptEventList>
+          </nai:ScriptProperties.ScriptEvents>
+        </nac:Button>
+      </nac:Group>
+    </nac:Group>
+    <nac:Group Name="m_GroupRobotSet" Width="283" Height="246" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="4" Canvas.Left="157" Canvas.Top="214" nacsd:EditorProperties.IsHidden="True">
+      <nac:Group.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nac:Group.Resources>
+      <nacb2:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ConfGroupSet].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb2:BlinkProperties.VisibleDynamicsValue>
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Robot (number)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextRobotNo" Width="143.898305084746" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="0" Canvas.Top="0">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacw:ComboBox FontSize="11" Name="m_CBSelectedRobot" Width="134.305084745763" Height="23.961038961039" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="147.09604519774" Canvas.Top="0">
+        <nacw:ComboBox.Value>
+          <s:Double>0</s:Double>
+        </nacw:ComboBox.Value>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="CBSelectedRobot_SelectionChanged" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nacw:ComboBox>
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Allowed Infeed tracks" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextRobotInfeedTracks" Width="143.898305084746" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="0" Canvas.Top="35.1428571428571">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacw:ListBox Background="#FF106280" FontSize="11" Name="m_LBAllowedInfeedTracks" Width="135.90395480226" Height="95.8441558441558" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="147.09604519774" Canvas.Top="38.3376623376623">
+        <nacw:ListBox.Value>
+          <s:Double>0</s:Double>
+        </nacw:ListBox.Value>
+      </nacw:ListBox>
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Allowed Pallet places" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextRobotPalletPlaces" Width="143.898305084746" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="146.961038961039">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacw:ListBox Background="#FF106280" FontSize="11" Name="m_LBAllowedPalletPlaces" Width="135.90395480226" Height="95.8441558441558" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="147.09604519774" Canvas.Top="150.155844155844">
+        <nacw:ListBox.Value>
+          <s:Double>0</s:Double>
+        </nacw:ListBox.Value>
+      </nacw:ListBox>
+    </nac:Group>
+    <nac:Group Name="m_GroupCommonSet" Width="608" Height="384" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="3" Canvas.Left="157" Canvas.Top="214" nacsd:EditorProperties.IsHidden="True">
+      <nac:Group.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nac:Group.Resources>
+      <nacb2:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ConfGroupSet].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb2:BlinkProperties.VisibleDynamicsValue>
+      <nac:Group Name="m_GroupWTime" Width="438.4" Height="80" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="9" Canvas.Left="0" Canvas.Top="304">
+        <nac:Group Name="m_GroupWAdd" Width="38.4" Height="38.4" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="18" Canvas.Left="500" Canvas.Top="3.2">
+          <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle4" Width="37.44" Height="35.328" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="0.525462165069586" Canvas.Top="1.536" />
+          <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action add" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnWAdd" Width="38.4" Height="38.4" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="44" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+            <nac:Button.TextDecorations>
+              <TextDecorationCollection />
+            </nac:Button.TextDecorations>
+            <nai:ActionProperties.Actions>
+              <nai:ActionList />
+            </nai:ActionProperties.Actions>
+            <nai:ScriptProperties.ScriptEvents>
+              <nai:ScriptEventList>
+                <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnWAdd_Click" />
+              </nai:ScriptEventList>
+            </nai:ScriptProperties.ScriptEvents>
+          </nac:Button>
+        </nac:Group>
+        <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANWSelIndex" Width="32" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="17" KeyboardNavigation.TabNavigation="None" Canvas.Left="390.4" Canvas.Top="51.2">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANWTime" Width="48" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="16" KeyboardNavigation.TabNavigation="None" Canvas.Left="390.4" Canvas.Top="28.8">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANWName" Width="104" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="15" KeyboardNavigation.TabNavigation="None" Canvas.Left="390.4" Canvas.Top="6.4">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Index" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextWIndex" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="330.4" Canvas.Top="51.2">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Time" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextTime" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="330.4" Canvas.Top="28.8">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Name" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextName" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="330.4" Canvas.Top="6.4">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nacw:ListBox Background="#FF106280" Foreground="#FFFFFFFF" FontSize="11" Name="m_LBWTimes" Width="176" Height="73.3880749984927" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="147.2" Canvas.Top="3.2">
+          <nacw:ListBox.Value>
+            <s:Double>0</s:Double>
+          </nacw:ListBox.Value>
+          <nai:ScriptProperties.ScriptEvents>
+            <nai:ScriptEventList>
+              <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="LBWTimes_SelectionChanged" />
+            </nai:ScriptEventList>
+          </nai:ScriptProperties.ScriptEvents>
+        </nacw:ListBox>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Watchdog times" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextWTimes" Width="144" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="0" Canvas.Top="0">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nac:Group Name="m_GroupWDelete" Width="38.4" Height="38.4" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="19" Canvas.Left="500" Canvas.Top="41.6">
+          <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle3" Width="37.44" Height="35.328" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="0.525462165069586" Canvas.Top="1.536" />
+          <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action minus" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnWDelete" Width="38.4" Height="38.4" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="43" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+            <nac:Button.TextDecorations>
+              <TextDecorationCollection />
+            </nac:Button.TextDecorations>
+            <nai:ActionProperties.Actions>
+              <nai:ActionList />
+            </nai:ActionProperties.Actions>
+            <nai:ScriptProperties.ScriptEvents>
+              <nai:ScriptEventList>
+                <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnWDelete_Click" />
+              </nai:ScriptEventList>
+            </nai:ScriptProperties.ScriptEvents>
+          </nac:Button>
+        </nac:Group>
+      </nac:Group>
+      <nac:Group Name="m_GroupPalletTypes" Width="478.4" Height="80" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="7" Canvas.Left="0" Canvas.Top="217.6">
+        <nac:Group Name="m_GroupPTDelete" Width="38.4" Height="38.4" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="23" Canvas.Left="440" Canvas.Top="41.6">
+          <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action minus" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnPTDelete" Width="38.4" Height="38.4" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="22" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+            <nac:Button.TextDecorations>
+              <TextDecorationCollection />
+            </nac:Button.TextDecorations>
+            <nai:ActionProperties.Actions>
+              <nai:ActionList />
+            </nai:ActionProperties.Actions>
+            <nai:ScriptProperties.ScriptEvents>
+              <nai:ScriptEventList>
+                <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnPTDelete_Click" />
+              </nai:ScriptEventList>
+            </nai:ScriptProperties.ScriptEvents>
+          </nac:Button>
+          <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle2" Width="37.44" Height="35.328" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="0.525462165069621" Canvas.Top="1.53600000000002" />
+        </nac:Group>
+        <nac:Group Name="m_GroupPTAdd" Width="38.4" Height="38.4" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="20" Canvas.Left="440" Canvas.Top="3.2">
+          <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle1" Width="37.44" Height="35.328" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="0.525462165069586" Canvas.Top="1.536" />
+          <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action add" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnPTAdd" Width="38.4" Height="38.4" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="44" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+            <nac:Button.TextDecorations>
+              <TextDecorationCollection />
+            </nac:Button.TextDecorations>
+            <nai:ActionProperties.Actions>
+              <nai:ActionList />
+            </nai:ActionProperties.Actions>
+            <nai:ScriptProperties.ScriptEvents>
+              <nai:ScriptEventList>
+                <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnPTAdd_Click" />
+              </nai:ScriptEventList>
+            </nai:ScriptProperties.ScriptEvents>
+          </nac:Button>
+        </nac:Group>
+        <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANPTSelIndex" Width="32" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="19" KeyboardNavigation.TabNavigation="None" Canvas.Left="348.8" Canvas.Top="51.2">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANPalletName" Width="83.2" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="18" KeyboardNavigation.TabNavigation="None" Canvas.Left="348.8" Canvas.Top="28.8">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANPalletType" Width="48" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="17" KeyboardNavigation.TabNavigation="None" Canvas.Left="348.8" Canvas.Top="6.4">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Index" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextPTIndex" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="290.4" Canvas.Top="51.2">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Name" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextPTName" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="290.4" Canvas.Top="28.8">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Type" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextPTType" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="290.4" Canvas.Top="6.4">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nacw:ListBox Background="#FF106280" Foreground="#FFFFFFFF" FontSize="11" Name="m_LBPalletTypes" Width="136" Height="73.3880749984927" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="147.2" Canvas.Top="3.2">
+          <nacw:ListBox.Value>
+            <s:Double>0</s:Double>
+          </nacw:ListBox.Value>
+          <nai:ScriptProperties.ScriptEvents>
+            <nai:ScriptEventList>
+              <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="LBPalletTypes_SelectionChanged" />
+            </nai:ScriptEventList>
+          </nai:ScriptProperties.ScriptEvents>
+        </nacw:ListBox>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Pallet types" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextPalletTypes" Width="144" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="0">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+      </nac:Group>
+      <nac:Group Name="m_GroupPalletPlaces" Width="478.4" Height="80" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="7" Canvas.Left="0" Canvas.Top="131.2">
+        <nac:Group Name="m_GroupPPDelete" Width="38.4" Height="38.4" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="23" Canvas.Left="440" Canvas.Top="41.6">
+          <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action minus" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnPPDelete" Width="38.4" Height="38.4" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="22" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+            <nac:Button.TextDecorations>
+              <TextDecorationCollection />
+            </nac:Button.TextDecorations>
+            <nai:ActionProperties.Actions>
+              <nai:ActionList />
+            </nai:ActionProperties.Actions>
+            <nai:ScriptProperties.ScriptEvents>
+              <nai:ScriptEventList>
+                <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnPPDelete_Click" />
+              </nai:ScriptEventList>
+            </nai:ScriptProperties.ScriptEvents>
+          </nac:Button>
+          <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle8" Width="37.44" Height="35.328" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="0.525462165069621" Canvas.Top="1.53600000000002" />
+        </nac:Group>
+        <nac:Group Name="m_GroupPPAdd" Width="38.4" Height="38.4" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="20" Canvas.Left="440" Canvas.Top="3.2">
+          <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle9" Width="37.44" Height="35.328" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="0.525462165069586" Canvas.Top="1.536" />
+          <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action add" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnPPAdd" Width="38.4" Height="38.4" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="44" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+            <nac:Button.TextDecorations>
+              <TextDecorationCollection />
+            </nac:Button.TextDecorations>
+            <nai:ActionProperties.Actions>
+              <nai:ActionList />
+            </nai:ActionProperties.Actions>
+            <nai:ScriptProperties.ScriptEvents>
+              <nai:ScriptEventList>
+                <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnPPAdd_Click" />
+              </nai:ScriptEventList>
+            </nai:ScriptProperties.ScriptEvents>
+          </nac:Button>
+        </nac:Group>
+        <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANPPSelIndex" Width="32" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="19" KeyboardNavigation.TabNavigation="None" Canvas.Left="348.8" Canvas.Top="51.2">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Integer" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANPPRobotId" Width="48" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="18" KeyboardNavigation.TabNavigation="None" Canvas.Left="348.8" Canvas.Top="28.8">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANPPId" Width="48" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="17" KeyboardNavigation.TabNavigation="None" Canvas.Left="348.8" Canvas.Top="6.4">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Index" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextPPSelIndex" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="290.4" Canvas.Top="51.2">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Robot Id" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextPPRobotId" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="290.4" Canvas.Top="28.8">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Id" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextPPId" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="290.4" Canvas.Top="6.4">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nacw:ListBox Background="#FF106280" Foreground="#FFFFFFFF" FontSize="11" Name="m_LBPalletPlaces" Width="136" Height="73.3880749984927" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="147.2" Canvas.Top="3.2">
+          <nacw:ListBox.Value>
+            <s:Double>0</s:Double>
+          </nacw:ListBox.Value>
+          <nai:ScriptProperties.ScriptEvents>
+            <nai:ScriptEventList>
+              <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="LBPalletPlaces_SelectionChanged" />
+            </nai:ScriptEventList>
+          </nai:ScriptProperties.ScriptEvents>
+        </nacw:ListBox>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Pallet places" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextPalletPlaces" Width="144" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="0">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+      </nac:Group>
+      <nac:Group Name="m_GroupInfeedTracks" Width="478.4" Height="80" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="6" Canvas.Left="0" Canvas.Top="44.8">
+        <nac:Group Name="m_GroupITDelete" Width="38.4" Height="38.4" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="23" Canvas.Left="440" Canvas.Top="41.6">
+          <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action minus" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnITDelete" Width="38.4" Height="38.4" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="22" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+            <nac:Button.TextDecorations>
+              <TextDecorationCollection />
+            </nac:Button.TextDecorations>
+            <nai:ActionProperties.Actions>
+              <nai:ActionList />
+            </nai:ActionProperties.Actions>
+            <nai:ScriptProperties.ScriptEvents>
+              <nai:ScriptEventList>
+                <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnITDelete_Click" />
+              </nai:ScriptEventList>
+            </nai:ScriptProperties.ScriptEvents>
+          </nac:Button>
+          <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle5" Width="37.44" Height="35.328" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="0.525462165069621" Canvas.Top="1.53600000000002" />
+        </nac:Group>
+        <nac:Group Name="m_GroupITAdd" Width="38.4" Height="38.4" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="20" Canvas.Left="440" Canvas.Top="3.2">
+          <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle7" Width="37.44" Height="35.328" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="0.525462165069586" Canvas.Top="1.536" />
+          <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action add" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnITAdd" Width="38.4" Height="38.4" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="45" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+            <nac:Button.TextDecorations>
+              <TextDecorationCollection />
+            </nac:Button.TextDecorations>
+            <nai:ActionProperties.Actions>
+              <nai:ActionList />
+            </nai:ActionProperties.Actions>
+            <nai:ScriptProperties.ScriptEvents>
+              <nai:ScriptEventList>
+                <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnITAdd_Click" />
+              </nai:ScriptEventList>
+            </nai:ScriptProperties.ScriptEvents>
+          </nac:Button>
+        </nac:Group>
+        <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANITSelIndex" Width="32" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="19" KeyboardNavigation.TabNavigation="None" Canvas.Left="348.8" Canvas.Top="51.2">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Integer" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANITRobotId" Width="48" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="18" KeyboardNavigation.TabNavigation="None" Canvas.Left="348.8" Canvas.Top="28.8">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANITId" Width="48" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="17" KeyboardNavigation.TabNavigation="None" Canvas.Left="348.8" Canvas.Top="6.4">
+          <nac:AnalogNumericFX.BevelEffectInfo>
+            <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+          </nac:AnalogNumericFX.BevelEffectInfo>
+          <nac:AnalogNumericFX.TextDecorations>
+            <TextDecorationCollection />
+          </nac:AnalogNumericFX.TextDecorations>
+          <nac:AnalogNumericFX.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nac:AnalogNumericFX.Background>
+        </nac:AnalogNumericFX>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Index" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextITSelIndex" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="290.4" Canvas.Top="51.2">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Robot Id" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextITRobotId" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="290.4" Canvas.Top="28.8">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Id" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextITId" Width="56" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="290.4" Canvas.Top="6.4">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+        <nacw:ListBox Background="#FF106280" Foreground="#FFFFFFFF" FontSize="11" Name="m_LBInfeedTracks" Width="136" Height="73.3880749984927" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="147.2" Canvas.Top="3.2">
+          <nacw:ListBox.Value>
+            <s:Double>0</s:Double>
+          </nacw:ListBox.Value>
+          <nai:ScriptProperties.ScriptEvents>
+            <nai:ScriptEventList>
+              <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="LBInfeedTracks_SelectionChanged" />
+            </nai:ScriptEventList>
+          </nai:ScriptProperties.ScriptEvents>
+        </nacw:ListBox>
+        <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Infeed tracks" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextInfeedTracks" Width="144" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="0">
+          <nac:Label.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Label.TextDecorations>
+        </nac:Label>
+      </nac:Group>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANNumberOfPLC" Width="32" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="5" KeyboardNavigation.TabNavigation="None" Canvas.Left="576" Canvas.Top="0.125333333333583">
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nac:AnalogNumericFX.Background>
+          <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+            <LinearGradientBrush.GradientStops>
+              <GradientStopCollection>
+                <GradientStop Color="#FFFFFFFF" />
+                <GradientStop Color="#FFD4D0C8" Offset="1" />
+              </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </nac:AnalogNumericFX.Background>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Number of PLC" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextNOfPLC" Width="144" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="428.8" Canvas.Top="0">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANPanelNo" Width="32" Height="20" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="3" KeyboardNavigation.TabNavigation="None" Canvas.Left="147.2" Canvas.Top="0.125333333333583">
+        <nac:AnalogNumericFX.Resources>
+          <ResourceDictionary>
+            <nacc:VariantValueConverter x:Key="ValueConverter" />
+          </ResourceDictionary>
+        </nac:AnalogNumericFX.Resources>
+        <nac:AnalogNumericFX.Value>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Settings_PanelNumber].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>0</Binding.FallbackValue>
+          </Binding>
+        </nac:AnalogNumericFX.Value>
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nac:AnalogNumericFX.Background>
+          <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+            <LinearGradientBrush.GradientStops>
+              <GradientStopCollection>
+                <GradientStop Color="#FFFFFFFF" />
+                <GradientStop Color="#FFD4D0C8" Offset="1" />
+              </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </nac:AnalogNumericFX.Background>
+      </nac:AnalogNumericFX>
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Current panel number" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextCurrPanelNo" Width="144" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="0" Canvas.Top="0">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+    </nac:Group>
+    <nac:Group Name="m_GroupPatternsSet" Width="510" Height="368" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="6" Canvas.Left="182" Canvas.Top="205" nacsd:EditorProperties.IsHidden="True">
+      <nac:Group.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="3" />
+        </ResourceDictionary>
+      </nac:Group.Resources>
+      <nacb2:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ConfGroupSet].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb2:BlinkProperties.VisibleDynamicsValue>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="False" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="16" Padding="2,2,2,2" Name="m_ANNewPatternNo" Width="79.9373040752351" Height="24" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="23" KeyboardNavigation.TabNavigation="None" Canvas.Left="12.7899686520376" Canvas.Top="256">
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nac:AnalogNumericFX.Background>
+          <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+            <LinearGradientBrush.GradientStops>
+              <GradientStopCollection>
+                <GradientStop Color="#FFFFFFFF" />
+                <GradientStop Color="#FFD4D0C8" Offset="1" />
+              </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </nac:AnalogNumericFX.Background>
+      </nac:AnalogNumericFX>
+      <nac:Group Name="m_GroupPatternDelete" Width="38.3699059561129" Height="38.4" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="22" Canvas.Left="166.269592476489" Canvas.Top="249.6">
+        <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action minus" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnPatternDelete" Width="38.3699059561129" Height="38.4" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="22" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+          <nac:Button.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Button.TextDecorations>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
+          <nai:ScriptProperties.ScriptEvents>
+            <nai:ScriptEventList>
+              <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnPatternDelete_Click" />
+            </nai:ScriptEventList>
+          </nai:ScriptProperties.ScriptEvents>
+        </nac:Button>
+        <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle11" Width="37.41065830721" Height="35.328" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="0.525050360865021" Canvas.Top="1.53600000000002" />
+      </nac:Group>
+      <nac:Group Name="m_GroupPatternAdd" Width="38.3699059561129" Height="38.4" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="21" Canvas.Left="111.912225705329" Canvas.Top="249.6">
+        <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle10" Width="37.41065830721" Height="35.328" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="43" Canvas.Left="0.525050360864986" Canvas.Top="1.536" />
+        <nac:Button ButtonAppearance="Default" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="" TextMargin="2,2,2,2" RequiresTransparency="True" SymbolName="action add" SymbolTransparent="False" Transparent="Hidden" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnPatternAdd" Width="38.3699059561129" Height="38.4" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="44" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Disabled" Style="{nac1:StyleMarkupExtension Default}">
+          <nac:Button.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Button.TextDecorations>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList />
+          </nai:ActionProperties.Actions>
+          <nai:ScriptProperties.ScriptEvents>
+            <nai:ScriptEventList>
+              <nacxs:EventHandlerInfo EventName="Click" MethodName="BtnPatternAdd_Click" />
+            </nai:ScriptEventList>
+          </nai:ScriptProperties.ScriptEvents>
+        </nac:Button>
+      </nac:Group>
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Patterns" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextPatternNos" Width="159.87460815047" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="20" Canvas.Left="0" Canvas.Top="8" nacsd:EditorProperties.IsHidden="False">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="16" Padding="2,2,2,2" Name="m_ANPatternNo" Width="79.9373040752351" Height="24" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="19" KeyboardNavigation.TabNavigation="None" Canvas.Left="374.1065830721" Canvas.Top="8">
+        <nac:AnalogNumericFX.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+        </nac:AnalogNumericFX.BevelEffectInfo>
+        <nac:AnalogNumericFX.TextDecorations>
+          <TextDecorationCollection />
+        </nac:AnalogNumericFX.TextDecorations>
+        <nac:AnalogNumericFX.Background>
+          <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+            <LinearGradientBrush.GradientStops>
+              <GradientStopCollection>
+                <GradientStop Color="#FFFFFFFF" />
+                <GradientStop Color="#FFD4D0C8" Offset="1" />
+              </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </nac:AnalogNumericFX.Background>
+      </nac:AnalogNumericFX>
+      <nacw:ListBox Background="#FF106280" Foreground="#FFFFFFFF" FontSize="9" Name="m_LBPatternNo" Width="135.8934169279" Height="188.8" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="12.7899686520376" Canvas.Top="44.8">
+        <nacw:ListBox.Value>
+          <s:Double>0</s:Double>
+        </nacw:ListBox.Value>
+        <nai:ScriptProperties.ScriptEvents>
+          <nai:ScriptEventList>
+            <nacxs:EventHandlerInfo EventName="SelectionChanged" MethodName="LBPatternNo_SelectionChanged" />
+          </nai:ScriptEventList>
+        </nai:ScriptProperties.ScriptEvents>
+      </nacw:ListBox>
+      <nacw:ListBox Background="#FF106280" Foreground="#FFFFFFFF" FontSize="11" Name="m_LBPatternAllowedPT" Width="135.8934169279" Height="96" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="374.1065830721" Canvas.Top="272">
+        <nacw:ListBox.Value>
+          <s:Double>0</s:Double>
+        </nacw:ListBox.Value>
+      </nacw:ListBox>
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Allowed Pallet types" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextPatternAllowedPT" Width="143.887147335423" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="227.021943573668" Canvas.Top="268.8">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacw:ListBox Background="#FF106280" Foreground="#FFFFFFFF" FontSize="11" Name="m_LBPatternAllowedPP" Width="135.8934169279" Height="96" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="374.1065830721" Canvas.Top="156.8">
+        <nacw:ListBox.Value>
+          <s:Double>0</s:Double>
+        </nacw:ListBox.Value>
+      </nacw:ListBox>
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Allowed Pallet places" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextPatternAllowedPP" Width="143.887147335423" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="227.021943573668" Canvas.Top="153.6">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacw:ListBox Background="#FF106280" Foreground="#FFFFFFFF" FontSize="11" Name="m_LBPatternAllowedIT" Width="135.8934169279" Height="96" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="13" Canvas.Left="374.1065830721" Canvas.Top="44.8">
+        <nacw:ListBox.Value>
+          <s:Double>0</s:Double>
+        </nacw:ListBox.Value>
+      </nacw:ListBox>
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Allowed Infeed tracks" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextPatternAllowedTracks" Width="143.887147335423" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="227.021943573668" Canvas.Top="41.6" nacsd:EditorProperties.IsHidden="False">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Pattern (number)" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextPatternNo" Width="143.887147335423" Height="20.4833333333333" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="227.021943573668" Canvas.Top="8" nacsd:EditorProperties.IsHidden="False">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+    </nac:Group>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

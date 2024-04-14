@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.Group__Paste_btn.Btn_Paste" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_FromHMI_CopyToSelectedDataPlace" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.Group_Copy_btn.Btn_Copy" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_FromHMI_CopyToClipBoard" Event="Click" Action="Set Tag" Param="" />
+        <Item Target="Popup_FullPalletData.Group_ClipBoard.AN_CB_PalletID" TargetProperty="Value" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_PalletNum" />
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_DataOK" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataClipBoard_DataOk" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_DataOK" TargetProperty="Value" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataClipBoard_DataOk" />
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_Complete" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_LayerComplete" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_Complete" TargetProperty="Value" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_LayerComplete" />
+        <Item Target="Popup_FullPalletData.Group_ClipBoard.AN_Clipboard_PalletProductPcs" TargetProperty="Value" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_PalletProductsPcs" />
+        <Item Target="Popup_FullPalletData.GroupClearCB.Rectangle6" TargetProperty="Fill" Source="Tags.S7HMI_PalletData_FromHMI_EmptyClipBoard" />
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.GroupClearCB.BtnClearCB" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_FromHMI_EmptyClipBoard" Event="Click" Action="Set Tag" Param="" />
+        <Item Target="Popup_FullPalletData.GroupClearData.Rectangle7" TargetProperty="Fill" Source="Tags.S7HMI_PalletData_FromHMI_EmptySelectedDataPlace" />
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.GroupClearData.BtnClearSelected" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_FromHMI_EmptySelectedDataPlace" Event="Click" Action="Set Tag" Param="" />
+        <Item Target="Popup_FullPalletData.GroupPalletData.MP_PalletComplete" TargetProperty="Value" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataSelected_Data_LayerComplete" />
+        <Item Target="Popup_FullPalletData.GroupPalletData.AN_Data_PalletProductPcs" TargetProperty="Value" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataSelected_Data_PalletProductsPcs" />
+        <Item Target="Popup_FullPalletData.GroupPalletData.MP_DataOK" TargetProperty="Value" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataSelected_DataOk" />
+        <Item Target="Popup_FullPalletData.GroupPalletData.AN_Data_PalletID" TargetProperty="Value" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataSelected_Data_PalletNum" />
+        <Item Target="Popup_FullPalletData.GroupSelection.ANActiveClipboard" TargetProperty="Value" Source="Tags.S7HMI_PalletData_FromHMI_ActiveClipBoard" />
+        <Item Target="Popup_FullPalletData.GroupSelection.ANSelectedPlaceID" TargetProperty="Value" Source="Tags.S7HMI_PalletData_FromHMI_DataSelection" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>35</ObjectsCount>
+          <ScreenName>Popup_FullPalletData</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Popup_FullPalletData</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.Group__Paste_btn.Btn_Paste" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_FromHMI_CopyToSelectedDataPlace" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.Group_Copy_btn.Btn_Copy" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_FromHMI_CopyToClipBoard" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_DataOK" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataClipBoard_DataOk" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_Complete" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_LayerComplete" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.GroupClearCB.BtnClearCB" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_FromHMI_EmptyClipBoard" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_FullPalletData.GroupClearData.BtnClearSelected" TargetProperty="Actions" Source="Tags.S7HMI_PalletData_FromHMI_EmptySelectedDataPlace" Event="Click" Action="Set Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.Group__Paste_btn.Btn_Paste" Source="orfer_arrowright" Width="38" Height="38" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.Group_Copy_btn.Btn_Copy" Source="orfer_arrowleft" Width="38" Height="38" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_DataOK" Source="action cancel1" Width="26" Height="25" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_DataOK" Source="action cancel1" Width="26" Height="25" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_DataOK" Source="action ok1" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_Complete" Source="action cancel1" Width="26" Height="25" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_Complete" Source="action cancel1" Width="26" Height="25" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.Group_ClipBoard.Btn_CB_Complete" Source="action ok1" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.GroupClearCB.BtnClearCB" Source="trash" Width="19" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.GroupClearData.BtnClearSelected" Source="trash" Width="19" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.GroupPalletData.MP_PalletComplete" Source="action cancel1" Width="28" Height="27" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.GroupPalletData.MP_PalletComplete" Source="action cancel1" Width="28" Height="27" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.GroupPalletData.MP_PalletComplete" Source="action ok1" Width="28" Height="28" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.GroupPalletData.MP_DataOK" Source="action cancel1" Width="28" Height="27" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.GroupPalletData.MP_DataOK" Source="action cancel1" Width="28" Height="27" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_FullPalletData.GroupPalletData.MP_DataOK" Source="action ok1" Width="28" Height="28" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Popup_Stop_Production.AnalogNumeric1" TargetProperty="Value" Source="Tags.HMI_Overview_TrackSelected" />
+        <Item Target="Popup_Stop_Production.CloseMe" TargetProperty="Value" Source="Tags.HMI_StopProduction_CloseMe" />
+        <Item Target="Popup_Stop_Production.Group_Stop_btn.StopProd_btn" TargetProperty="Value" Source="Tags.HMI_StopProduction_Lopetusvaihe" />
+        <Item Target="Popup_Stop_Production.Group_Stop_btn.StopProd_btn" TargetProperty="TextValue" Source="Tags.HMI_StopProduction_Lopetusvaihe" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_phases" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_stopped" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_Lopetus" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Closed" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>8</ObjectsCount>
+          <ScreenName>Popup_Stop_Production</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Popup_Stop_Production</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Popup_Stop_Production.Script.cs" Source="Tags.HMI_Overview_TrackSelected" />
+        <Item Target="Popup_Stop_Production.Script.cs" Source="Tags.HMI_StopProduction_CloseMe" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_phases" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_stopped" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_StopProd_Lopetus" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_Stop_Production" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Closed" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Popup_Stop_Production.Group_Close_btn.Button_Close" Source="orfer_cancel" Width="16" Height="16" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Stop_Production.Group_Stop_btn.StopProd_btn" Source="orfer_stop" Width="15" Height="15" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Stop_Production.Group_Stop_btn.StopProd_btn" Source="orfer_stop" Width="15" Height="15" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Stop_Production.Group_Stop_btn.StopProd_btn" Source="orfer_stop" Width="15" Height="15" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_Stop_Production.Group_Stop_btn.StopProd_btn" Source="orfer_ack" Width="14" Height="15" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

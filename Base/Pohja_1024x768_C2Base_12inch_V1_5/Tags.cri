@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_WatchDog_1" Source="S7_PLC_1.DataItem2114" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_R1_ManAuto" Source="S7_PLC_1.DataItem78" />
+        <Item Target="Tags" TargetProperty="Line1_PLC_R2_ManAuto" Source="S7_PLC_1.DataItem79" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_WatchDog_1" Source="S7_PLC_1.DataItem2025" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm_Robot1" Source="S7_PLC_1.DataItem82" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0000" Source="S7_PLC_1.DataItem197" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0020" Source="S7_PLC_1.DataItem198" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0040" Source="S7_PLC_1.DataItem199" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0060" Source="S7_PLC_1.DataItem200" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0080" Source="S7_PLC_1.DataItem201" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0100" Source="S7_PLC_1.DataItem202" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0120" Source="S7_PLC_1.DataItem203" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0140" Source="S7_PLC_1.DataItem204" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0160" Source="S7_PLC_1.DataItem205" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0180" Source="S7_PLC_1.DataItem206" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0200" Source="S7_PLC_1.DataItem207" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0220" Source="S7_PLC_1.DataItem208" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0240" Source="S7_PLC_1.DataItem209" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0260" Source="S7_PLC_1.DataItem210" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm_Robot2" Source="S7_PLC_1.DataItem90" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0280" Source="S7_PLC_1.DataItem211" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0300" Source="S7_PLC_1.DataItem212" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0320" Source="S7_PLC_1.DataItem213" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0340" Source="S7_PLC_1.DataItem214" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0360" Source="S7_PLC_1.DataItem215" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0380" Source="S7_PLC_1.DataItem216" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0400" Source="S7_PLC_1.DataItem217" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0440" Source="S7_PLC_1.DataItem218" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0480" Source="S7_PLC_1.DataItem219" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0500" Source="S7_PLC_1.DataItem220" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0520" Source="S7_PLC_1.DataItem221" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0540" Source="S7_PLC_1.DataItem222" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0560" Source="S7_PLC_1.DataItem223" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0580" Source="S7_PLC_1.DataItem224" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0600" Source="S7_PLC_1.DataItem225" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0620" Source="S7_PLC_1.DataItem226" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0640" Source="S7_PLC_1.DataItem227" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0660" Source="S7_PLC_1.DataItem228" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0680" Source="S7_PLC_1.DataItem229" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0700" Source="S7_PLC_1.DataItem230" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0720" Source="S7_PLC_1.DataItem231" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0740" Source="S7_PLC_1.DataItem232" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0760" Source="S7_PLC_1.DataItem233" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0780" Source="S7_PLC_1.DataItem234" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0800" Source="S7_PLC_1.DataItem235" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" Source="S7_PLC_1.DataItem2017" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_2" Source="S7_PLC_1.DataItem2018" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_3" Source="S7_PLC_1.DataItem2019" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_4" Source="S7_PLC_1.DataItem2020" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_5" Source="S7_PLC_1.DataItem2021" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_6" Source="S7_PLC_1.DataItem2022" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_7" Source="S7_PLC_1.DataItem2023" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_8" Source="S7_PLC_1.DataItem2024" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0420" Source="S7_PLC_1.DataItem1" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm0460" Source="S7_PLC_1.DataItem2" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm1480" Source="S7_PLC_1.DataItem3" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm1500" Source="S7_PLC_1.DataItem4" />
+        <Item Target="Tags" TargetProperty="Alarm_Alarm1780" Source="S7_PLC_1.DataItem5" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_Palletizing_Palletizing_0_DataReq" Source="S7_PLC_1.DataItem107" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_Palletizing_Palletizing_1_DataReq" Source="S7_PLC_1.DataItem108" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_Palletizing_Palletizing_2_DataReq" Source="S7_PLC_1.DataItem109" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_Palletizing_Palletizing_3_DataReq" Source="S7_PLC_1.DataItem110" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_Palletizing_Palletizing_4_DataReq" Source="S7_PLC_1.DataItem111" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_Palletizing_Palletizing_5_DataReq" Source="S7_PLC_1.DataItem112" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_Palletizing_Palletizing_6_DataReq" Source="S7_PLC_1.DataItem113" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_Palletizing_Palletizing_7_DataReq" Source="S7_PLC_1.DataItem114" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_FullPallet_TruckInfeed_PalletNumber" Source="S7_PLC_1.DataItem119" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_FullPallet_TruckInfeed_DataReq" Source="S7_PLC_1.DataItem120" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_FullPallet_Banding_PalletNumber" Source="S7_PLC_1.DataItem121" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_FullPallet_Banding_DataReq" Source="S7_PLC_1.DataItem122" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_FullPallet_Weight_Weight" Source="S7_PLC_1.DataItem123" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_FullPallet_Weight_DataReq" Source="S7_PLC_1.DataItem124" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_FullPallet_Wrapping_PalletNumber" Source="S7_PLC_1.DataItem125" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_FullPallet_Wrapping_DataReq" Source="S7_PLC_1.DataItem126" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_FullPallet_Labeling_PalletNumber" Source="S7_PLC_1.DataItem127" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHmi_FullPallet_Labeling_DataReq" Source="S7_PLC_1.DataItem128" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate240_1_DataAck" Source="S7_PLC_1.DataItem129" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate240_1_Error" Source="S7_PLC_1.DataItem130" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate240_1_Destination" Source="S7_PLC_1.DataItem131" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate240_2_DataAck" Source="S7_PLC_1.DataItem132" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate240_2_Error" Source="S7_PLC_1.DataItem133" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate240_2_Destination" Source="S7_PLC_1.DataItem134" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate260_1_DataAck" Source="S7_PLC_1.DataItem135" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate260_1_Error" Source="S7_PLC_1.DataItem136" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate260_1_Destination" Source="S7_PLC_1.DataItem137" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate260_2_DataAck" Source="S7_PLC_1.DataItem138" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate260_2_Error" Source="S7_PLC_1.DataItem139" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Product_Gate260_2_Destination" Source="S7_PLC_1.DataItem140" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_0_DataAck" Source="S7_PLC_1.DataItem141" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_0_Error" Source="S7_PLC_1.DataItem142" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_0_PalletNumber" Source="S7_PLC_1.DataItem143" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_1_DataAck" Source="S7_PLC_1.DataItem144" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_1_Error" Source="S7_PLC_1.DataItem145" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_1_PalletNumber" Source="S7_PLC_1.DataItem146" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_2_DataAck" Source="S7_PLC_1.DataItem147" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_2_Error" Source="S7_PLC_1.DataItem148" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_2_PalletNumber" Source="S7_PLC_1.DataItem149" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_3_DataAck" Source="S7_PLC_1.DataItem150" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_3_Error" Source="S7_PLC_1.DataItem151" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_3_PalletNumber" Source="S7_PLC_1.DataItem152" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_4_DataAck" Source="S7_PLC_1.DataItem153" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_4_Error" Source="S7_PLC_1.DataItem154" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_4_PalletNumber" Source="S7_PLC_1.DataItem155" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_5_DataAck" Source="S7_PLC_1.DataItem156" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_5_Error" Source="S7_PLC_1.DataItem157" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_5_PalletNumber" Source="S7_PLC_1.DataItem158" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_6_DataAck" Source="S7_PLC_1.DataItem159" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_6_Error" Source="S7_PLC_1.DataItem160" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_6_PalletNumber" Source="S7_PLC_1.DataItem161" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_7_DataAck" Source="S7_PLC_1.DataItem162" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_7_Error" Source="S7_PLC_1.DataItem163" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_7_PalletNumber" Source="S7_PLC_1.DataItem164" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_8_DataAck" Source="S7_PLC_1.DataItem165" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_8_Error" Source="S7_PLC_1.DataItem166" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_Palletizing_Palletizing_8_PalletNumber" Source="S7_PLC_1.DataItem167" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_TruckInfeed_DataAck" Source="S7_PLC_1.DataItem177" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_TruckInfeed_Error" Source="S7_PLC_1.DataItem178" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Banding_DataAck" Source="S7_PLC_1.DataItem179" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Banding_Error" Source="S7_PLC_1.DataItem180" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Banding_Banding" Source="S7_PLC_1.DataItem181" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Banding_Orientation" Source="S7_PLC_1.DataItem182" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Banding_LongReel" Source="S7_PLC_1.DataItem183" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Weight_DataAck" Source="S7_PLC_1.DataItem184" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Weight_Error" Source="S7_PLC_1.DataItem185" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Wrapping_DataAck" Source="S7_PLC_1.DataItem186" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Wrapping_Error" Source="S7_PLC_1.DataItem187" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Wrapping_Wrapping" Source="S7_PLC_1.DataItem188" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Wrapping_Orientation" Source="S7_PLC_1.DataItem189" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Wrapping_LongReel" Source="S7_PLC_1.DataItem190" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Labeling_DataAck" Source="S7_PLC_1.DataItem191" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPlc_FullPallet_Labeling_Error" Source="S7_PLC_1.DataItem192" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Temp" Source="S7_PLC_1.DataItem6" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_1_PressureOk" Source="S7_PLC_1.DataItem7" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_1_AirPressureValue" Source="S7_PLC_1.DataItem8" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_1_CollisionSensor_0" Source="S7_PLC_1.DataItem9" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_1_CollisionSensor_1" Source="S7_PLC_1.DataItem10" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_1_CollisionSensor_2" Source="S7_PLC_1.DataItem11" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_1_CollisionSensor_3" Source="S7_PLC_1.DataItem12" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_1_CollisionSensor_4" Source="S7_PLC_1.DataItem13" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_2_PressureOk" Source="S7_PLC_1.DataItem14" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_2_AirPressureValue" Source="S7_PLC_1.DataItem15" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_2_CollisionSensor_0" Source="S7_PLC_1.DataItem16" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_2_CollisionSensor_1" Source="S7_PLC_1.DataItem17" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_2_CollisionSensor_2" Source="S7_PLC_1.DataItem18" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_2_CollisionSensor_3" Source="S7_PLC_1.DataItem19" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_RobotStatus_2_CollisionSensor_4" Source="S7_PLC_1.DataItem20" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_TransferCart_Position" Source="S7_PLC_1.DataItem21" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_TransferCart_PositionSensors_1" Source="S7_PLC_1.DataItem22" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_TransferCart_PositionSensors_2" Source="S7_PLC_1.DataItem23" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_TransferCart_PositionSensors_3" Source="S7_PLC_1.DataItem24" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_TransferCart_PositionSensors_4" Source="S7_PLC_1.DataItem25" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_TransferCart_PalletSensors_1" Source="S7_PLC_1.DataItem26" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_TransferCart_PalletSensors_2" Source="S7_PLC_1.DataItem27" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_TransferCart_PalletSensors_3" Source="S7_PLC_1.DataItem28" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_TransferCart_PalletSensors_4" Source="S7_PLC_1.DataItem29" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_TransferCart_PalletSensors_5" Source="S7_PLC_1.DataItem30" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_TransferCart_PalletSensors_6" Source="S7_PLC_1.DataItem31" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_ManualCtrl_1" Source="S7_PLC_1.DataItem2026" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_ManualCtrl_2" Source="S7_PLC_1.DataItem2027" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_ManualCtrl_3" Source="S7_PLC_1.DataItem2028" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_ManualCtrl_4" Source="S7_PLC_1.DataItem2029" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_ManualCtrl_5" Source="S7_PLC_1.DataItem2030" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_ManualCtrl_6" Source="S7_PLC_1.DataItem2031" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_ManualCtrl_7" Source="S7_PLC_1.DataItem2032" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_ManualCtrl_8" Source="S7_PLC_1.DataItem2033" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_AutoAreaCMD_Service_1" Source="S7_PLC_1.DataItem40" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_AutoAreaCMD_SemiAuto" Source="S7_PLC_1.DataItem39" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_CartonPickPerm_1" Source="S7_PLC_1.DataItem2082" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_CartonPickPerm_2" Source="S7_PLC_1.DataItem2083" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_CartonPickPerm_3" Source="S7_PLC_1.DataItem2084" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_CartonPickPerm_4" Source="S7_PLC_1.DataItem2085" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Button_1" Source="S7_PLC_1.DataItem41" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" Source="S7_PLC_1.DataItem2115" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_2" Source="S7_PLC_1.DataItem2116" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_3" Source="S7_PLC_1.DataItem2117" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_4" Source="S7_PLC_1.DataItem2118" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_5" Source="S7_PLC_1.DataItem2119" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_6" Source="S7_PLC_1.DataItem2120" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_7" Source="S7_PLC_1.DataItem2121" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_8" Source="S7_PLC_1.DataItem2122" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_AutoAreaST_RobAuto_1" Source="S7_PLC_1.DataItem2131" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ResetFB_ResetCode_1" Source="S7_PLC_1.DataItem2147" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ResetFB_ResetCode_2" Source="S7_PLC_1.DataItem2148" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ResetFB_ResetCode_3" Source="S7_PLC_1.DataItem2149" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ResetFB_ResetCode_4" Source="S7_PLC_1.DataItem2150" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ResetFB_ResetCode_5" Source="S7_PLC_1.DataItem2151" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ResetFB_ResetCode_6" Source="S7_PLC_1.DataItem2152" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ResetFB_ResetCode_7" Source="S7_PLC_1.DataItem2153" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ResetFB_ResetCode_8" Source="S7_PLC_1.DataItem2154" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ResetFB_ResetButton" Source="S7_PLC_1.DataItem51" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PickPerm_1" Source="S7_PLC_1.DataItem2179" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PickPerm_2" Source="S7_PLC_1.DataItem2180" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PickPerm_3" Source="S7_PLC_1.DataItem2181" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PickPerm_4" Source="S7_PLC_1.DataItem2182" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PlacePerm_1" Source="S7_PLC_1.DataItem2211" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PlacePerm_2" Source="S7_PLC_1.DataItem2212" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PlacePerm_3" Source="S7_PLC_1.DataItem2213" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PlacePerm_4" Source="S7_PLC_1.DataItem2214" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PlacePerm_5" Source="S7_PLC_1.DataItem2215" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PlacePerm_6" Source="S7_PLC_1.DataItem2216" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PlacePerm_7" Source="S7_PLC_1.DataItem2217" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_PlacePerm_8" Source="S7_PLC_1.DataItem2218" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_InfeedPerm_01" Source="S7_PLC_1.DataItem2227" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_OutFeedPerm_1_" Source="S7_PLC_1.DataItem2243" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_CartonPickPerm_1" Source="S7_PLC_1.DataItem2259" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_CartonPickPerm_2" Source="S7_PLC_1.DataItem2260" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_CartonPickPerm_3" Source="S7_PLC_1.DataItem2261" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_CartonPickPerm_4" Source="S7_PLC_1.DataItem2262" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_StepPerm_1" Source="S7_PLC_1.DataItem2291" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ButtonFB_1" Source="S7_PLC_1.DataItem2307" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ButtonFB_2" Source="S7_PLC_1.DataItem2308" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ButtonFB_3" Source="S7_PLC_1.DataItem2309" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ButtonFB_4" Source="S7_PLC_1.DataItem2310" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ButtonFB_6" Source="S7_PLC_1.DataItem2312" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ButtonFB_7" Source="S7_PLC_1.DataItem2313" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ButtonFB_8" Source="S7_PLC_1.DataItem2314" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_FromHMI_DataSelection" Source="S7_PLC_1.DataItem1491" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_FromHMI_ActiveClipBoard" Source="S7_PLC_1.DataItem1492" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_FromHMI_CopyToSelectedDataPlace" Source="S7_PLC_1.DataItem1508" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_FromHMI_CopyToClipBoard" Source="S7_PLC_1.DataItem1509" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataClipBoard_DataOk" Source="S7_PLC_1.DataItem1510" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_LayerComplete" Source="S7_PLC_1.DataItem1511" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataSelected_Data_PalletNum" Source="S7_PLC_1.DataItem1512" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_FromHMI_EmptyClipBoard" Source="S7_PLC_1.DataItem1513" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_FromHMI_EmptySelectedDataPlace" Source="S7_PLC_1.DataItem1514" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_PalletNum" Source="S7_PLC_1.DataItem1515" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_PalletProductsPcs" Source="S7_PLC_1.DataItem1516" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataSelected_Data_PalletProductsPcs" Source="S7_PLC_1.DataItem1532" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataSelected_Data_LayerComplete" Source="S7_PLC_1.DataItem1533" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataSelected_DataOk" Source="S7_PLC_1.DataItem1534" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataSelected_Data_PalletHeight" Source="S7_PLC_1.DataItem1388" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataSelected_Data_MotherRoll" Source="S7_PLC_1.DataItem1389" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataSelected_Data_PalletLoadtype" Source="S7_PLC_1.DataItem1390" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataSelected_Data_Source" Source="S7_PLC_1.DataItem1391" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataSelected_Data_Destination" Source="S7_PLC_1.DataItem1392" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_PalletHeight" Source="S7_PLC_1.DataItem1393" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_MotherRoll" Source="S7_PLC_1.DataItem1394" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_PalletLoadtype" Source="S7_PLC_1.DataItem1395" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_Source" Source="S7_PLC_1.DataItem1396" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_CommonDataClipBoard_Data_Destination" Source="S7_PLC_1.DataItem1412" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_RobPalletizing_0" Source="S7_PLC_1.DataItem1413" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_RobPalletizing_1" Source="S7_PLC_1.DataItem1414" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_RobPalletizing_2" Source="S7_PLC_1.DataItem1415" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_RobPalletizing_3" Source="S7_PLC_1.DataItem1416" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_RobPalletizing_4" Source="S7_PLC_1.DataItem1417" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_RobPalletizing_5" Source="S7_PLC_1.DataItem1418" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_RobPalletizing_6" Source="S7_PLC_1.DataItem1419" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_RobPalletizing_7" Source="S7_PLC_1.DataItem1420" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_RobPalletizing_8" Source="S7_PLC_1.DataItem1436" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_TransferCar_0" Source="S7_PLC_1.DataItem1460" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_TransferCar_1" Source="S7_PLC_1.DataItem1461" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_TransferCar_2" Source="S7_PLC_1.DataItem1462" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_PalletOutfeed_0" Source="S7_PLC_1.DataItem1463" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_PalletOutfeed_1" Source="S7_PLC_1.DataItem1464" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_PalletOutfeed_2" Source="S7_PLC_1.DataItem1465" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_PalletOutfeed_3" Source="S7_PLC_1.DataItem1466" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_PalletOutfeed_4" Source="S7_PLC_1.DataItem1467" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_PalletOutfeed_5" Source="S7_PLC_1.DataItem1468" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_PalletOutfeed_6" Source="S7_PLC_1.DataItem1484" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_PalletOutfeed_7" Source="S7_PLC_1.DataItem1485" />
+        <Item Target="Tags" TargetProperty="S7HMI_PalletData_ToHMI_PalletDataOk_PalletOutfeed_8" Source="S7_PLC_1.DataItem1486" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_OFFSET1_0" Source="S7_PLC_1.DataItem1726" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_OFFSET1_1" Source="S7_PLC_1.DataItem1727" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_OFFSET1_2" Source="S7_PLC_1.DataItem1728" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_InfeedPerm" Source="S7_PLC_1.DataItem45" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_OutfeedPerm" Source="S7_PLC_1.DataItem46" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PickPerm_1" Source="S7_PLC_1.DataItem1761" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PickPerm_2" Source="S7_PLC_1.DataItem1772" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PickPerm_3" Source="S7_PLC_1.DataItem1783" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PickPerm_4" Source="S7_PLC_1.DataItem1787" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PickPerm_5" Source="S7_PLC_1.DataItem1788" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PickPerm_6" Source="S7_PLC_1.DataItem1789" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PickPerm_7" Source="S7_PLC_1.DataItem1790" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PickPerm_8" Source="S7_PLC_1.DataItem1791" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PlacePerm_1" Source="S7_PLC_1.DataItem1793" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PlacePerm_2" Source="S7_PLC_1.DataItem1801" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PlacePerm_3" Source="S7_PLC_1.DataItem1802" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PlacePerm_4" Source="S7_PLC_1.DataItem1803" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PlacePerm_5" Source="S7_PLC_1.DataItem1804" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PlacePerm_6" Source="S7_PLC_1.DataItem1805" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PlacePerm_7" Source="S7_PLC_1.DataItem1806" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_PlacePerm_8" Source="S7_PLC_1.DataItem1807" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_StepPerm" Source="S7_PLC_1.DataItem47" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_PickPlaceReset" Source="S7_PLC_1.DataItem50" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Reset_ResetCode_1" Source="S7_PLC_1.DataItem1857" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Reset_ResetCode_2" Source="S7_PLC_1.DataItem1865" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Reset_ResetCode_3" Source="S7_PLC_1.DataItem1866" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Reset_ResetCode_4" Source="S7_PLC_1.DataItem1867" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Reset_ResetCode_5" Source="S7_PLC_1.DataItem1868" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Reset_ResetCode_6" Source="S7_PLC_1.DataItem1869" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Reset_ResetCode_7" Source="S7_PLC_1.DataItem1870" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Reset_ResetCode_8" Source="S7_PLC_1.DataItem1871" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_1_Counters_LastReset" Source="S7_PLC_1.DataItem1873" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_1_Counters_PalletsCum" Source="S7_PLC_1.DataItem1874" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_1_Counters_PalletsTrip" Source="S7_PLC_1.DataItem1875" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_1_InfeedLine" Source="S7_PLC_1.DataItem1876" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_1_Order" Source="S7_PLC_1.DataItem1877" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_1_ReadyForProdStart" Source="S7_PLC_1.DataItem1878" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_2_Counters_LastReset" Source="S7_PLC_1.DataItem1921" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_2_Counters_PalletsCum" Source="S7_PLC_1.DataItem1922" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_2_Counters_PalletsTrip" Source="S7_PLC_1.DataItem1923" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_2_InfeedLine" Source="S7_PLC_1.DataItem1924" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_2_Order" Source="S7_PLC_1.DataItem1925" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_2_ReadyForProdStart" Source="S7_PLC_1.DataItem1926" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_3_Counters_LastReset" Source="S7_PLC_1.DataItem1933" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_3_Counters_PalletsCum" Source="S7_PLC_1.DataItem1934" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_3_Counters_PalletsTrip" Source="S7_PLC_1.DataItem1935" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_3_InfeedLine" Source="S7_PLC_1.DataItem1936" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_3_Order" Source="S7_PLC_1.DataItem1937" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_3_ReadyForProdStart" Source="S7_PLC_1.DataItem1938" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_4_Counters_LastReset" Source="S7_PLC_1.DataItem1945" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_4_Counters_PalletsCum" Source="S7_PLC_1.DataItem1946" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_4_Counters_PalletsTrip" Source="S7_PLC_1.DataItem1947" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_4_InfeedLine" Source="S7_PLC_1.DataItem1948" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_4_Order" Source="S7_PLC_1.DataItem1949" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_4_ReadyForProdStart" Source="S7_PLC_1.DataItem1950" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_5_Counters_LastReset" Source="S7_PLC_1.DataItem1957" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_5_Counters_PalletsCum" Source="S7_PLC_1.DataItem1958" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_5_Counters_PalletsTrip" Source="S7_PLC_1.DataItem1959" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_5_InfeedLine" Source="S7_PLC_1.DataItem1960" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_5_Order" Source="S7_PLC_1.DataItem1961" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_5_ReadyForProdStart" Source="S7_PLC_1.DataItem1962" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_6_Counters_LastReset" Source="S7_PLC_1.DataItem1969" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_6_Counters_PalletsCum" Source="S7_PLC_1.DataItem1970" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_6_Counters_PalletsTrip" Source="S7_PLC_1.DataItem1971" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_6_InfeedLine" Source="S7_PLC_1.DataItem1972" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_6_Order" Source="S7_PLC_1.DataItem1973" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_6_ReadyForProdStart" Source="S7_PLC_1.DataItem1974" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_7_Counters_LastReset" Source="S7_PLC_1.DataItem1981" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_7_Counters_PalletsCum" Source="S7_PLC_1.DataItem1982" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_7_Counters_PalletsTrip" Source="S7_PLC_1.DataItem1983" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_7_InfeedLine" Source="S7_PLC_1.DataItem1984" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_7_Order" Source="S7_PLC_1.DataItem1985" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_7_ReadyForProdStart" Source="S7_PLC_1.DataItem1986" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_8_Counters_LastReset" Source="S7_PLC_1.DataItem1993" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_8_Counters_PalletsCum" Source="S7_PLC_1.DataItem1994" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_8_Counters_PalletsTrip" Source="S7_PLC_1.DataItem1995" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_8_InfeedLine" Source="S7_PLC_1.DataItem1996" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_8_Order" Source="S7_PLC_1.DataItem1997" />
+        <Item Target="Tags" TargetProperty="S7HMI_PPStates_Place_8_ReadyForProdStart" Source="S7_PLC_1.DataItem1998" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_1_Recipe_PalletType" Source="S7_PLC_1.DataItem886" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_1_Recipe_ProductHeight" Source="S7_PLC_1.DataItem887" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_1_Recipe_ProductLength" Source="S7_PLC_1.DataItem888" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_1_Recipe_ProductNumber" Source="S7_PLC_1.DataItem889" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_1_Recipe_ProductWidth" Source="S7_PLC_1.DataItem890" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_2_Recipe_PalletType" Source="S7_PLC_1.DataItem1161" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_2_Recipe_ProductHeight" Source="S7_PLC_1.DataItem1162" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_2_Recipe_ProductLength" Source="S7_PLC_1.DataItem1163" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_2_Recipe_ProductNumber" Source="S7_PLC_1.DataItem1164" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_2_Recipe_ProductWidth" Source="S7_PLC_1.DataItem1165" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_3_Recipe_PalletType" Source="S7_PLC_1.DataItem1472" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_3_Recipe_ProductHeight" Source="S7_PLC_1.DataItem1473" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_3_Recipe_ProductLength" Source="S7_PLC_1.DataItem1474" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_3_Recipe_ProductNumber" Source="S7_PLC_1.DataItem1475" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_3_Recipe_ProductWidth" Source="S7_PLC_1.DataItem1476" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_4_Recipe_PalletType" Source="S7_PLC_1.DataItem1593" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_4_Recipe_ProductHeight" Source="S7_PLC_1.DataItem1594" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_4_Recipe_ProductLength" Source="S7_PLC_1.DataItem1595" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_4_Recipe_ProductNumber" Source="S7_PLC_1.DataItem1596" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_4_Recipe_ProductWidth" Source="S7_PLC_1.DataItem1597" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_1_CommBits_ProdEndOK" Source="S7_PLC_1.DataItem33" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_1_CommBits_ProdStarting" Source="S7_PLC_1.DataItem36" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_1_CommBits_ProdStartOK" Source="S7_PLC_1.DataItem37" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_1_OrderNo" Source="S7_PLC_1.DataItem49" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_2_CommBits_ProdEndOK" Source="S7_PLC_1.DataItem408" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_2_CommBits_ProdStarting" Source="S7_PLC_1.DataItem411" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_2_CommBits_ProdStartOK" Source="S7_PLC_1.DataItem412" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_2_OrderNo" Source="S7_PLC_1.DataItem424" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_3_CommBits_ProdEndOK" Source="S7_PLC_1.DataItem650" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_3_CommBits_ProdStarting" Source="S7_PLC_1.DataItem653" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_3_CommBits_ProdStartOK" Source="S7_PLC_1.DataItem654" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_3_OrderNo" Source="S7_PLC_1.DataItem666" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_4_CommBits_ProdEndOK" Source="S7_PLC_1.DataItem738" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_4_CommBits_ProdStarting" Source="S7_PLC_1.DataItem741" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_4_CommBits_ProdStartOK" Source="S7_PLC_1.DataItem742" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Line_4_OrderNo" Source="S7_PLC_1.DataItem754" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_1_CommBits_CounterReset_1" Source="S7_PLC_1.DataItem869" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_1_CommBits_ProdEnd" Source="S7_PLC_1.DataItem870" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_1_CommBits_ProdStart" Source="S7_PLC_1.DataItem872" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_1_OrderNo" Source="S7_PLC_1.DataItem885" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_1_TargetPallet" Source="S7_PLC_1.DataItem893" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_2_CommBits_CounterReset" Source="S7_PLC_1.DataItem1144" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_2_CommBits_ProdEnd" Source="S7_PLC_1.DataItem1145" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_2_CommBits_ProdStart" Source="S7_PLC_1.DataItem1147" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_2_OrderNo" Source="S7_PLC_1.DataItem1160" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_2_TargetPallet" Source="S7_PLC_1.DataItem1168" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_3_CommBits_CounterReset" Source="S7_PLC_1.DataItem1446" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_3_CommBits_ProdEnd" Source="S7_PLC_1.DataItem1447" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_3_CommBits_ProdStart" Source="S7_PLC_1.DataItem1449" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_3_OrderNo" Source="S7_PLC_1.DataItem1471" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_3_TargetPallet" Source="S7_PLC_1.DataItem1479" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_4_CommBits_CounterReset" Source="S7_PLC_1.DataItem1576" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_4_CommBits_ProdEnd" Source="S7_PLC_1.DataItem1577" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_4_CommBits_ProdStart" Source="S7_PLC_1.DataItem1579" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_4_OrderNo" Source="S7_PLC_1.DataItem1592" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToPLC_Line_4_TargetPallet" Source="S7_PLC_1.DataItem1600" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHMI_LastPalletizedBox_DataReq" Source="S7_PLC_1.DataItem2328" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHMI_LastPalletizedBox_PalletPlace" Source="S7_PLC_1.DataItem2330" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHMI_LastPalletizedBox_InfeedLine" Source="S7_PLC_1.DataItem2329" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHMI_LastPalletizedBox_BoxData_DataOk" Source="S7_PLC_1.DataItem2327" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHMI_LastPalletizedBox_BoxData_BoxData_Barcode" Source="S7_PLC_1.DataItem2323" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHMI_LastPalletizedBox_BoxData_BoxData_EndProduct" Source="S7_PLC_1.DataItem2325" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHMI_LastPalletizedBox_BoxData_BoxData_Source" Source="S7_PLC_1.DataItem2326" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToHMI_LastPalletizedBox_BoxData_BoxData_Destination" Source="S7_PLC_1.DataItem2324" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPLC_SaveToPallet_DataAck" Source="S7_PLC_1.DataItem2331" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPLC_SaveToPallet_Error" Source="S7_PLC_1.DataItem2332" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPLC_StopProduction_1" Source="S7_PLC_1.DataItem2333" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPLC_StopProduction_2" Source="S7_PLC_1.DataItem2334" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPLC_StopProduction_3" Source="S7_PLC_1.DataItem2335" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPLC_StopProduction_4" Source="S7_PLC_1.DataItem2336" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPLC_StopProduction_5" Source="S7_PLC_1.DataItem2337" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPLC_StopProduction_6" Source="S7_PLC_1.DataItem2338" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPLC_StopProduction_7" Source="S7_PLC_1.DataItem2339" />
+        <Item Target="Tags" TargetProperty="S7HMI_Com_ToPLC_StopProduction_8" Source="S7_PLC_1.DataItem2340" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Button_2" Source="S7_PLC_1.DataItem42" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Button_3" Source="S7_PLC_1.DataItem43" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Button_4" Source="S7_PLC_1.DataItem44" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Infeed1" Source="S7_PLC_1.DataItem52" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Infeed2" Source="S7_PLC_1.DataItem53" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Boxreject" Source="S7_PLC_1.DataItem61" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_TransferCart" Source="S7_PLC_1.DataItem67" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_EmptyPallet" Source="S7_PLC_1.DataItem63" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_CheckStation" Source="S7_PLC_1.DataItem62" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Tops" Source="S7_PLC_1.DataItem66" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Outfeed" Source="S7_PLC_1.DataItem65" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Gripper" Source="S7_PLC_1.DataItem64" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_SlipsheetPallet" Source="S7_PLC_1.DataItem68" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Palletizingpos_01" Source="S7_PLC_1.DataItem69" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Palletizingpos_02" Source="S7_PLC_1.DataItem72" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Palletizingpos_03" Source="S7_PLC_1.DataItem73" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Palletizingpos_04" Source="S7_PLC_1.DataItem74" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Palletizingpos_05" Source="S7_PLC_1.DataItem75" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Palletizingpos_06" Source="S7_PLC_1.DataItem83" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Palletizingpos_07" Source="S7_PLC_1.DataItem84" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_Reset_Palletizingpos_08" Source="S7_PLC_1.DataItem85" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToPLC_Area5_SyncInfeeds" Source="S7_PLC_1.DataItem89" />
+        <Item Target="Tags" TargetProperty="S7HMI_Project_ToHMI_CoverPalletInPlace" Source="S7_PLC_1.DataItem32" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_InfeedPerm_01" Source="S7_PLC_1.DataItem54" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_InfeedPerm_02" Source="S7_PLC_1.DataItem56" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToPLC_Permissions_InfeedPerm_03" Source="S7_PLC_1.DataItem57" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_InfeedPerm_02" Source="S7_PLC_1.DataItem38" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_PermissionsFB_InfeedPerm_03" Source="S7_PLC_1.DataItem48" />
+        <Item Target="Tags" TargetProperty="S7HMI_DB_ToHMI_ButtonFB_5" Source="S7_PLC_1.DataItem60" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_CoverStackHeight" Source="S7_PLC_1.DataItem70" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_SlipStackHeight" Source="S7_PLC_1.DataItem76" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Project_Pallet_01" Source="S7_PLC_1.DataItem91" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Project_Pallet_02" Source="S7_PLC_1.DataItem92" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Project_Pallet_03" Source="S7_PLC_1.DataItem94" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Project_Pallet_04" Source="S7_PLC_1.DataItem95" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Project_Pallet_05" Source="S7_PLC_1.DataItem96" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Project_Pallet_06" Source="S7_PLC_1.DataItem97" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Project_Pallet_07" Source="S7_PLC_1.DataItem98" />
+        <Item Target="Tags" TargetProperty="S7HMI_ToHMI_Project_Pallet_08" Source="S7_PLC_1.DataItem194" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items />
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.SystemTagCurrentUser" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Language_Current" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_1" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_2" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_3" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_4" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_5" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.SystemTagSecond" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_6" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_7" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_8" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChangeOrError" Source="Tags.SystemTagNewScreenId" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_2" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_3" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_4" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_5" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_6" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_2" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_3" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_4" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_5" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_6" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_7" />
+        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_8" />
+        <Item Target="Tags.Script.cs" Source="Tags.SystemTagCurrentUser" />
+        <Item Target="Tags.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Overview_moddate" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Language_Current" />
+        <Item Target="Tags.Script.cs" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Settings_PanelNumber" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_ProductNo" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_PalletPattern" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_PalletType" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Robot1_X_Centering" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Robot1_Y_Centering" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Robot1_Speed_Full" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Robot1_Acceleration_Full" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_LayerCount" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Product_Length" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Product_Width" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Product_Height" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Spacers" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_RiviNro" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_PickDelay" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_PlaceDelay" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_WrappingProgram" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_StartProd_Wrapping" />
+        <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_Lavapaikka_TK1" />
+        <Item Target="Tags.Script.cs" Source="Tags.Line1_Rivinumero_TK1" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Manual_Area_Enabled_1" />
+        <Item Target="Tags.Script.cs" Source="Tags.SystemTagSecond" />
+        <Item Target="Tags.Script.cs" Source="Tags.CurrentUserInt" />
+        <Item Target="Tags.Script.cs" Source="Tags.SystemTagNewScreenId" />
+        <Item Target="Tags.Script.cs" Source="Tags.ScreenChangePending" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_AdminUser" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_TraceAll" />
+        <Item Target="Tags.Script.cs" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Tags.Script.cs" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
+        <Item Target="Tags.Script.cs" Source="Tags.S7HMI_ToPLC_Line_1_Recipe_PalletType" />
+        <Item Target="Tags.Script.cs" Source="Tags.S7HMI_ToPLC_Line_1_OrderNo" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_SelectedOrderno" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Starting_Infeed" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Starting_Palletplace" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Starting_ProdNo" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Starting_OrderNo" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Starting_Infeed_Inprogress" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

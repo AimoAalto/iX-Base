@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AlarmSettings>
+  <AlarmClients>
+    <AlarmClient ClientID="Template_Orfer.AlarmViewer" ServerID="" ServerPort="0" MaximumAlarmEvents="4" />
+    <AlarmClient ClientID="Settings_Pan1_Scr3.AlarmViewer1" ServerID="" ServerPort="0" MaximumAlarmEvents="2000" />
+    <AlarmClient ClientID="Alarms_Pan1_Scr1.AlarmViewer1" ServerID="" ServerPort="0" MaximumAlarmEvents="200" />
+    <AlarmClient ClientID="Alarms_Pan1_Scr2.AlarmViewer1" ServerID="" ServerPort="0" MaximumAlarmEvents="2000" />
+  </AlarmClients>
+  <AlarmServer ServerMode="Local" ServerPort="1000" MaximumAlarmEvents="100" />
+</AlarmSettings>

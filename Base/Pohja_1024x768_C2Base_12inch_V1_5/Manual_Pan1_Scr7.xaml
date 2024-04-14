@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.46.87.0'?>
+<nacs:ScreenWindow Topmost="False" Title="Manual_Pan1_Scr7" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1024, 768" ScreenID="10407" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1024" Height="768" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.Manual_Pan1_Scr7">
+  <nacs:ScreenWindow.TemplateScreen>
+    <nacs1:TemplateScreen Name="Template_Manual" RenderMode="Background" />
+  </nacs:ScreenWindow.TemplateScreen>
+  <nai:ScriptProperties.ScriptEvents>
+    <nai:ScriptEventList>
+      <nacxs:EventHandlerInfo EventName="Closed" MethodName="Manual_Pan1_Scr7_Closed" />
+      <nacxs:EventHandlerInfo EventName="Opened" MethodName="Manual_Pan1_Scr7_Opened" />
+    </nai:ScriptEventList>
+  </nai:ScriptProperties.ScriptEvents>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1024" Height="768" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+    <nac:Group Name="m_Group_ManMode_btn" Width="130" Height="81" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="2" Canvas.Left="155" Canvas.Top="536">
+      <nac:Label AutoSize="True" MultiLine="True" WordWrap="False" AutoStretchFont="False" Text="Line in auto,&#xD;&#xA;stop the line first" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_TextLineInAuto" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="18.6217748913795" Canvas.Top="28.9926379001761" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
+        <nac:Label.Resources>
+          <ResourceDictionary>
+            <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+          </ResourceDictionary>
+        </nac:Label.Resources>
+        <nacb:BlinkProperties.VisibleDynamicsValue>
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Internal_ManualEnabled_5].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <s:Boolean>True</s:Boolean>
+            </Binding.FallbackValue>
+          </Binding>
+        </nacb:BlinkProperties.VisibleDynamicsValue>
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nac:Group Name="m_Group_ManMode" Width="95.7198599968075" Height="39.9665745737169" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="10" Canvas.Left="17.1841486023811" Canvas.Top="31.6627391281519">
+        <nac:Button ImageHorizontalAlignment="Left" ImageMargin="5,5,2,5" Text="CELL" TextMargin="20,2,2,2" RequiresTransparency="True" SymbolName="orfer_hand" SymbolTransparent="False" Transparent="Hidden" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="12" Name="m_Button_ManMode" Width="95.7198599968075" Height="39.9665745737169" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="0" Canvas.Top="0" Style="{nac1:StyleMarkupExtension Default}">
+          <nac:Button.TextDecorations>
+            <TextDecorationCollection />
+          </nac:Button.TextDecorations>
+          <nai:ActionProperties.Actions>
+            <nai:ActionList>
+              <nata:Action Name="Toggle Tag">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="ToggleTag" ObjectName="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_5" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+            </nai:ActionList>
+          </nai:ActionProperties.Actions>
+          <nai:ScriptProperties.ScriptEvents>
+            <nai:ScriptEventList>
+              <nacxs:EventHandlerInfo EventName="Click" MethodName="btnManTapa_Click" />
+            </nai:ScriptEventList>
+          </nai:ScriptProperties.ScriptEvents>
+        </nac:Button>
+        <nacc:Rectangle RadiusX="10" RadiusY="10" Stroke="{x:Null}" Name="m_Rectangle3" Width="92.5291979969139" Height="36.7692486078196" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="1.76024244079096" Canvas.Top="1.59866298294868">
+          <nacc:Rectangle.Resources>
+            <ResourceDictionary>
+              <nacd1:BrushDynamicsConverter x:Key="FillConverter">
+                <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+                  <nacd2:BrushCFIntervalMapper>
+                    <nacd2:BrushCFIntervalMapper.Intervals>
+                      <nacd2:BrushCFIntervalList>
+                        <nacd2:BrushCFInterval>
+                          <nacd2:BrushCFInterval.Value>
+                            <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                          </nacd2:BrushCFInterval.Value>
+                        </nacd2:BrushCFInterval>
+                        <nacd2:BrushCFInterval Start="20" End="20">
+                          <nacd2:BrushCFInterval.Value>
+                            <nacgl:BrushCF StartColor="157, 187, 97" EndColor="" FillDirection="None" />
+                          </nacd2:BrushCFInterval.Value>
+                        </nacd2:BrushCFInterval>
+                      </nacd2:BrushCFIntervalList>
+                    </nacd2:BrushCFIntervalMapper.Intervals>
+                    <nacd2:BrushCFIntervalMapper.DefaultValue>
+                      <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFIntervalMapper.DefaultValue>
+                  </nacd2:BrushCFIntervalMapper>
+                </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              </nacd1:BrushDynamicsConverter>
+            </ResourceDictionary>
+          </nacc:Rectangle.Resources>
+          <nacc:Rectangle.Fill>
+            <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_5].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
+              <Binding.FallbackValue>
+                <SolidColorBrush>#FF35C4B5</SolidColorBrush>
+              </Binding.FallbackValue>
+            </Binding>
+          </nacc:Rectangle.Fill>
+        </nacc:Rectangle>
+      </nac:Group>
+      <nac:Label AutoSize="True" WordWrap="False" AutoStretchFont="False" Text="Set manual mode" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="12" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="13.3607325433583" Canvas.Top="3.99665745737169">
+        <nac:Label.TextDecorations>
+          <TextDecorationCollection />
+        </nac:Label.TextDecorations>
+      </nac:Label>
+      <nacc:Rectangle RadiusX="20" RadiusY="20" Fill="#FF106280" Stroke="#FF267593" Name="m_Rectangle1" Width="130" Height="81" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="0" Canvas.Top="0">
+        <nacc:Rectangle.BevelEffectInfo>
+          <nacb1:BevelEffectInfo Width="0" />
+        </nacc:Rectangle.BevelEffectInfo>
+        <nacc:Rectangle.RenderTransform>
+          <TransformGroup>
+            <TransformGroup.Children>
+              <TransformCollection>
+                <ScaleTransform ScaleX="1" ScaleY="1" />
+                <RotateTransform Angle="0" />
+              </TransformCollection>
+            </TransformGroup.Children>
+          </TransformGroup>
+        </nacc:Rectangle.RenderTransform>
+        <nai:ActionProperties.Actions>
+          <nai:ActionList />
+        </nai:ActionProperties.Actions>
+      </nacc:Rectangle>
+    </nac:Group>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_AN_ERunningMode" Width="32" Height="24" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="10" KeyboardNavigation.TabNavigation="None" Canvas.Left="291" Canvas.Top="584">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_5].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" Prefix="Cell mode:  " VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="8" FontWeight="Bold" Padding="2,2,2,2" Name="m_AN_RunningMode" Width="115" Height="21" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="3" KeyboardNavigation.TabNavigation="None" Canvas.Left="166" Canvas.Top="70" nacb:BlinkProperties.VisibleDynamicsValue="True" nacsd:EditorProperties.IsHidden="False">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_5].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList />
+      </nai:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" Padding="2,2,2,2" Name="m_ANManualCtrlCode_5" Width="100" Height="24" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="True" Panel.ZIndex="11" KeyboardNavigation.TabNavigation="None" Canvas.Left="328" Canvas.Top="584">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.S7HMI_DB_ToPLC_ManualCtrl_5].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="Sunken" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFFFFFFF" />
+              <GradientStop Color="#FFD4D0C8" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+    </nac:AnalogNumericFX>
+    <nac:Label Text="Area 5" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="10" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="2.5,0,2.5,1" Name="m_Text6" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="327.045962630159" Canvas.Top="565.563080995564">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

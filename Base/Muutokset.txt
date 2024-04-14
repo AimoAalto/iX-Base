@@ -1,0 +1,113 @@
+
+*
+* muutokset 2023.04
+*
+base 12 pohjaprojekti uusiksi - näyttö resoluutio 7:9
+iX script testing (Unit Tests)
+
+*
+* muutokset 2023.04
+*
+tagien nimeäminen ja "ryhmittely" uusiksi
+
+
+*
+* Muutokset 2023.02.15
+*
+_konfiguraatio luokka uusiksi
+ - asetukseet yhteen luokkaan
+ - talletus nonvolatile string ja/tai tiedosto
+
+
+*
+* Muutokset 2023.01.31
+*
+Lavaloki.cs
+		void Lava_Aloitettu(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
+			throw ==> Globals.Tags.Log
+			return;
+
+		void Lava_Valmis(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
+			throw ==> Globals.Tags.Log
+			return;
+
+sensor_info.Script.cs
+
+AP22021 WIP lisätty
+ - audit trail uusiksi
+ - tag monitor uusiksi
+
+
+
+*
+* Muutokset 2023.01
+*
+
+funktiokutsut Try catch sisään tai testi että paluuarvo != null
+GetTag..()
+
+säikeistä ei saa kutsua functioita
+ Popup_Error.Show()
+ MessageBox.Show()
+
+==> muuta Globals.Tags.Log()
+
+Ajotiedot.Script.cs
+ - AjossaolevatTuotteet
+  added try - catch
+  
+Aputoiminnot.Script.cs
+ - tyyppimuunnos objekti ==> ...Group tai ...Picture aiheuttaa Exceptionin ==> sovellus kaatuu
+ 
+ - LuoClickHandlerit()
+  - tyyppitarkistukset
+   if (nappi is Neo.ApplicationFramework.Controls.Group)
+   ...
+     if (elementCanvas.Items[i] is Neo.ApplicationFramework.Controls.Symbol.Picture)
+     ...
+	 
+Lavaloki.Script.cs
+ - Lisäälokiin kutsu
+	Globals.Robotit.LisaaLokiin(robotti, "Lava valmis paikalla " + roboLavapaikka);
+		
+Popup_Robot_speed.Script.cs	
+ - puuttuva robotti olio aiheuttaa Exceptionin ==> sovellus kaatuu
+ - luodaan robotti olio, jos ei ole olemassa 
+		
+		void Popup_Robot_speed_Opened(System.Object sender, System.EventArgs e)
+		{
+			int no = Globals.Tags.HMI_RobotNo.Value;
+			Globals.Robotit.Exists(no);
+			
+Robotit.Script.cs
+ - robotti olioon ei tulisi viitata suoraan, vaan funktioiden kautta, joissa virhetarkistukset
+
+ - uudet funktiot
+  private void TarkistaTila(int numero)
+  public bool Exists(int numero)
+  public void KuittaaHairio(int robotti, int id, Int16 num)
+  public void AjaHuoltoon(int robotti)
+  public void LisaaLokiin(int robotti, string msg)
+  
+Robots_Pan1_Scr*.Script.cs
+ - Globals.Robotit.LisaaLoki... kutsut
+ - Globals.Robotit.KuittaaHairio(robotti,... kutsut
+ 
+Tags.Script.cs
+ - build haetaan exe:stä jos project.zip ei löydy
+ - thread lock functioihin, estetään eri säikeistä tapahtuvien yhtäaikaisten kutsujen käsittely
+ - functioista ei saa kutsua 'Popup_Error...' ja muita ikkunoita, koska funktioita käytetään taustasäikeistä ja niistä ei voi kutsua pääsäikeen ikkunoita 
+   - virhe (Exception) ainoastaan lisätään lokiin
+  - GetTag()
+  - GetTagValueInt()
+  - GetTagValueString()
+  - GetTagValue()
+  - GetTagValues()
+  - SetTagValue()
+  
+Template_Overview.Script.cs
+ - ShowMenu()
+  - try - catch
+  
+ 
+ 

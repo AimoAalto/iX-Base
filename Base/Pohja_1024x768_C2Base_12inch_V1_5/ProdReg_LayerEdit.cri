@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="ProdReg_LayerEdit.AnalogNumeric2" TargetProperty="Value" Source="Tags.HMI_ProdReg_ValikeKerrosNro" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="ProdReg_LayerEdit.Group_Edit_btn.Btn_MuokkaaValikkeita" TargetProperty="Actions" Source="Popup_Settings_ValikeEdit" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>16</ObjectsCount>
+          <ScreenName>ProdReg_LayerEdit</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>ProdReg_LayerEdit</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items>
+        <Item Target="ProdReg_LayerEdit.Script.cs" Source="Tags.HMI_ProdReg_ValikeKerrosNro" />
+        <Item Target="ProdReg_LayerEdit.Script.cs" Source="Tags.HMI_ProdReg_ValikeKerrosValikkeet" />
+        <Item Target="ProdReg_LayerEdit.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="ProdReg_LayerEdit.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
+      </Items>
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="ProdReg_LayerEdit.Group_Remove_btn.Btn_Poista" Source="orfer_arrowright" Width="38" Height="38" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="ProdReg_LayerEdit.Group_Add_btn.Btn_Lisaa" Source="orfer_arrowleft" Width="38" Height="38" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="ProdReg_LayerEdit.Group_Close_btn.Btn_Suljesivu" Source="orfer_ack" Width="22" Height="22" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

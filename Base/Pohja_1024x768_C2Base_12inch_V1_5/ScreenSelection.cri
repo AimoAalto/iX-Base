@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item xsi:type="ActionItem" Target="ScreenSelection.ButtonCell1" TargetProperty="Actions" Source="Tags.HMI_Settings_PanelNumber" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.ButtonCell1" TargetProperty="Actions" Source="Tags.SystemTagNewScreenId" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.ButtonCell2" TargetProperty="Actions" Source="Tags.HMI_Settings_PanelNumber" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.ButtonCell2" TargetProperty="Actions" Source="Tags.SystemTagNewScreenId" Event="Click" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>3</ObjectsCount>
+          <ScreenName>ScreenSelection</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="1">
+          <ScreenName>ScreenSelection</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="ScreenSelection.ButtonCell1" TargetProperty="Actions" Source="Tags.HMI_Settings_PanelNumber" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.ButtonCell1" TargetProperty="Actions" Source="Tags.SystemTagNewScreenId" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.ButtonCell2" TargetProperty="Actions" Source="Tags.HMI_Settings_PanelNumber" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="ScreenSelection.ButtonCell2" TargetProperty="Actions" Source="Tags.SystemTagNewScreenId" Event="Click" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="ScreenSelection.ButtonCell1" Source="palletizing_layout" Width="95" Height="92" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="ScreenSelection.ButtonCell2" Source="layout_main" Width="95" Height="92" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

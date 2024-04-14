@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Security SchemaVersion="2.46.49.0">
+  <SecurityGroups>
+    <Group ID="Group_01" Name="Administrators" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
+    <Group ID="Group_02" Name="Operators" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
+    <Group ID="Group_03" Name="Supervisors" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" />
+  </SecurityGroups>
+  <SecurityUsers>
+    <User ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+      <Username>Administrator</Username>
+      <PasswordHash>ERuufHNrL3P8GNp0GwFeQZCiaPo=</PasswordHash>
+      <Description></Description>
+      <Groups>
+        <Group>Group_01</Group>
+      </Groups>
+      <IsErasable>False</IsErasable>
+    </User>
+    <User ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+      <Username>Operator</Username>
+      <PasswordHash>YkIhpcykmaYQCYB4prr+98d3cGQ=</PasswordHash>
+      <Description></Description>
+      <Groups>
+        <Group>Group_02</Group>
+      </Groups>
+      <IsErasable>False</IsErasable>
+    </User>
+    <User ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+      <Username>Supervisor</Username>
+      <PasswordHash>MwqrfhoJwIZS2WZ2fn06GpyClhw=</PasswordHash>
+      <Description></Description>
+      <Groups>
+        <Group>Group_03</Group>
+      </Groups>
+      <IsErasable>False</IsErasable>
+    </User>
+  </SecurityUsers>
+</Security>
