@@ -9,7 +9,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Template_Settings_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nac:Button CornerRadius="3,3,3,3" Text="&lt;" TextVerticalAlignment="Center" RequiresTransparency="True" SymbolName="" SymbolTransparent="False" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontWeight="Bold" Name="m_Button_Left" Width="72" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" IsEnabled="True" Panel.ZIndex="1" Canvas.Left="1136.26309856276" Canvas.Top="688" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Default}">
       <nac:Button.TextDecorations>
         <TextDecorationCollection />
@@ -294,9 +294,9 @@
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.Foreground>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+              <SolidColorBrush>#FF000000</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.Foreground>
@@ -374,9 +374,9 @@
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.Foreground>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+              <SolidColorBrush>#FF000000</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.Foreground>
@@ -454,9 +454,9 @@
           </Binding>
         </nac:Button.BorderBrush>
         <nac:Button.Foreground>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
-              <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+              <SolidColorBrush>#FF000000</SolidColorBrush>
             </Binding.FallbackValue>
           </Binding>
         </nac:Button.Foreground>
@@ -748,7 +748,6 @@
       <nac:Button CornerRadius="3,3,3,3" Text="System configuration" RequiresTransparency="True" SymbolTransparent="False" BorderThickness="0,0,0,2" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" Name="m_btnSubmenu14" Width="138" Height="55" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="810.159626173266" Canvas.Top="0" nacb:BlinkProperties.VisibleDynamicsValue="True" nai:SecurityProperties.SecurityGroupsRequired="Administrators" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
           <ResourceDictionary>
-            <nacd1:BoolDynamicsConverter x:Key="EnabledDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
             <nacd1:BrushDynamicsConverter x:Key="BorderBrushConverter">
               <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
                 <nacd2:BrushCFIntervalMapper>
@@ -767,6 +766,7 @@
                 </nacd2:BrushCFIntervalMapper>
               </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
             </nacd1:BrushDynamicsConverter>
+            <nacd1:BoolDynamicsConverter x:Key="EnabledDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.BorderBrush>

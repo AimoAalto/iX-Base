@@ -26,45 +26,44 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="ProductRegister.RecipeName_txt" TargetProperty="Value" Source="Tags.HMI_ProdReg_RecipeName" />
-        <Item Target="ProductRegister.Text8" TargetProperty="Value" Source="Tags.SystemTagLatestLoadedRecipeName" />
+        <Item Target="ProductRegister.RecipeName_txt" TargetProperty="Value" Source="Tags.HMI_ProdReg_ProductName" />
         <Item Target="ProductRegister.AnalogNumeric14" TargetProperty="Value" Source="Tags.HMI_ProdReg_RiviNro" />
         <Item Target="ProductRegister.AnalogNumeric15" TargetProperty="Value" Source="Tags.HMI_ProdReg_RiviNro" />
         <Item Target="ProductRegister.GroupProductData.AnalogNumeric8" TargetProperty="Value" Source="Tags.HMI_ProdReg_Product_Height" />
-        <Item Target="ProductRegister.GroupProductData.AnalogNumeric8" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupProductData.AnalogNumeric8" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupProductData.AnalogNumeric7" TargetProperty="Value" Source="Tags.HMI_ProdReg_Product_Width" />
-        <Item Target="ProductRegister.GroupProductData.AnalogNumeric7" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupProductData.AnalogNumeric7" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupProductData.AnalogNumeric" TargetProperty="Value" Source="Tags.HMI_ProdReg_Product_Length" />
-        <Item Target="ProductRegister.GroupProductData.AnalogNumeric" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupProductData.AnalogNumeric" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupProductData.ANProductNo" TargetProperty="Value" Source="Tags.HMI_ProdReg_ProductNo" />
-        <Item Target="ProductRegister.GroupProductData.ANProductNo" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupProductData.ANProductNo" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupRobotData.AnalogNumeric13" TargetProperty="Value" Source="Tags.HMI_ProdReg_PlaceDelay" />
-        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric13" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric13" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupRobotData.AnalogNumeric11" TargetProperty="Value" Source="Tags.HMI_ProdReg_PickDelay" />
-        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric11" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric11" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupRobotData.AnalogNumeric10" TargetProperty="Value" Source="Tags.HMI_ProdReg_Robot1_Speed_Empty" />
-        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric10" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric10" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupRobotData.AnalogNumeric2" TargetProperty="Value" Source="Tags.HMI_ProdReg_Robot1_Acceleration_Empty" />
-        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric2" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric2" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_SpeedLoad" TargetProperty="Value" Source="Tags.HMI_ProdReg_Robot1_Speed_Full" />
-        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_SpeedLoad" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_SpeedLoad" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_AccLoad" TargetProperty="Value" Source="Tags.HMI_ProdReg_Robot1_Acceleration_Full" />
-        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_AccLoad" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupRobotData.AnalogNumeric_AccLoad" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupPalletData.Text3" TargetProperty="Value" Source="Tags.HMI_ProdReg_PalletType" />
         <Item Target="ProductRegister.GroupPalletData.AnalogNumeric1" TargetProperty="Value" Source="Tags.HMI_ProdReg_LayerCount" />
-        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric1" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric1" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupPalletData.AnalogNumeric4" TargetProperty="Value" Source="Tags.HMI_ProdReg_Robot1_Y_Centering" />
-        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric4" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric4" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupPalletData.AnalogNumeric3" TargetProperty="Value" Source="Tags.HMI_ProdReg_Robot1_X_Centering" />
-        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric3" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
-        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric12" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric3" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
+        <Item Target="ProductRegister.GroupPalletData.AnalogNumeric12" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupPalletData.PalletTypeComboBox" TargetProperty="Value" Source="Tags.HMI_ProdReg_PalletType" />
         <Item Target="ProductRegister.GroupWrappingData.AnalogNumeric16" TargetProperty="Value" Source="Tags.HMI_ProdReg_WrappingProgram" />
-        <Item Target="ProductRegister.GroupWrappingData.AnalogNumeric16" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.GroupWrappingData.AnalogNumeric16" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.ANPalletWidth" TargetProperty="Value" Source="Tags.HMI_ProdReg_Robot1_X_Centering" />
-        <Item Target="ProductRegister.ANPalletWidth" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.ANPalletWidth" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.ANPalletLength" TargetProperty="Value" Source="Tags.HMI_ProdReg_Robot1_X_Centering" />
-        <Item Target="ProductRegister.ANPalletLength" TargetProperty="BorderBrush" Source="Tags.CurrentUserInt" />
+        <Item Target="ProductRegister.ANPalletLength" TargetProperty="BorderBrush" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="ProductRegister.GroupPatternInfo.TextPatternNo" TargetProperty="Value" Source="Tags.HMI_ProdReg_PalletPattern" />
         <Item Target="ProductRegister.GroupPatternInfo.KuvioComboBox" TargetProperty="Value" Source="Tags.HMI_ProdReg_PalletPattern" />
         <Item Target="ProductRegister.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
@@ -88,7 +87,7 @@
         <Item xsi:type="ActionItem" Target="ProductRegister.Group_Open_btn.Product_Open_btn" TargetProperty="Actions" Source="Popup_Recipe_dialog" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ActionItem" Target="ProductRegister.Group_Delete_btn.Product_Delete_Btn" TargetProperty="Actions" Source="Popup_Recipe_dialog" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>157</ObjectsCount>
+          <ObjectsCount>156</ObjectsCount>
           <ScreenName>ProductRegister</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10101">
@@ -98,7 +97,7 @@
     </Category>
     <Category Name="Script">
       <Items>
-        <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdReg_RecipeName" />
+        <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdReg_ProductName" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdReg_PalletPattern" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_ProdReg_Dialog_Mode" />
         <Item Target="ProductRegister.Script.cs" Source="Tags.HMI_PalletPlace" />

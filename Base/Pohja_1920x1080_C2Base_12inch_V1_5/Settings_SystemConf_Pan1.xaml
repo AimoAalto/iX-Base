@@ -9,7 +9,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Settings_SystemConf_Pan1_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1280" Height="800" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nac:Label AutoSize="False" Text="System Configuration" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_TextTop" Width="873.14579489962" Height="22.9" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="230.522698498825" Canvas.Top="71.5403227427104">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
@@ -939,7 +939,7 @@
           </LinearGradientBrush>
         </nac:AnalogNumericFX.Background>
       </nac:AnalogNumericFX>
-      <nac:Label Text="SqlServer DB Name:" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text1" Width="161.160066926938" Height="26.9223233030091" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="0" Canvas.Top="141.077676696991">
+      <nac:Label Text="SqlServer DB Name:" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="0" Canvas.Top="141.077676696991">
         <nac:Label.Resources>
           <ResourceDictionary>
             <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
@@ -986,7 +986,7 @@
           </LinearGradientBrush>
         </nac:AnalogNumericFX.Background>
       </nac:AnalogNumericFX>
-      <nac:Label Text="SqlServer Instance:" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text" Width="155.311767986615" Height="26.9223233030091" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="0" Canvas.Top="112.862141357593">
+      <nac:Label Text="SqlServer Instance:" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="14" Canvas.Left="0" Canvas.Top="112.862141357593">
         <nac:Label.Resources>
           <ResourceDictionary>
             <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
@@ -1021,19 +1021,19 @@
           </LinearGradientBrush>
         </nac:AnalogNumericFX.Background>
       </nac:AnalogNumericFX>
-      <nac:Label Text="Settings filename:" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_TextFSettingsileName" Width="144.481873954267" Height="26.9223233030091" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="37.6207137858642">
+      <nac:Label Text="Settings filename:" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_TextFSettingsileName" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="0" Canvas.Top="37.6207137858642">
         <nac:Label.TextDecorations>
           <TextDecorationCollection />
         </nac:Label.TextDecorations>
       </nac:Label>
-      <nacw:CheckBox Text="Use ONLY nonvolatile.db (if not set Use settings.json file also)" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_CB_UseNonVolatileDB" Width="475.408510175152" Height="21.0440867739678" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="0" Canvas.Top="0" Content="Use ONLY nonvolatile.db (if not set Use settings.json file also)">
+      <nacw:CheckBox Text="Use ONLY nonvolatile.db (if not set Use settings.json file also)" TextHorizontalAlignment="Left" TextVerticalAlignment="Top" BorderBrush="#FF8E8F8F" BorderThickness="1,1,1,1" Background="#FFF4F4F4" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3.5,0,3.5,1" Name="m_CB_UseNonVolatileDB" Width="405.908313687642" Height="17.9" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="0" Canvas.Top="0" Content="Use ONLY nonvolatile.db (if not set Use settings.json file also)">
         <nacw:CheckBox.Resources>
           <ResourceDictionary>
             <nacc1:VariantValueConverter x:Key="IsCheckedConverter" />
           </ResourceDictionary>
         </nacw:CheckBox.Resources>
         <nacw:CheckBox.IsChecked>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Conf_UseOnlyNVBD].Value" Converter="{StaticResource IsCheckedConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Conf_UseOnlyNVBD].Value" Converter="{StaticResource IsCheckedConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
               <s:Boolean>False</s:Boolean>
             </Binding.FallbackValue>

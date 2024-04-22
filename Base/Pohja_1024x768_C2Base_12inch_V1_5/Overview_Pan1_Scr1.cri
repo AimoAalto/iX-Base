@@ -44,13 +44,13 @@
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StopProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StopProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
         <Item Target="Overview_Pan1_Scr1.GroupStartStop1.Btn_StopProd1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_ToHMI_Line_1_CommBits_ProdStartOK" />
-        <Item Target="Overview_Pan1_Scr1.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
         <Item Target="Overview_Pan1_Scr1.Group10.SymbolViewbox3" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_lavapaikka" />
         <Item Target="Overview_Pan1_Scr1.Group10.SymbolViewbox3" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_lavapaikka" />
         <Item xsi:type="ActionItem" Target="Overview_Pan1_Scr1.Group10.Group11.Button4" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_1" Event="Click" Action="Toggle Tag" Param="" />
         <Item Target="Overview_Pan1_Scr1.Group10.Group11.Button4" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_1" />
         <Item Target="Overview_Pan1_Scr1.Group10.Group11.MultiPicture5" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_PlacePerm_1" />
         <Item Target="Overview_Pan1_Scr1.Group10.Group11.MultiPicture5" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_1" />
+        <Item Target="Overview_Pan1_Scr1.shadow" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_Shadow" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">

@@ -27,7 +27,7 @@ namespace Neo.ApplicationFramework.Generated
 		void ProductRegister_Opened(System.Object sender, System.EventArgs e)
 		{
 			// Nollataan reseptivalinta
-			Globals.Tags.HMI_ProdReg_RecipeName.Value = "";
+			Globals.Tags.HMI_ProdReg_ProductName.Value = "";
 
 			maxkerros = 20; // Alustetaan kuvion maksimikerrokset, luetaan JSON-tiedostosta.
 
@@ -42,7 +42,7 @@ namespace Neo.ApplicationFramework.Generated
 			InitPatternListBox();
 
 			// Sivun latautuessa ladataan näytölle käytössä oleva resepti
-			if (Globals.Tags.HMI_ProdReg_RecipeName.Value == "")
+			if (Globals.Tags.HMI_ProdReg_ProductName.Value == "")
 			{
 				// Estetään tallennusnapit
 				Product_Save_As_btn.IsEnabled = false;
@@ -140,12 +140,12 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">this.Product_Save_btn3</param>
 		void Product_Save_btn_Click(System.Object sender, System.EventArgs e)
 		{
-			if (Globals.Tags.HMI_ProdReg_RecipeName.Value.ToString().Length > 0)
+			if (Globals.Tags.HMI_ProdReg_ProductName.Value.ToString().Length > 0)
 			{
 				// Tarkistetaan, että lavatyyppi on valittuna kuvion vaihdon jälkeen
 				if (PalletTypeComboBox.SelectedItem != null)
 				{
-					Globals.Tuotetiedot.SaveRecipe(Globals.Tags.HMI_ProdReg_RecipeName.Value, true);
+					Globals.Tuotetiedot.SaveRecipe(Globals.Tags.HMI_ProdReg_ProductName.Value, true);
 				}
 				else
 				{

@@ -54,7 +54,7 @@
         <Item Target="Template_Orfer.Button_Settings_7" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
         <Item Target="Template_Orfer.Button_Settings_7" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />
         <Item Target="Template_Orfer.Button_Settings_7" TargetProperty="Foreground" Source="Tags.Menu_MainMenu_Btn_Anim" />
-        <Item Target="Template_Orfer.Text_Build" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.CurrentUserInt" />
+        <Item Target="Template_Orfer.Text_Build" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="Template_Orfer.Line2_Conn_Rob" TargetProperty="Stroke" Source="Tags.HMI_CommFault_Robots" />
         <Item Target="Template_Orfer.Line1_Conn_Rob" TargetProperty="Stroke" Source="Tags.HMI_CommFault_Robots" />
         <Item xsi:type="ActionItem" Target="Template_Orfer.Picture_Orfer" TargetProperty="Actions" Source="Tags.ScreenChangePending" Event="MouseUp" Action="Reset Tag" Param="" />
@@ -65,9 +65,9 @@
         <Item Target="Template_Orfer.Line2_Conn_PLC" TargetProperty="Stroke" Source="Tags.HMI_CommFault_PLC1" />
         <Item Target="Template_Orfer.Line1_Conn_PLC" TargetProperty="Stroke" Source="Tags.HMI_CommFault_PLC1" />
         <Item Target="Template_Orfer.Group_Login_btn.Button_Users" TargetProperty="Value" Source="Tags.SystemTagCurrentUser" />
-        <Item Target="Template_Orfer.Group_Login_btn.Button_Users" TargetProperty="TextValue" Source="Tags.CurrentUserInt" />
+        <Item Target="Template_Orfer.Group_Login_btn.Button_Users" TargetProperty="TextValue" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="Template_Orfer.TextBuildDateValue" TargetProperty="Value" Source="Tags.HMI_Overview_moddate" />
-        <Item Target="Template_Orfer.TextBuildDateValue" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.CurrentUserInt" />
+        <Item Target="Template_Orfer.TextBuildDateValue" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="Template_Orfer.Button_Diagnostics_3" TargetProperty="Value" Source="Tags.Menu_MainMenu_Btn_Anim" />
         <Item Target="Template_Orfer.Button_Diagnostics_3" TargetProperty="BorderBrush" Source="Tags.Menu_MainMenu_Btn_Anim" />
         <Item Target="Template_Orfer.Button_Diagnostics_3" TargetProperty="Background" Source="Tags.Menu_MainMenu_Btn_Anim" />

@@ -25,22 +25,22 @@
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Manual_Pan1_Scr1.Man07014" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07014.Rectangle4" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
+        <Item Target="Manual_Pan1_Scr1.Man07014.Rectangle4" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
         <Item Target="Manual_Pan1_Scr1.Man07012" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07012.Rectangle1" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
+        <Item Target="Manual_Pan1_Scr1.Man07012.Rectangle1" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
         <Item Target="Manual_Pan1_Scr1.Man07011" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07011.Rectangle2" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
+        <Item Target="Manual_Pan1_Scr1.Man07011.Rectangle2" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
         <Item Target="Manual_Pan1_Scr1.Man07001" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07001.Rectangle6" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
+        <Item Target="Manual_Pan1_Scr1.Man07001.Rectangle6" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
         <Item Target="Manual_Pan1_Scr1.Man06001" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man06001.Rectangle7" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
+        <Item Target="Manual_Pan1_Scr1.Man06001.Rectangle7" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
         <Item Target="Manual_Pan1_Scr1.Man07000" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07000.Rectangle8" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
+        <Item Target="Manual_Pan1_Scr1.Man07000.Rectangle8" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
         <Item Target="Manual_Pan1_Scr1.Man07015" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
-        <Item Target="Manual_Pan1_Scr1.Man07015.Rectangle5" TargetProperty="Fill" Source="Tags.Line1_HMI1_ManualCtrlNr" />
+        <Item Target="Manual_Pan1_Scr1.Man07015.Rectangle5" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
         <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr1.Button1" TargetProperty="Actions" Source="Tags.HMI_Internal_ManualEnabled_1" Event="Click" Action="Toggle Tag" Param="" />
-        <Item Target="Manual_Pan1_Scr1.AnalogNumeric" TargetProperty="Value" Source="Tags.Line1_HMI1_ManualCtrlNr" />
-        <Item Target="Manual_Pan1_Scr1.AnalogNumeric1" TargetProperty="Value" Source="Tags.Line1_HMI1_ManualCtrlNr" />
+        <Item Target="Manual_Pan1_Scr1.AnalogNumeric" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Manual_Pan1_Scr1.AnalogNumeric1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
         <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr1.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.HMI_Manual_Area_Enabled_1" Event="Click" Action="Toggle Tag" Param="" />
       </Items>
     </Category>

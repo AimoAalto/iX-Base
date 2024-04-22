@@ -6,7 +6,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Template_Orfer_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1024" Height="768" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1024" Height="768" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nacc:Rectangle RadiusX="50" RadiusY="50" Fill="#FF186785" Stroke="#FF000000" StrokeThickness="0" Name="m_Rectangle_Main" Width="870" Height="680" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="153" Canvas.Top="70" nacsd:EditorProperties.IsLocked="True" />
     <nac:Button CornerRadius="0,0,0,0" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="0,2,0,2" Text="Main" TextHorizontalAlignment="Left" TextVerticalAlignment="Center" TextMargin="41,2,0,2" RequiresTransparency="True" SymbolName="orfer_home" SymbolTransparent="False" MultiPicture="True" BorderThickness="0,0,0,2" FontFamily="Calibri" FontSize="12" FontStyle="Normal" FontWeight="Bold" Padding="1,1,1,1" Name="m_Button_Main_0" Width="128" Height="42" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="8" Canvas.Left="13" Canvas.Top="80" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="None" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden" Style="{nac2:StyleMarkupExtension Default}">
       <nac:Button.Resources>
@@ -1005,7 +1005,7 @@
         </ResourceDictionary>
       </nac:Label.Resources>
       <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>
@@ -1126,7 +1126,6 @@
             <nacl:AlarmEventFilterGroup Name="Tietokanta_std" Enabled="True" ShowActiveAlarms="True" ShowNormalAlarms="False" ShowAcknowlegedAlarms="False" ShowInactiveAlarms="False" />
             <nacl:AlarmEventFilterGroup Name="Järjestelmä" Enabled="True" ShowActiveAlarms="True" ShowNormalAlarms="False" ShowAcknowlegedAlarms="False" ShowInactiveAlarms="False" />
             <nacl:AlarmEventFilterGroup Name="Turvalaite" Enabled="True" ShowActiveAlarms="True" ShowNormalAlarms="False" ShowAcknowlegedAlarms="False" ShowInactiveAlarms="False" />
-            <nacl:AlarmEventFilterGroup Name="Area5" Enabled="True" ShowActiveAlarms="True" ShowNormalAlarms="True" ShowAcknowlegedAlarms="True" ShowInactiveAlarms="True" />
           </nacl:AlarmEventFilter.Groups>
         </nacl:AlarmEventFilter>
       </nac:AlarmViewerFX.AlarmEventFilter>
@@ -1349,7 +1348,7 @@
           </Binding>
         </nac:Button.Value>
         <nac:Button.TextValue>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource TextValueConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource TextValueConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
               <s:Int32>0</s:Int32>
             </Binding.FallbackValue>
@@ -1398,7 +1397,7 @@
         <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Overview_moddate].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True" />
       </nac:Label.Value>
       <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>

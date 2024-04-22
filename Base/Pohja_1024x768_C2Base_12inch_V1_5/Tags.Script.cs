@@ -91,7 +91,7 @@ namespace Neo.ApplicationFramework.Generated
 				AppStart_Timer = 0;
 
 				// Main menu painikkeiden visualisointi alustus
-				Menu_MainMenu_Btn_Anim.SetAnalog(0);
+				Menu_MainMenu_Btn_Anim.SetAnalog(1);
 
 				kerran = true;
 			}
@@ -671,18 +671,18 @@ namespace Neo.ApplicationFramework.Generated
 			switch (SystemTagCurrentUser.Value.ToString())
 			{
 				case "Administrator":
-					CurrentUserInt.Value = 3;
+					HMI_CurrentUserInt.Value = 3;
 					HMI_AdminUser.SetTag();
 					break;
 				case "Supervisor":
-					CurrentUserInt.Value = 2;
+					HMI_CurrentUserInt.Value = 2;
 					HMI_AdminUser.SetTag();
 					break;
 				case "Operator":
-					CurrentUserInt.Value = 1;
+					HMI_CurrentUserInt.Value = 1;
 					break;
 				default:
-					CurrentUserInt.Value = 0;
+					HMI_CurrentUserInt.Value = 0;
 					break;
 			}
 		}

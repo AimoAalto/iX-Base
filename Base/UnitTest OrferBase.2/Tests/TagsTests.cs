@@ -191,22 +191,22 @@ namespace Neo.ApplicationFramework.Generated.Tests
 
 			tags.SystemTagCurrentUser.Value = "";
 			tags.SystemTagCurrentUser_ValueChange(null, null);
-			Assert.AreEqual(0, (int)tags.CurrentUserInt.Value, "NO user");
+			Assert.AreEqual(0, (int)tags.HMI_CurrentUserInt.Value, "NO user");
 			Assert.AreEqual(false, (bool)tags.HMI_AdminUser.Value, "NO user - Admin user");
 
 			tags.SystemTagCurrentUser.Value = "Administrator";
 			tags.SystemTagCurrentUser_ValueChange(null, null);
-			Assert.AreEqual(3, (int)tags.CurrentUserInt.Value, "Administrator");
+			Assert.AreEqual(3, (int)tags.HMI_CurrentUserInt.Value, "Administrator");
 			Assert.AreEqual(true, (bool)tags.HMI_AdminUser.Value, "Adm - Admin user");
 
 			tags.SystemTagCurrentUser.Value = "Supervisor";
 			tags.SystemTagCurrentUser_ValueChange(null, null);
-			Assert.AreEqual(2, (int)tags.CurrentUserInt.Value, "Supervisor");
+			Assert.AreEqual(2, (int)tags.HMI_CurrentUserInt.Value, "Supervisor");
 			Assert.AreEqual(true, (bool)tags.HMI_AdminUser.Value, "Super - Admin user");
 
 			tags.SystemTagCurrentUser.Value = "Operator";
 			tags.SystemTagCurrentUser_ValueChange(null, null);
-			Assert.AreEqual(1, (int)tags.CurrentUserInt.Value, "Operator");
+			Assert.AreEqual(1, (int)tags.HMI_CurrentUserInt.Value, "Operator");
 			Assert.AreEqual(false, (bool)tags.HMI_AdminUser.Value, "Oper - Admin user");
 		}
 

@@ -104,8 +104,8 @@
       <nac:Button ButtonAppearance="RoundedBottomRight" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="Stop &#xD;&#xA;updating" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="45,2,2,2" RequiresTransparency="True" SymbolName="orfer_stop" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Stop_update_btn" Width="96" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Opacity="1" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="14" Canvas.Left="0" Canvas.Top="0" nac:EnabledProperties.EnabledDynamicsValue="True" nacb2:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
           <ResourceDictionary>
-            <nacd:RawConverter x:Key="TextValueConverter" DefaultValue="{x:Null}" />
             <nacd:RawConverter x:Key="ValueConverter" DefaultValue="{x:Null}" />
+            <nacd:RawConverter x:Key="TextValueConverter" DefaultValue="{x:Null}" />
           </ResourceDictionary>
         </nac:Button.Resources>
         <nac:Button.Value>

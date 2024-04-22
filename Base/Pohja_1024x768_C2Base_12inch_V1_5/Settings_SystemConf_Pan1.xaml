@@ -9,7 +9,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Settings_SystemConf_Pan1_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1024" Height="768" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1024" Height="768" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="System Configuration" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Tahoma" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Padding="2.75,0,2.75,1" Name="m_TextTop" Width="699" Height="19.2766666666667" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="184" Canvas.Top="70">
       <nac:Label.TextDecorations>
         <TextDecorationCollection />
@@ -241,7 +241,7 @@
           </ResourceDictionary>
         </nacw:CheckBox.Resources>
         <nacw:CheckBox.IsChecked>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.Conf_UseOnlyNVBD].Value" Converter="{StaticResource IsCheckedConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Conf_UseOnlyNVBD].Value" Converter="{StaticResource IsCheckedConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
               <s:Boolean>False</s:Boolean>
             </Binding.FallbackValue>

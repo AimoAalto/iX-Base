@@ -30,7 +30,7 @@
         <Item Target="Settings_SystemConf_Pan1.GroupOptions.Text1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Me_Debug" />
         <Item Target="Settings_SystemConf_Pan1.GroupOptions.ANSqlServerInstance" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Me_Debug" />
         <Item Target="Settings_SystemConf_Pan1.GroupOptions.Text" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Me_Debug" />
-        <Item Target="Settings_SystemConf_Pan1.GroupOptions.CB_UseNonVolatileDB" TargetProperty="IsChecked" Source="Tags.Conf_UseOnlyNVBD" />
+        <Item Target="Settings_SystemConf_Pan1.GroupOptions.CB_UseNonVolatileDB" TargetProperty="IsChecked" Source="Tags.HMI_Conf_UseOnlyNVBD" />
         <Item Target="Settings_SystemConf_Pan1.GroupNewRobotSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
         <Item Target="Settings_SystemConf_Pan1.GroupRobotSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
         <Item Target="Settings_SystemConf_Pan1.GroupCommonSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />

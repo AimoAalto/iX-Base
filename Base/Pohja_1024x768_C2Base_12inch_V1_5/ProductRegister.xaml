@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?neo version='2.46.87.0'?>
-<nacs:ScreenWindow Topmost="False" Title="ProductRegister" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1024, 768" ScreenID="10101" PopupScreen="False" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1024" Height="768" nai:SecurityProperties.SecurityGroupsRequired="None" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:nacn="clr-namespace:Neo.ApplicationFramework.Controls.NeoWindowsFormsHost;assembly=Controls" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:nacs2="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacw="clr-namespace:Neo.ApplicationFramework.Controls.WindowsControls;assembly=Controls" x:Class="Neo.ApplicationFramework.Generated.ProductRegister">
+<nacs:ScreenWindow Topmost="False" Title="ProductRegister" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1024, 768" ScreenID="10101" PopupScreen="False" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1024" Height="768" nai:SecurityProperties.SecurityGroupsRequired="None" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacn="clr-namespace:Neo.ApplicationFramework.Controls.NeoWindowsFormsHost;assembly=Controls" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:nacs2="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacw="clr-namespace:Neo.ApplicationFramework.Controls.WindowsControls;assembly=Controls" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" x:Class="Neo.ApplicationFramework.Generated.ProductRegister">
   <nacs:ScreenWindow.TemplateScreen>
     <nacs1:TemplateScreen Name="Template_Orfer" RenderMode="Background" />
   </nacs:ScreenWindow.TemplateScreen>
@@ -29,15 +29,15 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="ProductRegister_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1024" Height="768" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
-    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" Prefix="Product name: " VerticalContentAlignment="Top" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="19" FontWeight="Bold" Padding="2,2,2,2" Name="m_RecipeName_txt" Width="815" Height="28" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="1" KeyboardNavigation.TabNavigation="None" Canvas.Left="180" Canvas.Top="90" nacsd:EditorProperties.IsLocked="True">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1024" Height="768" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" Prefix="Product name: " VerticalContentAlignment="Top" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="19" FontWeight="Bold" Padding="2,2,2,2" Name="m_RecipeName_txt" Width="815" Height="28" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="1" KeyboardNavigation.TabNavigation="None" Canvas.Left="180" Canvas.Top="90" nacsd:EditorProperties.IsLocked="False">
       <nac:AnalogNumericFX.Resources>
         <ResourceDictionary>
           <nacc:VariantValueConverter x:Key="ValueConverter" />
         </ResourceDictionary>
       </nac:AnalogNumericFX.Resources>
       <nac:AnalogNumericFX.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ProdReg_RecipeName].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ProdReg_ProductName].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>0</Binding.FallbackValue>
         </Binding>
       </nac:AnalogNumericFX.Value>
@@ -48,19 +48,6 @@
         <TextDecorationCollection />
       </nac:AnalogNumericFX.TextDecorations>
     </nac:AnalogNumericFX>
-    <nac:Label AutoSize="False" WordWrap="False" AutoStretchFont="False" Text="Text" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="3.5,0,3.5,1" Name="m_Text8" Width="660" Height="23.09" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" Panel.ZIndex="2" Canvas.Left="336" Canvas.Top="100" nacb1:BlinkProperties.VisibleDynamicsValue="False" nacsd:EditorProperties.IsLocked="False" nacsd:EditorProperties.IsHidden="False">
-      <nac:Label.Resources>
-        <ResourceDictionary>
-          <nacc:VariantValueConverter x:Key="ValueConverter" />
-        </ResourceDictionary>
-      </nac:Label.Resources>
-      <nac:Label.Value>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagLatestLoadedRecipeName].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True" />
-      </nac:Label.Value>
-      <nac:Label.TextDecorations>
-        <TextDecorationCollection />
-      </nac:Label.TextDecorations>
-    </nac:Label>
     <nac:AnalogNumericFX AutoStretchFont="False" WarningColorLow="#FFFFA500" MinValue="-50" MaxValue="50" Prefix="RowNo " VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontFamily="Calibri" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="False" BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" Background="#FF43ABBE" Foreground="#FFFFFFFF" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="m_AnalogNumeric14" Width="96" Height="32" RenderTransformOrigin="0.5,0.5" Effect="{x:Null}" Visibility="Visible" Focusable="True" Panel.ZIndex="9" KeyboardNavigation.TabNavigation="None" Canvas.Left="699" Canvas.Top="387" nacsd:EditorProperties.IsLocked="False" nai:SecurityProperties.SecurityGroupsRequired="Administrators" nai:SecurityProperties.VisibilityOnAccessDenied="Hidden">
       <nac:AnalogNumericFX.Resources>
         <ResourceDictionary>
@@ -262,7 +249,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -301,7 +292,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -340,7 +335,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -391,7 +390,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -469,7 +472,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -508,7 +515,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -557,7 +568,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -599,7 +614,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -663,7 +682,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -702,7 +725,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -835,7 +862,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -918,7 +949,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -957,7 +992,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -1026,7 +1065,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -1124,7 +1167,11 @@
           </Binding>
         </nac:AnalogNumericFX.Value>
         <nac:AnalogNumericFX.BorderBrush>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+            <Binding.FallbackValue>
+              <SolidColorBrush>#FFABADB3</SolidColorBrush>
+            </Binding.FallbackValue>
+          </Binding>
         </nac:AnalogNumericFX.BorderBrush>
         <nac:AnalogNumericFX.BevelEffectInfo>
           <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -1161,7 +1208,11 @@
         </Binding>
       </nac:AnalogNumericFX.Value>
       <nac:AnalogNumericFX.BorderBrush>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FFABADB3</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
       </nac:AnalogNumericFX.BorderBrush>
       <nac:AnalogNumericFX.BevelEffectInfo>
         <nacb:BevelEffectInfo Style="None" Width="0" />
@@ -1200,7 +1251,11 @@
         </Binding>
       </nac:AnalogNumericFX.Value>
       <nac:AnalogNumericFX.BorderBrush>
-        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True" />
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_CurrentUserInt].Value" Converter="{StaticResource BorderBrushConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FFABADB3</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
       </nac:AnalogNumericFX.BorderBrush>
       <nac:AnalogNumericFX.BevelEffectInfo>
         <nacb:BevelEffectInfo Style="None" Width="0" />

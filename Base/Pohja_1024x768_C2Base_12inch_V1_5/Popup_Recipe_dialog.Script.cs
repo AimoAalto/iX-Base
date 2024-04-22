@@ -109,7 +109,7 @@ namespace Neo.ApplicationFramework.Generated
 						// Luetaan valittu resepti
 						Resepti r = (Resepti)ListBox1.SelectedItem;
 						Globals.Tuotetiedot.LoadRecipe(r.Nimi);
-						Globals.Tags.HMI_ProdReg_RecipeName.Value = r.Nimi;
+						Globals.Tags.HMI_ProdReg_ProductName.Value = r.Nimi;
 
 						// Suljetaan ikkuna
 						this.Close();
@@ -136,7 +136,7 @@ namespace Neo.ApplicationFramework.Generated
 						Globals.Tags.HMI_ProdReg_RiviNro.Value = olemassa.Value;
 
 						// Muokataan vanhaa reseptiä
-						Globals.Tags.HMI_ProdReg_RecipeName.Value = resepti;
+						Globals.Tags.HMI_ProdReg_ProductName.Value = resepti;
 						Globals.Tuotetiedot.SaveRecipe(resepti, true);
 					}
 					else
@@ -149,7 +149,7 @@ namespace Neo.ApplicationFramework.Generated
 						Globals.Tags.HMI_ProdReg_RiviNro.Value = ID;
 
 						// Tallennetaan resepti
-						Globals.Tags.HMI_ProdReg_RecipeName.Value = resepti;
+						Globals.Tags.HMI_ProdReg_ProductName.Value = resepti;
 						Globals.Tuotetiedot.SaveRecipe(resepti);
 					}
 
@@ -167,7 +167,7 @@ namespace Neo.ApplicationFramework.Generated
 						Resepti r = (Resepti)ListBox1.SelectedItem;
 						Globals.Tuotetiedot.DeleteRecipe(r.Nimi);
 						// Tyhjennetään valittu resepti
-						Globals.Tags.HMI_ProdReg_RecipeName.Value = "";
+						Globals.Tags.HMI_ProdReg_ProductName.Value = "";
 
 						// Suljetaan ikkuna
 						this.Close();

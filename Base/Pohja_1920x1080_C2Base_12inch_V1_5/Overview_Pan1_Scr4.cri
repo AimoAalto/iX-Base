@@ -40,7 +40,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>62</ObjectsCount>
+          <ObjectsCount>61</ObjectsCount>
           <ScreenName>Overview_Pan1_Scr4</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10004">

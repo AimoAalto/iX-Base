@@ -24,8 +24,6 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item xsi:type="ActionItem" Target="Template_Manual.Button_Left" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="Template_Manual.Button_Right" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
         <Item Target="Template_Manual.Group_Buttons1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Menu_SubMenu_Group_Visibility" />
         <Item Target="Template_Manual.Group_Buttons1.btnSubmenu1" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
         <Item Target="Template_Manual.Group_Buttons1.btnSubmenu2" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
@@ -71,13 +69,13 @@
       <Items>
         <Item Target="Template_Manual.Script.cs" Source="Tags.HMI_Settings_PanelNumber" />
         <Item Target="Template_Manual.Script.cs" Source="Tags.Screens" />
+        <Item Target="Template_Manual.Script.cs" Source="Tags.Menu_SubMenu_Group_Visibility" />
+        <Item Target="Template_Manual.Script.cs" Source="Tags.Menu_SubMenu_Btn_Anim" />
+        <Item Target="Template_Manual.Script.cs" Source="Tags.SystemTagNewScreenId" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
-      <Items>
-        <Item xsi:type="ActionItem" Target="Template_Manual.Button_Left" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="Template_Manual.Button_Right" TargetProperty="Actions" Source="Tags.Menu_SubMenu_Group_Visibility" Event="Click" Action="Set Analog" Param="" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="Symbol">
       <Items />

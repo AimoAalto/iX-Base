@@ -62,7 +62,7 @@
       <Items>
         <Item xsi:type="ActionItem" Target="Settings_Pan1_Scr1.Group_ChangeScreen_btn.Button_ChangeScreen" TargetProperty="Actions" Source="ScreenSelection" Event="Click" Action="Show Screen" Param="Default" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>107</ObjectsCount>
+          <ObjectsCount>110</ObjectsCount>
           <ScreenName>Settings_Pan1_Scr1</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10701">

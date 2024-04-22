@@ -32,13 +32,13 @@
         <Item Target="Template_Settings.Group_Buttons1.btnSubmenu4" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
         <Item Target="Template_Settings.Group_Buttons1.btnSubmenu3" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
         <Item Target="Template_Settings.Group_Buttons1.btnSubmenu5" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Settings.Group_Buttons1.btnSubmenu5" TargetProperty="Foreground" Source="Tags.CurrentUserInt" />
+        <Item Target="Template_Settings.Group_Buttons1.btnSubmenu5" TargetProperty="Foreground" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="Template_Settings.Group_Buttons1.btnSubmenu5" TargetProperty="EnabledProperties.EnabledDynamicsValue" Source="Tags.HMI_AdminUser" />
         <Item Target="Template_Settings.Group_Buttons1.btnSubmenu6" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Settings.Group_Buttons1.btnSubmenu6" TargetProperty="Foreground" Source="Tags.CurrentUserInt" />
+        <Item Target="Template_Settings.Group_Buttons1.btnSubmenu6" TargetProperty="Foreground" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="Template_Settings.Group_Buttons1.btnSubmenu6" TargetProperty="EnabledProperties.EnabledDynamicsValue" Source="Tags.HMI_AdminUser" />
         <Item Target="Template_Settings.Group_Buttons1.btnSubmenu7" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Settings.Group_Buttons1.btnSubmenu7" TargetProperty="Foreground" Source="Tags.CurrentUserInt" />
+        <Item Target="Template_Settings.Group_Buttons1.btnSubmenu7" TargetProperty="Foreground" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="Template_Settings.Group_Buttons1.btnSubmenu7" TargetProperty="EnabledProperties.EnabledDynamicsValue" Source="Tags.HMI_AdminUser" />
         <Item Target="Template_Settings.Group_Buttons2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Menu_SubMenu_Group_Visibility" />
         <Item Target="Template_Settings.Group_Buttons2.btnSubmenu8" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />

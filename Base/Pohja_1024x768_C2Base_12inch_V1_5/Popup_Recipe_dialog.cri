@@ -62,7 +62,7 @@
         <Item Target="Popup_Recipe_dialog.Script.cs" Source="Tags.HMI_Error_TextValue" />
         <Item Target="Popup_Recipe_dialog.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
         <Item Target="Popup_Recipe_dialog.Script.cs" Source="Tags.HMI_ProdReg_RecipeSelected" />
-        <Item Target="Popup_Recipe_dialog.Script.cs" Source="Tags.HMI_ProdReg_RecipeName" />
+        <Item Target="Popup_Recipe_dialog.Script.cs" Source="Tags.HMI_ProdReg_ProductName" />
         <Item Target="Popup_Recipe_dialog.Script.cs" Source="Tags.HMI_ProdReg_RiviNro" />
       </Items>
     </Category>

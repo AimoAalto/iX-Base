@@ -27,15 +27,15 @@
         <Item Target="Settings_SystemConf_Pan1.CBSetSelection" TargetProperty="Value" Source="Tags.HMI_ConfGroupSet" />
         <Item Target="Settings_SystemConf_Pan1.GroupCommonSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
         <Item Target="Settings_SystemConf_Pan1.GroupCommonSet.ANPanelNo" TargetProperty="Value" Source="Tags.HMI_Settings_PanelNumber" />
-        <Item Target="Settings_SystemConf_Pan1.GroupOptions" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
-        <Item Target="Settings_SystemConf_Pan1.GroupOptions.Text" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Me_Debug" />
-        <Item Target="Settings_SystemConf_Pan1.GroupOptions.ANSqlServerInstance" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Me_Debug" />
-        <Item Target="Settings_SystemConf_Pan1.GroupOptions.Text1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Me_Debug" />
-        <Item Target="Settings_SystemConf_Pan1.GroupOptions.ANSqlServerDB" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Me_Debug" />
         <Item Target="Settings_SystemConf_Pan1.GroupNewRobotSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
-        <Item Target="Settings_SystemConf_Pan1.GroupPatternsSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
         <Item Target="Settings_SystemConf_Pan1.GroupRobotSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
-        <Item Target="Settings_SystemConf_Pan1.GroupOptions.CB_UseNonVolatileDB" TargetProperty="IsChecked" Source="Tags.Conf_UseOnlyNVBD" />
+        <Item Target="Settings_SystemConf_Pan1.GroupPatternsSet" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
+        <Item Target="Settings_SystemConf_Pan1.GroupOptions" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ConfGroupSet" />
+        <Item Target="Settings_SystemConf_Pan1.GroupOptions.ANSqlServerDB" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Me_Debug" />
+        <Item Target="Settings_SystemConf_Pan1.GroupOptions.Text1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Me_Debug" />
+        <Item Target="Settings_SystemConf_Pan1.GroupOptions.ANSqlServerInstance" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Me_Debug" />
+        <Item Target="Settings_SystemConf_Pan1.GroupOptions.Text" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Me_Debug" />
+        <Item Target="Settings_SystemConf_Pan1.GroupOptions.CB_UseNonVolatileDB" TargetProperty="IsChecked" Source="Tags.HMI_Conf_UseOnlyNVBD" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">

@@ -1601,11 +1601,6 @@
           <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
         </ReferenceValue>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="ProductRegister" ObjectName="Text8" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Text" />
-        </ReferenceValue>
-      </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="ProductRegister" ObjectName="Product_Save_btn" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
         <ReferenceValue>
           <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Save" />
@@ -5512,12 +5507,12 @@
           <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
         </ReferenceValue>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="Button_Left" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="Btn_Left" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
         <ReferenceValue>
           <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="&lt;" />
         </ReferenceValue>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="Button_Right" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="Btn_Right" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
         <ReferenceValue>
           <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="&gt;" />
         </ReferenceValue>
@@ -7385,116 +7380,6 @@
       <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_Error" ObjectName="ErrorText" PropertyName="Texts[37]" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
         <ReferenceValue>
           <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Info" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt116" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt116" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt16AsBit" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt16AsBit" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="Btn_I16x2" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="x2" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt132" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt132" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt32AsBit" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt32AsBit" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="Btn_I32x2" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="x2" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt116_Byte1" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt116_Byte1" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt116_Byte0" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt116_Byte0" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt132_Byte0" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt132_Byte0" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt132_Byte1" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt132_Byte1" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt132_Byte2" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt132_Byte2" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt132_Byte3" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_BitOperation" ObjectName="ANInt132_Byte3" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
         </ReferenceValue>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Overview_Pan1_Scr1" ObjectName="Btn_StopProd1" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">

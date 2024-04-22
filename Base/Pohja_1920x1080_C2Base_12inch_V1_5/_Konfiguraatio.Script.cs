@@ -109,6 +109,13 @@ namespace Neo.ApplicationFramework.Generated
 		private Dictionary<int, PatternInfo> patterns = new Dictionary<int, PatternInfo>();
 
 		public int PanelNo { get; set; }
+		
+		public int AreaNo { get; set; }
+
+		public int DefaultManualScreen { get; set; }
+
+		public int DefaultManualScreenGroup2 { get; set; }
+		
 		public Dictionary<string, int> Aikavalit
 		{
 			get { if (aikavalit == null) aikavalit = new Dictionary<string, int>(); return aikavalit; }
@@ -651,11 +658,11 @@ namespace Neo.ApplicationFramework.Generated
 			lock (lockme)
 				try
 				{
-					bool b = (bool)Globals.Tags.Conf_UseOnlyNVBD.Value;
+					bool b = (bool)Globals.Tags.HMI_Conf_UseOnlyNVBD.Value;
 					if (b)
 					{
 						// non-volatiletag
-						string s = Globals.Tags.Conf_CurrentConfig.Value;
+						string s = Globals.Tags.HMI_Conf_CurrentConfig.Value;
 						if (!string.IsNullOrEmpty(s))
 							config = Newtonsoft.Json.JsonConvert.DeserializeObject<Configuration__>(s);
 					}
@@ -670,7 +677,7 @@ namespace Neo.ApplicationFramework.Generated
 							config = new Configuration__();
 						}
 						string s = Newtonsoft.Json.JsonConvert.SerializeObject(CurrentConfig);
-						Globals.Tags.Conf_CurrentConfig.SetString(s);
+						Globals.Tags.HMI_Conf_CurrentConfig.SetString(s);
 					}
 
 					Globals.Tags.HMI_Settings_PanelNumber.SetAnalog(config.PanelNo);
@@ -689,16 +696,16 @@ namespace Neo.ApplicationFramework.Generated
 			lock (lockme)
 				try
 				{
-					string last = Globals.Tags.Conf_LastConfig.Value;
+					string last = Globals.Tags.HMI_Conf_LastConfig.Value;
 					if (last == null) last = "";
-					string current = Globals.Tags.Conf_LastConfig.Value;
+					string current = Globals.Tags.HMI_Conf_LastConfig.Value;
 					if (current == null) current = "";
 					string s = Newtonsoft.Json.JsonConvert.SerializeObject(CurrentConfig);
 					if (last.CompareTo(s) != 0)
 					{
 						// non-volatiletag
-						Globals.Tags.Conf_LastConfig.SetString(current);
-						Globals.Tags.Conf_CurrentConfig.SetString(s);
+						Globals.Tags.HMI_Conf_LastConfig.SetString(current);
+						Globals.Tags.HMI_Conf_CurrentConfig.SetString(s);
 
 						// backup last value
 						// Luo peruskansio jos ei olemassa
@@ -800,6 +807,9 @@ namespace Neo.ApplicationFramework.Generated
 			try
 			{
 				Read();
+
+				if (CurrentConfig.AreaNo == 0) CurrentConfig.AreaNo = 1;
+				Globals.Tags.HMI_Area.SetAnalog(CurrentConfig.AreaNo);
 
 				// PanelNo change event
 				Globals.Tags.HMI_Settings_PanelNumber.ValueChange += ValueChangePN;
