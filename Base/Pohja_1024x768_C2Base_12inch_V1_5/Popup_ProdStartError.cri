@@ -24,9 +24,9 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Opened" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_ProductionStarting" Event="Opened" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -59,9 +59,9 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Opened" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_ProductionStarting" Event="Opened" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">

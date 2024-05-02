@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?neo version='2.46.87.0'?>
 <NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
-  <Object d1p1:type="Neo.ApplicationFramework.Tools.Recipe.Recipe, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" SchemaVersion="131" Guid="eb716e4f-56c2-4b0f-8f9f-85c23f28ea9f" TableName="Tuotetiedot" d1p1:Site.Name="Tuotetiedot" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+  <Object d1p1:type="Neo.ApplicationFramework.Tools.Recipe.Recipe, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" SchemaVersion="140" Guid="eb716e4f-56c2-4b0f-8f9f-85c23f28ea9f" TableName="Tuotetiedot" d1p1:Site.Name="Tuotetiedot" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
     <RecipeItems>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.Recipe.RecipeItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" Name="Tuotenumero" DataConnection="Tags.HMI_ProdReg_ProductNo" ColumnName="Tuotenumero" VisualSortOrder="1" d1p1:Site.Name="Tuotenumero" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
         <RecipeDataItems>
@@ -90,7 +90,7 @@
         <RecipeDataItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.Recipe.RecipeDataItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" RecipeTitleName="Laatikko A">
             <RuntimeData>
-              <Object d1p1:type="System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="182" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="182" />
             </RuntimeData>
           </Object>
         </RecipeDataItems>
@@ -99,7 +99,7 @@
         <RecipeDataItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.Recipe.RecipeDataItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" RecipeTitleName="Laatikko A">
             <RuntimeData>
-              <Object d1p1:type="System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="186" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="186" />
             </RuntimeData>
           </Object>
         </RecipeDataItems>
@@ -108,7 +108,7 @@
         <RecipeDataItems>
           <Object d1p1:type="Neo.ApplicationFramework.Tools.Recipe.RecipeDataItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" RecipeTitleName="Laatikko A">
             <RuntimeData>
-              <Object d1p1:type="System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="277" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="277" />
             </RuntimeData>
           </Object>
         </RecipeDataItems>

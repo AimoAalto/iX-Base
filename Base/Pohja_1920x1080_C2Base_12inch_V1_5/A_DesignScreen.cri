@@ -20,64 +20,108 @@
       <Items />
     </Category>
     <Category Name="Expression">
-      <Items />
+      <Items>
+        <Item Target="A_DesignScreen.Group_PlacePerm_1_btn.MPicturePlacePerm1" TargetProperty="Value" Source="Bit0IsSet" />
+        <Item Target="A_DesignScreen.Group_PickPerm_1_btn.MPicturePickPerm1" TargetProperty="Value" Source="Bit0IsSet" />
+        <Item Target="A_DesignScreen.Group_CartonPickPerm_1_btn.MCartonPicturePickPerm1" TargetProperty="Value" Source="Bit0IsSet" />
+        <Item Target="A_DesignScreen.GroupInfeedPerm.MPictureInfeedPerm" TargetProperty="Value" Source="Bit0IsSet" />
+        <Item Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.MultiPicture_PickPerm1" TargetProperty="Value" Source="Bit0IsSet" />
+        <Item Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.MultiPicture_PlacePerm_1" TargetProperty="Value" Source="Bit0IsSet" />
+        <Item Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.MultiPicture_CartonPickPerm1" TargetProperty="Value" Source="Bit0IsSet" />
+      </Items>
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="A_DesignScreen.Rob1_otto1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_nostopaikka" />
-        <Item Target="A_DesignScreen.Rob1_otto1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_nostopaikka" />
-        <Item Target="A_DesignScreen.Rob1_jatto1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_lavapaikka" />
-        <Item Target="A_DesignScreen.Rob1_jatto1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_lavapaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox31" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob2_lavapaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox31" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob2_lavapaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox39" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob3_lavapaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox39" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob3_lavapaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox47" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob2_nostopaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox47" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob2_nostopaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox55" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob3_nostopaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox55" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob3_nostopaikka" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Jattolupa1_Valinta" Event="Click" Action="Toggle Tag" Param="" />
-        <Item Target="A_DesignScreen.Group_PlacePerm_1_btn.Button" TargetProperty="Value" Source="Tags.Line1_PLC_Jattolupa1_Valinta" />
-        <Item Target="A_DesignScreen.Group_PlacePerm_1_btn.MultiPicture" TargetProperty="Value" Source="Tags.Line1_PLC_Jattolupa1_Tila" />
-        <Item Target="A_DesignScreen.Group_PlacePerm_1_btn.MultiPicture" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Line1_PLC_Jattolupa1_Valinta" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPerm_1_btn.Button1" TargetProperty="Actions" Source="Tags.Line1_PLC_Jattolupa1_Valinta" Event="Click" Action="Toggle Tag" Param="" />
-        <Item Target="A_DesignScreen.Group_PickPerm_1_btn.Button1" TargetProperty="Value" Source="Tags.Line1_PLC_Ottolupa1_Valinta" />
-        <Item Target="A_DesignScreen.Group_PickPerm_1_btn.MultiPicture1" TargetProperty="Value" Source="Tags.Line1_PLC_Ottolupa1_Tila" />
-        <Item Target="A_DesignScreen.Group_PickPerm_1_btn.MultiPicture1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Line1_PLC_Ottolupa1_Valinta" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.Button2" TargetProperty="Actions" Source="Tags.Line1_PLC_Jattolupa1_Valinta" Event="Click" Action="Toggle Tag" Param="" />
-        <Item Target="A_DesignScreen.Group_CartonPickPerm_1_btn.Button2" TargetProperty="Value" Source="Tags.Line1_PLC_Pahvi_Ottolupa1_Valinta" />
-        <Item Target="A_DesignScreen.Group_CartonPickPerm_1_btn.MultiPicture2" TargetProperty="Value" Source="Tags.Line1_PLC_Pahvi_Ottolupa1_Tila" />
-        <Item Target="A_DesignScreen.Group_CartonPickPerm_1_btn.MultiPicture2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Line1_PLC_Pahvi_Ottolupa1_Valinta" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_ShowPall_btn.Button_NewPall_btn" TargetProperty="Actions" Source="Tags.HMI_Overview_PalletResets" Event="Click" Action="Toggle Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_ShowResets_btn.Button_Resets" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackResets" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.BtnPlacePerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="A_DesignScreen.Group_PlacePerm_1_btn.BtnPlacePerm1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_01" />
+        <Item Target="A_DesignScreen.Group_PlacePerm_1_btn.MPicturePlacePerm1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_PlacePerm" />
+        <Item Target="A_DesignScreen.Group_PlacePerm_1_btn.MPicturePlacePerm1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_01" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPerm_1_btn.BtnPickPerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PickPerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="A_DesignScreen.Group_PickPerm_1_btn.BtnPickPerm1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_Permissions_PickPerm_01" />
+        <Item Target="A_DesignScreen.Group_PickPerm_1_btn.MPicturePickPerm1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_PickPerm" />
+        <Item Target="A_DesignScreen.Group_PickPerm_1_btn.MPicturePickPerm1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_01" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.Line1_PLC_ResetCode" Event="Click" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackResets" Event="Click" Action="Reset Tag" Param="" />
         <Item Target="A_DesignScreen.Group_Reset_btn.Button_Reset" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_TrackResets" />
         <Item Target="A_DesignScreen.Group_Reset_btn.Rectangle6" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_TrackResets" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
-        <Item Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_PalletResets" />
-        <Item Target="A_DesignScreen.Group_PallChange_btn.Rectangle5" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_PalletResets" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
-        <Item Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_PalletResets" />
-        <Item Target="A_DesignScreen.Group_PickPallChange_btn.Rectangle3" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_PalletResets" />
-        <Item Target="A_DesignScreen.SymbolViewbox" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_nostopaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_nostopaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob2_nostopaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob2_nostopaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox2" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob3_nostopaikka" />
-        <Item Target="A_DesignScreen.SymbolViewbox2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob3_nostopaikka" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
-        <Item Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Value" Source="Tags.Line1_PLC_Aloitettu1" />
-        <Item Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="TextValue" Source="Tags.Line1_PLC_Aloitettu1" />
-        <Item Target="A_DesignScreen.Group_StartProd1_btn.RectangleStartProd1" TargetProperty="Fill" Source="Tags.Line1_PLC_Aloitettu1" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
-        <Item Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="Value" Source="Tags.Line1_PLC_Aloitettu2" />
-        <Item Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="TextValue" Source="Tags.Line1_PLC_Aloitettu2" />
-        <Item Target="A_DesignScreen.Group_StartProd2_btn.RectangleStartProd2" TargetProperty="Fill" Source="Tags.Line1_PLC_Aloitettu2" />
+        <Item Target="A_DesignScreen.Group_PickPallChange_btn" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_PalletResets" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Btn_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Btn_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item Target="A_DesignScreen.GroupRobPlace.Rob1_Place1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_lavapaikka" />
+        <Item Target="A_DesignScreen.GroupRobPlace.Rob1_Place1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_lavapaikka" />
+        <Item Target="A_DesignScreen.GroupRobPlace.Rob2_Place1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob2_lavapaikka" />
+        <Item Target="A_DesignScreen.GroupRobPlace.Rob2_Place1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob2_lavapaikka" />
+        <Item Target="A_DesignScreen.GroupRobPlace.Rob3_Place1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob3_lavapaikka" />
+        <Item Target="A_DesignScreen.GroupRobPlace.Rob3_Place1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob3_lavapaikka" />
+        <Item Target="A_DesignScreen.GroupRobPick.Rob1_Pick1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupRobPick.Rob1_Pick1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupRobPick.Rob3_Pick1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob3_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupRobPick.Rob3_Pick1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob3_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupRobPick.Rob2_Pick1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob2_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupRobPick.Rob2_Pick1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob2_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupCartonPick.Rob1_CartonPick1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupCartonPick.Rob1_CartonPick1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupCartonPick.Rob2_CartonPick1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob2_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupCartonPick.Rob2_CartonPick1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob2_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupCartonPick.Rob3_CartonPick1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob3_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupCartonPick.Rob3_CartonPick1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob3_nostopaikka" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.BtnCartonPickPerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_CartonPickPerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="A_DesignScreen.Group_CartonPickPerm_1_btn.BtnCartonPickPerm1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_Permissions_CartonPickPerm_01" />
+        <Item Target="A_DesignScreen.Group_CartonPickPerm_1_btn.MCartonPicturePickPerm1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_CartonPickPerm" />
+        <Item Target="A_DesignScreen.Group_CartonPickPerm_1_btn.MCartonPicturePickPerm1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_DB_ToPLC_Permissions_CartonPickPerm_01" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupQuickFuncs.Group_ShowResets_btn.Btn_Resets" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackResets" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupQuickFuncs.Group_ShowPall_btn.Btn_NewPall_btn" TargetProperty="Actions" Source="Tags.HMI_Overview_PalletResets" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="A_DesignScreen.Group_NormalPallChange_btn" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Overview_PalletResets" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_NormalPallChange_btn.Btn_NormalPallChange" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_NormalPallChange_btn.Btn_NormalPallChange" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item Target="A_DesignScreen.GroupStartProd1.RectangleStartProd1" TargetProperty="Fill" Source="Tags.S7HMI_ToHMI_Line_1_CommBits_ProdStartOK" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupStartProd1.Btn_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupStartProd1.Btn_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="A_DesignScreen.GroupStartProd1.Btn_StartProd1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_ToHMI_Line_1_CommBits_ProdStartOK" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupStartProd1.Btn_StopProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupStartProd1.Btn_StopProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="A_DesignScreen.GroupStartProd1.Btn_StopProd1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_ToHMI_Line_1_CommBits_ProdStartOK" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBS7HMI_ToHMI_Line_1_CommBits_ProdStartOK" TargetProperty="IsChecked" Source="Tags.S7HMI_ToHMI_Line_1_CommBits_ProdStartOK" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBHMI_Overview_TrackResets" TargetProperty="IsChecked" Source="Tags.HMI_Overview_TrackResets" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBHMI_Overview_PalletResets" TargetProperty="IsChecked" Source="Tags.HMI_Overview_PalletResets" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBS7HMI_DB_ToPLC_Permissions_CartonPickPerm_01" TargetProperty="IsChecked" Source="Tags.S7HMI_DB_ToPLC_Permissions_CartonPickPerm_01" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBS7HMI_DB_ToHMI_PermissionsFB_CartonPickPerm_01" TargetProperty="IsChecked" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_CartonPickPerm" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBS7HMI_DB_ToPLC_Permissions_PlacePerm_01" TargetProperty="IsChecked" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_01" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBS7HMI_DB_ToHMI_PermissionsFB_PlacePerm_01" TargetProperty="IsChecked" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_PlacePerm" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBS7HMI_DB_ToPLC_Permissions_PickPerm_01" TargetProperty="IsChecked" Source="Tags.S7HMI_DB_ToPLC_Permissions_PickPerm_01" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBS7HMI_DB_ToPLC_Permissions_PlacePerm_1" TargetProperty="IsChecked" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_PickPerm" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBRob3_nostopaikka" TargetProperty="IsChecked" Source="Tags.Rob3_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBRob2_nostopaikka" TargetProperty="IsChecked" Source="Tags.Rob2_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBRob1_nostopaikka" TargetProperty="IsChecked" Source="Tags.Rob1_nostopaikka" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBRob3_lavapaikka" TargetProperty="IsChecked" Source="Tags.Rob3_lavapaikka" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBRob2_lavapaikka" TargetProperty="IsChecked" Source="Tags.Rob2_lavapaikka" />
+        <Item Target="A_DesignScreen.GroupTestCBs.CBRob1_lavapaikka" TargetProperty="IsChecked" Source="Tags.Rob1_lavapaikka" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupInfeedPerm.BtnInfeedPerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_InfeedPerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="A_DesignScreen.GroupInfeedPerm.BtnInfeedPerm1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_Permissions_InfeedPerm_01" />
+        <Item Target="A_DesignScreen.GroupInfeedPerm.MPictureInfeedPerm" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_InfeedPerm" />
+        <Item Target="A_DesignScreen.GroupInfeedPerm.MPictureInfeedPerm" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_DB_ToPLC_Permissions_InfeedPerm_01" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.Btn_PickPerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PickPerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.Btn_PickPerm1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_Permissions_PickPerm_01" />
+        <Item Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.MultiPicture_PickPerm1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_PickPerm" />
+        <Item Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.MultiPicture_PickPerm1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_01" />
+        <Item Target="A_DesignScreen.Group_PickPermission_1.Rob1_Picking1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_nostopaikka" />
+        <Item Target="A_DesignScreen.Group_PickPermission_1.Rob1_Picking1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_nostopaikka" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.Btn_PlacePerm_1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.Btn_PlacePerm_1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_01" />
+        <Item Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.MultiPicture_PlacePerm_1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_PlacePerm" />
+        <Item Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.MultiPicture_PlacePerm_1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_01" />
+        <Item Target="A_DesignScreen.Group_PlacePermission_1.Rob1_Placing1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_lavapaikka" />
+        <Item Target="A_DesignScreen.Group_PlacePermission_1.Rob1_Placing1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_lavapaikka" />
+        <Item Target="A_DesignScreen.Group_CartonPickPermission_1.Rob1_CartonPicking1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.Rob1_nostopaikka" />
+        <Item Target="A_DesignScreen.Group_CartonPickPermission_1.Rob1_CartonPicking1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.Rob1_nostopaikka" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.Btn_CartonPickPerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_CartonPickPerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.Btn_CartonPickPerm1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_Permissions_CartonPickPerm_01" />
+        <Item Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.MultiPicture_CartonPickPerm1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_PermissionsFB_CartonPickPerm" />
+        <Item Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.MultiPicture_CartonPickPerm1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_DB_ToPLC_Permissions_CartonPickPerm_01" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupPalletInfo.BtnOpenPalletPlace1Info" TargetProperty="Actions" Source="Tags.HMI_PalletPlace" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="A_DesignScreen.GroupPalletInfo.ANRob1PMaxVie" TargetProperty="Value" Source="Tags.Rob1_lavap1_pmaxvie" />
+        <Item Target="A_DesignScreen.GroupPalletInfo.ANRob1Pker" TargetProperty="Value" Source="Tags.Rob1_lavap1_pkerasetus" />
+        <Item Target="A_DesignScreen.GroupPalletInfo.ANRob1Plas" TargetProperty="Value" Source="Tags.Rob1_lavap1_plasl" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -94,10 +138,13 @@
     </Category>
     <Category Name="Screen">
       <Items>
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Popup_NewPallet" Event="Click" Action="Show Screen" Param="Default" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Popup_NewPickPallet" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Btn_PickPallChange" TargetProperty="Actions" Source="Popup_NewPickPallet" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_NormalPallChange_btn.Btn_NormalPallChange" TargetProperty="Actions" Source="Popup_NewPallet" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupStartProd1.Btn_StartProd1" TargetProperty="Actions" Source="Popup_StartProduction" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupStartProd1.Btn_StopProd1" TargetProperty="Actions" Source="Popup_Stop_Production" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupPalletInfo.BtnOpenPalletPlace1Info" TargetProperty="Actions" Source="Popup_Palletplace_info" Event="Click" Action="Show Screen" Param="" />
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>49</ObjectsCount>
+          <ObjectsCount>92</ObjectsCount>
           <ScreenName>A_DesignScreen</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="">
@@ -106,55 +153,87 @@
       </Items>
     </Category>
     <Category Name="Script">
-      <Items />
+      <Items>
+        <Item Target="A_DesignScreen.Script.cs" Source="Tags.Rob1_nostopaikka" />
+        <Item Target="A_DesignScreen.Script.cs" Source="Tags.Rob2_nostopaikka" />
+        <Item Target="A_DesignScreen.Script.cs" Source="Tags.Rob3_nostopaikka" />
+      </Items>
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.Button" TargetProperty="Actions" Source="Tags.Line1_PLC_Jattolupa1_Valinta" Event="Click" Action="Toggle Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPerm_1_btn.Button1" TargetProperty="Actions" Source="Tags.Line1_PLC_Jattolupa1_Valinta" Event="Click" Action="Toggle Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.Button2" TargetProperty="Actions" Source="Tags.Line1_PLC_Jattolupa1_Valinta" Event="Click" Action="Toggle Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_ShowPall_btn.Button_NewPall_btn" TargetProperty="Actions" Source="Tags.HMI_Overview_PalletResets" Event="Click" Action="Toggle Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_ShowResets_btn.Button_Resets" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackResets" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.BtnPlacePerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPerm_1_btn.BtnPickPerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PickPerm_01" Event="Click" Action="Toggle Tag" Param="" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.Line1_PLC_ResetCode" Event="Click" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_Reset_btn.Button_Reset" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackResets" Event="Click" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
-        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Btn_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPallChange_btn.Btn_PickPallChange" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.BtnCartonPickPerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_CartonPickPerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupQuickFuncs.Group_ShowResets_btn.Btn_Resets" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackResets" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupQuickFuncs.Group_ShowPall_btn.Btn_NewPall_btn" TargetProperty="Actions" Source="Tags.HMI_Overview_PalletResets" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_NormalPallChange_btn.Btn_NormalPallChange" TargetProperty="Actions" Source="Tags.HMI_PalletChange" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_NormalPallChange_btn.Btn_NormalPallChange" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupStartProd1.Btn_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupStartProd1.Btn_StartProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupStartProd1.Btn_StopProd1" TargetProperty="Actions" Source="Tags.HMI_Selected_RobotNo" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupStartProd1.Btn_StopProd1" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupInfeedPerm.BtnInfeedPerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_InfeedPerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.Btn_PickPerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PickPerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.Btn_PlacePerm_1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_PlacePerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.Btn_CartonPickPerm1" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_Permissions_CartonPickPerm_01" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="A_DesignScreen.GroupPalletInfo.BtnOpenPalletPlace1Info" TargetProperty="Actions" Source="Tags.HMI_PalletPlace" Event="Click" Action="Set Analog" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">
       <Items>
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.Button" Source="orfer_permission_selectedoff" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.Button" Source="orfer_permission_selectedoff" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.MultiPicture" Source="orfer_permission_down_off" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.MultiPicture" Source="orfer_permission_down_off" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.MultiPicture" Source="orfer_permission_down_on" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPerm_1_btn.Button1" Source="orfer_permission_selectedoff" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPerm_1_btn.Button1" Source="orfer_permission_selectedoff" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPerm_1_btn.MultiPicture1" Source="orfer_permission_upward_off" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPerm_1_btn.MultiPicture1" Source="orfer_permission_upward_off" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPerm_1_btn.MultiPicture1" Source="orfer_permission_upward_on" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.Button2" Source="orfer_permission_selectedoff" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.Button2" Source="orfer_permission_selectedoff" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.MultiPicture2" Source="orfer_permission_upward_off" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.MultiPicture2" Source="orfer_permission_upward_off" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.MultiPicture2" Source="orfer_permission_upward_on" Width="36" Height="36" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_ShowPall_btn.Button_NewPall_btn" Source="orfer_newpallet" Width="31" Height="31" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_ShowResets_btn.Button_Resets" Source="orfer_reset" Width="26" Height="26" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_Reset_btn.Button_Reset" Source="orfer_reset" Width="24" Height="24" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PallChange_btn.Button_NewPall" Source="orfer_newpallet" Width="31" Height="31" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPallChange_btn.Button_PickPallChange" Source="orfer_newpallet" Width="31" Height="31" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd1_btn.Button_StartProd1" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_StartProd2_btn.Button_StartProd2" Source="testi_3" Width="31" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.BtnPlacePerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.BtnPlacePerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.BtnPlacePerm1" Source="empty" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.MPicturePlacePerm1" Source="orfer_permission_down_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.MPicturePlacePerm1" Source="orfer_permission_down_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePerm_1_btn.MPicturePlacePerm1" Source="orfer_permission_down_on" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPerm_1_btn.BtnPickPerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPerm_1_btn.BtnPickPerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPerm_1_btn.BtnPickPerm1" Source="empty" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPerm_1_btn.MPicturePickPerm1" Source="orfer_permission_upward_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPerm_1_btn.MPicturePickPerm1" Source="orfer_permission_upward_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPerm_1_btn.MPicturePickPerm1" Source="orfer_permission_upward_on" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_Reset_btn.Button_Reset" Source="orfer_reset" Width="15" Height="15" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPallChange_btn.Btn_PickPallChange" Source="orfer_newpallet" Width="23" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.BtnCartonPickPerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.BtnCartonPickPerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.BtnCartonPickPerm1" Source="empty" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.MCartonPicturePickPerm1" Source="orfer_permission_down_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.MCartonPicturePickPerm1" Source="orfer_permission_down_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPerm_1_btn.MCartonPicturePickPerm1" Source="orfer_permission_down_on" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.GroupQuickFuncs.Group_ShowResets_btn.Btn_Resets" Source="orfer_reset" Width="17" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.GroupQuickFuncs.Group_ShowPall_btn.Btn_NewPall_btn" Source="orfer_newpallet" Width="22" Height="22" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_NormalPallChange_btn.Btn_NormalPallChange" Source="orfer_newpallet" Width="23" Height="23" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.GroupStartProd1.Btn_StartProd1" Source="testi_3" Width="22" Height="22" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.GroupStartProd1.Btn_StopProd1" Source="testi_3" Width="22" Height="22" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.GroupInfeedPerm.BtnInfeedPerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.GroupInfeedPerm.BtnInfeedPerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.GroupInfeedPerm.BtnInfeedPerm1" Source="empty" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.GroupInfeedPerm.MPictureInfeedPerm" Source="orfer_permission_down_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.GroupInfeedPerm.MPictureInfeedPerm" Source="orfer_permission_down_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.GroupInfeedPerm.MPictureInfeedPerm" Source="orfer_permission_down_on" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.Btn_PickPerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.Btn_PickPerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.Btn_PickPerm1" Source="empty" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.MultiPicture_PickPerm1" Source="orfer_permission_upward_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.MultiPicture_PickPerm1" Source="orfer_permission_upward_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PickPermission_1.Group_PickPermBtn_1.MultiPicture_PickPerm1" Source="orfer_permission_upward_on" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.Btn_PlacePerm_1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.Btn_PlacePerm_1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.Btn_PlacePerm_1" Source="empty" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.MultiPicture_PlacePerm_1" Source="orfer_permission_down_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.MultiPicture_PlacePerm_1" Source="orfer_permission_down_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_PlacePermission_1.Group_PlacePermBtn_1.MultiPicture_PlacePerm_1" Source="orfer_permission_down_on" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.Btn_CartonPickPerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.Btn_CartonPickPerm1" Source="orfer_permission_selectedoff" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.Btn_CartonPickPerm1" Source="empty" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.MultiPicture_CartonPickPerm1" Source="orfer_permission_down_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.MultiPicture_CartonPickPerm1" Source="orfer_permission_down_off" Width="29" Height="29" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="A_DesignScreen.Group_CartonPickPermission_1.Group_CartonPickPermBtn_1.MultiPicture_CartonPickPerm1" Source="orfer_permission_down_on" Width="29" Height="29" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

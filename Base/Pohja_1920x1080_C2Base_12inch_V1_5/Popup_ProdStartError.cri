@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
   <Categories>
     <Category Name="AlarmViewer">
       <Items />
@@ -24,7 +24,7 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Opened" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_ProductionStarting" Event="Opened" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
@@ -59,7 +59,7 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Opened" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_ProductionStarting" Event="Opened" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_ProdStartError" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
       </Items>

@@ -23,7 +23,7 @@
             </nata:Action>
             <nata:Action Name="Reset Tag">
               <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_StopProd_Lopetus" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.S7HMI_ToPLC_Line_1_CommBits_ProdEnd" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
               </nata:Action.ActionMethodInfo>
             </nata:Action>
             <nata:Action Name="Reset Tag">
@@ -60,7 +60,7 @@
       <nacxs:EventHandlerInfo EventName="Opened" MethodName="Stop_Production_Opened" />
     </nai:ScriptEventList>
   </nai:ScriptProperties.ScriptEvents>
-  <nacs:ElementCanvas Name="m_EditorCanvas" Width="298" Height="184" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto" Panel.ZIndex="104">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="298" Height="184" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto">
     <nac:AnalogNumericFX AutoStretchFont="False" Prefix="Track " VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontFamily="Calibri" UndoLimit="1" Transparent="Hidden" IsReadOnly="True" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="19" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric1" Width="282" Height="32" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="8" KeyboardNavigation.TabNavigation="None" Canvas.Left="9" Canvas.Top="5">
       <nac:AnalogNumericFX.Resources>
         <ResourceDictionary>
@@ -90,7 +90,7 @@
         <SolidColorBrush Color="#FF7F9DB9" Opacity="0" />
       </nac:AnalogNumericFX.BorderBrush>
     </nac:AnalogNumericFX>
-    <nac:Label AutoSize="False" MultiLine="True" WordWrap="False" AutoStretchFont="False" TextDecorations="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text" Width="279" Height="52" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="24" Canvas.Left="12" Canvas.Top="82" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="False">
+    <nac:Label AutoSize="False" MultiLine="True" WordWrap="False" AutoStretchFont="False" Text="Text" TextDecorations="{x:Null}" BorderThickness="1,1,1,1" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="16" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="4,0,4,1" Name="m_Text" Width="279" Height="52" RenderTransformOrigin="0.5,0.5" Opacity="1" Visibility="Visible" Panel.ZIndex="24" Canvas.Left="12" Canvas.Top="82" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="False">
       <nac:Label.Resources>
         <ResourceDictionary>
           <nacd1:MessageLibraryDynamicsConverter x:Key="TextConverter" MessageLibraryGroupName="Lopetusvaiheet">
@@ -141,7 +141,7 @@
       </nai:ScriptProperties.ScriptEvents>
     </nac:AnalogNumericFX>
     <nac:Group Name="m_Group_Close_btn" Width="112" Height="40" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="33" Canvas.Left="169" Canvas.Top="128">
-      <nac:Button ButtonAppearance="RoundedBottomRight" ImageStretch="True" ImageHorizontalAlignment="Right" ImageMargin="5,10,10,10" Text="Close" MultiLine="False" WordWrap="True" TextHorizontalAlignment="Right" TextMargin="0,2,75,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="12" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Close" Width="112" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="9" Canvas.Left="0" Canvas.Top="0" nac:EnabledProperties.EnabledDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
+      <nac:Button ButtonAppearance="RoundedBottomRight" ImageStretch="True" ImageHorizontalAlignment="Right" ImageMargin="5,5,5,5" Text="Close" MultiLine="False" WordWrap="True" TextHorizontalAlignment="Right" TextMargin="15,2,45,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Close" Width="112" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="9" Canvas.Left="0" Canvas.Top="0" nac:EnabledProperties.EnabledDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
@@ -158,7 +158,7 @@
       <nacc1:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle1" Width="108.8" Height="36.8" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="1.8666666666664" Canvas.Top="1.6" />
     </nac:Group>
     <nac:Group Name="m_Group_Stop_btn" Width="112" Height="40" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="34" Canvas.Left="24" Canvas.Top="128">
-      <nac:Button ButtonAppearance="RoundedBottomLeft" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="Stop" MultiLine="False" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="75,2,2,2" RequiresTransparency="True" SymbolName="orfer_stop" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="12" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_StopProd_btn" Width="112" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="23" Canvas.Left="0" Canvas.Top="0" nac:EnabledProperties.EnabledDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac1:StyleMarkupExtension Default}">
+      <nac:Button ButtonAppearance="RoundedBottomLeft" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,5,10" Text="Stop" MultiLine="False" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="45,2,2,2" RequiresTransparency="True" SymbolName="orfer_stop" SymbolTransparent="False" Transparent="Hidden" MultiPicture="True" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_StopProd_btn" Width="112" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="23" Canvas.Left="0" Canvas.Top="0" nac:EnabledProperties.EnabledDynamicsValue="True" nacsd:EditorProperties.IsHidden="False" nacb1:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.Resources>
           <ResourceDictionary>
             <nacc:VariantValueConverter x:Key="TextValueConverter" />

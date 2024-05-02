@@ -63,6 +63,7 @@
     <Category Name="Script">
       <Items>
         <Item Target="Overview_Pan1_Scr1.Script.cs" Source="Tags.Menu_MainMenu_Btn_Anim" />
+        <Item Target="Overview_Pan1_Scr1.Script.cs" Source="Tags.Menu_SubMenu_Btn_Anim" />
       </Items>
     </Category>
     <Category Name="StructuredTag">

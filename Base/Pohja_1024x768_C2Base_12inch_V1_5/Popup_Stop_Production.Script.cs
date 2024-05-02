@@ -24,9 +24,9 @@ namespace Neo.ApplicationFramework.Generated
 			AnalogNumeric2.Value = Globals.Ajotiedot.HaeTuloradanTuote(tulorata);
 
 			// Sidotaan Lopetusvaihe-Alias oikeaan tagiin
-			//IBasicTag lopetusTagi = Globals.Tags.GetTag("Line1_PLC_Lopetusvaiheet" + tulorata);
-			//TulorataX_Lopetusvaihe = (VariantValue)lopetusTagi.Value;
-			//lopetusTagi.ValueChange += Line1_PLC_LopetusvaiheetX_ValueChange;
+			IBasicTag lopetusTagi = Globals.Tags.GetTag("Line1_PLC_Lopetusvaiheet" + tulorata);
+			TulorataX_Lopetusvaihe = (VariantValue)lopetusTagi.Value;
+			lopetusTagi.ValueChange += Line1_PLC_LopetusvaiheetX_ValueChange;
 		}
 
 		/// <summary>
@@ -64,7 +64,7 @@ namespace Neo.ApplicationFramework.Generated
 			}
 
 			// Asetetaan logiikan lopetusbitti
-			Globals.Tags.SetTagValue("Line1_PLC_Lopetus" + tulorata, true);
+			Globals.Tags.SetTagValue("S7HMI_Com_ToPLC_StopProduction_" + tulorata, true);
 
 			// Lähetetään lopetus robotille
 			Globals.Robotit.LisaaLokiin(robottiNo, "Lopetetaan tulorata " + robottiTulorata + ".");
@@ -75,15 +75,20 @@ namespace Neo.ApplicationFramework.Generated
 		/// Päivittää tuloradan lopetusvaiheen.
 		/// </summary>
 		/// <param name="sender">Line1_PLC_LopetusvaiheetX</param>
-		/*void Line1_PLC_LopetusvaiheetX_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
+		void Line1_PLC_LopetusvaiheetX_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
-			IBasicTag lahettaja_arvo = (IBasicTag)sender;
+			try 
+			{	        
+				IBasicTag lahettaja_arvo = (IBasicTag)sender;
 
-			// Päivitetään vaiheen numero Aliakseen vaiheen tekstiä varten
-			TulorataX_Lopetusvaihe = ((VariantValue)lahettaja_arvo.Value).Short;
-			System.Diagnostics.Trace.WriteLine("[iX] Event: Line1_PLC_LopetusvaiheetX_ValueChange " + TulorataX_Lopetusvaihe);
-
-		}*/
+				// Päivitetään vaiheen numero Aliakseen vaiheen tekstiä varten
+				TulorataX_Lopetusvaihe = ((VariantValue)lahettaja_arvo.Value).Short;
+				System.Diagnostics.Trace.WriteLine("[iX] Event: Line1_PLC_LopetusvaiheetX_ValueChange " + TulorataX_Lopetusvaihe);
+			}
+			catch (Exception)
+			{
+			}
+		}
 
 		/// <summary>
 		/// Irtautuu lopetusvaiheen päivityksestä

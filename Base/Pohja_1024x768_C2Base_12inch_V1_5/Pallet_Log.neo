@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?neo version='2.46.49.0'?>
+<?neo version='2.46.87.0'?>
 <NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
-  <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.DataLogger, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" SchemaVersion="1080" LogChangesOnly="False" Guid="ae6208ab-0605-4240-9664-94a9481a7ecf" MaxNumberOfLogItems="200" d1p1:Site.Name="Pallet_Log" ActionName="" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+  <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.DataLogger, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" SchemaVersion="1082" LogChangesOnly="False" Guid="ae6208ab-0605-4240-9664-94a9481a7ecf" MaxNumberOfLogItems="200" d1p1:Site.Name="Pallet_Log" ActionName="" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
     <LogItems>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="Lavapaikka" Name="Lavapaikka" d1p1:Site.Name="Lavapaikka" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="Lavapaikka" Name="Lavapaikka" d1p1:Site.Name="Lavapaikka" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
         <DataBindings>
-          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
-            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
+          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
               <Parameter Name="PropertyName">
                 <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="DataSourceValue" />
               </Parameter>
@@ -27,10 +27,10 @@
           </Object>
         </DataBindings>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="Tuotenumero" Name="Tuotenumero" d1p1:Site.Name="Tuotenumero" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="Tuotenumero" Name="Tuotenumero" d1p1:Site.Name="Tuotenumero" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
         <DataBindings>
-          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
-            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
+          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
               <Parameter Name="PropertyName">
                 <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="DataSourceValue" />
               </Parameter>
@@ -51,10 +51,10 @@
           </Object>
         </DataBindings>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="Laatikkomaara" Name="Laatikkomaara" d1p1:Site.Name="Laatikkomaara" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="Laatikkomaara" Name="Laatikkomaara" d1p1:Site.Name="Laatikkomaara" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
         <DataBindings>
-          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
-            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
+          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
               <Parameter Name="PropertyName">
                 <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="DataSourceValue" />
               </Parameter>
@@ -75,10 +75,10 @@
           </Object>
         </DataBindings>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="Aloitettu" Name="Aloitettu" d1p1:Site.Name="Aloitettu" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="Aloitettu" Name="Aloitettu" d1p1:Site.Name="Aloitettu" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
         <DataBindings>
-          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
-            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
+          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
               <Parameter Name="PropertyName">
                 <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="DataSourceValue" />
               </Parameter>
@@ -99,10 +99,10 @@
           </Object>
         </DataBindings>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="Lopetettu" Name="Lopetettu" d1p1:Site.Name="Lopetettu" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.DataLogger.LogItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DatabaseFieldName="Lopetettu" Name="Lopetettu" d1p1:Site.Name="Lopetettu" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6">
         <DataBindings>
-          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
-            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
+          <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
               <Parameter Name="PropertyName">
                 <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="DataSourceValue" />
               </Parameter>
@@ -125,8 +125,8 @@
       </Object>
     </LogItems>
     <DataBindings>
-      <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null">
-        <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.49.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
+      <Object d1p1:type="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null">
+        <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Data.DynamicBinding, CommonCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
           <Parameter Name="PropertyName">
             <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Value" />
           </Parameter>

@@ -81,9 +81,9 @@ namespace Neo.ApplicationFramework.Generated
 			tagname = string.Format("Rob{0}_lavap{1}_pmaxvie",robottiNo, roboLavapaikka);
 			ANMaxOnPallet.Value = Globals.Tags.GetTagValue(tagname);
 			
-			//ANStartedInfeed.Value = Globals.Tags.GetTagValueString(string.Format("S7HMI_PPStates_Place_{0}_InfeedLine", roboLavapaikka));
-			//bool b = (bool)Globals.Tags.GetTagValue(string.Format("S7HMI_PPStates_Place_{0}_ReadyForProdStart", roboLavapaikka));
-			//CBCanStart.Checked = b;
+			ANStartedInfeed.Value = Globals.Tags.GetTagValueString(string.Format("S7HMI_PPStates_Place_{0}_InfeedLine", roboLavapaikka));
+			bool b = (bool)Globals.Tags.GetTagValue(string.Format("S7HMI_PPStates_Place_{0}_ReadyForProdStart", roboLavapaikka));
+			CBCanStart.Checked = b;
 		}
 		
 		/// <summary>

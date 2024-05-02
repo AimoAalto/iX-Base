@@ -26,6 +26,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,10 +37,62 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\Base\UnitTest OrferBase.1\iXDeveloperWrapperTests\VariantValueTests.cs">
+      <Link>iXDeveloperWrapperTests\VariantValueTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Base\UnitTest OrferBase.1\Tests\KonfiguraatioTests.cs">
+      <Link>Tests\KonfiguraatioTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Base\UnitTest OrferBase.1\Tests\LogiikatTests.cs">
+      <Link>Tests\LogiikatTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Base\UnitTest OrferBase.1\Tests\TagsTests.cs">
+      <Link>Tests\TagsTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\iXScriptTesting\iXDeveloperWrappers\Core.cs">
+      <Link>iXDeveloperWrappers\Core.cs</Link>
+    </Compile>
+    <Compile Include="..\..\iXScriptTesting\iXDeveloperWrappers\Neo.cs">
+      <Link>iXDeveloperWrappers\Neo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\iXScriptTesting\iXDeveloperWrappers\ValueChangeEventArgs.cs">
+      <Link>iXDeveloperWrappers\ValueChangeEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\iXScriptTesting\iXDeveloperWrappers\VarianValue.cs">
+      <Link>iXDeveloperWrappers\VarianValue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Projects\AP23021_Borealis Polymers_Porvoo_Octabin\Ajotiedot.Script.cs">
+      <Link>iXLinks\Ajotiedot.Script.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Projects\AP23021_Borealis Polymers_Porvoo_Octabin\BuildFiles\Tags.cs">
+      <Link>iXLinks\Tags.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Projects\AP23021_Borealis Polymers_Porvoo_Octabin\JSON_Kasittely.Script.cs">
+      <Link>iXLinks\JSON_Kasittely.Script.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Projects\AP23021_Borealis Polymers_Porvoo_Octabin\Logiikat.Script.cs">
+      <Link>iXLinks\Logiikat.Script.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Projects\AP23021_Borealis Polymers_Porvoo_Octabin\Robotit.Script.cs">
+      <Link>iXLinks\Robotit.Script.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Projects\AP23021_Borealis Polymers_Porvoo_Octabin\Tags.Script.cs">
+      <Link>iXLinks\Tags.Script.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Projects\AP23021_Borealis Polymers_Porvoo_Octabin\Tietokannat.Script.cs">
+      <Link>iXLinks\Tietokannat.Script.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Projects\AP23021_Borealis Polymers_Porvoo_Octabin\_Konfiguraatio.Script.cs">
+      <Link>iXLinks\_Konfiguraatio.Script.cs</Link>
+    </Compile>
+    <Compile Include="Tests\AjotiedotTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Kuvio">
+      <HintPath>..\..\Projects\AP23021_Borealis Polymers_Porvoo_Octabin\ReferencedAssembly\Kuvio.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter">
       <HintPath>..\..\..\CommonDlls\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll</HintPath>
     </Reference>
@@ -55,7 +108,17 @@
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions">
       <HintPath>..\..\..\CommonDlls\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Projects\AP23021_Borealis Polymers_Porvoo_Octabin\ReferencedAssembly\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\Base\SQLiteDlls\System.Data.SQLite.dll</HintPath>
+    </Reference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

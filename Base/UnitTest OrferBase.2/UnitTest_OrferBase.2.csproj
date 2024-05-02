@@ -120,11 +120,19 @@
     <Compile Include="..\Pohja_1920x1080_C2Base_12inch_V1_5\_Konfiguraatio.Script.cs">
       <Link>iXLinks\_Konfiguraatio.Script.cs</Link>
     </Compile>
-    <Compile Include="iXDeveloperWrapperTests\VariantValueTests.cs" />
-    <Compile Include="Tests\KonfiguraatioTests.cs" />
+    <Compile Include="..\UnitTest OrferBase.1\iXDeveloperWrapperTests\VariantValueTests.cs">
+      <Link>iXDeveloperWrapperTests\VariantValueTests.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTest OrferBase.1\Tests\KonfiguraatioTests.cs">
+      <Link>Tests\KonfiguraatioTests.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTest OrferBase.1\Tests\LogiikatTests.cs">
+      <Link>Tests\LogiikatTests.cs</Link>
+    </Compile>
+    <Compile Include="..\UnitTest OrferBase.1\Tests\TagsTests.cs">
+      <Link>Tests\TagsTests.cs</Link>
+    </Compile>
     <Compile Include="Tests\AjotiedotTests.cs" />
-    <Compile Include="Tests\LogiikatTests.cs" />
-    <Compile Include="Tests\TagsTests.cs" />
     <Compile Include="GlobalUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

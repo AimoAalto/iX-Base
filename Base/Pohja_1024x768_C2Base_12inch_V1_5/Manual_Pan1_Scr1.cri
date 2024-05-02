@@ -30,6 +30,20 @@
         <Item Target="Manual_Pan1_Scr1.AN_RunningMode" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
         <Item Target="Manual_Pan1_Scr1.AN_ERunningMode" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
         <Item Target="Manual_Pan1_Scr1.ANManualCtrlCode_1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07000" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07000.Rectangle8" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07014" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07014.Rectangle4" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07012" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07012.Rectangle1" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07011" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07011.Rectangle2" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07001" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07001.Rectangle6" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Manual_Pan1_Scr1.Man06001" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
+        <Item Target="Manual_Pan1_Scr1.Man06001.Rectangle7" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07015" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
+        <Item Target="Manual_Pan1_Scr1.Man07015.Rectangle5" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -47,7 +61,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>71</ObjectsCount>
+          <ObjectsCount>97</ObjectsCount>
           <ScreenName>Manual_Pan1_Scr1</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10401">
@@ -69,6 +83,18 @@
     <Category Name="Symbol">
       <Items>
         <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Group_ManMode_btn.Group_ManMode.Button_ManMode" Source="orfer_hand" Width="25" Height="25" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07000.Picture14" Source="orfer_arrowright" Width="34" Height="34" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Picture" Source="palletizing_layout" Width="501" Height="500" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07014.Picture8" Source="orfer_arrowright" Width="34" Height="34" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07014.Picture9" Source="orfer_arrowright" Width="34" Height="34" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07012.Picture4" Source="orfer_arrowright" Width="34" Height="34" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07012.Picture5" Source="orfer_arrowright" Width="34" Height="34" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07011.Picture2" Source="orfer_arrowright" Width="34" Height="34" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07011.Picture3" Source="orfer_arrowright" Width="34" Height="34" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07001.Picture11" Source="orfer_arrowright" Width="34" Height="34" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man06001.Picture10" Source="orfer_arrowright" Width="34" Height="34" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07015.Picture12" Source="orfer_arrowleft" Width="34" Height="34" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07015.Picture13" Source="orfer_arrowleft" Width="34" Height="34" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

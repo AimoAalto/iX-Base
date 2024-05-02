@@ -697,7 +697,7 @@
       </nacc1:Rectangle>
     </nac:Group>
     <nac:Group Name="m_Group_ResetStarted1_btn" Width="160" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="45" Canvas.Left="826.252612900336" Canvas.Top="570.732522649755">
-      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="Reset&#xD;&#xA;_Started1" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_stop" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="15" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Supervisors" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,10,10,10" Text="Reset&#xD;&#xA;_Started1" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Center" TextMargin="50,2,2,2" RequiresTransparency="True" SymbolName="orfer_stop" SymbolTransparent="False" Transparent="Hidden" BorderBrush="#FF267593" BorderThickness="0,0,0,0" Background="#FF35C4B5" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="14" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_BtnResetStartedOk" Width="160" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="15" Canvas.Left="0" Canvas.Top="0" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Supervisors" nai:SecurityProperties.VisibilityOnAccessDenied="Normal" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
@@ -708,22 +708,22 @@
                 <nai:ActionList>
                   <nata:Action Name="Reset Tag">
                     <nata:Action.ActionMethodInfo>
-                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.Line1_PLC_Aloitettu1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.S7HMI_ToHMI_Line_1_CommBits_ProdStartOK" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
                     </nata:Action.ActionMethodInfo>
                   </nata:Action>
                   <nata:Action Name="Set Tag">
                     <nata:Action.ActionMethodInfo>
-                      <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.Line1_PLC_Lopetettu1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                      <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.S7HMI_ToHMI_Line_1_CommBits_ProdEndOK" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
                     </nata:Action.ActionMethodInfo>
                   </nata:Action>
                   <nata:Action Name="Reset Tag">
                     <nata:Action.ActionMethodInfo>
-                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.Line1_PLC_Aloitus1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.S7HMI_ToPLC_Line_1_CommBits_ProdStart" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
                     </nata:Action.ActionMethodInfo>
                   </nata:Action>
                   <nata:Action Name="Reset Tag">
                     <nata:Action.ActionMethodInfo>
-                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.Line1_PLC_Lopetus1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                      <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.S7HMI_ToPLC_Line_1_CommBits_ProdEnd" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
                     </nata:Action.ActionMethodInfo>
                   </nata:Action>
                 </nai:ActionList>

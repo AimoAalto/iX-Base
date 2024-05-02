@@ -26,36 +26,37 @@
       <Items />
     </Category>
     <Category Name="Expression">
-      <Items />
+      <Items>
+        <Item Target="Popup_StartProduction.Rectangle_PLC_Ack" TargetProperty="Fill" Source="Bit0IsSet" />
+      </Items>
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
         <Item Target="Popup_StartProduction.ComboBox_Wrapping" TargetProperty="Value" Source="Tags.HMI_StartProd_Wrapping" />
         <Item Target="Popup_StartProduction.ANSelectedProduct" TargetProperty="Value" Source="Tags.HMI_StartProd_RecipeSelected" />
-        <Item Target="Popup_StartProduction.TextStarting" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.HMI_Aloitus_kesken" />
-        <Item Target="Popup_StartProduction.TextStarting" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Aloitus_kesken" />
-        <Item Target="Popup_StartProduction.Group_Cancel_btn.Button_Cancel" TargetProperty="TextValue" Source="Tags.HMI_StartProduction_PLC_Aloitettu" />
-        <Item Target="Popup_StartProduction.Group_StartProd_btn.Rectangle" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Aloitus_kesken" />
-        <Item Target="Popup_StartProduction.Group_StartProd_btn.Start_Production_btn" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Aloitus_kesken" />
-        <Item Target="Popup_StartProduction.Rectangle_PLC_Ack" TargetProperty="Fill" Source="Tags.HMI_StartProduction_PLC_Aloitettu" />
+        <Item Target="Popup_StartProduction.TextStarting" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.HMI_ProductionStarting" />
+        <Item Target="Popup_StartProduction.TextStarting" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ProductionStarting" />
+        <Item Target="Popup_StartProduction.Group_StartProd_btn.Rectangle" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ProductionStarting" />
+        <Item Target="Popup_StartProduction.Group_StartProd_btn.Start_Production_btn" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_ProductionStarting" />
+        <Item Target="Popup_StartProduction.Rectangle_PLC_Ack" TargetProperty="Fill" Source="Tags.S7HMI_ToHMI_Line_1_CommBits_ProdStartOK" />
         <Item Target="Popup_StartProduction.Rectangle_Rob1_Pal1_Ack" TargetProperty="Fill" Source="Tags.Rob1_lavap0_pkuv" />
         <Item Target="Popup_StartProduction.Rect_PLC_Conn" TargetProperty="Fill" Source="Tags.HMI_CommFault_PLC1" />
         <Item Target="Popup_StartProduction.Rect_RobottiYhteys" TargetProperty="Fill" Source="Tags.HMI_CommFault_Rob1" />
-        <Item Target="Popup_StartProduction.Rect_RobottiAuto" TargetProperty="Fill" Source="Tags.Line1_PLC_R1_ManAuto" />
+        <Item Target="Popup_StartProduction.Rect_RobottiAuto" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_RobAuto_1" />
         <Item Target="Popup_StartProduction.CbSelectedInfeedLine" TargetProperty="Value" Source="Tags.HMI_SelectedInfeedLine" />
         <Item Target="Popup_StartProduction.CbSelectedPalletPlace" TargetProperty="Value" Source="Tags.HMI_SelectedPalletPlace" />
         <Item Target="Popup_StartProduction.ANSelectedInfeedLine" TargetProperty="Value" Source="Tags.HMI_SelectedInfeedLine" />
         <Item Target="Popup_StartProduction.ComboBox" TargetProperty="Value" Source="Tags.HMI_SelectedOrderno" />
         <Item Target="Popup_StartProduction.AnalogNumeric" TargetProperty="Value" Source="Tags.HMI_SelectedOrderno" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_pallet_privis" Event="Closing" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Closing" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_ProductionStarting" Event="Closing" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_Acks" Event="Opened" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Closed" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_ProdChangeOK" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_Started" Event="Closed" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_ProductionStarting" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -136,19 +137,19 @@
     <Category Name="StructuredTag">
       <Items>
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_pallet_privis" Event="Closing" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Closing" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_ProductionStarting" Event="Closing" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Opened" Action="Set Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_Acks" Event="Opened" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_Shadow" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Overview_TrackSelected" Event="Closed" Action="Set Analog" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_ProdChangeOK" Event="Closed" Action="Reset Tag" Param="" />
         <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_StartProd_Started" Event="Closed" Action="Reset Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_Aloitus_kesken" Event="Closed" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Popup_StartProduction" TargetProperty="Actions" Source="Tags.HMI_ProductionStarting" Event="Closed" Action="Reset Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">
       <Items>
-        <Item xsi:type="SymbolItem" Target="Popup_StartProduction.Group_Cancel_btn.Button_Cancel" Source="orfer_cancel" Width="26" Height="26" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Popup_StartProduction.Group_Cancel_btn.Button_Close" Source="orfer_cancel" Width="26" Height="26" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Popup_StartProduction.Group_StartProd_btn.Start_Production_btn" Source="orfer_ack" Width="25" Height="25" IsAnimated="false" />
       </Items>
     </Category>

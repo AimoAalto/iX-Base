@@ -64,7 +64,7 @@ namespace Neo.ApplicationFramework.Generated
 			}
 
 			// Asetetaan logiikan lopetusbitti
-			Globals.Tags.SetTagValue("Line1_PLC_Lopetus" + tulorata, true);
+			Globals.Tags.SetTagValue("S7HMI_Com_ToPLC_StopProduction_" + tulorata, true);
 
 			// Lähetetään lopetus robotille
 			Globals.Robotit.LisaaLokiin(robottiNo, "Lopetetaan tulorata " + robottiTulorata + ".");
@@ -77,12 +77,17 @@ namespace Neo.ApplicationFramework.Generated
 		/// <param name="sender">Line1_PLC_LopetusvaiheetX</param>
 		void Line1_PLC_LopetusvaiheetX_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
-			IBasicTag lahettaja_arvo = (IBasicTag)sender;
+			try 
+			{	        
+				IBasicTag lahettaja_arvo = (IBasicTag)sender;
 
-			// Päivitetään vaiheen numero Aliakseen vaiheen tekstiä varten
-			TulorataX_Lopetusvaihe = ((VariantValue)lahettaja_arvo.Value).Short;
-			System.Diagnostics.Trace.WriteLine("[iX] Event: Line1_PLC_LopetusvaiheetX_ValueChange " + TulorataX_Lopetusvaihe);
-
+				// Päivitetään vaiheen numero Aliakseen vaiheen tekstiä varten
+				TulorataX_Lopetusvaihe = ((VariantValue)lahettaja_arvo.Value).Short;
+				System.Diagnostics.Trace.WriteLine("[iX] Event: Line1_PLC_LopetusvaiheetX_ValueChange " + TulorataX_Lopetusvaihe);
+			}
+			catch (Exception)
+			{
+			}
 		}
 
 		/// <summary>

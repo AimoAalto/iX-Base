@@ -620,42 +620,6 @@
         <Item Target="Default_Alarm_Alarm0755" TargetProperty="Value" Source="Bit13IsSet" />
         <Item Target="Default_Alarm_Alarm0756" TargetProperty="Value" Source="Bit14IsSet" />
         <Item Target="Default_Alarm_Alarm0757" TargetProperty="Value" Source="Bit15IsSet" />
-        <Item Target="Default_Alarm_Alarm1480" TargetProperty="Value" Source="Bit0IsSet" />
-        <Item Target="Default_Alarm_Alarm1481" TargetProperty="Value" Source="Bit1IsSet" />
-        <Item Target="Default_Alarm_Alarm1482" TargetProperty="Value" Source="Bit2IsSet" />
-        <Item Target="Default_Alarm_Alarm1483" TargetProperty="Value" Source="Bit3IsSet" />
-        <Item Target="Default_Alarm_Alarm1484" TargetProperty="Value" Source="Bit4IsSet" />
-        <Item Target="Default_Alarm_Alarm1485" TargetProperty="Value" Source="Bit5IsSet" />
-        <Item Target="Default_Alarm_Alarm1486" TargetProperty="Value" Source="Bit6IsSet" />
-        <Item Target="Default_Alarm_Alarm1487" TargetProperty="Value" Source="Bit7IsSet" />
-        <Item Target="Default_Alarm_Alarm1490" TargetProperty="Value" Source="Bit8IsSet" />
-        <Item Target="Default_Alarm_Alarm1491" TargetProperty="Value" Source="Bit9IsSet" />
-        <Item Target="Default_Alarm_Alarm1492" TargetProperty="Value" Source="Bit10IsSet" />
-        <Item Target="Default_Alarm_Alarm1493" TargetProperty="Value" Source="Bit11IsSet" />
-        <Item Target="Default_Alarm_Alarm1494" TargetProperty="Value" Source="Bit12IsSet" />
-        <Item Target="Default_Alarm_Alarm1495" TargetProperty="Value" Source="Bit13IsSet" />
-        <Item Target="Default_Alarm_Alarm1496" TargetProperty="Value" Source="Bit14IsSet" />
-        <Item Target="Default_Alarm_Alarm1497" TargetProperty="Value" Source="Bit15IsSet" />
-        <Item Target="Default_Alarm_Alarm1500" TargetProperty="Value" Source="Bit0IsSet" />
-        <Item Target="Default_Alarm_Alarm1501" TargetProperty="Value" Source="Bit1IsSet" />
-        <Item Target="Default_Alarm_Alarm1502" TargetProperty="Value" Source="Bit2IsSet" />
-        <Item Target="Default_Alarm_Alarm1503" TargetProperty="Value" Source="Bit3IsSet" />
-        <Item Target="Default_Alarm_Alarm1504" TargetProperty="Value" Source="Bit4IsSet" />
-        <Item Target="Default_Alarm_Alarm1505" TargetProperty="Value" Source="Bit5IsSet" />
-        <Item Target="Default_Alarm_Alarm1506" TargetProperty="Value" Source="Bit6IsSet" />
-        <Item Target="Default_Alarm_Alarm1507" TargetProperty="Value" Source="Bit7IsSet" />
-        <Item Target="Default_Alarm_Alarm1510" TargetProperty="Value" Source="Bit8IsSet" />
-        <Item Target="Default_Alarm_Alarm1511" TargetProperty="Value" Source="Bit9IsSet" />
-        <Item Target="Default_Alarm_Alarm1512" TargetProperty="Value" Source="Bit10IsSet" />
-        <Item Target="Default_Alarm_Alarm1513" TargetProperty="Value" Source="Bit11IsSet" />
-        <Item Target="Default_Alarm_Alarm1514" TargetProperty="Value" Source="Bit12IsSet" />
-        <Item Target="Default_Alarm_Alarm1515" TargetProperty="Value" Source="Bit13IsSet" />
-        <Item Target="Default_Alarm_Alarm1516" TargetProperty="Value" Source="Bit14IsSet" />
-        <Item Target="Default_Alarm_Alarm1517" TargetProperty="Value" Source="Bit15IsSet" />
-        <Item Target="Default_Alarm_Alarm1780" TargetProperty="Value" Source="Bit0IsSet" />
-        <Item Target="Default_Alarm_Alarm1781" TargetProperty="Value" Source="Bit1IsSet" />
-        <Item Target="Default_Alarm_Alarm1782" TargetProperty="Value" Source="Bit2IsSet" />
-        <Item Target="Default_Alarm_Alarm1783" TargetProperty="Value" Source="Bit3IsSet" />
       </Items>
     </Category>
     <Category Name="GlobalDataItem">
@@ -1268,48 +1232,12 @@
         <Item Target="AlarmServer.Default_Alarm_Alarm0755" TargetProperty="Value" Source="Tags.Alarm_Alarm0740" />
         <Item Target="AlarmServer.Default_Alarm_Alarm0756" TargetProperty="Value" Source="Tags.Alarm_Alarm0740" />
         <Item Target="AlarmServer.Default_Alarm_Alarm0757" TargetProperty="Value" Source="Tags.Alarm_Alarm0740" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1480" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1481" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1482" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1483" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1484" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1485" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1486" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1487" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1490" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1491" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1492" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1493" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1494" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1495" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1496" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1497" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1500" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1501" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1502" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1503" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1504" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1505" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1506" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1507" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1510" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1511" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1512" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1513" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1514" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1515" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1516" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1517" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1780" TargetProperty="Value" Source="Tags.Alarm_Alarm1780" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1781" TargetProperty="Value" Source="Tags.Alarm_Alarm1780" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1782" TargetProperty="Value" Source="Tags.Alarm_Alarm1780" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1783" TargetProperty="Value" Source="Tags.Alarm_Alarm1780" />
         <Item Target="AlarmServer.Robotti_std_AlarmItem0" TargetProperty="Value" Source="Tags.Rob1_vir" />
         <Item Target="AlarmServer.Robotti_std_AlarmItem1" TargetProperty="Value" Source="Tags.HMI_CommFault_Rob1" />
         <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="Value" Source="Tags.Alarm_ProdReg_Alarm0" />
-        <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="IsAcknowledged" Source="Tags.ToPLC_AlarmReset" />
+        <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="IsAcknowledged" Source="Tags.S7HMI_ToPLC_AlarmReset" />
         <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="Value" Source="Tags.Alarm_ProdReg_Alarm1" />
-        <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="IsAcknowledged" Source="Tags.ToPLC_AlarmReset" />
+        <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="IsAcknowledged" Source="Tags.S7HMI_ToPLC_AlarmReset" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -1940,48 +1868,12 @@
         <Item Target="AlarmServer.Default_Alarm_Alarm0755" TargetProperty="Value" Source="Tags.Alarm_Alarm0740" />
         <Item Target="AlarmServer.Default_Alarm_Alarm0756" TargetProperty="Value" Source="Tags.Alarm_Alarm0740" />
         <Item Target="AlarmServer.Default_Alarm_Alarm0757" TargetProperty="Value" Source="Tags.Alarm_Alarm0740" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1480" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1481" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1482" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1483" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1484" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1485" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1486" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1487" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1490" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1491" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1492" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1493" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1494" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1495" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1496" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1497" TargetProperty="Value" Source="Tags.Alarm_Alarm1480" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1500" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1501" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1502" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1503" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1504" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1505" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1506" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1507" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1510" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1511" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1512" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1513" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1514" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1515" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1516" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1517" TargetProperty="Value" Source="Tags.Alarm_Alarm1500" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1780" TargetProperty="Value" Source="Tags.Alarm_Alarm1780" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1781" TargetProperty="Value" Source="Tags.Alarm_Alarm1780" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1782" TargetProperty="Value" Source="Tags.Alarm_Alarm1780" />
-        <Item Target="AlarmServer.Default_Alarm_Alarm1783" TargetProperty="Value" Source="Tags.Alarm_Alarm1780" />
         <Item Target="AlarmServer.Robotti_std_AlarmItem0" TargetProperty="Value" Source="Tags.Rob1_vir" />
         <Item Target="AlarmServer.Robotti_std_AlarmItem1" TargetProperty="Value" Source="Tags.HMI_CommFault_Rob1" />
         <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="Value" Source="Tags.Alarm_ProdReg_Alarm0" />
-        <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="IsAcknowledged" Source="Tags.ToPLC_AlarmReset" />
+        <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="IsAcknowledged" Source="Tags.S7HMI_ToPLC_AlarmReset" />
         <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="Value" Source="Tags.Alarm_ProdReg_Alarm1" />
-        <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="IsAcknowledged" Source="Tags.ToPLC_AlarmReset" />
+        <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="IsAcknowledged" Source="Tags.S7HMI_ToPLC_AlarmReset" />
       </Items>
     </Category>
     <Category Name="TextIDs">

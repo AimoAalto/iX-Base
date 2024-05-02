@@ -6,25 +6,6 @@
       <nata:MultiAction Name="Multi Action">
         <nata:MultiAction.Actions>
           <nai:ActionList>
-            <nata:Action Name="Reset Tag">
-              <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_StartProd_pallet_privis" EventName="Closing" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
-              </nata:Action.ActionMethodInfo>
-            </nata:Action>
-            <nata:Action Name="Reset Tag">
-              <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Aloitus_kesken" EventName="Closing" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
-              </nata:Action.ActionMethodInfo>
-            </nata:Action>
-          </nai:ActionList>
-        </nata:MultiAction.Actions>
-        <nata:MultiAction.ActionMethodInfo>
-          <nata:ActionMethodInfo Name="" ObjectName="" EventName="Closing" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
-        </nata:MultiAction.ActionMethodInfo>
-      </nata:MultiAction>
-      <nata:MultiAction Name="Multi Action">
-        <nata:MultiAction.Actions>
-          <nai:ActionList>
             <nata:Action Name="Set Tag">
               <nata:Action.ActionMethodInfo>
                 <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Overview_Shadow" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
@@ -41,6 +22,11 @@
           <nata:ActionMethodInfo Name="" ObjectName="" EventName="Opened" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
         </nata:MultiAction.ActionMethodInfo>
       </nata:MultiAction>
+      <nata:Action Name="Reset Tag">
+        <nata:Action.ActionMethodInfo>
+          <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_StartProd_pallet_privis" EventName="Closing" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+        </nata:Action.ActionMethodInfo>
+      </nata:Action>
       <nata:MultiAction Name="Multi Action">
         <nata:MultiAction.Actions>
           <nai:ActionList>
@@ -76,7 +62,7 @@
             </nata:Action>
             <nata:Action Name="Reset Tag">
               <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Aloitus_kesken" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_ProductionStarting" EventName="Closed" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
               </nata:Action.ActionMethodInfo>
             </nata:Action>
           </nai:ActionList>
@@ -382,14 +368,14 @@
         </ResourceDictionary>
       </nac:Label.Resources>
       <nacb:BlinkProperties.IsBlinkEnabled>
-        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ProductionStarting].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>False</s:Boolean>
           </Binding.FallbackValue>
         </Binding>
       </nacb:BlinkProperties.IsBlinkEnabled>
       <nacb:BlinkProperties.VisibleDynamicsValue>
-        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ProductionStarting].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
           <Binding.FallbackValue>
             <s:Boolean>True</s:Boolean>
           </Binding.FallbackValue>
@@ -401,32 +387,10 @@
     </nac:Label>
     <nac:Group Name="m_Group_Cancel_btn" Width="112" Height="40" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="36" Canvas.Left="239" Canvas.Top="456">
       <nacc:Rectangle RadiusX="10" RadiusY="10" Fill="#FF35C4B5" Stroke="{x:Null}" Name="m_Rectangle3" Width="108.8" Height="36.8" RenderTransformOrigin="0.5,0.5" Opacity="0.95" Visibility="Visible" Panel.ZIndex="15" Canvas.Left="1.62465258550242" Canvas.Top="0.855838168741592" />
-      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Cancel" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="55,2,2,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" MultiPicture="False" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Button_Cancel" Width="112" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="16" Canvas.Left="0" Canvas.Top="0" nacb2:IntervalMapperBindingsBehavior.RebindInRuntime="True" Style="{nac1:StyleMarkupExtension Default}">
-        <nac:Button.Resources>
-          <ResourceDictionary>
-            <nacc1:VariantValueConverter x:Key="TextValueConverter" />
-          </ResourceDictionary>
-        </nac:Button.Resources>
-        <nac:Button.TextValue>
-          <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProduction_PLC_Aloitettu].Value" Converter="{StaticResource TextValueConverter}" ValidatesOnExceptions="True">
-            <Binding.FallbackValue>
-              <s:Int32>0</s:Int32>
-            </Binding.FallbackValue>
-          </Binding>
-        </nac:Button.TextValue>
+      <nac:Button ButtonAppearance="RoundedBottomRight" CornerRadius="10,10,10,10" ImageStretch="True" ImageHorizontalAlignment="Left" ImageMargin="10,5,5,5" Text="Close" MultiLine="True" WordWrap="True" TextHorizontalAlignment="Left" TextMargin="55,2,2,2" RequiresTransparency="True" SymbolName="orfer_cancel" SymbolTransparent="False" Transparent="Hidden" MultiPicture="False" BorderBrush="#FF0D4E66" BorderThickness="0,0,0,0" Background="#FF106280" Foreground="#FFFFFFFF" FontFamily="Calibri" FontSize="11" FontStyle="Normal" FontWeight="Normal" Padding="1,1,1,1" Name="m_Btn_Cancel" Width="112" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" InputMethod.IsInputMethodEnabled="True" Panel.ZIndex="16" Canvas.Left="0" Canvas.Top="0" nacb2:IntervalMapperBindingsBehavior.RebindInRuntime="False" Style="{nac1:StyleMarkupExtension Default}">
         <nac:Button.TextDecorations>
           <TextDecorationCollection />
         </nac:Button.TextDecorations>
-        <nac:Button.TextIntervalMapper>
-          <nacd:StringIntervalMapper DefaultValue="Cancel">
-            <nacd:StringIntervalMapper.Intervals>
-              <nacd:StringIntervalList>
-                <nacd:StringInterval Value="Cancel" />
-                <nacd:StringInterval Start="1" End="1" Value="OK" />
-              </nacd:StringIntervalList>
-            </nacd:StringIntervalMapper.Intervals>
-          </nacd:StringIntervalMapper>
-        </nac:Button.TextIntervalMapper>
         <nai:ActionProperties.Actions>
           <nai:ActionList>
             <nata:Action Name="Close Screen">
@@ -446,7 +410,7 @@
           </ResourceDictionary>
         </nacc:Rectangle.Resources>
         <nacb:BlinkProperties.VisibleDynamicsValue>
-          <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ProductionStarting].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
               <s:Boolean>True</s:Boolean>
             </Binding.FallbackValue>
@@ -460,7 +424,7 @@
           </ResourceDictionary>
         </nac:Button.Resources>
         <nacb:BlinkProperties.VisibleDynamicsValue>
-          <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Aloitus_kesken].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_ProductionStarting].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
             <Binding.FallbackValue>
               <s:Boolean>True</s:Boolean>
             </Binding.FallbackValue>
@@ -500,7 +464,7 @@
                   </nacd2:BrushCFIntervalList>
                 </nacd2:BrushCFIntervalMapper.Intervals>
                 <nacd2:BrushCFIntervalMapper.DefaultValue>
-                  <nacgl:BrushCF StartColor="8, 130, 152" EndColor="" FillDirection="None" />
+                  <nacgl:BrushCF StartColor="" EndColor="" FillDirection="None" />
                 </nacd2:BrushCFIntervalMapper.DefaultValue>
               </nacd2:BrushCFIntervalMapper>
             </nacd:BrushDynamicsConverter.BrushIntervalMapper>
@@ -508,7 +472,7 @@
         </ResourceDictionary>
       </nacc:Rectangle.Resources>
       <nacc:Rectangle.Fill>
-        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.HMI_StartProduction_PLC_Aloitettu].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.S7HMI_ToHMI_Line_1_CommBits_ProdStartOK].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
       </nacc:Rectangle.Fill>
       <nacc:Rectangle.BevelEffectInfo>
         <nacb1:BevelEffectInfo Style="None" Width="0" />
@@ -729,11 +693,7 @@
         </ResourceDictionary>
       </nacc:Rectangle.Resources>
       <nacc:Rectangle.Fill>
-        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.Line1_PLC_R1_ManAuto].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True">
-          <Binding.FallbackValue>
-            <SolidColorBrush>#FF088298</SolidColorBrush>
-          </Binding.FallbackValue>
-        </Binding>
+        <Binding Source="{x:Static nacd1:DataItemProxyFactory.Instance}" Path="[Tags.S7HMI_DB_ToHMI_AutoAreaST_RobAuto_1].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
       </nacc:Rectangle.Fill>
       <nacc:Rectangle.BevelEffectInfo>
         <nacb1:BevelEffectInfo Style="Raised" Width="0" />

@@ -80,8 +80,9 @@ namespace Neo
 				UnknownRobotId = 35,
 				NoAllowedInfeedTracks = 36,
 				Info = 37,
-				UnknownPatternNumber
-			};
+				UnknownPatternNumber,
+                UnKnownOrder
+            };
 		}
 
 		namespace Interfaces

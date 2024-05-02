@@ -7,14 +7,6 @@
 
 namespace Neo.ApplicationFramework.Generated
 {
-	using System.Windows.Forms;
-	using System;
-	using System.Drawing;
-	using Neo.ApplicationFramework.Tools;
-	using Neo.ApplicationFramework.Common.Graphics.Logic;
-	using Neo.ApplicationFramework.Controls;
-	using Neo.ApplicationFramework.Interfaces;
-
 
 	public partial class Overview_Pan1_Scr1
 	{
@@ -22,7 +14,8 @@ namespace Neo.ApplicationFramework.Generated
 		void Overview_Pan1_Scr1_Opened(System.Object sender, System.EventArgs e)
 		{
 			// Main menu painikkeiden visualisointi
-			Globals.Tags.Menu_MainMenu_Btn_Anim.SetAnalog(0);
+			Globals.Tags.Menu_MainMenu_Btn_Anim.SetAnalog(1);
+			Globals.Tags.Menu_SubMenu_Btn_Anim.SetAnalog(1);
 
 			// Alustetaan tuloradan valinta -1:ksi
 			Globals.Tags.HMI_Overview_TrackSelected.Value = -1;

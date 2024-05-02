@@ -38,10 +38,11 @@
         <Item Target="Manual_Pan1_Scr1.Man07000.Rectangle8" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
         <Item Target="Manual_Pan1_Scr1.Man07015" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
         <Item Target="Manual_Pan1_Scr1.Man07015.Rectangle5" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
-        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr1.Button1" TargetProperty="Actions" Source="Tags.HMI_Internal_ManualEnabled_1" Event="Click" Action="Toggle Tag" Param="" />
-        <Item Target="Manual_Pan1_Scr1.AnalogNumeric" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
-        <Item Target="Manual_Pan1_Scr1.AnalogNumeric1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
-        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr1.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.HMI_Manual_Area_Enabled_1" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="Manual_Pan1_Scr1.ANManualCtrlCode_1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Manual_Pan1_Scr1.AN_ERunningMode" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
+        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr1.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="Manual_Pan1_Scr1.Group_ManMode_btn.Group_ManMode.Rectangle3" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
+        <Item Target="Manual_Pan1_Scr1.Group_ManMode_btn.TextLineInAuto" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -59,7 +60,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>89</ObjectsCount>
+          <ObjectsCount>97</ObjectsCount>
           <ScreenName>Manual_Pan1_Scr1</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10401">
@@ -75,8 +76,7 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr1.Button1" TargetProperty="Actions" Source="Tags.HMI_Internal_ManualEnabled_1" Event="Click" Action="Toggle Tag" Param="" />
-        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr1.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.HMI_Manual_Area_Enabled_1" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr1.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" Event="Click" Action="Toggle Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">
@@ -92,8 +92,8 @@
         <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07000.Picture14" Source="orfer_arrowright" Width="40" Height="40" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07015.Picture12" Source="orfer_arrowleft" Width="40" Height="40" IsAnimated="false" />
         <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Man07015.Picture13" Source="orfer_arrowleft" Width="40" Height="40" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Picture" Source="palletizing_layout" Width="587" Height="572" IsAnimated="false" />
-        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Group_ManMode_btn.Group_ManMode.Button_ManMode" Source="orfer_hand" Width="36" Height="36" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Picture" Source="palletizing_layout" Width="540" Height="526" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr1.Group_ManMode_btn.Group_ManMode.Button_ManMode" Source="orfer_hand" Width="25" Height="25" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

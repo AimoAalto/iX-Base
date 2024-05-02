@@ -7,15 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_OrferBase.1", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_OrferBase.2", "..\Base\UnitTest OrferBase.2\UnitTest_OrferBase.2.csproj", "{2401FB27-9BE5-4248-AA82-8A4B05E79EF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wipak DB Test GUI", "..\Projects\AP22044_Wipak III\Wipak DB\Wipak DB Test\Wipak DB Test GUI.csproj", "{D30453A5-2713-4526-82EB-FAF0B524BDC7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest Z11_OP1", "..\Projects\Paulig\UnitTest Z11_OP1\UnitTest Z11_OP1.csproj", "{E9E6555B-805A-47EE-9980-08E0CD42B220}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wipak3 DB", "..\Projects\AP22044_Wipak III\Wipak DB\Wipak DB\Wipak3 DB.csproj", "{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.BorealisOctobin", "UnitTest.BorealisOctobin\UnitTest.BorealisOctobin.csproj", "{3B91E969-0391-49A6-BAFF-AB92474F3EB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.Wipak3 DB", "..\Projects\AP22044_Wipak III\Wipak DB\UnitTest.Wipak3 DB\UnitTest.Wipak3 DB.csproj", "{E35FD9DC-ED74-4E58-A894-E58C0317B80C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.Wipak3 DB", "..\Projects\AP22044_Wipak III\Wipak.DB\UnitTest.Wipak3 DB\UnitTest.Wipak3 DB.csproj", "{E35FD9DC-ED74-4E58-A894-E58C0317B80C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wipak3.DB", "..\Projects\AP22044_Wipak III\Wipak.DB\Wipak.DB\Wipak3.DB.csproj", "{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,18 +29,10 @@ Global
 		{2401FB27-9BE5-4248-AA82-8A4B05E79EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2401FB27-9BE5-4248-AA82-8A4B05E79EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2401FB27-9BE5-4248-AA82-8A4B05E79EF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D30453A5-2713-4526-82EB-FAF0B524BDC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D30453A5-2713-4526-82EB-FAF0B524BDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D30453A5-2713-4526-82EB-FAF0B524BDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D30453A5-2713-4526-82EB-FAF0B524BDC7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E9E6555B-805A-47EE-9980-08E0CD42B220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E9E6555B-805A-47EE-9980-08E0CD42B220}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9E6555B-805A-47EE-9980-08E0CD42B220}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9E6555B-805A-47EE-9980-08E0CD42B220}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3B91E969-0391-49A6-BAFF-AB92474F3EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3B91E969-0391-49A6-BAFF-AB92474F3EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B91E969-0391-49A6-BAFF-AB92474F3EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +41,10 @@ Global
 		{E35FD9DC-ED74-4E58-A894-E58C0317B80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E35FD9DC-ED74-4E58-A894-E58C0317B80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E35FD9DC-ED74-4E58-A894-E58C0317B80C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7AB9EE-6CDE-4E48-A7EE-B8A41BD01820}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,7 +23,13 @@
       <Items />
     </Category>
     <Category Name="GlobalDataItem">
-      <Items />
+      <Items>
+        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr2.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="Manual_Pan1_Scr2.ANManualCtrlCode_1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Manual_Pan1_Scr2.AN_ERunningMode" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
+        <Item Target="Manual_Pan1_Scr2.Group_ManMode_btn.Group_ManMode.Rectangle3" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
+        <Item Target="Manual_Pan1_Scr2.Group_ManMode_btn.TextLineInAuto" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
+      </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
       <Items />
@@ -40,7 +46,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>55</ObjectsCount>
+          <ObjectsCount>71</ObjectsCount>
           <ScreenName>Manual_Pan1_Scr2</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10402">
@@ -55,10 +61,14 @@
       </Items>
     </Category>
     <Category Name="StructuredTag">
-      <Items />
+      <Items>
+        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr2.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" Event="Click" Action="Toggle Tag" Param="" />
+      </Items>
     </Category>
     <Category Name="Symbol">
-      <Items />
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr2.Group_ManMode_btn.Group_ManMode.Button_ManMode" Source="orfer_hand" Width="25" Height="25" IsAnimated="false" />
+      </Items>
     </Category>
     <Category Name="TextIDs">
       <Items />

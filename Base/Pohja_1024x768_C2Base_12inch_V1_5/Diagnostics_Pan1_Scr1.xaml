@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?neo version='2.46.87.0'?>
-<nacs:ScreenWindow Topmost="False" Title="Diagnostics_Pan1_Scr1" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1024, 768" ScreenID="10301" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1024" Height="768" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacs2="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" x:Class="Neo.ApplicationFramework.Generated.Diagnostics_Pan1_Scr1">
+<nacs:ScreenWindow Topmost="False" Title="Diagnostics_Pan1_Scr1" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1024, 768" ScreenID="10301" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1024" Height="768" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacs2="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" x:Class="Neo.ApplicationFramework.Generated.Diagnostics_Pan1_Scr1">
   <nacs:ScreenWindow.TemplateScreen>
     <nacs1:TemplateScreen Name="Template_Diagnostics" RenderMode="Background" />
   </nacs:ScreenWindow.TemplateScreen>
@@ -42,32 +42,7 @@
           </TransformGroup>
         </nac:Label.RenderTransform>
       </nac:Label>
-      <nacc:Rectangle RadiusX="15" RadiusY="15" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle5" Width="172" Height="40" RenderTransformOrigin="0.5,0.5" Opacity="0.74677233344176" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="0" Canvas.Top="0" nacb:BlinkProperties.IsBlinkEnabled="False" nacb:BlinkProperties.BlinkInterval="1000" nac:EnabledProperties.EnabledDynamicsValue="True">
-        <nacc:Rectangle.Resources>
-          <ResourceDictionary>
-            <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-                <nacd2:BrushCFIntervalMapper>
-                  <nacd2:BrushCFIntervalMapper.Intervals>
-                    <nacd2:BrushCFIntervalList>
-                      <nacd2:BrushCFInterval Start="6001" End="6001">
-                        <nacd2:BrushCFInterval.Value>
-                          <nacgl:BrushCF StartColor="48, 177, 172" EndColor="" FillDirection="None" />
-                        </nacd2:BrushCFInterval.Value>
-                      </nacd2:BrushCFInterval>
-                    </nacd2:BrushCFIntervalList>
-                  </nacd2:BrushCFIntervalMapper.Intervals>
-                  <nacd2:BrushCFIntervalMapper.DefaultValue>
-                    <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
-                  </nacd2:BrushCFIntervalMapper.DefaultValue>
-                </nacd2:BrushCFIntervalMapper>
-              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-            </nacd1:BrushDynamicsConverter>
-          </ResourceDictionary>
-        </nacc:Rectangle.Resources>
-        <nacc:Rectangle.Fill>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.S7HMI_DB_ToPLC_ManualCtrl_2].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-        </nacc:Rectangle.Fill>
+      <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF35C4B5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle5" Width="172" Height="40" RenderTransformOrigin="0.5,0.5" Opacity="0.74677233344176" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="0" Canvas.Top="0" nacb:BlinkProperties.IsBlinkEnabled="False" nacb:BlinkProperties.BlinkInterval="1000" nac:EnabledProperties.EnabledDynamicsValue="True">
         <nacc:Rectangle.BevelEffectInfo>
           <nacb1:BevelEffectInfo Style="None" Width="3" />
         </nacc:Rectangle.BevelEffectInfo>
@@ -133,32 +108,7 @@
           </TransformGroup>
         </nac:Label.RenderTransform>
       </nac:Label>
-      <nacc:Rectangle RadiusX="15" RadiusY="15" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle2" Width="171.77143718927" Height="40.0041738779149" RenderTransformOrigin="0.5,0.5" Opacity="0.74677233344176" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="0.114281405364994" Canvas.Top="0.497913061042532" nacb:BlinkProperties.IsBlinkEnabled="False" nacb:BlinkProperties.BlinkInterval="1000" nac:EnabledProperties.EnabledDynamicsValue="True">
-        <nacc:Rectangle.Resources>
-          <ResourceDictionary>
-            <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-                <nacd2:BrushCFIntervalMapper>
-                  <nacd2:BrushCFIntervalMapper.Intervals>
-                    <nacd2:BrushCFIntervalList>
-                      <nacd2:BrushCFInterval Start="6001" End="6001">
-                        <nacd2:BrushCFInterval.Value>
-                          <nacgl:BrushCF StartColor="48, 177, 172" EndColor="" FillDirection="None" />
-                        </nacd2:BrushCFInterval.Value>
-                      </nacd2:BrushCFInterval>
-                    </nacd2:BrushCFIntervalList>
-                  </nacd2:BrushCFIntervalMapper.Intervals>
-                  <nacd2:BrushCFIntervalMapper.DefaultValue>
-                    <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
-                  </nacd2:BrushCFIntervalMapper.DefaultValue>
-                </nacd2:BrushCFIntervalMapper>
-              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-            </nacd1:BrushDynamicsConverter>
-          </ResourceDictionary>
-        </nacc:Rectangle.Resources>
-        <nacc:Rectangle.Fill>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.S7HMI_DB_ToPLC_ManualCtrl_2].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-        </nacc:Rectangle.Fill>
+      <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF35C4B5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle2" Width="171.77143718927" Height="40.0041738779149" RenderTransformOrigin="0.5,0.5" Opacity="0.74677233344176" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="0.114281405364994" Canvas.Top="0.497913061042532" nacb:BlinkProperties.IsBlinkEnabled="False" nacb:BlinkProperties.BlinkInterval="1000" nac:EnabledProperties.EnabledDynamicsValue="True">
         <nacc:Rectangle.BevelEffectInfo>
           <nacb1:BevelEffectInfo Style="None" Width="3" />
         </nacc:Rectangle.BevelEffectInfo>
@@ -214,32 +164,7 @@
           </TransformGroup>
         </nac:Label.RenderTransform>
       </nac:Label>
-      <nacc:Rectangle RadiusX="15" RadiusY="15" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle21" Width="171.77143718927" Height="40.0041738779149" RenderTransformOrigin="0.5,0.5" Opacity="0.74677233344176" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="0.114281405364994" Canvas.Top="0.497913061042532" nacb:BlinkProperties.IsBlinkEnabled="False" nacb:BlinkProperties.BlinkInterval="1000" nac:EnabledProperties.EnabledDynamicsValue="True">
-        <nacc:Rectangle.Resources>
-          <ResourceDictionary>
-            <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-                <nacd2:BrushCFIntervalMapper>
-                  <nacd2:BrushCFIntervalMapper.Intervals>
-                    <nacd2:BrushCFIntervalList>
-                      <nacd2:BrushCFInterval Start="6001" End="6001">
-                        <nacd2:BrushCFInterval.Value>
-                          <nacgl:BrushCF StartColor="48, 177, 172" EndColor="" FillDirection="None" />
-                        </nacd2:BrushCFInterval.Value>
-                      </nacd2:BrushCFInterval>
-                    </nacd2:BrushCFIntervalList>
-                  </nacd2:BrushCFIntervalMapper.Intervals>
-                  <nacd2:BrushCFIntervalMapper.DefaultValue>
-                    <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
-                  </nacd2:BrushCFIntervalMapper.DefaultValue>
-                </nacd2:BrushCFIntervalMapper>
-              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-            </nacd1:BrushDynamicsConverter>
-          </ResourceDictionary>
-        </nacc:Rectangle.Resources>
-        <nacc:Rectangle.Fill>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.S7HMI_DB_ToPLC_ManualCtrl_2].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-        </nacc:Rectangle.Fill>
+      <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF35C4B5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle21" Width="171.77143718927" Height="40.0041738779149" RenderTransformOrigin="0.5,0.5" Opacity="0.74677233344176" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="0.114281405364994" Canvas.Top="0.497913061042532" nacb:BlinkProperties.IsBlinkEnabled="False" nacb:BlinkProperties.BlinkInterval="1000" nac:EnabledProperties.EnabledDynamicsValue="True">
         <nacc:Rectangle.BevelEffectInfo>
           <nacb1:BevelEffectInfo Style="None" Width="3" />
         </nacc:Rectangle.BevelEffectInfo>
@@ -295,32 +220,7 @@
           </TransformGroup>
         </nac:Label.RenderTransform>
       </nac:Label>
-      <nacc:Rectangle RadiusX="15" RadiusY="15" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle9" Width="193.77209290377" Height="39.8786770041017" RenderTransformOrigin="0.5,0.5" Opacity="0.748395777271787" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="0.113890840039045" Canvas.Top="0.560966033691341" nacb:BlinkProperties.IsBlinkEnabled="False" nacb:BlinkProperties.BlinkInterval="1000" nac:EnabledProperties.EnabledDynamicsValue="True">
-        <nacc:Rectangle.Resources>
-          <ResourceDictionary>
-            <nacd1:BrushDynamicsConverter x:Key="FillConverter">
-              <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-                <nacd2:BrushCFIntervalMapper>
-                  <nacd2:BrushCFIntervalMapper.Intervals>
-                    <nacd2:BrushCFIntervalList>
-                      <nacd2:BrushCFInterval Start="7001" End="7001">
-                        <nacd2:BrushCFInterval.Value>
-                          <nacgl:BrushCF StartColor="48, 177, 172" EndColor="" FillDirection="None" />
-                        </nacd2:BrushCFInterval.Value>
-                      </nacd2:BrushCFInterval>
-                    </nacd2:BrushCFIntervalList>
-                  </nacd2:BrushCFIntervalMapper.Intervals>
-                  <nacd2:BrushCFIntervalMapper.DefaultValue>
-                    <nacgl:BrushCF StartColor="53, 196, 181" EndColor="" FillDirection="None" />
-                  </nacd2:BrushCFIntervalMapper.DefaultValue>
-                </nacd2:BrushCFIntervalMapper>
-              </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
-            </nacd1:BrushDynamicsConverter>
-          </ResourceDictionary>
-        </nacc:Rectangle.Resources>
-        <nacc:Rectangle.Fill>
-          <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.S7HMI_DB_ToPLC_ManualCtrl_4].Value" Converter="{StaticResource FillConverter}" ValidatesOnExceptions="True" />
-        </nacc:Rectangle.Fill>
+      <nacc:Rectangle RadiusX="15" RadiusY="15" Fill="#FF35C4B5" Stroke="#FF267593" StrokeThickness="1" Name="m_Rectangle9" Width="193.77209290377" Height="39.8786770041017" RenderTransformOrigin="0.5,0.5" Opacity="0.748395777271787" Visibility="Visible" Panel.ZIndex="60" Canvas.Left="0.113890840039045" Canvas.Top="0.560966033691341" nacb:BlinkProperties.IsBlinkEnabled="False" nacb:BlinkProperties.BlinkInterval="1000" nac:EnabledProperties.EnabledDynamicsValue="True">
         <nacc:Rectangle.BevelEffectInfo>
           <nacb1:BevelEffectInfo Style="None" Width="3" />
         </nacc:Rectangle.BevelEffectInfo>

@@ -90,12 +90,12 @@
           <nai:ActionList>
             <nata:Action Name="Set Tag">
               <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.ToPLC_AlarmReset" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.S7HMI_ToPLC_AlarmReset" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
               </nata:Action.ActionMethodInfo>
             </nata:Action>
             <nata:Action Name="Reset Tag">
               <nata:Action.ActionMethodInfo>
-                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.ToPLC_AlarmReset" EventName="PreviewMouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.S7HMI_ToPLC_AlarmReset" EventName="PreviewMouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
               </nata:Action.ActionMethodInfo>
             </nata:Action>
           </nai:ActionList>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.49.0">
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.46.87.0">
   <Categories>
     <Category Name="Alias">
       <Items />
@@ -448,9 +448,9 @@
         <Item Target="AlarmServer.Robotti_std_AlarmItem0.DynamicString.DynamicItem1" TargetProperty="Value" Source="Tags.Rob1_vir_otsikko" />
         <Item Target="AlarmServer.Robotti_std_AlarmItem1" TargetProperty="Value" Source="Tags.HMI_CommFault_Rob1" />
         <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="Value" Source="Tags.Alarm_ProdReg_Alarm0" />
-        <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="IsAcknowledged" Source="Tags.ToPLC_AlarmReset" />
+        <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="IsAcknowledged" Source="Tags.S7HMI_ToPLC_AlarmReset" />
         <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="Value" Source="Tags.Alarm_ProdReg_Alarm1" />
-        <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="IsAcknowledged" Source="Tags.ToPLC_AlarmReset" />
+        <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="IsAcknowledged" Source="Tags.S7HMI_ToPLC_AlarmReset" />
         <Item Target="AlarmServer.Järjestelmä_Alarm_Alarm0001" TargetProperty="Value" Source="Tags.Alarm_Alarm0000" />
         <Item Target="AlarmServer.Järjestelmä_Alarm_Alarm0002" TargetProperty="Value" Source="Tags.Alarm_Alarm0000" />
         <Item Target="AlarmServer.Järjestelmä_Alarm_Alarm0003" TargetProperty="Value" Source="Tags.Alarm_Alarm0000" />
@@ -905,9 +905,9 @@
         <Item Target="AlarmServer.Robotti_std_AlarmItem0.DynamicString.DynamicItem1" TargetProperty="Value" Source="Tags.Rob1_vir_otsikko" />
         <Item Target="AlarmServer.Robotti_std_AlarmItem1" TargetProperty="Value" Source="Tags.HMI_CommFault_Rob1" />
         <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="Value" Source="Tags.Alarm_ProdReg_Alarm0" />
-        <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="IsAcknowledged" Source="Tags.ToPLC_AlarmReset" />
+        <Item Target="AlarmServer.Tietokanta_std_AlarmItem0" TargetProperty="IsAcknowledged" Source="Tags.S7HMI_ToPLC_AlarmReset" />
         <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="Value" Source="Tags.Alarm_ProdReg_Alarm1" />
-        <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="IsAcknowledged" Source="Tags.ToPLC_AlarmReset" />
+        <Item Target="AlarmServer.Tietokanta_std_AlarmItem1" TargetProperty="IsAcknowledged" Source="Tags.S7HMI_ToPLC_AlarmReset" />
         <Item Target="AlarmServer.Järjestelmä_Alarm_Alarm0001" TargetProperty="Value" Source="Tags.Alarm_Alarm0000" />
         <Item Target="AlarmServer.Järjestelmä_Alarm_Alarm0002" TargetProperty="Value" Source="Tags.Alarm_Alarm0000" />
         <Item Target="AlarmServer.Järjestelmä_Alarm_Alarm0003" TargetProperty="Value" Source="Tags.Alarm_Alarm0000" />

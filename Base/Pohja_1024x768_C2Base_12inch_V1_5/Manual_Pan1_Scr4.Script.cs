@@ -27,13 +27,13 @@ namespace Neo.ApplicationFramework.Generated
 
 			// Poista manuaalitilan valinta
 			Globals.Tags.HMI_Manual_Area_Enabled_1.Value = false;
-			Globals.Tags.S7HMI_DB_ToPLC_ManualCtrl_3.Value = 0;
+			Globals.Tags.S7HMI_DB_ToPLC_ManualCtrl_1.Value = 0;
 		}
 		
 		void Manual_Pan1_Scr4_Opened(System.Object sender, System.EventArgs e)
 		{
 			// Initissä viedään parametrit aputoiminnoille
-			kasiajot.Init(this, "Man", Globals.Tags.S7HMI_DB_ToPLC_ManualCtrl_3);
+			kasiajot.Init(this, "Man", Globals.Tags.S7HMI_DB_ToPLC_ManualCtrl_1);
 
 			// Luo elementeille napit
 			kasiajot.LuoClickHandlerit();
