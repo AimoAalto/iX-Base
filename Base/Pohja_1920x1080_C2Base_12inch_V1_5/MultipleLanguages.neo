@@ -7812,206 +7812,6 @@
           <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
         </ReferenceValue>
       </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="Text" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Set manual mode" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="Button_ManMode" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="CELL" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="TextLineInAuto" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Line in auto,&#xD;&#xA;stop the line first" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="AN_ERunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="AN_ERunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="ANManualCtrlCode_1" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="ANManualCtrlCode_1" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="Text3" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Area 1" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="Text" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Set manual mode" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="Button_ManMode" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="CELL" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="TextLineInAuto" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Line in auto,&#xD;&#xA;stop the line first" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="AN_ERunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="AN_ERunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="ANManualCtrlCode_1" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="ANManualCtrlCode_1" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="Text3" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Area 1" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="Text" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Set manual mode" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="Button_ManMode" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="CELL" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="TextLineInAuto" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Line in auto,&#xD;&#xA;stop the line first" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="AN_ERunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="AN_ERunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="ANManualCtrlCode_1" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="ANManualCtrlCode_1" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="Text3" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Area 1" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="Text" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Set manual mode" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="Button_ManMode" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="CELL" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="TextLineInAuto" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Line in auto,&#xD;&#xA;stop the line first" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="AN_ERunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="AN_ERunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="ANManualCtrlCode_1" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="ANManualCtrlCode_1" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="Text3" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Area 1" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="Text" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Set manual mode" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="Button_ManMode" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="CELL" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="TextLineInAuto" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Line in auto,&#xD;&#xA;stop the line first" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="AN_ERunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="AN_ERunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="ANManualCtrlCode_1" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="ANManualCtrlCode_1" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
-        </ReferenceValue>
-      </Object>
-      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Template_Manual" ObjectName="Text3" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
-        <ReferenceValue>
-          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Area 1" />
-        </ReferenceValue>
-      </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_Palletplace_info" ObjectName="Text8" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
         <ReferenceValue>
           <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Delays" />
@@ -8203,6 +8003,226 @@
         </ReferenceValue>
       </Object>
       <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Popup_Palletplace_info" ObjectName="Btn_Refresh" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="AN_RunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Cell mode:  " />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="AN_RunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="TextManTitle" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Set manual mode" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="CBManualSelection" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="Bton_ManMode" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="CELL" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="TextLineInAuto" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Line in auto,&#xD;&#xA;stop the line first" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="Text5" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Area 1" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="AN_ERunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="AN_ERunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="ANManualCtrlCode_1" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr4" ObjectName="ANManualCtrlCode_1" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="AN_RunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Cell mode:  " />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="AN_RunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="TextManTitle" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Set manual mode" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="CBManualSelection" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="Bton_ManMode" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="CELL" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="TextLineInAuto" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Line in auto,&#xD;&#xA;stop the line first" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="Text5" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Area 1" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="AN_ERunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="AN_ERunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="ANManualCtrlCode_1" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr3" ObjectName="ANManualCtrlCode_1" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="AN_RunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Cell mode:  " />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="AN_RunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="TextManTitle" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Set manual mode" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="CBManualSelection" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="Bton_ManMode" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="CELL" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="TextLineInAuto" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Line in auto,&#xD;&#xA;stop the line first" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="Text5" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Area 1" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="AN_ERunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="AN_ERunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="ANManualCtrlCode_1" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr2" ObjectName="ANManualCtrlCode_1" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="AN_RunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Cell mode:  " />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="AN_RunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="TextManTitle" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Set manual mode" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="CBManualSelection" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="Bton_ManMode" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="CELL" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="TextLineInAuto" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Line in auto,&#xD;&#xA;stop the line first" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="Text" PropertyName="Text" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="Area 1" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="AN_ERunningMode" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="AN_ERunningMode" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="ANManualCtrlCode_1" PropertyName="Prefix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
+        <ReferenceValue>
+          <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
+        </ReferenceValue>
+      </Object>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.MultiLanguage.DesignerResourceItem, ToolsCF, Version=2.46.87.0, Culture=neutral, PublicKeyToken=null" DesignerName="Manual_Pan1_Scr1" ObjectName="ANManualCtrlCode_1" PropertyName="Suffix" IsActive="True" ProjectGuid="8679f1dc-ca9a-48fe-80b2-b2b8a81264f6" IsPublic="True">
         <ReferenceValue>
           <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="" />
         </ReferenceValue>

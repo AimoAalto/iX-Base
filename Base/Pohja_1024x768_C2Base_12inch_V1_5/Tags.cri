@@ -302,15 +302,7 @@
       <Items>
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.SystemTagCurrentUser" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Language_Current" />
-        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_1" />
-        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_2" />
-        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_3" />
-        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_4" />
-        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_5" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.SystemTagSecond" />
-        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_6" />
-        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_7" />
-        <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.HMI_Manual_Area_Enabled_8" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChangeOrError" Source="Tags.SystemTagNewScreenId" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" />
         <Item Target="Tags.Script.cs" TargetProperty="ValueChange" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_2" />
@@ -349,12 +341,13 @@
         <Item Target="Tags.Script.cs" Source="Tags.HMI_StartProd_Wrapping" />
         <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_Lavapaikka_TK1" />
         <Item Target="Tags.Script.cs" Source="Tags.Line1_Rivinumero_TK1" />
-        <Item Target="Tags.Script.cs" Source="Tags.HMI_Manual_Area_Enabled_1" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Internal_ManualEnabled_1" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagSecond" />
         <Item Target="Tags.Script.cs" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagNewScreenId" />
         <Item Target="Tags.Script.cs" Source="Tags.ScreenChangePending" />
         <Item Target="Tags.Script.cs" Source="Tags.HMI_AdminUser" />
+        <Item Target="Tags.Script.cs" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" />
         <Item Target="Tags.Script.cs" Source="Tags.HMI_TraceAll" />
         <Item Target="Tags.Script.cs" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
         <Item Target="Tags.Script.cs" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />

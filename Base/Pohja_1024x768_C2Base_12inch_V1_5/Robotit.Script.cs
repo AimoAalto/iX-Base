@@ -581,6 +581,20 @@ namespace Neo.ApplicationFramework.Generated
 			}
 		}
 
+		public void ParamA(int robotti, string tunnus, List<string> data)
+		{
+			try
+			{
+				Exists(robotti); // jos robotti ei ole olemassa, se luodaan
+
+				robotit[robotti].AsetaParametrit(tunnus, data);
+			}
+			catch (Exception ex)
+			{
+				Globals.Tags.Log("Exception AsetaParametrit! " + ex.Message);
+			}
+		}
+
 		public void Debug(int robotti, bool _set)
 		{
 			try

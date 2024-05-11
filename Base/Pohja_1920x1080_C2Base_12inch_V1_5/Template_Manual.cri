@@ -40,11 +40,6 @@
         <Item Target="Template_Manual.Group_Buttons2.btnSubmenu12" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
         <Item Target="Template_Manual.Group_Buttons2.btnSubmenu13" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
         <Item Target="Template_Manual.Group_Buttons2.btnSubmenu14" TargetProperty="BorderBrush" Source="Tags.Menu_SubMenu_Btn_Anim" />
-        <Item Target="Template_Manual.Group_ManMode_btn.TextLineInAuto" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
-        <Item xsi:type="ActionItem" Target="Template_Manual.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" Event="Click" Action="Toggle Tag" Param="" />
-        <Item Target="Template_Manual.Group_ManMode_btn.Group_ManMode.Rectangle3" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
-        <Item Target="Template_Manual.AN_ERunningMode" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
-        <Item Target="Template_Manual.ANManualCtrlCode_1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -62,7 +57,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>63</ObjectsCount>
+          <ObjectsCount>55</ObjectsCount>
           <ScreenName>Template_Manual</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="">
@@ -80,14 +75,10 @@
       </Items>
     </Category>
     <Category Name="StructuredTag">
-      <Items>
-        <Item xsi:type="ActionItem" Target="Template_Manual.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" Event="Click" Action="Toggle Tag" Param="" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="Symbol">
-      <Items>
-        <Item xsi:type="SymbolItem" Target="Template_Manual.Group_ManMode_btn.Group_ManMode.Button_ManMode" Source="orfer_hand" Width="25" Height="25" IsAnimated="false" />
-      </Items>
+      <Items />
     </Category>
     <Category Name="TextIDs">
       <Items />

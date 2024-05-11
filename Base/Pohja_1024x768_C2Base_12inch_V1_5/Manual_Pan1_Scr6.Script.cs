@@ -20,16 +20,14 @@ namespace Neo.ApplicationFramework.Generated
 	{
 		public Neo.ApplicationFramework.Generated.Kasiajot kasiajot = new Neo.ApplicationFramework.Generated.Kasiajot();
 		
-		void Manual_Pan1_Scr6_Closed(System.Object sender, System.EventArgs e)
+		/// <summary>
+		/// Poistaa kaikki valinnat
+		/// </summary>
+		void ManualResetButtons()
 		{
-			// Poista napit
-			kasiajot.RemoveClickHandlers();
-
-			// Poista manuaalitilan valinta
-			Globals.Tags.HMI_Manual_Area_Enabled_1.Value = false;
-			Globals.Tags.S7HMI_DB_ToPLC_ManualCtrl_5.Value = 0;
+			kasiajot.ManualResetButtons();
 		}
-		
+
 		void Manual_Pan1_Scr6_Opened(System.Object sender, System.EventArgs e)
 		{
 			// Initissä viedään parametrit aputoiminnoille
@@ -39,9 +37,13 @@ namespace Neo.ApplicationFramework.Generated
 			kasiajot.LuoClickHandlerit();
 		}
 
-		void btnManTapa_Click(System.Object sender, System.EventArgs e)
+		void Manual_Pan1_Scr6_Closed(System.Object sender, System.EventArgs e)
 		{
-			kasiajot.VaihdaManTapa();
+			// Poista napit
+			kasiajot.RemoveClickHandlers();
+
+			// Poista manuaalitilan valinta
+			Globals.Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_5.ResetTag();
 		}
     }
 }

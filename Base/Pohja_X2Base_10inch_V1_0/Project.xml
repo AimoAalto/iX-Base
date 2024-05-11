@@ -1,55 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project SchemaVersion="2.46.87.0" ProjectRevision="389">
+<Project SchemaVersion="2.46.87.0" ProjectRevision="391">
   <Guid>1e8da41b-fa5e-4dd7-a403-14a734166c15</Guid>
   <ProjectFiles>
     <ProjectFile Name="ReferencedAssembly\SimpleRestServer.dll" ModifiedDate="2024-04-15T19:31:21.3855879+03:00" Length="11264" />
     <ProjectFile Name="ProjectImages.neo" ModifiedDate="2024-04-15T19:31:21.3855879+03:00" Length="454" />
+    <ProjectFile Name="Symbols\alarm (1).png" ModifiedDate="2024-04-15T19:31:21.1825114+03:00" Length="12464" />
+    <ProjectFile Name="Symbols\bullseye.png" ModifiedDate="2024-04-15T19:31:21.1825114+03:00" Length="5385" />
     <ProjectFile Name="Symbols\cell1.PNG" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="17837" />
-    <ProjectFile Name="Symbols\edit user.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="5419" />
-    <ProjectFile Name="Symbols\next user.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="5569" />
-    <ProjectFile Name="Symbols\orferlogo.png" ModifiedDate="2024-04-15T19:31:21.4168305+03:00" Length="34425" />
-    <ProjectFile Name="Symbols\orfer_ack.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="10156" />
-    <ProjectFile Name="Symbols\orfer_alarms.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="12233" />
-    <ProjectFile Name="Symbols\orfer_alarms_color.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="18149" />
-    <ProjectFile Name="Symbols\orfer_alarm_icon.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="19861" />
-    <ProjectFile Name="Symbols\orfer_backup.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="19271" />
-    <ProjectFile Name="Symbols\orfer_brightness.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="22303" />
-    <ProjectFile Name="Symbols\orfer_cancel.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="11993" />
-    <ProjectFile Name="Symbols\orfer_changeview.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="14523" />
-    <ProjectFile Name="Symbols\orfer_cpu.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="14764" />
-    <ProjectFile Name="Symbols\orfer_hand.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="21031" />
-    <ProjectFile Name="Symbols\orfer_hand_color.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="17280" />
-    <ProjectFile Name="Symbols\orfer_help.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="31693" />
-    <ProjectFile Name="Symbols\orfer_hmi.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="8204" />
-    <ProjectFile Name="Symbols\orfer_home.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="18630" />
-    <ProjectFile Name="Symbols\orfer_home_color.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="17155" />
-    <ProjectFile Name="Symbols\orfer_permission_down_off.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="29422" />
-    <ProjectFile Name="Symbols\orfer_permission_down_on.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="31242" />
-    <ProjectFile Name="Symbols\orfer_permission_selectedoff.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="27650" />
-    <ProjectFile Name="Symbols\orfer_permission_upward_off.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="22343" />
-    <ProjectFile Name="Symbols\orfer_permission_upward_on.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="22880" />
-    <ProjectFile Name="Symbols\orfer_power_dark.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="15233" />
-    <ProjectFile Name="Symbols\orfer_power_red.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="15084" />
-    <ProjectFile Name="Symbols\orfer_printter.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="9581" />
-    <ProjectFile Name="Symbols\orfer_production.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="26447" />
-    <ProjectFile Name="Symbols\orfer_production_color.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="17973" />
-    <ProjectFile Name="Symbols\orfer_product_register.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="9626" />
-    <ProjectFile Name="Symbols\orfer_product_register_color.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="15407" />
-    <ProjectFile Name="Symbols\orfer_recipe_download.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="14800" />
-    <ProjectFile Name="Symbols\orfer_recipe_upload.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="14839" />
-    <ProjectFile Name="Symbols\orfer_reset.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="15118" />
-    <ProjectFile Name="Symbols\orfer_settings.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="37487" />
-    <ProjectFile Name="Symbols\orfer_settings_color.png" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="27460" />
-    <ProjectFile Name="Symbols\orfer_time_date.png" ModifiedDate="2024-04-15T19:31:21.4168305+03:00" Length="7829" />
-    <ProjectFile Name="Symbols\placeholder.png" ModifiedDate="2024-04-15T19:31:21.4168305+03:00" Length="186" />
-    <ProjectFile Name="Symbols\previous user.png" ModifiedDate="2024-04-15T19:31:21.4168305+03:00" Length="5444" />
+    <ProjectFile Name="Symbols\edit user.png" ModifiedDate="2024-04-15T19:31:21.1825114+03:00" Length="5419" />
+    <ProjectFile Name="Symbols\empty.png" ModifiedDate="2024-04-30T04:22:15.899313+03:00" Length="133" />
+    <ProjectFile Name="Symbols\home.png" ModifiedDate="2024-04-15T19:31:21.1825114+03:00" Length="4213" />
+    <ProjectFile Name="Symbols\layout_main.png" ModifiedDate="2024-04-15T19:31:21.1825114+03:00" Length="76235" />
+    <ProjectFile Name="Symbols\next user.png" ModifiedDate="2024-04-15T19:31:21.1825114+03:00" Length="5569" />
+    <ProjectFile Name="Symbols\orferlogo.png" ModifiedDate="2024-04-15T19:31:21.1825114+03:00" Length="34425" />
+    <ProjectFile Name="Symbols\orfer_ack.png" ModifiedDate="2024-05-10T09:48:20.1827801+03:00" Length="1883" />
+    <ProjectFile Name="Symbols\orfer_alarms.png" ModifiedDate="2024-05-10T09:47:53.4936722+03:00" Length="2135" />
+    <ProjectFile Name="Symbols\orfer_alarms_color.png" ModifiedDate="2024-05-10T09:47:36.9411714+03:00" Length="4096" />
+    <ProjectFile Name="Symbols\orfer_alarm_icon.png" ModifiedDate="2024-05-10T09:48:07.163477+03:00" Length="2879" />
+    <ProjectFile Name="Symbols\Orfer_ArrowLeft.png" ModifiedDate="2024-05-10T10:41:52.0466065+03:00" Length="985" />
+    <ProjectFile Name="Symbols\Orfer_ArrowRight.png" ModifiedDate="2024-05-10T10:40:48.7134058+03:00" Length="1047" />
+    <ProjectFile Name="Symbols\orfer_arrowrotatet.png" ModifiedDate="2024-05-10T09:46:30.1515731+03:00" Length="3313" />
+    <ProjectFile Name="Symbols\orfer_backup.png" ModifiedDate="2024-05-10T09:46:18.5385845+03:00" Length="2618" />
+    <ProjectFile Name="Symbols\orfer_brightness.png" ModifiedDate="2024-05-10T09:46:07.5024218+03:00" Length="2876" />
+    <ProjectFile Name="Symbols\orfer_calculator.png" ModifiedDate="2024-05-10T09:45:53.9702242+03:00" Length="3183" />
+    <ProjectFile Name="Symbols\orfer_cancel.png" ModifiedDate="2024-05-10T09:45:42.165891+03:00" Length="1949" />
+    <ProjectFile Name="Symbols\orfer_changeview.png" ModifiedDate="2024-05-10T09:45:29.3548699+03:00" Length="2581" />
+    <ProjectFile Name="Symbols\orfer_cpu.png" ModifiedDate="2024-05-10T09:45:19.005598+03:00" Length="3022" />
+    <ProjectFile Name="Symbols\orfer_delete.png" ModifiedDate="2024-05-10T09:45:06.7746984+03:00" Length="2445" />
+    <ProjectFile Name="Symbols\orfer_diagnostics.png" ModifiedDate="2024-05-10T09:44:50.0834224+03:00" Length="6644" />
+    <ProjectFile Name="Symbols\orfer_diagnostics_color.png" ModifiedDate="2024-05-10T09:44:38.4141313+03:00" Length="6180" />
+    <ProjectFile Name="Symbols\orfer_document.png" ModifiedDate="2024-05-10T09:44:25.5786284+03:00" Length="1803" />
+    <ProjectFile Name="Symbols\orfer_dooropen.png" ModifiedDate="2024-05-10T09:44:13.4926255+03:00" Length="8518" />
+    <ProjectFile Name="Symbols\orfer_dooropen_white.png" ModifiedDate="2024-05-10T09:43:59.6636456+03:00" Length="7241" />
+    <ProjectFile Name="Symbols\orfer_edit.png" ModifiedDate="2024-05-10T09:43:48.3848675+03:00" Length="2182" />
+    <ProjectFile Name="Symbols\orfer_estop.png" ModifiedDate="2024-05-10T09:43:36.1824133+03:00" Length="14963" />
+    <ProjectFile Name="Symbols\orfer_estop_white.png" ModifiedDate="2024-05-10T09:43:26.7921164+03:00" Length="14216" />
+    <ProjectFile Name="Symbols\Orfer_GluingUnit.png" ModifiedDate="2024-05-10T09:43:13.4544405+03:00" Length="2912" />
+    <ProjectFile Name="Symbols\orfer_hand.png" ModifiedDate="2024-05-10T09:42:58.1804402+03:00" Length="2829" />
+    <ProjectFile Name="Symbols\orfer_hand_color.png" ModifiedDate="2024-05-10T09:42:47.2767305+03:00" Length="4979" />
+    <ProjectFile Name="Symbols\orfer_help.png" ModifiedDate="2024-05-10T09:42:32.8765973+03:00" Length="3863" />
+    <ProjectFile Name="Symbols\orfer_hmi.png" ModifiedDate="2024-05-10T09:42:19.9751651+03:00" Length="1619" />
+    <ProjectFile Name="Symbols\orfer_home.png" ModifiedDate="2024-05-10T09:42:06.2482306+03:00" Length="2569" />
+    <ProjectFile Name="Symbols\orfer_home_color.png" ModifiedDate="2024-05-10T09:41:56.2415225+03:00" Length="4829" />
+    <ProjectFile Name="Symbols\orfer_lightcurtain.png" ModifiedDate="2024-05-10T09:41:46.5168551+03:00" Length="12060" />
+    <ProjectFile Name="Symbols\orfer_lightcurtain_white.png" ModifiedDate="2024-05-10T09:41:36.809749+03:00" Length="10632" />
+    <ProjectFile Name="Symbols\orfer_logo_ilman_tekstiä (1).png" ModifiedDate="2024-05-10T09:40:53.7631421+03:00" Length="6432" />
+    <ProjectFile Name="Symbols\Orfer_MainHome.png" ModifiedDate="2024-05-10T09:38:12.8261201+03:00" Length="3332" />
+    <ProjectFile Name="Symbols\Orfer_MainHome_Color.png" ModifiedDate="2024-05-10T09:38:03.354298+03:00" Length="3632" />
+    <ProjectFile Name="Symbols\Orfer_Newpallet.png" ModifiedDate="2024-05-10T09:37:53.1393021+03:00" Length="2265" />
+    <ProjectFile Name="Symbols\orfer_open.png" ModifiedDate="2024-05-10T09:37:35.9509891+03:00" Length="2265" />
+    <ProjectFile Name="Symbols\orfer_pallet.png" ModifiedDate="2024-05-10T09:37:00.3255384+03:00" Length="2397" />
+    <ProjectFile Name="Symbols\orfer_permission_down_off.png" ModifiedDate="2024-05-10T09:36:30.3166313+03:00" Length="5671" />
+    <ProjectFile Name="Symbols\orfer_permission_down_on.png" ModifiedDate="2024-05-10T09:36:19.2623536+03:00" Length="5506" />
+    <ProjectFile Name="Symbols\Orfer_Permission_Left_Off.png" ModifiedDate="2024-05-10T09:36:10.6173028+03:00" Length="5620" />
+    <ProjectFile Name="Symbols\Orfer_Permission_Left_On.png" ModifiedDate="2024-05-10T09:35:57.1760852+03:00" Length="5505" />
+    <ProjectFile Name="Symbols\Orfer_Permission_Right_Off.png" ModifiedDate="2024-05-10T09:35:49.5158358+03:00" Length="5608" />
+    <ProjectFile Name="Symbols\Orfer_Permission_Right_On.png" ModifiedDate="2024-05-10T09:35:38.5831583+03:00" Length="5511" />
+    <ProjectFile Name="Symbols\orfer_permission_selectedoff.png" ModifiedDate="2024-05-10T09:35:28.0625323+03:00" Length="4825" />
+    <ProjectFile Name="Symbols\orfer_permission_upward_off.png" ModifiedDate="2024-05-10T09:35:17.8550264+03:00" Length="3616" />
+    <ProjectFile Name="Symbols\orfer_permission_upward_on.png" ModifiedDate="2024-05-10T09:35:07.4844275+03:00" Length="3493" />
+    <ProjectFile Name="Symbols\orfer_power_dark.png" ModifiedDate="2024-05-10T09:34:54.3052975+03:00" Length="3562" />
+    <ProjectFile Name="Symbols\Orfer_Power_Pink.png" ModifiedDate="2024-05-10T09:34:43.8755852+03:00" Length="3458" />
+    <ProjectFile Name="Symbols\orfer_power_red.png" ModifiedDate="2024-05-10T09:34:34.1621246+03:00" Length="3457" />
+    <ProjectFile Name="Symbols\Orfer_Power_Turquoise.png" ModifiedDate="2024-05-10T09:34:20.4871513+03:00" Length="3457" />
+    <ProjectFile Name="Symbols\orfer_printter.png" ModifiedDate="2024-05-10T09:34:09.3819785+03:00" Length="2142" />
+    <ProjectFile Name="Symbols\orfer_production.png" ModifiedDate="2024-05-10T09:33:32.9892325+03:00" Length="2837" />
+    <ProjectFile Name="Symbols\orfer_production_color.png" ModifiedDate="2024-05-10T09:33:22.0943009+03:00" Length="5297" />
+    <ProjectFile Name="Symbols\orfer_product_register.png" ModifiedDate="2024-05-10T09:33:58.7095423+03:00" Length="1989" />
+    <ProjectFile Name="Symbols\orfer_product_register_color.png" ModifiedDate="2024-05-10T09:33:44.5334993+03:00" Length="3928" />
+    <ProjectFile Name="Symbols\orfer_recipe_download.png" ModifiedDate="2024-05-10T09:33:11.5848444+03:00" Length="2525" />
+    <ProjectFile Name="Symbols\orfer_recipe_upload.png" ModifiedDate="2024-05-10T09:32:54.0951023+03:00" Length="2442" />
+    <ProjectFile Name="Symbols\orfer_reset.png" ModifiedDate="2024-05-10T09:32:40.1297529+03:00" Length="3561" />
+    <ProjectFile Name="Symbols\orfer_resetalarms.png" ModifiedDate="2024-05-10T09:32:26.8574787+03:00" Length="4134" />
+    <ProjectFile Name="Symbols\Orfer_Robot.png" ModifiedDate="2024-05-10T09:32:04.0416746+03:00" Length="3209" />
+    <ProjectFile Name="Symbols\orfer_robot_color.png" ModifiedDate="2024-05-10T09:31:52.4485288+03:00" Length="5852" />
+    <ProjectFile Name="Symbols\orfer_save.png" ModifiedDate="2024-05-10T09:31:39.8483352+03:00" Length="1708" />
+    <ProjectFile Name="Symbols\Orfer_Send.png" ModifiedDate="2024-05-10T09:31:27.1356271+03:00" Length="4860" />
+    <ProjectFile Name="Symbols\orfer_settings.png" ModifiedDate="2024-05-10T09:31:16.3605211+03:00" Length="4102" />
+    <ProjectFile Name="Symbols\orfer_settings_color.png" ModifiedDate="2024-05-10T09:30:55.1415597+03:00" Length="6561" />
+    <ProjectFile Name="Symbols\Orfer_Stop.png" ModifiedDate="2024-05-10T09:30:36.6537195+03:00" Length="1228" />
+    <ProjectFile Name="Symbols\orfer_success.png" ModifiedDate="2024-05-10T09:30:05.8988777+03:00" Length="4685" />
+    <ProjectFile Name="Symbols\orfer_time_date.png" ModifiedDate="2024-05-10T09:29:46.4917653+03:00" Length="1657" />
+    <ProjectFile Name="Symbols\palletizing_layout.png" ModifiedDate="2024-04-15T19:31:21.1981328+03:00" Length="76235" />
+    <ProjectFile Name="Symbols\placeholder.png" ModifiedDate="2024-05-10T09:28:50.4762241+03:00" Length="147" />
+    <ProjectFile Name="Symbols\previous user.png" ModifiedDate="2024-04-15T19:31:21.1981328+03:00" Length="5444" />
+    <ProjectFile Name="Symbols\robot220ok.png" ModifiedDate="2024-04-15T19:31:21.1981328+03:00" Length="41390" />
+    <ProjectFile Name="Symbols\robotti_läpin.png" ModifiedDate="2024-04-15T19:31:21.1981328+03:00" Length="40168" />
+    <ProjectFile Name="Symbols\stopper.1.png" ModifiedDate="2024-05-10T09:27:30.4270076+03:00" Length="1635" />
+    <ProjectFile Name="Symbols\testi_3.png" ModifiedDate="2024-05-10T09:26:34.2105618+03:00" Length="2091" />
+    <ProjectFile Name="Symbols\user.png" ModifiedDate="2024-04-15T19:31:21.1981328+03:00" Length="4992" />
     <ProjectFile Name="SntpClientRootComponent.neo" ModifiedDate="2024-04-15T19:31:21.4012092+03:00" Length="515" />
     <ProjectFile Name="ProjectConfiguration.neo" ModifiedDate="2024-04-15T19:31:21.3855879+03:00" Length="7877" />
     <ProjectFile Name="Security.neo" ModifiedDate="2024-04-15T19:31:21.3855879+03:00" Length="449" />
     <ProjectFile Name="Security.xml" ModifiedDate="2024-04-15T19:31:21.3855879+03:00" Length="1111" />
     <ProjectFile Name="Expressions.neo" ModifiedDate="2024-04-15T19:31:21.3699677+03:00" Length="18312" />
-    <ProjectFile Name="Tags.neo" ModifiedDate="2024-04-15T19:31:21.4168305+03:00" Length="89127" />
-    <ProjectFile Name="Tags.Script.cs" ModifiedDate="2024-04-15T19:31:21.4168305+03:00" Length="14736" />
+    <ProjectFile Name="Tags.neo" ModifiedDate="2024-05-06T14:58:05.1928511+03:00" Length="89127" />
+    <ProjectFile Name="Tags.Script.cs" ModifiedDate="2024-05-06T14:58:05.1928511+03:00" Length="14736" />
     <ProjectFile Name="MultipleLanguages.neo" ModifiedDate="2024-04-15T19:31:21.3855879+03:00" Length="131689" />
     <ProjectFile Name="LicenseRootComponent.neo" ModifiedDate="2024-04-15T19:31:21.3699677+03:00" Length="21030" />
     <ProjectFile Name="AlarmServer.neo" ModifiedDate="2024-04-15T19:31:21.3699677+03:00" Length="5774" />
@@ -58,9 +104,9 @@
     <ProjectFile Name="Template_Orfer.neoxaml" ModifiedDate="2024-04-15T19:31:21.4168305+03:00" Length="803" />
     <ProjectFile Name="Template_Orfer.Script.cs" ModifiedDate="2024-04-15T19:31:21.4168305+03:00" Length="2219" />
     <ProjectFile Name="Template_Orfer.xaml" ModifiedDate="2024-04-15T19:31:21.4168305+03:00" Length="93133" />
-    <ProjectFile Name="Overview_Pan1_Scr1.neoxaml" ModifiedDate="2024-04-15T19:31:21.3855879+03:00" Length="807" />
-    <ProjectFile Name="Overview_Pan1_Scr1.Script.cs" ModifiedDate="2024-04-15T19:31:21.3855879+03:00" Length="819" />
-    <ProjectFile Name="Overview_Pan1_Scr1.xaml" ModifiedDate="2024-04-15T19:31:21.3855879+03:00" Length="4506" />
+    <ProjectFile Name="Overview_Pan1_Scr1.neoxaml" ModifiedDate="2024-04-25T23:57:27.4276609+03:00" Length="807" />
+    <ProjectFile Name="Overview_Pan1_Scr1.Script.cs" ModifiedDate="2024-04-25T23:57:27.4286593+03:00" Length="872" />
+    <ProjectFile Name="Overview_Pan1_Scr1.xaml" ModifiedDate="2024-04-25T23:57:27.4745352+03:00" Length="4579" />
     <ProjectFile Name="Alarms_Pan1_Scr1.neoxaml" ModifiedDate="2024-04-15T19:31:21.3699677+03:00" Length="805" />
     <ProjectFile Name="Alarms_Pan1_Scr1.Script.cs" ModifiedDate="2024-04-15T19:31:21.3699677+03:00" Length="252" />
     <ProjectFile Name="Alarms_Pan1_Scr1.xaml" ModifiedDate="2024-04-15T19:31:21.3699677+03:00" Length="7313" />

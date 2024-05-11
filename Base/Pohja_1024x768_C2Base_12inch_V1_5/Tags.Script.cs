@@ -52,72 +52,6 @@ namespace Neo.ApplicationFramework.Generated
 
 		#endregion
 
-		/// <summary>
-		/// Suorittaa asioita sekunnin välein. Suorittaa kerran sovelluksen
-		/// avautuessa tehtävät asiat kerran-bitin avulla.
-		/// </summary>
-		/// <param name="sender">SystemTagSecond</param>
-		void SystemTagSecond_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
-		{
-			if (kerran == false)
-			{
-				// jos näkymänvalinta ei ole käytössä, pitää paneli asettaa 'käsin', jotta valikot toimivat
-				// NakymanValinta();
-				HMI_Settings_PanelNumber.SetAnalog(1);
-
-				//Neo.ApplicationFramework.Generated.S7_PLC_HMI2 = Globals.GetObjects<Neo.ApplicationFramework.Generated.S7_PLC_HMI2>();
-
-				//retrieve the last date project.zip was modified i.e. when it was last transferred to the panel
-				DirectoryInfo di = new DirectoryInfo(Directory.GetCurrentDirectory());
-
-				if (di.GetFiles("project.zip").Length > 0)
-					HMI_Overview_moddate.SetString(di.GetFiles("project.zip")[0].LastWriteTime.ToString());
-				else
-				{
-					string name = Assembly.GetExecutingAssembly().Location;
-					try
-					{
-						FileInfo fi = new FileInfo(name);
-						HMI_Overview_moddate.SetString(fi.LastAccessTime.ToString());
-					}
-					catch (Exception)
-					{
-						HMI_Overview_moddate.SetString("N/A");
-					}
-				}
-
-				Log("Application Started");
-
-				AppStart_Timer = 0;
-
-				// Main menu painikkeiden visualisointi alustus
-				Menu_MainMenu_Btn_Anim.SetAnalog(1);
-
-				kerran = true;
-			}
-
-			bool screenchanging = ScreenChangePending.Value;
-			if (screenchanging)
-			{
-				if (pendingcount++ > 2)
-				{
-					pendingcount = 0;
-					ScreenChangePending.ResetTag();
-				}
-			}
-
-			if (Globals.Robotit.AloitusSanomiaJonossa(1))
-			{
-				bool _set = HMI_Starting_Infeed_Inprogress.Value;
-				if (!_set) { HMI_Starting_Infeed_Inprogress.SetTag(); }
-			}
-			else
-			{
-				bool _set = HMI_Starting_Infeed_Inprogress.Value;
-				if (_set) { HMI_Starting_Infeed_Inprogress.ResetTag(); }
-			}
-		}
-
 		#region tags
 
 		/// <summary>
@@ -664,6 +598,72 @@ namespace Neo.ApplicationFramework.Generated
 
 		#region events
 
+		/// <summary>
+		/// Suorittaa asioita sekunnin välein. Suorittaa kerran sovelluksen
+		/// avautuessa tehtävät asiat kerran-bitin avulla.
+		/// </summary>
+		/// <param name="sender">SystemTagSecond</param>
+		void SystemTagSecond_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
+		{
+			if (kerran == false)
+			{
+				// jos näkymänvalinta ei ole käytössä, pitää paneli asettaa 'käsin', jotta valikot toimivat
+				// NakymanValinta();
+				HMI_Settings_PanelNumber.SetAnalog(1);
+
+				//Neo.ApplicationFramework.Generated.S7_PLC_HMI2 = Globals.GetObjects<Neo.ApplicationFramework.Generated.S7_PLC_HMI2>();
+
+				//retrieve the last date project.zip was modified i.e. when it was last transferred to the panel
+				DirectoryInfo di = new DirectoryInfo(Directory.GetCurrentDirectory());
+
+				if (di.GetFiles("project.zip").Length > 0)
+					HMI_Overview_moddate.SetString(di.GetFiles("project.zip")[0].LastWriteTime.ToString());
+				else
+				{
+					string name = Assembly.GetExecutingAssembly().Location;
+					try
+					{
+						FileInfo fi = new FileInfo(name);
+						HMI_Overview_moddate.SetString(fi.LastAccessTime.ToString());
+					}
+					catch (Exception)
+					{
+						HMI_Overview_moddate.SetString("N/A");
+					}
+				}
+
+				Log("Application Started");
+
+				AppStart_Timer = 0;
+
+				// Main menu painikkeiden visualisointi alustus
+				Menu_MainMenu_Btn_Anim.SetAnalog(1);
+
+				kerran = true;
+			}
+
+			bool screenchanging = ScreenChangePending.Value;
+			if (screenchanging)
+			{
+				if (pendingcount++ > 2)
+				{
+					pendingcount = 0;
+					ScreenChangePending.ResetTag();
+				}
+			}
+
+			if (Globals.Robotit.AloitusSanomiaJonossa(1))
+			{
+				bool _set = HMI_Starting_Infeed_Inprogress.Value;
+				if (!_set) { HMI_Starting_Infeed_Inprogress.SetTag(); }
+			}
+			else
+			{
+				bool _set = HMI_Starting_Infeed_Inprogress.Value;
+				if (_set) { HMI_Starting_Infeed_Inprogress.ResetTag(); }
+			}
+		}
+
 		public void SystemTagCurrentUser_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{
 			HMI_AdminUser.ResetTag();
@@ -720,16 +720,17 @@ namespace Neo.ApplicationFramework.Generated
 				if (StartsWith(name, "S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_", out id))
 				{
 					//S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1.ResetTag();
-					string tagname = string.Format("S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_{0}", id);
+					string tagname = string.Format("S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_{0:00}", id);
 					value = (int)GetTagValue(tagname);
+					// S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1
+					reset = (bool)GetTagValue(name) == false;
 				}
 				else if (StartsWith(name, "S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_", out id))
 				{
 					value = (int)GetTagValue(name);
-					//HMI_Manual_Area_Enabled_1.ResetTag();
-					string tagname = string.Format("HMI_Manual_Area_Enabled_{0}", id);
-					if (value == 0) SetTagValue(tagname, false);
-					reset = (bool)GetTagValue(name) == false;
+					//S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1.ResetTag();
+					string tagname = string.Format("S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_{0}", id);
+					if ((bool)GetTagValue(tagname) == false) reset = true;
 				}
 
 				if (id >= 0)
@@ -739,11 +740,11 @@ namespace Neo.ApplicationFramework.Generated
 					if (TraceAll) System.Diagnostics.Trace.WriteLine(string.Format("set : {0} = value = {1}. reset = [{2}]", tagname, value, reset));
 					if (tag != null)
 					{
-						if (value == 0 || value >= 50 || reset)
+						if (value != 20 || reset)
 						{
+							//HMI_Internal_ManualEnabled_1.ResetTag();
 							tag.ResetTag();
-							//S7HMI_DB_ToPLC_Manual_ManGroupCode1.ResetTag();
-							S7HMI_DB_ToPLC_ManualCtrl_1.ResetTag();
+							//S7HMI_DB_ToPLC_ManualCtrl_1.ResetTag();
 							string stag = string.Format("S7HMI_DB_ToPLC_ManualCtrl_{0}", id);
 							SetTagValue(stag, 0);
 						}

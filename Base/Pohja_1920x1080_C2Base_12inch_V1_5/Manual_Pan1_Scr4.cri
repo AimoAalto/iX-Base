@@ -24,11 +24,13 @@
     </Category>
     <Category Name="GlobalDataItem">
       <Items>
-        <Item Target="Manual_Pan1_Scr4.Group_ManMode_btn.TextLineInAuto" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Internal_ManualEnabled_1" />
-        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr4.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" Event="Click" Action="Toggle Tag" Param="" />
-        <Item Target="Manual_Pan1_Scr4.Group_ManMode_btn.Group_ManMode.Rectangle3" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
-        <Item Target="Manual_Pan1_Scr4.AN_ERunningMode" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
-        <Item Target="Manual_Pan1_Scr4.ANManualCtrlCode_1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr4.Group_ManMode.Bton_ManMode" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="Manual_Pan1_Scr4.GroupModeDebug.ANManualCtrlCode_1" TargetProperty="Value" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
+        <Item Target="Manual_Pan1_Scr4.Group_ManMode.RectManButtonBase" TargetProperty="Fill" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
+        <Item Target="Manual_Pan1_Scr4.Group_ManMode.CBManualSelection" TargetProperty="IsChecked" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" />
+        <Item Target="Manual_Pan1_Scr4.Group_ManMode.TextLineInAuto" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
+        <Item Target="Manual_Pan1_Scr4.AN_RunningMode" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
+        <Item Target="Manual_Pan1_Scr4.GroupModeDebug.AN_ERunningMode" TargetProperty="Value" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
       </Items>
     </Category>
     <Category Name="IntegratorSwapActiveProjectAction">
@@ -46,7 +48,7 @@
     <Category Name="Screen">
       <Items>
         <Item xsi:type="ScreenObjectsCrossReferenceItem">
-          <ObjectsCount>71</ObjectsCount>
+          <ObjectsCount>65</ObjectsCount>
           <ScreenName>Manual_Pan1_Scr4</ScreenName>
         </Item>
         <Item xsi:type="ScreenIDItem" ScreenID="10404">
@@ -62,12 +64,12 @@
     </Category>
     <Category Name="StructuredTag">
       <Items>
-        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr4.Group_ManMode_btn.Group_ManMode.Button_ManMode" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="Manual_Pan1_Scr4.Group_ManMode.Bton_ManMode" TargetProperty="Actions" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" Event="Click" Action="Toggle Tag" Param="" />
       </Items>
     </Category>
     <Category Name="Symbol">
       <Items>
-        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr4.Group_ManMode_btn.Group_ManMode.Button_ManMode" Source="orfer_hand" Width="25" Height="25" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Manual_Pan1_Scr4.Group_ManMode.Bton_ManMode" Source="orfer_hand" Width="25" Height="25" IsAnimated="false" />
       </Items>
     </Category>
     <Category Name="TextIDs">

@@ -52,63 +52,6 @@ namespace Neo.ApplicationFramework.Generated
 
 		#endregion
 
-		/// <summary>
-		/// Suorittaa asioita sekunnin välein. Suorittaa kerran sovelluksen
-		/// avautuessa tehtävät asiat kerran-bitin avulla.
-		/// </summary>
-		/// <param name="sender">SystemTagSecond</param>
-		void SystemTagSecond_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
-		{
-			if (kerran == false)
-			{
-				// jos näkymänvalinta ei ole käytössä, pitää paneli asettaa 'käsin', jotta valikot toimivat
-				NakymanValinta();
-				//HMI_Settings_PanelNumber.SetAnalog(1);
-
-				/*
-				//Neo.ApplicationFramework.Generated.S7_PLC_HMI2 = Globals.GetObjects<Neo.ApplicationFramework.Generated.S7_PLC_HMI2>();
-				
-				//retrieve the last date project.zip was modified i.e. when it was last transferred to the panel
-				DirectoryInfo di = new DirectoryInfo(Directory.GetCurrentDirectory());
-
-				if (di.GetFiles("project.zip").Length > 0)
-				HMI_Overview_moddate.SetString(di.GetFiles("project.zip")[0].LastWriteTime.ToString());
-				else
-				{
-				string name = Assembly.GetExecutingAssembly().FullName;
-				try
-				{
-				FileInfo fi = new FileInfo(name);
-				HMI_Overview_moddate.SetString(fi.LastAccessTime.ToString());
-				}
-				catch (Exception)
-				{
-				HMI_Overview_moddate.SetString("N/A");
-				}
-				}
-				*/
-				
-				Log("Application Started");
-
-				AppStart_Timer = 0;
-
-				// Main menu painikkeiden visualisointi alustus
-				Menu_MainMenu_Btn_Anim.SetAnalog(0);
-
-				kerran = true;
-			}
-		
-			bool screenchanging = ScreenChangePending.Value;
-			if (screenchanging)
-			{
-				if (pendingcount++ > 2)
-				{
-					pendingcount = 0;
-					ScreenChangePending.ResetTag();
-				}
-			}
-		}
-
 		#region tags
 
 		/// <summary>
@@ -435,6 +378,63 @@ namespace Neo.ApplicationFramework.Generated
 		#endregion
 
 		#region events
+
+		/// <summary>
+		/// Suorittaa asioita sekunnin välein. Suorittaa kerran sovelluksen
+		/// avautuessa tehtävät asiat kerran-bitin avulla.
+		/// </summary>
+		/// <param name="sender">SystemTagSecond</param>
+		void SystemTagSecond_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
+		{
+			if (kerran == false)
+			{
+				// jos näkymänvalinta ei ole käytössä, pitää paneli asettaa 'käsin', jotta valikot toimivat
+				NakymanValinta();
+				//HMI_Settings_PanelNumber.SetAnalog(1);
+
+				/*
+				//Neo.ApplicationFramework.Generated.S7_PLC_HMI2 = Globals.GetObjects<Neo.ApplicationFramework.Generated.S7_PLC_HMI2>();
+				
+				//retrieve the last date project.zip was modified i.e. when it was last transferred to the panel
+				DirectoryInfo di = new DirectoryInfo(Directory.GetCurrentDirectory());
+
+				if (di.GetFiles("project.zip").Length > 0)
+				HMI_Overview_moddate.SetString(di.GetFiles("project.zip")[0].LastWriteTime.ToString());
+				else
+				{
+				string name = Assembly.GetExecutingAssembly().FullName;
+				try
+				{
+				FileInfo fi = new FileInfo(name);
+				HMI_Overview_moddate.SetString(fi.LastAccessTime.ToString());
+				}
+				catch (Exception)
+				{
+				HMI_Overview_moddate.SetString("N/A");
+				}
+				}
+				*/
+				
+				Log("Application Started");
+
+				AppStart_Timer = 0;
+
+				// Main menu painikkeiden visualisointi alustus
+				Menu_MainMenu_Btn_Anim.SetAnalog(0);
+
+				kerran = true;
+			}
+		
+			bool screenchanging = ScreenChangePending.Value;
+			if (screenchanging)
+			{
+				if (pendingcount++ > 2)
+				{
+					pendingcount = 0;
+					ScreenChangePending.ResetTag();
+				}
+			}
+		}
 
 		public void SystemTagCurrentUser_ValueChange(System.Object sender, Core.Api.DataSource.ValueChangedEventArgs e)
 		{

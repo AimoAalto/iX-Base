@@ -332,19 +332,5 @@ namespace Neo.ApplicationFramework.Generated
 				Globals.Tags.Log("Exception [Sensor_Click] " + ex.ToString());
 			}
 		}
-
-		public void VaihdaManTapa()
-		{
-			if (_Konfiguraatio.ManualMode == _Konfiguraatio.man_mode.ManMultiString)
-			{
-				_Konfiguraatio.ManualMode = _Konfiguraatio.man_mode.ManNumber;
-				//this.btnManTapa.Text = "Num";
-			}
-			else
-			{
-				_Konfiguraatio.ManualMode = _Konfiguraatio.man_mode.ManMultiString;
-				//this.btnManTapa.Text = "String";
-			}
-		}
 	}
 }

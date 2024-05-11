@@ -43,13 +43,7 @@ namespace Neo.ApplicationFramework.Generated
 			kasiajot.RemoveClickHandlers();
 
 			// Poista manuaalitilan valinta
-			Globals.Tags.HMI_Manual_Area_Enabled_1.Value = false;
-			Globals.Tags.S7HMI_DB_ToPLC_ManualCtrl_1.Value = 0;
-		}
-
-		void btnManTapa_Click(System.Object sender, System.EventArgs e)
-		{
-			kasiajot.VaihdaManTapa();
+			Globals.Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1.ResetTag();
 		}
 	}
 }

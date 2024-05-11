@@ -316,14 +316,44 @@
         <Item Target="Tags.Script.cs" Source="Tags.Menu_SubMenu_Btn_Anim" />
         <Item Target="Tags.Script.cs" Source="Tags.S7HMI_DB_ToPLC_ManualCtrl_1" />
         <Item Target="Tags.Script.cs" Source="Tags.HMI_Settings_PanelNumber" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Error_TextValue" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Error_AdditionalInfo" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_ProductNo" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_PalletPattern" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_PalletType" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Robot1_X_Centering" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Robot1_Y_Centering" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Robot1_Speed_Full" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Robot1_Acceleration_Full" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_LayerCount" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Product_Length" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Product_Width" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Product_Height" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_Spacers" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_RiviNro" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_PickDelay" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_PlaceDelay" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_StartProd_Wrapping" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_ProdReg_WrappingProgram" />
+        <Item Target="Tags.Script.cs" Source="Tags.Line1_PLC_Lavapaikka_TK1" />
+        <Item Target="Tags.Script.cs" Source="Tags.Line1_Rivinumero_TK1" />
         <Item Target="Tags.Script.cs" Source="Tags.S7HMI_DB_ToHMI_AutoAreaST_LineRunningMode_1" />
-        <Item Target="Tags.Script.cs" Source="Tags.HMI_Manual_Area_Enabled_1" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Internal_ManualEnabled_1" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagSecond" />
         <Item Target="Tags.Script.cs" Source="Tags.HMI_CurrentUserInt" />
         <Item Target="Tags.Script.cs" Source="Tags.SystemTagNewScreenId" />
         <Item Target="Tags.Script.cs" Source="Tags.ScreenChangePending" />
         <Item Target="Tags.Script.cs" Source="Tags.HMI_AdminUser" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_SelectedOrderno" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Starting_Infeed" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Starting_Palletplace" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Starting_ProdNo" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Starting_OrderNo" />
         <Item Target="Tags.Script.cs" Source="Tags.HMI_TraceAll" />
+        <Item Target="Tags.Script.cs" Source="Tags.S7HMI_DB_ToPLC_AutoAreaCMD_ManModeSelection_1" />
+        <Item Target="Tags.Script.cs" Source="Tags.HMI_Starting_Infeed_Inprogress" />
+        <Item Target="Tags.Script.cs" Source="Tags.S7HMI_ToPLC_Line_1_OrderNo" />
+        <Item Target="Tags.Script.cs" Source="Tags.S7HMI_ToPLC_Line_1_Recipe_PalletType" />
       </Items>
     </Category>
     <Category Name="StructuredTag">
